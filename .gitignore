@@ -1,0 +1,11 @@
+# Keep generated briefs and supply-chain baselines in Git.
+!reports/
+!reports/.gitkeep
+!reports/*.md
+!state/
+!state/.gitkeep
+!state/*.json
+
+# Local OS/editor noise.
+.DS_Store
+Thumbs.db
