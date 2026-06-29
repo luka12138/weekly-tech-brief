@@ -19,115 +19,198 @@
   ],
   "edges": [
     {
+      "edge_id": "E01",
       "supplier": "TSMC",
       "customer": "Apple",
       "product_or_service": "A/M/S series chips advanced-node foundry",
       "relationship_type": "foundry",
+      "evidence_date": "2026-06-24/2026-06-25",
+      "source_type": "media_report",
+      "last_seen": "2026-06-29",
+      "changed_this_week": "risk",
       "status": "continued_risk",
       "confidence": "medium",
+      "confidence_reason": "Report supports pricing pressure for advanced-node customers, not a new official supply award.",
+      "markdown_section_ref": "6.2 E01",
       "sources": [
         "https://www.tomshardware.com/tech-industry/semiconductors/tsmc-is-reportedly-hiking-prices-for-all-advanced-nodes-accounting-for-74-percent-of-the-companys-wafer-business-nvidia-amd-apple-qualcomm-and-others-will-face-higher-wafer-costs"
       ],
-      "notes": "Weekly evidence is media-reported TSMC pricing pressure, not a new official TSMC/Apple supply announcement."
+      "notes": "Weekly evidence is pricing risk; do not treat as new customer/order confirmation."
     },
     {
+      "edge_id": "E02",
       "supplier": "TSMC",
       "customer": "NVIDIA",
       "product_or_service": "AI GPU advanced-node foundry and packaging",
       "relationship_type": "foundry_packaging",
-      "status": "continued_strengthened",
+      "evidence_date": "2026-06-24/2026-06-25",
+      "source_type": "media_report_plus_demand_context",
+      "last_seen": "2026-06-29",
+      "changed_this_week": "risk",
+      "status": "continued_risk",
       "confidence": "medium",
+      "confidence_reason": "Pricing report names NVIDIA as affected customer; no weekly official order or packaging allocation disclosure.",
+      "markdown_section_ref": "6.2 E02",
       "sources": [
         "https://www.tomshardware.com/tech-industry/semiconductors/tsmc-is-reportedly-hiking-prices-for-all-advanced-nodes-accounting-for-74-percent-of-the-companys-wafer-business-nvidia-amd-apple-qualcomm-and-others-will-face-higher-wafer-costs",
         "https://blogs.nvidia.com/blog/top500-green500-supercomputers-isc-2026/"
       ],
-      "notes": "Pricing story and NVIDIA AI infrastructure demand support strengthened relevance."
+      "notes": "Maintain as baseline/risk edge, not new supply confirmation."
     },
     {
+      "edge_id": "E03",
       "supplier": "SK Hynix",
       "customer": "NVIDIA and AI accelerator customers",
       "product_or_service": "HBM4E/HBM4/HBM3E",
       "relationship_type": "memory_supply",
-      "status": "strengthened",
-      "confidence": "high",
+      "evidence_date": "2026-06-18 and 2026-06-24/2026-06-25",
+      "source_type": "official_release_plus_media_report",
+      "last_seen": "2026-06-29",
+      "changed_this_week": "strengthened_media_reported",
+      "status": "strengthened_media_reported",
+      "confidence": "medium_high",
+      "confidence_reason": "HBM4E sample is official but outside coverage week; ADR financing and capex use are media-reported within coverage week.",
+      "markdown_section_ref": "6.2 E03",
       "sources": [
         "https://news.skhynix.com/12-layer-hbm4e-sample/",
-        "https://www.prnewswire.com/news-releases/sk-hynix-ships-samples-of-12-layer-next-gen-hbm4e-302803714.html"
+        "https://www.prnewswire.com/news-releases/sk-hynix-ships-samples-of-12-layer-next-gen-hbm4e-302803714.html",
+        "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-06-24-2026/card/XGzboqrIxtaxRTnlNlHT"
       ],
-      "notes": "HBM4E samples are the clearest supply-chain catalyst in the period, although the announcement date precedes the covered week."
+      "notes": "Track carefully next week for formal filings and customer validation updates."
     },
     {
+      "edge_id": "E04",
       "supplier": "Samsung Electronics",
       "customer": "NVIDIA and AI accelerator customers",
       "product_or_service": "HBM4/HBM4E",
       "relationship_type": "memory_supply",
-      "status": "continued",
+      "evidence_date": "2026-06-26",
+      "source_type": "official_sustainability_report",
+      "last_seen": "2026-06-29",
+      "changed_this_week": "no_new_order_evidence",
+      "status": "continued_no_weekly_order_evidence",
       "confidence": "medium",
+      "confidence_reason": "Samsung report supports AI memory efficiency strategy, not a new customer award.",
+      "markdown_section_ref": "6.2 E04",
       "sources": [
         "https://news.samsung.com/global/samsung-electronics-releases-2026-sustainability-report-expanding-water-replenishment-efforts"
       ],
-      "notes": "This week added sustainability and efficiency context rather than a new customer award."
+      "notes": "Keep as HBM competition baseline with no weekly order change."
     },
     {
+      "edge_id": "E05",
+      "supplier": "Samsung Electronics",
+      "customer": "Apple",
+      "product_or_service": "DRAM/NAND/OLED components",
+      "relationship_type": "component_supply",
+      "evidence_date": "2026-06-25/2026-06-28",
+      "source_type": "media_report",
+      "last_seen": "2026-06-29",
+      "changed_this_week": "risk",
+      "status": "risk_baseline_insufficient",
+      "confidence": "low_medium",
+      "confidence_reason": "Apple pricing reports support memory cost pressure but do not confirm Samsung supplier share this week.",
+      "markdown_section_ref": "6.2 E05",
+      "sources": [
+        "https://www.cbsnews.com/news/apple-price-hikes-macbook-ipad-2026/"
+      ],
+      "notes": "Use only as cost-risk context unless direct supplier evidence appears."
+    },
+    {
+      "edge_id": "E06",
+      "supplier": "NVIDIA",
+      "customer": "Microsoft",
+      "product_or_service": "GPU/AI accelerators and AI infrastructure ecosystem",
+      "relationship_type": "infrastructure_supply_baseline",
+      "evidence_date": "2026-06-22/2026-06-23",
+      "source_type": "official_customer_capacity_disclosure",
+      "last_seen": "2026-06-29",
+      "changed_this_week": "demand_context_strengthened",
+      "status": "continued_baseline_insufficient",
+      "confidence": "medium",
+      "confidence_reason": "Microsoft disclosed AI capacity expansion but not specific NVIDIA procurement.",
+      "markdown_section_ref": "6.2 E06",
+      "sources": [
+        "https://blogs.microsoft.com/blog/2026/06/22/powering-the-next-wave-of-ai-expanding-capacity-with-our-new-datacenter-in-pecos/"
+      ],
+      "notes": "Do not interpret as new weekly GPU order."
+    },
+    {
+      "edge_id": "E07",
       "supplier": "NVIDIA",
       "customer": "Amazon / AWS",
       "product_or_service": "NVIDIA GPU and AI infrastructure software stack",
       "relationship_type": "supply_cooperation",
+      "evidence_date": "2026-06-23",
+      "source_type": "official_supplier_blog",
+      "last_seen": "2026-06-29",
+      "changed_this_week": "strengthened",
       "status": "strengthened",
       "confidence": "high",
+      "confidence_reason": "NVIDIA published explicit AWS production AI collaboration update in the covered week.",
+      "markdown_section_ref": "6.2 E07",
       "sources": [
         "https://blogs.nvidia.com/blog/nvidia-aws-ai-production-scale/"
       ],
-      "notes": "Weekly confirmed NVIDIA-AWS production AI collaboration."
+      "notes": "Strongest weekly supply/cooperation edge."
     },
     {
-      "supplier": "NVIDIA",
-      "customer": "Microsoft",
-      "product_or_service": "GPU/AI accelerators and AI infrastructure ecosystem",
-      "relationship_type": "supply",
-      "status": "strengthened_baseline_insufficient",
-      "confidence": "medium",
-      "sources": [
-        "https://blogs.microsoft.com/blog/2026/06/22/powering-the-next-wave-of-ai-expanding-capacity-with-our-new-datacenter-in-pecos/"
-      ],
-      "notes": "Microsoft disclosed major AI capacity expansion but not specific weekly GPU procurement."
-    },
-    {
+      "edge_id": "E08",
       "supplier": "Amazon / AWS",
       "customer": "AI startups and cloud customers",
       "product_or_service": "Trainium3, Bedrock, cloud training services",
       "relationship_type": "cloud_supply_competitive_substitute",
+      "evidence_date": "2026-06-23",
+      "source_type": "official_company_post",
+      "last_seen": "2026-06-29",
+      "changed_this_week": "strengthened",
       "status": "strengthened",
       "confidence": "high",
+      "confidence_reason": "Amazon disclosed specific Trainium customer adoption examples in the covered week.",
+      "markdown_section_ref": "6.2 E08",
       "sources": [
         "https://www.aboutamazon.com/news/aws/why-ai-startups-choose-amazon-trainium-chips"
       ],
-      "notes": "Trainium3 customer case strengthens AWS custom silicon positioning."
+      "notes": "External customer node; explains competitive pressure on NVIDIA GPU demand."
     },
     {
+      "edge_id": "E09",
       "supplier": "Meta",
       "customer": "EssilorLuxottica",
       "product_or_service": "Meta Glasses AI eyewear line",
       "relationship_type": "product_partnership",
+      "evidence_date": "2026-06-23",
+      "source_type": "official_partner_announcements",
+      "last_seen": "2026-06-29",
+      "changed_this_week": "new",
       "status": "new",
       "confidence": "high",
+      "confidence_reason": "Both partners announced the product line in the covered week.",
+      "markdown_section_ref": "6.2 E09",
       "sources": [
         "https://about.fb.com/news/2026/06/meta-essilorluxottica-partner-launch-meta-glasses/",
         "https://www.essilorluxottica.com/en/newsroom/press-releases/essilorluxottica-meta-new-wearables-collection/"
       ],
-      "notes": "New weekly product launch and confirmed partner relationship."
+      "notes": "Confirmed new weekly partnership/product edge."
     },
     {
+      "edge_id": "E10",
       "supplier": "ASML/EUV",
       "customer": "SK Hynix",
-      "product_or_service": "EUV equipment for AI memory expansion",
+      "product_or_service": "EUV equipment for HBM/DRAM expansion",
       "relationship_type": "equipment_supply",
+      "evidence_date": "2026-06-24/2026-06-25",
+      "source_type": "media_report",
+      "last_seen": "2026-06-29",
+      "changed_this_week": "strengthened_media_reported",
       "status": "strengthened_media_reported",
       "confidence": "medium",
+      "confidence_reason": "Media reports connect proposed ADR proceeds to EUV and advanced manufacturing investment; no formal filing yet.",
+      "markdown_section_ref": "6.2 E10",
       "sources": [
         "https://www.tomshardware.com/tech-industry/sk-hynix-files-to-raise-up-to-29-billion-in-nasdaq-listing"
       ],
-      "notes": "Media-reported use of ADR proceeds includes EUV and advanced manufacturing capacity."
+      "notes": "External equipment node; verify with formal offering documents if available."
     }
   ],
   "sources": [
@@ -138,6 +221,7 @@
     "https://www.aboutamazon.com/news/company-news/amazon-india-investment",
     "https://www.aboutamazon.com/news/aws/why-ai-startups-choose-amazon-trainium-chips",
     "https://about.fb.com/news/2026/06/meta-essilorluxottica-partner-launch-meta-glasses/",
+    "https://www.essilorluxottica.com/en/newsroom/press-releases/essilorluxottica-meta-new-wearables-collection/",
     "https://blogs.nvidia.com/blog/nvidia-aws-ai-production-scale/",
     "https://nvidianews.nvidia.com/news/nvidia-launches-bionemo-agent-toolkit-giving-ai-agents-the-tools-to-accelerate-scientific-discovery",
     "https://ir.tesla.com/press-release/delivery-consensus-second-quarter-2026",
@@ -146,5 +230,5 @@
     "https://pr.tsmc.com/english/latest-news"
   ],
   "confidence": "mixed",
-  "notes": "This file replaces the earlier 2026-06-29 baseline. No prior baseline existed, so week-over-week differences were reconstructed from public sources. Media-reported items are explicitly marked in the Markdown report."
+  "notes": "This reviewed baseline replaces commit 761a42b. No prior baseline existed, so week-over-week differences were reconstructed from public sources. Graph, Markdown table, and JSON now share edge IDs E01-E10. Media-reported and baseline-insufficient items are explicitly marked."
 }

@@ -5,4 +5,4 @@
 
 本文件是最新晨报入口。完整内容请查看：
 
-[reports/2026-06-29_weekly_morning_brief.md](2026-06-29_weekly_morning_brief.md)
+[2026-06-29_weekly_morning_brief.md](2026-06-29_weekly_morning_brief.md)

@@ -9,15 +9,15 @@
 3. **NVIDIA + AWS：生产级 AI 协作。** NVIDIA 6 月 23 日发布与 AWS 的生产级 AI 协作进展。重要性：AWS 自研 Trainium 路线和 NVIDIA GPU 路线并行，而不是简单替代。[NVIDIA](https://blogs.nvidia.com/blog/nvidia-aws-ai-production-scale/)
 4. **Google：Gemini 3.5 Flash 原生支持 computer use。** Google 6 月 24 日把 computer use 作为 Gemini 3.5 Flash 内置工具开放。重要性：浏览器、桌面和移动端 agent 能力进入主力模型，而不是独立实验模型。[Google Blog](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-computer-use-gemini-3-5-flash/)、[Gemini API release notes](https://ai.google.dev/gemini-api/docs/changelog)
 5. **Meta：与 EssilorLuxottica 推出 Meta Glasses。** Meta 6 月 23 日发布新 AI 眼镜系列，26 种款式，并从首发起集成 Muse Spark 驱动的 Meta AI。重要性：AI 眼镜从单一 Ray-Ban Meta 扩展到更宽价格和风格矩阵。[Meta](https://about.fb.com/news/2026/06/meta-essilorluxottica-partner-launch-meta-glasses/)、[EssilorLuxottica](https://www.essilorluxottica.com/en/newsroom/press-releases/essilorluxottica-meta-new-wearables-collection/)
-6. **SK Hynix：12 层 HBM4E 出样。** SK Hynix 6 月 18 日发布 12-high HBM4E 样品，相关信息在本周继续发酵；媒体同周报道其拟通过美国 ADR 融资约 290 亿美元。重要性：HBM4E 与先进封装扩产是下一代 AI 加速器关键瓶颈。[SK Hynix](https://news.skhynix.com/12-layer-hbm4e-sample/)、[PR Newswire](https://www.prnewswire.com/news-releases/sk-hynix-ships-samples-of-12-layer-next-gen-hbm4e-302803714.html)、[WSJ](https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-06-24-2026/card/XGzboqrIxtaxRTnlNlHT)
-7. **Apple / Microsoft 终端价格受到内存成本冲击。** 多家媒体本周报道 Apple 和 Microsoft 上调部分产品价格，原因指向 AI 数据中心需求推高内存/存储成本。重要性：AI 基建成本开始外溢到消费电子和企业终端采购。[CBS News](https://www.cbsnews.com/news/apple-price-hikes-macbook-ipad-2026/)、[Al Jazeera](https://www.aljazeera.com/economy/2026/6/26/apple-microsoft-hike-prices-over-surging-chip-costs)
+6. **SK Hynix：HBM4E 客户验证与 ADR 融资报道成为本周跟踪重点。** 12-high HBM4E 出样公告发生在 6 月 18 日，早于本覆盖周；本周新增变化是 WSJ、FT 等媒体报道其拟通过美国 ADR 融资约 290 亿美元。重要性：HBM4E 与先进封装扩产是下一代 AI 加速器关键瓶颈。[SK Hynix](https://news.skhynix.com/12-layer-hbm4e-sample/)、[PR Newswire](https://www.prnewswire.com/news-releases/sk-hynix-ships-samples-of-12-layer-next-gen-hbm4e-302803714.html)、[WSJ](https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-06-24-2026/card/XGzboqrIxtaxRTnlNlHT)
+7. **媒体称 Apple / Microsoft 终端价格可能受到内存成本冲击。** 多家媒体本周报道 Apple 和 Microsoft 上调部分产品价格，原因指向 AI 数据中心需求推高内存/存储成本。重要性：如果属实，AI 基建成本开始外溢到消费电子和企业终端采购。[CBS News](https://www.cbsnews.com/news/apple-price-hikes-macbook-ipad-2026/)、[Al Jazeera](https://www.aljazeera.com/economy/2026/6/26/apple-microsoft-hike-prices-over-surging-chip-costs)
 
 ## 2. 影响力速览
 | 公司 | 重大事件数量 | 本周影响判断 | 关键词 |
 |---|---:|---|---|
-| Apple | 1 | 负面/混合 | 内存成本、终端涨价、AI 成本外溢 |
+| Apple | 1 | 负面/混合 | 媒体称涨价、内存成本、AI 成本可能外溢 |
 | Microsoft | 2 | 正面/混合 | Pecos 2GW、Wisconsin 投产、终端涨价 |
-| Alphabet / Google | 2 | 正面/混合 | Gemini computer use、Gemini 3.5 Pro 延后报道 |
+| Alphabet / Google | 2 | 正面/混合 | Gemini computer use、Gemini 3.5 Pro 7月发布报道 |
 | Amazon | 3 | 正面/混合 | 印度 AI 云投资、Trainium、EC2 GPU 定价 |
 | Meta | 2 | 正面 | Meta Glasses、Altoona 数据中心披露 |
 | NVIDIA | 3 | 正面 | AWS 协作、BioNeMo Agent Toolkit、TOP500 |
@@ -30,7 +30,7 @@
 ### Apple
 - 日期：2026-06-25 至 2026-06-28
 - 事件：媒体报道 Apple 上调部分 MacBook、iPad 等产品价格，原因指向 AI 数据中心需求导致的 DRAM/存储成本上升。
-- 影响：AI 基础设施需求通过内存供应链传导到消费电子 BOM；短期对 Apple 毛利率和需求弹性偏负面，对 DRAM/HBM 供应商议价偏正面。
+- 影响：如果媒体报道属实，AI 基础设施需求可能通过内存供应链传导到消费电子 BOM；短期对 Apple 毛利率和需求弹性偏负面，对 DRAM/HBM 供应商议价偏正面。
 - 可信度：多源媒体报道，未发现 Apple 官方新闻稿；按“媒体报道/待官方确认”处理。
 - 来源：[CBS News](https://www.cbsnews.com/news/apple-price-hikes-macbook-ipad-2026/)、[Al Jazeera](https://www.aljazeera.com/economy/2026/6/26/apple-microsoft-hike-prices-over-surging-chip-costs)、[The Guardian](https://www.theguardian.com/technology/2026/jun/25/apple-price-hike)
 
@@ -55,8 +55,8 @@
 - 来源：[Google Blog](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-computer-use-gemini-3-5-flash/)、[Gemini API release notes](https://ai.google.dev/gemini-api/docs/changelog)
 
 - 日期：2026-06-25 至 2026-06-28
-- 事件：Business Insider 等媒体报道 Google 将 Gemini 3.5 Pro 推迟到 7 月，以继续优化长周期 agent 任务和早测反馈。
-- 影响：短期可能影响 Google 在 frontier model 节奏上的市场预期；中期看，延迟若换来更稳定的长任务能力，对企业采用更重要。
+- 事件：Business Insider 等媒体称 Gemini 3.5 Pro 发布时间可能在 7 月，原因是 Google 仍在优化长周期 agent 任务和早测反馈；未见 Google 官方确认。
+- 影响：短期可能影响市场对 Google frontier model 发布节奏的判断；中期看，若更多测试换来更稳定的长任务能力，对企业采用更重要。
 - 可信度：媒体报道，未见 Google 官方确认；按“媒体报道/待官方确认”处理。
 - 来源：[Business Insider](https://www.businessinsider.com/google-3-5-pro-july-release-tokens-ai-agents-model-2026-6)
 
@@ -174,49 +174,33 @@ flowchart LR
   HXSC["SK Hynix"]
   TSMC["TSMC"]
   EXTEL["外部:EssilorLuxottica"]
-  EXTARM["外部:Arm"]
   EXTEUV["外部:ASML/EUV"]
 
-  TSMC -->|"先进制程:A/M/S芯片"| AAPL
-  TSMC -->|"先进制程/封装:AI GPU"| NVDA
-  TSMC -->|"先进制程:云AI ASIC 市场观点"| GOOGL
-  TSMC -->|"先进制程:Trainium/Graviton 市场观点"| AMZN
-  TSMC -->|"先进制程:FSD/Dojo 市场观点"| TSLA
-  HXSC -->|"HBM4E/HBM4/HBM3E"| NVDA
-  SSNLF -->|"HBM4/HBM4E"| NVDA
-  SSNLF -->|"DRAM/NAND/OLED 长期供应"| AAPL
-  NVDA -->|"GPU/AI加速卡"| MSFT
-  NVDA -->|"GPU/AI加速卡"| AMZN
-  NVDA -->|"GPU/AI基础设施"| GOOGL
-  NVDA -->|"AI训练/推理GPU"| META
-  NVDA -->|"AI训练/自动驾驶算力"| TSLA
-  AMZN -->|"AWS Trainium 云服务"| META
-  AMZN -->|"AWS Graviton CPU 基线"| META
-  META -->|"Meta Glasses 联合产品"| EXTEL
-  EXTARM -->|"Arm CPU ISA"| AMZN
-  EXTEUV -->|"EUV设备:HBM/DRAM扩产"| HXSC
-  EXTEUV -->|"EUV设备:先进制程"| TSMC
+  TSMC -->|"E01 先进制程:A/M/S芯片"| AAPL
+  TSMC -->|"E02 先进制程/封装:AI GPU"| NVDA
+  HXSC -->|"E03 HBM4E/HBM4/HBM3E"| NVDA
+  SSNLF -->|"E04 HBM4/HBM4E"| NVDA
+  SSNLF -->|"E05 DRAM/NAND/OLED 基线"| AAPL
+  NVDA -->|"E06 GPU/AI加速卡 基线"| MSFT
+  NVDA -->|"E07 GPU/AI加速卡"| AMZN
+  AMZN -->|"E08 Trainium3 云训练服务"| AIEXT["外部:AI客户"]
+  META -->|"E09 Meta Glasses 联合产品"| EXTEL
+  EXTEUV -->|"E10 EUV设备:HBM/DRAM扩产"| HXSC
 ```
 
 ### 6.2 供应关系明细表
-| 供应方 | 客户/使用方 | 具体产品/服务 | 关系类型 | 本周证据 | 本周状态 | 来源链接 |
-|---|---|---|---|---|---|---|
-| TSMC | Apple | A/M/S 系列芯片先进制程代工 | 代工 | 本周 TSMC 涨价报道列 Apple 为受影响客户；无官方新公告 | 延续/风险 | [Tom's Hardware](https://www.tomshardware.com/tech-industry/semiconductors/tsmc-is-reportedly-hiking-prices-for-all-advanced-nodes-accounting-for-74-percent-of-the-companys-wafer-business-nvidia-amd-apple-qualcomm-and-others-will-face-higher-wafer-costs) |
-| TSMC | NVIDIA | AI GPU 先进制程与封装 | 代工/封装 | TSMC 涨价报道列 NVIDIA 为受影响客户；NVIDIA AI 基础设施需求本周继续强 | 延续/增强 | [Tom's Hardware](https://www.tomshardware.com/tech-industry/semiconductors/tsmc-is-reportedly-hiking-prices-for-all-advanced-nodes-accounting-for-74-percent-of-the-companys-wafer-business-nvidia-amd-apple-qualcomm-and-others-will-face-higher-wafer-costs)、[NVIDIA](https://blogs.nvidia.com/blog/top500-green500-supercomputers-isc-2026/) |
-| TSMC | Alphabet / Google | TPU/云 AI ASIC 先进制程 | 代工 | 本周无直接官方披露；作为长期关键关系保留 | 延续/上周基线不足 | [TSMC Latest News](https://pr.tsmc.com/english/latest-news) |
-| TSMC | Amazon / AWS | Trainium/Graviton 等云芯片先进制程 | 代工 | 本周 AWS Trainium 采用增强；具体代工来源未在本周 Amazon 文中明示 | 延续/未确认 | [Amazon Trainium](https://www.aboutamazon.com/news/aws/why-ai-startups-choose-amazon-trainium-chips) |
-| SK Hynix | NVIDIA/AI 加速器客户 | HBM4E/HBM4/HBM3E | 内存供应 | SK Hynix HBM4E 出样；ADR 融资报道指向 HBM/先进封装扩产 | 增强 | [SK Hynix](https://news.skhynix.com/12-layer-hbm4e-sample/)、[PR Newswire](https://www.prnewswire.com/news-releases/sk-hynix-ships-samples-of-12-layer-next-gen-hbm4e-302803714.html) |
-| Samsung Electronics | NVIDIA/AI 加速器客户 | HBM4/HBM4E | 内存供应 | Samsung 2026 Sustainability Report 强调 AI 时代半导体低功耗/能效；本周无新客户奖项 | 延续 | [Samsung Newsroom](https://news.samsung.com/global/samsung-electronics-releases-2026-sustainability-report-expanding-water-replenishment-efforts) |
-| Samsung Electronics | Apple | DRAM/NAND/OLED 等零部件 | 供应 | Apple 价格报道显示内存/存储成本压力；具体供应商份额未在本周确认 | 风险/基线不足 | [CBS News](https://www.cbsnews.com/news/apple-price-hikes-macbook-ipad-2026/) |
-| NVIDIA | Microsoft | GPU/AI 加速卡、网络与软件生态 | 供应 | Microsoft 2GW Pecos 和 Wisconsin 投产说明 AI 算力需求延续；具体采购未披露 | 增强/基线不足 | [Microsoft](https://blogs.microsoft.com/blog/2026/06/22/powering-the-next-wave-of-ai-expanding-capacity-with-our-new-datacenter-in-pecos/) |
-| NVIDIA | Amazon / AWS | GPU/AI 基础设施与软件栈 | 供应/合作 | NVIDIA 与 AWS 本周发布生产级 AI 协作进展 | 增强 | [NVIDIA-AWS](https://blogs.nvidia.com/blog/nvidia-aws-ai-production-scale/) |
-| NVIDIA | Alphabet / Google | GPU/AI 基础设施 | 供应 | 本周无新直接采购公告；Google agent/AI 需求增强 | 延续/基线不足 | [Google Blog](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-computer-use-gemini-3-5-flash/) |
-| NVIDIA | Meta | AI 训练/推理 GPU | 供应 | Meta 数据中心披露强化基础设施需求；本周无采购细节 | 延续/基线不足 | [Meta Data Center](https://about.fb.com/news/2026/06/inside-meta-data-center/) |
-| NVIDIA | Tesla | AI 训练/自动驾驶算力 | 供应 | 本周无新采购披露；长期关键关系，基线不足 | 延续/基线不足 | [Tesla IR](https://ir.tesla.com/press-release/delivery-consensus-second-quarter-2026) |
-| Amazon / AWS | AI 初创企业/客户 | Trainium3、Bedrock、云训练服务 | 云服务/竞争替代 | Amazon 披露 Odyssey 等 AI startup 使用 Trainium | 增强 | [Amazon Trainium](https://www.aboutamazon.com/news/aws/why-ai-startups-choose-amazon-trainium-chips) |
-| Amazon / AWS | Meta | Graviton CPU / 云服务基线 | 云服务 | 本周无新变化；作为历史基线保留，需后续验证 | 延续/基线不足 | [Amazon](https://www.aboutamazon.com/news/company-news/amazon-news-weekly-audio-recap-april-24-2026) |
-| Meta | EssilorLuxottica | Meta Glasses 镜框、镜片、渠道与 AI 眼镜产品 | 合作 | 双方本周正式发布 Meta Glasses | 新增 | [Meta](https://about.fb.com/news/2026/06/meta-essilorluxottica-partner-launch-meta-glasses/)、[EssilorLuxottica](https://www.essilorluxottica.com/en/newsroom/press-releases/essilorluxottica-meta-new-wearables-collection/) |
-| ASML/EUV | SK Hynix | EUV 设备用于 HBM/DRAM 扩产 | 设备供应 | SK Hynix ADR 融资报道提及 EUV 设备和先进制造投资 | 增强/媒体报道 | [Tom's Hardware](https://www.tomshardware.com/tech-industry/sk-hynix-files-to-raise-up-to-29-billion-in-nasdaq-listing) |
+| Edge ID | 供应方 | 客户/使用方 | 具体产品/服务 | 关系类型 | 本周证据 | 长期基线证据/限制 | 本周状态 | 来源链接 |
+|---|---|---|---|---|---|---|---|---|
+| E01 | TSMC | Apple | A/M/S 系列芯片先进制程代工 | 代工 | 本周 TSMC 涨价报道列 Apple 为受影响客户；无官方新公告 | 长期核心关系，但本周证据是媒体报道的价格风险，不是新供货确认 | 延续/风险 | [Tom's Hardware](https://www.tomshardware.com/tech-industry/semiconductors/tsmc-is-reportedly-hiking-prices-for-all-advanced-nodes-accounting-for-74-percent-of-the-companys-wafer-business-nvidia-amd-apple-qualcomm-and-others-will-face-higher-wafer-costs) |
+| E02 | TSMC | NVIDIA | AI GPU 先进制程与封装 | 代工/封装 | TSMC 涨价报道列 NVIDIA 为受影响客户；NVIDIA AI 基础设施需求本周继续强 | 具体订单/封装份额本周无官方新披露 | 延续/风险 | [Tom's Hardware](https://www.tomshardware.com/tech-industry/semiconductors/tsmc-is-reportedly-hiking-prices-for-all-advanced-nodes-accounting-for-74-percent-of-the-companys-wafer-business-nvidia-amd-apple-qualcomm-and-others-will-face-higher-wafer-costs)、[NVIDIA](https://blogs.nvidia.com/blog/top500-green500-supercomputers-isc-2026/) |
+| E03 | SK Hynix | NVIDIA/AI 加速器客户 | HBM4E/HBM4/HBM3E | 内存供应 | HBM4E 出样为覆盖周外事件；本周 ADR 融资报道指向 HBM/先进封装扩产 | 客户名单和订单规模需等待公司或客户进一步披露 | 增强/媒体报道 | [SK Hynix](https://news.skhynix.com/12-layer-hbm4e-sample/)、[PR Newswire](https://www.prnewswire.com/news-releases/sk-hynix-ships-samples-of-12-layer-next-gen-hbm4e-302803714.html)、[WSJ](https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-06-24-2026/card/XGzboqrIxtaxRTnlNlHT) |
+| E04 | Samsung Electronics | NVIDIA/AI 加速器客户 | HBM4/HBM4E | 内存供应 | Samsung 2026 Sustainability Report 强调 AI 时代半导体低功耗/能效；本周无新客户奖项 | 作为 HBM 竞争格局基线保留，不能解读为本周新增订单 | 延续/无本周新增证据 | [Samsung Newsroom](https://news.samsung.com/global/samsung-electronics-releases-2026-sustainability-report-expanding-water-replenishment-efforts) |
+| E05 | Samsung Electronics | Apple | DRAM/NAND/OLED 等零部件 | 供应 | Apple 价格报道显示内存/存储成本压力；具体供应商份额未在本周确认 | 长期零部件供应关系基线，当前只支持“成本风险”判断 | 风险/基线不足 | [CBS News](https://www.cbsnews.com/news/apple-price-hikes-macbook-ipad-2026/) |
+| E06 | NVIDIA | Microsoft | GPU/AI 加速卡、网络与软件生态 | 供应 | Microsoft 2GW Pecos 和 Wisconsin 投产说明 AI 算力需求延续；具体采购未披露 | 作为 AI 数据中心供应链基线保留，不标记为本周新采购 | 延续/基线不足 | [Microsoft](https://blogs.microsoft.com/blog/2026/06/22/powering-the-next-wave-of-ai-expanding-capacity-with-our-new-datacenter-in-pecos/) |
+| E07 | NVIDIA | Amazon / AWS | GPU/AI 基础设施与软件栈 | 供应/合作 | NVIDIA 与 AWS 本周发布生产级 AI 协作进展 | 这是本周最直接的供应/合作证据之一 | 增强 | [NVIDIA-AWS](https://blogs.nvidia.com/blog/nvidia-aws-ai-production-scale/) |
+| E08 | Amazon / AWS | AI 初创企业/客户 | Trainium3、Bedrock、云训练服务 | 云服务/竞争替代 | Amazon 披露 Odyssey 等 AI startup 使用 Trainium | 该边不是十家公司内部关系，但解释 AWS 自研芯片对 NVIDIA 的替代压力 | 增强 | [Amazon Trainium](https://www.aboutamazon.com/news/aws/why-ai-startups-choose-amazon-trainium-chips) |
+| E09 | Meta | EssilorLuxottica | Meta Glasses 镜框、镜片、渠道与 AI 眼镜产品 | 合作 | 双方本周正式发布 Meta Glasses | 本周新增、证据直接 | 新增 | [Meta](https://about.fb.com/news/2026/06/meta-essilorluxottica-partner-launch-meta-glasses/)、[EssilorLuxottica](https://www.essilorluxottica.com/en/newsroom/press-releases/essilorluxottica-meta-new-wearables-collection/) |
+| E10 | ASML/EUV | SK Hynix | EUV 设备用于 HBM/DRAM 扩产 | 设备供应 | SK Hynix ADR 融资报道提及 EUV 设备和先进制造投资 | 外部设备节点；媒体报道，需等待正式融资文件确认 | 增强/媒体报道 | [Tom's Hardware](https://www.tomshardware.com/tech-industry/sk-hynix-files-to-raise-up-to-29-billion-in-nasdaq-listing) |
 
 ### 6.3 与上周的区别
 因 `reports/latest.md` 和 `state/supply_graph_baseline.json` 此前不存在，本次为首次正式基线；以下对比基于公开来源重建，上周基线不足的关系已在表格中标注。
@@ -227,23 +211,23 @@ flowchart LR
 - 强化关系：
   - NVIDIA 与 AWS：本周 NVIDIA 官方发布双方生产级 AI 协作，关系从“长期合作”强化为“生产部署叙事”。
   - Microsoft 与 AI 基础设施供应链：Pecos 2GW 和 Wisconsin 投产强化其对 GPU、服务器、电力、冷却和建筑供应链的需求。
-  - SK Hynix 与 AI 加速器客户：HBM4E 样品和 ADR 融资报道强化其 HBM 扩产/验证逻辑。
+  - SK Hynix 与 AI 加速器客户：HBM4E 样品属于覆盖周外事件，但本周 ADR 融资报道强化了 HBM 扩产/验证逻辑。
   - Amazon 自研芯片路线：Trainium3 客户案例强化 AWS 自研 silicon 在 AI 训练中的定位。
 
 - 弱化或风险关系：
-  - Apple 与内存/存储供应链：涨价报道显示 DRAM/NAND 成本压力已经传导到终端价格。
+  - Apple 与内存/存储供应链：媒体称 DRAM/NAND 成本压力可能已经传导到终端价格，但缺少 Apple 官方确认。
   - AWS AI 云客户：EC2 Capacity Blocks for ML 涨价报道显示 GPU/HBM 稀缺成本向客户传导。
   - TSMC 客户群：先进节点涨价报道若确认，将增加 Apple、NVIDIA、Amazon、Google 等客户成本。
 
 - 无明显变化但关键关系：
   - TSMC 对 Apple、NVIDIA 和云 ASIC 客户的先进制程地位仍是核心瓶颈。
   - Samsung 与 SK Hynix 在 HBM/DRAM/NAND 中的议价能力仍受 AI 服务器需求支撑。
-  - NVIDIA 对 Microsoft、AWS、Google、Meta、Tesla 的 AI 训练/推理基础设施影响仍未被自研芯片完全替代。
+  - NVIDIA 对 Microsoft、AWS 等 hyperscaler 的 AI 训练/推理基础设施影响仍未被自研芯片完全替代；Google、Meta、Tesla 本周没有足够直接证据进入主图。
 
 ## 7. 本期自检
 - 日期范围已限定为 2026-06-22 至 2026-06-28；SK Hynix HBM4E 出样发生在 6 月 18 日，但本周继续构成供应链主要跟踪事项，已明确标注。
 - 10 家公司均已覆盖；无官方确认的事项均标注为“媒体报道/待官方确认”或“基线不足”。
 - 每条事件均附来源链接，优先使用公司公告、官方博客、IR 页面和权威媒体。
 - Mermaid 使用 `flowchart LR` 和 ASCII 节点 ID，包含全部 10 家覆盖公司。
-- 图中重要边均能在 6.2 表格中找到证据或风险标注。
-- GitHub 同步：本地报告已替换生成；提交与推送在本次文件校验后执行。
+- 图中所有关系边均能在 6.2 表格中找到相同 Edge ID 的证据或风险标注；无本周直接证据的边已从主图删除或降级为基线说明。
+- GitHub 同步：上一版已完成，commit: 761a42b，branch: main；本审查修正版将在校验通过后追加提交。
