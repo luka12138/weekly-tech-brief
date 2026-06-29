@@ -1,6 +1,6 @@
 # 周一晨间科技巨头简报
 - 覆盖期间：2026-06-22 至 2026-06-28（Asia/Shanghai）
-- 生成时间：2026-06-29 10:20（Asia/Shanghai，流程优化后重跑并替换旧版）
+- 生成时间：2026-06-29 17:05（Asia/Shanghai，本轮自动化复核）
 - 本期文件：reports/2026-06-29_weekly_morning_brief.md
 
 ## 1. 本周最重要的 5-8 件事
@@ -230,4 +230,5 @@ flowchart LR
 - 每条事件均附来源链接，优先使用公司公告、官方博客、IR 页面和权威媒体。
 - Mermaid 使用 `flowchart LR` 和 ASCII 节点 ID，包含全部 10 家覆盖公司。
 - 图中所有关系边均能在 6.2 表格中找到相同 Edge ID 的证据或风险标注；无本周直接证据的边已从主图删除或降级为基线说明。
-- 质量闸门：已新增并运行 `scripts/validate_weekly_brief.py`，校验 JSON、日期、latest 链接、Mermaid/Table/JSON Edge ID 一致性和低置信度标注。
+- 质量闸门：已运行 `scripts/validate_weekly_brief.py`，校验 JSON、日期、latest 链接、Mermaid/Table/JSON Edge ID 一致性和低置信度标注，本轮结果为通过。
+- GitHub 同步：质量闸门通过后，本期文件、latest、供应关系基线和校验脚本已提交并推送至 `origin/main`。
