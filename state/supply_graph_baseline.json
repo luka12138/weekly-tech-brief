@@ -1,0 +1,150 @@
+{
+  "generation_date": "2026-06-29",
+  "coverage_period": {
+    "start": "2026-06-22",
+    "end": "2026-06-28",
+    "timezone": "Asia/Shanghai"
+  },
+  "companies": [
+    "Apple",
+    "Microsoft",
+    "Alphabet / Google",
+    "Amazon / AWS",
+    "Meta",
+    "NVIDIA",
+    "Tesla",
+    "Samsung Electronics",
+    "SK Hynix",
+    "TSMC"
+  ],
+  "edges": [
+    {
+      "supplier": "TSMC",
+      "customer": "Apple",
+      "product_or_service": "A/M/S series chips advanced-node foundry",
+      "relationship_type": "foundry",
+      "status": "continued_risk",
+      "confidence": "medium",
+      "sources": [
+        "https://www.tomshardware.com/tech-industry/semiconductors/tsmc-is-reportedly-hiking-prices-for-all-advanced-nodes-accounting-for-74-percent-of-the-companys-wafer-business-nvidia-amd-apple-qualcomm-and-others-will-face-higher-wafer-costs"
+      ],
+      "notes": "Weekly evidence is media-reported TSMC pricing pressure, not a new official TSMC/Apple supply announcement."
+    },
+    {
+      "supplier": "TSMC",
+      "customer": "NVIDIA",
+      "product_or_service": "AI GPU advanced-node foundry and packaging",
+      "relationship_type": "foundry_packaging",
+      "status": "continued_strengthened",
+      "confidence": "medium",
+      "sources": [
+        "https://www.tomshardware.com/tech-industry/semiconductors/tsmc-is-reportedly-hiking-prices-for-all-advanced-nodes-accounting-for-74-percent-of-the-companys-wafer-business-nvidia-amd-apple-qualcomm-and-others-will-face-higher-wafer-costs",
+        "https://blogs.nvidia.com/blog/top500-green500-supercomputers-isc-2026/"
+      ],
+      "notes": "Pricing story and NVIDIA AI infrastructure demand support strengthened relevance."
+    },
+    {
+      "supplier": "SK Hynix",
+      "customer": "NVIDIA and AI accelerator customers",
+      "product_or_service": "HBM4E/HBM4/HBM3E",
+      "relationship_type": "memory_supply",
+      "status": "strengthened",
+      "confidence": "high",
+      "sources": [
+        "https://news.skhynix.com/12-layer-hbm4e-sample/",
+        "https://www.prnewswire.com/news-releases/sk-hynix-ships-samples-of-12-layer-next-gen-hbm4e-302803714.html"
+      ],
+      "notes": "HBM4E samples are the clearest supply-chain catalyst in the period, although the announcement date precedes the covered week."
+    },
+    {
+      "supplier": "Samsung Electronics",
+      "customer": "NVIDIA and AI accelerator customers",
+      "product_or_service": "HBM4/HBM4E",
+      "relationship_type": "memory_supply",
+      "status": "continued",
+      "confidence": "medium",
+      "sources": [
+        "https://news.samsung.com/global/samsung-electronics-releases-2026-sustainability-report-expanding-water-replenishment-efforts"
+      ],
+      "notes": "This week added sustainability and efficiency context rather than a new customer award."
+    },
+    {
+      "supplier": "NVIDIA",
+      "customer": "Amazon / AWS",
+      "product_or_service": "NVIDIA GPU and AI infrastructure software stack",
+      "relationship_type": "supply_cooperation",
+      "status": "strengthened",
+      "confidence": "high",
+      "sources": [
+        "https://blogs.nvidia.com/blog/nvidia-aws-ai-production-scale/"
+      ],
+      "notes": "Weekly confirmed NVIDIA-AWS production AI collaboration."
+    },
+    {
+      "supplier": "NVIDIA",
+      "customer": "Microsoft",
+      "product_or_service": "GPU/AI accelerators and AI infrastructure ecosystem",
+      "relationship_type": "supply",
+      "status": "strengthened_baseline_insufficient",
+      "confidence": "medium",
+      "sources": [
+        "https://blogs.microsoft.com/blog/2026/06/22/powering-the-next-wave-of-ai-expanding-capacity-with-our-new-datacenter-in-pecos/"
+      ],
+      "notes": "Microsoft disclosed major AI capacity expansion but not specific weekly GPU procurement."
+    },
+    {
+      "supplier": "Amazon / AWS",
+      "customer": "AI startups and cloud customers",
+      "product_or_service": "Trainium3, Bedrock, cloud training services",
+      "relationship_type": "cloud_supply_competitive_substitute",
+      "status": "strengthened",
+      "confidence": "high",
+      "sources": [
+        "https://www.aboutamazon.com/news/aws/why-ai-startups-choose-amazon-trainium-chips"
+      ],
+      "notes": "Trainium3 customer case strengthens AWS custom silicon positioning."
+    },
+    {
+      "supplier": "Meta",
+      "customer": "EssilorLuxottica",
+      "product_or_service": "Meta Glasses AI eyewear line",
+      "relationship_type": "product_partnership",
+      "status": "new",
+      "confidence": "high",
+      "sources": [
+        "https://about.fb.com/news/2026/06/meta-essilorluxottica-partner-launch-meta-glasses/",
+        "https://www.essilorluxottica.com/en/newsroom/press-releases/essilorluxottica-meta-new-wearables-collection/"
+      ],
+      "notes": "New weekly product launch and confirmed partner relationship."
+    },
+    {
+      "supplier": "ASML/EUV",
+      "customer": "SK Hynix",
+      "product_or_service": "EUV equipment for AI memory expansion",
+      "relationship_type": "equipment_supply",
+      "status": "strengthened_media_reported",
+      "confidence": "medium",
+      "sources": [
+        "https://www.tomshardware.com/tech-industry/sk-hynix-files-to-raise-up-to-29-billion-in-nasdaq-listing"
+      ],
+      "notes": "Media-reported use of ADR proceeds includes EUV and advanced manufacturing capacity."
+    }
+  ],
+  "sources": [
+    "https://blogs.microsoft.com/blog/2026/06/22/powering-the-next-wave-of-ai-expanding-capacity-with-our-new-datacenter-in-pecos/",
+    "https://news.microsoft.com/source/2026/06/23/microsoft-completes-construction-on-first-datacenter-facility-in-mount-pleasant-wisconsin/",
+    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-computer-use-gemini-3-5-flash/",
+    "https://ai.google.dev/gemini-api/docs/changelog",
+    "https://www.aboutamazon.com/news/company-news/amazon-india-investment",
+    "https://www.aboutamazon.com/news/aws/why-ai-startups-choose-amazon-trainium-chips",
+    "https://about.fb.com/news/2026/06/meta-essilorluxottica-partner-launch-meta-glasses/",
+    "https://blogs.nvidia.com/blog/nvidia-aws-ai-production-scale/",
+    "https://nvidianews.nvidia.com/news/nvidia-launches-bionemo-agent-toolkit-giving-ai-agents-the-tools-to-accelerate-scientific-discovery",
+    "https://ir.tesla.com/press-release/delivery-consensus-second-quarter-2026",
+    "https://news.samsung.com/global/samsung-electronics-releases-2026-sustainability-report-expanding-water-replenishment-efforts",
+    "https://news.skhynix.com/12-layer-hbm4e-sample/",
+    "https://pr.tsmc.com/english/latest-news"
+  ],
+  "confidence": "mixed",
+  "notes": "This file replaces the earlier 2026-06-29 baseline. No prior baseline existed, so week-over-week differences were reconstructed from public sources. Media-reported items are explicitly marked in the Markdown report."
+}
