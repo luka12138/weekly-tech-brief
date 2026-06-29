@@ -230,5 +230,5 @@
     "https://pr.tsmc.com/english/latest-news"
   ],
   "confidence": "mixed",
-  "notes": "This reviewed baseline replaces commit 761a42b. No prior baseline existed, so week-over-week differences were reconstructed from public sources. Graph, Markdown table, and JSON now share edge IDs E01-E10. Media-reported and baseline-insufficient items are explicitly marked."
+  "notes": "This script-validated baseline replaces prior 2026-06-29 outputs. No prior baseline existed, so week-over-week differences were reconstructed from public sources. Graph, Markdown table, and JSON now share edge IDs E01-E10. Media-reported and baseline-insufficient items are explicitly marked."
 }
