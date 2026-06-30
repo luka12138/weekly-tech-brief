@@ -34,6 +34,7 @@ reports/
 
 assets/
   YYYY-MM-DD_product_relationships.svg
+  YYYY-MM-DD_supply_relationships.svg
 
 state/
   supply_graph_baseline.json
@@ -45,6 +46,7 @@ logs/
 scripts/
   audit_sources.py
   build_product_graph_svg.py
+  build_supply_graph_svg.py
   validate_weekly_brief.py
 ```
 
@@ -54,7 +56,11 @@ scripts/
 
 `state/product_relationships_YYYY.json` stores the annual product-level upstream/downstream map. It should be based on the most official available sources for the year, such as annual reports, investor relations pages, regulatory filings, and company newsroom posts.
 
-`assets/YYYY-MM-DD_product_relationships.svg` is the rendered image included in the weekly report.
+`assets/YYYY-MM-DD_product_relationships.svg` is the rendered annual product relationship image included in the weekly report.
+
+`assets/YYYY-MM-DD_supply_relationships.svg` is the rendered weekly supply-chain relationship image.
+
+Both generated SVGs use an Obsidian graph-view style: dark background, radial node layout, graph-like edges, and evidence/status color coding.
 
 `logs/YYYY-MM-DD_source_audit.json` stores the source authenticity audit for the report.
 
@@ -75,6 +81,7 @@ Each weekly brief is expected to include:
 The supply-chain section should also include a rendered product relationship image:
 
 - `assets/YYYY-MM-DD_product_relationships.svg`
+- `assets/YYYY-MM-DD_supply_relationships.svg`
 
 The supply-chain section uses matching `Edge ID`s across:
 
@@ -95,7 +102,8 @@ python3 scripts/validate_weekly_brief.py \
   --latest reports/latest.md \
   --source-audit logs/2026-06-29_source_audit.json \
   --product-graph state/product_relationships_2026.json \
-  --product-image assets/2026-06-29_product_relationships.svg
+  --product-image assets/2026-06-29_product_relationships.svg \
+  --supply-image assets/2026-06-29_supply_relationships.svg
 ```
 
 The validator checks:
@@ -108,6 +116,7 @@ The validator checks:
 - Low-confidence or media-reported relationships include limitation language
 - Source audit exists and has no unclassified or unreachable URLs
 - Product relationship image exists and is referenced by the report
+- Supply relationship image exists and is referenced by the report
 - Product relationship JSON covers all ten companies and has official sources
 
 ## Source Authenticity Audit
@@ -139,6 +148,10 @@ Build the product-level relationship image from structured JSON:
 python3 scripts/build_product_graph_svg.py \
   --input state/product_relationships_2026.json \
   --output assets/YYYY-MM-DD_product_relationships.svg
+
+python3 scripts/build_supply_graph_svg.py \
+  --input state/supply_graph_baseline.json \
+  --output assets/YYYY-MM-DD_supply_relationships.svg
 ```
 
 The JSON should be updated from the most official available annual sources for the year. Relationships with weaker evidence must use a weaker `evidence_level` instead of being shown as fully confirmed.
@@ -154,7 +167,8 @@ python3 scripts/validate_weekly_brief.py \
   --latest reports/latest.md \
   --source-audit logs/YYYY-MM-DD_source_audit.json \
   --product-graph state/product_relationships_YYYY.json \
-  --product-image assets/YYYY-MM-DD_product_relationships.svg
+  --product-image assets/YYYY-MM-DD_product_relationships.svg \
+  --supply-image assets/YYYY-MM-DD_supply_relationships.svg
 
 git status
 git add reports/ assets/ state/ logs/ scripts/

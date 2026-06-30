@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="860" viewBox="0 0 1180 860">
+<rect width="100%" height="100%" fill="#0f172a"/>
+<circle cx="590" cy="448" r="160" fill="none" stroke="#334155" stroke-width="1" stroke-opacity="0.75"/>
+<circle cx="590" cy="448" r="250" fill="none" stroke="#334155" stroke-width="1" stroke-opacity="0.55"/>
+<circle cx="590" cy="448" r="335" fill="none" stroke="#334155" stroke-width="1" stroke-opacity="0.35"/>
+<text x="40" y="44" font-size="22" font-weight="800" fill="#f8fafc">Weekly Supply Graph 2026-06-22 to 2026-06-28</text>
+<text x="40" y="68" font-size="12" fill="#94a3b8">Obsidian-style graph view generated from state/supply_graph_baseline.json.</text>
+<text x="40" y="820" font-size="11" fill="#94a3b8">Edge colors: green=new, blue=strengthened, amber=risk/media, gray=baseline.</text>
+<path d="M 404.8 193.2 Q 543.7 305.5 590.0 133.0" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-opacity="0.72"/>
+<text x="520.6" y="234.3" font-size="9" fill="#f59e0b">E01 A/M/S series chips advanced-node foundry</text>
+<path d="M 404.8 193.2 Q 543.7 463.0 590.0 763.0" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-opacity="0.72"/>
+<text x="520.6" y="470.6" font-size="9" fill="#f59e0b">E02 AI GPU advanced-node foundry and packagi</text>
+<path d="M 290.4 350.7 Q 515.1 502.4 590.0 763.0" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.72"/>
+<text x="477.7" y="529.6" font-size="9" fill="#38bdf8">E03 HBM4E/HBM4/HBM3E</text>
+<path d="M 290.4 545.3 Q 515.1 551.1 590.0 763.0" fill="none" stroke="#22c55e" stroke-width="1.5" stroke-opacity="0.72"/>
+<text x="477.7" y="602.6" font-size="9" fill="#22c55e">E04 HBM4/HBM4E</text>
+<path d="M 290.4 545.3 Q 515.1 393.6 590.0 133.0" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-opacity="0.72"/>
+<text x="477.7" y="366.4" font-size="9" fill="#f59e0b">E05 DRAM/NAND/OLED components</text>
+<path d="M 590.0 763.0 Q 636.3 463.0 775.2 193.2" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.72"/>
+<text x="659.4" y="470.6" font-size="9" fill="#38bdf8">E06 GPU/AI accelerators and AI infrastructur</text>
+<path d="M 590.0 763.0 Q 664.9 551.1 889.6 545.3" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.72"/>
+<text x="702.3" y="602.6" font-size="9" fill="#38bdf8">E07 NVIDIA GPU and AI infrastructure softwar</text>
+<path d="M 889.6 545.3 Q 749.3 423.6 927.7 253.0" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.72"/>
+<text x="829.0" y="411.4" font-size="9" fill="#38bdf8">E08 Trainium3, Bedrock, cloud training servi</text>
+<path d="M 775.2 702.8 Q 636.3 609.2 590.0 838.0" fill="none" stroke="#22c55e" stroke-width="1.5" stroke-opacity="0.72"/>
+<text x="659.4" y="689.8" font-size="9" fill="#22c55e">E09 Meta Glasses AI eyewear line</text>
+<path d="M 252.3 253.0 Q 430.7 374.9 290.4 350.7" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.72"/>
+<text x="351.0" y="338.4" font-size="9" fill="#38bdf8">E10 EUV equipment for HBM/DRAM expansion</text>
+<circle cx="590.0" cy="133.0" r="29" fill="#a78bfa" fill-opacity="0.20" stroke="#a78bfa" stroke-width="2"/>
+<circle cx="590.0" cy="133.0" r="5" fill="#a78bfa"/>
+<text x="590.0" y="94.0" text-anchor="middle" font-size="13" font-weight="700" fill="#e5e7eb">Apple</text>
+<circle cx="775.2" cy="193.2" r="29" fill="#a78bfa" fill-opacity="0.20" stroke="#a78bfa" stroke-width="2"/>
+<circle cx="775.2" cy="193.2" r="5" fill="#a78bfa"/>
+<text x="775.2" y="154.2" text-anchor="middle" font-size="13" font-weight="700" fill="#e5e7eb">Microsoft</text>
+<circle cx="889.6" cy="350.7" r="29" fill="#a78bfa" fill-opacity="0.20" stroke="#a78bfa" stroke-width="2"/>
+<circle cx="889.6" cy="350.7" r="5" fill="#a78bfa"/>
+<text x="889.6" y="311.7" text-anchor="middle" font-size="13" font-weight="700" fill="#e5e7eb">Alphabet / Google</text>
+<circle cx="889.6" cy="545.3" r="29" fill="#a78bfa" fill-opacity="0.20" stroke="#a78bfa" stroke-width="2"/>
+<circle cx="889.6" cy="545.3" r="5" fill="#a78bfa"/>
+<text x="889.6" y="506.3" text-anchor="middle" font-size="13" font-weight="700" fill="#e5e7eb">Amazon / AWS</text>
+<circle cx="775.2" cy="702.8" r="29" fill="#a78bfa" fill-opacity="0.20" stroke="#a78bfa" stroke-width="2"/>
+<circle cx="775.2" cy="702.8" r="5" fill="#a78bfa"/>
+<text x="775.2" y="663.8" text-anchor="middle" font-size="13" font-weight="700" fill="#e5e7eb">Meta</text>
+<circle cx="590.0" cy="763.0" r="29" fill="#a78bfa" fill-opacity="0.20" stroke="#a78bfa" stroke-width="2"/>
+<circle cx="590.0" cy="763.0" r="5" fill="#a78bfa"/>
+<text x="590.0" y="724.0" text-anchor="middle" font-size="13" font-weight="700" fill="#e5e7eb">NVIDIA</text>
+<circle cx="404.8" cy="702.8" r="29" fill="#a78bfa" fill-opacity="0.20" stroke="#a78bfa" stroke-width="2"/>
+<circle cx="404.8" cy="702.8" r="5" fill="#a78bfa"/>
+<text x="404.8" y="663.8" text-anchor="middle" font-size="13" font-weight="700" fill="#e5e7eb">Tesla</text>
+<circle cx="290.4" cy="545.3" r="29" fill="#a78bfa" fill-opacity="0.20" stroke="#a78bfa" stroke-width="2"/>
+<circle cx="290.4" cy="545.3" r="5" fill="#a78bfa"/>
+<text x="290.4" y="506.3" text-anchor="middle" font-size="13" font-weight="700" fill="#e5e7eb">Samsung Electronics</text>
+<circle cx="290.4" cy="350.7" r="29" fill="#a78bfa" fill-opacity="0.20" stroke="#a78bfa" stroke-width="2"/>
+<circle cx="290.4" cy="350.7" r="5" fill="#a78bfa"/>
+<text x="290.4" y="311.7" text-anchor="middle" font-size="13" font-weight="700" fill="#e5e7eb">SK Hynix</text>
+<circle cx="404.8" cy="193.2" r="29" fill="#a78bfa" fill-opacity="0.20" stroke="#a78bfa" stroke-width="2"/>
+<circle cx="404.8" cy="193.2" r="5" fill="#a78bfa"/>
+<text x="404.8" y="154.2" text-anchor="middle" font-size="13" font-weight="700" fill="#e5e7eb">TSMC</text>
+<circle cx="927.7" cy="253.0" r="22" fill="#94a3b8" fill-opacity="0.20" stroke="#94a3b8" stroke-width="2"/>
+<circle cx="927.7" cy="253.0" r="5" fill="#94a3b8"/>
+<text x="927.7" y="221.0" text-anchor="middle" font-size="13" font-weight="700" fill="#e5e7eb">AI customers</text>
+<circle cx="590.0" cy="838.0" r="22" fill="#94a3b8" fill-opacity="0.20" stroke="#94a3b8" stroke-width="2"/>
+<circle cx="590.0" cy="838.0" r="5" fill="#94a3b8"/>
+<text x="590.0" y="806.0" text-anchor="middle" font-size="13" font-weight="700" fill="#e5e7eb">EssilorLuxottica</text>
+<circle cx="252.3" cy="253.0" r="22" fill="#94a3b8" fill-opacity="0.20" stroke="#94a3b8" stroke-width="2"/>
+<circle cx="252.3" cy="253.0" r="5" fill="#94a3b8"/>
+<text x="252.3" y="221.0" text-anchor="middle" font-size="13" font-weight="700" fill="#e5e7eb">ASML/EUV</text>
+</svg>

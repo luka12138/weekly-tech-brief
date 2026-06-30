@@ -1,55 +1,44 @@
 #!/usr/bin/env python3
-"""Build an SVG product relationship graph from structured JSON."""
+"""Build an Obsidian-style SVG product relationship graph."""
 
 from __future__ import annotations
 
 import argparse
 import json
+import math
 from pathlib import Path
 from xml.sax.saxutils import escape
 
 
-COLORS = {
-    "device": "#dbeafe",
-    "cloud_ai": "#dcfce7",
-    "semiconductor": "#fef3c7",
-    "memory": "#fae8ff",
-    "auto_energy": "#fee2e2",
-    "external": "#e5e7eb",
-}
-
-COMPANY_X = {
-    "Apple": 70,
-    "Microsoft": 70,
-    "Alphabet / Google": 70,
-    "Amazon / AWS": 70,
-    "Meta": 70,
-    "Tesla": 70,
-    "NVIDIA": 470,
-    "Samsung Electronics": 470,
-    "SK Hynix": 470,
-    "TSMC": 470,
-}
-
-COMPANY_Y = {
-    "Apple": 90,
-    "Microsoft": 200,
-    "Alphabet / Google": 310,
-    "Amazon / AWS": 420,
-    "Meta": 530,
-    "Tesla": 640,
-    "NVIDIA": 120,
-    "Samsung Electronics": 260,
-    "SK Hynix": 400,
-    "TSMC": 540,
+COMPANY_COLORS = {
+    "device": "#60a5fa",
+    "cloud_ai": "#34d399",
+    "semiconductor": "#fbbf24",
+    "memory": "#c084fc",
+    "auto_energy": "#fb7185",
+    "external": "#94a3b8",
 }
 
 
-def node_id(name: str) -> str:
-    return "n_" + "".join(ch if ch.isalnum() else "_" for ch in name.lower()).strip("_")
+def polar(cx: float, cy: float, r: float, angle: float) -> tuple[float, float]:
+    return cx + r * math.cos(angle), cy + r * math.sin(angle)
 
 
-def wrap(text: str, limit: int = 26) -> list[str]:
+def node_key(name: str) -> str:
+    return "".join(ch.lower() if ch.isalnum() else "_" for ch in name).strip("_")
+
+
+def evidence_color(level: str) -> str:
+    if "official_current_year" in level:
+        return "#22c55e"
+    if "official" in level:
+        return "#38bdf8"
+    if "media" in level:
+        return "#f59e0b"
+    return "#64748b"
+
+
+def wrap_label(text: str, limit: int = 34) -> list[str]:
     words = text.split()
     lines: list[str] = []
     current = ""
@@ -62,68 +51,70 @@ def wrap(text: str, limit: int = 26) -> list[str]:
             current = candidate
     if current:
         lines.append(current)
-    return lines[:4]
+    return lines[:2]
 
 
-def draw_node(company: dict[str, object], x: int, y: int) -> str:
-    name = str(company["name"])
-    category = str(company.get("category", "external"))
-    products = [str(item) for item in company.get("main_products", [])]
-    fill = COLORS.get(category, COLORS["external"])
-    lines = [name] + wrap(", ".join(products), 42)
-    height = 48 + 17 * max(1, len(lines) - 1)
-    parts = [
-        f'<rect id="{node_id(name)}" x="{x}" y="{y}" width="300" height="{height}" rx="10" fill="{fill}" stroke="#334155" stroke-width="1.4"/>',
-        f'<text x="{x + 14}" y="{y + 23}" font-size="14" font-weight="700" fill="#0f172a">{escape(name)}</text>',
-    ]
-    for idx, line in enumerate(lines[1:], start=1):
-        parts.append(f'<text x="{x + 14}" y="{y + 23 + idx * 17}" font-size="11" fill="#334155">{escape(line)}</text>')
-    return "\n".join(parts)
-
-
-def draw_edge(edge: dict[str, object], coords: dict[str, tuple[int, int]]) -> str:
-    source = str(edge["source"])
-    target = str(edge["target"])
-    label = str(edge["product_or_service"])
+def draw_edge(source: str, target: str, label: str, color: str, coords: dict[str, tuple[float, float]], cx: float, cy: float) -> str:
     sx, sy = coords[source]
     tx, ty = coords[target]
-    sx += 300
-    sy += 28
-    ty += 28
-    color = "#475569"
-    if str(edge.get("evidence_level")) == "official_current_year":
-        color = "#166534"
-    elif "media" in str(edge.get("evidence_level")):
-        color = "#92400e"
-    midx = (sx + tx) / 2
-    midy = (sy + ty) / 2
+    mx, my = (sx + tx) / 2, (sy + ty) / 2
+    qx, qy = (mx + cx) / 2, (my + cy) / 2
+    label_x, label_y = (mx + qx) / 2, (my + qy) / 2
     return "\n".join(
         [
-            f'<path d="M {sx} {sy} C {midx} {sy}, {midx} {ty}, {tx} {ty}" fill="none" stroke="{color}" stroke-width="1.8" marker-end="url(#arrow)"/>',
-            f'<text x="{midx - 80:.1f}" y="{midy - 4:.1f}" font-size="10" fill="{color}">{escape(label[:48])}</text>',
+            f'<path d="M {sx:.1f} {sy:.1f} Q {qx:.1f} {qy:.1f} {tx:.1f} {ty:.1f}" fill="none" stroke="{color}" stroke-width="1.45" stroke-opacity="0.68"/>',
+            f'<text x="{label_x:.1f}" y="{label_y:.1f}" font-size="9" fill="{color}" fill-opacity="0.92">{escape(label[:42])}</text>',
         ]
     )
 
 
+def draw_node(name: str, category: str, products: list[str], x: float, y: float) -> str:
+    color = COMPANY_COLORS.get(category, COMPANY_COLORS["external"])
+    product_line = ", ".join(products[:4])
+    lines = wrap_label(product_line, 38)
+    parts = [
+        f'<circle cx="{x:.1f}" cy="{y:.1f}" r="27" fill="{color}" fill-opacity="0.22" stroke="{color}" stroke-width="2.2"/>',
+        f'<circle cx="{x:.1f}" cy="{y:.1f}" r="5.2" fill="{color}"/>',
+        f'<text x="{x:.1f}" y="{y - 38:.1f}" text-anchor="middle" font-size="13" font-weight="700" fill="#e5e7eb">{escape(name)}</text>',
+    ]
+    for idx, line in enumerate(lines):
+        parts.append(f'<text x="{x:.1f}" y="{y + 43 + idx * 13:.1f}" text-anchor="middle" font-size="9.5" fill="#94a3b8">{escape(line)}</text>')
+    return "\n".join(parts)
+
+
 def build_svg(data: dict[str, object]) -> str:
+    width, height = 1180, 860
+    cx, cy = width / 2, height / 2 + 12
+    radius = 315
     companies = [dict(item) for item in data["companies"]]
-    coords = {str(item["name"]): (COMPANY_X[str(item["name"])], COMPANY_Y[str(item["name"])]) for item in companies}
-    width = 850
-    height = 760
+    coords: dict[str, tuple[float, float]] = {}
+    for idx, company in enumerate(companies):
+        angle = -math.pi / 2 + (2 * math.pi * idx / len(companies))
+        coords[str(company["name"])] = polar(cx, cy, radius, angle)
+
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}">',
-        "<defs><marker id=\"arrow\" markerWidth=\"10\" markerHeight=\"10\" refX=\"8\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L0,6 L9,3 z\" fill=\"#475569\"/></marker></defs>",
-        '<rect width="100%" height="100%" fill="#ffffff"/>',
-        f'<text x="32" y="34" font-size="20" font-weight="800" fill="#0f172a">{escape(str(data.get("title", "Product relationship graph")))}</text>',
-        f'<text x="32" y="56" font-size="12" fill="#475569">Source baseline: {escape(str(data.get("source_baseline", "")))}</text>',
+        '<rect width="100%" height="100%" fill="#0f172a"/>',
+        '<circle cx="590" cy="442" r="160" fill="none" stroke="#334155" stroke-width="1" stroke-opacity="0.75"/>',
+        '<circle cx="590" cy="442" r="250" fill="none" stroke="#334155" stroke-width="1" stroke-opacity="0.55"/>',
+        '<circle cx="590" cy="442" r="335" fill="none" stroke="#334155" stroke-width="1" stroke-opacity="0.35"/>',
+        f'<text x="40" y="44" font-size="22" font-weight="800" fill="#f8fafc">{escape(str(data.get("title", "Product relationship graph")))}</text>',
+        f'<text x="40" y="68" font-size="12" fill="#94a3b8">Obsidian-style graph view. Source baseline: {escape(str(data.get("source_baseline", ""))[:150])}</text>',
+        '<text x="40" y="820" font-size="11" fill="#94a3b8">Edge colors: green=current-year official, blue=official baseline, amber=media/needs revalidation.</text>',
     ]
+
     for edge in data.get("relationships", []):
-        parts.append(draw_edge(dict(edge), coords))
+        item = dict(edge)
+        source = str(item["source"])
+        target = str(item["target"])
+        if source in coords and target in coords:
+            parts.append(draw_edge(source, target, f'{item["edge_id"]} {item["product_or_service"]}', evidence_color(str(item.get("evidence_level", ""))), coords, cx, cy))
+
     for company in companies:
         name = str(company["name"])
         x, y = coords[name]
-        parts.append(draw_node(company, x, y))
-    parts.append('<text x="32" y="735" font-size="11" fill="#64748b">Green: official/current-year evidence. Brown: media-reported or weaker evidence. Public report, no confidential data.</text>')
+        parts.append(draw_node(name, str(company.get("category", "external")), [str(p) for p in company.get("main_products", [])], x, y))
+
     parts.append("</svg>")
     return "\n".join(parts)
 
@@ -133,12 +124,10 @@ def main() -> None:
     parser.add_argument("--input", required=True)
     parser.add_argument("--output", required=True)
     args = parser.parse_args()
-
     data = json.loads(Path(args.input).read_text(encoding="utf-8"))
-    svg = build_svg(data)
     output = Path(args.output)
     output.parent.mkdir(parents=True, exist_ok=True)
-    output.write_text(svg, encoding="utf-8")
+    output.write_text(build_svg(data), encoding="utf-8")
     print(f"product_graph_svg_ok {output}")
 
 

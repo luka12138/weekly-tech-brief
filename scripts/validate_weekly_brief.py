@@ -160,6 +160,19 @@ def validate_product_graph(report: str, product_graph_path: Path | None, product
             fail(f"Product relationship has no official_sources: {relation}")
 
 
+def validate_supply_image(report: str, supply_image_path: Path | None) -> None:
+    if supply_image_path is None:
+        return
+    if not supply_image_path.exists():
+        fail(f"Supply relationship image does not exist: {supply_image_path}")
+    if supply_image_path.suffix.lower() not in {".svg", ".png", ".jpg", ".jpeg", ".webp"}:
+        fail(f"Unsupported supply image type: {supply_image_path}")
+    expected_image_ref = str(supply_image_path).replace("\\", "/")
+    alternate_image_ref = "../" + expected_image_ref
+    if expected_image_ref not in report and alternate_image_ref not in report:
+        fail(f"Report does not reference supply image: {expected_image_ref}")
+
+
 def validate_report(
     report_path: Path,
     baseline_path: Path,
@@ -167,6 +180,7 @@ def validate_report(
     source_audit_path: Path | None = None,
     product_graph_path: Path | None = None,
     product_image_path: Path | None = None,
+    supply_image_path: Path | None = None,
 ) -> None:
     report = report_path.read_text(encoding="utf-8")
     baseline = json.loads(baseline_path.read_text(encoding="utf-8"))
@@ -246,6 +260,7 @@ def validate_report(
     validate_latest(latest_path)
     validate_source_audit(source_audit_path)
     validate_product_graph(report, product_graph_path, product_image_path)
+    validate_supply_image(report, supply_image_path)
 
 
 def main() -> None:
@@ -256,6 +271,7 @@ def main() -> None:
     parser.add_argument("--source-audit")
     parser.add_argument("--product-graph")
     parser.add_argument("--product-image")
+    parser.add_argument("--supply-image")
     args = parser.parse_args()
 
     validate_report(
@@ -265,6 +281,7 @@ def main() -> None:
         Path(args.source_audit) if args.source_audit else None,
         Path(args.product_graph) if args.product_graph else None,
         Path(args.product_image) if args.product_image else None,
+        Path(args.supply_image) if args.supply_image else None,
     )
     print("weekly_brief_validation_ok")
 

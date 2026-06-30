@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-06-30T07:15:04.596164+00:00",
+  "generated_at": "2026-06-30T07:19:39.242605+00:00",
   "report": "reports/2026-06-29_weekly_morning_brief.md",
   "baseline": "state/supply_graph_baseline.json",
   "summary": {
     "total": 30,
     "reachable": 30,
-    "access_limited": 6,
+    "access_limited": 5,
     "unclassified": 0,
     "errors": 0
   },
@@ -205,7 +205,7 @@
       "scheme": "https",
       "host": "www.businessinsider.com",
       "source_class": "trade_or_press_media",
-      "status": 206,
+      "status": 200,
       "reachable": true,
       "access_limited": false,
       "error": null
@@ -235,9 +235,9 @@
       "scheme": "https",
       "host": "www.ft.com",
       "source_class": "tier1_media",
-      "status": 403,
+      "status": 200,
       "reachable": true,
-      "access_limited": true,
+      "access_limited": false,
       "error": null
     },
     {
@@ -295,7 +295,7 @@
       "scheme": "https",
       "host": "www.tomshardware.com",
       "source_class": "trade_or_press_media",
-      "status": 206,
+      "status": 200,
       "reachable": true,
       "access_limited": false,
       "error": null
