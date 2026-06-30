@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build an Obsidian-style SVG product relationship graph."""
+"""生成 Obsidian 风格的年度产品关系 SVG 图。"""
 
 from __future__ import annotations
 
@@ -29,13 +29,20 @@ def node_key(name: str) -> str:
 
 
 def evidence_color(level: str) -> str:
-    if "official_current_year" in level:
+    if revalidation_needed(level):
+        return "#f59e0b"
+    if "official_current_year" in level or "本年度官方证据" in level:
         return "#22c55e"
-    if "official" in level:
+    if "official" in level or "官方" in level:
         return "#38bdf8"
     if "media" in level:
         return "#f59e0b"
     return "#64748b"
+
+
+def revalidation_needed(level: str) -> bool:
+    markers = ("market_consensus", "historical", "needs", "待复核", "待直接证据", "市场共识", "历史基线")
+    return any(marker in level for marker in markers)
 
 
 def wrap_label(text: str, limit: int = 34) -> list[str]:
@@ -98,9 +105,9 @@ def build_svg(data: dict[str, object]) -> str:
         '<circle cx="590" cy="442" r="160" fill="none" stroke="#334155" stroke-width="1" stroke-opacity="0.75"/>',
         '<circle cx="590" cy="442" r="250" fill="none" stroke="#334155" stroke-width="1" stroke-opacity="0.55"/>',
         '<circle cx="590" cy="442" r="335" fill="none" stroke="#334155" stroke-width="1" stroke-opacity="0.35"/>',
-        f'<text x="40" y="44" font-size="22" font-weight="800" fill="#f8fafc">{escape(str(data.get("title", "Product relationship graph")))}</text>',
-        f'<text x="40" y="68" font-size="12" fill="#94a3b8">Obsidian-style graph view. Source baseline: {escape(str(data.get("source_baseline", ""))[:150])}</text>',
-        '<text x="40" y="820" font-size="11" fill="#94a3b8">Edge colors: green=current-year official, blue=official baseline, amber=media/needs revalidation.</text>',
+        f'<text x="40" y="44" font-size="22" font-weight="800" fill="#f8fafc">{escape(str(data.get("title", "年度主营产品上下游关系图")))}</text>',
+        f'<text x="40" y="68" font-size="12" fill="#94a3b8">Obsidian 风格网络图。来源基线：{escape(str(data.get("source_baseline", ""))[:150])}</text>',
+        '<text x="40" y="820" font-size="11" fill="#94a3b8">边颜色：绿色=本年度官方证据，蓝色=官方基线，橙色=媒体报道或待复核。</text>',
     ]
 
     for edge in data.get("relationships", []):
@@ -128,7 +135,7 @@ def main() -> None:
     output = Path(args.output)
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(build_svg(data), encoding="utf-8")
-    print(f"product_graph_svg_ok {output}")
+    print(f"产品关系图已生成 {output}")
 
 
 if __name__ == "__main__":

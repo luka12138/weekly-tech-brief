@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
-"""Audit source URLs used by a weekly brief.
+"""审查每周简报使用的来源 URL。
 
-This script verifies source hygiene, not factual truth by itself. It checks that
-URLs are reachable or explicitly access-limited, classifies source domains, and
-writes a structured audit file for review.
+本脚本检查来源卫生状况，不单独证明事实真伪。它会检查 URL 是否可达或明确访问受限，
+并对来源域名分类，最后写入结构化审查日志。
 """
 
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import re
 import ssl
@@ -65,6 +65,10 @@ TRADE_MEDIA_HOST_KEYWORDS = [
 
 ACCESS_LIMITED_STATUSES = {401, 403, 429}
 OK_STATUSES = set(range(200, 400)) | ACCESS_LIMITED_STATUSES
+
+
+def sha256_file(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
 def extract_markdown_urls(markdown: str) -> set[str]:
@@ -151,7 +155,9 @@ def main() -> None:
     parser.add_argument("--strict", action="store_true")
     args = parser.parse_args()
 
-    urls = collect_urls(Path(args.report), Path(args.baseline) if args.baseline else None)
+    report_path = Path(args.report)
+    baseline_path = Path(args.baseline) if args.baseline else None
+    urls = collect_urls(report_path, baseline_path)
     audited = [probe_url(url, args.timeout) for url in urls]
     summary = {
         "total": len(audited),
@@ -164,6 +170,9 @@ def main() -> None:
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "report": args.report,
         "baseline": args.baseline,
+        "report_sha256": sha256_file(report_path),
+        "baseline_sha256": sha256_file(baseline_path) if baseline_path else None,
+        "audited_urls": urls,
         "summary": summary,
         "sources": audited,
     }
@@ -173,9 +182,15 @@ def main() -> None:
 
     hard_failures = [item for item in audited if not item["reachable"] and not item["access_limited"]]
     if args.strict and hard_failures:
-        print(f"ERROR: {len(hard_failures)} source URLs failed reachability checks", file=sys.stderr)
+        print(f"错误：{len(hard_failures)} 个来源 URL 未通过可达性检查", file=sys.stderr)
         raise SystemExit(1)
-    print(f"source_audit_ok total={summary['total']} reachable={summary['reachable']} access_limited={summary['access_limited']} unclassified={summary['unclassified']}")
+    print(
+        "来源审查通过 "
+        f"total={summary['total']} "
+        f"reachable={summary['reachable']} "
+        f"access_limited={summary['access_limited']} "
+        f"unclassified={summary['unclassified']}"
+    )
 
 
 if __name__ == "__main__":

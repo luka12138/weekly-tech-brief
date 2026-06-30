@@ -1,8 +1,12 @@
-# Weekly Tech Brief
+# 每周科技巨头晨间简报
 
-This repository stores weekly Chinese morning briefs for major technology companies, plus the structured supply-chain baseline used for week-over-week comparison.
+这个仓库用于保存每周一生成的中文科技行业晨报，以及支撑周度对比的结构化供应链数据、来源审查日志和可视化图。
 
-The current brief covers ten companies:
+最新晨报入口：
+
+- [reports/latest.md](reports/latest.md)
+
+本项目当前覆盖 10 家公司：
 
 - Apple
 - Microsoft
@@ -15,113 +19,81 @@ The current brief covers ten companies:
 - SK Hynix
 - TSMC
 
-## Current Report
+## 当前产物
 
-Open the latest report here:
+- 周报正文：[reports/2026-06-29_weekly_morning_brief.md](reports/2026-06-29_weekly_morning_brief.md)
+- 年度主营产品上下游图：[assets/2026-06-29_product_relationships.svg](assets/2026-06-29_product_relationships.svg)
+- 本周供应关系图：[assets/2026-06-29_supply_relationships.svg](assets/2026-06-29_supply_relationships.svg)
+- 来源审查日志：[logs/2026-06-29_source_audit.json](logs/2026-06-29_source_audit.json)
+- 查验手册：[docs/verification_manual.md](docs/verification_manual.md)
 
-- [reports/latest.md](reports/latest.md)
-
-The dated report files are kept in `reports/`, for example:
-
-- [reports/2026-06-29_weekly_morning_brief.md](reports/2026-06-29_weekly_morning_brief.md)
-
-## Repository Layout
+## 目录结构
 
 ```text
 reports/
-  latest.md
-  YYYY-MM-DD_weekly_morning_brief.md
+  latest.md                          # 最新周报入口
+  YYYY-MM-DD_weekly_morning_brief.md # 按日期保存的周报正文
 
 assets/
-  YYYY-MM-DD_product_relationships.svg
-  YYYY-MM-DD_supply_relationships.svg
+  YYYY-MM-DD_product_relationships.svg # 年度主营产品上下游图
+  YYYY-MM-DD_supply_relationships.svg  # 本周供应关系图
 
 state/
-  supply_graph_baseline.json
-  product_relationships_YYYY.json
+  supply_graph_baseline.json          # 下周对比用的供应关系基线
+  product_relationships_YYYY.json     # 本年度产品上下游关系基线
 
 logs/
-  YYYY-MM-DD_source_audit.json
+  YYYY-MM-DD_source_audit.json         # 来源真实性/可达性审查日志
 
 scripts/
-  audit_sources.py
-  build_product_graph_svg.py
-  build_supply_graph_svg.py
-  validate_weekly_brief.py
+  audit_sources.py                     # 来源审查脚本
+  build_product_graph_svg.py           # 生成年度产品关系图
+  build_supply_graph_svg.py            # 生成本周供应关系图
+  validate_weekly_brief.py             # 主质量闸门
+  run_quality_gate.py                  # 单入口质量闸门
+
+docs/
+  verification_manual.md               # 查验手册与成型流程
 ```
 
-`reports/latest.md` is the stable entry point for the newest brief.
+## 周报应包含什么
 
-`state/supply_graph_baseline.json` stores the structured supply-chain graph used by the next weekly run. It is intentionally versioned so weekly relationship changes can be compared against the previous baseline.
+每期周报必须包含：
 
-`state/product_relationships_YYYY.json` stores the annual product-level upstream/downstream map. It should be based on the most official available sources for the year, such as annual reports, investor relations pages, regulatory filings, and company newsroom posts.
+1. 本周最重要的 5-8 件事
+2. 10 家公司的影响力速览
+3. 按公司分组的重大事件
+4. 跨公司与产业链观察
+5. 下周需关注事项
+6. 十家公司供应关系图谱与周度变化
+7. 本期自检
 
-`assets/YYYY-MM-DD_product_relationships.svg` is the rendered annual product relationship image included in the weekly report.
+第 6 节必须同时包含两张图：
 
-`assets/YYYY-MM-DD_supply_relationships.svg` is the rendered weekly supply-chain relationship image.
+- 年度主营产品上下游图：从 `state/product_relationships_YYYY.json` 生成
+- 本周供应关系图：从 `state/supply_graph_baseline.json` 生成
 
-Both generated SVGs use an Obsidian graph-view style: dark background, radial node layout, graph-like edges, and evidence/status color coding.
+两张图均采用类似 Obsidian 图谱视图的网络样式，便于在 GitHub 页面直接查看。
 
-`logs/YYYY-MM-DD_source_audit.json` stores the source authenticity audit for the report.
+## 质量闸门
 
-`scripts/validate_weekly_brief.py` is the quality gate. It validates the report before committing or pushing new results.
-
-## Brief Contents
-
-Each weekly brief is expected to include:
-
-1. Top 5-8 major events of the week
-2. Impact overview table for all ten companies
-3. Company-by-company event summaries with dates, impact, confidence, and source links
-4. Cross-company and supply-chain observations
-5. Next-week watchlist
-6. Supply-chain relationship graph and week-over-week changes
-7. Self-check section
-
-The supply-chain section should also include a rendered product relationship image:
-
-- `assets/YYYY-MM-DD_product_relationships.svg`
-- `assets/YYYY-MM-DD_supply_relationships.svg`
-
-The supply-chain section uses matching `Edge ID`s across:
-
-- Mermaid graph in the Markdown report
-- Section 6.2 supply relationship table
-- `state/supply_graph_baseline.json`
-
-This is required so the next run can compare relationships reliably.
-
-## Validation
-
-Run the validator before committing generated output:
+生成周报后，推荐先运行单入口质量闸门：
 
 ```bash
-python3 scripts/validate_weekly_brief.py \
-  --report reports/2026-06-29_weekly_morning_brief.md \
-  --baseline state/supply_graph_baseline.json \
-  --latest reports/latest.md \
-  --source-audit logs/2026-06-29_source_audit.json \
-  --product-graph state/product_relationships_2026.json \
-  --product-image assets/2026-06-29_product_relationships.svg \
-  --supply-image assets/2026-06-29_supply_relationships.svg
+python3 scripts/run_quality_gate.py
 ```
 
-The validator checks:
+它会依次执行：
 
-- JSON baseline parses correctly
-- Coverage dates are present in the report
-- All ten companies are represented
-- `reports/latest.md` links to an existing report
-- Mermaid graph, section 6.2 table, and JSON baseline have the same `Edge ID`s
-- Low-confidence or media-reported relationships include limitation language
-- Source audit exists and has no unclassified or unreachable URLs
-- Product relationship image exists and is referenced by the report
-- Supply relationship image exists and is referenced by the report
-- Product relationship JSON covers all ten companies and has official sources
+1. 生成年度主营产品上下游图
+2. 生成本周供应关系图
+3. 执行来源审查
+4. 执行主校验
+5. 执行 `git diff --check`
 
-## Source Authenticity Audit
+如需分步排错，可使用下面的命令。
 
-Run the source audit after generating a report:
+来源审查：
 
 ```bash
 python3 scripts/audit_sources.py \
@@ -130,35 +102,7 @@ python3 scripts/audit_sources.py \
   --output logs/YYYY-MM-DD_source_audit.json
 ```
 
-The audit checks source hygiene:
-
-- HTTPS URL usage
-- URL reachability
-- Official / regulatory / tier-one media / trade media classification
-- Paywall or access-limited status
-- Unclassified source count
-
-This does not prove that every reported fact is true by itself. It creates an auditable source-quality layer and forces weak or access-limited sources to be visible.
-
-## Product Relationship Image
-
-Build the product-level relationship image from structured JSON:
-
-```bash
-python3 scripts/build_product_graph_svg.py \
-  --input state/product_relationships_2026.json \
-  --output assets/YYYY-MM-DD_product_relationships.svg
-
-python3 scripts/build_supply_graph_svg.py \
-  --input state/supply_graph_baseline.json \
-  --output assets/YYYY-MM-DD_supply_relationships.svg
-```
-
-The JSON should be updated from the most official available annual sources for the year. Relationships with weaker evidence must use a weaker `evidence_level` instead of being shown as fully confirmed.
-
-## Manual Update Flow
-
-After generating or editing a weekly brief:
+主校验：
 
 ```bash
 python3 scripts/validate_weekly_brief.py \
@@ -169,29 +113,75 @@ python3 scripts/validate_weekly_brief.py \
   --product-graph state/product_relationships_YYYY.json \
   --product-image assets/YYYY-MM-DD_product_relationships.svg \
   --supply-image assets/YYYY-MM-DD_supply_relationships.svg
+```
 
+主校验会检查：
+
+- JSON 能否解析
+- 覆盖日期是否写入周报
+- 10 家公司是否全部覆盖
+- `reports/latest.md` 是否指向真实文件
+- Mermaid 图、6.2 表格、JSON 基线的 `Edge ID` 是否一致
+- 低置信度、媒体报道、基线不足关系是否明确标注
+- 来源审查是否存在且没有不可达或未分类来源
+- 来源审查日志是否由当前周报和当前供应关系基线生成
+- 两张 SVG 图片是否存在，并被周报引用
+- 年度产品关系 JSON 是否包含 10 家公司及官方来源
+
+## 手动生成流程
+
+完整流程见：[docs/verification_manual.md](docs/verification_manual.md)
+
+简化命令如下：
+
+```bash
+python3 scripts/build_product_graph_svg.py \
+  --input state/product_relationships_YYYY.json \
+  --output assets/YYYY-MM-DD_product_relationships.svg
+
+python3 scripts/build_supply_graph_svg.py \
+  --input state/supply_graph_baseline.json \
+  --output assets/YYYY-MM-DD_supply_relationships.svg
+
+python3 scripts/audit_sources.py \
+  --report reports/YYYY-MM-DD_weekly_morning_brief.md \
+  --baseline state/supply_graph_baseline.json \
+  --output logs/YYYY-MM-DD_source_audit.json
+
+python3 scripts/validate_weekly_brief.py \
+  --report reports/YYYY-MM-DD_weekly_morning_brief.md \
+  --baseline state/supply_graph_baseline.json \
+  --latest reports/latest.md \
+  --source-audit logs/YYYY-MM-DD_source_audit.json \
+  --product-graph state/product_relationships_YYYY.json \
+  --product-image assets/YYYY-MM-DD_product_relationships.svg \
+  --supply-image assets/YYYY-MM-DD_supply_relationships.svg
+```
+
+通过后再提交：
+
+```bash
 git status
-git add reports/ assets/ state/ logs/ scripts/
+git add reports/ assets/ state/ logs/ scripts/ docs/ README.md
 git commit -m "chore: add weekly brief YYYY-MM-DD"
 git push
 ```
 
-If validation fails, fix the report or JSON baseline before committing.
+## 自动化运行方式
 
-## Automation Flow
+目标运行方式：
 
-The intended production flow is:
+1. Windows 台式机每周一 09:00（Asia/Shanghai）触发 Codex 自动化。
+2. 自动化读取上一期 `reports/latest.md` 和 `state/supply_graph_baseline.json`。
+3. 联网检索并生成新周报。
+4. 更新产品关系 JSON 和供应关系 JSON。
+5. 生成两张 Obsidian 风格 SVG。
+6. 执行来源审查，并写入当前周报和基线文件的 SHA-256。
+7. 执行主质量闸门，确认来源审查日志与当前文件一致。
+8. 校验通过后提交并推送到 GitHub。
+9. Mac 或其他设备通过 GitHub 查看 `reports/latest.md`。
 
-1. Windows desktop runs the scheduled Codex automation every Monday at 09:00 Asia/Shanghai.
-2. The automation reads `reports/latest.md` and `state/supply_graph_baseline.json`.
-3. It updates `state/product_relationships_YYYY.json` from official annual sources when needed.
-4. It generates the new weekly brief, product relationship image, and updated supply-chain baseline.
-5. It runs `scripts/audit_sources.py`.
-6. It runs `scripts/validate_weekly_brief.py`.
-7. If validation passes, it commits and pushes to GitHub.
-8. Mac or any other device pulls from GitHub and reads `reports/latest.md`.
-
-Recommended Mac viewing command:
+Mac 查看：
 
 ```bash
 cd "/Users/qzdmbp/Documents/每周简报"
@@ -199,25 +189,25 @@ git pull
 open reports/latest.md
 ```
 
-## Evidence Rules
+## 证据规则
 
-The brief should prefer:
+优先使用：
 
-- Company newsroom or official blog posts
-- Investor relations pages
-- Regulatory, exchange, government, or court filings
-- Major wire services and reputable financial media
+- 公司官网新闻稿
+- 投资者关系页面
+- 财报、电话会材料、年报
+- SEC、交易所、监管机构、法院或政府文件
+- Reuters、Bloomberg、WSJ、FT、Nikkei Asia、CNBC、The Information、财新等权威媒体
 
-Media reports, market views, or unconfirmed supply-chain claims must be clearly labeled. They should not be treated as confirmed facts or new relationships.
+媒体报道、市场观点、供应链传闻必须明确标注，不能写成已确认事实。
 
-## Privacy And Safety
+## 公开仓库注意事项
 
-Do not commit:
+本仓库当前为公开仓库。不要提交：
 
-- GitHub tokens
-- API keys
-- `.env` files
-- Local Codex configuration
-- Browser cookies or exported credentials
-
-The repository is public, so generated reports and JSON baselines should be treated as publicly visible.
+- GitHub token
+- API key
+- `.env`
+- 本地 Codex 配置
+- Cookie 或浏览器凭据
+- 未脱敏的私人资料

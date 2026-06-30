@@ -22,7 +22,7 @@
       "edge_id": "E01",
       "supplier": "TSMC",
       "customer": "Apple",
-      "product_or_service": "A/M/S series chips advanced-node foundry",
+      "product_or_service": "A/M/S 系列芯片先进制程代工",
       "relationship_type": "foundry",
       "evidence_date": "2026-06-24/2026-06-25",
       "source_type": "media_report",
@@ -30,18 +30,18 @@
       "changed_this_week": "risk",
       "status": "continued_risk",
       "confidence": "medium",
-      "confidence_reason": "Report supports pricing pressure for advanced-node customers, not a new official supply award.",
+      "confidence_reason": "报道支持先进制程客户面临价格压力，但不是新的官方供货确认。",
       "markdown_section_ref": "6.2 E01",
       "sources": [
         "https://www.tomshardware.com/tech-industry/semiconductors/tsmc-is-reportedly-hiking-prices-for-all-advanced-nodes-accounting-for-74-percent-of-the-companys-wafer-business-nvidia-amd-apple-qualcomm-and-others-will-face-higher-wafer-costs"
       ],
-      "notes": "Weekly evidence is pricing risk; do not treat as new customer/order confirmation."
+      "notes": "本周证据是价格风险，不能当作新客户或新订单确认。"
     },
     {
       "edge_id": "E02",
       "supplier": "TSMC",
       "customer": "NVIDIA",
-      "product_or_service": "AI GPU advanced-node foundry and packaging",
+      "product_or_service": "AI GPU 先进制程代工与封装",
       "relationship_type": "foundry_packaging",
       "evidence_date": "2026-06-24/2026-06-25",
       "source_type": "media_report_plus_demand_context",
@@ -49,18 +49,18 @@
       "changed_this_week": "risk",
       "status": "continued_risk",
       "confidence": "medium",
-      "confidence_reason": "Pricing report names NVIDIA as affected customer; no weekly official order or packaging allocation disclosure.",
+      "confidence_reason": "涨价报道点名 NVIDIA 为受影响客户；本周没有官方订单或封装产能分配披露。",
       "markdown_section_ref": "6.2 E02",
       "sources": [
         "https://www.tomshardware.com/tech-industry/semiconductors/tsmc-is-reportedly-hiking-prices-for-all-advanced-nodes-accounting-for-74-percent-of-the-companys-wafer-business-nvidia-amd-apple-qualcomm-and-others-will-face-higher-wafer-costs",
         "https://blogs.nvidia.com/blog/top500-green500-supercomputers-isc-2026/"
       ],
-      "notes": "Maintain as baseline/risk edge, not new supply confirmation."
+      "notes": "保持为基线/风险关系，不能写成新的供货确认。"
     },
     {
       "edge_id": "E03",
       "supplier": "SK Hynix",
-      "customer": "NVIDIA and AI accelerator customers",
+      "customer": "NVIDIA 与 AI 加速器客户",
       "product_or_service": "HBM4E/HBM4/HBM3E",
       "relationship_type": "memory_supply",
       "evidence_date": "2026-06-18 and 2026-06-24/2026-06-25",
@@ -69,19 +69,19 @@
       "changed_this_week": "strengthened_media_reported",
       "status": "strengthened_media_reported",
       "confidence": "medium_high",
-      "confidence_reason": "HBM4E sample is official but outside coverage week; ADR financing and capex use are media-reported within coverage week.",
+      "confidence_reason": "HBM4E 样品为官方消息但早于覆盖周；ADR 融资和资本开支用途是覆盖周内媒体报道。",
       "markdown_section_ref": "6.2 E03",
       "sources": [
         "https://news.skhynix.com/12-layer-hbm4e-sample/",
         "https://www.prnewswire.com/news-releases/sk-hynix-ships-samples-of-12-layer-next-gen-hbm4e-302803714.html",
         "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-06-24-2026/card/XGzboqrIxtaxRTnlNlHT"
       ],
-      "notes": "Track carefully next week for formal filings and customer validation updates."
+      "notes": "下周继续跟踪正式文件和客户验证进展。"
     },
     {
       "edge_id": "E04",
       "supplier": "Samsung Electronics",
-      "customer": "NVIDIA and AI accelerator customers",
+      "customer": "NVIDIA 与 AI 加速器客户",
       "product_or_service": "HBM4/HBM4E",
       "relationship_type": "memory_supply",
       "evidence_date": "2026-06-26",
@@ -90,18 +90,18 @@
       "changed_this_week": "no_new_order_evidence",
       "status": "continued_no_weekly_order_evidence",
       "confidence": "medium",
-      "confidence_reason": "Samsung report supports AI memory efficiency strategy, not a new customer award.",
+      "confidence_reason": "三星报告支持其 AI 存储效率战略，但不是新的客户订单确认。",
       "markdown_section_ref": "6.2 E04",
       "sources": [
         "https://news.samsung.com/global/samsung-electronics-releases-2026-sustainability-report-expanding-water-replenishment-efforts"
       ],
-      "notes": "Keep as HBM competition baseline with no weekly order change."
+      "notes": "保留为 HBM 竞争基线，本周无订单变化证据。"
     },
     {
       "edge_id": "E05",
       "supplier": "Samsung Electronics",
       "customer": "Apple",
-      "product_or_service": "DRAM/NAND/OLED components",
+      "product_or_service": "DRAM/NAND/OLED 组件",
       "relationship_type": "component_supply",
       "evidence_date": "2026-06-25/2026-06-28",
       "source_type": "media_report",
@@ -109,18 +109,18 @@
       "changed_this_week": "risk",
       "status": "risk_baseline_insufficient",
       "confidence": "low_medium",
-      "confidence_reason": "Apple pricing reports support memory cost pressure but do not confirm Samsung supplier share this week.",
+      "confidence_reason": "Apple 涨价报道支持存储成本压力判断，但未确认三星本周供应份额。",
       "markdown_section_ref": "6.2 E05",
       "sources": [
         "https://www.cbsnews.com/news/apple-price-hikes-macbook-ipad-2026/"
       ],
-      "notes": "Use only as cost-risk context unless direct supplier evidence appears."
+      "notes": "除非出现直接供应商证据，否则仅作为成本风险背景。"
     },
     {
       "edge_id": "E06",
       "supplier": "NVIDIA",
       "customer": "Microsoft",
-      "product_or_service": "GPU/AI accelerators and AI infrastructure ecosystem",
+      "product_or_service": "GPU/AI 加速器与 AI 基础设施生态",
       "relationship_type": "infrastructure_supply_baseline",
       "evidence_date": "2026-06-22/2026-06-23",
       "source_type": "official_customer_capacity_disclosure",
@@ -128,18 +128,18 @@
       "changed_this_week": "demand_context_strengthened",
       "status": "continued_baseline_insufficient",
       "confidence": "medium",
-      "confidence_reason": "Microsoft disclosed AI capacity expansion but not specific NVIDIA procurement.",
+      "confidence_reason": "Microsoft 披露 AI 产能扩张，但未披露具体 NVIDIA 采购。",
       "markdown_section_ref": "6.2 E06",
       "sources": [
         "https://blogs.microsoft.com/blog/2026/06/22/powering-the-next-wave-of-ai-expanding-capacity-with-our-new-datacenter-in-pecos/"
       ],
-      "notes": "Do not interpret as new weekly GPU order."
+      "notes": "不能解读为本周新增 GPU 订单。"
     },
     {
       "edge_id": "E07",
       "supplier": "NVIDIA",
       "customer": "Amazon / AWS",
-      "product_or_service": "NVIDIA GPU and AI infrastructure software stack",
+      "product_or_service": "NVIDIA GPU 与 AI 基础设施软件栈",
       "relationship_type": "supply_cooperation",
       "evidence_date": "2026-06-23",
       "source_type": "official_supplier_blog",
@@ -147,18 +147,18 @@
       "changed_this_week": "strengthened",
       "status": "strengthened",
       "confidence": "high",
-      "confidence_reason": "NVIDIA published explicit AWS production AI collaboration update in the covered week.",
+      "confidence_reason": "NVIDIA 在覆盖周内发布明确的 AWS 生产级 AI 协作更新。",
       "markdown_section_ref": "6.2 E07",
       "sources": [
         "https://blogs.nvidia.com/blog/nvidia-aws-ai-production-scale/"
       ],
-      "notes": "Strongest weekly supply/cooperation edge."
+      "notes": "本周最强的供应/协作关系证据。"
     },
     {
       "edge_id": "E08",
       "supplier": "Amazon / AWS",
-      "customer": "AI startups and cloud customers",
-      "product_or_service": "Trainium3, Bedrock, cloud training services",
+      "customer": "AI 初创企业与云客户",
+      "product_or_service": "Trainium3、Bedrock、云端训练服务",
       "relationship_type": "cloud_supply_competitive_substitute",
       "evidence_date": "2026-06-23",
       "source_type": "official_company_post",
@@ -166,18 +166,18 @@
       "changed_this_week": "strengthened",
       "status": "strengthened",
       "confidence": "high",
-      "confidence_reason": "Amazon disclosed specific Trainium customer adoption examples in the covered week.",
+      "confidence_reason": "Amazon 在覆盖周内披露了具体 Trainium 客户采用案例。",
       "markdown_section_ref": "6.2 E08",
       "sources": [
         "https://www.aboutamazon.com/news/aws/why-ai-startups-choose-amazon-trainium-chips"
       ],
-      "notes": "External customer node; explains competitive pressure on NVIDIA GPU demand."
+      "notes": "外部客户节点，用于解释 NVIDIA GPU 需求面临的竞争压力。"
     },
     {
       "edge_id": "E09",
       "supplier": "Meta",
       "customer": "EssilorLuxottica",
-      "product_or_service": "Meta Glasses AI eyewear line",
+      "product_or_service": "Meta Glasses AI 眼镜产品线",
       "relationship_type": "product_partnership",
       "evidence_date": "2026-06-23",
       "source_type": "official_partner_announcements",
@@ -185,19 +185,19 @@
       "changed_this_week": "new",
       "status": "new",
       "confidence": "high",
-      "confidence_reason": "Both partners announced the product line in the covered week.",
+      "confidence_reason": "双方在覆盖周内共同宣布该产品线。",
       "markdown_section_ref": "6.2 E09",
       "sources": [
         "https://about.fb.com/news/2026/06/meta-essilorluxottica-partner-launch-meta-glasses/",
         "https://www.essilorluxottica.com/en/newsroom/press-releases/essilorluxottica-meta-new-wearables-collection/"
       ],
-      "notes": "Confirmed new weekly partnership/product edge."
+      "notes": "本周已确认的新合作/产品关系。"
     },
     {
       "edge_id": "E10",
       "supplier": "ASML/EUV",
       "customer": "SK Hynix",
-      "product_or_service": "EUV equipment for HBM/DRAM expansion",
+      "product_or_service": "用于 HBM/DRAM 扩产的 EUV 设备",
       "relationship_type": "equipment_supply",
       "evidence_date": "2026-06-24/2026-06-25",
       "source_type": "media_report",
@@ -205,12 +205,12 @@
       "changed_this_week": "strengthened_media_reported",
       "status": "strengthened_media_reported",
       "confidence": "medium",
-      "confidence_reason": "Media reports connect proposed ADR proceeds to EUV and advanced manufacturing investment; no formal filing yet.",
+      "confidence_reason": "媒体报道将拟议 ADR 募资与 EUV 及先进制造投资相联系；尚无正式文件。",
       "markdown_section_ref": "6.2 E10",
       "sources": [
         "https://www.tomshardware.com/tech-industry/sk-hynix-files-to-raise-up-to-29-billion-in-nasdaq-listing"
       ],
-      "notes": "External equipment node; verify with formal offering documents if available."
+      "notes": "外部设备节点；若正式发行文件可取得，需再次核验。"
     }
   ],
   "sources": [
@@ -230,5 +230,5 @@
     "https://pr.tsmc.com/english/latest-news"
   ],
   "confidence": "mixed",
-  "notes": "This script-validated baseline replaces prior 2026-06-29 outputs. No prior baseline existed, so week-over-week differences were reconstructed from public sources. Graph, Markdown table, and JSON now share edge IDs E01-E10. Media-reported and baseline-insufficient items are explicitly marked."
+  "notes": "本基线已通过脚本校验，并替换此前 2026-06-29 输出。由于没有更早的结构化基线，周度差异根据公开来源重建。图、Markdown 表格和 JSON 共用 E01-E10；媒体报道和基线证据不足的项目均已明确标注。"
 }

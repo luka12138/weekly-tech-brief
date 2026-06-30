@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build an Obsidian-style SVG weekly supply relationship graph."""
+"""生成 Obsidian 风格的每周供应关系 SVG 图。"""
 
 from __future__ import annotations
 
@@ -26,8 +26,10 @@ COVERED = [
 ALIASES = {
     "NVIDIA and AI accelerator customers": "NVIDIA",
     "NVIDIA/AI 加速器客户": "NVIDIA",
-    "AI startups and cloud customers": "外部:AI customers",
-    "AI 初创企业/客户": "外部:AI customers",
+    "NVIDIA 与 AI 加速器客户": "NVIDIA",
+    "AI startups and cloud customers": "外部:AI客户",
+    "AI 初创企业/客户": "外部:AI客户",
+    "AI 初创企业与云客户": "外部:AI客户",
     "EssilorLuxottica": "外部:EssilorLuxottica",
     "ASML/EUV": "外部:ASML/EUV",
 }
@@ -42,13 +44,16 @@ def polar(cx: float, cy: float, r: float, angle: float) -> tuple[float, float]:
 
 
 def edge_color(edge: dict[str, object]) -> str:
-    status = " ".join(str(edge.get(key, "")) for key in ("status", "source_type", "changed_this_week"))
-    if "new" in status:
+    status = str(edge.get("status", ""))
+    source_type = str(edge.get("source_type", ""))
+    changed = str(edge.get("changed_this_week", ""))
+    if changed == "new" or status == "new":
         return "#22c55e"
-    if "strengthened" in status:
-        return "#38bdf8"
-    if "risk" in status or "media" in status:
+    joined = " ".join((status, source_type, changed))
+    if "risk" in joined or "media" in joined or status.startswith("continued_no_weekly"):
         return "#f59e0b"
+    if changed.startswith("strengthened") or status.startswith("strengthened"):
+        return "#38bdf8"
     return "#64748b"
 
 
@@ -105,7 +110,7 @@ def build_svg(data: dict[str, object]) -> str:
         coords[node] = polar(cx, cy, external_radius, -math.pi / 2 + 2 * math.pi * (idx + 0.5) / max(1, len(external_nodes)))
 
     period = data.get("coverage_period", {})
-    title = f"Weekly Supply Graph {period.get('start', '')} to {period.get('end', '')}"
+    title = f"本周供应关系图 {period.get('start', '')} 至 {period.get('end', '')}"
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}">',
         '<rect width="100%" height="100%" fill="#0f172a"/>',
@@ -113,8 +118,8 @@ def build_svg(data: dict[str, object]) -> str:
         '<circle cx="590" cy="448" r="250" fill="none" stroke="#334155" stroke-width="1" stroke-opacity="0.55"/>',
         '<circle cx="590" cy="448" r="335" fill="none" stroke="#334155" stroke-width="1" stroke-opacity="0.35"/>',
         f'<text x="40" y="44" font-size="22" font-weight="800" fill="#f8fafc">{escape(title)}</text>',
-        '<text x="40" y="68" font-size="12" fill="#94a3b8">Obsidian-style graph view generated from state/supply_graph_baseline.json.</text>',
-        '<text x="40" y="820" font-size="11" fill="#94a3b8">Edge colors: green=new, blue=strengthened, amber=risk/media, gray=baseline.</text>',
+        '<text x="40" y="68" font-size="12" fill="#94a3b8">Obsidian 风格网络图，基于 state/supply_graph_baseline.json 生成。</text>',
+        '<text x="40" y="820" font-size="11" fill="#94a3b8">边颜色：绿色=新增，蓝色=强化，橙色=风险/媒体报道，灰色=基线关系。</text>',
     ]
     for edge in edges:
         line = draw_edge(edge, coords, cx, cy)
@@ -135,7 +140,7 @@ def main() -> None:
     output = Path(args.output)
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(build_svg(data), encoding="utf-8")
-    print(f"supply_graph_svg_ok {output}")
+    print(f"供应关系图已生成 {output}")
 
 
 if __name__ == "__main__":

@@ -9,3 +9,7 @@
 # Local OS/editor noise.
 .DS_Store
 Thumbs.db
+
+# Python local cache.
+__pycache__/
+*.pyc

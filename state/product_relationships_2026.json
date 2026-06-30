@@ -1,12 +1,12 @@
 {
-  "title": "2026 Product-Level Upstream/Downstream Map For Ten Covered Companies",
-  "source_baseline": "Latest official annual reports, investor relations pages, company newsroom posts, and regulatory filings available in 2026; media-reported relationships are labeled separately.",
+  "title": "2026 年度十家公司主营产品上下游关系图",
+  "source_baseline": "基于 2026 年可取得的官方年报、投资者关系页面、公司新闻稿和监管披露；媒体报道或历史基线关系单独标注。",
   "generated_for_report_date": "2026-06-29",
   "companies": [
     {
       "name": "Apple",
       "category": "device",
-      "main_products": ["iPhone", "Mac", "iPad", "Wearables", "Services", "Apple silicon"],
+      "main_products": ["iPhone", "Mac", "iPad", "可穿戴设备", "服务", "Apple silicon"],
       "official_sources": ["https://investor.apple.com/sec-filings/default.aspx"]
     },
     {
@@ -18,13 +18,13 @@
     {
       "name": "Alphabet / Google",
       "category": "cloud_ai",
-      "main_products": ["Search", "YouTube", "Google Cloud", "Gemini", "Android", "Pixel"],
+      "main_products": ["搜索", "YouTube", "Google Cloud", "Gemini", "Android", "Pixel"],
       "official_sources": ["https://abc.xyz/investor/"]
     },
     {
       "name": "Amazon / AWS",
       "category": "cloud_ai",
-      "main_products": ["AWS", "Marketplace", "Prime", "Ads", "Logistics", "Devices"],
+      "main_products": ["AWS", "Marketplace", "Prime", "广告", "物流", "设备"],
       "official_sources": ["https://ir.aboutamazon.com/annual-reports-proxies-and-shareholder-letters/default.aspx"]
     },
     {
@@ -36,31 +36,31 @@
     {
       "name": "NVIDIA",
       "category": "semiconductor",
-      "main_products": ["Data center GPU", "Networking", "CUDA", "AI software", "Gaming GPU", "Automotive"],
+      "main_products": ["数据中心 GPU", "网络产品", "CUDA", "AI 软件", "游戏 GPU", "汽车业务"],
       "official_sources": ["https://investor.nvidia.com/financial-info/annual-reports-and-proxies/default.aspx"]
     },
     {
       "name": "Tesla",
       "category": "auto_energy",
-      "main_products": ["EVs", "Energy storage", "Solar", "FSD", "Supercharging", "Robotics"],
+      "main_products": ["电动车", "储能", "太阳能", "FSD", "超级充电", "机器人"],
       "official_sources": ["https://ir.tesla.com/"]
     },
     {
       "name": "Samsung Electronics",
       "category": "memory",
-      "main_products": ["Memory", "Foundry", "OLED", "Mobile devices", "TV/display", "Appliances"],
+      "main_products": ["存储", "晶圆代工", "OLED", "移动设备", "电视/显示", "家电"],
       "official_sources": ["https://www.samsung.com/global/ir/reports-disclosures/annual-reports/"]
     },
     {
       "name": "SK Hynix",
       "category": "memory",
-      "main_products": ["DRAM", "NAND", "HBM", "CXL memory", "Enterprise SSD", "Advanced packaging"],
+      "main_products": ["DRAM", "NAND", "HBM", "CXL 存储", "企业级 SSD", "先进封装"],
       "official_sources": ["https://www.skhynix.com/ir/UI-FR-IR02"]
     },
     {
       "name": "TSMC",
       "category": "semiconductor",
-      "main_products": ["Advanced logic foundry", "Specialty technologies", "3DFabric", "CoWoS", "N3/N2 nodes", "Wafer services"],
+      "main_products": ["先进逻辑代工", "特殊制程", "3DFabric", "CoWoS", "N3/N2 节点", "晶圆服务"],
       "official_sources": ["https://investor.tsmc.com/english/annual-reports"]
     }
   ],
@@ -69,72 +69,64 @@
       "edge_id": "P01",
       "source": "TSMC",
       "target": "Apple",
-      "product_or_service": "advanced-node foundry for Apple silicon",
-      "evidence_level": "official_baseline_plus_market_consensus",
+      "product_or_service": "Apple silicon 先进制程代工",
+      "evidence_level": "官方基线_加市场共识_待直接证据",
       "official_sources": ["https://investor.tsmc.com/english/annual-reports", "https://investor.apple.com/sec-filings/default.aspx"]
     },
     {
       "edge_id": "P02",
       "source": "TSMC",
       "target": "NVIDIA",
-      "product_or_service": "advanced-node foundry and packaging for AI chips",
-      "evidence_level": "official_baseline_plus_market_consensus",
+      "product_or_service": "AI 芯片先进制程代工与封装",
+      "evidence_level": "官方基线_加市场共识_待直接证据",
       "official_sources": ["https://investor.tsmc.com/english/annual-reports", "https://investor.nvidia.com/financial-info/annual-reports-and-proxies/default.aspx"]
     },
     {
       "edge_id": "P03",
       "source": "SK Hynix",
       "target": "NVIDIA",
-      "product_or_service": "HBM for AI accelerators",
-      "evidence_level": "official_current_year",
+      "product_or_service": "AI 加速器用 HBM",
+      "evidence_level": "本年度官方证据",
       "official_sources": ["https://news.skhynix.com/12-layer-hbm4e-sample/", "https://investor.nvidia.com/financial-info/annual-reports-and-proxies/default.aspx"]
     },
     {
       "edge_id": "P04",
       "source": "Samsung Electronics",
       "target": "NVIDIA",
-      "product_or_service": "HBM/DRAM supply baseline",
-      "evidence_level": "official_baseline",
+      "product_or_service": "HBM/DRAM 供应基线",
+      "evidence_level": "市场共识_待直接证据",
       "official_sources": ["https://www.samsung.com/global/ir/reports-disclosures/annual-reports/", "https://news.samsung.com/global/samsung-electronics-releases-2026-sustainability-report-expanding-water-replenishment-efforts"]
     },
     {
       "edge_id": "P05",
       "source": "NVIDIA",
       "target": "Amazon / AWS",
-      "product_or_service": "GPU and AI infrastructure on AWS",
-      "evidence_level": "official_current_year",
+      "product_or_service": "AWS 上的 GPU 与 AI 基础设施",
+      "evidence_level": "本年度官方证据",
       "official_sources": ["https://blogs.nvidia.com/blog/nvidia-aws-ai-production-scale/"]
     },
     {
       "edge_id": "P06",
       "source": "NVIDIA",
       "target": "Microsoft",
-      "product_or_service": "AI accelerator ecosystem for Azure",
-      "evidence_level": "official_baseline",
+      "product_or_service": "Azure AI 加速器生态",
+      "evidence_level": "市场共识_待直接证据",
       "official_sources": ["https://www.microsoft.com/en-us/Investor/annual-reports.aspx", "https://investor.nvidia.com/financial-info/annual-reports-and-proxies/default.aspx"]
-    },
-    {
-      "edge_id": "P07",
-      "source": "Amazon / AWS",
-      "target": "Meta",
-      "product_or_service": "cloud CPU/AI services baseline",
-      "evidence_level": "historical_baseline_needs_weekly_revalidation",
-      "official_sources": ["https://ir.aboutamazon.com/annual-reports-proxies-and-shareholder-letters/default.aspx", "https://investor.atmeta.com/financials/"]
     },
     {
       "edge_id": "P08",
       "source": "Samsung Electronics",
       "target": "Apple",
-      "product_or_service": "memory/display component baseline",
-      "evidence_level": "official_baseline_plus_market_consensus",
+      "product_or_service": "存储/显示组件基线",
+      "evidence_level": "市场共识_待直接证据",
       "official_sources": ["https://www.samsung.com/global/ir/reports-disclosures/annual-reports/", "https://investor.apple.com/sec-filings/default.aspx"]
     },
     {
       "edge_id": "P09",
       "source": "NVIDIA",
       "target": "Tesla",
-      "product_or_service": "automotive/AI compute ecosystem baseline",
-      "evidence_level": "official_baseline",
+      "product_or_service": "汽车/AI 计算生态基线",
+      "evidence_level": "市场共识_待直接证据",
       "official_sources": ["https://ir.tesla.com/", "https://investor.nvidia.com/financial-info/annual-reports-and-proxies/default.aspx"]
     }
   ]

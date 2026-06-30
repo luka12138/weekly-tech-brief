@@ -7,7 +7,7 @@
 1. **Microsoft：2GW 级 Pecos 数据中心园区。** Microsoft 6 月 22 日宣布将在得州 Pecos 建设新数据中心园区，新增约 2GW 全球数据中心容量。重要性：AI 云需求正在进入电力、土地、冷却和建设周期约束阶段。[Microsoft](https://blogs.microsoft.com/blog/2026/06/22/powering-the-next-wave-of-ai-expanding-capacity-with-our-new-datacenter-in-pecos/)
 2. **Amazon：追加 130 亿美元印度 AI/云基础设施投资。** Amazon 宣布 2026-2030 年在印度累计投资提高至 480 亿美元，其中新增 130 亿美元用于 AI 和云基础设施。重要性：AWS 在印度的区域容量、AI 芯片和托管 AI 服务扩张确定性提高。[Amazon](https://www.aboutamazon.com/news/company-news/amazon-india-investment)
 3. **NVIDIA + AWS：生产级 AI 协作。** NVIDIA 6 月 23 日发布与 AWS 的生产级 AI 协作进展。重要性：AWS 自研 Trainium 路线和 NVIDIA GPU 路线并行，而不是简单替代。[NVIDIA](https://blogs.nvidia.com/blog/nvidia-aws-ai-production-scale/)
-4. **Google：Gemini 3.5 Flash 原生支持 computer use。** Google 6 月 24 日把 computer use 作为 Gemini 3.5 Flash 内置工具开放。重要性：浏览器、桌面和移动端 agent 能力进入主力模型，而不是独立实验模型。[Google Blog](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-computer-use-gemini-3-5-flash/)、[Gemini API release notes](https://ai.google.dev/gemini-api/docs/changelog)
+4. **Google：Gemini 3.5 Flash 原生支持“计算机使用”（computer use）。** Google 6 月 24 日把计算机使用能力作为 Gemini 3.5 Flash 内置工具开放。重要性：浏览器、桌面和移动端 agent 能力进入主力模型，而不是独立实验模型。[Google 官方博客](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-computer-use-gemini-3-5-flash/)、[Gemini API 版本说明](https://ai.google.dev/gemini-api/docs/changelog)
 5. **Meta：与 EssilorLuxottica 推出 Meta Glasses。** Meta 6 月 23 日发布新 AI 眼镜系列，26 种款式，并从首发起集成 Muse Spark 驱动的 Meta AI。重要性：AI 眼镜从单一 Ray-Ban Meta 扩展到更宽价格和风格矩阵。[Meta](https://about.fb.com/news/2026/06/meta-essilorluxottica-partner-launch-meta-glasses/)、[EssilorLuxottica](https://www.essilorluxottica.com/en/newsroom/press-releases/essilorluxottica-meta-new-wearables-collection/)
 6. **SK Hynix：HBM4E 客户验证与 ADR 融资报道成为本周跟踪重点。** 12-high HBM4E 出样公告发生在 6 月 18 日，早于本覆盖周；本周新增变化是 WSJ、FT 等媒体报道其拟通过美国 ADR 融资约 290 亿美元。重要性：HBM4E 与先进封装扩产是下一代 AI 加速器关键瓶颈。[SK Hynix](https://news.skhynix.com/12-layer-hbm4e-sample/)、[PR Newswire](https://www.prnewswire.com/news-releases/sk-hynix-ships-samples-of-12-layer-next-gen-hbm4e-302803714.html)、[WSJ](https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-06-24-2026/card/XGzboqrIxtaxRTnlNlHT)
 7. **媒体称 Apple / Microsoft 终端价格可能受到内存成本冲击。** 多家媒体本周报道 Apple 和 Microsoft 上调部分产品价格，原因指向 AI 数据中心需求推高内存/存储成本。重要性：如果属实，AI 基建成本开始外溢到消费电子和企业终端采购。[CBS News](https://www.cbsnews.com/news/apple-price-hikes-macbook-ipad-2026/)、[Al Jazeera](https://www.aljazeera.com/economy/2026/6/26/apple-microsoft-hike-prices-over-surging-chip-costs)
@@ -17,12 +17,12 @@
 |---|---:|---|---|
 | Apple | 1 | 负面/混合 | 媒体称涨价、内存成本、AI 成本可能外溢 |
 | Microsoft | 2 | 正面/混合 | Pecos 2GW、Wisconsin 投产、终端涨价 |
-| Alphabet / Google | 2 | 正面/混合 | Gemini computer use、Gemini 3.5 Pro 7月发布报道 |
+| Alphabet / Google | 2 | 正面/混合 | Gemini 计算机使用、Gemini 3.5 Pro 7月发布报道 |
 | Amazon | 3 | 正面/混合 | 印度 AI 云投资、Trainium、EC2 GPU 定价 |
 | Meta | 2 | 正面 | Meta Glasses、Altoona 数据中心披露 |
 | NVIDIA | 3 | 正面 | AWS 协作、BioNeMo Agent Toolkit、TOP500 |
 | Tesla | 1 | 中性 | Q2 交付共识、储能部署共识 |
-| Samsung Electronics | 1 | 中性/正面 | 2026 Sustainability Report、HBM4 能效 |
+| Samsung Electronics | 1 | 中性/正面 | 2026 可持续发展报告、HBM4 能效 |
 | SK Hynix | 2 | 正面 | HBM4E 出样、ADR 融资报道 |
 | TSMC | 1 | 混合/正面 | 先进节点涨价报道、官方本周无新公告 |
 
@@ -49,10 +49,10 @@
 
 ### Alphabet / Google
 - 日期：2026-06-24
-- 事件：Google 发布 Gemini 3.5 Flash 内置 computer use 能力；Gemini API release notes 显示 Computer Use public preview 支持浏览器、移动端、桌面环境，并包含 safety policy 和 prompt injection 检测。
+- 事件：Google 发布 Gemini 3.5 Flash 内置计算机使用（computer use）能力；Gemini API 版本说明显示该能力的公开预览支持浏览器、移动端、桌面环境，并包含安全策略和提示词注入检测。
 - 影响：Google 将 agent 操作能力并入主力 Flash 模型，有利于企业自动化、浏览器任务、移动/桌面工作流和 Gemini Enterprise Agent Platform。
 - 可信度：已确认。
-- 来源：[Google Blog](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-computer-use-gemini-3-5-flash/)、[Gemini API release notes](https://ai.google.dev/gemini-api/docs/changelog)
+- 来源：[Google 官方博客](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-computer-use-gemini-3-5-flash/)、[Gemini API 版本说明](https://ai.google.dev/gemini-api/docs/changelog)
 
 - 日期：2026-06-25 至 2026-06-28
 - 事件：Business Insider 等媒体称 Gemini 3.5 Pro 发布时间可能在 7 月，原因是 Google 仍在优化长周期 agent 任务和早测反馈；未见 Google 官方确认。
@@ -113,14 +113,14 @@
 
 ### Tesla
 - 日期：2026-06-26
-- 事件：Tesla 发布 Q2 2026 delivery consensus：Q2 total deliveries 共识为 406,024 辆，energy storage deployed 为 13.8GWh。
+- 事件：Tesla 发布 2026 年第二季度交付共识数据：二季度总交付量共识为 406,024 辆，储能部署共识为 13.8GWh。
 - 影响：这是公司汇总的卖方共识，不是官方交付实绩；为 7 月初实际交付和储能数据设定基准。
 - 可信度：已确认。
 - 来源：[Tesla IR](https://ir.tesla.com/press-release/delivery-consensus-second-quarter-2026)
 
 ### Samsung Electronics
 - 日期：2026-06-26
-- 事件：Samsung Electronics 发布 2026 Sustainability Report，强调水资源管理、可持续制造，以及 AI 时代半导体业务的低功耗/能效目标。
+- 事件：Samsung Electronics 发布 2026 可持续发展报告，强调水资源管理、可持续制造，以及 AI 时代半导体业务的低功耗/能效目标。
 - 影响：AI 基础设施客户对 HBM、服务器 SSD 和制造环节的能效/用水要求提高；Samsung 将可持续性作为 DS 部门竞争力的一部分。
 - 可信度：已确认。
 - 来源：[Samsung Newsroom](https://news.samsung.com/global/samsung-electronics-releases-2026-sustainability-report-expanding-water-replenishment-efforts)、[Samsung Sustainability](https://www.samsung.com/global/sustainability/)
@@ -143,32 +143,32 @@
 - 事件：媒体报道 TSMC 将对 2nm、3nm、5nm、7nm 等先进节点提价，影响 NVIDIA、Apple、AMD、Qualcomm、Broadcom、MediaTek 等客户；TSMC 官方最新新闻页本周未见对应确认公告。
 - 影响：若确认，TSMC 先进制程定价权继续增强；客户成本可能向 GPU、AI ASIC、手机 SoC 和终端价格传导。
 - 可信度：媒体报道/待官方确认。
-- 来源：[Tom's Hardware](https://www.tomshardware.com/tech-industry/semiconductors/tsmc-is-reportedly-hiking-prices-for-all-advanced-nodes-accounting-for-74-percent-of-the-companys-wafer-business-nvidia-amd-apple-qualcomm-and-others-will-face-higher-wafer-costs)、[TSMC Latest News](https://pr.tsmc.com/english/latest-news)
+- 来源：[Tom's Hardware](https://www.tomshardware.com/tech-industry/semiconductors/tsmc-is-reportedly-hiking-prices-for-all-advanced-nodes-accounting-for-74-percent-of-the-companys-wafer-business-nvidia-amd-apple-qualcomm-and-others-will-face-higher-wafer-costs)、[TSMC 新闻](https://pr.tsmc.com/english/latest-news)
 
 ## 4. 跨公司与产业链观察
 1. **AI 数据中心的瓶颈正在从 GPU 扩散到电力、内存和价格。** Microsoft 的 2GW Pecos、Amazon 的印度 AI/云投资、AWS GPU 预留价格报道共同指向算力需求仍强。
-2. **HBM/DRAM 紧缺开始影响终端品牌。** Apple/Microsoft 价格报道、SK Hynix HBM4E、Samsung Sustainability Report 中的 AI/能效叙事都说明内存已经从 commodity 转为战略瓶颈。
-3. **云厂商自研芯片不是 NVIDIA 的简单替代。** AWS Trainium/Graviton 与 NVIDIA-AWS 协作同周出现，说明 hyperscaler 会按成本、可用性、软件生态和工作负载分层采购。
-4. **Agent 能力进入主流产品。** Google Gemini computer use、NVIDIA BioNeMo Agent Toolkit、Meta Glasses 都是“模型能力进入具体工作流/设备/行业工具”的例子。
+2. **HBM/DRAM 紧缺开始影响终端品牌。** Apple/Microsoft 价格报道、SK Hynix HBM4E、Samsung 可持续发展报告中的 AI/能效叙事都说明内存已经从大宗商品转为战略瓶颈。
+3. **云厂商自研芯片不是 NVIDIA 的简单替代。** AWS Trainium/Graviton 与 NVIDIA-AWS 协作同周出现，说明超大规模云厂商会按成本、可用性、软件生态和工作负载分层采购。
+4. **Agent 能力进入主流产品。** Google Gemini 计算机使用、NVIDIA BioNeMo Agent Toolkit、Meta Glasses 都是“模型能力进入具体工作流/设备/行业工具”的例子。
 5. **先进制程成本上升可能继续传导。** TSMC 提价报道若确认，将影响 Apple、NVIDIA 和云 ASIC 客户的长期成本结构。
 
 ## 5. 下周需关注
 1. Tesla Q2 2026 实际交付与储能部署是否高于 406,024 辆和 13.8GWh 共识。
 2. SK Hynix ADR 融资是否出现正式 SEC/交易所文件，资金用途是否确认指向 HBM4E、Yongin、Cheongju 和 EUV。
 3. TSMC 先进节点提价报道是否被公司、客户或供应链进一步确认。
-4. AWS EC2 Capacity Blocks for ML 的新价格是否在官方 pricing 页面落地，其他云厂商是否跟进。
+4. AWS EC2 Capacity Blocks for ML 的新价格是否在官方定价页面落地，其他云厂商是否跟进。
 5. Microsoft Pecos 项目的电力、天然气、用水、许可和社区审批进度。
 
 ## 6. 十家公司供应关系图谱与周度变化
 ### 6.0 年度主营产品上下游图片
 ![2026 年度十家公司主营产品上下游关系图](../assets/2026-06-29_product_relationships.svg)
 
-图片采用 Obsidian graph view 风格，基于 `state/product_relationships_2026.json` 生成。数据源优先使用 2026 年可取得的公司官方年报、投资者关系页面、官方新闻稿和监管披露；媒体报道或历史基线关系在 JSON 中单独标注证据级别。
+图片采用 Obsidian 图谱视图风格，基于 `state/product_relationships_2026.json` 生成。数据源优先使用 2026 年可取得的公司官方年报、投资者关系页面、官方新闻稿和监管披露；媒体报道或历史基线关系在 JSON 中单独标注证据级别。
 
 ### 6.1 本周供应关系可视化
 ![2026-06-29 本周供应关系 Obsidian 风格图](../assets/2026-06-29_supply_relationships.svg)
 
-上图采用 Obsidian graph view 风格，基于 `state/supply_graph_baseline.json` 生成；下方 Mermaid 保留为机器可读结构，用于校验 Edge ID 和下周差异比对。
+上图采用 Obsidian 图谱视图风格，基于 `state/supply_graph_baseline.json` 生成；下方 Mermaid 保留为机器可读结构，用于校验 Edge ID 和下周差异比对。
 
 ```mermaid
 flowchart LR
@@ -203,11 +203,11 @@ flowchart LR
 | E01 | TSMC | Apple | A/M/S 系列芯片先进制程代工 | 代工 | 本周 TSMC 涨价报道列 Apple 为受影响客户；无官方新公告 | 长期核心关系，但本周证据是媒体报道的价格风险，不是新供货确认 | 延续/风险 | [Tom's Hardware](https://www.tomshardware.com/tech-industry/semiconductors/tsmc-is-reportedly-hiking-prices-for-all-advanced-nodes-accounting-for-74-percent-of-the-companys-wafer-business-nvidia-amd-apple-qualcomm-and-others-will-face-higher-wafer-costs) |
 | E02 | TSMC | NVIDIA | AI GPU 先进制程与封装 | 代工/封装 | TSMC 涨价报道列 NVIDIA 为受影响客户；NVIDIA AI 基础设施需求本周继续强 | 具体订单/封装份额本周无官方新披露 | 延续/风险 | [Tom's Hardware](https://www.tomshardware.com/tech-industry/semiconductors/tsmc-is-reportedly-hiking-prices-for-all-advanced-nodes-accounting-for-74-percent-of-the-companys-wafer-business-nvidia-amd-apple-qualcomm-and-others-will-face-higher-wafer-costs)、[NVIDIA](https://blogs.nvidia.com/blog/top500-green500-supercomputers-isc-2026/) |
 | E03 | SK Hynix | NVIDIA/AI 加速器客户 | HBM4E/HBM4/HBM3E | 内存供应 | HBM4E 出样为覆盖周外事件；本周 ADR 融资报道指向 HBM/先进封装扩产 | 客户名单和订单规模需等待公司或客户进一步披露 | 增强/媒体报道 | [SK Hynix](https://news.skhynix.com/12-layer-hbm4e-sample/)、[PR Newswire](https://www.prnewswire.com/news-releases/sk-hynix-ships-samples-of-12-layer-next-gen-hbm4e-302803714.html)、[WSJ](https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-06-24-2026/card/XGzboqrIxtaxRTnlNlHT) |
-| E04 | Samsung Electronics | NVIDIA/AI 加速器客户 | HBM4/HBM4E | 内存供应 | Samsung 2026 Sustainability Report 强调 AI 时代半导体低功耗/能效；本周无新客户奖项 | 作为 HBM 竞争格局基线保留，不能解读为本周新增订单 | 延续/无本周新增证据 | [Samsung Newsroom](https://news.samsung.com/global/samsung-electronics-releases-2026-sustainability-report-expanding-water-replenishment-efforts) |
+| E04 | Samsung Electronics | NVIDIA/AI 加速器客户 | HBM4/HBM4E | 内存供应 | Samsung 2026 可持续发展报告强调 AI 时代半导体低功耗/能效；本周无新客户奖项 | 作为 HBM 竞争格局基线保留，不能解读为本周新增订单 | 延续/无本周新增证据 | [Samsung Newsroom](https://news.samsung.com/global/samsung-electronics-releases-2026-sustainability-report-expanding-water-replenishment-efforts) |
 | E05 | Samsung Electronics | Apple | DRAM/NAND/OLED 等零部件 | 供应 | Apple 价格报道显示内存/存储成本压力；具体供应商份额未在本周确认 | 长期零部件供应关系基线，当前只支持“成本风险”判断 | 风险/基线不足 | [CBS News](https://www.cbsnews.com/news/apple-price-hikes-macbook-ipad-2026/) |
 | E06 | NVIDIA | Microsoft | GPU/AI 加速卡、网络与软件生态 | 供应 | Microsoft 2GW Pecos 和 Wisconsin 投产说明 AI 算力需求延续；具体采购未披露 | 作为 AI 数据中心供应链基线保留，不标记为本周新采购 | 延续/基线不足 | [Microsoft](https://blogs.microsoft.com/blog/2026/06/22/powering-the-next-wave-of-ai-expanding-capacity-with-our-new-datacenter-in-pecos/) |
 | E07 | NVIDIA | Amazon / AWS | GPU/AI 基础设施与软件栈 | 供应/合作 | NVIDIA 与 AWS 本周发布生产级 AI 协作进展 | 这是本周最直接的供应/合作证据之一 | 增强 | [NVIDIA-AWS](https://blogs.nvidia.com/blog/nvidia-aws-ai-production-scale/) |
-| E08 | Amazon / AWS | AI 初创企业/客户 | Trainium3、Bedrock、云训练服务 | 云服务/竞争替代 | Amazon 披露 Odyssey 等 AI startup 使用 Trainium | 该边不是十家公司内部关系，但解释 AWS 自研芯片对 NVIDIA 的替代压力 | 增强 | [Amazon Trainium](https://www.aboutamazon.com/news/aws/why-ai-startups-choose-amazon-trainium-chips) |
+| E08 | Amazon / AWS | AI 初创企业/客户 | Trainium3、Bedrock、云训练服务 | 云服务/竞争替代 | Amazon 披露 Odyssey 等 AI 初创企业使用 Trainium | 该边不是十家公司内部关系，但解释 AWS 自研芯片对 NVIDIA 的替代压力 | 增强 | [Amazon Trainium](https://www.aboutamazon.com/news/aws/why-ai-startups-choose-amazon-trainium-chips) |
 | E09 | Meta | EssilorLuxottica | Meta Glasses 镜框、镜片、渠道与 AI 眼镜产品 | 合作 | 双方本周正式发布 Meta Glasses | 本周新增、证据直接 | 新增 | [Meta](https://about.fb.com/news/2026/06/meta-essilorluxottica-partner-launch-meta-glasses/)、[EssilorLuxottica](https://www.essilorluxottica.com/en/newsroom/press-releases/essilorluxottica-meta-new-wearables-collection/) |
 | E10 | ASML/EUV | SK Hynix | EUV 设备用于 HBM/DRAM 扩产 | 设备供应 | SK Hynix ADR 融资报道提及 EUV 设备和先进制造投资 | 外部设备节点；媒体报道，需等待正式融资文件确认 | 增强/媒体报道 | [Tom's Hardware](https://www.tomshardware.com/tech-industry/sk-hynix-files-to-raise-up-to-29-billion-in-nasdaq-listing) |
 
@@ -221,7 +221,7 @@ flowchart LR
   - NVIDIA 与 AWS：本周 NVIDIA 官方发布双方生产级 AI 协作，关系从“长期合作”强化为“生产部署叙事”。
   - Microsoft 与 AI 基础设施供应链：Pecos 2GW 和 Wisconsin 投产强化其对 GPU、服务器、电力、冷却和建筑供应链的需求。
   - SK Hynix 与 AI 加速器客户：HBM4E 样品属于覆盖周外事件，但本周 ADR 融资报道强化了 HBM 扩产/验证逻辑。
-  - Amazon 自研芯片路线：Trainium3 客户案例强化 AWS 自研 silicon 在 AI 训练中的定位。
+  - Amazon 自研芯片路线：Trainium3 客户案例强化 AWS 自研芯片在 AI 训练中的定位。
 
 - 弱化或风险关系：
   - Apple 与内存/存储供应链：媒体称 DRAM/NAND 成本压力可能已经传导到终端价格，但缺少 Apple 官方确认。
@@ -231,16 +231,16 @@ flowchart LR
 - 无明显变化但关键关系：
   - TSMC 对 Apple、NVIDIA 和云 ASIC 客户的先进制程地位仍是核心瓶颈。
   - Samsung 与 SK Hynix 在 HBM/DRAM/NAND 中的议价能力仍受 AI 服务器需求支撑。
-  - NVIDIA 对 Microsoft、AWS 等 hyperscaler 的 AI 训练/推理基础设施影响仍未被自研芯片完全替代；Google、Meta、Tesla 本周没有足够直接证据进入主图。
+  - NVIDIA 对 Microsoft、AWS 等超大规模云厂商（hyperscaler）的 AI 训练/推理基础设施影响仍未被自研芯片完全替代；Google、Meta、Tesla 本周没有足够直接证据进入主图。
 
 ## 7. 本期自检
 - 日期范围已限定为 2026-06-22 至 2026-06-28；SK Hynix HBM4E 出样发生在 6 月 18 日，但本周继续构成供应链主要跟踪事项，已明确标注。
 - 10 家公司均已覆盖；无官方确认的事项均标注为“媒体报道/待官方确认”或“基线不足”。
 - 每条事件均附来源链接，优先使用公司公告、官方博客、IR 页面和权威媒体。
 - Mermaid 使用 `flowchart LR` 和 ASCII 节点 ID，包含全部 10 家覆盖公司。
-- 年度主营产品上下游图片已生成：`assets/2026-06-29_product_relationships.svg`，采用 Obsidian graph view 风格，并由 `state/product_relationships_2026.json` 提供结构化来源基线。
-- 本周供应关系图片已生成：`assets/2026-06-29_supply_relationships.svg`，采用 Obsidian graph view 风格，并由 `state/supply_graph_baseline.json` 提供结构化来源基线。
+- 年度主营产品上下游图片已生成：`assets/2026-06-29_product_relationships.svg`，采用 Obsidian 图谱视图风格，并由 `state/product_relationships_2026.json` 提供结构化来源基线。
+- 本周供应关系图片已生成：`assets/2026-06-29_supply_relationships.svg`，采用 Obsidian 图谱视图风格，并由 `state/supply_graph_baseline.json` 提供结构化来源基线。
 - 图中所有关系边均能在 6.2 表格中找到相同 Edge ID 的证据或风险标注；无本周直接证据的边已从主图删除或降级为基线说明。
 - 质量闸门：已运行 `scripts/validate_weekly_brief.py`，校验 JSON、日期、latest 链接、Mermaid/Table/JSON Edge ID 一致性和低置信度标注，本轮结果为通过。
 - 来源真实性审查：已运行 `scripts/audit_sources.py` 并生成 `logs/2026-06-29_source_audit.json`；30 个来源链接全部可达，0 个未分类，5 个为付费墙或访问受限但域名可达。
-- GitHub 同步：质量闸门通过后，本期文件、latest、供应关系基线和校验脚本已提交并推送至 `origin/main`。
+- GitHub 同步：由仓库提交记录确认；周报正文不提前声明同步完成状态。
