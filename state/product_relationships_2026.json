@@ -1,0 +1,141 @@
+{
+  "title": "2026 Product-Level Upstream/Downstream Map For Ten Covered Companies",
+  "source_baseline": "Latest official annual reports, investor relations pages, company newsroom posts, and regulatory filings available in 2026; media-reported relationships are labeled separately.",
+  "generated_for_report_date": "2026-06-29",
+  "companies": [
+    {
+      "name": "Apple",
+      "category": "device",
+      "main_products": ["iPhone", "Mac", "iPad", "Wearables", "Services", "Apple silicon"],
+      "official_sources": ["https://investor.apple.com/sec-filings/default.aspx"]
+    },
+    {
+      "name": "Microsoft",
+      "category": "cloud_ai",
+      "main_products": ["Azure", "Microsoft 365", "Windows", "GitHub", "LinkedIn", "Xbox"],
+      "official_sources": ["https://www.microsoft.com/en-us/Investor/annual-reports.aspx"]
+    },
+    {
+      "name": "Alphabet / Google",
+      "category": "cloud_ai",
+      "main_products": ["Search", "YouTube", "Google Cloud", "Gemini", "Android", "Pixel"],
+      "official_sources": ["https://abc.xyz/investor/"]
+    },
+    {
+      "name": "Amazon / AWS",
+      "category": "cloud_ai",
+      "main_products": ["AWS", "Marketplace", "Prime", "Ads", "Logistics", "Devices"],
+      "official_sources": ["https://ir.aboutamazon.com/annual-reports-proxies-and-shareholder-letters/default.aspx"]
+    },
+    {
+      "name": "Meta",
+      "category": "cloud_ai",
+      "main_products": ["Facebook", "Instagram", "WhatsApp", "Threads", "Meta AI", "Reality Labs"],
+      "official_sources": ["https://investor.atmeta.com/financials/"]
+    },
+    {
+      "name": "NVIDIA",
+      "category": "semiconductor",
+      "main_products": ["Data center GPU", "Networking", "CUDA", "AI software", "Gaming GPU", "Automotive"],
+      "official_sources": ["https://investor.nvidia.com/financial-info/annual-reports-and-proxies/default.aspx"]
+    },
+    {
+      "name": "Tesla",
+      "category": "auto_energy",
+      "main_products": ["EVs", "Energy storage", "Solar", "FSD", "Supercharging", "Robotics"],
+      "official_sources": ["https://ir.tesla.com/"]
+    },
+    {
+      "name": "Samsung Electronics",
+      "category": "memory",
+      "main_products": ["Memory", "Foundry", "OLED", "Mobile devices", "TV/display", "Appliances"],
+      "official_sources": ["https://www.samsung.com/global/ir/reports-disclosures/annual-reports/"]
+    },
+    {
+      "name": "SK Hynix",
+      "category": "memory",
+      "main_products": ["DRAM", "NAND", "HBM", "CXL memory", "Enterprise SSD", "Advanced packaging"],
+      "official_sources": ["https://www.skhynix.com/ir/UI-FR-IR02"]
+    },
+    {
+      "name": "TSMC",
+      "category": "semiconductor",
+      "main_products": ["Advanced logic foundry", "Specialty technologies", "3DFabric", "CoWoS", "N3/N2 nodes", "Wafer services"],
+      "official_sources": ["https://investor.tsmc.com/english/annual-reports"]
+    }
+  ],
+  "relationships": [
+    {
+      "edge_id": "P01",
+      "source": "TSMC",
+      "target": "Apple",
+      "product_or_service": "advanced-node foundry for Apple silicon",
+      "evidence_level": "official_baseline_plus_market_consensus",
+      "official_sources": ["https://investor.tsmc.com/english/annual-reports", "https://investor.apple.com/sec-filings/default.aspx"]
+    },
+    {
+      "edge_id": "P02",
+      "source": "TSMC",
+      "target": "NVIDIA",
+      "product_or_service": "advanced-node foundry and packaging for AI chips",
+      "evidence_level": "official_baseline_plus_market_consensus",
+      "official_sources": ["https://investor.tsmc.com/english/annual-reports", "https://investor.nvidia.com/financial-info/annual-reports-and-proxies/default.aspx"]
+    },
+    {
+      "edge_id": "P03",
+      "source": "SK Hynix",
+      "target": "NVIDIA",
+      "product_or_service": "HBM for AI accelerators",
+      "evidence_level": "official_current_year",
+      "official_sources": ["https://news.skhynix.com/12-layer-hbm4e-sample/", "https://investor.nvidia.com/financial-info/annual-reports-and-proxies/default.aspx"]
+    },
+    {
+      "edge_id": "P04",
+      "source": "Samsung Electronics",
+      "target": "NVIDIA",
+      "product_or_service": "HBM/DRAM supply baseline",
+      "evidence_level": "official_baseline",
+      "official_sources": ["https://www.samsung.com/global/ir/reports-disclosures/annual-reports/", "https://news.samsung.com/global/samsung-electronics-releases-2026-sustainability-report-expanding-water-replenishment-efforts"]
+    },
+    {
+      "edge_id": "P05",
+      "source": "NVIDIA",
+      "target": "Amazon / AWS",
+      "product_or_service": "GPU and AI infrastructure on AWS",
+      "evidence_level": "official_current_year",
+      "official_sources": ["https://blogs.nvidia.com/blog/nvidia-aws-ai-production-scale/"]
+    },
+    {
+      "edge_id": "P06",
+      "source": "NVIDIA",
+      "target": "Microsoft",
+      "product_or_service": "AI accelerator ecosystem for Azure",
+      "evidence_level": "official_baseline",
+      "official_sources": ["https://www.microsoft.com/en-us/Investor/annual-reports.aspx", "https://investor.nvidia.com/financial-info/annual-reports-and-proxies/default.aspx"]
+    },
+    {
+      "edge_id": "P07",
+      "source": "Amazon / AWS",
+      "target": "Meta",
+      "product_or_service": "cloud CPU/AI services baseline",
+      "evidence_level": "historical_baseline_needs_weekly_revalidation",
+      "official_sources": ["https://ir.aboutamazon.com/annual-reports-proxies-and-shareholder-letters/default.aspx", "https://investor.atmeta.com/financials/"]
+    },
+    {
+      "edge_id": "P08",
+      "source": "Samsung Electronics",
+      "target": "Apple",
+      "product_or_service": "memory/display component baseline",
+      "evidence_level": "official_baseline_plus_market_consensus",
+      "official_sources": ["https://www.samsung.com/global/ir/reports-disclosures/annual-reports/", "https://investor.apple.com/sec-filings/default.aspx"]
+    },
+    {
+      "edge_id": "P09",
+      "source": "NVIDIA",
+      "target": "Tesla",
+      "product_or_service": "automotive/AI compute ecosystem baseline",
+      "evidence_level": "official_baseline",
+      "official_sources": ["https://ir.tesla.com/", "https://investor.nvidia.com/financial-info/annual-reports-and-proxies/default.aspx"]
+    }
+  ]
+}

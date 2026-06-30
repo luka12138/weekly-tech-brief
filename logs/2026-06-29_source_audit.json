@@ -1,0 +1,314 @@
+{
+  "generated_at": "2026-06-30T07:15:04.596164+00:00",
+  "report": "reports/2026-06-29_weekly_morning_brief.md",
+  "baseline": "state/supply_graph_baseline.json",
+  "summary": {
+    "total": 30,
+    "reachable": 30,
+    "access_limited": 6,
+    "unclassified": 0,
+    "errors": 0
+  },
+  "sources": [
+    {
+      "url": "https://about.fb.com/news/2026/06/inside-meta-data-center/",
+      "scheme": "https",
+      "host": "about.fb.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "error": null
+    },
+    {
+      "url": "https://about.fb.com/news/2026/06/meta-essilorluxottica-partner-launch-meta-glasses/",
+      "scheme": "https",
+      "host": "about.fb.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "error": null
+    },
+    {
+      "url": "https://ai.google.dev/gemini-api/docs/changelog",
+      "scheme": "https",
+      "host": "ai.google.dev",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "error": null
+    },
+    {
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-computer-use-gemini-3-5-flash/",
+      "scheme": "https",
+      "host": "blog.google",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "error": null
+    },
+    {
+      "url": "https://blogs.microsoft.com/blog/2026/06/22/powering-the-next-wave-of-ai-expanding-capacity-with-our-new-datacenter-in-pecos/",
+      "scheme": "https",
+      "host": "blogs.microsoft.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "error": null
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/nvidia-aws-ai-production-scale/",
+      "scheme": "https",
+      "host": "blogs.nvidia.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "error": null
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/top500-green500-supercomputers-isc-2026/",
+      "scheme": "https",
+      "host": "blogs.nvidia.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "error": null
+    },
+    {
+      "url": "https://ir.tesla.com/press-release/delivery-consensus-second-quarter-2026",
+      "scheme": "https",
+      "host": "ir.tesla.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "error": null
+    },
+    {
+      "url": "https://news.microsoft.com/source/2026/06/23/microsoft-completes-construction-on-first-datacenter-facility-in-mount-pleasant-wisconsin/",
+      "scheme": "https",
+      "host": "news.microsoft.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "error": null
+    },
+    {
+      "url": "https://news.samsung.com/global/samsung-electronics-releases-2026-sustainability-report-expanding-water-replenishment-efforts",
+      "scheme": "https",
+      "host": "news.samsung.com",
+      "source_class": "official_or_regulatory",
+      "status": 403,
+      "reachable": true,
+      "access_limited": true,
+      "error": null
+    },
+    {
+      "url": "https://news.skhynix.com/12-layer-hbm4e-sample/",
+      "scheme": "https",
+      "host": "news.skhynix.com",
+      "source_class": "official_or_regulatory",
+      "status": 403,
+      "reachable": true,
+      "access_limited": true,
+      "error": null
+    },
+    {
+      "url": "https://nvidianews.nvidia.com/news/nvidia-launches-bionemo-agent-toolkit-giving-ai-agents-the-tools-to-accelerate-scientific-discovery",
+      "scheme": "https",
+      "host": "nvidianews.nvidia.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "error": null
+    },
+    {
+      "url": "https://pr.tsmc.com/english/latest-news",
+      "scheme": "https",
+      "host": "pr.tsmc.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "error": null
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/25/amazon-ups-india-bet-with-fresh-13b-ai-infrastructure-investment/",
+      "scheme": "https",
+      "host": "techcrunch.com",
+      "source_class": "trade_or_press_media",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "error": null
+    },
+    {
+      "url": "https://top500.org/lists/top500/list/2026/06/",
+      "scheme": "https",
+      "host": "top500.org",
+      "source_class": "trade_or_press_media",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "error": null
+    },
+    {
+      "url": "https://www.aboutamazon.com/news/aws/why-ai-startups-choose-amazon-trainium-chips",
+      "scheme": "https",
+      "host": "www.aboutamazon.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "error": null
+    },
+    {
+      "url": "https://www.aboutamazon.com/news/company-news/amazon-india-investment",
+      "scheme": "https",
+      "host": "www.aboutamazon.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "error": null
+    },
+    {
+      "url": "https://www.aljazeera.com/economy/2026/6/26/apple-microsoft-hike-prices-over-surging-chip-costs",
+      "scheme": "https",
+      "host": "www.aljazeera.com",
+      "source_class": "trade_or_press_media",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "error": null
+    },
+    {
+      "url": "https://www.businessinsider.com/amazon-raises-ai-cloud-prices-memory-chip-costs-soar-2026-6",
+      "scheme": "https",
+      "host": "www.businessinsider.com",
+      "source_class": "trade_or_press_media",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "error": null
+    },
+    {
+      "url": "https://www.businessinsider.com/google-3-5-pro-july-release-tokens-ai-agents-model-2026-6",
+      "scheme": "https",
+      "host": "www.businessinsider.com",
+      "source_class": "trade_or_press_media",
+      "status": 206,
+      "reachable": true,
+      "access_limited": false,
+      "error": null
+    },
+    {
+      "url": "https://www.cbsnews.com/news/apple-price-hikes-macbook-ipad-2026/",
+      "scheme": "https",
+      "host": "www.cbsnews.com",
+      "source_class": "trade_or_press_media",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "error": null
+    },
+    {
+      "url": "https://www.essilorluxottica.com/en/newsroom/press-releases/essilorluxottica-meta-new-wearables-collection/",
+      "scheme": "https",
+      "host": "www.essilorluxottica.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "error": null
+    },
+    {
+      "url": "https://www.ft.com/content/3f052dba-78a4-43bb-af45-9af2f3441fd5",
+      "scheme": "https",
+      "host": "www.ft.com",
+      "source_class": "tier1_media",
+      "status": 403,
+      "reachable": true,
+      "access_limited": true,
+      "error": null
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/sk-hynix-ships-samples-of-12-layer-next-gen-hbm4e-302803714.html",
+      "scheme": "https",
+      "host": "www.prnewswire.com",
+      "source_class": "trade_or_press_media",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "error": null
+    },
+    {
+      "url": "https://www.samsung.com/global/sustainability/",
+      "scheme": "https",
+      "host": "www.samsung.com",
+      "source_class": "official_or_regulatory",
+      "status": 403,
+      "reachable": true,
+      "access_limited": true,
+      "error": null
+    },
+    {
+      "url": "https://www.theguardian.com/technology/2026/jun/25/apple-price-hike",
+      "scheme": "https",
+      "host": "www.theguardian.com",
+      "source_class": "trade_or_press_media",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "error": null
+    },
+    {
+      "url": "https://www.thestreet.com/investing/amazon-raises-price-ai-ec2-capacity-blocks",
+      "scheme": "https",
+      "host": "www.thestreet.com",
+      "source_class": "trade_or_press_media",
+      "status": 403,
+      "reachable": true,
+      "access_limited": true,
+      "error": null
+    },
+    {
+      "url": "https://www.tomshardware.com/tech-industry/semiconductors/tsmc-is-reportedly-hiking-prices-for-all-advanced-nodes-accounting-for-74-percent-of-the-companys-wafer-business-nvidia-amd-apple-qualcomm-and-others-will-face-higher-wafer-costs",
+      "scheme": "https",
+      "host": "www.tomshardware.com",
+      "source_class": "trade_or_press_media",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "error": null
+    },
+    {
+      "url": "https://www.tomshardware.com/tech-industry/sk-hynix-files-to-raise-up-to-29-billion-in-nasdaq-listing",
+      "scheme": "https",
+      "host": "www.tomshardware.com",
+      "source_class": "trade_or_press_media",
+      "status": 206,
+      "reachable": true,
+      "access_limited": false,
+      "error": null
+    },
+    {
+      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-06-24-2026/card/XGzboqrIxtaxRTnlNlHT",
+      "scheme": "https",
+      "host": "www.wsj.com",
+      "source_class": "tier1_media",
+      "status": 401,
+      "reachable": true,
+      "access_limited": true,
+      "error": null
+    }
+  ]
+}

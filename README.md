@@ -32,16 +32,31 @@ reports/
   latest.md
   YYYY-MM-DD_weekly_morning_brief.md
 
+assets/
+  YYYY-MM-DD_product_relationships.svg
+
 state/
   supply_graph_baseline.json
+  product_relationships_YYYY.json
+
+logs/
+  YYYY-MM-DD_source_audit.json
 
 scripts/
+  audit_sources.py
+  build_product_graph_svg.py
   validate_weekly_brief.py
 ```
 
 `reports/latest.md` is the stable entry point for the newest brief.
 
 `state/supply_graph_baseline.json` stores the structured supply-chain graph used by the next weekly run. It is intentionally versioned so weekly relationship changes can be compared against the previous baseline.
+
+`state/product_relationships_YYYY.json` stores the annual product-level upstream/downstream map. It should be based on the most official available sources for the year, such as annual reports, investor relations pages, regulatory filings, and company newsroom posts.
+
+`assets/YYYY-MM-DD_product_relationships.svg` is the rendered image included in the weekly report.
+
+`logs/YYYY-MM-DD_source_audit.json` stores the source authenticity audit for the report.
 
 `scripts/validate_weekly_brief.py` is the quality gate. It validates the report before committing or pushing new results.
 
@@ -56,6 +71,10 @@ Each weekly brief is expected to include:
 5. Next-week watchlist
 6. Supply-chain relationship graph and week-over-week changes
 7. Self-check section
+
+The supply-chain section should also include a rendered product relationship image:
+
+- `assets/YYYY-MM-DD_product_relationships.svg`
 
 The supply-chain section uses matching `Edge ID`s across:
 
@@ -73,7 +92,10 @@ Run the validator before committing generated output:
 python3 scripts/validate_weekly_brief.py \
   --report reports/2026-06-29_weekly_morning_brief.md \
   --baseline state/supply_graph_baseline.json \
-  --latest reports/latest.md
+  --latest reports/latest.md \
+  --source-audit logs/2026-06-29_source_audit.json \
+  --product-graph state/product_relationships_2026.json \
+  --product-image assets/2026-06-29_product_relationships.svg
 ```
 
 The validator checks:
@@ -84,6 +106,42 @@ The validator checks:
 - `reports/latest.md` links to an existing report
 - Mermaid graph, section 6.2 table, and JSON baseline have the same `Edge ID`s
 - Low-confidence or media-reported relationships include limitation language
+- Source audit exists and has no unclassified or unreachable URLs
+- Product relationship image exists and is referenced by the report
+- Product relationship JSON covers all ten companies and has official sources
+
+## Source Authenticity Audit
+
+Run the source audit after generating a report:
+
+```bash
+python3 scripts/audit_sources.py \
+  --report reports/YYYY-MM-DD_weekly_morning_brief.md \
+  --baseline state/supply_graph_baseline.json \
+  --output logs/YYYY-MM-DD_source_audit.json
+```
+
+The audit checks source hygiene:
+
+- HTTPS URL usage
+- URL reachability
+- Official / regulatory / tier-one media / trade media classification
+- Paywall or access-limited status
+- Unclassified source count
+
+This does not prove that every reported fact is true by itself. It creates an auditable source-quality layer and forces weak or access-limited sources to be visible.
+
+## Product Relationship Image
+
+Build the product-level relationship image from structured JSON:
+
+```bash
+python3 scripts/build_product_graph_svg.py \
+  --input state/product_relationships_2026.json \
+  --output assets/YYYY-MM-DD_product_relationships.svg
+```
+
+The JSON should be updated from the most official available annual sources for the year. Relationships with weaker evidence must use a weaker `evidence_level` instead of being shown as fully confirmed.
 
 ## Manual Update Flow
 
@@ -93,10 +151,13 @@ After generating or editing a weekly brief:
 python3 scripts/validate_weekly_brief.py \
   --report reports/YYYY-MM-DD_weekly_morning_brief.md \
   --baseline state/supply_graph_baseline.json \
-  --latest reports/latest.md
+  --latest reports/latest.md \
+  --source-audit logs/YYYY-MM-DD_source_audit.json \
+  --product-graph state/product_relationships_YYYY.json \
+  --product-image assets/YYYY-MM-DD_product_relationships.svg
 
 git status
-git add reports/ state/ scripts/
+git add reports/ assets/ state/ logs/ scripts/
 git commit -m "chore: add weekly brief YYYY-MM-DD"
 git push
 ```
@@ -109,10 +170,12 @@ The intended production flow is:
 
 1. Windows desktop runs the scheduled Codex automation every Monday at 09:00 Asia/Shanghai.
 2. The automation reads `reports/latest.md` and `state/supply_graph_baseline.json`.
-3. It generates the new weekly brief and updated supply-chain baseline.
-4. It runs `scripts/validate_weekly_brief.py`.
-5. If validation passes, it commits and pushes to GitHub.
-6. Mac or any other device pulls from GitHub and reads `reports/latest.md`.
+3. It updates `state/product_relationships_YYYY.json` from official annual sources when needed.
+4. It generates the new weekly brief, product relationship image, and updated supply-chain baseline.
+5. It runs `scripts/audit_sources.py`.
+6. It runs `scripts/validate_weekly_brief.py`.
+7. If validation passes, it commits and pushes to GitHub.
+8. Mac or any other device pulls from GitHub and reads `reports/latest.md`.
 
 Recommended Mac viewing command:
 

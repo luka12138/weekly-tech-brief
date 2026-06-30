@@ -160,6 +160,11 @@
 5. Microsoft Pecos 项目的电力、天然气、用水、许可和社区审批进度。
 
 ## 6. 十家公司供应关系图谱与周度变化
+### 6.0 年度主营产品上下游图片
+![2026 年度十家公司主营产品上下游关系图](../assets/2026-06-29_product_relationships.svg)
+
+图片基于 `state/product_relationships_2026.json` 生成，数据源优先使用 2026 年可取得的公司官方年报、投资者关系页面、官方新闻稿和监管披露；媒体报道或历史基线关系在 JSON 中单独标注证据级别。
+
 ### 6.1 本周供应关系可视化
 ```mermaid
 flowchart LR
@@ -229,6 +234,8 @@ flowchart LR
 - 10 家公司均已覆盖；无官方确认的事项均标注为“媒体报道/待官方确认”或“基线不足”。
 - 每条事件均附来源链接，优先使用公司公告、官方博客、IR 页面和权威媒体。
 - Mermaid 使用 `flowchart LR` 和 ASCII 节点 ID，包含全部 10 家覆盖公司。
+- 年度主营产品上下游图片已生成：`assets/2026-06-29_product_relationships.svg`，并由 `state/product_relationships_2026.json` 提供结构化来源基线。
 - 图中所有关系边均能在 6.2 表格中找到相同 Edge ID 的证据或风险标注；无本周直接证据的边已从主图删除或降级为基线说明。
 - 质量闸门：已运行 `scripts/validate_weekly_brief.py`，校验 JSON、日期、latest 链接、Mermaid/Table/JSON Edge ID 一致性和低置信度标注，本轮结果为通过。
+- 来源真实性审查：已运行 `scripts/audit_sources.py` 并生成 `logs/2026-06-29_source_audit.json`；30 个来源链接全部可达，0 个未分类，6 个为付费墙或访问受限但域名可达。
 - GitHub 同步：质量闸门通过后，本期文件、latest、供应关系基线和校验脚本已提交并推送至 `origin/main`。

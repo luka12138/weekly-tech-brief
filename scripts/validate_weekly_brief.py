@@ -41,6 +41,15 @@ REQUIRED_EDGE_FIELDS = [
     "sources",
 ]
 
+REQUIRED_PRODUCT_RELATIONSHIP_FIELDS = [
+    "edge_id",
+    "source",
+    "target",
+    "product_or_service",
+    "evidence_level",
+    "official_sources",
+]
+
 
 def fail(message: str) -> None:
     print(f"ERROR: {message}", file=sys.stderr)
@@ -80,7 +89,85 @@ def validate_latest(latest_path: Path) -> None:
             fail(f"reports/latest.md link target does not exist: {link}")
 
 
-def validate_report(report_path: Path, baseline_path: Path, latest_path: Path) -> None:
+def validate_source_audit(audit_path: Path | None) -> None:
+    if audit_path is None:
+        return
+    if not audit_path.exists():
+        fail(f"Source audit file does not exist: {audit_path}")
+    audit = json.loads(audit_path.read_text(encoding="utf-8"))
+    summary = audit.get("summary", {})
+    if summary.get("total", 0) <= 0:
+        fail("Source audit has no audited URLs")
+    if summary.get("unclassified", 0) != 0:
+        fail("Source audit contains unclassified sources")
+    if summary.get("errors", 0) != 0:
+        fail("Source audit contains source reachability errors")
+    for source in audit.get("sources", []):
+        if not source.get("url", "").startswith("https://"):
+            fail(f"Source audit contains non-HTTPS URL: {source}")
+        if not source.get("reachable"):
+            fail(f"Source audit contains unreachable URL: {source}")
+
+
+def validate_product_graph(report: str, product_graph_path: Path | None, product_image_path: Path | None) -> None:
+    if product_graph_path is None and product_image_path is None:
+        return
+    if product_graph_path is None or product_image_path is None:
+        fail("Product graph JSON and product image must be provided together")
+    if not product_graph_path.exists():
+        fail(f"Product graph JSON does not exist: {product_graph_path}")
+    if not product_image_path.exists():
+        fail(f"Product relationship image does not exist: {product_image_path}")
+    if product_image_path.suffix.lower() not in {".svg", ".png", ".jpg", ".jpeg", ".webp"}:
+        fail(f"Unsupported product image type: {product_image_path}")
+    expected_image_ref = str(product_image_path).replace("\\", "/")
+    alternate_image_ref = "../" + expected_image_ref
+    if expected_image_ref not in report and alternate_image_ref not in report:
+        fail(f"Report does not reference product image: {expected_image_ref}")
+
+    product_graph = json.loads(product_graph_path.read_text(encoding="utf-8"))
+    companies = product_graph.get("companies")
+    if not isinstance(companies, list):
+        fail("Product graph companies must be a list")
+    names = [item.get("name") for item in companies]
+    if names != REQUIRED_COMPANIES:
+        fail("Product graph companies list is missing or not in canonical order")
+    for company in companies:
+        if not company.get("main_products"):
+            fail(f"Product graph company has no main_products: {company}")
+        if not company.get("official_sources"):
+            fail(f"Product graph company has no official_sources: {company}")
+
+    relationships = product_graph.get("relationships")
+    if not isinstance(relationships, list) or not relationships:
+        fail("Product graph relationships must be a non-empty list")
+    seen: set[str] = set()
+    for relation in relationships:
+        for field in REQUIRED_PRODUCT_RELATIONSHIP_FIELDS:
+            if field not in relation:
+                fail(f"Product relationship missing field {field}: {relation}")
+        edge_id = relation["edge_id"]
+        if not re.fullmatch(r"P\d{2}", edge_id):
+            fail(f"Invalid product relationship edge_id: {edge_id}")
+        if edge_id in seen:
+            fail(f"Duplicate product relationship edge_id: {edge_id}")
+        seen.add(edge_id)
+        if relation["source"] not in names:
+            fail(f"Product relationship source is not a covered company: {relation}")
+        if relation["target"] not in names and not str(relation["target"]).startswith("外部:"):
+            fail(f"Product relationship target is not covered or external: {relation}")
+        if not relation.get("official_sources"):
+            fail(f"Product relationship has no official_sources: {relation}")
+
+
+def validate_report(
+    report_path: Path,
+    baseline_path: Path,
+    latest_path: Path,
+    source_audit_path: Path | None = None,
+    product_graph_path: Path | None = None,
+    product_image_path: Path | None = None,
+) -> None:
     report = report_path.read_text(encoding="utf-8")
     baseline = json.loads(baseline_path.read_text(encoding="utf-8"))
 
@@ -157,6 +244,8 @@ def validate_report(report_path: Path, baseline_path: Path, latest_path: Path) -
             fail(f"Report contains stale or imprecise self-check phrase: {phrase}")
 
     validate_latest(latest_path)
+    validate_source_audit(source_audit_path)
+    validate_product_graph(report, product_graph_path, product_image_path)
 
 
 def main() -> None:
@@ -164,9 +253,19 @@ def main() -> None:
     parser.add_argument("--report", default="reports/2026-06-29_weekly_morning_brief.md")
     parser.add_argument("--baseline", default="state/supply_graph_baseline.json")
     parser.add_argument("--latest", default="reports/latest.md")
+    parser.add_argument("--source-audit")
+    parser.add_argument("--product-graph")
+    parser.add_argument("--product-image")
     args = parser.parse_args()
 
-    validate_report(Path(args.report), Path(args.baseline), Path(args.latest))
+    validate_report(
+        Path(args.report),
+        Path(args.baseline),
+        Path(args.latest),
+        Path(args.source_audit) if args.source_audit else None,
+        Path(args.product_graph) if args.product_graph else None,
+        Path(args.product_image) if args.product_image else None,
+    )
     print("weekly_brief_validation_ok")
 
 
