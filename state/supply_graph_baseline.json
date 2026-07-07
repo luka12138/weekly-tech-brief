@@ -134,6 +134,44 @@
     },
     {
       "edge_id": "E07",
+      "supplier": "Meta",
+      "customer": "WhatsApp 用户",
+      "product_or_service": "WhatsApp 用户名预约、手机号隐私保护",
+      "relationship_type": "platform_identity_feature",
+      "evidence_date": "2026-06-29",
+      "source_type": "official_company_release",
+      "last_seen": "2026-07-06",
+      "changed_this_week": "new",
+      "status": "new_product_update",
+      "confidence": "high",
+      "confidence_reason": "Meta 官方宣布 WhatsApp 用户名预约。",
+      "markdown_section_ref": "6.2 E07",
+      "sources": [
+        "https://about.fb.com/news/2026/06/its-time-to-reserve-your-whatsapp-username/"
+      ],
+      "notes": "该边代表平台身份与隐私功能更新，不是硬件供应关系。"
+    },
+    {
+      "edge_id": "E08",
+      "supplier": "Tesla",
+      "customer": "EV/储能客户",
+      "product_or_service": "车辆交付、储能部署",
+      "relationship_type": "end_product_delivery",
+      "evidence_date": "2026-07-02",
+      "source_type": "official_ir_release",
+      "last_seen": "2026-07-06",
+      "changed_this_week": "result_disclosure",
+      "status": "continued_product_delivery",
+      "confidence": "high",
+      "confidence_reason": "Tesla IR 新闻页披露 Q2 生产、交付和 13.5GWh 储能部署。",
+      "markdown_section_ref": "6.2 E08",
+      "sources": [
+        "https://ir.tesla.com/press"
+      ],
+      "notes": "该边不披露具体电池供应商或客户结构。"
+    },
+    {
+      "edge_id": "E09",
       "supplier": "SK Hynix",
       "customer": "NVIDIA 与 AI 加速器客户",
       "product_or_service": "HBM4E/HBM4/HBM3E",
@@ -145,14 +183,14 @@
       "status": "continued_no_weekly_order_evidence",
       "confidence": "medium",
       "confidence_reason": "HBM4E 样品出货是官方消息但早于覆盖周；覆盖周无新增官方供货公告。",
-      "markdown_section_ref": "6.2 E07",
+      "markdown_section_ref": "6.2 E09",
       "sources": [
-        "https://news.skhynix.com/12-layer-hbm4e-sample/"
+        "https://www.prnewswire.com/news-releases/sk-hynix-ships-samples-of-12-layer-next-gen-hbm4e-302803714.html"
       ],
       "notes": "不能写成覆盖周新增订单或新增客户。"
     },
     {
-      "edge_id": "E08",
+      "edge_id": "E10",
       "supplier": "TSMC",
       "customer": "NVIDIA",
       "product_or_service": "先进制程与先进封装关键基线",
@@ -164,7 +202,7 @@
       "status": "continued_baseline_insufficient",
       "confidence": "medium",
       "confidence_reason": "TSMC 日程显示 7 月进入营收和业绩披露窗口，但本周没有官方新供货公告。",
-      "markdown_section_ref": "6.2 E08",
+      "markdown_section_ref": "6.2 E10",
       "sources": [
         "https://investor.tsmc.com/english/financial-calendar"
       ],
@@ -179,14 +217,15 @@
     "https://developers.googleblog.com/",
     "https://www.aboutamazon.com/news/aws/aws-open-ai-workloads-compute-infrastructure",
     "https://about.fb.com/news/",
+    "https://about.fb.com/news/2026/06/its-time-to-reserve-your-whatsapp-username/",
     "https://blogs.nvidia.com/blog/anthropic-nvidia-gb300-blackwell-ultra-microsoft-azure/",
     "https://ir.tesla.com/press",
     "https://news.samsung.com/global/samsung-and-kddi-successfully-deploy-ai-powered-network-optimization-solution-on-commercial-5g-network",
     "https://news.skhynix.com/",
-    "https://news.skhynix.com/12-layer-hbm4e-sample/",
+    "https://www.prnewswire.com/news-releases/sk-hynix-ships-samples-of-12-layer-next-gen-hbm4e-302803714.html",
     "https://pr.tsmc.com/english/latest-news",
     "https://investor.tsmc.com/english/financial-calendar"
   ],
   "confidence": "mixed",
-  "notes": "本基线覆盖 2026-06-29 至 2026-07-05。图、Markdown 表格和 JSON 共用 E01-E08；不可达来源中的具体断言已从周报删除或降级为后续跟踪。"
+  "notes": "本基线覆盖 2026-06-29 至 2026-07-05。图、Markdown 表格和 JSON 共用 E01-E10；不可达来源中的具体断言已从周报删除或降级为后续跟踪。"
 }

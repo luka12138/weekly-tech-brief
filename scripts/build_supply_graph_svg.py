@@ -34,6 +34,8 @@ ALIASES = {
     "企业 AI 客户": "外部:企业AI客户",
     "OpenAI": "外部:OpenAI",
     "KDDI": "外部:KDDI",
+    "WhatsApp 用户": "外部:WhatsApp用户",
+    "EV/储能客户": "外部:EV/储能客户",
     "EssilorLuxottica": "外部:EssilorLuxottica",
     "ASML/EUV": "外部:ASML/EUV",
 }

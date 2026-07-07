@@ -113,6 +113,8 @@ def probe_url(url: str, timeout: int) -> dict[str, object]:
         "status": None,
         "reachable": False,
         "access_limited": False,
+        "content_verified": False,
+        "requires_manual_verification": False,
         "error": None,
     }
     if parsed.scheme != "https":
@@ -144,6 +146,8 @@ def probe_url(url: str, timeout: int) -> dict[str, object]:
     status = int(result["status"] or 0)
     result["reachable"] = status in OK_STATUSES
     result["access_limited"] = status in ACCESS_LIMITED_STATUSES
+    result["content_verified"] = result["reachable"] and not result["access_limited"]
+    result["requires_manual_verification"] = result["access_limited"]
     return result
 
 

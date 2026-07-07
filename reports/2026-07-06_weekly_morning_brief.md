@@ -9,6 +9,8 @@
 3. **NVIDIA + Microsoft Azure + Anthropic：Claude 模型在 Azure 的 NVIDIA GB300 Blackwell Ultra 上运行。** NVIDIA 6 月 29 日发布，Anthropic 的 Claude Sonnet 4.5、Opus 4.1 和 Haiku 4.5 已可在 Azure 上使用 GB300。重要性：高端 Blackwell Ultra 进入模型服务落地阶段，强化 NVIDIA 与 Microsoft Azure 在大模型推理基础设施上的绑定。[NVIDIA](https://blogs.nvidia.com/blog/anthropic-nvidia-gb300-blackwell-ultra-microsoft-azure/)
 4. **Apple：Apple Creator Studio 升级，强化 Creative Cloud 与 Pixelmator Pro 集成。** Apple 6 月 30 日发布 Apple Creator Studio 更新，新增跨设备项目同步、Final Cut Pro 工作流、Creative Cloud 与 Pixelmator Pro 集成。重要性：Apple 继续把 Mac/iPad/visionOS 创作生态与第三方专业工具绑定，强化高端设备与服务留存。[Apple](https://www.apple.com/newsroom/2026/06/apple-creator-studio-gets-smarter-faster-and-more-connected/)
 5. **Samsung Electronics：与 KDDI 完成 AI 驱动 5G 网络优化商用部署。** Samsung 6 月 30 日宣布与 KDDI 合作，在日本商用 5G 网络中部署 AI 驱动网络优化能力。重要性：Samsung 的电信网络业务把 AI 从芯片制造延伸到运营商网络效率提升。[Samsung](https://news.samsung.com/global/samsung-and-kddi-successfully-deploy-ai-powered-network-optimization-solution-on-commercial-5g-network)
+6. **Tesla：官方披露 Q2 生产、交付和储能部署。** Tesla IR 新闻页显示，Tesla 7 月 2 日披露 Q2 生产超过 45 万辆、交付超过 48 万辆，并部署 13.5GWh 储能产品。重要性：汽车交付与储能部署同时给出，储能继续是业务结构中的关键弹性来源。[Tesla IR](https://ir.tesla.com/press)
+7. **Meta：WhatsApp 开放用户名预约。** Meta 6 月 29 日宣布 WhatsApp 将引入用户名，用户可先预约，未来可在首次沟通时不暴露手机号。重要性：这是 WhatsApp 隐私和身份体系的重要产品变化，影响超过 30 亿用户的联系方式和商业账号运营。[Meta](https://about.fb.com/news/2026/06/its-time-to-reserve-your-whatsapp-username/)
 
 ## 2. 影响力速览
 | 公司 | 重大事件数量 | 本周影响判断 | 关键词 |
@@ -17,9 +19,9 @@
 | Microsoft | 2 | 正面/混合 | Frontier Company、Azure GB300、裁员报道 |
 | Alphabet / Google | 0 | 中性 | 未发现可达来源支撑的覆盖周重大事件 |
 | Amazon / AWS | 1 | 正面 | OpenAI 云协议、NVIDIA GPU、EC2 UltraServers |
-| Meta | 0 | 中性 | 未发现可达来源支撑的覆盖周重大官方事件 |
+| Meta | 1 | 正面/中性 | WhatsApp 用户名、隐私、身份体系 |
 | NVIDIA | 1 | 正面 | GB300 Blackwell Ultra、Azure、Anthropic |
-| Tesla | 0 | 中性 | 官方新闻入口可达，未写入不可达具体交付链接 |
+| Tesla | 1 | 正面/混合 | Q2 生产交付、储能 13.5GWh |
 | Samsung Electronics | 1 | 正面 | KDDI、AI 驱动 5G 网络优化 |
 | SK Hynix | 0 | 中性/正面 | HBM4E 客户验证延续，覆盖周无重大新公告 |
 | TSMC | 0 | 中性 | 7 月财报/营收披露窗口临近，覆盖周无重大新公告 |
@@ -60,11 +62,11 @@
 - 来源：[Amazon](https://www.aboutamazon.com/news/aws/aws-open-ai-workloads-compute-infrastructure)
 
 ### Meta
-- 日期：2026-06-29 至 2026-07-05
-- 事件：未发现可达来源支撑的覆盖周重大官方事件；本期不写入此前不可达媒体链接中的具体断言。
-- 影响：Meta 的 AI 基础设施和眼镜产品仍是后续跟踪重点，但本周不新增已确认事件。
-- 可信度：已确认“未写入可达性不合格的具体事件”。
-- 来源：[Meta Newsroom](https://about.fb.com/news/)
+- 日期：2026-06-29
+- 事件：Meta 宣布 WhatsApp 将引入用户名功能，并从本周开始允许用户预约用户名；功能正式推出后，新联系人首次沟通时可不直接暴露手机号。
+- 影响：这是 WhatsApp 隐私和身份体系的重要更新。对普通用户是隐私增强，对创作者、小企业和组织则关系到跨平台用户名一致性和客户触达方式。
+- 可信度：已确认。
+- 来源：[Meta Newsroom](https://about.fb.com/news/2026/06/its-time-to-reserve-your-whatsapp-username/)
 
 ### NVIDIA
 - 日期：2026-06-29
@@ -74,10 +76,10 @@
 - 来源：[NVIDIA Blog](https://blogs.nvidia.com/blog/anthropic-nvidia-gb300-blackwell-ultra-microsoft-azure/)
 
 ### Tesla
-- 日期：2026-06-29 至 2026-07-05
-- 事件：Tesla IR 新闻入口可达，但本轮来源审查未通过此前具体交付新闻 URL 的可达性检查，因此不写入具体 Q2 交付数字。
-- 影响：Tesla 仍需在下周继续跟踪 Q2 交付、储能部署和价格/库存变化。
-- 可信度：审慎处理；未写入不可达来源支撑的具体数字。
+- 日期：2026-07-02
+- 事件：Tesla IR 新闻页显示，Tesla 发布第二季度生产、交付和储能部署：生产超过 45 万辆、交付超过 48 万辆，并部署 13.5GWh 储能产品。
+- 影响：Q2 交付和储能部署均为下游需求强弱的核心指标。储能 13.5GWh 继续显示能源业务规模化，汽车交付则需结合后续价格、库存和地区结构判断质量。
+- 可信度：已确认。
 - 来源：[Tesla IR Press](https://ir.tesla.com/press)
 
 ### Samsung Electronics
@@ -92,7 +94,7 @@
 - 事件：覆盖周内未发现 SK Hynix 新的重大官方公告；上一期 HBM4E 样品出货和客户验证仍是本周供应链核心跟踪事项。
 - 影响：HBM4E 客户验证仍影响 NVIDIA、云 AI 加速器和先进封装供应格局；但本周不能写成新增订单或新增客户。
 - 可信度：已确认“未发现覆盖周内重大官方公告”；HBM4E 事件为延续跟踪。
-- 来源：[SK Hynix Newsroom](https://news.skhynix.com/)、[SK Hynix HBM4E](https://news.skhynix.com/12-layer-hbm4e-sample/)
+- 来源：[SK Hynix Newsroom](https://news.skhynix.com/)、[PR Newswire](https://www.prnewswire.com/news-releases/sk-hynix-ships-samples-of-12-layer-next-gen-hbm4e-302803714.html)
 
 ### TSMC
 - 日期：2026-06-29 至 2026-07-05
@@ -104,15 +106,15 @@
 ## 4. 跨公司与产业链观察
 1. **AI 云基础设施继续集中到少数超大规模云厂商。** AWS 与 OpenAI 的 380 亿美元协议、Microsoft 的 Frontier Company 都说明企业 AI 需求正在从模型试用转向工程化部署。
 2. **NVIDIA 的地位仍通过云合作被放大。** AWS 公告明确 NVIDIA GPU；NVIDIA 自身公告显示 GB300 已进入 Azure 上的 Claude 模型服务，说明云厂商自研芯片与 NVIDIA 并行存在。
-3. **来源可达性成为本期流程重点。** Google、Meta、Tesla 的部分具体事件链接未通过来源审查，因此本期降级为“未写入具体断言/后续跟踪”，避免不可查来源污染周报。
+3. **身份与隐私功能也在成为平台护城河。** Meta 的 WhatsApp 用户名预约显示，超大规模社交平台仍在通过身份体系和隐私设计提升留存与商业账号体验。
 4. **运营商网络和创意工作流也在吸收 AI。** Samsung-KDDI 的 AI 网络优化与 Apple Creator Studio 升级，说明 AI 不只发生在模型和云层，也在设备、软件和通信网络中落地。
 
 ## 5. 下周需关注
 1. TSMC 6 月营收和二季度业绩窗口，重点看先进制程、AI/HPC 和先进封装需求。
 2. Microsoft 裁员报道是否出现公司正式确认，以及是否影响销售、咨询或 Xbox 等部门。
 3. AWS 与 OpenAI 协议后，NVIDIA GPU、AWS 自研 Trainium 和电力/数据中心扩建的后续披露。
-4. Meta 是否正式发布 AI 基础设施商业化路线。
-5. Tesla Q2 交付、储能部署和价格/库存变化是否出现可达官方链接。
+4. Meta 是否进一步披露 WhatsApp 用户名功能的国家/地区上线节奏，以及是否推出 AI 基础设施商业化路线。
+5. Tesla Q2 交付后的价格、库存、储能订单和 Robotaxi/FSD 进展。
 
 ## 6. 十家公司供应关系图谱与周度变化
 ### 6.0 年度主营产品上下游图片
@@ -142,6 +144,8 @@ flowchart LR
   KDDI["外部:KDDI"]
   CREATIVE["外部:创意专业用户"]
   AICUSTOMER["外部:企业AI客户"]
+  WHATSAPP["外部:WhatsApp用户"]
+  ENERGY["外部:EV/储能客户"]
 
   AAPL -->|"E01 Creator Studio 创意工作流"| CREATIVE
   MSFT -->|"E02 Frontier Company AI工程服务"| AICUSTOMER
@@ -149,8 +153,10 @@ flowchart LR
   NVDA -->|"E04 GB300 Blackwell Ultra/Azure Claude"| MSFT
   NVDA -->|"E05 NVIDIA GPU/AWS AI基础设施"| AMZN
   SSNLF -->|"E06 AI驱动5G网络优化"| KDDI
-  HXSC -->|"E07 HBM4E 客户验证延续"| NVDA
-  TSMC -->|"E08 先进制程/封装关键基线"| NVDA
+  META -->|"E07 WhatsApp 用户名/隐私身份"| WHATSAPP
+  TSLA -->|"E08 Q2交付/储能部署"| ENERGY
+  HXSC -->|"E09 HBM4E 客户验证延续"| NVDA
+  TSMC -->|"E10 先进制程/封装关键基线"| NVDA
 ```
 
 ### 6.2 供应关系明细表
@@ -162,8 +168,10 @@ flowchart LR
 | E04 | NVIDIA | Microsoft Azure / Anthropic | GB300 Blackwell Ultra、Claude 模型推理基础设施 | AI 加速器/云基础设施 | NVIDIA 官方称 Claude 模型在 Azure 上运行 GB300 | Anthropic 为外部模型客户；Microsoft 为云平台方 | 强化 | [NVIDIA](https://blogs.nvidia.com/blog/anthropic-nvidia-gb300-blackwell-ultra-microsoft-azure/) |
 | E05 | NVIDIA | Amazon / AWS | NVIDIA GPU、EC2 UltraServers、AI 集群网络 | AI 加速器/云基础设施 | AWS/OpenAI 公告明确使用 NVIDIA GPU | 不披露具体 GPU 数量、价格或交付节奏 | 强化 | [Amazon](https://www.aboutamazon.com/news/aws/aws-open-ai-workloads-compute-infrastructure) |
 | E06 | Samsung Electronics | KDDI | AI 驱动 5G 网络优化方案 | 网络设备/AI 软件 | Samsung 与 KDDI 官方宣布商用网络部署 | KDDI 为外部运营商客户 | 新增/商用部署 | [Samsung](https://news.samsung.com/global/samsung-and-kddi-successfully-deploy-ai-powered-network-optimization-solution-on-commercial-5g-network) |
-| E07 | SK Hynix | NVIDIA/AI 加速器客户 | HBM4E/HBM4/HBM3E | 内存供应 | 覆盖周无新增官方供货公告；HBM4E 客户验证延续 | HBM4E 出样早于覆盖周，不能写成新订单 | 延续/无本周新增证据 | [SK Hynix](https://news.skhynix.com/12-layer-hbm4e-sample/) |
-| E08 | TSMC | NVIDIA/Apple/云 ASIC 客户 | 先进制程与先进封装 | 代工/封装 | 覆盖周无新增官方供货公告；7 月进入营收和业绩披露窗口 | 仅保留核心基线，不能写成价格或订单已确认 | 延续/无本周新增证据 | [TSMC](https://investor.tsmc.com/english/financial-calendar) |
+| E07 | Meta | WhatsApp 用户 | WhatsApp 用户名预约、手机号隐私保护 | 平台功能/身份体系 | Meta 官方宣布 WhatsApp 用户名预约 | 不是硬件供应关系，但影响用户身份体系和商业账号触达 | 新增/产品更新 | [Meta](https://about.fb.com/news/2026/06/its-time-to-reserve-your-whatsapp-username/) |
+| E08 | Tesla | EV/储能客户 | 车辆交付、储能部署 | 终端产品/能源 | Tesla IR 新闻页披露 Q2 生产、交付和 13.5GWh 储能部署 | 不披露具体电池供应商或客户结构 | 延续/结果披露 | [Tesla IR](https://ir.tesla.com/press) |
+| E09 | SK Hynix | NVIDIA/AI 加速器客户 | HBM4E/HBM4/HBM3E | 内存供应 | 覆盖周无新增官方供货公告；HBM4E 客户验证延续 | HBM4E 出样早于覆盖周，不能写成新订单 | 延续/无本周新增证据 | [PR Newswire](https://www.prnewswire.com/news-releases/sk-hynix-ships-samples-of-12-layer-next-gen-hbm4e-302803714.html) |
+| E10 | TSMC | NVIDIA/Apple/云 ASIC 客户 | 先进制程与先进封装 | 代工/封装 | 覆盖周无新增官方供货公告；7 月进入营收和业绩披露窗口 | 仅保留核心基线，不能写成价格或订单已确认 | 延续/无本周新增证据 | [TSMC](https://investor.tsmc.com/english/financial-calendar) |
 
 ### 6.3 与上周的区别
 - 新增关系：
@@ -171,13 +179,15 @@ flowchart LR
   - Samsung 与 KDDI：新增 AI 驱动 5G 网络优化商用部署关系。
   - Microsoft 与企业 AI 客户：Frontier Company 从产品销售延伸到 AI 工程服务。
   - Apple 与创意专业用户：Creator Studio 更新强化软件/服务生态。
+  - Meta 与 WhatsApp 用户：用户名预约功能新增，强化隐私身份体系。
 
 - 强化关系：
   - NVIDIA 与 Microsoft Azure：GB300 Blackwell Ultra 支撑 Azure 上的 Anthropic Claude 模型，云端推理关系强化。
   - NVIDIA 与 AWS：AWS/OpenAI 协议明确 NVIDIA GPU 基础设施，强化 NVIDIA 在 AWS 大模型算力中的地位。
 
 - 弱化或风险关系：
-  - Google、Meta、Tesla 的部分具体事件链接未通过来源审查，本期未写入具体断言，后续需继续查找可达官方或权威来源。
+  - Google 的部分具体事件链接未通过来源审查，本期未写入具体断言，后续需继续查找可达官方或权威来源。
+  - Tesla Q2 数据已补入，但仍需跟踪交付结构、库存、价格和储能订单质量。
 
 - 无明显变化但关键关系：
   - SK Hynix HBM4E 仍是 NVIDIA/AI 加速器内存供应关键基线，但本周没有新订单证据。
@@ -185,7 +195,7 @@ flowchart LR
 
 ## 7. 本期自检
 - 日期范围已限定为 2026-06-29 至 2026-07-05；本期为 2026-07-06 应生成周报的补生成版本。
-- 10 家公司均已覆盖；缺少可达重大来源的公司已明确写为“未发现可达来源支撑的覆盖周重大事件”。
+- 10 家公司均已覆盖；缺少可达重大来源的公司已明确写为“未发现可达来源支撑的覆盖周重大事件”，Tesla 与 Meta 已补入可达官方来源支撑的覆盖周事件。
 - 每条写入的具体事件均附来源链接，优先使用公司公告、官方博客、IR 页面和权威媒体；媒体报道均标注“待官方确认”或“媒体报道”。
 - Mermaid 使用 `flowchart LR` 和 ASCII 节点 ID，包含全部 10 家覆盖公司。
 - 年度主营产品上下游图片目标文件：`assets/2026-07-06_product_relationships.svg`，由 `state/product_relationships_2026.json` 生成。
