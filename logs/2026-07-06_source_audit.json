@@ -1,0 +1,172 @@
+{
+  "generated_at": "2026-07-07T02:05:44.509407+00:00",
+  "report": "reports/2026-07-06_weekly_morning_brief.md",
+  "baseline": "state/supply_graph_baseline.json",
+  "report_sha256": "acc54e822a0d829e184703cf2f871f454677ff10286e5ab006d2613ba76c567d",
+  "baseline_sha256": "8d5a6139f81af0f0e4344df16da98c88e170867cb42a38ad109785f0d33158a1",
+  "audited_urls": [
+    "https://about.fb.com/news/",
+    "https://blog.google/technology/ai/",
+    "https://blogs.microsoft.com/blog/2026/07/02/microsoft-frontier-company-ai-engineering-that-amplifies-and-protects-your-intelligence/",
+    "https://blogs.nvidia.com/blog/anthropic-nvidia-gb300-blackwell-ultra-microsoft-azure/",
+    "https://developers.googleblog.com/",
+    "https://investor.tsmc.com/english/financial-calendar",
+    "https://ir.tesla.com/press",
+    "https://news.samsung.com/global/samsung-and-kddi-successfully-deploy-ai-powered-network-optimization-solution-on-commercial-5g-network",
+    "https://news.skhynix.com/",
+    "https://news.skhynix.com/12-layer-hbm4e-sample/",
+    "https://pr.tsmc.com/english/latest-news",
+    "https://www.aboutamazon.com/news/aws/aws-open-ai-workloads-compute-infrastructure",
+    "https://www.apple.com/newsroom/2026/06/apple-creator-studio-gets-smarter-faster-and-more-connected/",
+    "https://www.businessinsider.com/microsoft-job-cuts-layoffs-sales-consulting-2026-6"
+  ],
+  "summary": {
+    "total": 14,
+    "reachable": 14,
+    "access_limited": 2,
+    "unclassified": 0,
+    "errors": 0
+  },
+  "sources": [
+    {
+      "url": "https://about.fb.com/news/",
+      "scheme": "https",
+      "host": "about.fb.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "error": null
+    },
+    {
+      "url": "https://blog.google/technology/ai/",
+      "scheme": "https",
+      "host": "blog.google",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "error": null
+    },
+    {
+      "url": "https://blogs.microsoft.com/blog/2026/07/02/microsoft-frontier-company-ai-engineering-that-amplifies-and-protects-your-intelligence/",
+      "scheme": "https",
+      "host": "blogs.microsoft.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "error": null
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/anthropic-nvidia-gb300-blackwell-ultra-microsoft-azure/",
+      "scheme": "https",
+      "host": "blogs.nvidia.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "error": null
+    },
+    {
+      "url": "https://developers.googleblog.com/",
+      "scheme": "https",
+      "host": "developers.googleblog.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "error": null
+    },
+    {
+      "url": "https://investor.tsmc.com/english/financial-calendar",
+      "scheme": "https",
+      "host": "investor.tsmc.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "error": null
+    },
+    {
+      "url": "https://ir.tesla.com/press",
+      "scheme": "https",
+      "host": "ir.tesla.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "error": null
+    },
+    {
+      "url": "https://news.samsung.com/global/samsung-and-kddi-successfully-deploy-ai-powered-network-optimization-solution-on-commercial-5g-network",
+      "scheme": "https",
+      "host": "news.samsung.com",
+      "source_class": "official_or_regulatory",
+      "status": 403,
+      "reachable": true,
+      "access_limited": true,
+      "error": null
+    },
+    {
+      "url": "https://news.skhynix.com/",
+      "scheme": "https",
+      "host": "news.skhynix.com",
+      "source_class": "official_or_regulatory",
+      "status": 403,
+      "reachable": true,
+      "access_limited": true,
+      "error": null
+    },
+    {
+      "url": "https://news.skhynix.com/12-layer-hbm4e-sample/",
+      "scheme": "https",
+      "host": "news.skhynix.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "error": null
+    },
+    {
+      "url": "https://pr.tsmc.com/english/latest-news",
+      "scheme": "https",
+      "host": "pr.tsmc.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "error": null
+    },
+    {
+      "url": "https://www.aboutamazon.com/news/aws/aws-open-ai-workloads-compute-infrastructure",
+      "scheme": "https",
+      "host": "www.aboutamazon.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "error": null
+    },
+    {
+      "url": "https://www.apple.com/newsroom/2026/06/apple-creator-studio-gets-smarter-faster-and-more-connected/",
+      "scheme": "https",
+      "host": "www.apple.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "error": null
+    },
+    {
+      "url": "https://www.businessinsider.com/microsoft-job-cuts-layoffs-sales-consulting-2026-6",
+      "scheme": "https",
+      "host": "www.businessinsider.com",
+      "source_class": "trade_or_press_media",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "error": null
+    }
+  ]
+}

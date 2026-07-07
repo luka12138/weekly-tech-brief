@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="860" viewBox="0 0 1180 860">
+<rect width="100%" height="100%" fill="#0f172a"/>
+<circle cx="590" cy="442" r="160" fill="none" stroke="#334155" stroke-width="1" stroke-opacity="0.75"/>
+<circle cx="590" cy="442" r="250" fill="none" stroke="#334155" stroke-width="1" stroke-opacity="0.55"/>
+<circle cx="590" cy="442" r="335" fill="none" stroke="#334155" stroke-width="1" stroke-opacity="0.35"/>
+<text x="40" y="44" font-size="22" font-weight="800" fill="#f8fafc">2026 年度十家公司主营产品上下游关系图</text>
+<text x="40" y="68" font-size="12" fill="#94a3b8">Obsidian 风格网络图。来源基线：基于 2026 年可取得的官方年报、投资者关系页面、公司新闻稿和监管披露；媒体报道或历史基线关系单独标注。</text>
+<text x="40" y="820" font-size="11" fill="#94a3b8">边颜色：绿色=本年度官方证据，蓝色=官方基线，橙色=媒体报道或待复核。</text>
+<path d="M 404.8 187.2 Q 543.7 299.5 590.0 127.0" fill="none" stroke="#f59e0b" stroke-width="1.45" stroke-opacity="0.68"/>
+<text x="520.6" y="228.3" font-size="9" fill="#f59e0b" fill-opacity="0.92">P01 Apple silicon 先进制程代工</text>
+<path d="M 404.8 187.2 Q 543.7 457.0 590.0 757.0" fill="none" stroke="#f59e0b" stroke-width="1.45" stroke-opacity="0.68"/>
+<text x="520.6" y="464.6" font-size="9" fill="#f59e0b" fill-opacity="0.92">P02 AI 芯片先进制程代工与封装</text>
+<path d="M 290.4 344.7 Q 515.1 496.4 590.0 757.0" fill="none" stroke="#22c55e" stroke-width="1.45" stroke-opacity="0.68"/>
+<text x="477.7" y="523.6" font-size="9" fill="#22c55e" fill-opacity="0.92">P03 AI 加速器用 HBM</text>
+<path d="M 290.4 539.3 Q 515.1 545.1 590.0 757.0" fill="none" stroke="#f59e0b" stroke-width="1.45" stroke-opacity="0.68"/>
+<text x="477.7" y="596.6" font-size="9" fill="#f59e0b" fill-opacity="0.92">P04 HBM/DRAM 供应基线</text>
+<path d="M 590.0 757.0 Q 664.9 545.1 889.6 539.3" fill="none" stroke="#22c55e" stroke-width="1.45" stroke-opacity="0.68"/>
+<text x="702.3" y="596.6" font-size="9" fill="#22c55e" fill-opacity="0.92">P05 AWS 上的 GPU 与 AI 基础设施</text>
+<path d="M 590.0 757.0 Q 636.3 457.0 775.2 187.2" fill="none" stroke="#f59e0b" stroke-width="1.45" stroke-opacity="0.68"/>
+<text x="659.4" y="464.6" font-size="9" fill="#f59e0b" fill-opacity="0.92">P06 Azure AI 加速器生态</text>
+<path d="M 290.4 539.3 Q 515.1 387.6 590.0 127.0" fill="none" stroke="#f59e0b" stroke-width="1.45" stroke-opacity="0.68"/>
+<text x="477.7" y="360.4" font-size="9" fill="#f59e0b" fill-opacity="0.92">P08 存储/显示组件基线</text>
+<path d="M 590.0 757.0 Q 543.7 584.5 404.8 696.8" fill="none" stroke="#f59e0b" stroke-width="1.45" stroke-opacity="0.68"/>
+<text x="520.6" y="655.7" font-size="9" fill="#f59e0b" fill-opacity="0.92">P09 汽车/AI 计算生态基线</text>
+<circle cx="590.0" cy="127.0" r="27" fill="#60a5fa" fill-opacity="0.22" stroke="#60a5fa" stroke-width="2.2"/>
+<circle cx="590.0" cy="127.0" r="5.2" fill="#60a5fa"/>
+<text x="590.0" y="89.0" text-anchor="middle" font-size="13" font-weight="700" fill="#e5e7eb">Apple</text>
+<text x="590.0" y="170.0" text-anchor="middle" font-size="9.5" fill="#94a3b8">iPhone, Mac, iPad, 可穿戴设备</text>
+<circle cx="775.2" cy="187.2" r="27" fill="#34d399" fill-opacity="0.22" stroke="#34d399" stroke-width="2.2"/>
+<circle cx="775.2" cy="187.2" r="5.2" fill="#34d399"/>
+<text x="775.2" y="149.2" text-anchor="middle" font-size="13" font-weight="700" fill="#e5e7eb">Microsoft</text>
+<text x="775.2" y="230.2" text-anchor="middle" font-size="9.5" fill="#94a3b8">Azure, Microsoft 365, Windows, GitHub</text>
+<circle cx="889.6" cy="344.7" r="27" fill="#34d399" fill-opacity="0.22" stroke="#34d399" stroke-width="2.2"/>
+<circle cx="889.6" cy="344.7" r="5.2" fill="#34d399"/>
+<text x="889.6" y="306.7" text-anchor="middle" font-size="13" font-weight="700" fill="#e5e7eb">Alphabet / Google</text>
+<text x="889.6" y="387.7" text-anchor="middle" font-size="9.5" fill="#94a3b8">搜索, YouTube, Google Cloud, Gemini</text>
+<circle cx="889.6" cy="539.3" r="27" fill="#34d399" fill-opacity="0.22" stroke="#34d399" stroke-width="2.2"/>
+<circle cx="889.6" cy="539.3" r="5.2" fill="#34d399"/>
+<text x="889.6" y="501.3" text-anchor="middle" font-size="13" font-weight="700" fill="#e5e7eb">Amazon / AWS</text>
+<text x="889.6" y="582.3" text-anchor="middle" font-size="9.5" fill="#94a3b8">AWS, Marketplace, Prime, 广告</text>
+<circle cx="775.2" cy="696.8" r="27" fill="#34d399" fill-opacity="0.22" stroke="#34d399" stroke-width="2.2"/>
+<circle cx="775.2" cy="696.8" r="5.2" fill="#34d399"/>
+<text x="775.2" y="658.8" text-anchor="middle" font-size="13" font-weight="700" fill="#e5e7eb">Meta</text>
+<text x="775.2" y="739.8" text-anchor="middle" font-size="9.5" fill="#94a3b8">Facebook, Instagram, WhatsApp, Threads</text>
+<circle cx="590.0" cy="757.0" r="27" fill="#fbbf24" fill-opacity="0.22" stroke="#fbbf24" stroke-width="2.2"/>
+<circle cx="590.0" cy="757.0" r="5.2" fill="#fbbf24"/>
+<text x="590.0" y="719.0" text-anchor="middle" font-size="13" font-weight="700" fill="#e5e7eb">NVIDIA</text>
+<text x="590.0" y="800.0" text-anchor="middle" font-size="9.5" fill="#94a3b8">数据中心 GPU, 网络产品, CUDA, AI 软件</text>
+<circle cx="404.8" cy="696.8" r="27" fill="#fb7185" fill-opacity="0.22" stroke="#fb7185" stroke-width="2.2"/>
+<circle cx="404.8" cy="696.8" r="5.2" fill="#fb7185"/>
+<text x="404.8" y="658.8" text-anchor="middle" font-size="13" font-weight="700" fill="#e5e7eb">Tesla</text>
+<text x="404.8" y="739.8" text-anchor="middle" font-size="9.5" fill="#94a3b8">电动车, 储能, 太阳能, FSD</text>
+<circle cx="290.4" cy="539.3" r="27" fill="#c084fc" fill-opacity="0.22" stroke="#c084fc" stroke-width="2.2"/>
+<circle cx="290.4" cy="539.3" r="5.2" fill="#c084fc"/>
+<text x="290.4" y="501.3" text-anchor="middle" font-size="13" font-weight="700" fill="#e5e7eb">Samsung Electronics</text>
+<text x="290.4" y="582.3" text-anchor="middle" font-size="9.5" fill="#94a3b8">存储, 晶圆代工, OLED, 移动设备</text>
+<circle cx="290.4" cy="344.7" r="27" fill="#c084fc" fill-opacity="0.22" stroke="#c084fc" stroke-width="2.2"/>
+<circle cx="290.4" cy="344.7" r="5.2" fill="#c084fc"/>
+<text x="290.4" y="306.7" text-anchor="middle" font-size="13" font-weight="700" fill="#e5e7eb">SK Hynix</text>
+<text x="290.4" y="387.7" text-anchor="middle" font-size="9.5" fill="#94a3b8">DRAM, NAND, HBM, CXL 存储</text>
+<circle cx="404.8" cy="187.2" r="27" fill="#fbbf24" fill-opacity="0.22" stroke="#fbbf24" stroke-width="2.2"/>
+<circle cx="404.8" cy="187.2" r="5.2" fill="#fbbf24"/>
+<text x="404.8" y="149.2" text-anchor="middle" font-size="13" font-weight="700" fill="#e5e7eb">TSMC</text>
+<text x="404.8" y="230.2" text-anchor="middle" font-size="9.5" fill="#94a3b8">先进逻辑代工, 特殊制程, 3DFabric, CoWoS</text>
+</svg>

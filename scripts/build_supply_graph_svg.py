@@ -30,6 +30,10 @@ ALIASES = {
     "AI startups and cloud customers": "外部:AI客户",
     "AI 初创企业/客户": "外部:AI客户",
     "AI 初创企业与云客户": "外部:AI客户",
+    "创意专业用户": "外部:创意专业用户",
+    "企业 AI 客户": "外部:企业AI客户",
+    "OpenAI": "外部:OpenAI",
+    "KDDI": "外部:KDDI",
     "EssilorLuxottica": "外部:EssilorLuxottica",
     "ASML/EUV": "外部:ASML/EUV",
 }

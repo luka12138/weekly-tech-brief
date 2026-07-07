@@ -25,6 +25,7 @@ OFFICIAL_HOST_KEYWORDS = [
     "microsoft.com",
     "abc.xyz",
     "google.com",
+    "googleblog.com",
     "blog.google",
     "ai.google.dev",
     "aboutamazon.com",
