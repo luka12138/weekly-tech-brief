@@ -1,8 +1,8 @@
 {
-  "generation_date": "2026-07-06",
+  "generation_date": "2026-07-13",
   "coverage_period": {
-    "start": "2026-06-29",
-    "end": "2026-07-05",
+    "start": "2026-07-06",
+    "end": "2026-07-12",
     "timezone": "Asia/Shanghai"
   },
   "companies": [
@@ -20,212 +20,209 @@
   "edges": [
     {
       "edge_id": "E01",
-      "supplier": "Apple",
-      "customer": "创意专业用户",
-      "product_or_service": "Apple Creator Studio、Final Cut Pro、Creative Cloud/Pixelmator Pro 集成",
-      "relationship_type": "software_service",
-      "evidence_date": "2026-06-30",
-      "source_type": "official_company_release",
-      "last_seen": "2026-07-06",
+      "supplier": "Broadcom",
+      "customer": "Apple",
+      "product_or_service": "FBAR 滤波器、先进射频组件、无线连接技术",
+      "relationship_type": "component_supply",
+      "evidence_date": "2026-07-08",
+      "source_type": "official_customer_release",
+      "last_seen": "2026-07-13",
       "changed_this_week": "new",
-      "status": "new_product_update",
+      "status": "new_major_supply_commitment",
       "confidence": "high",
-      "confidence_reason": "Apple 官方发布 Creator Studio 更新。",
+      "confidence_reason": "Apple 官方披露与 Broadcom 的多年期新承诺，金额预计超过 300 亿美元，涉及 Fort Collins 生产和超过 150 亿颗美国制造芯片。",
       "markdown_section_ref": "6.2 E01",
       "sources": [
-        "https://www.apple.com/newsroom/2026/06/apple-creator-studio-gets-smarter-faster-and-more-connected/"
+        "https://www.apple.com/newsroom/2026/07/apple-to-increase-spend-with-broadcom-to-produce-billions-more-us-chips/"
       ],
-      "notes": "这是 Apple 生态服务关系，不是硬件供货关系。"
+      "notes": "这是覆盖周内最明确的硬件供应关系；公告未披露逐年采购节奏。"
     },
     {
       "edge_id": "E02",
-      "supplier": "Microsoft",
-      "customer": "企业 AI 客户",
-      "product_or_service": "Frontier Company、AI 工程服务、Azure/Microsoft 365/GitHub 生态",
-      "relationship_type": "enterprise_ai_service",
-      "evidence_date": "2026-07-02",
+      "supplier": "Amazon / AWS",
+      "customer": "Bedrock/OpenAI 模型客户",
+      "product_or_service": "Amazon Bedrock 上的 OpenAI GPT-5.6 Sol、Terra、Luna",
+      "relationship_type": "cloud_ai_model_service",
+      "evidence_date": "2026-07-09",
       "source_type": "official_company_release",
-      "last_seen": "2026-07-06",
+      "last_seen": "2026-07-13",
       "changed_this_week": "new",
-      "status": "new_service_program",
+      "status": "new_general_availability",
       "confidence": "high",
-      "confidence_reason": "Microsoft 官方宣布 Frontier Company 计划。",
+      "confidence_reason": "Amazon 官方更新称 OpenAI GPT-5.6 系列已在 Amazon Bedrock GA。",
       "markdown_section_ref": "6.2 E02",
       "sources": [
-        "https://blogs.microsoft.com/blog/2026/07/02/microsoft-frontier-company-ai-engineering-that-amplifies-and-protects-your-intelligence/"
+        "https://www.aboutamazon.com/news/aws/bedrock-openai-models"
       ],
-      "notes": "该边代表企业 AI 服务关系，不代表具体 GPU 采购。"
+      "notes": "该边代表 AWS 向企业客户提供模型服务，不代表 OpenAI 直接成为十家公司之一。"
     },
     {
       "edge_id": "E03",
-      "supplier": "Amazon / AWS",
-      "customer": "OpenAI",
-      "product_or_service": "AWS Compute、EC2 UltraServers、云基础设施",
-      "relationship_type": "cloud_infrastructure",
-      "evidence_date": "2026-07-01",
+      "supplier": "Meta",
+      "customer": "Meta AI/Instagram/WhatsApp 用户",
+      "product_or_service": "Muse Image、Instagram Stories AI 效果、WhatsApp 对话图像生成",
+      "relationship_type": "consumer_ai_service",
+      "evidence_date": "2026-07-07",
       "source_type": "official_company_release",
-      "last_seen": "2026-07-06",
+      "last_seen": "2026-07-13",
       "changed_this_week": "new",
-      "status": "new_major_contract",
+      "status": "new_product_update_with_policy_risk",
       "confidence": "high",
-      "confidence_reason": "Amazon 官方宣布 OpenAI 将在 7 年内采购 380 亿美元 AWS 基础设施。",
+      "confidence_reason": "Meta 官方宣布 Muse Image，并在 7 月 10 日更新移除 @mention 公共 Instagram 账号引用能力。",
       "markdown_section_ref": "6.2 E03",
       "sources": [
-        "https://www.aboutamazon.com/news/aws/aws-open-ai-workloads-compute-infrastructure"
+        "https://about.fb.com/news/2026/07/introducing-muse-image-meta-ai/"
       ],
-      "notes": "OpenAI 是外部客户节点。"
+      "notes": "产品已上线 Meta AI；@mention 能力因反馈撤回，属于产品/隐私风险点。"
     },
     {
       "edge_id": "E04",
-      "supplier": "NVIDIA",
-      "customer": "Microsoft",
-      "product_or_service": "GB300 Blackwell Ultra、Claude 模型推理基础设施",
-      "relationship_type": "ai_accelerator_cloud_infrastructure",
-      "evidence_date": "2026-06-29",
-      "source_type": "official_supplier_blog",
-      "last_seen": "2026-07-06",
-      "changed_this_week": "strengthened",
-      "status": "strengthened",
+      "supplier": "Samsung Electronics",
+      "customer": "AI/HPC 服务器客户",
+      "product_or_service": "PM1763 PCIe 6.0 企业级 SSD、9 代 V-NAND、4nm 控制器",
+      "relationship_type": "memory_storage_supply",
+      "evidence_date": "2026-07-08",
+      "source_type": "official_company_release",
+      "last_seen": "2026-07-13",
+      "changed_this_week": "new",
+      "status": "new_mass_production",
       "confidence": "high",
-      "confidence_reason": "NVIDIA 官方说明 Anthropic Claude 模型在 Microsoft Azure 上使用 GB300。",
+      "confidence_reason": "Samsung 官方宣布 PM1763 已量产，面向下一代 AI 和 HPC 服务器环境。",
       "markdown_section_ref": "6.2 E04",
       "sources": [
-        "https://blogs.nvidia.com/blog/anthropic-nvidia-gb300-blackwell-ultra-microsoft-azure/"
+        "https://news.samsung.com/global/samsung-begins-mass-production-of-pm1763-ssd-optimized-for-next-generation-ai-infrastructure"
       ],
-      "notes": "Anthropic 是外部模型客户，Microsoft 是云平台方。"
+      "notes": "Samsung 新闻页对审计脚本返回 403 访问受限，但属于官方域名；具体内容已通过网页正文人工复核。"
     },
     {
       "edge_id": "E05",
-      "supplier": "NVIDIA",
-      "customer": "Amazon / AWS",
-      "product_or_service": "NVIDIA GPU、EC2 UltraServers、AI 集群网络",
-      "relationship_type": "ai_accelerator_cloud_infrastructure",
-      "evidence_date": "2026-07-01",
-      "source_type": "official_customer_release",
-      "last_seen": "2026-07-06",
+      "supplier": "Alphabet / Google",
+      "customer": "AI 基础设施客户",
+      "product_or_service": "Google Cloud AI Hypercomputer、TPU 8t/8i、GKE Inference Gateway、NVIDIA GPU 服务",
+      "relationship_type": "cloud_ai_infrastructure",
+      "evidence_date": "2026-07-09",
+      "source_type": "official_company_release",
+      "last_seen": "2026-07-13",
       "changed_this_week": "strengthened",
-      "status": "strengthened",
+      "status": "strengthened_positioning",
       "confidence": "high",
-      "confidence_reason": "AWS/OpenAI 公告明确提到 NVIDIA GPU 与 EC2 UltraServers。",
+      "confidence_reason": "Google Cloud 官方称其被列为 2026 Gartner AI Infrastructure 魔力象限 Leader，并说明 AI Hypercomputer、TPU、NVIDIA GPU 集成等能力。",
       "markdown_section_ref": "6.2 E05",
       "sources": [
-        "https://www.aboutamazon.com/news/aws/aws-open-ai-workloads-compute-infrastructure"
+        "https://cloud.google.com/blog/topics/ai-infrastructure/google-is-a-leader-in-gartner-magic-quadrant-for-ai-infra"
       ],
-      "notes": "公告不披露具体 GPU 数量、价格或交付节奏。"
+      "notes": "这是第三方研究结果的官方转述，不能直接等同于新增订单。"
     },
     {
       "edge_id": "E06",
-      "supplier": "Samsung Electronics",
-      "customer": "KDDI",
-      "product_or_service": "AI 驱动 5G 网络优化方案",
-      "relationship_type": "network_equipment_ai_software",
-      "evidence_date": "2026-06-30",
+      "supplier": "Microsoft",
+      "customer": "Xbox 玩家/开发者",
+      "product_or_service": "Xbox 内容组合、Game Pass、多平台发行、开发工具和共享服务",
+      "relationship_type": "platform_content_service",
+      "evidence_date": "2026-07-06",
       "source_type": "official_company_release",
-      "last_seen": "2026-07-06",
-      "changed_this_week": "new",
-      "status": "new_commercial_deployment",
+      "last_seen": "2026-07-13",
+      "changed_this_week": "risk",
+      "status": "restructure_risk",
       "confidence": "high",
-      "confidence_reason": "Samsung 与 KDDI 官方宣布商用 5G 网络部署。",
+      "confidence_reason": "Xbox Wire 官方发布团队重组信，披露 FY27 约 3,200 人缩减、部分工作室转出、平台简化和供应商支出削减。",
       "markdown_section_ref": "6.2 E06",
       "sources": [
-        "https://news.samsung.com/global/samsung-and-kddi-successfully-deploy-ai-powered-network-optimization-solution-on-commercial-5g-network"
+        "https://news.xbox.com/en-us/2026/07/06/resetting-xbox/"
       ],
-      "notes": "KDDI 是外部运营商客户。"
+      "notes": "这是平台服务和内容供应链风险，不是新增硬件供货。"
     },
     {
       "edge_id": "E07",
-      "supplier": "Meta",
-      "customer": "WhatsApp 用户",
-      "product_or_service": "WhatsApp 用户名预约、手机号隐私保护",
-      "relationship_type": "platform_identity_feature",
-      "evidence_date": "2026-06-29",
-      "source_type": "official_company_release",
-      "last_seen": "2026-07-06",
+      "supplier": "NVIDIA",
+      "customer": "Perplexity/AI 工厂客户",
+      "product_or_service": "NVIDIA Vera CPU、Vera Rubin、BlueField-4 STX、agentic AI CPU 架构",
+      "relationship_type": "ai_compute_platform",
+      "evidence_date": "2026-07-07",
+      "source_type": "official_supplier_blog",
+      "last_seen": "2026-07-13",
       "changed_this_week": "new",
-      "status": "new_product_update",
+      "status": "new_product_adoption_signal",
       "confidence": "high",
-      "confidence_reason": "Meta 官方宣布 WhatsApp 用户名预约。",
+      "confidence_reason": "NVIDIA 官方称 Vera 被包括 Perplexity 在内的 AI 创新者采用/评估，用于 agentic AI 工作负载。",
       "markdown_section_ref": "6.2 E07",
       "sources": [
-        "https://about.fb.com/news/2026/06/its-time-to-reserve-your-whatsapp-username/"
+        "https://blogs.nvidia.com/blog/nvidia-vera-max-single-threaded-cpu-at-scale/"
       ],
-      "notes": "该边代表平台身份与隐私功能更新，不是硬件供应关系。"
+      "notes": "公告展示采用信号和性能主张，但没有披露具体采购金额。"
     },
     {
       "edge_id": "E08",
-      "supplier": "Tesla",
-      "customer": "EV/储能客户",
-      "product_or_service": "车辆交付、储能部署",
-      "relationship_type": "end_product_delivery",
-      "evidence_date": "2026-07-02",
-      "source_type": "official_ir_release",
-      "last_seen": "2026-07-06",
-      "changed_this_week": "result_disclosure",
-      "status": "continued_product_delivery",
-      "confidence": "high",
-      "confidence_reason": "Tesla IR 新闻页披露 Q2 生产、交付和 13.5GWh 储能部署。",
+      "supplier": "SK Hynix",
+      "customer": "全球投资者/AI 生态",
+      "product_or_service": "Nasdaq ADR、HBM/DRAM/NAND 资本市场可获得性",
+      "relationship_type": "capital_market_access",
+      "evidence_date": "2026-07-08",
+      "source_type": "official_company_release_access_limited",
+      "last_seen": "2026-07-13",
+      "changed_this_week": "new",
+      "status": "new_capital_market_signal",
+      "confidence": "medium",
+      "confidence_reason": "SK Hynix 官方新闻链接可达但内容访问受限；本期只把它作为资本市场可获得性信号，不写成新增 HBM 订单。",
       "markdown_section_ref": "6.2 E08",
       "sources": [
-        "https://ir.tesla.com/press"
+        "https://news.skhynix.com/skhynix-lists-adrs-on-nasdaq/"
       ],
-      "notes": "该边不披露具体电池供应商或客户结构。"
+      "notes": "无官方可读正文支撑具体发行规模或客户关系；不能推断为供应合同。"
     },
     {
       "edge_id": "E09",
-      "supplier": "SK Hynix",
-      "customer": "NVIDIA 与 AI 加速器客户",
-      "product_or_service": "HBM4E/HBM4/HBM3E",
-      "relationship_type": "memory_supply_baseline",
-      "evidence_date": "2026-06-18",
-      "source_type": "official_prior_release",
-      "last_seen": "2026-07-06",
+      "supplier": "Tesla",
+      "customer": "EV/储能客户",
+      "product_or_service": "电动车交付、储能部署、Supercharger/能源生态",
+      "relationship_type": "end_product_delivery_baseline",
+      "evidence_date": "2026-07-12",
+      "source_type": "official_ir_page",
+      "last_seen": "2026-07-13",
       "changed_this_week": "no_new_weekly_evidence",
-      "status": "continued_no_weekly_order_evidence",
+      "status": "continued_no_weekly_major_official_event",
       "confidence": "medium",
-      "confidence_reason": "HBM4E 样品出货是官方消息但早于覆盖周；覆盖周无新增官方供货公告。",
+      "confidence_reason": "覆盖周内未发现 Tesla 新的重大官方公告；仅保留终端交付和能源业务基线。",
       "markdown_section_ref": "6.2 E09",
       "sources": [
-        "https://www.prnewswire.com/news-releases/sk-hynix-ships-samples-of-12-layer-next-gen-hbm4e-302803714.html"
+        "https://ir.tesla.com/press"
       ],
-      "notes": "不能写成覆盖周新增订单或新增客户。"
+      "notes": "不能把上一期 Q2 交付数据写成覆盖周新增事件。"
     },
     {
       "edge_id": "E10",
       "supplier": "TSMC",
       "customer": "NVIDIA",
-      "product_or_service": "先进制程与先进封装关键基线",
+      "product_or_service": "先进逻辑制程、CoWoS/3DFabric 先进封装基线",
       "relationship_type": "foundry_packaging_baseline",
-      "evidence_date": "2026-07-05",
-      "source_type": "official_investor_calendar",
-      "last_seen": "2026-07-06",
+      "evidence_date": "2026-07-12",
+      "source_type": "official_news_and_calendar",
+      "last_seen": "2026-07-13",
       "changed_this_week": "no_new_weekly_evidence",
       "status": "continued_baseline_insufficient",
       "confidence": "medium",
-      "confidence_reason": "TSMC 日程显示 7 月进入营收和业绩披露窗口，但本周没有官方新供货公告。",
+      "confidence_reason": "覆盖周内未发现 TSMC 新的重大官方供货披露；7 月 13 日营收披露属于下期跟踪窗口。",
       "markdown_section_ref": "6.2 E10",
       "sources": [
+        "https://pr.tsmc.com/english/latest-news",
         "https://investor.tsmc.com/english/financial-calendar"
       ],
-      "notes": "仅保留核心基线，不能写成价格或订单已确认。"
+      "notes": "仅保留先进制程/封装核心基线，不能写成新增订单或价格确认。"
     }
   ],
   "sources": [
-    "https://www.apple.com/newsroom/2026/06/apple-creator-studio-gets-smarter-faster-and-more-connected/",
-    "https://blogs.microsoft.com/blog/2026/07/02/microsoft-frontier-company-ai-engineering-that-amplifies-and-protects-your-intelligence/",
-    "https://www.businessinsider.com/microsoft-job-cuts-layoffs-sales-consulting-2026-6",
-    "https://blog.google/technology/ai/",
-    "https://developers.googleblog.com/",
-    "https://www.aboutamazon.com/news/aws/aws-open-ai-workloads-compute-infrastructure",
-    "https://about.fb.com/news/",
-    "https://about.fb.com/news/2026/06/its-time-to-reserve-your-whatsapp-username/",
-    "https://blogs.nvidia.com/blog/anthropic-nvidia-gb300-blackwell-ultra-microsoft-azure/",
+    "https://www.apple.com/newsroom/2026/07/apple-to-increase-spend-with-broadcom-to-produce-billions-more-us-chips/",
+    "https://news.xbox.com/en-us/2026/07/06/resetting-xbox/",
+    "https://cloud.google.com/blog/topics/ai-infrastructure/google-is-a-leader-in-gartner-magic-quadrant-for-ai-infra",
+    "https://www.aboutamazon.com/news/aws/bedrock-openai-models",
+    "https://about.fb.com/news/2026/07/introducing-muse-image-meta-ai/",
+    "https://blogs.nvidia.com/blog/nvidia-vera-max-single-threaded-cpu-at-scale/",
     "https://ir.tesla.com/press",
-    "https://news.samsung.com/global/samsung-and-kddi-successfully-deploy-ai-powered-network-optimization-solution-on-commercial-5g-network",
-    "https://news.skhynix.com/",
-    "https://www.prnewswire.com/news-releases/sk-hynix-ships-samples-of-12-layer-next-gen-hbm4e-302803714.html",
+    "https://news.samsung.com/global/samsung-begins-mass-production-of-pm1763-ssd-optimized-for-next-generation-ai-infrastructure",
+    "https://news.skhynix.com/skhynix-lists-adrs-on-nasdaq/",
     "https://pr.tsmc.com/english/latest-news",
     "https://investor.tsmc.com/english/financial-calendar"
   ],
   "confidence": "mixed",
-  "notes": "本基线覆盖 2026-06-29 至 2026-07-05。图、Markdown 表格和 JSON 共用 E01-E10；不可达来源中的具体断言已从周报删除或降级为后续跟踪。"
+  "notes": "本基线覆盖 2026-07-06 至 2026-07-12。图、Markdown 表格和 JSON 共用 E01-E10；访问受限来源必须在事实复核中单独标注，不能扩写为未证实的供应合同。"
 }

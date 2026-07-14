@@ -1,0 +1,161 @@
+{
+  "generated_at": "2026-07-14T01:27:43.379224+00:00",
+  "report": "reports/2026-07-13_weekly_morning_brief.md",
+  "baseline": "state/supply_graph_baseline.json",
+  "report_sha256": "aa086d7d427eaca6afeb58d4ffb827862a2c3ea859a60efb6a5c88c6440e1baa",
+  "baseline_sha256": "3e4d58ebcee4ed83124494bfa7a587901caed34e75a76b791b121fb42f4225c2",
+  "audited_urls": [
+    "https://about.fb.com/news/2026/07/introducing-muse-image-meta-ai/",
+    "https://blogs.nvidia.com/blog/nvidia-vera-max-single-threaded-cpu-at-scale/",
+    "https://cloud.google.com/blog/topics/ai-infrastructure/google-is-a-leader-in-gartner-magic-quadrant-for-ai-infra",
+    "https://investor.tsmc.com/english/financial-calendar",
+    "https://ir.tesla.com/press",
+    "https://news.samsung.com/global/samsung-begins-mass-production-of-pm1763-ssd-optimized-for-next-generation-ai-infrastructure",
+    "https://news.skhynix.com/skhynix-lists-adrs-on-nasdaq/",
+    "https://news.xbox.com/en-us/2026/07/06/resetting-xbox/",
+    "https://pr.tsmc.com/english/latest-news",
+    "https://www.aboutamazon.com/news/aws/bedrock-openai-models",
+    "https://www.apple.com/newsroom/2026/07/apple-to-increase-spend-with-broadcom-to-produce-billions-more-us-chips/"
+  ],
+  "summary": {
+    "total": 11,
+    "reachable": 11,
+    "access_limited": 2,
+    "unclassified": 0,
+    "errors": 0
+  },
+  "sources": [
+    {
+      "url": "https://about.fb.com/news/2026/07/introducing-muse-image-meta-ai/",
+      "scheme": "https",
+      "host": "about.fb.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/nvidia-vera-max-single-threaded-cpu-at-scale/",
+      "scheme": "https",
+      "host": "blogs.nvidia.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://cloud.google.com/blog/topics/ai-infrastructure/google-is-a-leader-in-gartner-magic-quadrant-for-ai-infra",
+      "scheme": "https",
+      "host": "cloud.google.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://investor.tsmc.com/english/financial-calendar",
+      "scheme": "https",
+      "host": "investor.tsmc.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://ir.tesla.com/press",
+      "scheme": "https",
+      "host": "ir.tesla.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://news.samsung.com/global/samsung-begins-mass-production-of-pm1763-ssd-optimized-for-next-generation-ai-infrastructure",
+      "scheme": "https",
+      "host": "news.samsung.com",
+      "source_class": "official_or_regulatory",
+      "status": 403,
+      "reachable": true,
+      "access_limited": true,
+      "content_verified": false,
+      "requires_manual_verification": true,
+      "error": null
+    },
+    {
+      "url": "https://news.skhynix.com/skhynix-lists-adrs-on-nasdaq/",
+      "scheme": "https",
+      "host": "news.skhynix.com",
+      "source_class": "official_or_regulatory",
+      "status": 403,
+      "reachable": true,
+      "access_limited": true,
+      "content_verified": false,
+      "requires_manual_verification": true,
+      "error": null
+    },
+    {
+      "url": "https://news.xbox.com/en-us/2026/07/06/resetting-xbox/",
+      "scheme": "https",
+      "host": "news.xbox.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://pr.tsmc.com/english/latest-news",
+      "scheme": "https",
+      "host": "pr.tsmc.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://www.aboutamazon.com/news/aws/bedrock-openai-models",
+      "scheme": "https",
+      "host": "www.aboutamazon.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://www.apple.com/newsroom/2026/07/apple-to-increase-spend-with-broadcom-to-produce-billions-more-us-chips/",
+      "scheme": "https",
+      "host": "www.apple.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    }
+  ]
+}

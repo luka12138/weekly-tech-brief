@@ -23,6 +23,7 @@ from pathlib import Path
 OFFICIAL_HOST_KEYWORDS = [
     "apple.com",
     "microsoft.com",
+    "xbox.com",
     "abc.xyz",
     "google.com",
     "googleblog.com",
