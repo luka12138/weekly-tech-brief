@@ -43,6 +43,7 @@
 python3 scripts/audit_sources.py \
   --report reports/YYYY-MM-DD_weekly_morning_brief.md \
   --baseline state/supply_graph_baseline.json \
+  --product-graph state/product_relationships_YYYY.json \
   --output logs/YYYY-MM-DD_source_audit.json
 ```
 
@@ -53,14 +54,18 @@ python3 scripts/audit_sources.py \
 - 来源域名必须被分类
 - 官方来源优先于媒体来源
 - 媒体报道必须在正文标注“媒体报道待确认”
+- 年度产品关系图中的 `official_sources` 必须纳入同一份来源审查
+- 带有 `claim_keywords` 的核心事实必须通过来源正文关键词匹配；若官方页面访问受限，必须在人工事实复核摘要中说明
 
-注意：来源审查不是事实真伪的最终证明。它用于排除死链、低质量域名、伪来源和不可追溯引用。
+注意：来源审查不是事实真伪的最终证明。它用于排除死链、低质量域名、伪来源、不可追溯引用，以及“链接存在但正文不支持核心事实”的常见错误。
 
 来源审查日志必须绑定当前文件：
 
 - `report_sha256` 必须等于当前周报文件的 SHA-256
 - `baseline_sha256` 必须等于当前供应关系基线的 SHA-256
-- `audited_urls` 必须等于当前周报和基线中抽取出的 URL 清单
+- `product_graph_sha256` 必须等于当前年度产品关系图 JSON 的 SHA-256
+- `audited_urls` 必须等于当前周报、供应关系基线和年度产品关系图中抽取出的 URL 清单
+- `summary.claim_failed` 必须为 0
 
 若任一项不一致，说明审查日志已过期，必须重新运行来源审查。
 
@@ -165,6 +170,7 @@ python3 scripts/build_supply_graph_svg.py \
 
 - 两张图都能在 GitHub 页面渲染
 - 两张图都采用 Obsidian 风格网络图
+- 年度产品图必须包含公司节点、主营产品节点和产品级 `PX` 关系边
 - 周报 6.0 引用产品上下游图
 - 周报 6.1 引用供应关系图
 - 图片背后的 JSON 存在且可解析
@@ -182,6 +188,9 @@ state/product_relationships_YYYY.json
 - 包含 10 家覆盖公司
 - 每家公司有主营产品列表
 - 每家公司有官方来源
+- `product_nodes` 必须覆盖每家公司全部主营产品
+- 每个主营产品节点必须至少进入一条 `product_edges`
+- 产品级边使用 `PX01`、`PX02` 等 Edge ID
 - 每条产品关系有 `P01`、`P02` 等 Edge ID
 - 每条关系有 `evidence_level`
 - 证据不足的关系不能标为 confirmed
@@ -209,6 +218,7 @@ python3 scripts/run_quality_gate.py
 python3 scripts/audit_sources.py \
   --report reports/YYYY-MM-DD_weekly_morning_brief.md \
   --baseline state/supply_graph_baseline.json \
+  --product-graph state/product_relationships_YYYY.json \
   --output logs/YYYY-MM-DD_source_audit.json
 
 python3 scripts/validate_weekly_brief.py \

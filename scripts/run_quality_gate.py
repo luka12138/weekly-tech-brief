@@ -86,10 +86,32 @@ def main() -> None:
     if latest_target(ROOT / latest).resolve() != report.resolve():
         raise SystemExit("错误：latest.md 未指向当前待校验周报")
 
+    python = sys.executable
     baseline_data = json.loads((ROOT / baseline).read_text(encoding="utf-8"))
     if baseline_data.get("generation_date") != date:
         raise SystemExit("错误：供应关系基线 generation_date 与周报日期不一致")
     if args.require_clean_git or args.require_pushed:
+        run(
+            [
+                python,
+                "scripts/validate_weekly_brief.py",
+                "--report",
+                str(report.relative_to(ROOT)),
+                "--baseline",
+                str(baseline),
+                "--latest",
+                str(latest),
+                "--source-audit",
+                str(source_audit),
+                "--product-graph",
+                str(product_graph),
+                "--product-image",
+                str(product_image),
+                "--supply-image",
+                str(supply_image),
+            ]
+        )
+        run(["git", "diff", "--check"])
         if args.require_clean_git:
             ensure_clean_git()
         if args.require_pushed:
@@ -97,7 +119,6 @@ def main() -> None:
         print("发布状态检查通过")
         return
 
-    python = sys.executable
     run([python, "scripts/build_product_graph_svg.py", "--input", str(product_graph), "--output", str(product_image)])
     run([python, "scripts/build_supply_graph_svg.py", "--input", str(baseline), "--output", str(supply_image)])
     run(
@@ -108,6 +129,8 @@ def main() -> None:
             str(report.relative_to(ROOT)),
             "--baseline",
             str(baseline),
+            "--product-graph",
+            str(product_graph),
             "--output",
             str(source_audit),
             "--strict",

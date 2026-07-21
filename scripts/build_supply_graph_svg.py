@@ -46,6 +46,14 @@ ALIASES = {
     "EV/储能客户": "外部:EV/储能客户",
     "EssilorLuxottica": "外部:EssilorLuxottica",
     "ASML/EUV": "外部:ASML/EUV",
+    "EA/NFL 游戏内容": "外部:EA/NFL游戏内容",
+    "3M": "外部:3M",
+    "Steel River/Cypress Creek": "外部:Steel River/Cypress Creek",
+    "Bedrock/SageMaker 客户": "外部:Bedrock/SageMaker客户",
+    "Richland Parish/电力与社区生态": "外部:Richland Parish/电力社区",
+    "Noetra/日本 FRONTia": "外部:Noetra/日本FRONTia",
+    "Galaxy 折叠屏用户": "外部:Galaxy折叠屏用户",
+    "AI/HPC 客户": "外部:AI/HPC客户",
 }
 
 

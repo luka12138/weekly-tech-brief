@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="860" viewBox="0 0 1180 860">
+<rect width="100%" height="100%" fill="#0f172a"/>
+<circle cx="590" cy="448" r="160" fill="none" stroke="#334155" stroke-width="1" stroke-opacity="0.75"/>
+<circle cx="590" cy="448" r="250" fill="none" stroke="#334155" stroke-width="1" stroke-opacity="0.55"/>
+<circle cx="590" cy="448" r="335" fill="none" stroke="#334155" stroke-width="1" stroke-opacity="0.35"/>
+<text x="40" y="44" font-size="22" font-weight="800" fill="#f8fafc">本周供应关系图 2026-07-13 至 2026-07-19</text>
+<text x="40" y="68" font-size="12" fill="#94a3b8">Obsidian 风格网络图，基于 state/supply_graph_baseline.json 生成。</text>
+<text x="40" y="820" font-size="11" fill="#94a3b8">边颜色：绿色=新增，蓝色=强化，橙色=风险/媒体报道，灰色=基线关系。</text>
+<path d="M 590.0 133.0 Q 620.1 276.5 710.5 77.1" fill="none" stroke="#22c55e" stroke-width="1.5" stroke-opacity="0.72"/>
+<text x="635.2" y="190.8" font-size="9" fill="#22c55e">E01 Apple Arcade 上的 EA SPORTS Madden NFL 27 </text>
+<path d="M 905.5 218.8 Q 715.2 327.0 775.2 193.2" fill="none" stroke="#22c55e" stroke-width="1.5" stroke-opacity="0.72"/>
+<text x="777.8" y="266.5" font-size="9" fill="#22c55e">E02 Expanded Beam Optical（EBO）光互联技术、Azure AI</text>
+<path d="M 889.6 350.7 Q 762.4 423.7 980.0 448.0" fill="none" stroke="#22c55e" stroke-width="1.5" stroke-opacity="0.72"/>
+<text x="848.6" y="411.5" font-size="9" fill="#22c55e">E03 Steel River Energy Center 太阳能发电与电池储能、电力采</text>
+<path d="M 889.6 545.3 Q 743.8 529.6 905.5 677.2" fill="none" stroke="#22c55e" stroke-width="1.5" stroke-opacity="0.72"/>
+<text x="820.7" y="570.5" font-size="9" fill="#22c55e">E04 Amazon GuardDuty AI Protection、AI 工作负载威胁</text>
+<path d="M 775.2 702.8 Q 666.4 604.4 710.5 818.9" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.72"/>
+<text x="704.6" y="682.7" font-size="9" fill="#38bdf8">E05 Richland Parish 5GW AI-optimized data ce</text>
+<path d="M 590.0 763.0 Q 559.9 619.5 469.5 818.9" fill="none" stroke="#22c55e" stroke-width="1.5" stroke-opacity="0.72"/>
+<text x="544.8" y="705.2" font-size="9" fill="#22c55e">E06 Vera Rubin NVL72、DSX、Spectrum-X、BlueFiel</text>
+<path d="M 404.8 702.8 Q 464.8 569.0 274.5 677.2" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-opacity="0.72"/>
+<text x="402.2" y="629.5" font-size="9" fill="#f59e0b">E07 电动车交付、储能部署、Supercharger/能源生态</text>
+<path d="M 290.4 545.3 Q 417.6 472.3 200.0 448.0" fill="none" stroke="#22c55e" stroke-width="1.5" stroke-opacity="0.72"/>
+<text x="331.4" y="484.5" font-size="9" fill="#22c55e">E08 Flex Titanium 折叠屏显示技术</text>
+<path d="M 290.4 350.7 Q 436.2 366.4 274.5 218.8" fill="none" stroke="#64748b" stroke-width="1.5" stroke-opacity="0.72"/>
+<text x="359.3" y="325.5" font-size="9" fill="#64748b">E09 HBM/DRAM/NAND 基线、Nasdaq ADR 可见度</text>
+<path d="M 404.8 193.2 Q 513.6 291.6 469.5 77.1" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.72"/>
+<text x="475.4" y="213.3" font-size="9" fill="#38bdf8">E10 先进逻辑制程、先进封装、Q2 AI/HPC 需求信号</text>
+<circle cx="590.0" cy="133.0" r="29" fill="#a78bfa" fill-opacity="0.20" stroke="#a78bfa" stroke-width="2"/>
+<circle cx="590.0" cy="133.0" r="5" fill="#a78bfa"/>
+<text x="590.0" y="94.0" text-anchor="middle" font-size="13" font-weight="700" fill="#e5e7eb">Apple</text>
+<circle cx="775.2" cy="193.2" r="29" fill="#a78bfa" fill-opacity="0.20" stroke="#a78bfa" stroke-width="2"/>
+<circle cx="775.2" cy="193.2" r="5" fill="#a78bfa"/>
+<text x="775.2" y="154.2" text-anchor="middle" font-size="13" font-weight="700" fill="#e5e7eb">Microsoft</text>
+<circle cx="889.6" cy="350.7" r="29" fill="#a78bfa" fill-opacity="0.20" stroke="#a78bfa" stroke-width="2"/>
+<circle cx="889.6" cy="350.7" r="5" fill="#a78bfa"/>
+<text x="889.6" y="311.7" text-anchor="middle" font-size="13" font-weight="700" fill="#e5e7eb">Alphabet / Google</text>
+<circle cx="889.6" cy="545.3" r="29" fill="#a78bfa" fill-opacity="0.20" stroke="#a78bfa" stroke-width="2"/>
+<circle cx="889.6" cy="545.3" r="5" fill="#a78bfa"/>
+<text x="889.6" y="506.3" text-anchor="middle" font-size="13" font-weight="700" fill="#e5e7eb">Amazon / AWS</text>
+<circle cx="775.2" cy="702.8" r="29" fill="#a78bfa" fill-opacity="0.20" stroke="#a78bfa" stroke-width="2"/>
+<circle cx="775.2" cy="702.8" r="5" fill="#a78bfa"/>
+<text x="775.2" y="663.8" text-anchor="middle" font-size="13" font-weight="700" fill="#e5e7eb">Meta</text>
+<circle cx="590.0" cy="763.0" r="29" fill="#a78bfa" fill-opacity="0.20" stroke="#a78bfa" stroke-width="2"/>
+<circle cx="590.0" cy="763.0" r="5" fill="#a78bfa"/>
+<text x="590.0" y="724.0" text-anchor="middle" font-size="13" font-weight="700" fill="#e5e7eb">NVIDIA</text>
+<circle cx="404.8" cy="702.8" r="29" fill="#a78bfa" fill-opacity="0.20" stroke="#a78bfa" stroke-width="2"/>
+<circle cx="404.8" cy="702.8" r="5" fill="#a78bfa"/>
+<text x="404.8" y="663.8" text-anchor="middle" font-size="13" font-weight="700" fill="#e5e7eb">Tesla</text>
+<circle cx="290.4" cy="545.3" r="29" fill="#a78bfa" fill-opacity="0.20" stroke="#a78bfa" stroke-width="2"/>
+<circle cx="290.4" cy="545.3" r="5" fill="#a78bfa"/>
+<text x="290.4" y="506.3" text-anchor="middle" font-size="13" font-weight="700" fill="#e5e7eb">Samsung Electronics</text>
+<circle cx="290.4" cy="350.7" r="29" fill="#a78bfa" fill-opacity="0.20" stroke="#a78bfa" stroke-width="2"/>
+<circle cx="290.4" cy="350.7" r="5" fill="#a78bfa"/>
+<text x="290.4" y="311.7" text-anchor="middle" font-size="13" font-weight="700" fill="#e5e7eb">SK Hynix</text>
+<circle cx="404.8" cy="193.2" r="29" fill="#a78bfa" fill-opacity="0.20" stroke="#a78bfa" stroke-width="2"/>
+<circle cx="404.8" cy="193.2" r="5" fill="#a78bfa"/>
+<text x="404.8" y="154.2" text-anchor="middle" font-size="13" font-weight="700" fill="#e5e7eb">TSMC</text>
+<circle cx="710.5" cy="77.1" r="22" fill="#94a3b8" fill-opacity="0.20" stroke="#94a3b8" stroke-width="2"/>
+<circle cx="710.5" cy="77.1" r="5" fill="#94a3b8"/>
+<text x="710.5" y="45.1" text-anchor="middle" font-size="13" font-weight="700" fill="#e5e7eb">EA/NFL游戏内容</text>
+<circle cx="905.5" cy="218.8" r="22" fill="#94a3b8" fill-opacity="0.20" stroke="#94a3b8" stroke-width="2"/>
+<circle cx="905.5" cy="218.8" r="5" fill="#94a3b8"/>
+<text x="905.5" y="186.8" text-anchor="middle" font-size="13" font-weight="700" fill="#e5e7eb">3M</text>
+<circle cx="980.0" cy="448.0" r="22" fill="#94a3b8" fill-opacity="0.20" stroke="#94a3b8" stroke-width="2"/>
+<circle cx="980.0" cy="448.0" r="5" fill="#94a3b8"/>
+<text x="980.0" y="416.0" text-anchor="middle" font-size="13" font-weight="700" fill="#e5e7eb">Steel River/Cypress Creek</text>
+<circle cx="905.5" cy="677.2" r="22" fill="#94a3b8" fill-opacity="0.20" stroke="#94a3b8" stroke-width="2"/>
+<circle cx="905.5" cy="677.2" r="5" fill="#94a3b8"/>
+<text x="905.5" y="645.2" text-anchor="middle" font-size="13" font-weight="700" fill="#e5e7eb">Bedrock/SageMaker客户</text>
+<circle cx="710.5" cy="818.9" r="22" fill="#94a3b8" fill-opacity="0.20" stroke="#94a3b8" stroke-width="2"/>
+<circle cx="710.5" cy="818.9" r="5" fill="#94a3b8"/>
+<text x="710.5" y="786.9" text-anchor="middle" font-size="13" font-weight="700" fill="#e5e7eb">Richland Parish/电力社区</text>
+<circle cx="469.5" cy="818.9" r="22" fill="#94a3b8" fill-opacity="0.20" stroke="#94a3b8" stroke-width="2"/>
+<circle cx="469.5" cy="818.9" r="5" fill="#94a3b8"/>
+<text x="469.5" y="786.9" text-anchor="middle" font-size="13" font-weight="700" fill="#e5e7eb">Noetra/日本FRONTia</text>
+<circle cx="274.5" cy="677.2" r="22" fill="#94a3b8" fill-opacity="0.20" stroke="#94a3b8" stroke-width="2"/>
+<circle cx="274.5" cy="677.2" r="5" fill="#94a3b8"/>
+<text x="274.5" y="645.2" text-anchor="middle" font-size="13" font-weight="700" fill="#e5e7eb">EV/储能客户</text>
+<circle cx="200.0" cy="448.0" r="22" fill="#94a3b8" fill-opacity="0.20" stroke="#94a3b8" stroke-width="2"/>
+<circle cx="200.0" cy="448.0" r="5" fill="#94a3b8"/>
+<text x="200.0" y="416.0" text-anchor="middle" font-size="13" font-weight="700" fill="#e5e7eb">Galaxy折叠屏用户</text>
+<circle cx="274.5" cy="218.8" r="22" fill="#94a3b8" fill-opacity="0.20" stroke="#94a3b8" stroke-width="2"/>
+<circle cx="274.5" cy="218.8" r="5" fill="#94a3b8"/>
+<text x="274.5" y="186.8" text-anchor="middle" font-size="13" font-weight="700" fill="#e5e7eb">全球投资者/AI生态</text>
+<circle cx="469.5" cy="77.1" r="22" fill="#94a3b8" fill-opacity="0.20" stroke="#94a3b8" stroke-width="2"/>
+<circle cx="469.5" cy="77.1" r="5" fill="#94a3b8"/>
+<text x="469.5" y="45.1" text-anchor="middle" font-size="13" font-weight="700" fill="#e5e7eb">AI/HPC客户</text>
+</svg>

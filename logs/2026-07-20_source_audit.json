@@ -1,0 +1,669 @@
+{
+  "generated_at": "2026-07-21T01:52:56.706897+00:00",
+  "report": "reports/2026-07-20_weekly_morning_brief.md",
+  "baseline": "state/supply_graph_baseline.json",
+  "product_graph": "state/product_relationships_2026.json",
+  "report_sha256": "ea146f623f30925325855d3b3b92785b05e5b4055118dbe25254ff98dc45ba8a",
+  "baseline_sha256": "0dfa84970255b97f03b78eba36f286b364717e76990fbdb7baf35249d8eae261",
+  "product_graph_sha256": "de71e59544acd75691cf5fb46b05d914f582c630f9c544dff4bd22e9fe18360c",
+  "audited_urls": [
+    "https://abc.xyz/investor/",
+    "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-guardduty-ai-protection-aws/",
+    "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/steel-river-arkansas/",
+    "https://blogs.nvidia.com/blog/nvidia-aws-ai-production-scale/",
+    "https://datacenters.atmeta.com/2026/07/deepening-our-investment-in-richland-parish-louisiana/",
+    "https://investor.apple.com/sec-filings/default.aspx",
+    "https://investor.atmeta.com/financials/",
+    "https://investor.nvidia.com/financial-info/annual-reports-and-proxies/default.aspx",
+    "https://investor.tsmc.com/english/annual-reports",
+    "https://ir.aboutamazon.com/annual-reports-proxies-and-shareholder-letters/default.aspx",
+    "https://ir.tesla.com/",
+    "https://ir.tesla.com/press",
+    "https://news.microsoft.com/source/2026/07/15/3m-and-microsoft-announce-strategic-partnership-to-advance-ai-data-center-infrastructure-and-enterprise-transformation/",
+    "https://news.samsung.com/global/samsung-electronics-releases-2026-sustainability-report-expanding-water-replenishment-efforts",
+    "https://news.samsung.com/global/samsung-introduces-flex-titanium-technology-to-advance-foldable-displays",
+    "https://news.skhynix.com/12-layer-hbm4e-sample/",
+    "https://news.skhynix.com/skhynix-lists-adrs-on-nasdaq/",
+    "https://nvidianews.nvidia.com/news/japan-government-industrial-leaders-and-nvidia-launch-the-worlds-first-national-ai-infrastructure",
+    "https://pr.tsmc.com/english/news/3326",
+    "https://www.apple.com/newsroom/2026/07/madden-nfl-27-arcade-edition-brings-gridiron-action-to-apple-arcade-on-august-6/",
+    "https://www.microsoft.com/en-us/Investor/annual-reports.aspx",
+    "https://www.samsung.com/global/ir/reports-disclosures/annual-reports/",
+    "https://www.skhynix.com/ir/UI-FR-IR02"
+  ],
+  "summary": {
+    "total": 23,
+    "reachable": 23,
+    "access_limited": 3,
+    "unclassified": 0,
+    "errors": 0,
+    "claim_total": 10,
+    "claim_matched": 9,
+    "claim_manual": 0,
+    "claim_failed": 0
+  },
+  "sources": [
+    {
+      "url": "https://abc.xyz/investor/",
+      "scheme": "https",
+      "host": "abc.xyz",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-guardduty-ai-protection-aws/",
+      "scheme": "https",
+      "host": "aws.amazon.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/steel-river-arkansas/",
+      "scheme": "https",
+      "host": "blog.google",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/nvidia-aws-ai-production-scale/",
+      "scheme": "https",
+      "host": "blogs.nvidia.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://datacenters.atmeta.com/2026/07/deepening-our-investment-in-richland-parish-louisiana/",
+      "scheme": "https",
+      "host": "datacenters.atmeta.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://investor.apple.com/sec-filings/default.aspx",
+      "scheme": "https",
+      "host": "investor.apple.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://investor.atmeta.com/financials/",
+      "scheme": "https",
+      "host": "investor.atmeta.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://investor.nvidia.com/financial-info/annual-reports-and-proxies/default.aspx",
+      "scheme": "https",
+      "host": "investor.nvidia.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://investor.tsmc.com/english/annual-reports",
+      "scheme": "https",
+      "host": "investor.tsmc.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://ir.aboutamazon.com/annual-reports-proxies-and-shareholder-letters/default.aspx",
+      "scheme": "https",
+      "host": "ir.aboutamazon.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://ir.tesla.com/",
+      "scheme": "https",
+      "host": "ir.tesla.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://ir.tesla.com/press",
+      "scheme": "https",
+      "host": "ir.tesla.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://news.microsoft.com/source/2026/07/15/3m-and-microsoft-announce-strategic-partnership-to-advance-ai-data-center-infrastructure-and-enterprise-transformation/",
+      "scheme": "https",
+      "host": "news.microsoft.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://news.samsung.com/global/samsung-electronics-releases-2026-sustainability-report-expanding-water-replenishment-efforts",
+      "scheme": "https",
+      "host": "news.samsung.com",
+      "source_class": "official_or_regulatory",
+      "status": 403,
+      "reachable": true,
+      "access_limited": true,
+      "content_verified": false,
+      "requires_manual_verification": true,
+      "error": null
+    },
+    {
+      "url": "https://news.samsung.com/global/samsung-introduces-flex-titanium-technology-to-advance-foldable-displays",
+      "scheme": "https",
+      "host": "news.samsung.com",
+      "source_class": "official_or_regulatory",
+      "status": 403,
+      "reachable": true,
+      "access_limited": true,
+      "content_verified": false,
+      "requires_manual_verification": true,
+      "error": null
+    },
+    {
+      "url": "https://news.skhynix.com/12-layer-hbm4e-sample/",
+      "scheme": "https",
+      "host": "news.skhynix.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://news.skhynix.com/skhynix-lists-adrs-on-nasdaq/",
+      "scheme": "https",
+      "host": "news.skhynix.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://nvidianews.nvidia.com/news/japan-government-industrial-leaders-and-nvidia-launch-the-worlds-first-national-ai-infrastructure",
+      "scheme": "https",
+      "host": "nvidianews.nvidia.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://pr.tsmc.com/english/news/3326",
+      "scheme": "https",
+      "host": "pr.tsmc.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://www.apple.com/newsroom/2026/07/madden-nfl-27-arcade-edition-brings-gridiron-action-to-apple-arcade-on-august-6/",
+      "scheme": "https",
+      "host": "www.apple.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://www.microsoft.com/en-us/Investor/annual-reports.aspx",
+      "scheme": "https",
+      "host": "www.microsoft.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://www.samsung.com/global/ir/reports-disclosures/annual-reports/",
+      "scheme": "https",
+      "host": "www.samsung.com",
+      "source_class": "official_or_regulatory",
+      "status": 403,
+      "reachable": true,
+      "access_limited": true,
+      "content_verified": false,
+      "requires_manual_verification": true,
+      "error": null
+    },
+    {
+      "url": "https://www.skhynix.com/ir/UI-FR-IR02",
+      "scheme": "https",
+      "host": "www.skhynix.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    }
+  ],
+  "claim_checks": [
+    {
+      "claim_id": "E01",
+      "scope": "weekly_supply_edge",
+      "description": "Apple Arcade 上的 EA SPORTS Madden NFL 27 Arcade Edition",
+      "source_urls": [
+        "https://www.apple.com/newsroom/2026/07/madden-nfl-27-arcade-edition-brings-gridiron-action-to-apple-arcade-on-august-6/"
+      ],
+      "keywords": [
+        "Madden NFL 27",
+        "Apple Arcade"
+      ],
+      "min_keyword_matches": 2,
+      "required": true,
+      "matched": true,
+      "requires_manual_verification": false,
+      "failed": false,
+      "best_match_count": 2,
+      "best_matched_keywords": [
+        "madden nfl 27",
+        "apple arcade"
+      ],
+      "url_results": [
+        {
+          "url": "https://www.apple.com/newsroom/2026/07/madden-nfl-27-arcade-edition-brings-gridiron-action-to-apple-arcade-on-august-6/",
+          "status": 200,
+          "access_limited": false,
+          "matched_keywords": [
+            "madden nfl 27",
+            "apple arcade"
+          ]
+        }
+      ]
+    },
+    {
+      "claim_id": "E02",
+      "scope": "weekly_supply_edge",
+      "description": "Expanded Beam Optical（EBO）光互联技术、Azure AI 数据中心连接",
+      "source_urls": [
+        "https://news.microsoft.com/source/2026/07/15/3m-and-microsoft-announce-strategic-partnership-to-advance-ai-data-center-infrastructure-and-enterprise-transformation/"
+      ],
+      "keywords": [
+        "3M",
+        "Expanded Beam Optical",
+        "Azure"
+      ],
+      "min_keyword_matches": 2,
+      "required": true,
+      "matched": true,
+      "requires_manual_verification": false,
+      "failed": false,
+      "best_match_count": 3,
+      "best_matched_keywords": [
+        "3m",
+        "expanded beam optical",
+        "azure"
+      ],
+      "url_results": [
+        {
+          "url": "https://news.microsoft.com/source/2026/07/15/3m-and-microsoft-announce-strategic-partnership-to-advance-ai-data-center-infrastructure-and-enterprise-transformation/",
+          "status": 200,
+          "access_limited": false,
+          "matched_keywords": [
+            "3m",
+            "expanded beam optical",
+            "azure"
+          ]
+        }
+      ]
+    },
+    {
+      "claim_id": "E03",
+      "scope": "weekly_supply_edge",
+      "description": "Steel River Energy Center 太阳能发电与电池储能、电力采购",
+      "source_urls": [
+        "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/steel-river-arkansas/"
+      ],
+      "keywords": [
+        "Steel River",
+        "solar",
+        "storage"
+      ],
+      "min_keyword_matches": 2,
+      "required": true,
+      "matched": true,
+      "requires_manual_verification": false,
+      "failed": false,
+      "best_match_count": 3,
+      "best_matched_keywords": [
+        "steel river",
+        "solar",
+        "storage"
+      ],
+      "url_results": [
+        {
+          "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/steel-river-arkansas/",
+          "status": 200,
+          "access_limited": false,
+          "matched_keywords": [
+            "steel river",
+            "solar",
+            "storage"
+          ]
+        }
+      ]
+    },
+    {
+      "claim_id": "E04",
+      "scope": "weekly_supply_edge",
+      "description": "Amazon GuardDuty AI Protection、AI 工作负载威胁检测",
+      "source_urls": [
+        "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-guardduty-ai-protection-aws/"
+      ],
+      "keywords": [
+        "GuardDuty AI Protection",
+        "Bedrock",
+        "SageMaker"
+      ],
+      "min_keyword_matches": 2,
+      "required": true,
+      "matched": true,
+      "requires_manual_verification": false,
+      "failed": false,
+      "best_match_count": 3,
+      "best_matched_keywords": [
+        "guardduty ai protection",
+        "bedrock",
+        "sagemaker"
+      ],
+      "url_results": [
+        {
+          "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-guardduty-ai-protection-aws/",
+          "status": 200,
+          "access_limited": false,
+          "matched_keywords": [
+            "guardduty ai protection",
+            "bedrock",
+            "sagemaker"
+          ]
+        }
+      ]
+    },
+    {
+      "claim_id": "E05",
+      "scope": "weekly_supply_edge",
+      "description": "Richland Parish 5GW AI-optimized data center、本地税收与社区投资",
+      "source_urls": [
+        "https://datacenters.atmeta.com/2026/07/deepening-our-investment-in-richland-parish-louisiana/"
+      ],
+      "keywords": [
+        "Richland Parish",
+        "data center",
+        "Louisiana"
+      ],
+      "min_keyword_matches": 2,
+      "required": true,
+      "matched": true,
+      "requires_manual_verification": false,
+      "failed": false,
+      "best_match_count": 3,
+      "best_matched_keywords": [
+        "richland parish",
+        "data center",
+        "louisiana"
+      ],
+      "url_results": [
+        {
+          "url": "https://datacenters.atmeta.com/2026/07/deepening-our-investment-in-richland-parish-louisiana/",
+          "status": 200,
+          "access_limited": false,
+          "matched_keywords": [
+            "richland parish",
+            "data center",
+            "louisiana"
+          ]
+        }
+      ]
+    },
+    {
+      "claim_id": "E06",
+      "scope": "weekly_supply_edge",
+      "description": "Vera Rubin NVL72、DSX、Spectrum-X、BlueField、13,750 Vera CPU、27,500 Rubin GPU",
+      "source_urls": [
+        "https://nvidianews.nvidia.com/news/japan-government-industrial-leaders-and-nvidia-launch-the-worlds-first-national-ai-infrastructure"
+      ],
+      "keywords": [
+        "Noetra",
+        "Vera Rubin",
+        "13,750"
+      ],
+      "min_keyword_matches": 2,
+      "required": true,
+      "matched": true,
+      "requires_manual_verification": false,
+      "failed": false,
+      "best_match_count": 3,
+      "best_matched_keywords": [
+        "noetra",
+        "vera rubin",
+        "13,750"
+      ],
+      "url_results": [
+        {
+          "url": "https://nvidianews.nvidia.com/news/japan-government-industrial-leaders-and-nvidia-launch-the-worlds-first-national-ai-infrastructure",
+          "status": 200,
+          "access_limited": false,
+          "matched_keywords": [
+            "noetra",
+            "vera rubin",
+            "13,750"
+          ]
+        }
+      ]
+    },
+    {
+      "claim_id": "E07",
+      "scope": "weekly_supply_edge",
+      "description": "电动车交付、储能部署、Supercharger/能源生态",
+      "source_urls": [
+        "https://ir.tesla.com/press"
+      ],
+      "keywords": [
+        "Tesla"
+      ],
+      "min_keyword_matches": 1,
+      "required": false,
+      "matched": false,
+      "requires_manual_verification": false,
+      "failed": false,
+      "best_match_count": 0,
+      "best_matched_keywords": [],
+      "url_results": [
+        {
+          "url": "https://ir.tesla.com/press",
+          "status": 200,
+          "access_limited": false,
+          "matched_keywords": []
+        }
+      ]
+    },
+    {
+      "claim_id": "E08",
+      "scope": "weekly_supply_edge",
+      "description": "Flex Titanium 折叠屏显示技术",
+      "source_urls": [
+        "https://news.samsung.com/global/samsung-introduces-flex-titanium-technology-to-advance-foldable-displays"
+      ],
+      "keywords": [
+        "Flex Titanium",
+        "foldable"
+      ],
+      "min_keyword_matches": 2,
+      "required": true,
+      "matched": true,
+      "requires_manual_verification": false,
+      "failed": false,
+      "best_match_count": 2,
+      "best_matched_keywords": [
+        "flex titanium",
+        "foldable"
+      ],
+      "url_results": [
+        {
+          "url": "https://news.samsung.com/global/samsung-introduces-flex-titanium-technology-to-advance-foldable-displays",
+          "status": 403,
+          "access_limited": true,
+          "matched_keywords": [
+            "flex titanium",
+            "foldable"
+          ]
+        }
+      ]
+    },
+    {
+      "claim_id": "E09",
+      "scope": "weekly_supply_edge",
+      "description": "HBM/DRAM/NAND 基线、Nasdaq ADR 可见度",
+      "source_urls": [
+        "https://news.skhynix.com/skhynix-lists-adrs-on-nasdaq/"
+      ],
+      "keywords": [
+        "SK hynix",
+        "ADRs",
+        "NASDAQ"
+      ],
+      "min_keyword_matches": 2,
+      "required": true,
+      "matched": true,
+      "requires_manual_verification": false,
+      "failed": false,
+      "best_match_count": 3,
+      "best_matched_keywords": [
+        "sk hynix",
+        "adrs",
+        "nasdaq"
+      ],
+      "url_results": [
+        {
+          "url": "https://news.skhynix.com/skhynix-lists-adrs-on-nasdaq/",
+          "status": 200,
+          "access_limited": false,
+          "matched_keywords": [
+            "sk hynix",
+            "adrs",
+            "nasdaq"
+          ]
+        }
+      ]
+    },
+    {
+      "claim_id": "E10",
+      "scope": "weekly_supply_edge",
+      "description": "先进逻辑制程、先进封装、Q2 AI/HPC 需求信号",
+      "source_urls": [
+        "https://pr.tsmc.com/english/news/3326"
+      ],
+      "keywords": [
+        "TSMC",
+        "Second Quarter",
+        "2026"
+      ],
+      "min_keyword_matches": 2,
+      "required": true,
+      "matched": true,
+      "requires_manual_verification": false,
+      "failed": false,
+      "best_match_count": 3,
+      "best_matched_keywords": [
+        "tsmc",
+        "second quarter",
+        "2026"
+      ],
+      "url_results": [
+        {
+          "url": "https://pr.tsmc.com/english/news/3326",
+          "status": 200,
+          "access_limited": false,
+          "matched_keywords": [
+            "tsmc",
+            "second quarter",
+            "2026"
+          ]
+        }
+      ]
+    }
+  ]
+}

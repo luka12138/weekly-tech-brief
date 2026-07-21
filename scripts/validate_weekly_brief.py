@@ -8,7 +8,7 @@ import hashlib
 import json
 import re
 import sys
-from datetime import date
+from datetime import date, timedelta
 from pathlib import Path
 
 
@@ -51,6 +51,26 @@ REQUIRED_PRODUCT_RELATIONSHIP_FIELDS = [
     "official_sources",
 ]
 
+REQUIRED_PRODUCT_NODE_FIELDS = [
+    "node_id",
+    "company",
+    "product",
+    "category",
+    "official_sources",
+]
+
+REQUIRED_PRODUCT_EDGE_FIELDS = [
+    "edge_id",
+    "source_node",
+    "target_node",
+    "source_company",
+    "target_company",
+    "product_or_service",
+    "relationship_type",
+    "evidence_level",
+    "official_sources",
+]
+
 
 def sha256_file(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
@@ -87,7 +107,7 @@ def extract_markdown_urls(markdown: str) -> set[str]:
     return {url.rstrip(".,;") for url in urls}
 
 
-def collect_urls(report_path: Path, baseline_path: Path | None) -> list[str]:
+def collect_urls(report_path: Path, baseline_path: Path | None, product_graph_path: Path | None = None) -> list[str]:
     urls = extract_markdown_urls(report_path.read_text(encoding="utf-8"))
     if baseline_path and baseline_path.exists():
         data = json.loads(baseline_path.read_text(encoding="utf-8"))
@@ -98,6 +118,13 @@ def collect_urls(report_path: Path, baseline_path: Path | None) -> list[str]:
             for source in edge.get("sources", []):
                 if isinstance(source, str) and source.startswith(("http://", "https://")):
                     urls.add(source)
+    if product_graph_path and product_graph_path.exists():
+        data = json.loads(product_graph_path.read_text(encoding="utf-8"))
+        for section in ("companies", "relationships", "product_nodes", "product_edges"):
+            for item in data.get(section, []):
+                for source in item.get("official_sources", []):
+                    if isinstance(source, str) and source.startswith(("http://", "https://")):
+                        urls.add(source)
     return sorted(urls)
 
 
@@ -114,7 +141,12 @@ def validate_latest(latest_path: Path) -> None:
             fail(f"reports/latest.md 链接目标不存在：{link}")
 
 
-def validate_source_audit(audit_path: Path | None, report_path: Path, baseline_path: Path) -> None:
+def validate_source_audit(
+    audit_path: Path | None,
+    report_path: Path,
+    baseline_path: Path,
+    product_graph_path: Path | None = None,
+) -> None:
     if audit_path is None:
         return
     if not audit_path.exists():
@@ -124,9 +156,12 @@ def validate_source_audit(audit_path: Path | None, report_path: Path, baseline_p
         fail("来源审查日志不是由当前周报生成")
     if audit.get("baseline_sha256") != sha256_file(baseline_path):
         fail("来源审查日志不是由当前供应关系基线生成")
-    current_urls = collect_urls(report_path, baseline_path)
+    if product_graph_path is not None:
+        if audit.get("product_graph_sha256") != sha256_file(product_graph_path):
+            fail("来源审查日志不是由当前年度产品关系图生成")
+    current_urls = collect_urls(report_path, baseline_path, product_graph_path)
     if audit.get("audited_urls") != current_urls:
-        fail("来源审查 URL 清单与当前周报/基线不一致")
+        fail("来源审查 URL 清单与当前周报/基线/年度产品关系图不一致")
     summary = audit.get("summary", {})
     if summary.get("total", 0) <= 0:
         fail("来源审查没有审查任何 URL")
@@ -134,6 +169,10 @@ def validate_source_audit(audit_path: Path | None, report_path: Path, baseline_p
         fail("来源审查包含未分类来源")
     if summary.get("errors", 0) != 0:
         fail("来源审查包含可达性错误")
+    if summary.get("claim_total", 0) <= 0:
+        fail("来源审查没有执行核心事实 claim 检查")
+    if summary.get("claim_failed", 0) != 0:
+        fail("来源审查包含未通过关键词匹配的核心事实 claim")
     for source in audit.get("sources", []):
         if not source.get("url", "").startswith("https://"):
             fail(f"来源审查包含非 HTTPS URL：{source}")
@@ -191,6 +230,65 @@ def validate_product_graph(report: str, product_graph_path: Path | None, product
         if not relation.get("official_sources"):
             fail(f"产品关系缺少 official_sources：{relation}")
 
+    product_nodes = product_graph.get("product_nodes")
+    product_edges = product_graph.get("product_edges")
+    if not isinstance(product_nodes, list) or not product_nodes:
+        fail("产品关系图 product_nodes 必须是非空列表")
+    if not isinstance(product_edges, list) or not product_edges:
+        fail("产品关系图 product_edges 必须是非空列表")
+
+    nodes_by_id: dict[str, dict[str, object]] = {}
+    products_by_company = {company["name"]: set(company["main_products"]) for company in companies}
+    covered_products: set[tuple[str, str]] = set()
+    for node in product_nodes:
+        for field in REQUIRED_PRODUCT_NODE_FIELDS:
+            if field not in node:
+                fail(f"产品节点缺少字段 {field}：{node}")
+        node_id = str(node["node_id"])
+        if node_id in nodes_by_id:
+            fail(f"产品节点 node_id 重复：{node_id}")
+        company = str(node["company"])
+        product = str(node["product"])
+        if company not in products_by_company:
+            fail(f"产品节点 company 不是覆盖公司：{node}")
+        if product not in products_by_company[company]:
+            fail(f"产品节点 product 不在该公司的 main_products 中：{node}")
+        if not node.get("official_sources"):
+            fail(f"产品节点缺少 official_sources：{node}")
+        nodes_by_id[node_id] = node
+        covered_products.add((company, product))
+
+    expected_products = {
+        (company["name"], product)
+        for company in companies
+        for product in company["main_products"]
+    }
+    if covered_products != expected_products:
+        fail(f"产品节点未完整覆盖 main_products：missing={sorted(expected_products - covered_products)}")
+
+    attached_nodes: set[str] = set()
+    product_edge_ids: set[str] = set()
+    for edge in product_edges:
+        for field in REQUIRED_PRODUCT_EDGE_FIELDS:
+            if field not in edge:
+                fail(f"产品级关系缺少字段 {field}：{edge}")
+        edge_id = str(edge["edge_id"])
+        if not re.fullmatch(r"PX\d{2,3}", edge_id):
+            fail(f"产品级关系 edge_id 无效：{edge_id}")
+        if edge_id in product_edge_ids:
+            fail(f"产品级关系 edge_id 重复：{edge_id}")
+        product_edge_ids.add(edge_id)
+        if edge["source_node"] not in nodes_by_id or edge["target_node"] not in nodes_by_id:
+            fail(f"产品级关系引用了不存在的产品节点：{edge}")
+        if not edge.get("official_sources"):
+            fail(f"产品级关系缺少 official_sources：{edge}")
+        attached_nodes.add(str(edge["source_node"]))
+        attached_nodes.add(str(edge["target_node"]))
+
+    unattached = set(nodes_by_id) - attached_nodes
+    if unattached:
+        fail(f"产品节点未进入任何产品级关系：{sorted(unattached)[:8]}")
+
 
 def validate_supply_image(report: str, supply_image_path: Path | None) -> None:
     if supply_image_path is None:
@@ -223,10 +321,20 @@ def validate_report(
     if not start or not end:
         fail("基线缺少 coverage_period.start/end")
     try:
-        date.fromisoformat(start)
-        date.fromisoformat(end)
+        start_date = date.fromisoformat(start)
+        end_date = date.fromisoformat(end)
     except ValueError as exc:
         fail(f"覆盖日期无效：{exc}")
+    report_date_match = re.search(r"(\d{4}-\d{2}-\d{2})", report_path.name)
+    if not report_date_match:
+        fail(f"无法从周报文件名识别报告日期：{report_path.name}")
+    report_date = date.fromisoformat(report_date_match.group(1))
+    if report_date.weekday() != 0:
+        fail(f"周报文件日期必须是周一：{report_date}")
+    expected_start = report_date - timedelta(days=7)
+    expected_end = report_date - timedelta(days=1)
+    if start_date != expected_start or end_date != expected_end:
+        fail(f"覆盖周期必须是报告周一的上一周：expected={expected_start} 至 {expected_end}")
     expected_period = f"{start} 至 {end}"
     if expected_period not in report:
         fail(f"周报没有包含覆盖周期：{expected_period}")
@@ -296,7 +404,7 @@ def validate_report(
             fail(f"周报包含过期或不精确的自检表述：{phrase}")
 
     validate_latest(latest_path)
-    validate_source_audit(source_audit_path, report_path, baseline_path)
+    validate_source_audit(source_audit_path, report_path, baseline_path, product_graph_path)
     validate_product_graph(report, product_graph_path, product_image_path)
     validate_supply_image(report, supply_image_path)
 

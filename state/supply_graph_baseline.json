@@ -1,8 +1,8 @@
 {
-  "generation_date": "2026-07-13",
+  "generation_date": "2026-07-20",
   "coverage_period": {
-    "start": "2026-07-06",
-    "end": "2026-07-12",
+    "start": "2026-07-13",
+    "end": "2026-07-19",
     "timezone": "Asia/Shanghai"
   },
   "companies": [
@@ -20,209 +20,273 @@
   "edges": [
     {
       "edge_id": "E01",
-      "supplier": "Broadcom",
-      "customer": "Apple",
-      "product_or_service": "FBAR 滤波器、先进射频组件、无线连接技术",
-      "relationship_type": "component_supply",
-      "evidence_date": "2026-07-08",
-      "source_type": "official_customer_release",
-      "last_seen": "2026-07-13",
+      "supplier": "Apple",
+      "customer": "EA/NFL 游戏内容",
+      "product_or_service": "Apple Arcade 上的 EA SPORTS Madden NFL 27 Arcade Edition",
+      "relationship_type": "services_content_distribution",
+      "evidence_date": "2026-07-14",
+      "source_type": "official_company_release",
+      "last_seen": "2026-07-20",
       "changed_this_week": "new",
-      "status": "new_major_supply_commitment",
+      "status": "new_services_content",
       "confidence": "high",
-      "confidence_reason": "Apple 官方披露与 Broadcom 的多年期新承诺，金额预计超过 300 亿美元，涉及 Fort Collins 生产和超过 150 亿颗美国制造芯片。",
+      "confidence_reason": "Apple 官方披露 Madden NFL 27 Arcade Edition 将于 8 月 6 日登陆 Apple Arcade；这是服务内容事件，不是硬件供应链变化。",
       "markdown_section_ref": "6.2 E01",
       "sources": [
-        "https://www.apple.com/newsroom/2026/07/apple-to-increase-spend-with-broadcom-to-produce-billions-more-us-chips/"
+        "https://www.apple.com/newsroom/2026/07/madden-nfl-27-arcade-edition-brings-gridiron-action-to-apple-arcade-on-august-6/"
       ],
-      "notes": "这是覆盖周内最明确的硬件供应关系；公告未披露逐年采购节奏。"
+      "notes": "本周未发现 Apple 新的重大硬件供应链官方披露。",
+      "claim_keywords": [
+        "Madden NFL 27",
+        "Apple Arcade"
+      ],
+      "min_keyword_matches": 2,
+      "claim_check_required": true
     },
     {
       "edge_id": "E02",
-      "supplier": "Amazon / AWS",
-      "customer": "Bedrock/OpenAI 模型客户",
-      "product_or_service": "Amazon Bedrock 上的 OpenAI GPT-5.6 Sol、Terra、Luna",
-      "relationship_type": "cloud_ai_model_service",
-      "evidence_date": "2026-07-09",
-      "source_type": "official_company_release",
-      "last_seen": "2026-07-13",
+      "supplier": "3M",
+      "customer": "Microsoft",
+      "product_or_service": "Expanded Beam Optical（EBO）光互联技术、Azure AI 数据中心连接",
+      "relationship_type": "data_center_optical_interconnect_supply",
+      "evidence_date": "2026-07-15",
+      "source_type": "official_joint_release",
+      "last_seen": "2026-07-20",
       "changed_this_week": "new",
-      "status": "new_general_availability",
+      "status": "new_major_supply_relationship",
       "confidence": "high",
-      "confidence_reason": "Amazon 官方更新称 OpenAI GPT-5.6 系列已在 Amazon Bedrock GA。",
+      "confidence_reason": "Microsoft/3M 官方披露 Azure 云和 AI 基础设施将成为首个公开部署 3M EBO 技术的超大规模云。",
       "markdown_section_ref": "6.2 E02",
       "sources": [
-        "https://www.aboutamazon.com/news/aws/bedrock-openai-models"
+        "https://news.microsoft.com/source/2026/07/15/3m-and-microsoft-announce-strategic-partnership-to-advance-ai-data-center-infrastructure-and-enterprise-transformation/"
       ],
-      "notes": "该边代表 AWS 向企业客户提供模型服务，不代表 OpenAI 直接成为十家公司之一。"
+      "notes": "未披露部署规模、站点、价格或采购金额。",
+      "claim_keywords": [
+        "3M",
+        "Expanded Beam Optical",
+        "Azure"
+      ],
+      "min_keyword_matches": 2,
+      "claim_check_required": true
     },
     {
       "edge_id": "E03",
-      "supplier": "Meta",
-      "customer": "Meta AI/Instagram/WhatsApp 用户",
-      "product_or_service": "Muse Image、Instagram Stories AI 效果、WhatsApp 对话图像生成",
-      "relationship_type": "consumer_ai_service",
-      "evidence_date": "2026-07-07",
+      "supplier": "Alphabet / Google",
+      "customer": "Steel River/Cypress Creek",
+      "product_or_service": "Steel River Energy Center 太阳能发电与电池储能、电力采购",
+      "relationship_type": "energy_supply_and_investment",
+      "evidence_date": "2026-07-14",
       "source_type": "official_company_release",
-      "last_seen": "2026-07-13",
+      "last_seen": "2026-07-20",
       "changed_this_week": "new",
-      "status": "new_product_update_with_policy_risk",
+      "status": "new_energy_supply_commitment",
       "confidence": "high",
-      "confidence_reason": "Meta 官方宣布 Muse Image，并在 7 月 10 日更新移除 @mention 公共 Instagram 账号引用能力。",
+      "confidence_reason": "Google 官方披露将投资并采购 Steel River Energy Center 的能源和储能；第一阶段支持 1.6GWdc 太阳能与 1.9GWh 储能，全部阶段目标为 2.5GWdc/2.9GWh。",
       "markdown_section_ref": "6.2 E03",
       "sources": [
-        "https://about.fb.com/news/2026/07/introducing-muse-image-meta-ai/"
+        "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/steel-river-arkansas/"
       ],
-      "notes": "产品已上线 Meta AI；@mention 能力因反馈撤回，属于产品/隐私风险点。"
+      "notes": "能源供应关系不代表新增 AI 芯片订单。",
+      "claim_keywords": [
+        "Steel River",
+        "solar",
+        "storage"
+      ],
+      "min_keyword_matches": 2,
+      "claim_check_required": true
     },
     {
       "edge_id": "E04",
-      "supplier": "Samsung Electronics",
-      "customer": "AI/HPC 服务器客户",
-      "product_or_service": "PM1763 PCIe 6.0 企业级 SSD、9 代 V-NAND、4nm 控制器",
-      "relationship_type": "memory_storage_supply",
-      "evidence_date": "2026-07-08",
+      "supplier": "Amazon / AWS",
+      "customer": "Bedrock/SageMaker 客户",
+      "product_or_service": "Amazon GuardDuty AI Protection、AI 工作负载威胁检测",
+      "relationship_type": "cloud_ai_security_service",
+      "evidence_date": "2026-07-14",
       "source_type": "official_company_release",
-      "last_seen": "2026-07-13",
+      "last_seen": "2026-07-20",
       "changed_this_week": "new",
-      "status": "new_mass_production",
+      "status": "new_security_governance_service",
       "confidence": "high",
-      "confidence_reason": "Samsung 官方宣布 PM1763 已量产，面向下一代 AI 和 HPC 服务器环境。",
+      "confidence_reason": "AWS 官方披露 Amazon GuardDuty AI Protection 扩展到 AWS AI 服务，包括 Amazon Bedrock 与 Amazon SageMaker。",
       "markdown_section_ref": "6.2 E04",
       "sources": [
-        "https://news.samsung.com/global/samsung-begins-mass-production-of-pm1763-ssd-optimized-for-next-generation-ai-infrastructure"
+        "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-guardduty-ai-protection-aws/"
       ],
-      "notes": "Samsung 新闻页对审计脚本返回 403 访问受限，但属于官方域名；具体内容已通过网页正文人工复核。"
+      "notes": "安全服务更新，不代表硬件供货。",
+      "claim_keywords": [
+        "GuardDuty AI Protection",
+        "Bedrock",
+        "SageMaker"
+      ],
+      "min_keyword_matches": 2,
+      "claim_check_required": true
     },
     {
       "edge_id": "E05",
-      "supplier": "Alphabet / Google",
-      "customer": "AI 基础设施客户",
-      "product_or_service": "Google Cloud AI Hypercomputer、TPU 8t/8i、GKE Inference Gateway、NVIDIA GPU 服务",
-      "relationship_type": "cloud_ai_infrastructure",
-      "evidence_date": "2026-07-09",
+      "supplier": "Meta",
+      "customer": "Richland Parish/电力与社区生态",
+      "product_or_service": "Richland Parish 5GW AI-optimized data center、本地税收与社区投资",
+      "relationship_type": "ai_data_center_infrastructure",
+      "evidence_date": "2026-07-13",
       "source_type": "official_company_release",
-      "last_seen": "2026-07-13",
+      "last_seen": "2026-07-20",
       "changed_this_week": "strengthened",
-      "status": "strengthened_positioning",
+      "status": "strengthened_data_center_expansion",
       "confidence": "high",
-      "confidence_reason": "Google Cloud 官方称其被列为 2026 Gartner AI Infrastructure 魔力象限 Leader，并说明 AI Hypercomputer、TPU、NVIDIA GPU 集成等能力。",
+      "confidence_reason": "Meta Data Centers 官方披露 Richland Parish, Louisiana 的 AI-optimized data center 扩至 5GW。",
       "markdown_section_ref": "6.2 E05",
       "sources": [
-        "https://cloud.google.com/blog/topics/ai-infrastructure/google-is-a-leader-in-gartner-magic-quadrant-for-ai-infra"
+        "https://datacenters.atmeta.com/2026/07/deepening-our-investment-in-richland-parish-louisiana/"
       ],
-      "notes": "这是第三方研究结果的官方转述，不能直接等同于新增订单。"
+      "notes": "未披露服务器、GPU 或电力协议细节。",
+      "claim_keywords": [
+        "Richland Parish",
+        "data center",
+        "Louisiana"
+      ],
+      "min_keyword_matches": 2,
+      "claim_check_required": true
     },
     {
       "edge_id": "E06",
-      "supplier": "Microsoft",
-      "customer": "Xbox 玩家/开发者",
-      "product_or_service": "Xbox 内容组合、Game Pass、多平台发行、开发工具和共享服务",
-      "relationship_type": "platform_content_service",
-      "evidence_date": "2026-07-06",
-      "source_type": "official_company_release",
-      "last_seen": "2026-07-13",
-      "changed_this_week": "risk",
-      "status": "restructure_risk",
+      "supplier": "NVIDIA",
+      "customer": "Noetra/日本 FRONTia",
+      "product_or_service": "Vera Rubin NVL72、DSX、Spectrum-X、BlueField、13,750 Vera CPU、27,500 Rubin GPU",
+      "relationship_type": "ai_compute_platform_supply",
+      "evidence_date": "2026-07-16",
+      "source_type": "official_supplier_release",
+      "last_seen": "2026-07-20",
+      "changed_this_week": "new",
+      "status": "new_major_ai_infrastructure_supply",
       "confidence": "high",
-      "confidence_reason": "Xbox Wire 官方发布团队重组信，披露 FY27 约 3,200 人缩减、部分工作室转出、平台简化和供应商支出削减。",
+      "confidence_reason": "NVIDIA 官方披露与日本政府、产业伙伴和 Noetra 推进国家级 physical AI 基础设施，规划 13,750 Vera CPU、27,500 Rubin GPU 与 140MW 数据中心容量。",
       "markdown_section_ref": "6.2 E06",
       "sources": [
-        "https://news.xbox.com/en-us/2026/07/06/resetting-xbox/"
+        "https://nvidianews.nvidia.com/news/japan-government-industrial-leaders-and-nvidia-launch-the-worlds-first-national-ai-infrastructure"
       ],
-      "notes": "这是平台服务和内容供应链风险，不是新增硬件供货。"
+      "notes": "投产节奏和实际交付仍需后续跟踪。",
+      "claim_keywords": [
+        "Noetra",
+        "Vera Rubin",
+        "13,750"
+      ],
+      "min_keyword_matches": 2,
+      "claim_check_required": true
     },
     {
       "edge_id": "E07",
-      "supplier": "NVIDIA",
-      "customer": "Perplexity/AI 工厂客户",
-      "product_or_service": "NVIDIA Vera CPU、Vera Rubin、BlueField-4 STX、agentic AI CPU 架构",
-      "relationship_type": "ai_compute_platform",
-      "evidence_date": "2026-07-07",
-      "source_type": "official_supplier_blog",
-      "last_seen": "2026-07-13",
-      "changed_this_week": "new",
-      "status": "new_product_adoption_signal",
-      "confidence": "high",
-      "confidence_reason": "NVIDIA 官方称 Vera 被包括 Perplexity 在内的 AI 创新者采用/评估，用于 agentic AI 工作负载。",
-      "markdown_section_ref": "6.2 E07",
-      "sources": [
-        "https://blogs.nvidia.com/blog/nvidia-vera-max-single-threaded-cpu-at-scale/"
-      ],
-      "notes": "公告展示采用信号和性能主张，但没有披露具体采购金额。"
-    },
-    {
-      "edge_id": "E08",
-      "supplier": "SK Hynix",
-      "customer": "全球投资者/AI 生态",
-      "product_or_service": "Nasdaq ADR、HBM/DRAM/NAND 资本市场可获得性",
-      "relationship_type": "capital_market_access",
-      "evidence_date": "2026-07-08",
-      "source_type": "official_company_release_access_limited",
-      "last_seen": "2026-07-13",
-      "changed_this_week": "new",
-      "status": "new_capital_market_signal",
-      "confidence": "medium",
-      "confidence_reason": "SK Hynix 官方新闻链接可达但内容访问受限；本期只把它作为资本市场可获得性信号，不写成新增 HBM 订单。",
-      "markdown_section_ref": "6.2 E08",
-      "sources": [
-        "https://news.skhynix.com/skhynix-lists-adrs-on-nasdaq/"
-      ],
-      "notes": "无官方可读正文支撑具体发行规模或客户关系；不能推断为供应合同。"
-    },
-    {
-      "edge_id": "E09",
       "supplier": "Tesla",
       "customer": "EV/储能客户",
       "product_or_service": "电动车交付、储能部署、Supercharger/能源生态",
       "relationship_type": "end_product_delivery_baseline",
-      "evidence_date": "2026-07-12",
+      "evidence_date": "2026-07-19",
       "source_type": "official_ir_page",
-      "last_seen": "2026-07-13",
+      "last_seen": "2026-07-20",
       "changed_this_week": "no_new_weekly_evidence",
       "status": "continued_no_weekly_major_official_event",
       "confidence": "medium",
-      "confidence_reason": "覆盖周内未发现 Tesla 新的重大官方公告；仅保留终端交付和能源业务基线。",
-      "markdown_section_ref": "6.2 E09",
+      "confidence_reason": "覆盖周内未发现 Tesla 新的重大官方公告；仅保留终端交付和能源业务基线，不能把上一期 Q2 数据写成新增事件。",
+      "markdown_section_ref": "6.2 E07",
       "sources": [
         "https://ir.tesla.com/press"
       ],
-      "notes": "不能把上一期 Q2 交付数据写成覆盖周新增事件。"
+      "notes": "关注后续财报、价格、库存、储能订单和 Robotaxi/FSD 监管进展。",
+      "claim_keywords": [
+        "Tesla"
+      ],
+      "min_keyword_matches": 1,
+      "claim_check_required": false
+    },
+    {
+      "edge_id": "E08",
+      "supplier": "Samsung Electronics",
+      "customer": "Galaxy 折叠屏用户",
+      "product_or_service": "Flex Titanium 折叠屏显示技术",
+      "relationship_type": "mobile_display_materials_technology",
+      "evidence_date": "2026-07-15",
+      "source_type": "official_company_release",
+      "last_seen": "2026-07-20",
+      "changed_this_week": "new",
+      "status": "new_product_technology",
+      "confidence": "high",
+      "confidence_reason": "Samsung 官方披露 Flex Titanium 技术，用于提升折叠屏耐用性、抗冲击、反复折叠能力并减少折痕可见性。",
+      "markdown_section_ref": "6.2 E08",
+      "sources": [
+        "https://news.samsung.com/global/samsung-introduces-flex-titanium-technology-to-advance-foldable-displays"
+      ],
+      "notes": "这是终端显示技术，不是 HBM/DRAM/代工新增客户关系。",
+      "claim_keywords": [
+        "Flex Titanium",
+        "foldable"
+      ],
+      "min_keyword_matches": 2,
+      "claim_check_required": true
+    },
+    {
+      "edge_id": "E09",
+      "supplier": "SK Hynix",
+      "customer": "全球投资者/AI 生态",
+      "product_or_service": "HBM/DRAM/NAND 基线、Nasdaq ADR 可见度",
+      "relationship_type": "memory_supply_and_capital_market_baseline",
+      "evidence_date": "2026-07-19",
+      "source_type": "official_company_release_baseline",
+      "last_seen": "2026-07-20",
+      "changed_this_week": "no_new_weekly_evidence",
+      "status": "continued_baseline_insufficient",
+      "confidence": "medium",
+      "confidence_reason": "覆盖周内未发现 SK Hynix 新的重大官方 HBM、DRAM、NAND 订单或产能披露；仅保留 HBM 与 ADR 可见度基线，不能推断新增客户。",
+      "markdown_section_ref": "6.2 E09",
+      "sources": [
+        "https://news.skhynix.com/skhynix-lists-adrs-on-nasdaq/"
+      ],
+      "notes": "无覆盖周新增 HBM 客户或产能官方证据。",
+      "claim_keywords": [
+        "SK hynix",
+        "ADRs",
+        "NASDAQ"
+      ],
+      "min_keyword_matches": 2,
+      "claim_check_required": true
     },
     {
       "edge_id": "E10",
       "supplier": "TSMC",
-      "customer": "NVIDIA",
-      "product_or_service": "先进逻辑制程、CoWoS/3DFabric 先进封装基线",
-      "relationship_type": "foundry_packaging_baseline",
-      "evidence_date": "2026-07-12",
-      "source_type": "official_news_and_calendar",
-      "last_seen": "2026-07-13",
-      "changed_this_week": "no_new_weekly_evidence",
-      "status": "continued_baseline_insufficient",
-      "confidence": "medium",
-      "confidence_reason": "覆盖周内未发现 TSMC 新的重大官方供货披露；7 月 13 日营收披露属于下期跟踪窗口。",
+      "customer": "AI/HPC 客户",
+      "product_or_service": "先进逻辑制程、先进封装、Q2 AI/HPC 需求信号",
+      "relationship_type": "foundry_packaging_demand_signal",
+      "evidence_date": "2026-07-16",
+      "source_type": "official_financial_release",
+      "last_seen": "2026-07-20",
+      "changed_this_week": "strengthened",
+      "status": "strengthened_financial_demand_signal",
+      "confidence": "high",
+      "confidence_reason": "TSMC 官方披露 Q2 营收、净利和 EPS 强劲增长；这是财务与需求信号，不等于新增订单或特定客户扩产。",
       "markdown_section_ref": "6.2 E10",
       "sources": [
-        "https://pr.tsmc.com/english/latest-news",
-        "https://investor.tsmc.com/english/financial-calendar"
+        "https://pr.tsmc.com/english/news/3326"
       ],
-      "notes": "仅保留先进制程/封装核心基线，不能写成新增订单或价格确认。"
+      "notes": "继续跟踪业绩会中的 AI/HPC、先进封装、N2/N3 和资本开支信息。",
+      "claim_keywords": [
+        "TSMC",
+        "Second Quarter",
+        "2026"
+      ],
+      "min_keyword_matches": 2,
+      "claim_check_required": true
     }
   ],
   "sources": [
-    "https://www.apple.com/newsroom/2026/07/apple-to-increase-spend-with-broadcom-to-produce-billions-more-us-chips/",
-    "https://news.xbox.com/en-us/2026/07/06/resetting-xbox/",
-    "https://cloud.google.com/blog/topics/ai-infrastructure/google-is-a-leader-in-gartner-magic-quadrant-for-ai-infra",
-    "https://www.aboutamazon.com/news/aws/bedrock-openai-models",
-    "https://about.fb.com/news/2026/07/introducing-muse-image-meta-ai/",
-    "https://blogs.nvidia.com/blog/nvidia-vera-max-single-threaded-cpu-at-scale/",
+    "https://www.apple.com/newsroom/2026/07/madden-nfl-27-arcade-edition-brings-gridiron-action-to-apple-arcade-on-august-6/",
+    "https://news.microsoft.com/source/2026/07/15/3m-and-microsoft-announce-strategic-partnership-to-advance-ai-data-center-infrastructure-and-enterprise-transformation/",
+    "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/steel-river-arkansas/",
+    "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-guardduty-ai-protection-aws/",
+    "https://datacenters.atmeta.com/2026/07/deepening-our-investment-in-richland-parish-louisiana/",
+    "https://nvidianews.nvidia.com/news/japan-government-industrial-leaders-and-nvidia-launch-the-worlds-first-national-ai-infrastructure",
     "https://ir.tesla.com/press",
-    "https://news.samsung.com/global/samsung-begins-mass-production-of-pm1763-ssd-optimized-for-next-generation-ai-infrastructure",
+    "https://news.samsung.com/global/samsung-introduces-flex-titanium-technology-to-advance-foldable-displays",
     "https://news.skhynix.com/skhynix-lists-adrs-on-nasdaq/",
-    "https://pr.tsmc.com/english/latest-news",
-    "https://investor.tsmc.com/english/financial-calendar"
+    "https://pr.tsmc.com/english/news/3326"
   ],
   "confidence": "mixed",
-  "notes": "本基线覆盖 2026-07-06 至 2026-07-12。图、Markdown 表格和 JSON 共用 E01-E10；访问受限来源必须在事实复核中单独标注，不能扩写为未证实的供应合同。"
+  "notes": "本基线覆盖 2026-07-13 至 2026-07-19。图、Markdown 表格和 JSON 共用 E01-E10；无覆盖周新增证据的公司必须降级为基线或观察，不能扩写为未证实的供应合同。"
 }

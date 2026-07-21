@@ -89,7 +89,111 @@ def draw_node(name: str, category: str, products: list[str], x: float, y: float)
     return "\n".join(parts)
 
 
+def draw_company_anchor(name: str, category: str, x: float, y: float) -> str:
+    color = COMPANY_COLORS.get(category, COMPANY_COLORS["external"])
+    return "\n".join(
+        [
+            f'<circle cx="{x:.1f}" cy="{y:.1f}" r="31" fill="{color}" fill-opacity="0.20" stroke="{color}" stroke-width="2.4"/>',
+            f'<circle cx="{x:.1f}" cy="{y:.1f}" r="6" fill="{color}"/>',
+            f'<text x="{x:.1f}" y="{y - 42:.1f}" text-anchor="middle" font-size="14" font-weight="800" fill="#f8fafc">{escape(name)}</text>',
+        ]
+    )
+
+
+def draw_product_node(node: dict[str, object], x: float, y: float) -> str:
+    color = COMPANY_COLORS.get(str(node.get("category", "external")), COMPANY_COLORS["external"])
+    product = str(node["product"])
+    return "\n".join(
+        [
+            f'<circle cx="{x:.1f}" cy="{y:.1f}" r="13" fill="{color}" fill-opacity="0.18" stroke="{color}" stroke-width="1.4"/>',
+            f'<circle cx="{x:.1f}" cy="{y:.1f}" r="3.5" fill="{color}"/>',
+            f'<text x="{x:.1f}" y="{y + 25:.1f}" text-anchor="middle" font-size="9.2" fill="#cbd5e1">{escape(product)}</text>',
+        ]
+    )
+
+
+def draw_product_edge(
+    edge: dict[str, object],
+    coords: dict[str, tuple[float, float]],
+    cx: float,
+    cy: float,
+) -> str:
+    source = str(edge["source_node"])
+    target = str(edge["target_node"])
+    if source not in coords or target not in coords:
+        return ""
+    sx, sy = coords[source]
+    tx, ty = coords[target]
+    mx, my = (sx + tx) / 2, (sy + ty) / 2
+    qx, qy = (mx + cx) / 2, (my + cy) / 2
+    color = evidence_color(str(edge.get("evidence_level", "")))
+    cross_company = edge.get("source_company") != edge.get("target_company")
+    opacity = "0.72" if cross_company else "0.33"
+    width = "1.5" if cross_company else "0.9"
+    parts = [
+        f'<path d="M {sx:.1f} {sy:.1f} Q {qx:.1f} {qy:.1f} {tx:.1f} {ty:.1f}" fill="none" stroke="{color}" stroke-width="{width}" stroke-opacity="{opacity}"/>',
+    ]
+    if cross_company:
+        label = f'{edge["edge_id"]} {edge["product_or_service"]}'
+        parts.append(
+            f'<text x="{((mx + qx) / 2):.1f}" y="{((my + qy) / 2):.1f}" font-size="8.4" fill="{color}" fill-opacity="0.95">{escape(label[:48])}</text>'
+        )
+    return "\n".join(parts)
+
+
+def build_product_level_svg(data: dict[str, object]) -> str:
+    width, height = 1500, 1100
+    cx, cy = width / 2, height / 2 + 20
+    company_radius = 375
+    product_radius = 82
+    companies = [dict(item) for item in data["companies"]]
+    company_by_name = {str(company["name"]): company for company in companies}
+    company_coords: dict[str, tuple[float, float]] = {}
+    for idx, company in enumerate(companies):
+        angle = -math.pi / 2 + (2 * math.pi * idx / len(companies))
+        company_coords[str(company["name"])] = polar(cx, cy, company_radius, angle)
+
+    product_nodes = [dict(item) for item in data.get("product_nodes", [])]
+    grouped: dict[str, list[dict[str, object]]] = {}
+    for node in product_nodes:
+        grouped.setdefault(str(node["company"]), []).append(node)
+
+    product_coords: dict[str, tuple[float, float]] = {}
+    for company_name, nodes in grouped.items():
+        anchor_x, anchor_y = company_coords[company_name]
+        company_angle = math.atan2(anchor_y - cy, anchor_x - cx)
+        for idx, node in enumerate(nodes):
+            local_angle = company_angle - math.pi / 2 + (2 * math.pi * idx / max(1, len(nodes)))
+            product_coords[str(node["node_id"])] = polar(anchor_x, anchor_y, product_radius, local_angle)
+
+    parts = [
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}">',
+        '<rect width="100%" height="100%" fill="#0f172a"/>',
+        f'<circle cx="{cx:.1f}" cy="{cy:.1f}" r="180" fill="none" stroke="#334155" stroke-width="1" stroke-opacity="0.75"/>',
+        f'<circle cx="{cx:.1f}" cy="{cy:.1f}" r="300" fill="none" stroke="#334155" stroke-width="1" stroke-opacity="0.55"/>',
+        f'<circle cx="{cx:.1f}" cy="{cy:.1f}" r="455" fill="none" stroke="#334155" stroke-width="1" stroke-opacity="0.35"/>',
+        f'<text x="44" y="48" font-size="24" font-weight="800" fill="#f8fafc">{escape(str(data.get("title", "年度主营产品上下游关系图")))}</text>',
+        f'<text x="44" y="74" font-size="12" fill="#94a3b8">产品级 Obsidian 风格网络图：公司为大节点，主营产品为小节点，跨公司供应关系以标签标出。</text>',
+        '<text x="44" y="1050" font-size="11" fill="#94a3b8">边颜色：绿色=本年度官方证据，蓝色=官方基线，橙色=市场共识或待直接证据；淡线=公司内部产品栈。</text>',
+    ]
+    for edge in data.get("product_edges", []):
+        line = draw_product_edge(dict(edge), product_coords, cx, cy)
+        if line:
+            parts.append(line)
+    for company_name, (x, y) in company_coords.items():
+        category = str(company_by_name[company_name].get("category", "external"))
+        parts.append(draw_company_anchor(company_name, category, x, y))
+    for node in product_nodes:
+        x, y = product_coords[str(node["node_id"])]
+        parts.append(draw_product_node(node, x, y))
+    parts.append("</svg>")
+    return "\n".join(parts)
+
+
 def build_svg(data: dict[str, object]) -> str:
+    if data.get("product_nodes") and data.get("product_edges"):
+        return build_product_level_svg(data)
+
     width, height = 1180, 860
     cx, cy = width / 2, height / 2 + 12
     radius = 315

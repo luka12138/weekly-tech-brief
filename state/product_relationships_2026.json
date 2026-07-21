@@ -1,67 +1,157 @@
 {
   "title": "2026 年度十家公司主营产品上下游关系图",
   "source_baseline": "基于 2026 年可取得的官方年报、投资者关系页面、公司新闻稿和监管披露；媒体报道或历史基线关系单独标注。",
-  "generated_for_report_date": "2026-07-13",
+  "generated_for_report_date": "2026-07-20",
   "companies": [
     {
       "name": "Apple",
       "category": "device",
-      "main_products": ["iPhone", "Mac", "iPad", "可穿戴设备", "服务", "Apple silicon"],
-      "official_sources": ["https://investor.apple.com/sec-filings/default.aspx"]
+      "main_products": [
+        "iPhone",
+        "Mac",
+        "iPad",
+        "可穿戴设备",
+        "服务",
+        "Apple silicon"
+      ],
+      "official_sources": [
+        "https://investor.apple.com/sec-filings/default.aspx"
+      ]
     },
     {
       "name": "Microsoft",
       "category": "cloud_ai",
-      "main_products": ["Azure", "Microsoft 365", "Windows", "GitHub", "LinkedIn", "Xbox"],
-      "official_sources": ["https://www.microsoft.com/en-us/Investor/annual-reports.aspx"]
+      "main_products": [
+        "Azure",
+        "Microsoft 365",
+        "Windows",
+        "GitHub",
+        "LinkedIn",
+        "Xbox"
+      ],
+      "official_sources": [
+        "https://www.microsoft.com/en-us/Investor/annual-reports.aspx"
+      ]
     },
     {
       "name": "Alphabet / Google",
       "category": "cloud_ai",
-      "main_products": ["搜索", "YouTube", "Google Cloud", "Gemini", "Android", "Pixel"],
-      "official_sources": ["https://abc.xyz/investor/"]
+      "main_products": [
+        "搜索",
+        "YouTube",
+        "Google Cloud",
+        "Gemini",
+        "Android",
+        "Pixel"
+      ],
+      "official_sources": [
+        "https://abc.xyz/investor/"
+      ]
     },
     {
       "name": "Amazon / AWS",
       "category": "cloud_ai",
-      "main_products": ["AWS", "Marketplace", "Prime", "广告", "物流", "设备"],
-      "official_sources": ["https://ir.aboutamazon.com/annual-reports-proxies-and-shareholder-letters/default.aspx"]
+      "main_products": [
+        "AWS",
+        "Marketplace",
+        "Prime",
+        "广告",
+        "物流",
+        "设备"
+      ],
+      "official_sources": [
+        "https://ir.aboutamazon.com/annual-reports-proxies-and-shareholder-letters/default.aspx"
+      ]
     },
     {
       "name": "Meta",
       "category": "cloud_ai",
-      "main_products": ["Facebook", "Instagram", "WhatsApp", "Threads", "Meta AI", "Reality Labs"],
-      "official_sources": ["https://investor.atmeta.com/financials/"]
+      "main_products": [
+        "Facebook",
+        "Instagram",
+        "WhatsApp",
+        "Threads",
+        "Meta AI",
+        "Reality Labs"
+      ],
+      "official_sources": [
+        "https://investor.atmeta.com/financials/"
+      ]
     },
     {
       "name": "NVIDIA",
       "category": "semiconductor",
-      "main_products": ["数据中心 GPU", "网络产品", "CUDA", "AI 软件", "游戏 GPU", "汽车业务"],
-      "official_sources": ["https://investor.nvidia.com/financial-info/annual-reports-and-proxies/default.aspx"]
+      "main_products": [
+        "数据中心 GPU",
+        "网络产品",
+        "CUDA",
+        "AI 软件",
+        "游戏 GPU",
+        "汽车业务"
+      ],
+      "official_sources": [
+        "https://investor.nvidia.com/financial-info/annual-reports-and-proxies/default.aspx"
+      ]
     },
     {
       "name": "Tesla",
       "category": "auto_energy",
-      "main_products": ["电动车", "储能", "太阳能", "FSD", "超级充电", "机器人"],
-      "official_sources": ["https://ir.tesla.com/"]
+      "main_products": [
+        "电动车",
+        "储能",
+        "太阳能",
+        "FSD",
+        "超级充电",
+        "机器人"
+      ],
+      "official_sources": [
+        "https://ir.tesla.com/"
+      ]
     },
     {
       "name": "Samsung Electronics",
       "category": "memory",
-      "main_products": ["存储", "晶圆代工", "OLED", "移动设备", "电视/显示", "家电"],
-      "official_sources": ["https://www.samsung.com/global/ir/reports-disclosures/annual-reports/"]
+      "main_products": [
+        "存储",
+        "晶圆代工",
+        "OLED",
+        "移动设备",
+        "电视/显示",
+        "家电"
+      ],
+      "official_sources": [
+        "https://www.samsung.com/global/ir/reports-disclosures/annual-reports/"
+      ]
     },
     {
       "name": "SK Hynix",
       "category": "memory",
-      "main_products": ["DRAM", "NAND", "HBM", "CXL 存储", "企业级 SSD", "先进封装"],
-      "official_sources": ["https://www.skhynix.com/ir/UI-FR-IR02"]
+      "main_products": [
+        "DRAM",
+        "NAND",
+        "HBM",
+        "CXL 存储",
+        "企业级 SSD",
+        "先进封装"
+      ],
+      "official_sources": [
+        "https://www.skhynix.com/ir/UI-FR-IR02"
+      ]
     },
     {
       "name": "TSMC",
       "category": "semiconductor",
-      "main_products": ["先进逻辑代工", "特殊制程", "3DFabric", "CoWoS", "N3/N2 节点", "晶圆服务"],
-      "official_sources": ["https://investor.tsmc.com/english/annual-reports"]
+      "main_products": [
+        "先进逻辑代工",
+        "特殊制程",
+        "3DFabric",
+        "CoWoS",
+        "N3/N2 节点",
+        "晶圆服务"
+      ],
+      "official_sources": [
+        "https://investor.tsmc.com/english/annual-reports"
+      ]
     }
   ],
   "relationships": [
@@ -71,7 +161,10 @@
       "target": "Apple",
       "product_or_service": "Apple silicon 先进制程代工",
       "evidence_level": "官方基线_加市场共识_待直接证据",
-      "official_sources": ["https://investor.tsmc.com/english/annual-reports", "https://investor.apple.com/sec-filings/default.aspx"]
+      "official_sources": [
+        "https://investor.tsmc.com/english/annual-reports",
+        "https://investor.apple.com/sec-filings/default.aspx"
+      ]
     },
     {
       "edge_id": "P02",
@@ -79,7 +172,10 @@
       "target": "NVIDIA",
       "product_or_service": "AI 芯片先进制程代工与封装",
       "evidence_level": "官方基线_加市场共识_待直接证据",
-      "official_sources": ["https://investor.tsmc.com/english/annual-reports", "https://investor.nvidia.com/financial-info/annual-reports-and-proxies/default.aspx"]
+      "official_sources": [
+        "https://investor.tsmc.com/english/annual-reports",
+        "https://investor.nvidia.com/financial-info/annual-reports-and-proxies/default.aspx"
+      ]
     },
     {
       "edge_id": "P03",
@@ -87,7 +183,10 @@
       "target": "NVIDIA",
       "product_or_service": "AI 加速器用 HBM",
       "evidence_level": "本年度官方证据",
-      "official_sources": ["https://news.skhynix.com/12-layer-hbm4e-sample/", "https://investor.nvidia.com/financial-info/annual-reports-and-proxies/default.aspx"]
+      "official_sources": [
+        "https://news.skhynix.com/12-layer-hbm4e-sample/",
+        "https://investor.nvidia.com/financial-info/annual-reports-and-proxies/default.aspx"
+      ]
     },
     {
       "edge_id": "P04",
@@ -95,7 +194,10 @@
       "target": "NVIDIA",
       "product_or_service": "HBM/DRAM 供应基线",
       "evidence_level": "市场共识_待直接证据",
-      "official_sources": ["https://www.samsung.com/global/ir/reports-disclosures/annual-reports/", "https://news.samsung.com/global/samsung-electronics-releases-2026-sustainability-report-expanding-water-replenishment-efforts"]
+      "official_sources": [
+        "https://www.samsung.com/global/ir/reports-disclosures/annual-reports/",
+        "https://news.samsung.com/global/samsung-electronics-releases-2026-sustainability-report-expanding-water-replenishment-efforts"
+      ]
     },
     {
       "edge_id": "P05",
@@ -103,7 +205,9 @@
       "target": "Amazon / AWS",
       "product_or_service": "AWS 上的 GPU 与 AI 基础设施",
       "evidence_level": "本年度官方证据",
-      "official_sources": ["https://blogs.nvidia.com/blog/nvidia-aws-ai-production-scale/"]
+      "official_sources": [
+        "https://blogs.nvidia.com/blog/nvidia-aws-ai-production-scale/"
+      ]
     },
     {
       "edge_id": "P06",
@@ -111,23 +215,1426 @@
       "target": "Microsoft",
       "product_or_service": "Azure AI 加速器生态",
       "evidence_level": "市场共识_待直接证据",
-      "official_sources": ["https://www.microsoft.com/en-us/Investor/annual-reports.aspx", "https://investor.nvidia.com/financial-info/annual-reports-and-proxies/default.aspx"]
+      "official_sources": [
+        "https://www.microsoft.com/en-us/Investor/annual-reports.aspx",
+        "https://investor.nvidia.com/financial-info/annual-reports-and-proxies/default.aspx"
+      ]
     },
     {
-      "edge_id": "P08",
+      "edge_id": "P07",
       "source": "Samsung Electronics",
       "target": "Apple",
       "product_or_service": "存储/显示组件基线",
       "evidence_level": "市场共识_待直接证据",
-      "official_sources": ["https://www.samsung.com/global/ir/reports-disclosures/annual-reports/", "https://investor.apple.com/sec-filings/default.aspx"]
+      "official_sources": [
+        "https://www.samsung.com/global/ir/reports-disclosures/annual-reports/",
+        "https://investor.apple.com/sec-filings/default.aspx"
+      ]
     },
     {
-      "edge_id": "P09",
+      "edge_id": "P08",
       "source": "NVIDIA",
       "target": "Tesla",
       "product_or_service": "汽车/AI 计算生态基线",
       "evidence_level": "市场共识_待直接证据",
-      "official_sources": ["https://ir.tesla.com/", "https://investor.nvidia.com/financial-info/annual-reports-and-proxies/default.aspx"]
+      "official_sources": [
+        "https://ir.tesla.com/",
+        "https://investor.nvidia.com/financial-info/annual-reports-and-proxies/default.aspx"
+      ]
+    }
+  ],
+  "product_nodes": [
+    {
+      "node_id": "Apple::iPhone",
+      "company": "Apple",
+      "product": "iPhone",
+      "category": "device",
+      "official_sources": [
+        "https://investor.apple.com/sec-filings/default.aspx"
+      ]
+    },
+    {
+      "node_id": "Apple::Mac",
+      "company": "Apple",
+      "product": "Mac",
+      "category": "device",
+      "official_sources": [
+        "https://investor.apple.com/sec-filings/default.aspx"
+      ]
+    },
+    {
+      "node_id": "Apple::iPad",
+      "company": "Apple",
+      "product": "iPad",
+      "category": "device",
+      "official_sources": [
+        "https://investor.apple.com/sec-filings/default.aspx"
+      ]
+    },
+    {
+      "node_id": "Apple::可穿戴设备",
+      "company": "Apple",
+      "product": "可穿戴设备",
+      "category": "device",
+      "official_sources": [
+        "https://investor.apple.com/sec-filings/default.aspx"
+      ]
+    },
+    {
+      "node_id": "Apple::服务",
+      "company": "Apple",
+      "product": "服务",
+      "category": "device",
+      "official_sources": [
+        "https://investor.apple.com/sec-filings/default.aspx"
+      ]
+    },
+    {
+      "node_id": "Apple::Apple_silicon",
+      "company": "Apple",
+      "product": "Apple silicon",
+      "category": "device",
+      "official_sources": [
+        "https://investor.apple.com/sec-filings/default.aspx"
+      ]
+    },
+    {
+      "node_id": "Microsoft::Azure",
+      "company": "Microsoft",
+      "product": "Azure",
+      "category": "cloud_ai",
+      "official_sources": [
+        "https://www.microsoft.com/en-us/Investor/annual-reports.aspx"
+      ]
+    },
+    {
+      "node_id": "Microsoft::Microsoft_365",
+      "company": "Microsoft",
+      "product": "Microsoft 365",
+      "category": "cloud_ai",
+      "official_sources": [
+        "https://www.microsoft.com/en-us/Investor/annual-reports.aspx"
+      ]
+    },
+    {
+      "node_id": "Microsoft::Windows",
+      "company": "Microsoft",
+      "product": "Windows",
+      "category": "cloud_ai",
+      "official_sources": [
+        "https://www.microsoft.com/en-us/Investor/annual-reports.aspx"
+      ]
+    },
+    {
+      "node_id": "Microsoft::GitHub",
+      "company": "Microsoft",
+      "product": "GitHub",
+      "category": "cloud_ai",
+      "official_sources": [
+        "https://www.microsoft.com/en-us/Investor/annual-reports.aspx"
+      ]
+    },
+    {
+      "node_id": "Microsoft::LinkedIn",
+      "company": "Microsoft",
+      "product": "LinkedIn",
+      "category": "cloud_ai",
+      "official_sources": [
+        "https://www.microsoft.com/en-us/Investor/annual-reports.aspx"
+      ]
+    },
+    {
+      "node_id": "Microsoft::Xbox",
+      "company": "Microsoft",
+      "product": "Xbox",
+      "category": "cloud_ai",
+      "official_sources": [
+        "https://www.microsoft.com/en-us/Investor/annual-reports.aspx"
+      ]
+    },
+    {
+      "node_id": "Alphabet_Google::搜索",
+      "company": "Alphabet / Google",
+      "product": "搜索",
+      "category": "cloud_ai",
+      "official_sources": [
+        "https://abc.xyz/investor/"
+      ]
+    },
+    {
+      "node_id": "Alphabet_Google::YouTube",
+      "company": "Alphabet / Google",
+      "product": "YouTube",
+      "category": "cloud_ai",
+      "official_sources": [
+        "https://abc.xyz/investor/"
+      ]
+    },
+    {
+      "node_id": "Alphabet_Google::Google_Cloud",
+      "company": "Alphabet / Google",
+      "product": "Google Cloud",
+      "category": "cloud_ai",
+      "official_sources": [
+        "https://abc.xyz/investor/"
+      ]
+    },
+    {
+      "node_id": "Alphabet_Google::Gemini",
+      "company": "Alphabet / Google",
+      "product": "Gemini",
+      "category": "cloud_ai",
+      "official_sources": [
+        "https://abc.xyz/investor/"
+      ]
+    },
+    {
+      "node_id": "Alphabet_Google::Android",
+      "company": "Alphabet / Google",
+      "product": "Android",
+      "category": "cloud_ai",
+      "official_sources": [
+        "https://abc.xyz/investor/"
+      ]
+    },
+    {
+      "node_id": "Alphabet_Google::Pixel",
+      "company": "Alphabet / Google",
+      "product": "Pixel",
+      "category": "cloud_ai",
+      "official_sources": [
+        "https://abc.xyz/investor/"
+      ]
+    },
+    {
+      "node_id": "Amazon_AWS::AWS",
+      "company": "Amazon / AWS",
+      "product": "AWS",
+      "category": "cloud_ai",
+      "official_sources": [
+        "https://ir.aboutamazon.com/annual-reports-proxies-and-shareholder-letters/default.aspx"
+      ]
+    },
+    {
+      "node_id": "Amazon_AWS::Marketplace",
+      "company": "Amazon / AWS",
+      "product": "Marketplace",
+      "category": "cloud_ai",
+      "official_sources": [
+        "https://ir.aboutamazon.com/annual-reports-proxies-and-shareholder-letters/default.aspx"
+      ]
+    },
+    {
+      "node_id": "Amazon_AWS::Prime",
+      "company": "Amazon / AWS",
+      "product": "Prime",
+      "category": "cloud_ai",
+      "official_sources": [
+        "https://ir.aboutamazon.com/annual-reports-proxies-and-shareholder-letters/default.aspx"
+      ]
+    },
+    {
+      "node_id": "Amazon_AWS::广告",
+      "company": "Amazon / AWS",
+      "product": "广告",
+      "category": "cloud_ai",
+      "official_sources": [
+        "https://ir.aboutamazon.com/annual-reports-proxies-and-shareholder-letters/default.aspx"
+      ]
+    },
+    {
+      "node_id": "Amazon_AWS::物流",
+      "company": "Amazon / AWS",
+      "product": "物流",
+      "category": "cloud_ai",
+      "official_sources": [
+        "https://ir.aboutamazon.com/annual-reports-proxies-and-shareholder-letters/default.aspx"
+      ]
+    },
+    {
+      "node_id": "Amazon_AWS::设备",
+      "company": "Amazon / AWS",
+      "product": "设备",
+      "category": "cloud_ai",
+      "official_sources": [
+        "https://ir.aboutamazon.com/annual-reports-proxies-and-shareholder-letters/default.aspx"
+      ]
+    },
+    {
+      "node_id": "Meta::Facebook",
+      "company": "Meta",
+      "product": "Facebook",
+      "category": "cloud_ai",
+      "official_sources": [
+        "https://investor.atmeta.com/financials/"
+      ]
+    },
+    {
+      "node_id": "Meta::Instagram",
+      "company": "Meta",
+      "product": "Instagram",
+      "category": "cloud_ai",
+      "official_sources": [
+        "https://investor.atmeta.com/financials/"
+      ]
+    },
+    {
+      "node_id": "Meta::WhatsApp",
+      "company": "Meta",
+      "product": "WhatsApp",
+      "category": "cloud_ai",
+      "official_sources": [
+        "https://investor.atmeta.com/financials/"
+      ]
+    },
+    {
+      "node_id": "Meta::Threads",
+      "company": "Meta",
+      "product": "Threads",
+      "category": "cloud_ai",
+      "official_sources": [
+        "https://investor.atmeta.com/financials/"
+      ]
+    },
+    {
+      "node_id": "Meta::Meta_AI",
+      "company": "Meta",
+      "product": "Meta AI",
+      "category": "cloud_ai",
+      "official_sources": [
+        "https://investor.atmeta.com/financials/"
+      ]
+    },
+    {
+      "node_id": "Meta::Reality_Labs",
+      "company": "Meta",
+      "product": "Reality Labs",
+      "category": "cloud_ai",
+      "official_sources": [
+        "https://investor.atmeta.com/financials/"
+      ]
+    },
+    {
+      "node_id": "NVIDIA::数据中心_GPU",
+      "company": "NVIDIA",
+      "product": "数据中心 GPU",
+      "category": "semiconductor",
+      "official_sources": [
+        "https://investor.nvidia.com/financial-info/annual-reports-and-proxies/default.aspx"
+      ]
+    },
+    {
+      "node_id": "NVIDIA::网络产品",
+      "company": "NVIDIA",
+      "product": "网络产品",
+      "category": "semiconductor",
+      "official_sources": [
+        "https://investor.nvidia.com/financial-info/annual-reports-and-proxies/default.aspx"
+      ]
+    },
+    {
+      "node_id": "NVIDIA::CUDA",
+      "company": "NVIDIA",
+      "product": "CUDA",
+      "category": "semiconductor",
+      "official_sources": [
+        "https://investor.nvidia.com/financial-info/annual-reports-and-proxies/default.aspx"
+      ]
+    },
+    {
+      "node_id": "NVIDIA::AI_软件",
+      "company": "NVIDIA",
+      "product": "AI 软件",
+      "category": "semiconductor",
+      "official_sources": [
+        "https://investor.nvidia.com/financial-info/annual-reports-and-proxies/default.aspx"
+      ]
+    },
+    {
+      "node_id": "NVIDIA::游戏_GPU",
+      "company": "NVIDIA",
+      "product": "游戏 GPU",
+      "category": "semiconductor",
+      "official_sources": [
+        "https://investor.nvidia.com/financial-info/annual-reports-and-proxies/default.aspx"
+      ]
+    },
+    {
+      "node_id": "NVIDIA::汽车业务",
+      "company": "NVIDIA",
+      "product": "汽车业务",
+      "category": "semiconductor",
+      "official_sources": [
+        "https://investor.nvidia.com/financial-info/annual-reports-and-proxies/default.aspx"
+      ]
+    },
+    {
+      "node_id": "Tesla::电动车",
+      "company": "Tesla",
+      "product": "电动车",
+      "category": "auto_energy",
+      "official_sources": [
+        "https://ir.tesla.com/"
+      ]
+    },
+    {
+      "node_id": "Tesla::储能",
+      "company": "Tesla",
+      "product": "储能",
+      "category": "auto_energy",
+      "official_sources": [
+        "https://ir.tesla.com/"
+      ]
+    },
+    {
+      "node_id": "Tesla::太阳能",
+      "company": "Tesla",
+      "product": "太阳能",
+      "category": "auto_energy",
+      "official_sources": [
+        "https://ir.tesla.com/"
+      ]
+    },
+    {
+      "node_id": "Tesla::FSD",
+      "company": "Tesla",
+      "product": "FSD",
+      "category": "auto_energy",
+      "official_sources": [
+        "https://ir.tesla.com/"
+      ]
+    },
+    {
+      "node_id": "Tesla::超级充电",
+      "company": "Tesla",
+      "product": "超级充电",
+      "category": "auto_energy",
+      "official_sources": [
+        "https://ir.tesla.com/"
+      ]
+    },
+    {
+      "node_id": "Tesla::机器人",
+      "company": "Tesla",
+      "product": "机器人",
+      "category": "auto_energy",
+      "official_sources": [
+        "https://ir.tesla.com/"
+      ]
+    },
+    {
+      "node_id": "Samsung_Electronics::存储",
+      "company": "Samsung Electronics",
+      "product": "存储",
+      "category": "memory",
+      "official_sources": [
+        "https://www.samsung.com/global/ir/reports-disclosures/annual-reports/"
+      ]
+    },
+    {
+      "node_id": "Samsung_Electronics::晶圆代工",
+      "company": "Samsung Electronics",
+      "product": "晶圆代工",
+      "category": "memory",
+      "official_sources": [
+        "https://www.samsung.com/global/ir/reports-disclosures/annual-reports/"
+      ]
+    },
+    {
+      "node_id": "Samsung_Electronics::OLED",
+      "company": "Samsung Electronics",
+      "product": "OLED",
+      "category": "memory",
+      "official_sources": [
+        "https://www.samsung.com/global/ir/reports-disclosures/annual-reports/"
+      ]
+    },
+    {
+      "node_id": "Samsung_Electronics::移动设备",
+      "company": "Samsung Electronics",
+      "product": "移动设备",
+      "category": "memory",
+      "official_sources": [
+        "https://www.samsung.com/global/ir/reports-disclosures/annual-reports/"
+      ]
+    },
+    {
+      "node_id": "Samsung_Electronics::电视/显示",
+      "company": "Samsung Electronics",
+      "product": "电视/显示",
+      "category": "memory",
+      "official_sources": [
+        "https://www.samsung.com/global/ir/reports-disclosures/annual-reports/"
+      ]
+    },
+    {
+      "node_id": "Samsung_Electronics::家电",
+      "company": "Samsung Electronics",
+      "product": "家电",
+      "category": "memory",
+      "official_sources": [
+        "https://www.samsung.com/global/ir/reports-disclosures/annual-reports/"
+      ]
+    },
+    {
+      "node_id": "SK_Hynix::DRAM",
+      "company": "SK Hynix",
+      "product": "DRAM",
+      "category": "memory",
+      "official_sources": [
+        "https://www.skhynix.com/ir/UI-FR-IR02"
+      ]
+    },
+    {
+      "node_id": "SK_Hynix::NAND",
+      "company": "SK Hynix",
+      "product": "NAND",
+      "category": "memory",
+      "official_sources": [
+        "https://www.skhynix.com/ir/UI-FR-IR02"
+      ]
+    },
+    {
+      "node_id": "SK_Hynix::HBM",
+      "company": "SK Hynix",
+      "product": "HBM",
+      "category": "memory",
+      "official_sources": [
+        "https://www.skhynix.com/ir/UI-FR-IR02"
+      ]
+    },
+    {
+      "node_id": "SK_Hynix::CXL_存储",
+      "company": "SK Hynix",
+      "product": "CXL 存储",
+      "category": "memory",
+      "official_sources": [
+        "https://www.skhynix.com/ir/UI-FR-IR02"
+      ]
+    },
+    {
+      "node_id": "SK_Hynix::企业级_SSD",
+      "company": "SK Hynix",
+      "product": "企业级 SSD",
+      "category": "memory",
+      "official_sources": [
+        "https://www.skhynix.com/ir/UI-FR-IR02"
+      ]
+    },
+    {
+      "node_id": "SK_Hynix::先进封装",
+      "company": "SK Hynix",
+      "product": "先进封装",
+      "category": "memory",
+      "official_sources": [
+        "https://www.skhynix.com/ir/UI-FR-IR02"
+      ]
+    },
+    {
+      "node_id": "TSMC::先进逻辑代工",
+      "company": "TSMC",
+      "product": "先进逻辑代工",
+      "category": "semiconductor",
+      "official_sources": [
+        "https://investor.tsmc.com/english/annual-reports"
+      ]
+    },
+    {
+      "node_id": "TSMC::特殊制程",
+      "company": "TSMC",
+      "product": "特殊制程",
+      "category": "semiconductor",
+      "official_sources": [
+        "https://investor.tsmc.com/english/annual-reports"
+      ]
+    },
+    {
+      "node_id": "TSMC::3DFabric",
+      "company": "TSMC",
+      "product": "3DFabric",
+      "category": "semiconductor",
+      "official_sources": [
+        "https://investor.tsmc.com/english/annual-reports"
+      ]
+    },
+    {
+      "node_id": "TSMC::CoWoS",
+      "company": "TSMC",
+      "product": "CoWoS",
+      "category": "semiconductor",
+      "official_sources": [
+        "https://investor.tsmc.com/english/annual-reports"
+      ]
+    },
+    {
+      "node_id": "TSMC::N3/N2_节点",
+      "company": "TSMC",
+      "product": "N3/N2 节点",
+      "category": "semiconductor",
+      "official_sources": [
+        "https://investor.tsmc.com/english/annual-reports"
+      ]
+    },
+    {
+      "node_id": "TSMC::晶圆服务",
+      "company": "TSMC",
+      "product": "晶圆服务",
+      "category": "semiconductor",
+      "official_sources": [
+        "https://investor.tsmc.com/english/annual-reports"
+      ]
+    }
+  ],
+  "product_edges": [
+    {
+      "edge_id": "PX01",
+      "source_node": "Apple::Apple_silicon",
+      "target_node": "Apple::iPhone",
+      "source_company": "Apple",
+      "target_company": "Apple",
+      "product_or_service": "Apple silicon 支撑 iPhone 计算平台",
+      "relationship_type": "internal_product_stack",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://investor.apple.com/sec-filings/default.aspx"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX02",
+      "source_node": "Apple::Apple_silicon",
+      "target_node": "Apple::Mac",
+      "source_company": "Apple",
+      "target_company": "Apple",
+      "product_or_service": "Apple silicon 支撑 Mac 计算平台",
+      "relationship_type": "internal_product_stack",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://investor.apple.com/sec-filings/default.aspx"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX03",
+      "source_node": "Apple::Apple_silicon",
+      "target_node": "Apple::iPad",
+      "source_company": "Apple",
+      "target_company": "Apple",
+      "product_or_service": "Apple silicon 支撑 iPad 计算平台",
+      "relationship_type": "internal_product_stack",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://investor.apple.com/sec-filings/default.aspx"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX04",
+      "source_node": "Apple::iPhone",
+      "target_node": "Apple::可穿戴设备",
+      "source_company": "Apple",
+      "target_company": "Apple",
+      "product_or_service": "iPhone 与可穿戴设备生态协同",
+      "relationship_type": "ecosystem_pull",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://investor.apple.com/sec-filings/default.aspx"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX05",
+      "source_node": "Apple::iPhone",
+      "target_node": "Apple::服务",
+      "source_company": "Apple",
+      "target_company": "Apple",
+      "product_or_service": "iPhone 装机基础带动服务收入",
+      "relationship_type": "ecosystem_pull",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://investor.apple.com/sec-filings/default.aspx"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX06",
+      "source_node": "Microsoft::Azure",
+      "target_node": "Microsoft::Microsoft_365",
+      "source_company": "Microsoft",
+      "target_company": "Microsoft",
+      "product_or_service": "Azure 支撑 Microsoft 365 云服务",
+      "relationship_type": "internal_cloud_stack",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://www.microsoft.com/en-us/Investor/annual-reports.aspx"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX07",
+      "source_node": "Microsoft::Azure",
+      "target_node": "Microsoft::GitHub",
+      "source_company": "Microsoft",
+      "target_company": "Microsoft",
+      "product_or_service": "Azure 支撑 GitHub 与开发者云服务",
+      "relationship_type": "internal_cloud_stack",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://www.microsoft.com/en-us/Investor/annual-reports.aspx"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX08",
+      "source_node": "Microsoft::Windows",
+      "target_node": "Microsoft::Microsoft_365",
+      "source_company": "Microsoft",
+      "target_company": "Microsoft",
+      "product_or_service": "Windows 与 Microsoft 365 企业终端协同",
+      "relationship_type": "ecosystem_pull",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://www.microsoft.com/en-us/Investor/annual-reports.aspx"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX09",
+      "source_node": "Microsoft::LinkedIn",
+      "target_node": "Microsoft::Microsoft_365",
+      "source_company": "Microsoft",
+      "target_company": "Microsoft",
+      "product_or_service": "LinkedIn 与生产力/销售云生态协同",
+      "relationship_type": "ecosystem_pull",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://www.microsoft.com/en-us/Investor/annual-reports.aspx"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX10",
+      "source_node": "Microsoft::Azure",
+      "target_node": "Microsoft::Xbox",
+      "source_company": "Microsoft",
+      "target_company": "Microsoft",
+      "product_or_service": "Azure 支撑 Xbox 云服务和游戏平台",
+      "relationship_type": "internal_cloud_stack",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://www.microsoft.com/en-us/Investor/annual-reports.aspx"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX11",
+      "source_node": "Alphabet_Google::Gemini",
+      "target_node": "Alphabet_Google::搜索",
+      "source_company": "Alphabet / Google",
+      "target_company": "Alphabet / Google",
+      "product_or_service": "Gemini 增强搜索与问答体验",
+      "relationship_type": "ai_feature_supply",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://abc.xyz/investor/"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX12",
+      "source_node": "Alphabet_Google::Gemini",
+      "target_node": "Alphabet_Google::Google_Cloud",
+      "source_company": "Alphabet / Google",
+      "target_company": "Alphabet / Google",
+      "product_or_service": "Gemini 模型进入 Google Cloud 企业 AI 服务",
+      "relationship_type": "ai_feature_supply",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://abc.xyz/investor/"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX13",
+      "source_node": "Alphabet_Google::Android",
+      "target_node": "Alphabet_Google::Pixel",
+      "source_company": "Alphabet / Google",
+      "target_company": "Alphabet / Google",
+      "product_or_service": "Android 支撑 Pixel 终端体验",
+      "relationship_type": "internal_platform_stack",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://abc.xyz/investor/"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX14",
+      "source_node": "Alphabet_Google::Gemini",
+      "target_node": "Alphabet_Google::Android",
+      "source_company": "Alphabet / Google",
+      "target_company": "Alphabet / Google",
+      "product_or_service": "Gemini 能力进入 Android 生态",
+      "relationship_type": "ai_feature_supply",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://abc.xyz/investor/"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX15",
+      "source_node": "Alphabet_Google::YouTube",
+      "target_node": "Alphabet_Google::搜索",
+      "source_company": "Alphabet / Google",
+      "target_company": "Alphabet / Google",
+      "product_or_service": "YouTube 与搜索/广告流量生态协同",
+      "relationship_type": "ecosystem_pull",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://abc.xyz/investor/"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX16",
+      "source_node": "Amazon_AWS::AWS",
+      "target_node": "Amazon_AWS::Marketplace",
+      "source_company": "Amazon / AWS",
+      "target_company": "Amazon / AWS",
+      "product_or_service": "AWS 支撑 Marketplace 与第三方卖家系统",
+      "relationship_type": "internal_cloud_stack",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://ir.aboutamazon.com/annual-reports-proxies-and-shareholder-letters/default.aspx"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX17",
+      "source_node": "Amazon_AWS::物流",
+      "target_node": "Amazon_AWS::Marketplace",
+      "source_company": "Amazon / AWS",
+      "target_company": "Amazon / AWS",
+      "product_or_service": "物流网络支撑电商 Marketplace 履约",
+      "relationship_type": "fulfillment_supply",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://ir.aboutamazon.com/annual-reports-proxies-and-shareholder-letters/default.aspx"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX18",
+      "source_node": "Amazon_AWS::Prime",
+      "target_node": "Amazon_AWS::Marketplace",
+      "source_company": "Amazon / AWS",
+      "target_company": "Amazon / AWS",
+      "product_or_service": "Prime 会员拉动 Marketplace 需求",
+      "relationship_type": "ecosystem_pull",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://ir.aboutamazon.com/annual-reports-proxies-and-shareholder-letters/default.aspx"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX19",
+      "source_node": "Amazon_AWS::广告",
+      "target_node": "Amazon_AWS::Marketplace",
+      "source_company": "Amazon / AWS",
+      "target_company": "Amazon / AWS",
+      "product_or_service": "广告业务围绕 Marketplace 商家需求变现",
+      "relationship_type": "monetization_layer",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://ir.aboutamazon.com/annual-reports-proxies-and-shareholder-letters/default.aspx"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX20",
+      "source_node": "Amazon_AWS::设备",
+      "target_node": "Amazon_AWS::Prime",
+      "source_company": "Amazon / AWS",
+      "target_company": "Amazon / AWS",
+      "product_or_service": "设备入口带动 Prime 与内容服务",
+      "relationship_type": "ecosystem_pull",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://ir.aboutamazon.com/annual-reports-proxies-and-shareholder-letters/default.aspx"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX21",
+      "source_node": "Meta::Meta_AI",
+      "target_node": "Meta::Facebook",
+      "source_company": "Meta",
+      "target_company": "Meta",
+      "product_or_service": "Meta AI 进入 Facebook 体验",
+      "relationship_type": "ai_feature_supply",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://investor.atmeta.com/financials/"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX22",
+      "source_node": "Meta::Meta_AI",
+      "target_node": "Meta::Instagram",
+      "source_company": "Meta",
+      "target_company": "Meta",
+      "product_or_service": "Meta AI 进入 Instagram 创作和发现体验",
+      "relationship_type": "ai_feature_supply",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://investor.atmeta.com/financials/"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX23",
+      "source_node": "Meta::Meta_AI",
+      "target_node": "Meta::WhatsApp",
+      "source_company": "Meta",
+      "target_company": "Meta",
+      "product_or_service": "Meta AI 进入 WhatsApp 对话体验",
+      "relationship_type": "ai_feature_supply",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://investor.atmeta.com/financials/"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX24",
+      "source_node": "Meta::Meta_AI",
+      "target_node": "Meta::Threads",
+      "source_company": "Meta",
+      "target_company": "Meta",
+      "product_or_service": "Meta AI 支撑 Threads 内容和推荐生态",
+      "relationship_type": "ai_feature_supply",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://investor.atmeta.com/financials/"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX25",
+      "source_node": "Meta::Reality_Labs",
+      "target_node": "Meta::Meta_AI",
+      "source_company": "Meta",
+      "target_company": "Meta",
+      "product_or_service": "Reality Labs 与 Meta AI 在多模态/设备体验上协同",
+      "relationship_type": "internal_r_and_d_stack",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://investor.atmeta.com/financials/"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX26",
+      "source_node": "NVIDIA::数据中心_GPU",
+      "target_node": "NVIDIA::CUDA",
+      "source_company": "NVIDIA",
+      "target_company": "NVIDIA",
+      "product_or_service": "数据中心 GPU 与 CUDA 软件栈绑定",
+      "relationship_type": "compute_software_stack",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://investor.nvidia.com/financial-info/annual-reports-and-proxies/default.aspx"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX27",
+      "source_node": "NVIDIA::CUDA",
+      "target_node": "NVIDIA::AI_软件",
+      "source_company": "NVIDIA",
+      "target_company": "NVIDIA",
+      "product_or_service": "CUDA 支撑 NVIDIA AI 软件生态",
+      "relationship_type": "compute_software_stack",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://investor.nvidia.com/financial-info/annual-reports-and-proxies/default.aspx"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX28",
+      "source_node": "NVIDIA::网络产品",
+      "target_node": "NVIDIA::数据中心_GPU",
+      "source_company": "NVIDIA",
+      "target_company": "NVIDIA",
+      "product_or_service": "网络产品支撑 GPU 集群扩展",
+      "relationship_type": "cluster_infrastructure",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://investor.nvidia.com/financial-info/annual-reports-and-proxies/default.aspx"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX29",
+      "source_node": "NVIDIA::游戏_GPU",
+      "target_node": "NVIDIA::CUDA",
+      "source_company": "NVIDIA",
+      "target_company": "NVIDIA",
+      "product_or_service": "游戏 GPU 共享 CUDA/图形开发生态",
+      "relationship_type": "compute_software_stack",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://investor.nvidia.com/financial-info/annual-reports-and-proxies/default.aspx"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX30",
+      "source_node": "NVIDIA::AI_软件",
+      "target_node": "NVIDIA::汽车业务",
+      "source_company": "NVIDIA",
+      "target_company": "NVIDIA",
+      "product_or_service": "AI 软件支撑汽车和自动驾驶平台",
+      "relationship_type": "ai_feature_supply",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://investor.nvidia.com/financial-info/annual-reports-and-proxies/default.aspx"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX31",
+      "source_node": "Tesla::电动车",
+      "target_node": "Tesla::FSD",
+      "source_company": "Tesla",
+      "target_company": "Tesla",
+      "product_or_service": "车辆装机基础支撑 FSD 数据与功能分发",
+      "relationship_type": "fleet_data_loop",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://ir.tesla.com/"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX32",
+      "source_node": "Tesla::电动车",
+      "target_node": "Tesla::超级充电",
+      "source_company": "Tesla",
+      "target_company": "Tesla",
+      "product_or_service": "电动车保有量拉动超级充电网络需求",
+      "relationship_type": "ecosystem_pull",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://ir.tesla.com/"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX33",
+      "source_node": "Tesla::太阳能",
+      "target_node": "Tesla::储能",
+      "source_company": "Tesla",
+      "target_company": "Tesla",
+      "product_or_service": "太阳能与储能组成能源系统",
+      "relationship_type": "energy_stack",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://ir.tesla.com/"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX34",
+      "source_node": "Tesla::储能",
+      "target_node": "Tesla::超级充电",
+      "source_company": "Tesla",
+      "target_company": "Tesla",
+      "product_or_service": "储能可支撑充电网络和能源调度",
+      "relationship_type": "energy_stack",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://ir.tesla.com/"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX35",
+      "source_node": "Tesla::FSD",
+      "target_node": "Tesla::机器人",
+      "source_company": "Tesla",
+      "target_company": "Tesla",
+      "product_or_service": "FSD/AI 研发能力向机器人方向延展",
+      "relationship_type": "ai_platform_reuse",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://ir.tesla.com/"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX36",
+      "source_node": "Samsung_Electronics::存储",
+      "target_node": "Samsung_Electronics::移动设备",
+      "source_company": "Samsung Electronics",
+      "target_company": "Samsung Electronics",
+      "product_or_service": "存储组件支撑移动设备",
+      "relationship_type": "component_supply_internal",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://www.samsung.com/global/ir/reports-disclosures/annual-reports/"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX37",
+      "source_node": "Samsung_Electronics::OLED",
+      "target_node": "Samsung_Electronics::移动设备",
+      "source_company": "Samsung Electronics",
+      "target_company": "Samsung Electronics",
+      "product_or_service": "OLED 显示支撑移动设备",
+      "relationship_type": "component_supply_internal",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://www.samsung.com/global/ir/reports-disclosures/annual-reports/"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX38",
+      "source_node": "Samsung_Electronics::OLED",
+      "target_node": "Samsung_Electronics::电视/显示",
+      "source_company": "Samsung Electronics",
+      "target_company": "Samsung Electronics",
+      "product_or_service": "OLED/显示技术支撑电视与显示产品",
+      "relationship_type": "component_supply_internal",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://www.samsung.com/global/ir/reports-disclosures/annual-reports/"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX39",
+      "source_node": "Samsung_Electronics::晶圆代工",
+      "target_node": "Samsung_Electronics::移动设备",
+      "source_company": "Samsung Electronics",
+      "target_company": "Samsung Electronics",
+      "product_or_service": "晶圆代工能力支撑移动 SoC/组件生态",
+      "relationship_type": "manufacturing_stack",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://www.samsung.com/global/ir/reports-disclosures/annual-reports/"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX40",
+      "source_node": "Samsung_Electronics::家电",
+      "target_node": "Samsung_Electronics::移动设备",
+      "source_company": "Samsung Electronics",
+      "target_company": "Samsung Electronics",
+      "product_or_service": "家电与移动设备通过智能家居生态协同",
+      "relationship_type": "ecosystem_pull",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://www.samsung.com/global/ir/reports-disclosures/annual-reports/"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX41",
+      "source_node": "SK_Hynix::DRAM",
+      "target_node": "SK_Hynix::CXL_存储",
+      "source_company": "SK Hynix",
+      "target_company": "SK Hynix",
+      "product_or_service": "DRAM 支撑 CXL 内存扩展产品",
+      "relationship_type": "memory_stack",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://www.skhynix.com/ir/UI-FR-IR02"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX42",
+      "source_node": "SK_Hynix::NAND",
+      "target_node": "SK_Hynix::企业级_SSD",
+      "source_company": "SK Hynix",
+      "target_company": "SK Hynix",
+      "product_or_service": "NAND 支撑企业级 SSD",
+      "relationship_type": "memory_stack",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://www.skhynix.com/ir/UI-FR-IR02"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX43",
+      "source_node": "SK_Hynix::HBM",
+      "target_node": "SK_Hynix::先进封装",
+      "source_company": "SK Hynix",
+      "target_company": "SK Hynix",
+      "product_or_service": "HBM 依赖先进封装和堆叠能力",
+      "relationship_type": "memory_stack",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://www.skhynix.com/ir/UI-FR-IR02"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX44",
+      "source_node": "SK_Hynix::DRAM",
+      "target_node": "SK_Hynix::HBM",
+      "source_company": "SK Hynix",
+      "target_company": "SK Hynix",
+      "product_or_service": "DRAM 技术积累支撑 HBM 产品",
+      "relationship_type": "memory_stack",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://www.skhynix.com/ir/UI-FR-IR02"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX45",
+      "source_node": "SK_Hynix::先进封装",
+      "target_node": "SK_Hynix::企业级_SSD",
+      "source_company": "SK Hynix",
+      "target_company": "SK Hynix",
+      "product_or_service": "先进封装/集成能力支撑高性能存储产品",
+      "relationship_type": "memory_stack",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://www.skhynix.com/ir/UI-FR-IR02"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX46",
+      "source_node": "TSMC::N3/N2_节点",
+      "target_node": "TSMC::先进逻辑代工",
+      "source_company": "TSMC",
+      "target_company": "TSMC",
+      "product_or_service": "N3/N2 节点支撑先进逻辑代工",
+      "relationship_type": "foundry_process_stack",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://investor.tsmc.com/english/annual-reports"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX47",
+      "source_node": "TSMC::CoWoS",
+      "target_node": "TSMC::3DFabric",
+      "source_company": "TSMC",
+      "target_company": "TSMC",
+      "product_or_service": "CoWoS 属于 3DFabric 先进封装组合",
+      "relationship_type": "advanced_packaging_stack",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://investor.tsmc.com/english/annual-reports"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX48",
+      "source_node": "TSMC::3DFabric",
+      "target_node": "TSMC::先进逻辑代工",
+      "source_company": "TSMC",
+      "target_company": "TSMC",
+      "product_or_service": "先进封装与逻辑代工共同支撑高性能芯片",
+      "relationship_type": "advanced_packaging_stack",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://investor.tsmc.com/english/annual-reports"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX49",
+      "source_node": "TSMC::特殊制程",
+      "target_node": "TSMC::晶圆服务",
+      "source_company": "TSMC",
+      "target_company": "TSMC",
+      "product_or_service": "特殊制程属于晶圆服务组合",
+      "relationship_type": "foundry_process_stack",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://investor.tsmc.com/english/annual-reports"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX50",
+      "source_node": "TSMC::晶圆服务",
+      "target_node": "TSMC::先进逻辑代工",
+      "source_company": "TSMC",
+      "target_company": "TSMC",
+      "product_or_service": "晶圆服务支撑先进逻辑客户交付",
+      "relationship_type": "foundry_process_stack",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://investor.tsmc.com/english/annual-reports"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX51",
+      "source_node": "TSMC::N3/N2_节点",
+      "target_node": "Apple::Apple_silicon",
+      "source_company": "TSMC",
+      "target_company": "Apple",
+      "product_or_service": "TSMC 先进节点支撑 Apple silicon 代工",
+      "relationship_type": "cross_company_supply",
+      "evidence_level": "官方基线_加市场共识_待直接证据",
+      "official_sources": [
+        "https://investor.tsmc.com/english/annual-reports",
+        "https://investor.apple.com/sec-filings/default.aspx"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX52",
+      "source_node": "TSMC::CoWoS",
+      "target_node": "NVIDIA::数据中心_GPU",
+      "source_company": "TSMC",
+      "target_company": "NVIDIA",
+      "product_or_service": "TSMC 先进封装支撑 NVIDIA AI 加速器",
+      "relationship_type": "cross_company_supply",
+      "evidence_level": "官方基线_加市场共识_待直接证据",
+      "official_sources": [
+        "https://investor.tsmc.com/english/annual-reports",
+        "https://investor.nvidia.com/financial-info/annual-reports-and-proxies/default.aspx"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX53",
+      "source_node": "SK_Hynix::HBM",
+      "target_node": "NVIDIA::数据中心_GPU",
+      "source_company": "SK Hynix",
+      "target_company": "NVIDIA",
+      "product_or_service": "HBM 支撑 NVIDIA AI 加速器内存带宽",
+      "relationship_type": "cross_company_supply",
+      "evidence_level": "本年度官方证据",
+      "official_sources": [
+        "https://www.skhynix.com/ir/UI-FR-IR02",
+        "https://investor.nvidia.com/financial-info/annual-reports-and-proxies/default.aspx"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX54",
+      "source_node": "Samsung_Electronics::存储",
+      "target_node": "Apple::iPhone",
+      "source_company": "Samsung Electronics",
+      "target_company": "Apple",
+      "product_or_service": "Samsung 存储组件与 Apple 终端供应基线",
+      "relationship_type": "cross_company_supply",
+      "evidence_level": "市场共识_待直接证据",
+      "official_sources": [
+        "https://www.samsung.com/global/ir/reports-disclosures/annual-reports/",
+        "https://investor.apple.com/sec-filings/default.aspx"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX55",
+      "source_node": "Samsung_Electronics::OLED",
+      "target_node": "Apple::iPhone",
+      "source_company": "Samsung Electronics",
+      "target_company": "Apple",
+      "product_or_service": "Samsung OLED 与 Apple 终端显示供应基线",
+      "relationship_type": "cross_company_supply",
+      "evidence_level": "市场共识_待直接证据",
+      "official_sources": [
+        "https://www.samsung.com/global/ir/reports-disclosures/annual-reports/",
+        "https://investor.apple.com/sec-filings/default.aspx"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX56",
+      "source_node": "NVIDIA::数据中心_GPU",
+      "target_node": "Amazon_AWS::AWS",
+      "source_company": "NVIDIA",
+      "target_company": "Amazon / AWS",
+      "product_or_service": "NVIDIA GPU 支撑 AWS AI 基础设施",
+      "relationship_type": "cross_company_supply",
+      "evidence_level": "本年度官方证据",
+      "official_sources": [
+        "https://investor.nvidia.com/financial-info/annual-reports-and-proxies/default.aspx",
+        "https://ir.aboutamazon.com/annual-reports-proxies-and-shareholder-letters/default.aspx"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX57",
+      "source_node": "NVIDIA::数据中心_GPU",
+      "target_node": "Microsoft::Azure",
+      "source_company": "NVIDIA",
+      "target_company": "Microsoft",
+      "product_or_service": "NVIDIA GPU 支撑 Azure AI 基础设施",
+      "relationship_type": "cross_company_supply",
+      "evidence_level": "市场共识_待直接证据",
+      "official_sources": [
+        "https://investor.nvidia.com/financial-info/annual-reports-and-proxies/default.aspx",
+        "https://www.microsoft.com/en-us/Investor/annual-reports.aspx"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX58",
+      "source_node": "NVIDIA::数据中心_GPU",
+      "target_node": "Alphabet_Google::Google_Cloud",
+      "source_company": "NVIDIA",
+      "target_company": "Alphabet / Google",
+      "product_or_service": "NVIDIA GPU 支撑 Google Cloud AI 基础设施",
+      "relationship_type": "cross_company_supply",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://investor.nvidia.com/financial-info/annual-reports-and-proxies/default.aspx",
+        "https://abc.xyz/investor/"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX59",
+      "source_node": "NVIDIA::数据中心_GPU",
+      "target_node": "Meta::Meta_AI",
+      "source_company": "NVIDIA",
+      "target_company": "Meta",
+      "product_or_service": "NVIDIA GPU 支撑 Meta AI 训练/推理基础设施",
+      "relationship_type": "cross_company_supply",
+      "evidence_level": "市场共识_待直接证据",
+      "official_sources": [
+        "https://investor.nvidia.com/financial-info/annual-reports-and-proxies/default.aspx",
+        "https://investor.atmeta.com/financials/"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX60",
+      "source_node": "TSMC::先进逻辑代工",
+      "target_node": "NVIDIA::数据中心_GPU",
+      "source_company": "TSMC",
+      "target_company": "NVIDIA",
+      "product_or_service": "TSMC 先进逻辑代工支撑 NVIDIA 数据中心 GPU",
+      "relationship_type": "cross_company_supply",
+      "evidence_level": "官方基线_加市场共识_待直接证据",
+      "official_sources": [
+        "https://investor.tsmc.com/english/annual-reports",
+        "https://investor.nvidia.com/financial-info/annual-reports-and-proxies/default.aspx"
+      ],
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
     }
   ]
 }

@@ -21,10 +21,11 @@
 
 ## 当前产物
 
-- 周报正文：[reports/2026-06-29_weekly_morning_brief.md](reports/2026-06-29_weekly_morning_brief.md)
-- 年度主营产品上下游图：[assets/2026-06-29_product_relationships.svg](assets/2026-06-29_product_relationships.svg)
-- 本周供应关系图：[assets/2026-06-29_supply_relationships.svg](assets/2026-06-29_supply_relationships.svg)
-- 来源审查日志：[logs/2026-06-29_source_audit.json](logs/2026-06-29_source_audit.json)
+- 周报正文：[reports/2026-07-20_weekly_morning_brief.md](reports/2026-07-20_weekly_morning_brief.md)
+- 年度主营产品上下游图：[assets/2026-07-20_product_relationships.svg](assets/2026-07-20_product_relationships.svg)
+- 本周供应关系图：[assets/2026-07-20_supply_relationships.svg](assets/2026-07-20_supply_relationships.svg)
+- 来源审查日志：[logs/2026-07-20_source_audit.json](logs/2026-07-20_source_audit.json)
+- 人工事实复核摘要：[logs/2026-07-20_fact_check.md](logs/2026-07-20_fact_check.md)
 - 查验手册：[docs/verification_manual.md](docs/verification_manual.md)
 
 ## 目录结构
@@ -99,6 +100,7 @@ python3 scripts/run_quality_gate.py
 python3 scripts/audit_sources.py \
   --report reports/YYYY-MM-DD_weekly_morning_brief.md \
   --baseline state/supply_graph_baseline.json \
+  --product-graph state/product_relationships_YYYY.json \
   --output logs/YYYY-MM-DD_source_audit.json
 ```
 
@@ -124,9 +126,12 @@ python3 scripts/validate_weekly_brief.py \
 - Mermaid 图、6.2 表格、JSON 基线的 `Edge ID` 是否一致
 - 低置信度、媒体报道、基线不足关系是否明确标注
 - 来源审查是否存在且没有不可达或未分类来源
-- 来源审查日志是否由当前周报和当前供应关系基线生成
+- 来源审查日志是否由当前周报、当前供应关系基线和当前年度产品关系图生成
+- 来源审查是否纳入年度产品关系图官方来源
+- 核心事实 claim 是否通过来源正文关键词匹配，或被标记为官方访问受限需人工复核
 - 两张 SVG 图片是否存在，并被周报引用
-- 年度产品关系 JSON 是否包含 10 家公司及官方来源
+- 年度产品关系 JSON 是否包含 10 家公司、全部主营产品节点、产品级关系边及官方来源
+- 周报文件日期是否为周一，覆盖周期是否等于上一完整自然周
 
 ## 手动生成流程
 
@@ -146,6 +151,7 @@ python3 scripts/build_supply_graph_svg.py \
 python3 scripts/audit_sources.py \
   --report reports/YYYY-MM-DD_weekly_morning_brief.md \
   --baseline state/supply_graph_baseline.json \
+  --product-graph state/product_relationships_YYYY.json \
   --output logs/YYYY-MM-DD_source_audit.json
 
 python3 scripts/validate_weekly_brief.py \
@@ -176,8 +182,8 @@ git push
 3. 联网检索并生成新周报。
 4. 更新产品关系 JSON 和供应关系 JSON。
 5. 生成两张 Obsidian 风格 SVG。
-6. 执行来源审查，并写入当前周报和基线文件的 SHA-256。
-7. 执行主质量闸门，确认来源审查日志与当前文件一致。
+6. 执行来源审查，并写入当前周报、供应关系基线和年度产品关系图的 SHA-256。
+7. 执行主质量闸门，确认来源审查日志与当前文件一致，并检查核心事实 claim。
 8. 校验通过后提交并推送到 GitHub。
 9. Mac 或其他设备通过 GitHub 查看 `reports/latest.md`。
 
