@@ -1,7 +1,7 @@
 {
   "title": "2026 年度十家公司主营产品上下游关系图",
   "source_baseline": "基于 2026 年可取得的官方年报、投资者关系页面、公司新闻稿和监管披露；媒体报道或历史基线关系单独标注。",
-  "generated_for_report_date": "2026-07-20",
+  "generated_for_report_date": "2026-08-03",
   "companies": [
     {
       "name": "Apple",
@@ -120,7 +120,7 @@
         "家电"
       ],
       "official_sources": [
-        "https://www.samsung.com/global/ir/reports-disclosures/annual-reports/"
+        "https://www.samsung.com/global/ir/reports-disclosures/business-report/"
       ]
     },
     {
@@ -195,7 +195,7 @@
       "product_or_service": "HBM/DRAM 供应基线",
       "evidence_level": "市场共识_待直接证据",
       "official_sources": [
-        "https://www.samsung.com/global/ir/reports-disclosures/annual-reports/",
+        "https://www.samsung.com/global/ir/reports-disclosures/business-report/",
         "https://news.samsung.com/global/samsung-electronics-releases-2026-sustainability-report-expanding-water-replenishment-efforts"
       ]
     },
@@ -227,7 +227,7 @@
       "product_or_service": "存储/显示组件基线",
       "evidence_level": "市场共识_待直接证据",
       "official_sources": [
-        "https://www.samsung.com/global/ir/reports-disclosures/annual-reports/",
+        "https://www.samsung.com/global/ir/reports-disclosures/business-report/",
         "https://investor.apple.com/sec-filings/default.aspx"
       ]
     },
@@ -628,7 +628,7 @@
       "product": "存储",
       "category": "memory",
       "official_sources": [
-        "https://www.samsung.com/global/ir/reports-disclosures/annual-reports/"
+        "https://www.samsung.com/global/ir/reports-disclosures/business-report/"
       ]
     },
     {
@@ -637,7 +637,7 @@
       "product": "晶圆代工",
       "category": "memory",
       "official_sources": [
-        "https://www.samsung.com/global/ir/reports-disclosures/annual-reports/"
+        "https://www.samsung.com/global/ir/reports-disclosures/business-report/"
       ]
     },
     {
@@ -646,7 +646,7 @@
       "product": "OLED",
       "category": "memory",
       "official_sources": [
-        "https://www.samsung.com/global/ir/reports-disclosures/annual-reports/"
+        "https://www.samsung.com/global/ir/reports-disclosures/business-report/"
       ]
     },
     {
@@ -655,7 +655,7 @@
       "product": "移动设备",
       "category": "memory",
       "official_sources": [
-        "https://www.samsung.com/global/ir/reports-disclosures/annual-reports/"
+        "https://www.samsung.com/global/ir/reports-disclosures/business-report/"
       ]
     },
     {
@@ -664,7 +664,7 @@
       "product": "电视/显示",
       "category": "memory",
       "official_sources": [
-        "https://www.samsung.com/global/ir/reports-disclosures/annual-reports/"
+        "https://www.samsung.com/global/ir/reports-disclosures/business-report/"
       ]
     },
     {
@@ -673,7 +673,7 @@
       "product": "家电",
       "category": "memory",
       "official_sources": [
-        "https://www.samsung.com/global/ir/reports-disclosures/annual-reports/"
+        "https://www.samsung.com/global/ir/reports-disclosures/business-report/"
       ]
     },
     {
@@ -1286,7 +1286,7 @@
       "relationship_type": "component_supply_internal",
       "evidence_level": "官方产品基线",
       "official_sources": [
-        "https://www.samsung.com/global/ir/reports-disclosures/annual-reports/"
+        "https://www.samsung.com/global/ir/reports-disclosures/business-report/"
       ],
       "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
     },
@@ -1300,7 +1300,7 @@
       "relationship_type": "component_supply_internal",
       "evidence_level": "官方产品基线",
       "official_sources": [
-        "https://www.samsung.com/global/ir/reports-disclosures/annual-reports/"
+        "https://www.samsung.com/global/ir/reports-disclosures/business-report/"
       ],
       "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
     },
@@ -1314,7 +1314,7 @@
       "relationship_type": "component_supply_internal",
       "evidence_level": "官方产品基线",
       "official_sources": [
-        "https://www.samsung.com/global/ir/reports-disclosures/annual-reports/"
+        "https://www.samsung.com/global/ir/reports-disclosures/business-report/"
       ],
       "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
     },
@@ -1328,7 +1328,7 @@
       "relationship_type": "manufacturing_stack",
       "evidence_level": "官方产品基线",
       "official_sources": [
-        "https://www.samsung.com/global/ir/reports-disclosures/annual-reports/"
+        "https://www.samsung.com/global/ir/reports-disclosures/business-report/"
       ],
       "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
     },
@@ -1342,7 +1342,7 @@
       "relationship_type": "ecosystem_pull",
       "evidence_level": "官方产品基线",
       "official_sources": [
-        "https://www.samsung.com/global/ir/reports-disclosures/annual-reports/"
+        "https://www.samsung.com/global/ir/reports-disclosures/business-report/"
       ],
       "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
     },
@@ -1541,7 +1541,7 @@
       "relationship_type": "cross_company_supply",
       "evidence_level": "市场共识_待直接证据",
       "official_sources": [
-        "https://www.samsung.com/global/ir/reports-disclosures/annual-reports/",
+        "https://www.samsung.com/global/ir/reports-disclosures/business-report/",
         "https://investor.apple.com/sec-filings/default.aspx"
       ],
       "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
@@ -1556,7 +1556,7 @@
       "relationship_type": "cross_company_supply",
       "evidence_level": "市场共识_待直接证据",
       "official_sources": [
-        "https://www.samsung.com/global/ir/reports-disclosures/annual-reports/",
+        "https://www.samsung.com/global/ir/reports-disclosures/business-report/",
         "https://investor.apple.com/sec-filings/default.aspx"
       ],
       "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"

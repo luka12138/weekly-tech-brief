@@ -46,6 +46,7 @@ OFFICIAL_HOST_KEYWORDS = [
 ]
 
 TIER1_MEDIA_HOST_KEYWORDS = [
+    "apnews.com",
     "reuters.com",
     "bloomberg.com",
     "wsj.com",
@@ -206,7 +207,7 @@ def fetch_text(url: str, timeout: int) -> str:
         request = urllib.request.Request(url, method="GET", headers=headers)
         try:
             with urllib.request.urlopen(request, timeout=timeout, context=context) as response:
-                raw = response.read(262144)
+                raw = response.read(1048576)
                 encoding = response.headers.get("Content-Encoding", "")
                 break
         except Exception:
