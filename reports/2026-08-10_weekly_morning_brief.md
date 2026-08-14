@@ -276,4 +276,4 @@ flowchart LR
 - 每条事件和供应关系均附可点击来源；AISI 测试条件、Apple/OpenAI 争议事实、白宫未公开框架及 Samsung 技术路线均明确标注限制。
 - Mermaid 使用 `flowchart LR`，包含全部 12 家公司；E01-E19 在图、6.2 表格和 JSON 基线中使用同一 Edge ID。
 - 完整质量闸门状态：通过；来源可达性、JSON、日期、latest 链接、SVG、产品图谱与 Edge ID 一致性均已自动校验。
-- GitHub 同步状态：本次重跑未执行 Git 提交或推送；本地生成与质量校验不受影响。
+- GitHub 同步状态：由提交记录确认；本期重跑内容已同步至远端主分支。
