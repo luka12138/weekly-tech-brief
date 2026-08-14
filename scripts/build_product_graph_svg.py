@@ -13,6 +13,7 @@ from xml.sax.saxutils import escape
 COMPANY_COLORS = {
     "device": "#60a5fa",
     "cloud_ai": "#34d399",
+    "model_ai": "#22d3ee",
     "semiconductor": "#fbbf24",
     "memory": "#c084fc",
     "auto_energy": "#fb7185",
@@ -134,18 +135,26 @@ def draw_product_edge(
         f'<path d="M {sx:.1f} {sy:.1f} Q {qx:.1f} {qy:.1f} {tx:.1f} {ty:.1f}" fill="none" stroke="{color}" stroke-width="{width}" stroke-opacity="{opacity}"/>',
     ]
     if cross_company:
-        label = f'{edge["edge_id"]} {edge["product_or_service"]}'
-        parts.append(
-            f'<text x="{((mx + qx) / 2):.1f}" y="{((my + qy) / 2):.1f}" font-size="8.4" fill="{color}" fill-opacity="0.95">{escape(label[:48])}</text>'
+        edge_id = str(edge["edge_id"])
+        t = 0.28
+        label_x = (1 - t) ** 2 * sx + 2 * (1 - t) * t * qx + t**2 * tx
+        label_y = (1 - t) ** 2 * sy + 2 * (1 - t) * t * qy + t**2 * ty
+        title = f'{edge_id} {edge["product_or_service"]}'
+        parts.extend(
+            [
+                f'<g><title>{escape(title)}</title>',
+                f'<rect x="{label_x - 16:.1f}" y="{label_y - 9:.1f}" width="32" height="16" rx="3" fill="#0f172a" fill-opacity="0.94" stroke="{color}" stroke-width="0.9"/>',
+                f'<text x="{label_x:.1f}" y="{label_y + 2.5:.1f}" text-anchor="middle" font-size="8.2" font-weight="700" fill="{color}">{escape(edge_id)}</text></g>',
+            ]
         )
     return "\n".join(parts)
 
 
 def build_product_level_svg(data: dict[str, object]) -> str:
-    width, height = 1500, 1100
-    cx, cy = width / 2, height / 2 + 20
-    company_radius = 375
-    product_radius = 82
+    width, height = 1680, 1320
+    cx, cy = width / 2, height / 2
+    company_radius = 460
+    product_radius = 100
     companies = [dict(item) for item in data["companies"]]
     company_by_name = {str(company["name"]): company for company in companies}
     company_coords: dict[str, tuple[float, float]] = {}
@@ -171,10 +180,10 @@ def build_product_level_svg(data: dict[str, object]) -> str:
         '<rect width="100%" height="100%" fill="#0f172a"/>',
         f'<circle cx="{cx:.1f}" cy="{cy:.1f}" r="180" fill="none" stroke="#334155" stroke-width="1" stroke-opacity="0.75"/>',
         f'<circle cx="{cx:.1f}" cy="{cy:.1f}" r="300" fill="none" stroke="#334155" stroke-width="1" stroke-opacity="0.55"/>',
-        f'<circle cx="{cx:.1f}" cy="{cy:.1f}" r="455" fill="none" stroke="#334155" stroke-width="1" stroke-opacity="0.35"/>',
+        f'<circle cx="{cx:.1f}" cy="{cy:.1f}" r="470" fill="none" stroke="#334155" stroke-width="1" stroke-opacity="0.35"/>',
         f'<text x="44" y="48" font-size="24" font-weight="800" fill="#f8fafc">{escape(str(data.get("title", "年度主营产品上下游关系图")))}</text>',
-        f'<text x="44" y="74" font-size="12" fill="#94a3b8">产品级 Obsidian 风格网络图：公司为大节点，主营产品为小节点，跨公司供应关系以标签标出。</text>',
-        '<text x="44" y="1050" font-size="11" fill="#94a3b8">边颜色：绿色=本年度官方证据，蓝色=官方基线，橙色=市场共识或待直接证据；淡线=公司内部产品栈。</text>',
+        f'<text x="44" y="74" font-size="12" fill="#94a3b8">产品级 Obsidian 风格网络图：公司为大节点，主营产品为小节点，跨公司关系以 Edge ID 标出并可悬停查看。</text>',
+        '<text x="44" y="1270" font-size="11" fill="#94a3b8">边颜色：绿色=本年度官方证据，蓝色=官方基线，橙色=市场共识或待直接证据；淡线=公司内部产品栈。Edge ID 可在 JSON 中追溯。</text>',
     ]
     for edge in data.get("product_edges", []):
         line = draw_product_edge(dict(edge), product_coords, cx, cy)

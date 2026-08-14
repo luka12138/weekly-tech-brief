@@ -38,10 +38,13 @@ OFFICIAL_HOST_KEYWORDS = [
     "atmeta.com",
     "nvidia.com",
     "tesla.com",
+    "openai.com",
+    "anthropic.com",
     "samsung.com",
     "skhynix.com",
     "tsmc.com",
     "sec.gov",
+    "aisi.gov.uk",
     "essilorluxottica.com",
 ]
 
@@ -55,6 +58,7 @@ TIER1_MEDIA_HOST_KEYWORDS = [
     "cnbc.com",
     "theinformation.com",
     "caixin.com",
+    "axios.com",
 ]
 
 TRADE_MEDIA_HOST_KEYWORDS = [

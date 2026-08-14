@@ -13,6 +13,8 @@
     "Meta",
     "NVIDIA",
     "Tesla",
+    "OpenAI",
+    "Anthropic",
     "Samsung Electronics",
     "SK Hynix",
     "TSMC"
@@ -393,6 +395,8 @@
     "https://news.skhynix.com/en/q2-2026-business-results/",
     "https://news.samsung.com/global/samsung-electronics-and-broadcom-expand-strategic-collaboration-across-memory-and-foundry-technologies",
     "https://ir.tesla.com/press-release/tesla-releases-second-quarter-2026-financial-results",
+    "https://openai.com/news/",
+    "https://www.anthropic.com/news",
     "https://investor.tsmc.com/english/annual-reports",
     "https://investor.apple.com/sec-filings/default.aspx",
     "https://nvidianews.nvidia.com/news/ilya-sutskevers-safe-superintelligence-inc-and-nvidia-announce-long-term-strategic-partnership",
@@ -403,5 +407,5 @@
     "https://news.skhynix.com/sk-hynix-and-sandisk-begin-global-standardization-ofnext-generation-memory-hbf/"
   ],
   "confidence": "mixed_high",
-  "notes": "本基线覆盖 2026-08-03 至 2026-08-09。图、Markdown 表格和 JSON 共用 E01-E19。E19 为本周因首版开放规范发布而强化的既有 HBF 共研关系，不代表采购订单；其余关系均无本周客户级新增证据，E11、E12 仅保留长期基线。"
+  "notes": "本基线覆盖 2026-08-03 至 2026-08-09，并按固定口径覆盖 12 家公司。图、Markdown 表格和 JSON 共用 E01-E19。OpenAI、Anthropic 从外部节点升级为正式覆盖节点属于口径变化，不构成关系新增；E19 为本周因首版开放规范发布而强化的既有 HBF 共研关系，不代表采购订单；其余关系均无本周客户级新增证据，E11、E12 仅保留长期基线。"
 }

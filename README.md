@@ -6,7 +6,7 @@
 
 - [reports/latest.md](reports/latest.md)
 
-本项目当前覆盖 10 家公司：
+本项目当前覆盖 12 家公司：
 
 - Apple
 - Microsoft
@@ -15,17 +15,18 @@
 - Meta
 - NVIDIA
 - Tesla
+- OpenAI
+- Anthropic
 - Samsung Electronics
 - SK Hynix
 - TSMC
 
 ## 当前产物
 
-- 周报正文：[reports/2026-07-20_weekly_morning_brief.md](reports/2026-07-20_weekly_morning_brief.md)
-- 年度主营产品上下游图：[assets/2026-07-20_product_relationships.svg](assets/2026-07-20_product_relationships.svg)
-- 本周供应关系图：[assets/2026-07-20_supply_relationships.svg](assets/2026-07-20_supply_relationships.svg)
-- 来源审查日志：[logs/2026-07-20_source_audit.json](logs/2026-07-20_source_audit.json)
-- 人工事实复核摘要：[logs/2026-07-20_fact_check.md](logs/2026-07-20_fact_check.md)
+- 周报正文：[reports/2026-08-10_weekly_morning_brief.md](reports/2026-08-10_weekly_morning_brief.md)
+- 年度主营产品上下游图：[assets/2026-08-10_product_relationships.svg](assets/2026-08-10_product_relationships.svg)
+- 本周供应关系图：[assets/2026-08-10_supply_relationships.svg](assets/2026-08-10_supply_relationships.svg)
+- 来源审查日志：[logs/2026-08-10_source_audit.json](logs/2026-08-10_source_audit.json)
 - 查验手册：[docs/verification_manual.md](docs/verification_manual.md)
 
 ## 目录结构
@@ -61,12 +62,12 @@ docs/
 
 每期周报必须包含：
 
-1. 本周最重要的 5-8 件事
-2. 10 家公司的影响力速览
+1. 本周最重要的 10 件事
+2. 12 家公司的影响力速览
 3. 按公司分组的重大事件
 4. 跨公司与产业链观察
 5. 下周需关注事项
-6. 十家公司供应关系图谱与周度变化
+6. 十二家公司供应关系图谱与周度变化
 7. 本期自检
 
 第 6 节必须同时包含两张图：
@@ -121,7 +122,8 @@ python3 scripts/validate_weekly_brief.py \
 
 - JSON 能否解析
 - 覆盖日期是否写入周报
-- 10 家公司是否全部覆盖
+- 12 家公司是否全部覆盖
+- 第 1 节是否按 1-10 编号且恰好包含 10 件事
 - `reports/latest.md` 是否指向真实文件
 - Mermaid 图、6.2 表格、JSON 基线的 `Edge ID` 是否一致
 - 低置信度、媒体报道、基线不足关系是否明确标注
@@ -130,7 +132,7 @@ python3 scripts/validate_weekly_brief.py \
 - 来源审查是否纳入年度产品关系图官方来源
 - 核心事实 claim 是否通过来源正文关键词匹配，或被标记为官方访问受限需人工复核
 - 两张 SVG 图片是否存在，并被周报引用
-- 年度产品关系 JSON 是否包含 10 家公司、全部主营产品节点、产品级关系边及官方来源
+- 年度产品关系 JSON 是否包含 12 家公司、全部主营产品节点、产品级关系边及官方来源
 - 周报文件日期是否为周一，覆盖周期是否等于上一完整自然周
 
 ## 手动生成流程

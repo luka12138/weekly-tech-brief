@@ -1,5 +1,5 @@
 {
-  "title": "2026 年度十家公司主营产品上下游关系图",
+  "title": "2026 年度十二家公司主营产品上下游关系图",
   "source_baseline": "基于 2026 年可取得的官方年报、投资者关系页面、公司新闻稿和监管披露；媒体报道或历史基线关系单独标注。",
   "generated_for_report_date": "2026-08-10",
   "companies": [
@@ -106,6 +106,36 @@
       ],
       "official_sources": [
         "https://ir.tesla.com/"
+      ]
+    },
+    {
+      "name": "OpenAI",
+      "category": "model_ai",
+      "main_products": [
+        "GPT 模型",
+        "ChatGPT",
+        "OpenAI API",
+        "Codex",
+        "ChatGPT Work",
+        "AI 安全评估"
+      ],
+      "official_sources": [
+        "https://openai.com/news/"
+      ]
+    },
+    {
+      "name": "Anthropic",
+      "category": "model_ai",
+      "main_products": [
+        "Claude 模型",
+        "Claude",
+        "Claude API",
+        "Claude Code",
+        "Claude Cowork",
+        "AI 安全研究"
+      ],
+      "official_sources": [
+        "https://www.anthropic.com/news"
       ]
     },
     {
@@ -240,6 +270,46 @@
       "official_sources": [
         "https://ir.tesla.com/",
         "https://investor.nvidia.com/financial-info/annual-reports-and-proxies/default.aspx"
+      ]
+    },
+    {
+      "edge_id": "P09",
+      "source": "Amazon / AWS",
+      "target": "OpenAI",
+      "product_or_service": "Trainium AI 计算与云基础设施承诺",
+      "evidence_level": "本年度官方证据",
+      "official_sources": [
+        "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Second-Quarter-Results/default.aspx"
+      ]
+    },
+    {
+      "edge_id": "P10",
+      "source": "Amazon / AWS",
+      "target": "Anthropic",
+      "product_or_service": "Trainium 训练与推理计算容量",
+      "evidence_level": "本年度官方证据",
+      "official_sources": [
+        "https://www.anthropic.com/news/anthropic-amazon-compute"
+      ]
+    },
+    {
+      "edge_id": "P11",
+      "source": "Anthropic",
+      "target": "Amazon / AWS",
+      "product_or_service": "Claude 模型通过 Amazon Bedrock 提供",
+      "evidence_level": "本年度官方证据",
+      "official_sources": [
+        "https://www.anthropic.com/news/anthropic-amazon-compute"
+      ]
+    },
+    {
+      "edge_id": "P12",
+      "source": "NVIDIA",
+      "target": "Anthropic",
+      "product_or_service": "NVIDIA 架构与 Claude 模型协同优化",
+      "evidence_level": "官方历史基线",
+      "official_sources": [
+        "https://www.anthropic.com/news/microsoft-nvidia-anthropic-announce-strategic-partnerships"
       ]
     }
   ],
@@ -620,6 +690,114 @@
       "category": "auto_energy",
       "official_sources": [
         "https://ir.tesla.com/"
+      ]
+    },
+    {
+      "node_id": "OpenAI::GPT_模型",
+      "company": "OpenAI",
+      "product": "GPT 模型",
+      "category": "model_ai",
+      "official_sources": [
+        "https://openai.com/api/"
+      ]
+    },
+    {
+      "node_id": "OpenAI::ChatGPT",
+      "company": "OpenAI",
+      "product": "ChatGPT",
+      "category": "model_ai",
+      "official_sources": [
+        "https://openai.com/academy/getting-started/"
+      ]
+    },
+    {
+      "node_id": "OpenAI::OpenAI_API",
+      "company": "OpenAI",
+      "product": "OpenAI API",
+      "category": "model_ai",
+      "official_sources": [
+        "https://openai.com/api/"
+      ]
+    },
+    {
+      "node_id": "OpenAI::Codex",
+      "company": "OpenAI",
+      "product": "Codex",
+      "category": "model_ai",
+      "official_sources": [
+        "https://openai.com/codex/"
+      ]
+    },
+    {
+      "node_id": "OpenAI::ChatGPT_Work",
+      "company": "OpenAI",
+      "product": "ChatGPT Work",
+      "category": "model_ai",
+      "official_sources": [
+        "https://openai.com/academy/getting-started/"
+      ]
+    },
+    {
+      "node_id": "OpenAI::AI_安全评估",
+      "company": "OpenAI",
+      "product": "AI 安全评估",
+      "category": "model_ai",
+      "official_sources": [
+        "https://openai.com/safety/"
+      ]
+    },
+    {
+      "node_id": "Anthropic::Claude_模型",
+      "company": "Anthropic",
+      "product": "Claude 模型",
+      "category": "model_ai",
+      "official_sources": [
+        "https://www.anthropic.com/claude"
+      ]
+    },
+    {
+      "node_id": "Anthropic::Claude",
+      "company": "Anthropic",
+      "product": "Claude",
+      "category": "model_ai",
+      "official_sources": [
+        "https://www.anthropic.com/claude"
+      ]
+    },
+    {
+      "node_id": "Anthropic::Claude_API",
+      "company": "Anthropic",
+      "product": "Claude API",
+      "category": "model_ai",
+      "official_sources": [
+        "https://www.anthropic.com/api"
+      ]
+    },
+    {
+      "node_id": "Anthropic::Claude_Code",
+      "company": "Anthropic",
+      "product": "Claude Code",
+      "category": "model_ai",
+      "official_sources": [
+        "https://www.anthropic.com/claude-code"
+      ]
+    },
+    {
+      "node_id": "Anthropic::Claude_Cowork",
+      "company": "Anthropic",
+      "product": "Claude Cowork",
+      "category": "model_ai",
+      "official_sources": [
+        "https://www.anthropic.com/claude"
+      ]
+    },
+    {
+      "node_id": "Anthropic::AI_安全研究",
+      "company": "Anthropic",
+      "product": "AI 安全研究",
+      "category": "model_ai",
+      "official_sources": [
+        "https://www.anthropic.com/research"
       ]
     },
     {
@@ -1635,6 +1813,202 @@
         "https://investor.nvidia.com/financial-info/annual-reports-and-proxies/default.aspx"
       ],
       "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+    },
+    {
+      "edge_id": "PX61",
+      "source_node": "OpenAI::GPT_模型",
+      "target_node": "OpenAI::ChatGPT",
+      "source_company": "OpenAI",
+      "target_company": "OpenAI",
+      "product_or_service": "GPT 模型支撑 ChatGPT 产品",
+      "relationship_type": "internal_product_stack",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://openai.com/academy/getting-started/"
+      ],
+      "notes": "年度主营产品上下游关系；具体模型路由与版本配比会动态调整。"
+    },
+    {
+      "edge_id": "PX62",
+      "source_node": "OpenAI::GPT_模型",
+      "target_node": "OpenAI::OpenAI_API",
+      "source_company": "OpenAI",
+      "target_company": "OpenAI",
+      "product_or_service": "GPT 模型通过 OpenAI API 向开发者提供服务",
+      "relationship_type": "internal_product_stack",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://openai.com/api/"
+      ],
+      "notes": "年度主营产品上下游关系；可用模型、定价与区域覆盖以官方文档为准。"
+    },
+    {
+      "edge_id": "PX63",
+      "source_node": "OpenAI::GPT_模型",
+      "target_node": "OpenAI::Codex",
+      "source_company": "OpenAI",
+      "target_company": "OpenAI",
+      "product_or_service": "GPT 系列模型支撑 Codex 编程代理",
+      "relationship_type": "internal_product_stack",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://openai.com/codex/"
+      ],
+      "notes": "年度主营产品上下游关系；具体底层模型会随产品版本更新。"
+    },
+    {
+      "edge_id": "PX64",
+      "source_node": "OpenAI::ChatGPT",
+      "target_node": "OpenAI::ChatGPT_Work",
+      "source_company": "OpenAI",
+      "target_company": "OpenAI",
+      "product_or_service": "ChatGPT 能力延伸至企业与团队工作场景",
+      "relationship_type": "internal_product_stack",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://openai.com/academy/getting-started/"
+      ],
+      "notes": "年度主营产品上下游关系；不同企业方案的功能与管理能力可能不同。"
+    },
+    {
+      "edge_id": "PX65",
+      "source_node": "OpenAI::AI_安全评估",
+      "target_node": "OpenAI::GPT_模型",
+      "source_company": "OpenAI",
+      "target_company": "OpenAI",
+      "product_or_service": "安全评估与缓解措施进入 GPT 模型发布流程",
+      "relationship_type": "safety_evaluation",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://openai.com/safety/"
+      ],
+      "notes": "安全评估是发布治理流程，不代表所有风险均已消除。"
+    },
+    {
+      "edge_id": "PX66",
+      "source_node": "Anthropic::Claude_模型",
+      "target_node": "Anthropic::Claude",
+      "source_company": "Anthropic",
+      "target_company": "Anthropic",
+      "product_or_service": "Claude 模型支撑 Claude 助手产品",
+      "relationship_type": "internal_product_stack",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://www.anthropic.com/claude"
+      ],
+      "notes": "年度主营产品上下游关系；具体模型路由与版本配比会动态调整。"
+    },
+    {
+      "edge_id": "PX67",
+      "source_node": "Anthropic::Claude_模型",
+      "target_node": "Anthropic::Claude_API",
+      "source_company": "Anthropic",
+      "target_company": "Anthropic",
+      "product_or_service": "Claude 模型通过 API 向开发者提供服务",
+      "relationship_type": "internal_product_stack",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://www.anthropic.com/api"
+      ],
+      "notes": "年度主营产品上下游关系；可用模型、定价与区域覆盖以官方文档为准。"
+    },
+    {
+      "edge_id": "PX68",
+      "source_node": "Anthropic::Claude_模型",
+      "target_node": "Anthropic::Claude_Code",
+      "source_company": "Anthropic",
+      "target_company": "Anthropic",
+      "product_or_service": "Claude 模型支撑 Claude Code 编程代理",
+      "relationship_type": "internal_product_stack",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://www.anthropic.com/claude-code"
+      ],
+      "notes": "年度主营产品上下游关系；具体底层模型会随产品版本更新。"
+    },
+    {
+      "edge_id": "PX69",
+      "source_node": "Anthropic::Claude",
+      "target_node": "Anthropic::Claude_Cowork",
+      "source_company": "Anthropic",
+      "target_company": "Anthropic",
+      "product_or_service": "Claude 能力延伸至 Cowork 工作协同场景",
+      "relationship_type": "internal_product_stack",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://www.anthropic.com/claude"
+      ],
+      "notes": "年度主营产品上下游关系；具体可用功能与方案边界以官方产品页面为准。"
+    },
+    {
+      "edge_id": "PX70",
+      "source_node": "Anthropic::AI_安全研究",
+      "target_node": "Anthropic::Claude_模型",
+      "source_company": "Anthropic",
+      "target_company": "Anthropic",
+      "product_or_service": "安全研究与评估进入 Claude 模型开发治理",
+      "relationship_type": "safety_evaluation",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://www.anthropic.com/research"
+      ],
+      "notes": "安全研究是模型治理基础，不代表所有风险均已消除。"
+    },
+    {
+      "edge_id": "PX71",
+      "source_node": "Amazon_AWS::AWS",
+      "target_node": "OpenAI::GPT_模型",
+      "source_company": "Amazon / AWS",
+      "target_company": "OpenAI",
+      "product_or_service": "AWS Trainium 计算资源用于 OpenAI 模型训练与推理",
+      "relationship_type": "cross_company_compute",
+      "evidence_level": "本年度官方证据",
+      "official_sources": [
+        "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Second-Quarter-Results/default.aspx"
+      ],
+      "notes": "年度计算基础设施关系；本周没有新增容量、金额或部署节奏证据。"
+    },
+    {
+      "edge_id": "PX72",
+      "source_node": "Amazon_AWS::AWS",
+      "target_node": "Anthropic::Claude_模型",
+      "source_company": "Amazon / AWS",
+      "target_company": "Anthropic",
+      "product_or_service": "AWS Trainium 计算资源支撑 Claude 模型训练与部署",
+      "relationship_type": "cross_company_compute",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://www.anthropic.com/news/anthropic-amazon-compute"
+      ],
+      "notes": "年度计算基础设施关系；本周没有新增容量、金额或部署节奏证据。"
+    },
+    {
+      "edge_id": "PX73",
+      "source_node": "Anthropic::Claude_模型",
+      "target_node": "Amazon_AWS::AWS",
+      "source_company": "Anthropic",
+      "target_company": "Amazon / AWS",
+      "product_or_service": "Claude 模型通过 Amazon Bedrock 分发给云客户",
+      "relationship_type": "model_distribution",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://www.anthropic.com/news/anthropic-amazon-compute"
+      ],
+      "notes": "年度模型分发关系；本周没有新增区域、客户或收入贡献证据。"
+    },
+    {
+      "edge_id": "PX74",
+      "source_node": "NVIDIA::数据中心_GPU",
+      "target_node": "Anthropic::Claude_模型",
+      "source_company": "NVIDIA",
+      "target_company": "Anthropic",
+      "product_or_service": "NVIDIA 与 Anthropic 开展架构和模型性能优化协同",
+      "relationship_type": "model_hardware_optimization",
+      "evidence_level": "官方产品基线",
+      "official_sources": [
+        "https://www.anthropic.com/news/microsoft-nvidia-anthropic-announce-strategic-partnerships"
+      ],
+      "notes": "年度软硬件协同关系；不等同于本周新增 GPU 采购或独家供货。"
     }
   ]
 }

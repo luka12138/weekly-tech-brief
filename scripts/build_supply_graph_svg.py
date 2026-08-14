@@ -18,6 +18,8 @@ COVERED = [
     "Meta",
     "NVIDIA",
     "Tesla",
+    "OpenAI",
+    "Anthropic",
     "Samsung Electronics",
     "SK Hynix",
     "TSMC",
@@ -32,7 +34,6 @@ ALIASES = {
     "AI 初创企业与云客户": "外部:AI客户",
     "创意专业用户": "外部:创意专业用户",
     "企业 AI 客户": "外部:企业AI客户",
-    "OpenAI": "外部:OpenAI",
     "Broadcom": "外部:Broadcom",
     "Bedrock/OpenAI 模型客户": "外部:Bedrock/OpenAI模型客户",
     "Meta AI/Instagram/WhatsApp 用户": "外部:Meta AI用户",
@@ -79,6 +80,24 @@ def edge_color(edge: dict[str, object]) -> str:
     return "#64748b"
 
 
+def wrap_label(text: str, limit: int = 28) -> list[str]:
+    words = text.split()
+    if len(words) <= 1:
+        return [text]
+    lines: list[str] = []
+    current = ""
+    for word in words:
+        candidate = f"{current} {word}".strip()
+        if len(candidate) > limit and current:
+            lines.append(current)
+            current = word
+        else:
+            current = candidate
+    if current:
+        lines.append(current)
+    return lines[:2]
+
+
 def draw_edge(edge: dict[str, object], coords: dict[str, tuple[float, float]], cx: float, cy: float) -> str:
     source = canonical(str(edge["supplier"]))
     target = canonical(str(edge["customer"]))
@@ -89,11 +108,17 @@ def draw_edge(edge: dict[str, object], coords: dict[str, tuple[float, float]], c
     mx, my = (sx + tx) / 2, (sy + ty) / 2
     qx, qy = (mx + cx) / 2, (my + cy) / 2
     color = edge_color(edge)
-    label = f'{edge["edge_id"]} {edge["product_or_service"]}'
+    edge_id = str(edge["edge_id"])
+    t = 0.27
+    label_x = (1 - t) ** 2 * sx + 2 * (1 - t) * t * qx + t**2 * tx
+    label_y = (1 - t) ** 2 * sy + 2 * (1 - t) * t * qy + t**2 * ty
+    title = f'{edge_id} {edge["product_or_service"]}'
     return "\n".join(
         [
             f'<path d="M {sx:.1f} {sy:.1f} Q {qx:.1f} {qy:.1f} {tx:.1f} {ty:.1f}" fill="none" stroke="{color}" stroke-width="1.5" stroke-opacity="0.72"/>',
-            f'<text x="{((mx + qx) / 2):.1f}" y="{((my + qy) / 2):.1f}" font-size="9" fill="{color}">{escape(label[:44])}</text>',
+            f'<g><title>{escape(title)}</title>',
+            f'<rect x="{label_x - 17:.1f}" y="{label_y - 10:.1f}" width="34" height="17" rx="3" fill="#0f172a" fill-opacity="0.94" stroke="{color}" stroke-width="0.9"/>',
+            f'<text x="{label_x:.1f}" y="{label_y + 2.5:.1f}" text-anchor="middle" font-size="8.5" font-weight="700" fill="{color}">{escape(edge_id)}</text></g>',
         ]
     )
 
@@ -103,20 +128,24 @@ def draw_node(name: str, x: float, y: float) -> str:
     color = "#94a3b8" if external else "#a78bfa"
     radius = 22 if external else 29
     label = name.replace("外部:", "")
-    return "\n".join(
-        [
-            f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{radius}" fill="{color}" fill-opacity="0.20" stroke="{color}" stroke-width="2"/>',
-            f'<circle cx="{x:.1f}" cy="{y:.1f}" r="5" fill="{color}"/>',
-            f'<text x="{x:.1f}" y="{y - radius - 10:.1f}" text-anchor="middle" font-size="13" font-weight="700" fill="#e5e7eb">{escape(label)}</text>',
-        ]
-    )
+    lines = wrap_label(label)
+    parts = [
+        f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{radius}" fill="{color}" fill-opacity="0.20" stroke="{color}" stroke-width="2"/>',
+        f'<circle cx="{x:.1f}" cy="{y:.1f}" r="5" fill="{color}"/>',
+    ]
+    first_y = y - radius - 12 - (len(lines) - 1) * 7
+    for idx, line in enumerate(lines):
+        parts.append(
+            f'<text x="{x:.1f}" y="{first_y + idx * 14:.1f}" text-anchor="middle" font-size="12" font-weight="700" fill="#e5e7eb">{escape(line)}</text>'
+        )
+    return "\n".join(parts)
 
 
 def build_svg(data: dict[str, object]) -> str:
-    width, height = 1180, 860
-    cx, cy = width / 2, height / 2 + 18
-    covered_radius = 315
-    external_radius = 390
+    width, height = 1680, 1240
+    cx, cy = width / 2, height / 2 + 20
+    covered_radius = 430
+    external_radius = 545
     nodes = list(COVERED)
     edges = [dict(edge) for edge in data.get("edges", [])]
     for edge in edges:
@@ -136,12 +165,12 @@ def build_svg(data: dict[str, object]) -> str:
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}">',
         '<rect width="100%" height="100%" fill="#0f172a"/>',
-        '<circle cx="590" cy="448" r="160" fill="none" stroke="#334155" stroke-width="1" stroke-opacity="0.75"/>',
-        '<circle cx="590" cy="448" r="250" fill="none" stroke="#334155" stroke-width="1" stroke-opacity="0.55"/>',
-        '<circle cx="590" cy="448" r="335" fill="none" stroke="#334155" stroke-width="1" stroke-opacity="0.35"/>',
-        f'<text x="40" y="44" font-size="22" font-weight="800" fill="#f8fafc">{escape(title)}</text>',
-        '<text x="40" y="68" font-size="12" fill="#94a3b8">Obsidian 风格网络图，基于 state/supply_graph_baseline.json 生成。</text>',
-        '<text x="40" y="820" font-size="11" fill="#94a3b8">边颜色：绿色=新增，蓝色=强化，橙色=风险/媒体报道，灰色=基线关系。</text>',
+        f'<circle cx="{cx:.1f}" cy="{cy:.1f}" r="220" fill="none" stroke="#334155" stroke-width="1" stroke-opacity="0.75"/>',
+        f'<circle cx="{cx:.1f}" cy="{cy:.1f}" r="340" fill="none" stroke="#334155" stroke-width="1" stroke-opacity="0.55"/>',
+        f'<circle cx="{cx:.1f}" cy="{cy:.1f}" r="455" fill="none" stroke="#334155" stroke-width="1" stroke-opacity="0.35"/>',
+        f'<text x="44" y="48" font-size="24" font-weight="800" fill="#f8fafc">{escape(title)}</text>',
+        '<text x="44" y="74" font-size="12" fill="#94a3b8">Obsidian 风格网络图，基于 state/supply_graph_baseline.json 生成；边以 Edge ID 标出并可悬停查看。</text>',
+        '<text x="44" y="1190" font-size="11" fill="#94a3b8">边颜色：绿色=新增，蓝色=强化，橙色=风险/媒体报道，灰色=基线关系。Edge ID 可在周报 6.2 与 JSON 中追溯。</text>',
     ]
     for edge in edges:
         line = draw_edge(edge, coords, cx, cy)

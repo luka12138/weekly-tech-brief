@@ -20,6 +20,8 @@ REQUIRED_COMPANIES = [
     "Meta",
     "NVIDIA",
     "Tesla",
+    "OpenAI",
+    "Anthropic",
     "Samsung Electronics",
     "SK Hynix",
     "TSMC",
@@ -303,6 +305,13 @@ def validate_supply_image(report: str, supply_image_path: Path | None) -> None:
         fail(f"周报没有引用供应关系图片：{expected_image_ref}")
 
 
+def validate_headlines(report: str) -> None:
+    section = extract_section(report, "## 1. 本周最重要的 10 件事", "## 2.")
+    numbers = [int(value) for value in re.findall(r"^(\d+)\. ", section, flags=re.M)]
+    if numbers != list(range(1, 11)):
+        fail(f"第 1 节必须按 1-10 编号且恰好包含 10 件事：actual={numbers}")
+
+
 def validate_report(
     report_path: Path,
     baseline_path: Path,
@@ -314,6 +323,8 @@ def validate_report(
 ) -> None:
     report = report_path.read_text(encoding="utf-8")
     baseline = json.loads(baseline_path.read_text(encoding="utf-8"))
+
+    validate_headlines(report)
 
     period = baseline.get("coverage_period", {})
     start = period.get("start")
