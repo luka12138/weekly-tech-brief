@@ -15,6 +15,7 @@ import json
 import re
 import ssl
 import sys
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -160,27 +161,33 @@ def probe_url(url: str, timeout: int) -> dict[str, object]:
         result["error"] = "non_https_url"
         return result
 
-    context = ssl.create_default_context()
     headers = {
         "User-Agent": "weekly-tech-brief-source-audit/1.0",
         "Accept": "text/html,application/pdf,*/*",
     }
-    request = urllib.request.Request(url, method="HEAD", headers=headers)
-    try:
-        with urllib.request.urlopen(request, timeout=timeout, context=context) as response:
-            result["status"] = response.status
-    except urllib.error.HTTPError as exc:
-        result["status"] = exc.code
-    except Exception:
-        request = urllib.request.Request(url, method="GET", headers={**headers, "Range": "bytes=0-2048"})
+    attempts = [
+        ("HEAD", headers),
+        ("GET", {**headers, "Range": "bytes=0-2048"}),
+        ("GET", {**headers, "Range": "bytes=0-2048"}),
+    ]
+    last_error: Exception | None = None
+    for index, (method, request_headers) in enumerate(attempts):
+        request = urllib.request.Request(url, method=method, headers=request_headers)
         try:
-            with urllib.request.urlopen(request, timeout=timeout, context=context) as response:
+            with urllib.request.urlopen(request, timeout=timeout, context=ssl.create_default_context()) as response:
                 result["status"] = response.status
+            break
         except urllib.error.HTTPError as exc:
             result["status"] = exc.code
+            break
         except Exception as exc:
-            result["error"] = f"{type(exc).__name__}: {exc}"
-            return result
+            last_error = exc
+            if index < len(attempts) - 1:
+                time.sleep(0.5 * (index + 1))
+
+    if result["status"] is None:
+        result["error"] = f"{type(last_error).__name__}: {last_error}"
+        return result
 
     status = int(result["status"] or 0)
     result["reachable"] = status in OK_STATUSES

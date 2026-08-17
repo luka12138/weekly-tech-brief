@@ -1,7 +1,7 @@
 {
   "title": "2026 年度十二家公司主营产品上下游关系图",
   "source_baseline": "基于 2026 年可取得的官方年报、投资者关系页面、公司新闻稿和监管披露；媒体报道或历史基线关系单独标注。",
-  "generated_for_report_date": "2026-08-10",
+  "generated_for_report_date": "2026-08-17",
   "companies": [
     {
       "name": "Apple",
@@ -310,6 +310,16 @@
       "evidence_level": "官方历史基线",
       "official_sources": [
         "https://www.anthropic.com/news/microsoft-nvidia-anthropic-announce-strategic-partnerships"
+      ]
+    },
+    {
+      "edge_id": "P13",
+      "source": "OpenAI",
+      "target": "Amazon / AWS",
+      "product_or_service": "Daybreak 网络安全模型通过 Amazon Bedrock 分发",
+      "evidence_level": "本年度官方证据",
+      "official_sources": [
+        "https://openai.com/index/daybreak-models-are-now-available-on-aws/"
       ]
     }
   ],
@@ -779,7 +789,7 @@
       "product": "Claude Code",
       "category": "model_ai",
       "official_sources": [
-        "https://www.anthropic.com/claude-code"
+        "https://www.anthropic.com/product/claude-code"
       ]
     },
     {
@@ -1922,7 +1932,7 @@
       "relationship_type": "internal_product_stack",
       "evidence_level": "官方产品基线",
       "official_sources": [
-        "https://www.anthropic.com/claude-code"
+        "https://www.anthropic.com/product/claude-code"
       ],
       "notes": "年度主营产品上下游关系；具体底层模型会随产品版本更新。"
     },
@@ -2009,6 +2019,20 @@
         "https://www.anthropic.com/news/microsoft-nvidia-anthropic-announce-strategic-partnerships"
       ],
       "notes": "年度软硬件协同关系；不等同于本周新增 GPU 采购或独家供货。"
+    },
+    {
+      "edge_id": "PX75",
+      "source_node": "OpenAI::GPT_模型",
+      "target_node": "Amazon_AWS::AWS",
+      "source_company": "OpenAI",
+      "target_company": "Amazon / AWS",
+      "product_or_service": "Daybreak Blue 与 Red 通过 Amazon Bedrock 分发",
+      "relationship_type": "model_distribution",
+      "evidence_level": "本年度官方证据",
+      "official_sources": [
+        "https://openai.com/index/daybreak-models-are-now-available-on-aws/"
+      ],
+      "notes": "本年度官方确认的模型分发关系；需通过 Daybreak Access 审批，未披露客户数与收入。"
     }
   ]
 }
