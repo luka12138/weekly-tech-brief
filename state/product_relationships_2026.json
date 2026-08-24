@@ -1,7 +1,7 @@
 {
   "title": "2026 年度十二家公司主营产品上下游关系图",
   "source_baseline": "基于 2026 年可取得的官方年报、投资者关系页面、公司新闻稿和监管披露；媒体报道或历史基线关系单独标注。",
-  "generated_for_report_date": "2026-08-17",
+  "generated_for_report_date": "2026-08-24",
   "companies": [
     {
       "name": "Apple",
@@ -320,6 +320,17 @@
       "evidence_level": "本年度官方证据",
       "official_sources": [
         "https://openai.com/index/daybreak-models-are-now-available-on-aws/"
+      ]
+    },
+    {
+      "edge_id": "P14",
+      "source": "NVIDIA",
+      "target": "OpenAI",
+      "product_or_service": "PORTS-Pike 的 NVIDIA DSX 全栈 AI 计算基础设施",
+      "evidence_level": "本年度官方证据",
+      "official_sources": [
+        "https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute",
+        "https://openai.com/index/openai-joins-ports-pike-project/"
       ]
     }
   ],
@@ -2033,6 +2044,21 @@
         "https://openai.com/index/daybreak-models-are-now-available-on-aws/"
       ],
       "notes": "本年度官方确认的模型分发关系；需通过 Daybreak Access 审批，未披露客户数与收入。"
+    },
+    {
+      "edge_id": "PX76",
+      "source_node": "NVIDIA::数据中心_GPU",
+      "target_node": "OpenAI::GPT_模型",
+      "source_company": "NVIDIA",
+      "target_company": "OpenAI",
+      "product_or_service": "PORTS-Pike 使用 NVIDIA DSX 平台承载 OpenAI 约 8 IT-GW 计算容量",
+      "relationship_type": "cross_company_ai_compute_infrastructure",
+      "evidence_level": "本年度官方证据",
+      "official_sources": [
+        "https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute",
+        "https://openai.com/index/openai-joins-ports-pike-project/"
+      ],
+      "notes": "双方本年度官方材料确认项目、客户角色与技术栈；初始容量预计 2028 年起分期可用，建设、融资、许可和交付节奏仍有执行风险。"
     }
   ]
 }

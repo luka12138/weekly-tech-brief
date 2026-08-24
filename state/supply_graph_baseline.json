@@ -1,8 +1,8 @@
 {
-  "generation_date": "2026-08-17",
+  "generation_date": "2026-08-24",
   "coverage_period": {
-    "start": "2026-08-10",
-    "end": "2026-08-16",
+    "start": "2026-08-17",
+    "end": "2026-08-23",
     "timezone": "Asia/Shanghai"
   },
   "companies": [
@@ -471,8 +471,8 @@
       "evidence_date": "2026-08-11",
       "source_type": "official_company_release",
       "last_seen": "2026-08-17",
-      "changed_this_week": "new",
-      "status": "new_current_week",
+      "changed_this_week": "no_new_weekly_evidence",
+      "status": "baseline_no_new_weekly_evidence",
       "confidence": "high",
       "confidence_reason": "OpenAI officially stated that eligible customers can access Daybreak Blue and Red through Amazon Bedrock.",
       "markdown_section_ref": "6.2 E20",
@@ -496,8 +496,8 @@
       "evidence_date": "2026-08-13",
       "source_type": "official_company_release",
       "last_seen": "2026-08-17",
-      "changed_this_week": "new",
-      "status": "new_current_week_limited_preview",
+      "changed_this_week": "no_new_weekly_evidence",
+      "status": "baseline_limited_preview_no_new_weekly_evidence",
       "confidence": "high",
       "confidence_reason": "OpenAI officially identified Cerebras as the infrastructure powering the Ultrafast preview.",
       "markdown_section_ref": "6.2 E21",
@@ -512,6 +512,58 @@
       ],
       "min_keyword_matches": 2,
       "notes": "Limited preview for an initial customer group; pricing, allocated capacity and general-availability timing were not disclosed."
+    },
+    {
+      "edge_id": "E22",
+      "supplier": "NVIDIA",
+      "customer": "OpenAI",
+      "product_or_service": "NVIDIA DSX full-stack AI compute for approximately 8 IT-GW at PORTS-Pike",
+      "relationship_type": "ai_compute_infrastructure_supply",
+      "evidence_date": "2026-08-17",
+      "source_type": "official_cross_company_release",
+      "last_seen": "2026-08-24",
+      "changed_this_week": "new",
+      "status": "new_current_week_phased_deployment",
+      "confidence": "high",
+      "confidence_reason": "NVIDIA and OpenAI official materials identify OpenAI as the approximately 8 IT-GW customer and NVIDIA DSX as the compute stack.",
+      "markdown_section_ref": "6.2 E22",
+      "sources": [
+        "https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute",
+        "https://openai.com/index/openai-joins-ports-pike-project/"
+      ],
+      "claim_keywords": [
+        "PORTS-Pike",
+        "OpenAI",
+        "DSX"
+      ],
+      "min_keyword_matches": 3,
+      "notes": "The initial 4.25 IT-GW is planned in phases from 2028; the remaining 3.75 IT-GW is subject to an option, and construction, permitting, financing and delivery risks remain."
+    },
+    {
+      "edge_id": "E23",
+      "supplier": "SB Energy",
+      "customer": "OpenAI",
+      "product_or_service": "Land, power and shell capacity for approximately 8 IT-GW under a 20-year lease",
+      "relationship_type": "data_center_land_power_shell_lease",
+      "evidence_date": "2026-08-17",
+      "source_type": "official_cross_company_release",
+      "last_seen": "2026-08-24",
+      "changed_this_week": "new",
+      "status": "new_current_week_long_term_lease",
+      "confidence": "high",
+      "confidence_reason": "NVIDIA's official release states that SB Energy will build, own and operate the campus under a 20-year lease to OpenAI; OpenAI confirms the approximately 8 IT-GW agreement.",
+      "markdown_section_ref": "6.2 E23",
+      "sources": [
+        "https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute",
+        "https://openai.com/index/openai-joins-ports-pike-project/"
+      ],
+      "claim_keywords": [
+        "SB Energy",
+        "20-year lease",
+        "OpenAI"
+      ],
+      "min_keyword_matches": 3,
+      "notes": "This is a long-dated infrastructure commitment rather than delivered capacity; project-specific energy, permitting, financing and construction milestones remain execution conditions."
     }
   ],
   "sources": [
@@ -535,8 +587,10 @@
     "https://news.skhynix.com/sk-hynix-and-sandisk-begin-global-standardization-ofnext-generation-memory-hbf/",
     "https://openai.com/index/daybreak-models-are-now-available-on-aws/",
     "https://openai.com/index/previewing-ultrafast/",
-    "https://openai.com/index/cerebras-partnership/"
+    "https://openai.com/index/cerebras-partnership/",
+    "https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute",
+    "https://openai.com/index/openai-joins-ports-pike-project/"
   ],
   "confidence": "mixed_high",
-  "notes": "本基线覆盖 2026-08-10 至 2026-08-16，并按固定口径覆盖 12 家公司。图、Markdown 表格和 JSON 共用 E01-E21。E20 为 OpenAI Daybreak 经 Amazon Bedrock 分发的新关系，E21 为 Cerebras 支撑 OpenAI Ultrafast 推理的新关系；E01-E19 本周均无可确认的客户级新增证据。"
+  "notes": "本基线覆盖 2026-08-17 至 2026-08-23，并按固定口径覆盖 12 家公司。图、Markdown 表格和 JSON 共用 E01-E23。E22 为 NVIDIA 向 OpenAI 提供 PORTS-Pike DSX 计算栈的新关系，E23 为 SB Energy 向 OpenAI 提供土地、电力与机房壳体的长期租赁关系；E01-E21 本周均无可确认的客户级新增证据。"
 }

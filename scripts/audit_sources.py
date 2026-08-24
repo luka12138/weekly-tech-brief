@@ -41,6 +41,7 @@ OFFICIAL_HOST_KEYWORDS = [
     "tesla.com",
     "openai.com",
     "anthropic.com",
+    "claude.com",
     "samsung.com",
     "skhynix.com",
     "tsmc.com",

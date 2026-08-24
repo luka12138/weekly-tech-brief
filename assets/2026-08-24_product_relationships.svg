@@ -1,0 +1,385 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="1320" viewBox="0 0 1680 1320">
+<rect width="100%" height="100%" fill="#0f172a"/>
+<circle cx="840.0" cy="660.0" r="180" fill="none" stroke="#334155" stroke-width="1" stroke-opacity="0.75"/>
+<circle cx="840.0" cy="660.0" r="300" fill="none" stroke="#334155" stroke-width="1" stroke-opacity="0.55"/>
+<circle cx="840.0" cy="660.0" r="470" fill="none" stroke="#334155" stroke-width="1" stroke-opacity="0.35"/>
+<text x="44" y="48" font-size="24" font-weight="800" fill="#f8fafc">2026 年度十二家公司主营产品上下游关系图</text>
+<text x="44" y="74" font-size="12" fill="#94a3b8">产品级 Obsidian 风格网络图：公司为大节点，主营产品为小节点，跨公司关系以 Edge ID 标出并可悬停查看。</text>
+<text x="44" y="1270" font-size="11" fill="#94a3b8">边颜色：绿色=本年度官方证据，蓝色=官方基线，橙色=市场共识或待直接证据；淡线=公司内部产品栈。Edge ID 可在 JSON 中追溯。</text>
+<path d="M 790.0 286.6 Q 802.5 451.7 740.0 200.0" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 790.0 286.6 Q 815.0 430.0 790.0 113.4" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 790.0 286.6 Q 840.0 430.0 890.0 113.4" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 740.0 200.0 Q 840.0 430.0 940.0 200.0" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 740.0 200.0 Q 827.5 451.7 890.0 286.6" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 983.4 211.6 Q 933.3 423.3 1070.0 161.6" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 983.4 211.6 Q 955.0 460.8 1156.6 311.6" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 1156.6 211.6 Q 976.7 423.3 1070.0 161.6" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 1070.0 361.6 Q 955.0 460.8 1070.0 161.6" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 983.4 211.6 Q 911.7 460.8 983.4 311.6" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 1288.4 516.6 Q 1039.2 545.0 1188.4 343.4" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 1288.4 516.6 Q 1076.7 566.7 1338.4 430.0" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 1188.4 516.6 Q 1001.7 566.7 1138.4 430.0" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 1288.4 516.6 Q 1039.2 588.3 1188.4 516.6" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 1288.4 343.4 Q 1039.2 501.7 1188.4 343.4" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 1300.0 560.0 Q 1091.7 622.5 1386.6 610.0" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 1213.4 710.0 Q 1070.0 660.0 1386.6 610.0" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 1386.6 710.0 Q 1113.3 660.0 1386.6 610.0" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 1300.0 760.0 Q 1091.7 672.5 1386.6 610.0" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 1213.4 610.0 Q 1070.0 660.0 1386.6 710.0" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 1138.4 890.0 Q 1026.7 753.3 1288.4 803.4" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 1138.4 890.0 Q 1039.2 775.0 1338.4 890.0" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 1138.4 890.0 Q 1026.7 796.7 1288.4 976.6" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 1138.4 890.0 Q 1001.7 796.7 1188.4 976.6" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 1188.4 803.4 Q 1001.7 753.3 1138.4 890.0" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 1156.6 1008.4 Q 976.7 871.7 1070.0 1158.4" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 1070.0 1158.4 Q 933.3 896.7 983.4 1108.4" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 1156.6 1108.4 Q 998.3 859.2 1156.6 1008.4" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 983.4 1008.4 Q 933.3 871.7 1070.0 1158.4" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 983.4 1108.4 Q 933.3 846.7 1070.0 958.4" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 940.0 1120.0 Q 840.0 890.0 740.0 1120.0" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 940.0 1120.0 Q 852.5 868.3 790.0 1033.4" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 790.0 1206.6 Q 840.0 933.3 890.0 1206.6" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 890.0 1206.6 Q 840.0 890.0 790.0 1033.4" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 740.0 1120.0 Q 827.5 868.3 890.0 1033.4" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 380.0 760.0 Q 610.0 660.0 380.0 560.0" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 293.4 610.0 Q 588.3 622.5 380.0 560.0" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 293.4 610.0 Q 610.0 635.0 466.6 610.0" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 293.4 710.0 Q 588.3 647.5 380.0 560.0" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 466.6 710.0 Q 631.7 647.5 380.0 560.0" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 391.6 516.6 Q 640.8 545.0 491.6 343.4" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 341.6 430.0 Q 640.8 545.0 541.6 430.0" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 391.6 343.4 Q 640.8 545.0 491.6 516.6" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 391.6 516.6 Q 615.8 545.0 391.6 343.4" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 491.6 516.6 Q 678.3 566.7 541.6 430.0" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 696.6 311.6 Q 725.0 485.8 523.4 311.6" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 696.6 211.6 Q 746.7 423.3 610.0 161.6" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 610.0 161.6 Q 703.3 448.3 523.4 311.6" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 523.4 211.6 Q 703.3 473.3 610.0 361.6" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 610.0 361.6 Q 703.3 498.3 523.4 311.6" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 696.6 311.6 Q 791.7 479.6 790.0 286.6" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-opacity="0.72"/>
+<g><title>PX51 TSMC 先进节点支撑 Apple silicon 代工</title>
+<rect x="726.2" y="368.4" width="32" height="16" rx="3" fill="#0f172a" fill-opacity="0.94" stroke="#f59e0b" stroke-width="0.9"/>
+<text x="742.2" y="379.9" text-anchor="middle" font-size="8.2" font-weight="700" fill="#f59e0b">PX51</text></g>
+<path d="M 696.6 211.6 Q 883.3 635.0 1156.6 1008.4" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-opacity="0.72"/>
+<g><title>PX52 TSMC 先进封装支撑 NVIDIA AI 加速器</title>
+<rect x="791.9" y="435.8" width="32" height="16" rx="3" fill="#0f172a" fill-opacity="0.94" stroke="#f59e0b" stroke-width="0.9"/>
+<text x="807.9" y="447.3" text-anchor="middle" font-size="8.2" font-weight="700" fill="#f59e0b">PX52</text></g>
+<path d="M 391.6 343.4 Q 807.1 667.9 1156.6 1008.4" fill="none" stroke="#22c55e" stroke-width="1.5" stroke-opacity="0.72"/>
+<g><title>PX53 HBM 支撑 NVIDIA AI 加速器内存带宽</title>
+<rect x="603.1" y="517.4" width="32" height="16" rx="3" fill="#0f172a" fill-opacity="0.94" stroke="#22c55e" stroke-width="0.9"/>
+<text x="619.1" y="528.9" text-anchor="middle" font-size="8.2" font-weight="700" fill="#22c55e">PX53</text></g>
+<path d="M 380.0 760.0 Q 700.0 570.0 740.0 200.0" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-opacity="0.72"/>
+<g><title>PX54 Samsung 存储组件与 Apple 终端供应基线</title>
+<rect x="521.2" y="630.5" width="32" height="16" rx="3" fill="#0f172a" fill-opacity="0.94" stroke="#f59e0b" stroke-width="0.9"/>
+<text x="537.2" y="642.0" text-anchor="middle" font-size="8.2" font-weight="700" fill="#f59e0b">PX54</text></g>
+<path d="M 293.4 610.0 Q 678.3 532.5 740.0 200.0" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-opacity="0.72"/>
+<g><title>PX55 Samsung OLED 与 Apple 终端显示供应基线</title>
+<rect x="467.6" y="537.6" width="32" height="16" rx="3" fill="#0f172a" fill-opacity="0.94" stroke="#f59e0b" stroke-width="0.9"/>
+<text x="483.6" y="549.1" text-anchor="middle" font-size="8.2" font-weight="700" fill="#f59e0b">PX55</text></g>
+<path d="M 1156.6 1008.4 Q 1034.2 722.1 1300.0 560.0" fill="none" stroke="#22c55e" stroke-width="1.5" stroke-opacity="0.72"/>
+<g><title>PX56 NVIDIA GPU 支撑 AWS AI 基础设施</title>
+<rect x="1102.5" y="848.8" width="32" height="16" rx="3" fill="#0f172a" fill-opacity="0.94" stroke="#22c55e" stroke-width="0.9"/>
+<text x="1118.5" y="860.3" text-anchor="middle" font-size="8.2" font-weight="700" fill="#22c55e">PX56</text></g>
+<path d="M 1156.6 1008.4 Q 955.0 635.0 983.4 211.6" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-opacity="0.72"/>
+<g><title>PX57 NVIDIA GPU 支撑 Azure AI 基础设施</title>
+<rect x="1045.7" y="786.4" width="32" height="16" rx="3" fill="#0f172a" fill-opacity="0.94" stroke="#f59e0b" stroke-width="0.9"/>
+<text x="1061.7" y="797.9" text-anchor="middle" font-size="8.2" font-weight="700" fill="#f59e0b">PX57</text></g>
+<path d="M 1156.6 1008.4 Q 1043.7 689.6 1338.4 430.0" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.72"/>
+<g><title>PX58 NVIDIA GPU 支撑 Google Cloud AI 基础设施</title>
+<rect x="1109.3" y="825.5" width="32" height="16" rx="3" fill="#0f172a" fill-opacity="0.94" stroke="#38bdf8" stroke-width="0.9"/>
+<text x="1125.3" y="837.0" text-anchor="middle" font-size="8.2" font-weight="700" fill="#38bdf8">PX58</text></g>
+<path d="M 1156.6 1008.4 Q 993.7 804.6 1138.4 890.0" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-opacity="0.72"/>
+<g><title>PX59 NVIDIA GPU 支撑 Meta AI 训练/推理基础设施</title>
+<rect x="1073.5" y="907.9" width="32" height="16" rx="3" fill="#0f172a" fill-opacity="0.94" stroke="#f59e0b" stroke-width="0.9"/>
+<text x="1089.5" y="919.4" text-anchor="middle" font-size="8.2" font-weight="700" fill="#f59e0b">PX59</text></g>
+<path d="M 523.4 311.6 Q 840.0 660.0 1156.6 1008.4" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-opacity="0.72"/>
+<g><title>PX60 TSMC 先进逻辑代工支撑 NVIDIA 数据中心 GPU</title>
+<rect x="684.7" y="497.7" width="32" height="16" rx="3" fill="#0f172a" fill-opacity="0.94" stroke="#f59e0b" stroke-width="0.9"/>
+<text x="700.7" y="509.2" text-anchor="middle" font-size="8.2" font-weight="700" fill="#f59e0b">PX60</text></g>
+<path d="M 696.6 1108.4 Q 746.7 896.7 610.0 1158.4" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 696.6 1108.4 Q 725.0 884.2 523.4 1108.4" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 696.6 1108.4 Q 725.0 859.2 523.4 1008.4" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 610.0 1158.4 Q 725.0 859.2 610.0 958.4" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 696.6 1008.4 Q 768.3 859.2 696.6 1108.4" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 491.6 976.6 Q 640.8 818.3 391.6 976.6" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 491.6 976.6 Q 628.3 796.7 341.6 890.0" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 491.6 976.6 Q 640.8 775.0 391.6 803.4" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 391.6 976.6 Q 640.8 775.0 491.6 803.4" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 541.6 890.0 Q 678.3 796.7 491.6 976.6" fill="none" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.33"/>
+<path d="M 1300.0 560.0 Q 919.2 747.1 696.6 1108.4" fill="none" stroke="#22c55e" stroke-width="1.5" stroke-opacity="0.72"/>
+<g><title>PX71 AWS Trainium 计算资源用于 OpenAI 模型训练与推理</title>
+<rect x="1083.1" y="669.4" width="32" height="16" rx="3" fill="#0f172a" fill-opacity="0.94" stroke="#22c55e" stroke-width="0.9"/>
+<text x="1099.1" y="680.9" text-anchor="middle" font-size="8.2" font-weight="700" fill="#22c55e">PX71</text></g>
+<path d="M 1300.0 560.0 Q 867.9 714.2 491.6 976.6" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.72"/>
+<g><title>PX72 AWS Trainium 计算资源支撑 Claude 模型训练与部署</title>
+<rect x="1046.4" y="645.8" width="32" height="16" rx="3" fill="#0f172a" fill-opacity="0.94" stroke="#38bdf8" stroke-width="0.9"/>
+<text x="1062.4" y="657.3" text-anchor="middle" font-size="8.2" font-weight="700" fill="#38bdf8">PX72</text></g>
+<path d="M 491.6 976.6 Q 867.9 714.2 1300.0 560.0" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.72"/>
+<g><title>PX73 Claude 模型通过 Amazon Bedrock 分发给云客户</title>
+<rect x="690.7" y="829.1" width="32" height="16" rx="3" fill="#0f172a" fill-opacity="0.94" stroke="#38bdf8" stroke-width="0.9"/>
+<text x="706.7" y="840.6" text-anchor="middle" font-size="8.2" font-weight="700" fill="#38bdf8">PX73</text></g>
+<path d="M 1156.6 1008.4 Q 832.1 826.2 491.6 976.6" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.72"/>
+<g><title>PX74 NVIDIA 与 Anthropic 开展架构和模型性能优化协同</title>
+<rect x="957.6" y="923.4" width="32" height="16" rx="3" fill="#0f172a" fill-opacity="0.94" stroke="#38bdf8" stroke-width="0.9"/>
+<text x="973.6" y="934.9" text-anchor="middle" font-size="8.2" font-weight="700" fill="#38bdf8">PX74</text></g>
+<path d="M 696.6 1108.4 Q 919.2 747.1 1300.0 560.0" fill="none" stroke="#22c55e" stroke-width="1.5" stroke-opacity="0.72"/>
+<g><title>PX75 Daybreak Blue 与 Red 通过 Amazon Bedrock 分发</title>
+<rect x="817.6" y="910.7" width="32" height="16" rx="3" fill="#0f172a" fill-opacity="0.94" stroke="#22c55e" stroke-width="0.9"/>
+<text x="833.6" y="922.2" text-anchor="middle" font-size="8.2" font-weight="700" fill="#22c55e">PX75</text></g>
+<path d="M 1156.6 1008.4 Q 883.3 859.2 696.6 1108.4" fill="none" stroke="#22c55e" stroke-width="1.5" stroke-opacity="0.72"/>
+<g><title>PX76 PORTS-Pike 使用 NVIDIA DSX 平台承载 OpenAI 约 8 IT-GW 计算容量</title>
+<rect x="994.3" y="947.1" width="32" height="16" rx="3" fill="#0f172a" fill-opacity="0.94" stroke="#22c55e" stroke-width="0.9"/>
+<text x="1010.3" y="958.6" text-anchor="middle" font-size="8.2" font-weight="700" fill="#22c55e">PX76</text></g>
+<circle cx="840.0" cy="200.0" r="31" fill="#60a5fa" fill-opacity="0.20" stroke="#60a5fa" stroke-width="2.4"/>
+<circle cx="840.0" cy="200.0" r="6" fill="#60a5fa"/>
+<text x="840.0" y="158.0" text-anchor="middle" font-size="14" font-weight="800" fill="#f8fafc">Apple</text>
+<circle cx="1070.0" cy="261.6" r="31" fill="#34d399" fill-opacity="0.20" stroke="#34d399" stroke-width="2.4"/>
+<circle cx="1070.0" cy="261.6" r="6" fill="#34d399"/>
+<text x="1070.0" y="219.6" text-anchor="middle" font-size="14" font-weight="800" fill="#f8fafc">Microsoft</text>
+<circle cx="1238.4" cy="430.0" r="31" fill="#34d399" fill-opacity="0.20" stroke="#34d399" stroke-width="2.4"/>
+<circle cx="1238.4" cy="430.0" r="6" fill="#34d399"/>
+<text x="1238.4" y="388.0" text-anchor="middle" font-size="14" font-weight="800" fill="#f8fafc">Alphabet / Google</text>
+<circle cx="1300.0" cy="660.0" r="31" fill="#34d399" fill-opacity="0.20" stroke="#34d399" stroke-width="2.4"/>
+<circle cx="1300.0" cy="660.0" r="6" fill="#34d399"/>
+<text x="1300.0" y="618.0" text-anchor="middle" font-size="14" font-weight="800" fill="#f8fafc">Amazon / AWS</text>
+<circle cx="1238.4" cy="890.0" r="31" fill="#34d399" fill-opacity="0.20" stroke="#34d399" stroke-width="2.4"/>
+<circle cx="1238.4" cy="890.0" r="6" fill="#34d399"/>
+<text x="1238.4" y="848.0" text-anchor="middle" font-size="14" font-weight="800" fill="#f8fafc">Meta</text>
+<circle cx="1070.0" cy="1058.4" r="31" fill="#fbbf24" fill-opacity="0.20" stroke="#fbbf24" stroke-width="2.4"/>
+<circle cx="1070.0" cy="1058.4" r="6" fill="#fbbf24"/>
+<text x="1070.0" y="1016.4" text-anchor="middle" font-size="14" font-weight="800" fill="#f8fafc">NVIDIA</text>
+<circle cx="840.0" cy="1120.0" r="31" fill="#fb7185" fill-opacity="0.20" stroke="#fb7185" stroke-width="2.4"/>
+<circle cx="840.0" cy="1120.0" r="6" fill="#fb7185"/>
+<text x="840.0" y="1078.0" text-anchor="middle" font-size="14" font-weight="800" fill="#f8fafc">Tesla</text>
+<circle cx="610.0" cy="1058.4" r="31" fill="#22d3ee" fill-opacity="0.20" stroke="#22d3ee" stroke-width="2.4"/>
+<circle cx="610.0" cy="1058.4" r="6" fill="#22d3ee"/>
+<text x="610.0" y="1016.4" text-anchor="middle" font-size="14" font-weight="800" fill="#f8fafc">OpenAI</text>
+<circle cx="441.6" cy="890.0" r="31" fill="#22d3ee" fill-opacity="0.20" stroke="#22d3ee" stroke-width="2.4"/>
+<circle cx="441.6" cy="890.0" r="6" fill="#22d3ee"/>
+<text x="441.6" y="848.0" text-anchor="middle" font-size="14" font-weight="800" fill="#f8fafc">Anthropic</text>
+<circle cx="380.0" cy="660.0" r="31" fill="#c084fc" fill-opacity="0.20" stroke="#c084fc" stroke-width="2.4"/>
+<circle cx="380.0" cy="660.0" r="6" fill="#c084fc"/>
+<text x="380.0" y="618.0" text-anchor="middle" font-size="14" font-weight="800" fill="#f8fafc">Samsung Electronics</text>
+<circle cx="441.6" cy="430.0" r="31" fill="#c084fc" fill-opacity="0.20" stroke="#c084fc" stroke-width="2.4"/>
+<circle cx="441.6" cy="430.0" r="6" fill="#c084fc"/>
+<text x="441.6" y="388.0" text-anchor="middle" font-size="14" font-weight="800" fill="#f8fafc">SK Hynix</text>
+<circle cx="610.0" cy="261.6" r="31" fill="#fbbf24" fill-opacity="0.20" stroke="#fbbf24" stroke-width="2.4"/>
+<circle cx="610.0" cy="261.6" r="6" fill="#fbbf24"/>
+<text x="610.0" y="219.6" text-anchor="middle" font-size="14" font-weight="800" fill="#f8fafc">TSMC</text>
+<circle cx="740.0" cy="200.0" r="13" fill="#60a5fa" fill-opacity="0.18" stroke="#60a5fa" stroke-width="1.4"/>
+<circle cx="740.0" cy="200.0" r="3.5" fill="#60a5fa"/>
+<text x="740.0" y="225.0" text-anchor="middle" font-size="9.2" fill="#cbd5e1">iPhone</text>
+<circle cx="790.0" cy="113.4" r="13" fill="#60a5fa" fill-opacity="0.18" stroke="#60a5fa" stroke-width="1.4"/>
+<circle cx="790.0" cy="113.4" r="3.5" fill="#60a5fa"/>
+<text x="790.0" y="138.4" text-anchor="middle" font-size="9.2" fill="#cbd5e1">Mac</text>
+<circle cx="890.0" cy="113.4" r="13" fill="#60a5fa" fill-opacity="0.18" stroke="#60a5fa" stroke-width="1.4"/>
+<circle cx="890.0" cy="113.4" r="3.5" fill="#60a5fa"/>
+<text x="890.0" y="138.4" text-anchor="middle" font-size="9.2" fill="#cbd5e1">iPad</text>
+<circle cx="940.0" cy="200.0" r="13" fill="#60a5fa" fill-opacity="0.18" stroke="#60a5fa" stroke-width="1.4"/>
+<circle cx="940.0" cy="200.0" r="3.5" fill="#60a5fa"/>
+<text x="940.0" y="225.0" text-anchor="middle" font-size="9.2" fill="#cbd5e1">可穿戴设备</text>
+<circle cx="890.0" cy="286.6" r="13" fill="#60a5fa" fill-opacity="0.18" stroke="#60a5fa" stroke-width="1.4"/>
+<circle cx="890.0" cy="286.6" r="3.5" fill="#60a5fa"/>
+<text x="890.0" y="311.6" text-anchor="middle" font-size="9.2" fill="#cbd5e1">服务</text>
+<circle cx="790.0" cy="286.6" r="13" fill="#60a5fa" fill-opacity="0.18" stroke="#60a5fa" stroke-width="1.4"/>
+<circle cx="790.0" cy="286.6" r="3.5" fill="#60a5fa"/>
+<text x="790.0" y="311.6" text-anchor="middle" font-size="9.2" fill="#cbd5e1">Apple silicon</text>
+<circle cx="983.4" cy="211.6" r="13" fill="#34d399" fill-opacity="0.18" stroke="#34d399" stroke-width="1.4"/>
+<circle cx="983.4" cy="211.6" r="3.5" fill="#34d399"/>
+<text x="983.4" y="236.6" text-anchor="middle" font-size="9.2" fill="#cbd5e1">Azure</text>
+<circle cx="1070.0" cy="161.6" r="13" fill="#34d399" fill-opacity="0.18" stroke="#34d399" stroke-width="1.4"/>
+<circle cx="1070.0" cy="161.6" r="3.5" fill="#34d399"/>
+<text x="1070.0" y="186.6" text-anchor="middle" font-size="9.2" fill="#cbd5e1">Microsoft 365</text>
+<circle cx="1156.6" cy="211.6" r="13" fill="#34d399" fill-opacity="0.18" stroke="#34d399" stroke-width="1.4"/>
+<circle cx="1156.6" cy="211.6" r="3.5" fill="#34d399"/>
+<text x="1156.6" y="236.6" text-anchor="middle" font-size="9.2" fill="#cbd5e1">Windows</text>
+<circle cx="1156.6" cy="311.6" r="13" fill="#34d399" fill-opacity="0.18" stroke="#34d399" stroke-width="1.4"/>
+<circle cx="1156.6" cy="311.6" r="3.5" fill="#34d399"/>
+<text x="1156.6" y="336.6" text-anchor="middle" font-size="9.2" fill="#cbd5e1">GitHub</text>
+<circle cx="1070.0" cy="361.6" r="13" fill="#34d399" fill-opacity="0.18" stroke="#34d399" stroke-width="1.4"/>
+<circle cx="1070.0" cy="361.6" r="3.5" fill="#34d399"/>
+<text x="1070.0" y="386.6" text-anchor="middle" font-size="9.2" fill="#cbd5e1">LinkedIn</text>
+<circle cx="983.4" cy="311.6" r="13" fill="#34d399" fill-opacity="0.18" stroke="#34d399" stroke-width="1.4"/>
+<circle cx="983.4" cy="311.6" r="3.5" fill="#34d399"/>
+<text x="983.4" y="336.6" text-anchor="middle" font-size="9.2" fill="#cbd5e1">Xbox</text>
+<circle cx="1188.4" cy="343.4" r="13" fill="#34d399" fill-opacity="0.18" stroke="#34d399" stroke-width="1.4"/>
+<circle cx="1188.4" cy="343.4" r="3.5" fill="#34d399"/>
+<text x="1188.4" y="368.4" text-anchor="middle" font-size="9.2" fill="#cbd5e1">搜索</text>
+<circle cx="1288.4" cy="343.4" r="13" fill="#34d399" fill-opacity="0.18" stroke="#34d399" stroke-width="1.4"/>
+<circle cx="1288.4" cy="343.4" r="3.5" fill="#34d399"/>
+<text x="1288.4" y="368.4" text-anchor="middle" font-size="9.2" fill="#cbd5e1">YouTube</text>
+<circle cx="1338.4" cy="430.0" r="13" fill="#34d399" fill-opacity="0.18" stroke="#34d399" stroke-width="1.4"/>
+<circle cx="1338.4" cy="430.0" r="3.5" fill="#34d399"/>
+<text x="1338.4" y="455.0" text-anchor="middle" font-size="9.2" fill="#cbd5e1">Google Cloud</text>
+<circle cx="1288.4" cy="516.6" r="13" fill="#34d399" fill-opacity="0.18" stroke="#34d399" stroke-width="1.4"/>
+<circle cx="1288.4" cy="516.6" r="3.5" fill="#34d399"/>
+<text x="1288.4" y="541.6" text-anchor="middle" font-size="9.2" fill="#cbd5e1">Gemini</text>
+<circle cx="1188.4" cy="516.6" r="13" fill="#34d399" fill-opacity="0.18" stroke="#34d399" stroke-width="1.4"/>
+<circle cx="1188.4" cy="516.6" r="3.5" fill="#34d399"/>
+<text x="1188.4" y="541.6" text-anchor="middle" font-size="9.2" fill="#cbd5e1">Android</text>
+<circle cx="1138.4" cy="430.0" r="13" fill="#34d399" fill-opacity="0.18" stroke="#34d399" stroke-width="1.4"/>
+<circle cx="1138.4" cy="430.0" r="3.5" fill="#34d399"/>
+<text x="1138.4" y="455.0" text-anchor="middle" font-size="9.2" fill="#cbd5e1">Pixel</text>
+<circle cx="1300.0" cy="560.0" r="13" fill="#34d399" fill-opacity="0.18" stroke="#34d399" stroke-width="1.4"/>
+<circle cx="1300.0" cy="560.0" r="3.5" fill="#34d399"/>
+<text x="1300.0" y="585.0" text-anchor="middle" font-size="9.2" fill="#cbd5e1">AWS</text>
+<circle cx="1386.6" cy="610.0" r="13" fill="#34d399" fill-opacity="0.18" stroke="#34d399" stroke-width="1.4"/>
+<circle cx="1386.6" cy="610.0" r="3.5" fill="#34d399"/>
+<text x="1386.6" y="635.0" text-anchor="middle" font-size="9.2" fill="#cbd5e1">Marketplace</text>
+<circle cx="1386.6" cy="710.0" r="13" fill="#34d399" fill-opacity="0.18" stroke="#34d399" stroke-width="1.4"/>
+<circle cx="1386.6" cy="710.0" r="3.5" fill="#34d399"/>
+<text x="1386.6" y="735.0" text-anchor="middle" font-size="9.2" fill="#cbd5e1">Prime</text>
+<circle cx="1300.0" cy="760.0" r="13" fill="#34d399" fill-opacity="0.18" stroke="#34d399" stroke-width="1.4"/>
+<circle cx="1300.0" cy="760.0" r="3.5" fill="#34d399"/>
+<text x="1300.0" y="785.0" text-anchor="middle" font-size="9.2" fill="#cbd5e1">广告</text>
+<circle cx="1213.4" cy="710.0" r="13" fill="#34d399" fill-opacity="0.18" stroke="#34d399" stroke-width="1.4"/>
+<circle cx="1213.4" cy="710.0" r="3.5" fill="#34d399"/>
+<text x="1213.4" y="735.0" text-anchor="middle" font-size="9.2" fill="#cbd5e1">物流</text>
+<circle cx="1213.4" cy="610.0" r="13" fill="#34d399" fill-opacity="0.18" stroke="#34d399" stroke-width="1.4"/>
+<circle cx="1213.4" cy="610.0" r="3.5" fill="#34d399"/>
+<text x="1213.4" y="635.0" text-anchor="middle" font-size="9.2" fill="#cbd5e1">设备</text>
+<circle cx="1288.4" cy="803.4" r="13" fill="#34d399" fill-opacity="0.18" stroke="#34d399" stroke-width="1.4"/>
+<circle cx="1288.4" cy="803.4" r="3.5" fill="#34d399"/>
+<text x="1288.4" y="828.4" text-anchor="middle" font-size="9.2" fill="#cbd5e1">Facebook</text>
+<circle cx="1338.4" cy="890.0" r="13" fill="#34d399" fill-opacity="0.18" stroke="#34d399" stroke-width="1.4"/>
+<circle cx="1338.4" cy="890.0" r="3.5" fill="#34d399"/>
+<text x="1338.4" y="915.0" text-anchor="middle" font-size="9.2" fill="#cbd5e1">Instagram</text>
+<circle cx="1288.4" cy="976.6" r="13" fill="#34d399" fill-opacity="0.18" stroke="#34d399" stroke-width="1.4"/>
+<circle cx="1288.4" cy="976.6" r="3.5" fill="#34d399"/>
+<text x="1288.4" y="1001.6" text-anchor="middle" font-size="9.2" fill="#cbd5e1">WhatsApp</text>
+<circle cx="1188.4" cy="976.6" r="13" fill="#34d399" fill-opacity="0.18" stroke="#34d399" stroke-width="1.4"/>
+<circle cx="1188.4" cy="976.6" r="3.5" fill="#34d399"/>
+<text x="1188.4" y="1001.6" text-anchor="middle" font-size="9.2" fill="#cbd5e1">Threads</text>
+<circle cx="1138.4" cy="890.0" r="13" fill="#34d399" fill-opacity="0.18" stroke="#34d399" stroke-width="1.4"/>
+<circle cx="1138.4" cy="890.0" r="3.5" fill="#34d399"/>
+<text x="1138.4" y="915.0" text-anchor="middle" font-size="9.2" fill="#cbd5e1">Meta AI</text>
+<circle cx="1188.4" cy="803.4" r="13" fill="#34d399" fill-opacity="0.18" stroke="#34d399" stroke-width="1.4"/>
+<circle cx="1188.4" cy="803.4" r="3.5" fill="#34d399"/>
+<text x="1188.4" y="828.4" text-anchor="middle" font-size="9.2" fill="#cbd5e1">Reality Labs</text>
+<circle cx="1156.6" cy="1008.4" r="13" fill="#fbbf24" fill-opacity="0.18" stroke="#fbbf24" stroke-width="1.4"/>
+<circle cx="1156.6" cy="1008.4" r="3.5" fill="#fbbf24"/>
+<text x="1156.6" y="1033.4" text-anchor="middle" font-size="9.2" fill="#cbd5e1">数据中心 GPU</text>
+<circle cx="1156.6" cy="1108.4" r="13" fill="#fbbf24" fill-opacity="0.18" stroke="#fbbf24" stroke-width="1.4"/>
+<circle cx="1156.6" cy="1108.4" r="3.5" fill="#fbbf24"/>
+<text x="1156.6" y="1133.4" text-anchor="middle" font-size="9.2" fill="#cbd5e1">网络产品</text>
+<circle cx="1070.0" cy="1158.4" r="13" fill="#fbbf24" fill-opacity="0.18" stroke="#fbbf24" stroke-width="1.4"/>
+<circle cx="1070.0" cy="1158.4" r="3.5" fill="#fbbf24"/>
+<text x="1070.0" y="1183.4" text-anchor="middle" font-size="9.2" fill="#cbd5e1">CUDA</text>
+<circle cx="983.4" cy="1108.4" r="13" fill="#fbbf24" fill-opacity="0.18" stroke="#fbbf24" stroke-width="1.4"/>
+<circle cx="983.4" cy="1108.4" r="3.5" fill="#fbbf24"/>
+<text x="983.4" y="1133.4" text-anchor="middle" font-size="9.2" fill="#cbd5e1">AI 软件</text>
+<circle cx="983.4" cy="1008.4" r="13" fill="#fbbf24" fill-opacity="0.18" stroke="#fbbf24" stroke-width="1.4"/>
+<circle cx="983.4" cy="1008.4" r="3.5" fill="#fbbf24"/>
+<text x="983.4" y="1033.4" text-anchor="middle" font-size="9.2" fill="#cbd5e1">游戏 GPU</text>
+<circle cx="1070.0" cy="958.4" r="13" fill="#fbbf24" fill-opacity="0.18" stroke="#fbbf24" stroke-width="1.4"/>
+<circle cx="1070.0" cy="958.4" r="3.5" fill="#fbbf24"/>
+<text x="1070.0" y="983.4" text-anchor="middle" font-size="9.2" fill="#cbd5e1">汽车业务</text>
+<circle cx="940.0" cy="1120.0" r="13" fill="#fb7185" fill-opacity="0.18" stroke="#fb7185" stroke-width="1.4"/>
+<circle cx="940.0" cy="1120.0" r="3.5" fill="#fb7185"/>
+<text x="940.0" y="1145.0" text-anchor="middle" font-size="9.2" fill="#cbd5e1">电动车</text>
+<circle cx="890.0" cy="1206.6" r="13" fill="#fb7185" fill-opacity="0.18" stroke="#fb7185" stroke-width="1.4"/>
+<circle cx="890.0" cy="1206.6" r="3.5" fill="#fb7185"/>
+<text x="890.0" y="1231.6" text-anchor="middle" font-size="9.2" fill="#cbd5e1">储能</text>
+<circle cx="790.0" cy="1206.6" r="13" fill="#fb7185" fill-opacity="0.18" stroke="#fb7185" stroke-width="1.4"/>
+<circle cx="790.0" cy="1206.6" r="3.5" fill="#fb7185"/>
+<text x="790.0" y="1231.6" text-anchor="middle" font-size="9.2" fill="#cbd5e1">太阳能</text>
+<circle cx="740.0" cy="1120.0" r="13" fill="#fb7185" fill-opacity="0.18" stroke="#fb7185" stroke-width="1.4"/>
+<circle cx="740.0" cy="1120.0" r="3.5" fill="#fb7185"/>
+<text x="740.0" y="1145.0" text-anchor="middle" font-size="9.2" fill="#cbd5e1">FSD</text>
+<circle cx="790.0" cy="1033.4" r="13" fill="#fb7185" fill-opacity="0.18" stroke="#fb7185" stroke-width="1.4"/>
+<circle cx="790.0" cy="1033.4" r="3.5" fill="#fb7185"/>
+<text x="790.0" y="1058.4" text-anchor="middle" font-size="9.2" fill="#cbd5e1">超级充电</text>
+<circle cx="890.0" cy="1033.4" r="13" fill="#fb7185" fill-opacity="0.18" stroke="#fb7185" stroke-width="1.4"/>
+<circle cx="890.0" cy="1033.4" r="3.5" fill="#fb7185"/>
+<text x="890.0" y="1058.4" text-anchor="middle" font-size="9.2" fill="#cbd5e1">机器人</text>
+<circle cx="696.6" cy="1108.4" r="13" fill="#22d3ee" fill-opacity="0.18" stroke="#22d3ee" stroke-width="1.4"/>
+<circle cx="696.6" cy="1108.4" r="3.5" fill="#22d3ee"/>
+<text x="696.6" y="1133.4" text-anchor="middle" font-size="9.2" fill="#cbd5e1">GPT 模型</text>
+<circle cx="610.0" cy="1158.4" r="13" fill="#22d3ee" fill-opacity="0.18" stroke="#22d3ee" stroke-width="1.4"/>
+<circle cx="610.0" cy="1158.4" r="3.5" fill="#22d3ee"/>
+<text x="610.0" y="1183.4" text-anchor="middle" font-size="9.2" fill="#cbd5e1">ChatGPT</text>
+<circle cx="523.4" cy="1108.4" r="13" fill="#22d3ee" fill-opacity="0.18" stroke="#22d3ee" stroke-width="1.4"/>
+<circle cx="523.4" cy="1108.4" r="3.5" fill="#22d3ee"/>
+<text x="523.4" y="1133.4" text-anchor="middle" font-size="9.2" fill="#cbd5e1">OpenAI API</text>
+<circle cx="523.4" cy="1008.4" r="13" fill="#22d3ee" fill-opacity="0.18" stroke="#22d3ee" stroke-width="1.4"/>
+<circle cx="523.4" cy="1008.4" r="3.5" fill="#22d3ee"/>
+<text x="523.4" y="1033.4" text-anchor="middle" font-size="9.2" fill="#cbd5e1">Codex</text>
+<circle cx="610.0" cy="958.4" r="13" fill="#22d3ee" fill-opacity="0.18" stroke="#22d3ee" stroke-width="1.4"/>
+<circle cx="610.0" cy="958.4" r="3.5" fill="#22d3ee"/>
+<text x="610.0" y="983.4" text-anchor="middle" font-size="9.2" fill="#cbd5e1">ChatGPT Work</text>
+<circle cx="696.6" cy="1008.4" r="13" fill="#22d3ee" fill-opacity="0.18" stroke="#22d3ee" stroke-width="1.4"/>
+<circle cx="696.6" cy="1008.4" r="3.5" fill="#22d3ee"/>
+<text x="696.6" y="1033.4" text-anchor="middle" font-size="9.2" fill="#cbd5e1">AI 安全评估</text>
+<circle cx="491.6" cy="976.6" r="13" fill="#22d3ee" fill-opacity="0.18" stroke="#22d3ee" stroke-width="1.4"/>
+<circle cx="491.6" cy="976.6" r="3.5" fill="#22d3ee"/>
+<text x="491.6" y="1001.6" text-anchor="middle" font-size="9.2" fill="#cbd5e1">Claude 模型</text>
+<circle cx="391.6" cy="976.6" r="13" fill="#22d3ee" fill-opacity="0.18" stroke="#22d3ee" stroke-width="1.4"/>
+<circle cx="391.6" cy="976.6" r="3.5" fill="#22d3ee"/>
+<text x="391.6" y="1001.6" text-anchor="middle" font-size="9.2" fill="#cbd5e1">Claude</text>
+<circle cx="341.6" cy="890.0" r="13" fill="#22d3ee" fill-opacity="0.18" stroke="#22d3ee" stroke-width="1.4"/>
+<circle cx="341.6" cy="890.0" r="3.5" fill="#22d3ee"/>
+<text x="341.6" y="915.0" text-anchor="middle" font-size="9.2" fill="#cbd5e1">Claude API</text>
+<circle cx="391.6" cy="803.4" r="13" fill="#22d3ee" fill-opacity="0.18" stroke="#22d3ee" stroke-width="1.4"/>
+<circle cx="391.6" cy="803.4" r="3.5" fill="#22d3ee"/>
+<text x="391.6" y="828.4" text-anchor="middle" font-size="9.2" fill="#cbd5e1">Claude Code</text>
+<circle cx="491.6" cy="803.4" r="13" fill="#22d3ee" fill-opacity="0.18" stroke="#22d3ee" stroke-width="1.4"/>
+<circle cx="491.6" cy="803.4" r="3.5" fill="#22d3ee"/>
+<text x="491.6" y="828.4" text-anchor="middle" font-size="9.2" fill="#cbd5e1">Claude Cowork</text>
+<circle cx="541.6" cy="890.0" r="13" fill="#22d3ee" fill-opacity="0.18" stroke="#22d3ee" stroke-width="1.4"/>
+<circle cx="541.6" cy="890.0" r="3.5" fill="#22d3ee"/>
+<text x="541.6" y="915.0" text-anchor="middle" font-size="9.2" fill="#cbd5e1">AI 安全研究</text>
+<circle cx="380.0" cy="760.0" r="13" fill="#c084fc" fill-opacity="0.18" stroke="#c084fc" stroke-width="1.4"/>
+<circle cx="380.0" cy="760.0" r="3.5" fill="#c084fc"/>
+<text x="380.0" y="785.0" text-anchor="middle" font-size="9.2" fill="#cbd5e1">存储</text>
+<circle cx="293.4" cy="710.0" r="13" fill="#c084fc" fill-opacity="0.18" stroke="#c084fc" stroke-width="1.4"/>
+<circle cx="293.4" cy="710.0" r="3.5" fill="#c084fc"/>
+<text x="293.4" y="735.0" text-anchor="middle" font-size="9.2" fill="#cbd5e1">晶圆代工</text>
+<circle cx="293.4" cy="610.0" r="13" fill="#c084fc" fill-opacity="0.18" stroke="#c084fc" stroke-width="1.4"/>
+<circle cx="293.4" cy="610.0" r="3.5" fill="#c084fc"/>
+<text x="293.4" y="635.0" text-anchor="middle" font-size="9.2" fill="#cbd5e1">OLED</text>
+<circle cx="380.0" cy="560.0" r="13" fill="#c084fc" fill-opacity="0.18" stroke="#c084fc" stroke-width="1.4"/>
+<circle cx="380.0" cy="560.0" r="3.5" fill="#c084fc"/>
+<text x="380.0" y="585.0" text-anchor="middle" font-size="9.2" fill="#cbd5e1">移动设备</text>
+<circle cx="466.6" cy="610.0" r="13" fill="#c084fc" fill-opacity="0.18" stroke="#c084fc" stroke-width="1.4"/>
+<circle cx="466.6" cy="610.0" r="3.5" fill="#c084fc"/>
+<text x="466.6" y="635.0" text-anchor="middle" font-size="9.2" fill="#cbd5e1">电视/显示</text>
+<circle cx="466.6" cy="710.0" r="13" fill="#c084fc" fill-opacity="0.18" stroke="#c084fc" stroke-width="1.4"/>
+<circle cx="466.6" cy="710.0" r="3.5" fill="#c084fc"/>
+<text x="466.6" y="735.0" text-anchor="middle" font-size="9.2" fill="#cbd5e1">家电</text>
+<circle cx="391.6" cy="516.6" r="13" fill="#c084fc" fill-opacity="0.18" stroke="#c084fc" stroke-width="1.4"/>
+<circle cx="391.6" cy="516.6" r="3.5" fill="#c084fc"/>
+<text x="391.6" y="541.6" text-anchor="middle" font-size="9.2" fill="#cbd5e1">DRAM</text>
+<circle cx="341.6" cy="430.0" r="13" fill="#c084fc" fill-opacity="0.18" stroke="#c084fc" stroke-width="1.4"/>
+<circle cx="341.6" cy="430.0" r="3.5" fill="#c084fc"/>
+<text x="341.6" y="455.0" text-anchor="middle" font-size="9.2" fill="#cbd5e1">NAND</text>
+<circle cx="391.6" cy="343.4" r="13" fill="#c084fc" fill-opacity="0.18" stroke="#c084fc" stroke-width="1.4"/>
+<circle cx="391.6" cy="343.4" r="3.5" fill="#c084fc"/>
+<text x="391.6" y="368.4" text-anchor="middle" font-size="9.2" fill="#cbd5e1">HBM</text>
+<circle cx="491.6" cy="343.4" r="13" fill="#c084fc" fill-opacity="0.18" stroke="#c084fc" stroke-width="1.4"/>
+<circle cx="491.6" cy="343.4" r="3.5" fill="#c084fc"/>
+<text x="491.6" y="368.4" text-anchor="middle" font-size="9.2" fill="#cbd5e1">CXL 存储</text>
+<circle cx="541.6" cy="430.0" r="13" fill="#c084fc" fill-opacity="0.18" stroke="#c084fc" stroke-width="1.4"/>
+<circle cx="541.6" cy="430.0" r="3.5" fill="#c084fc"/>
+<text x="541.6" y="455.0" text-anchor="middle" font-size="9.2" fill="#cbd5e1">企业级 SSD</text>
+<circle cx="491.6" cy="516.6" r="13" fill="#c084fc" fill-opacity="0.18" stroke="#c084fc" stroke-width="1.4"/>
+<circle cx="491.6" cy="516.6" r="3.5" fill="#c084fc"/>
+<text x="491.6" y="541.6" text-anchor="middle" font-size="9.2" fill="#cbd5e1">先进封装</text>
+<circle cx="523.4" cy="311.6" r="13" fill="#fbbf24" fill-opacity="0.18" stroke="#fbbf24" stroke-width="1.4"/>
+<circle cx="523.4" cy="311.6" r="3.5" fill="#fbbf24"/>
+<text x="523.4" y="336.6" text-anchor="middle" font-size="9.2" fill="#cbd5e1">先进逻辑代工</text>
+<circle cx="523.4" cy="211.6" r="13" fill="#fbbf24" fill-opacity="0.18" stroke="#fbbf24" stroke-width="1.4"/>
+<circle cx="523.4" cy="211.6" r="3.5" fill="#fbbf24"/>
+<text x="523.4" y="236.6" text-anchor="middle" font-size="9.2" fill="#cbd5e1">特殊制程</text>
+<circle cx="610.0" cy="161.6" r="13" fill="#fbbf24" fill-opacity="0.18" stroke="#fbbf24" stroke-width="1.4"/>
+<circle cx="610.0" cy="161.6" r="3.5" fill="#fbbf24"/>
+<text x="610.0" y="186.6" text-anchor="middle" font-size="9.2" fill="#cbd5e1">3DFabric</text>
+<circle cx="696.6" cy="211.6" r="13" fill="#fbbf24" fill-opacity="0.18" stroke="#fbbf24" stroke-width="1.4"/>
+<circle cx="696.6" cy="211.6" r="3.5" fill="#fbbf24"/>
+<text x="696.6" y="236.6" text-anchor="middle" font-size="9.2" fill="#cbd5e1">CoWoS</text>
+<circle cx="696.6" cy="311.6" r="13" fill="#fbbf24" fill-opacity="0.18" stroke="#fbbf24" stroke-width="1.4"/>
+<circle cx="696.6" cy="311.6" r="3.5" fill="#fbbf24"/>
+<text x="696.6" y="336.6" text-anchor="middle" font-size="9.2" fill="#cbd5e1">N3/N2 节点</text>
+<circle cx="610.0" cy="361.6" r="13" fill="#fbbf24" fill-opacity="0.18" stroke="#fbbf24" stroke-width="1.4"/>
+<circle cx="610.0" cy="361.6" r="3.5" fill="#fbbf24"/>
+<text x="610.0" y="386.6" text-anchor="middle" font-size="9.2" fill="#cbd5e1">晶圆服务</text>
+</svg>
