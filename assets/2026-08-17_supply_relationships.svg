@@ -1,174 +1,277 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="1240" viewBox="0 0 1680 1240">
-<rect width="100%" height="100%" fill="#0f172a"/>
-<circle cx="840.0" cy="640.0" r="220" fill="none" stroke="#334155" stroke-width="1" stroke-opacity="0.75"/>
-<circle cx="840.0" cy="640.0" r="340" fill="none" stroke="#334155" stroke-width="1" stroke-opacity="0.55"/>
-<circle cx="840.0" cy="640.0" r="455" fill="none" stroke="#334155" stroke-width="1" stroke-opacity="0.35"/>
-<text x="44" y="48" font-size="24" font-weight="800" fill="#f8fafc">本周供应关系图 2026-08-10 至 2026-08-16</text>
-<text x="44" y="74" font-size="12" fill="#94a3b8">Obsidian 风格网络图，基于 state/supply_graph_baseline.json 生成；边以 Edge ID 标出并可悬停查看。</text>
-<text x="44" y="1190" font-size="11" fill="#94a3b8">边颜色：绿色=新增，蓝色=强化，橙色=风险/媒体报道，灰色=基线关系。Edge ID 可在周报 6.2 与 JSON 中追溯。</text>
-<path d="M 840.0 210.0 Q 870.3 399.7 961.3 108.7" fill="none" stroke="#64748b" stroke-width="1.5" stroke-opacity="0.72"/>
-<g><title>E01 Apple Maps EV routing and in-vehicle navigation for Ford Universal EV Platform</title>
-<rect x="843.8" y="267.4" width="34" height="17" rx="3" fill="#0f172a" fill-opacity="0.94" stroke="#64748b" stroke-width="0.9"/>
-<text x="860.8" y="279.9" text-anchor="middle" font-size="8.5" font-weight="700" fill="#64748b">E01</text></g>
-<path d="M 1179.8 213.9 Q 978.7 440.4 1055.0 267.6" fill="none" stroke="#64748b" stroke-width="1.5" stroke-opacity="0.72"/>
-<g><title>E02 AMD Helios, ND MI455X v7 and EPYC for Azure AI and HPC infrastructure</title>
-<rect x="1074.4" y="297.1" width="34" height="17" rx="3" fill="#0f172a" fill-opacity="0.94" stroke="#64748b" stroke-width="0.9"/>
-<text x="1091.4" y="309.6" text-anchor="middle" font-size="8.5" font-weight="700" fill="#64748b">E02</text></g>
-<path d="M 1331.0 403.5 Q 1016.5 487.8 1055.0 267.6" fill="none" stroke="#64748b" stroke-width="1.5" stroke-opacity="0.72"/>
-<g><title>E03 Frontier AI model services for enterprises and regulated industries</title>
-<rect x="1169.9" y="416.8" width="34" height="17" rx="3" fill="#0f172a" fill-opacity="0.94" stroke="#64748b" stroke-width="0.9"/>
-<text x="1186.9" y="429.3" text-anchor="middle" font-size="8.5" font-weight="700" fill="#64748b">E03</text></g>
-<path d="M 1212.4 425.0 Q 1069.3 586.2 1385.0 640.0" fill="none" stroke="#64748b" stroke-width="1.5" stroke-opacity="0.72"/>
-<g><title>E04 Google Cloud AI services, TPU pods and cloud infrastructure</title>
-<rect x="1151.6" y="494.2" width="34" height="17" rx="3" fill="#0f172a" fill-opacity="0.94" stroke="#64748b" stroke-width="0.9"/>
-<text x="1168.6" y="506.7" text-anchor="middle" font-size="8.5" font-weight="700" fill="#64748b">E04</text></g>
-<path d="M 467.6 855.0 Q 854.4 693.8 1270.0 640.0" fill="none" stroke="#64748b" stroke-width="1.5" stroke-opacity="0.72"/>
-<g><title>E05 Claude Opus 5 availability on Amazon Bedrock</title>
-<rect x="661.6" y="765.8" width="34" height="17" rx="3" fill="#0f172a" fill-opacity="0.94" stroke="#64748b" stroke-width="0.9"/>
-<text x="678.6" y="778.3" text-anchor="middle" font-size="8.5" font-weight="700" fill="#64748b">E05</text></g>
-<path d="M 1212.4 855.0 Q 1055.9 752.9 1331.0 876.5" fill="none" stroke="#64748b" stroke-width="1.5" stroke-opacity="0.72"/>
-<g><title>E06 Facebook, Instagram, WhatsApp, Threads and advertising systems</title>
-<rect x="1142.3" y="806.3" width="34" height="17" rx="3" fill="#0f172a" fill-opacity="0.94" stroke="#64748b" stroke-width="0.9"/>
-<text x="1159.3" y="818.8" text-anchor="middle" font-size="8.5" font-weight="700" fill="#64748b">E06</text></g>
-<path d="M 1055.0 1012.4 Q 978.7 839.6 1179.8 1066.1" fill="none" stroke="#64748b" stroke-width="1.5" stroke-opacity="0.72"/>
-<g><title>E07 NVIDIA AI infrastructure for AI factories and SK Telecom AI infrastructure</title>
-<rect x="1017.0" y="938.2" width="34" height="17" rx="3" fill="#0f172a" fill-opacity="0.94" stroke="#64748b" stroke-width="0.9"/>
-<text x="1034.0" y="950.7" text-anchor="middle" font-size="8.5" font-weight="700" fill="#64748b">E07</text></g>
-<path d="M 467.6 425.0 Q 800.7 679.3 1055.0 1012.4" fill="none" stroke="#64748b" stroke-width="1.5" stroke-opacity="0.72"/>
-<g><title>E08 HBM and next-generation AI memory ecosystem</title>
-<rect x="624.7" y="558.1" width="34" height="17" rx="3" fill="#0f172a" fill-opacity="0.94" stroke="#64748b" stroke-width="0.9"/>
-<text x="641.7" y="570.6" text-anchor="middle" font-size="8.5" font-weight="700" fill="#64748b">E08</text></g>
-<path d="M 410.0 640.0 Q 762.8 772.8 961.3 1171.3" fill="none" stroke="#64748b" stroke-width="1.5" stroke-opacity="0.72"/>
-<g><title>E09 HBM, 2nm-and-below foundry and 2.3D/2.5D advanced packaging</title>
-<rect x="572.3" y="721.1" width="34" height="17" rx="3" fill="#0f172a" fill-opacity="0.94" stroke="#64748b" stroke-width="0.9"/>
-<text x="589.3" y="733.6" text-anchor="middle" font-size="8.5" font-weight="700" fill="#64748b">E09</text></g>
-<path d="M 840.0 1070.0 Q 809.7 880.3 718.7 1171.3" fill="none" stroke="#64748b" stroke-width="1.5" stroke-opacity="0.72"/>
-<g><title>E10 Electric vehicles, energy storage systems and energy services</title>
-<rect x="802.2" y="992.6" width="34" height="17" rx="3" fill="#0f172a" fill-opacity="0.94" stroke="#64748b" stroke-width="0.9"/>
-<text x="819.2" y="1005.1" text-anchor="middle" font-size="8.5" font-weight="700" fill="#64748b">E10</text></g>
-<path d="M 625.0 267.6 Q 840.0 640.0 1055.0 1012.4" fill="none" stroke="#64748b" stroke-width="1.5" stroke-opacity="0.72"/>
-<g><title>E11 Advanced-node foundry and advanced packaging for AI GPUs</title>
-<rect x="724.1" y="458.7" width="34" height="17" rx="3" fill="#0f172a" fill-opacity="0.94" stroke="#64748b" stroke-width="0.9"/>
-<text x="741.1" y="471.2" text-anchor="middle" font-size="8.5" font-weight="700" fill="#64748b">E11</text></g>
-<path d="M 625.0 267.6 Q 786.2 439.4 840.0 210.0" fill="none" stroke="#64748b" stroke-width="1.5" stroke-opacity="0.72"/>
-<g><title>E12 Advanced-node foundry for Apple A-series and M-series chips</title>
-<rect x="687.2" y="321.1" width="34" height="17" rx="3" fill="#0f172a" fill-opacity="0.94" stroke="#64748b" stroke-width="0.9"/>
-<text x="704.2" y="333.6" text-anchor="middle" font-size="8.5" font-weight="700" fill="#64748b">E12</text></g>
-<path d="M 1055.0 1012.4 Q 808.8 839.6 500.2 1066.1" fill="none" stroke="#64748b" stroke-width="1.5" stroke-opacity="0.72"/>
-<g><title>E13 Vera Rubin systems, long-term compute access and compute-platform co-development</title>
-<rect x="900.5" y="938.2" width="34" height="17" rx="3" fill="#0f172a" fill-opacity="0.94" stroke="#64748b" stroke-width="0.9"/>
-<text x="917.5" y="950.7" text-anchor="middle" font-size="8.5" font-weight="700" fill="#64748b">E13</text></g>
-<path d="M 1270.0 640.0 Q 893.8 733.1 625.0 1012.4" fill="none" stroke="#64748b" stroke-width="1.5" stroke-opacity="0.72"/>
-<g><title>E14 Trainium-based multi-year, multi-gigawatt AI compute commitment</title>
-<rect x="1057.7" y="693.8" width="34" height="17" rx="3" fill="#0f172a" fill-opacity="0.94" stroke="#64748b" stroke-width="0.9"/>
-<text x="1074.7" y="706.3" text-anchor="middle" font-size="8.5" font-weight="700" fill="#64748b">E14</text></g>
-<path d="M 1270.0 640.0 Q 854.4 693.8 467.6 855.0" fill="none" stroke="#64748b" stroke-width="1.5" stroke-opacity="0.72"/>
-<g><title>E15 Trainium-based multi-year, multi-gigawatt AI compute commitment</title>
-<rect x="1030.7" y="666.9" width="34" height="17" rx="3" fill="#0f172a" fill-opacity="0.94" stroke="#64748b" stroke-width="0.9"/>
-<text x="1047.7" y="679.4" text-anchor="middle" font-size="8.5" font-weight="700" fill="#64748b">E15</text></g>
-<path d="M 1055.0 267.6 Q 771.0 606.0 349.0 876.5" fill="none" stroke="#64748b" stroke-width="1.5" stroke-opacity="0.72"/>
-<g><title>E16 Azure cloud and AI services plus Microsoft 365 Copilot</title>
-<rect x="874.6" y="435.4" width="34" height="17" rx="3" fill="#0f172a" fill-opacity="0.94" stroke="#64748b" stroke-width="0.9"/>
-<text x="891.6" y="447.9" text-anchor="middle" font-size="8.5" font-weight="700" fill="#64748b">E16</text></g>
-<path d="M 410.0 640.0 Q 596.2 640.0 295.0 640.0" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-opacity="0.72"/>
-<g><title>E17 Long-term server-memory and AI-infrastructure chip supply contracts</title>
-<rect x="458.0" y="630.0" width="34" height="17" rx="3" fill="#0f172a" fill-opacity="0.94" stroke="#f59e0b" stroke-width="0.9"/>
-<text x="475.0" y="642.5" text-anchor="middle" font-size="8.5" font-weight="700" fill="#f59e0b">E17</text></g>
-<path d="M 467.6 425.0 Q 624.1 527.1 349.0 403.5" fill="none" stroke="#64748b" stroke-width="1.5" stroke-opacity="0.72"/>
-<g><title>E18 HBM4, AI server DRAM, eSSD and long-term supply agreements</title>
-<rect x="503.7" y="453.7" width="34" height="17" rx="3" fill="#0f172a" fill-opacity="0.94" stroke="#64748b" stroke-width="0.9"/>
-<text x="520.7" y="466.2" text-anchor="middle" font-size="8.5" font-weight="700" fill="#64748b">E18</text></g>
-<path d="M 467.6 425.0 Q 662.0 479.7 500.2 213.9" fill="none" stroke="#64748b" stroke-width="1.5" stroke-opacity="0.72"/>
-<g><title>E19 First open High Bandwidth Flash standard specification for AI inference memory tiers</title>
-<rect x="529.6" y="421.2" width="34" height="17" rx="3" fill="#0f172a" fill-opacity="0.94" stroke="#64748b" stroke-width="0.9"/>
-<text x="546.6" y="433.7" text-anchor="middle" font-size="8.5" font-weight="700" fill="#64748b">E19</text></g>
-<path d="M 625.0 1012.4 Q 893.8 733.1 1270.0 640.0" fill="none" stroke="#22c55e" stroke-width="1.5" stroke-opacity="0.72"/>
-<g><title>E20 Daybreak Blue and Daybreak Red cyber models available through Amazon Bedrock</title>
-<rect x="761.0" y="865.1" width="34" height="17" rx="3" fill="#0f172a" fill-opacity="0.94" stroke="#22c55e" stroke-width="0.9"/>
-<text x="778.0" y="877.6" text-anchor="middle" font-size="8.5" font-weight="700" fill="#22c55e">E20</text></g>
-<path d="M 718.7 108.7 Q 755.9 600.3 625.0 1012.4" fill="none" stroke="#22c55e" stroke-width="1.5" stroke-opacity="0.72"/>
-<g><title>E21 Cerebras-powered GPT-5.6 Sol Ultrafast inference at up to 750 output tokens per second</title>
-<rect x="709.6" y="358.3" width="34" height="17" rx="3" fill="#0f172a" fill-opacity="0.94" stroke="#22c55e" stroke-width="0.9"/>
-<text x="726.6" y="370.8" text-anchor="middle" font-size="8.5" font-weight="700" fill="#22c55e">E21</text></g>
-<circle cx="840.0" cy="210.0" r="29" fill="#a78bfa" fill-opacity="0.20" stroke="#a78bfa" stroke-width="2"/>
-<circle cx="840.0" cy="210.0" r="5" fill="#a78bfa"/>
-<text x="840.0" y="169.0" text-anchor="middle" font-size="12" font-weight="700" fill="#e5e7eb">Apple</text>
-<circle cx="1055.0" cy="267.6" r="29" fill="#a78bfa" fill-opacity="0.20" stroke="#a78bfa" stroke-width="2"/>
-<circle cx="1055.0" cy="267.6" r="5" fill="#a78bfa"/>
-<text x="1055.0" y="226.6" text-anchor="middle" font-size="12" font-weight="700" fill="#e5e7eb">Microsoft</text>
-<circle cx="1212.4" cy="425.0" r="29" fill="#a78bfa" fill-opacity="0.20" stroke="#a78bfa" stroke-width="2"/>
-<circle cx="1212.4" cy="425.0" r="5" fill="#a78bfa"/>
-<text x="1212.4" y="384.0" text-anchor="middle" font-size="12" font-weight="700" fill="#e5e7eb">Alphabet / Google</text>
-<circle cx="1270.0" cy="640.0" r="29" fill="#a78bfa" fill-opacity="0.20" stroke="#a78bfa" stroke-width="2"/>
-<circle cx="1270.0" cy="640.0" r="5" fill="#a78bfa"/>
-<text x="1270.0" y="599.0" text-anchor="middle" font-size="12" font-weight="700" fill="#e5e7eb">Amazon / AWS</text>
-<circle cx="1212.4" cy="855.0" r="29" fill="#a78bfa" fill-opacity="0.20" stroke="#a78bfa" stroke-width="2"/>
-<circle cx="1212.4" cy="855.0" r="5" fill="#a78bfa"/>
-<text x="1212.4" y="814.0" text-anchor="middle" font-size="12" font-weight="700" fill="#e5e7eb">Meta</text>
-<circle cx="1055.0" cy="1012.4" r="29" fill="#a78bfa" fill-opacity="0.20" stroke="#a78bfa" stroke-width="2"/>
-<circle cx="1055.0" cy="1012.4" r="5" fill="#a78bfa"/>
-<text x="1055.0" y="971.4" text-anchor="middle" font-size="12" font-weight="700" fill="#e5e7eb">NVIDIA</text>
-<circle cx="840.0" cy="1070.0" r="29" fill="#a78bfa" fill-opacity="0.20" stroke="#a78bfa" stroke-width="2"/>
-<circle cx="840.0" cy="1070.0" r="5" fill="#a78bfa"/>
-<text x="840.0" y="1029.0" text-anchor="middle" font-size="12" font-weight="700" fill="#e5e7eb">Tesla</text>
-<circle cx="625.0" cy="1012.4" r="29" fill="#a78bfa" fill-opacity="0.20" stroke="#a78bfa" stroke-width="2"/>
-<circle cx="625.0" cy="1012.4" r="5" fill="#a78bfa"/>
-<text x="625.0" y="971.4" text-anchor="middle" font-size="12" font-weight="700" fill="#e5e7eb">OpenAI</text>
-<circle cx="467.6" cy="855.0" r="29" fill="#a78bfa" fill-opacity="0.20" stroke="#a78bfa" stroke-width="2"/>
-<circle cx="467.6" cy="855.0" r="5" fill="#a78bfa"/>
-<text x="467.6" y="814.0" text-anchor="middle" font-size="12" font-weight="700" fill="#e5e7eb">Anthropic</text>
-<circle cx="410.0" cy="640.0" r="29" fill="#a78bfa" fill-opacity="0.20" stroke="#a78bfa" stroke-width="2"/>
-<circle cx="410.0" cy="640.0" r="5" fill="#a78bfa"/>
-<text x="410.0" y="599.0" text-anchor="middle" font-size="12" font-weight="700" fill="#e5e7eb">Samsung Electronics</text>
-<circle cx="467.6" cy="425.0" r="29" fill="#a78bfa" fill-opacity="0.20" stroke="#a78bfa" stroke-width="2"/>
-<circle cx="467.6" cy="425.0" r="5" fill="#a78bfa"/>
-<text x="467.6" y="384.0" text-anchor="middle" font-size="12" font-weight="700" fill="#e5e7eb">SK Hynix</text>
-<circle cx="625.0" cy="267.6" r="29" fill="#a78bfa" fill-opacity="0.20" stroke="#a78bfa" stroke-width="2"/>
-<circle cx="625.0" cy="267.6" r="5" fill="#a78bfa"/>
-<text x="625.0" y="226.6" text-anchor="middle" font-size="12" font-weight="700" fill="#e5e7eb">TSMC</text>
-<circle cx="961.3" cy="108.7" r="29" fill="#a78bfa" fill-opacity="0.20" stroke="#a78bfa" stroke-width="2"/>
-<circle cx="961.3" cy="108.7" r="5" fill="#a78bfa"/>
-<text x="961.3" y="67.7" text-anchor="middle" font-size="12" font-weight="700" fill="#e5e7eb">Ford</text>
-<circle cx="1179.8" cy="213.9" r="29" fill="#a78bfa" fill-opacity="0.20" stroke="#a78bfa" stroke-width="2"/>
-<circle cx="1179.8" cy="213.9" r="5" fill="#a78bfa"/>
-<text x="1179.8" y="172.9" text-anchor="middle" font-size="12" font-weight="700" fill="#e5e7eb">AMD</text>
-<circle cx="1331.0" cy="403.5" r="29" fill="#a78bfa" fill-opacity="0.20" stroke="#a78bfa" stroke-width="2"/>
-<circle cx="1331.0" cy="403.5" r="5" fill="#a78bfa"/>
-<text x="1331.0" y="362.5" text-anchor="middle" font-size="12" font-weight="700" fill="#e5e7eb">Mistral</text>
-<circle cx="1385.0" cy="640.0" r="29" fill="#a78bfa" fill-opacity="0.20" stroke="#a78bfa" stroke-width="2"/>
-<circle cx="1385.0" cy="640.0" r="5" fill="#a78bfa"/>
-<text x="1385.0" y="599.0" text-anchor="middle" font-size="12" font-weight="700" fill="#e5e7eb">Google Cloud customers</text>
-<circle cx="1331.0" cy="876.5" r="29" fill="#a78bfa" fill-opacity="0.20" stroke="#a78bfa" stroke-width="2"/>
-<circle cx="1331.0" cy="876.5" r="5" fill="#a78bfa"/>
-<text x="1331.0" y="835.5" text-anchor="middle" font-size="12" font-weight="700" fill="#e5e7eb">Meta users and advertisers</text>
-<circle cx="1179.8" cy="1066.1" r="29" fill="#a78bfa" fill-opacity="0.20" stroke="#a78bfa" stroke-width="2"/>
-<circle cx="1179.8" cy="1066.1" r="5" fill="#a78bfa"/>
-<text x="1179.8" y="1025.1" text-anchor="middle" font-size="12" font-weight="700" fill="#e5e7eb">SK Group / SK Telecom</text>
-<circle cx="961.3" cy="1171.3" r="22" fill="#94a3b8" fill-opacity="0.20" stroke="#94a3b8" stroke-width="2"/>
-<circle cx="961.3" cy="1171.3" r="5" fill="#94a3b8"/>
-<text x="961.3" y="1137.3" text-anchor="middle" font-size="12" font-weight="700" fill="#e5e7eb">Broadcom</text>
-<circle cx="718.7" cy="1171.3" r="29" fill="#a78bfa" fill-opacity="0.20" stroke="#a78bfa" stroke-width="2"/>
-<circle cx="718.7" cy="1171.3" r="5" fill="#a78bfa"/>
-<text x="718.7" y="1123.3" text-anchor="middle" font-size="12" font-weight="700" fill="#e5e7eb">EV and energy storage</text>
-<text x="718.7" y="1137.3" text-anchor="middle" font-size="12" font-weight="700" fill="#e5e7eb">customers</text>
-<circle cx="500.2" cy="1066.1" r="29" fill="#a78bfa" fill-opacity="0.20" stroke="#a78bfa" stroke-width="2"/>
-<circle cx="500.2" cy="1066.1" r="5" fill="#a78bfa"/>
-<text x="500.2" y="1025.1" text-anchor="middle" font-size="12" font-weight="700" fill="#e5e7eb">Safe Superintelligence</text>
-<circle cx="349.0" cy="876.5" r="29" fill="#a78bfa" fill-opacity="0.20" stroke="#a78bfa" stroke-width="2"/>
-<circle cx="349.0" cy="876.5" r="5" fill="#a78bfa"/>
-<text x="349.0" y="835.5" text-anchor="middle" font-size="12" font-weight="700" fill="#e5e7eb">Azure and Copilot customers</text>
-<circle cx="295.0" cy="640.0" r="29" fill="#a78bfa" fill-opacity="0.20" stroke="#a78bfa" stroke-width="2"/>
-<circle cx="295.0" cy="640.0" r="5" fill="#a78bfa"/>
-<text x="295.0" y="592.0" text-anchor="middle" font-size="12" font-weight="700" fill="#e5e7eb">Five unnamed global</text>
-<text x="295.0" y="606.0" text-anchor="middle" font-size="12" font-weight="700" fill="#e5e7eb">data-center customers</text>
-<circle cx="349.0" cy="403.5" r="29" fill="#a78bfa" fill-opacity="0.20" stroke="#a78bfa" stroke-width="2"/>
-<circle cx="349.0" cy="403.5" r="5" fill="#a78bfa"/>
-<text x="349.0" y="355.5" text-anchor="middle" font-size="12" font-weight="700" fill="#e5e7eb">Around ten unnamed key</text>
-<text x="349.0" y="369.5" text-anchor="middle" font-size="12" font-weight="700" fill="#e5e7eb">memory customers</text>
-<circle cx="500.2" cy="213.9" r="29" fill="#a78bfa" fill-opacity="0.20" stroke="#a78bfa" stroke-width="2"/>
-<circle cx="500.2" cy="213.9" r="5" fill="#a78bfa"/>
-<text x="500.2" y="172.9" text-anchor="middle" font-size="12" font-weight="700" fill="#e5e7eb">Sandisk</text>
-<circle cx="718.7" cy="108.7" r="29" fill="#a78bfa" fill-opacity="0.20" stroke="#a78bfa" stroke-width="2"/>
-<circle cx="718.7" cy="108.7" r="5" fill="#a78bfa"/>
-<text x="718.7" y="67.7" text-anchor="middle" font-size="12" font-weight="700" fill="#e5e7eb">Cerebras</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1960" height="3030" viewBox="30 -20 1960 3030">
+<defs>
+<pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1e293b" stroke-width="0.6" stroke-opacity="0.38"/></pattern>
+<marker id="arrow-06bcfa879942a99a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#22c55e"/></marker>
+<marker id="arrow-75df7b9df85d4777" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b"/></marker>
+<marker id="arrow-1719c8c5c3aeab8e" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#f59e0b"/></marker>
+</defs>
+<rect x="30" y="-20" width="1960" height="3030" fill="#0b0f14"/>
+<rect x="30" y="-20" width="1960" height="3030" fill="url(#grid)"/>
+<g font-family="-apple-system, BlinkMacSystemFont, PingFang SC, Noto Sans CJK SC, Segoe UI, sans-serif">
+<rect x="80" y="320" width="580" height="1560" rx="8" fill="#22c55e" fill-opacity="0.045" stroke="#22c55e" stroke-opacity="0.52" stroke-width="2" stroke-dasharray="8 8"/>
+<text x="98" y="350" font-size="15" font-weight="700" fill="#22c55e">供应方 / 能力提供方</text>
+<rect x="720" y="320" width="580" height="1080" rx="8" fill="#8b5cf6" fill-opacity="0.045" stroke="#8b5cf6" stroke-opacity="0.52" stroke-width="2" stroke-dasharray="8 8"/>
+<text x="738" y="350" font-size="15" font-weight="700" fill="#8b5cf6">双重角色 / 覆盖公司</text>
+<rect x="1360" y="320" width="580" height="1880" rx="8" fill="#38bdf8" fill-opacity="0.045" stroke="#38bdf8" stroke-opacity="0.52" stroke-width="2" stroke-dasharray="8 8"/>
+<text x="1378" y="350" font-size="15" font-weight="700" fill="#38bdf8">客户 / 使用方</text>
+<path d="M 1010.0 500.0 C 1010.0 820.0, 1650.0 880.0, 1650.0 1200.0" fill="none" stroke="#64748b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-75df7b9df85d4777)"/>
+<rect x="1192.5" y="768.7" width="49" height="24" rx="5" fill="#0b0f14" stroke="#64748b" stroke-width="1.2"/>
+<text x="1217.0" y="785.2" text-anchor="middle" font-size="12" font-weight="750" fill="#64748b">E01</text>
+<path d="M 370.0 1360.0 C 370.0 1040.0, 1010.0 980.0, 1010.0 660.0" fill="none" stroke="#64748b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-75df7b9df85d4777)"/>
+<rect x="552.5" y="1067.3" width="49" height="24" rx="5" fill="#0b0f14" stroke="#64748b" stroke-width="1.2"/>
+<text x="577.0" y="1083.8" text-anchor="middle" font-size="12" font-weight="750" fill="#64748b">E02</text>
+<path d="M 370.0 1680.0 C 370.0 1360.0, 1010.0 980.0, 1010.0 660.0" fill="none" stroke="#64748b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-75df7b9df85d4777)"/>
+<rect x="552.5" y="1283.8" width="49" height="24" rx="5" fill="#0b0f14" stroke="#64748b" stroke-width="1.2"/>
+<text x="577.0" y="1300.3" text-anchor="middle" font-size="12" font-weight="750" fill="#64748b">E03</text>
+<path d="M 620.0 450.0 C 940.0 450.0, 1080.0 1410.0, 1400.0 1410.0" fill="none" stroke="#64748b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-75df7b9df85d4777)"/>
+<rect x="902.1" y="748.5" width="49" height="24" rx="5" fill="#0b0f14" stroke="#64748b" stroke-width="1.2"/>
+<text x="926.6" y="765.0" text-anchor="middle" font-size="12" font-weight="750" fill="#64748b">E04</text>
+<path d="M 1010.0 1200.0 C 1010.0 1067.0, 1010.0 953.0, 1010.0 820.0" fill="none" stroke="#64748b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-75df7b9df85d4777)"/>
+<rect x="985.5" y="1042.5" width="49" height="24" rx="5" fill="#0b0f14" stroke="#64748b" stroke-width="1.2"/>
+<text x="1010.0" y="1059.0" text-anchor="middle" font-size="12" font-weight="750" fill="#64748b">E05</text>
+<path d="M 620.0 610.0 C 940.0 610.0, 1080.0 1570.0, 1400.0 1570.0" fill="none" stroke="#64748b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-75df7b9df85d4777)"/>
+<rect x="902.1" y="908.5" width="49" height="24" rx="5" fill="#0b0f14" stroke="#64748b" stroke-width="1.2"/>
+<text x="926.6" y="925.0" text-anchor="middle" font-size="12" font-weight="750" fill="#64748b">E06</text>
+<path d="M 1010.0 980.0 C 1010.0 1300.0, 1650.0 1680.0, 1650.0 2000.0" fill="none" stroke="#64748b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-75df7b9df85d4777)"/>
+<rect x="1192.5" y="1352.2" width="49" height="24" rx="5" fill="#0b0f14" stroke="#64748b" stroke-width="1.2"/>
+<text x="1217.0" y="1368.7" text-anchor="middle" font-size="12" font-weight="750" fill="#64748b">E07</text>
+<path d="M 620.0 1090.0 C 700.0 1090.0, 680.0 930.0, 760.0 930.0" fill="none" stroke="#64748b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-75df7b9df85d4777)"/>
+<rect x="654.4" y="1026.2" width="49" height="24" rx="5" fill="#0b0f14" stroke="#64748b" stroke-width="1.2"/>
+<text x="678.9" y="1042.7" text-anchor="middle" font-size="12" font-weight="750" fill="#64748b">E08</text>
+<path d="M 620.0 930.0 C 898.7 930.0, 1121.3 770.0, 1400.0 770.0" fill="none" stroke="#64748b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-75df7b9df85d4777)"/>
+<rect x="895.1" y="866.2" width="49" height="24" rx="5" fill="#0b0f14" stroke="#64748b" stroke-width="1.2"/>
+<text x="919.6" y="882.7" text-anchor="middle" font-size="12" font-weight="750" fill="#64748b">E09</text>
+<path d="M 620.0 770.0 C 898.7 770.0, 1121.3 930.0, 1400.0 930.0" fill="none" stroke="#64748b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-75df7b9df85d4777)"/>
+<rect x="895.1" y="809.8" width="49" height="24" rx="5" fill="#0b0f14" stroke="#64748b" stroke-width="1.2"/>
+<text x="919.6" y="826.3" text-anchor="middle" font-size="12" font-weight="750" fill="#64748b">E10</text>
+<path d="M 620.0 1250.0 C 742.2 1250.0, 637.8 930.0, 760.0 930.0" fill="none" stroke="#64748b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-75df7b9df85d4777)"/>
+<rect x="661.5" y="1134.5" width="49" height="24" rx="5" fill="#0b0f14" stroke="#64748b" stroke-width="1.2"/>
+<text x="686.0" y="1151.0" text-anchor="middle" font-size="12" font-weight="750" fill="#64748b">E11</text>
+<path d="M 370.0 1200.0 C 370.0 880.0, 1010.0 820.0, 1010.0 500.0" fill="none" stroke="#64748b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-75df7b9df85d4777)"/>
+<rect x="552.5" y="907.3" width="49" height="24" rx="5" fill="#0b0f14" stroke="#64748b" stroke-width="1.2"/>
+<text x="577.0" y="923.8" text-anchor="middle" font-size="12" font-weight="750" fill="#64748b">E12</text>
+<path d="M 1010.0 980.0 C 1010.0 1300.0, 1650.0 1360.0, 1650.0 1680.0" fill="none" stroke="#64748b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-75df7b9df85d4777)"/>
+<rect x="1192.5" y="1248.7" width="49" height="24" rx="5" fill="#0b0f14" stroke="#64748b" stroke-width="1.2"/>
+<text x="1217.0" y="1265.2" text-anchor="middle" font-size="12" font-weight="750" fill="#64748b">E13</text>
+<path d="M 1010.0 820.0 C 1010.0 900.0, 1010.0 960.0, 1010.0 1040.0" fill="none" stroke="#64748b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-75df7b9df85d4777)"/>
+<rect x="985.5" y="892.7" width="49" height="24" rx="5" fill="#0b0f14" stroke="#64748b" stroke-width="1.2"/>
+<text x="1010.0" y="909.2" text-anchor="middle" font-size="12" font-weight="750" fill="#64748b">E14</text>
+<path d="M 1010.0 820.0 C 1010.0 953.0, 1010.0 1067.0, 1010.0 1200.0" fill="none" stroke="#64748b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-75df7b9df85d4777)"/>
+<rect x="985.5" y="953.5" width="49" height="24" rx="5" fill="#0b0f14" stroke="#64748b" stroke-width="1.2"/>
+<text x="1010.0" y="970.0" text-anchor="middle" font-size="12" font-weight="750" fill="#64748b">E15</text>
+<path d="M 1260.0 610.0 C 1340.0 610.0, 1320.0 610.0, 1400.0 610.0" fill="none" stroke="#64748b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-75df7b9df85d4777)"/>
+<rect x="1294.4" y="598.0" width="49" height="24" rx="5" fill="#0b0f14" stroke="#64748b" stroke-width="1.2"/>
+<text x="1318.9" y="614.5" text-anchor="middle" font-size="12" font-weight="750" fill="#64748b">E16</text>
+<path d="M 620.0 930.0 C 898.7 930.0, 1121.3 1090.0, 1400.0 1090.0" fill="none" stroke="#f59e0b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-1719c8c5c3aeab8e)"/>
+<rect x="895.1" y="969.8" width="49" height="24" rx="5" fill="#0b0f14" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="919.6" y="986.3" text-anchor="middle" font-size="12" font-weight="750" fill="#f59e0b">E17</text>
+<path d="M 620.0 1090.0 C 940.0 1090.0, 1080.0 450.0, 1400.0 450.0" fill="none" stroke="#64748b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-75df7b9df85d4777)"/>
+<rect x="902.1" y="871.0" width="49" height="24" rx="5" fill="#0b0f14" stroke="#64748b" stroke-width="1.2"/>
+<text x="926.6" y="887.5" text-anchor="middle" font-size="12" font-weight="750" fill="#64748b">E18</text>
+<path d="M 620.0 1090.0 C 940.0 1090.0, 1080.0 1890.0, 1400.0 1890.0" fill="none" stroke="#64748b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-75df7b9df85d4777)"/>
+<rect x="902.1" y="1336.8" width="49" height="24" rx="5" fill="#0b0f14" stroke="#64748b" stroke-width="1.2"/>
+<text x="926.6" y="1353.3" text-anchor="middle" font-size="12" font-weight="750" fill="#64748b">E19</text>
+<path d="M 1010.0 1040.0 C 1010.0 960.0, 1010.0 900.0, 1010.0 820.0" fill="none" stroke="#22c55e" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-06bcfa879942a99a)"/>
+<rect x="985.5" y="943.3" width="49" height="24" rx="5" fill="#0b0f14" stroke="#22c55e" stroke-width="1.2"/>
+<text x="1010.0" y="959.8" text-anchor="middle" font-size="12" font-weight="750" fill="#22c55e">E20</text>
+<path d="M 620.0 1570.0 C 795.0 1570.0, 585.0 1090.0, 760.0 1090.0" fill="none" stroke="#22c55e" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-06bcfa879942a99a)"/>
+<rect x="670.5" y="1402.7" width="49" height="24" rx="5" fill="#0b0f14" stroke="#22c55e" stroke-width="1.2"/>
+<text x="695.0" y="1419.2" text-anchor="middle" font-size="12" font-weight="750" fill="#22c55e">E21</text>
+<g><title>本周供应关系图 · 2026-08-10 至 2026-08-16</title>
+<rect x="80" y="20" width="1700" height="90" rx="8" fill="#0b0f14" fill-opacity="0" stroke="#64748b" stroke-opacity="0" stroke-width="1.5"/>
+<text x="96" y="62" font-size="34" font-weight="750" fill="#f8fafc">本周供应关系图 · 2026-08-10 至 2026-08-16</text>
+</g>
+<g><title>绿色=本周新增 · 蓝色=本周强化 · 橙色=风险或媒体证据 · 灰色=基线无新增证据 · 边标签对应周报 6.2 与供应关系 JSON 的 Edge ID。</title>
+<rect x="80" y="160" width="1700" height="90" rx="8" fill="#111827" fill-opacity="0.94" stroke="#475569" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="96" y="188" font-size="13" font-weight="500" fill="#cbd5e1">绿色=本周新增 · 蓝色=本周强化 · 橙色=风险或媒体证据 · 灰色=基线无新增证据</text>
+<text x="96" y="209" font-size="13" font-weight="500" fill="#cbd5e1">边标签对应周报 6.2 与供应关系 JSON 的 Edge ID。</text>
+</g>
+<g><title>Alphabet / Google · 覆盖公司 · 输出 1</title>
+<rect x="120" y="400" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#8b5cf6" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="136" y="428" font-size="16" font-weight="750" fill="#f8fafc">Alphabet / Google</text>
+<text x="136" y="452" font-size="13" font-weight="500" fill="#cbd5e1">覆盖公司 · 输出 1</text>
+</g>
+<g><title>Meta · 覆盖公司 · 输出 1</title>
+<rect x="120" y="560" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#8b5cf6" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="136" y="588" font-size="16" font-weight="750" fill="#f8fafc">Meta</text>
+<text x="136" y="612" font-size="13" font-weight="500" fill="#cbd5e1">覆盖公司 · 输出 1</text>
+</g>
+<g><title>Tesla · 覆盖公司 · 输出 1</title>
+<rect x="120" y="720" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#8b5cf6" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="136" y="748" font-size="16" font-weight="750" fill="#f8fafc">Tesla</text>
+<text x="136" y="772" font-size="13" font-weight="500" fill="#cbd5e1">覆盖公司 · 输出 1</text>
+</g>
+<g><title>Samsung Electronics · 覆盖公司 · 输出 2</title>
+<rect x="120" y="880" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#8b5cf6" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="136" y="908" font-size="16" font-weight="750" fill="#f8fafc">Samsung Electronics</text>
+<text x="136" y="932" font-size="13" font-weight="500" fill="#cbd5e1">覆盖公司 · 输出 2</text>
+</g>
+<g><title>SK Hynix · 覆盖公司 · 输出 3</title>
+<rect x="120" y="1040" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#8b5cf6" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="136" y="1068" font-size="16" font-weight="750" fill="#f8fafc">SK Hynix</text>
+<text x="136" y="1092" font-size="13" font-weight="500" fill="#cbd5e1">覆盖公司 · 输出 3</text>
+</g>
+<g><title>TSMC · 覆盖公司 · 输出 2</title>
+<rect x="120" y="1200" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#8b5cf6" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="136" y="1228" font-size="16" font-weight="750" fill="#f8fafc">TSMC</text>
+<text x="136" y="1252" font-size="13" font-weight="500" fill="#cbd5e1">覆盖公司 · 输出 2</text>
+</g>
+<g><title>外部:AMD · 外部节点 · 输出 1</title>
+<rect x="120" y="1360" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#64748b" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="136" y="1388" font-size="16" font-weight="750" fill="#f8fafc">外部:AMD</text>
+<text x="136" y="1412" font-size="13" font-weight="500" fill="#cbd5e1">外部节点 · 输出 1</text>
+</g>
+<g><title>外部:Cerebras · 外部节点 · 输出 1</title>
+<rect x="120" y="1520" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#64748b" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="136" y="1548" font-size="16" font-weight="750" fill="#f8fafc">外部:Cerebras</text>
+<text x="136" y="1572" font-size="13" font-weight="500" fill="#cbd5e1">外部节点 · 输出 1</text>
+</g>
+<g><title>外部:Mistral · 外部节点 · 输出 1</title>
+<rect x="120" y="1680" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#64748b" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="136" y="1708" font-size="16" font-weight="750" fill="#f8fafc">外部:Mistral</text>
+<text x="136" y="1732" font-size="13" font-weight="500" fill="#cbd5e1">外部节点 · 输出 1</text>
+</g>
+<g><title>Apple · 覆盖公司 · 输出 1 · 输入 1</title>
+<rect x="760" y="400" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#8b5cf6" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="776" y="428" font-size="16" font-weight="750" fill="#f8fafc">Apple</text>
+<text x="776" y="452" font-size="13" font-weight="500" fill="#cbd5e1">覆盖公司 · 输出 1 · 输入 1</text>
+</g>
+<g><title>Microsoft · 覆盖公司 · 输出 1 · 输入 2</title>
+<rect x="760" y="560" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#8b5cf6" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="776" y="588" font-size="16" font-weight="750" fill="#f8fafc">Microsoft</text>
+<text x="776" y="612" font-size="13" font-weight="500" fill="#cbd5e1">覆盖公司 · 输出 1 · 输入 2</text>
+</g>
+<g><title>Amazon / AWS · 覆盖公司 · 输出 2 · 输入 2</title>
+<rect x="760" y="720" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#8b5cf6" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="776" y="748" font-size="16" font-weight="750" fill="#f8fafc">Amazon / AWS</text>
+<text x="776" y="772" font-size="13" font-weight="500" fill="#cbd5e1">覆盖公司 · 输出 2 · 输入 2</text>
+</g>
+<g><title>NVIDIA · 覆盖公司 · 输出 2 · 输入 2</title>
+<rect x="760" y="880" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#8b5cf6" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="776" y="908" font-size="16" font-weight="750" fill="#f8fafc">NVIDIA</text>
+<text x="776" y="932" font-size="13" font-weight="500" fill="#cbd5e1">覆盖公司 · 输出 2 · 输入 2</text>
+</g>
+<g><title>OpenAI · 覆盖公司 · 输出 1 · 输入 2</title>
+<rect x="760" y="1040" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#8b5cf6" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="776" y="1068" font-size="16" font-weight="750" fill="#f8fafc">OpenAI</text>
+<text x="776" y="1092" font-size="13" font-weight="500" fill="#cbd5e1">覆盖公司 · 输出 1 · 输入 2</text>
+</g>
+<g><title>Anthropic · 覆盖公司 · 输出 1 · 输入 1</title>
+<rect x="760" y="1200" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#8b5cf6" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="776" y="1228" font-size="16" font-weight="750" fill="#f8fafc">Anthropic</text>
+<text x="776" y="1252" font-size="13" font-weight="500" fill="#cbd5e1">覆盖公司 · 输出 1 · 输入 1</text>
+</g>
+<g><title>外部:Around ten unnamed key memory customers · 外部节点 · 输入 1</title>
+<rect x="1400" y="400" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#64748b" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="1416" y="428" font-size="16" font-weight="750" fill="#f8fafc">外部:Around ten unnamed key memory customers</text>
+<text x="1416" y="452" font-size="13" font-weight="500" fill="#cbd5e1">外部节点 · 输入 1</text>
+</g>
+<g><title>外部:Azure and Copilot customers · 外部节点 · 输入 1</title>
+<rect x="1400" y="560" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#64748b" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="1416" y="588" font-size="16" font-weight="750" fill="#f8fafc">外部:Azure and Copilot customers</text>
+<text x="1416" y="612" font-size="13" font-weight="500" fill="#cbd5e1">外部节点 · 输入 1</text>
+</g>
+<g><title>外部:Broadcom · 外部节点 · 输入 1</title>
+<rect x="1400" y="720" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#64748b" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="1416" y="748" font-size="16" font-weight="750" fill="#f8fafc">外部:Broadcom</text>
+<text x="1416" y="772" font-size="13" font-weight="500" fill="#cbd5e1">外部节点 · 输入 1</text>
+</g>
+<g><title>外部:EV and energy storage customers · 外部节点 · 输入 1</title>
+<rect x="1400" y="880" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#64748b" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="1416" y="908" font-size="16" font-weight="750" fill="#f8fafc">外部:EV and energy storage customers</text>
+<text x="1416" y="932" font-size="13" font-weight="500" fill="#cbd5e1">外部节点 · 输入 1</text>
+</g>
+<g><title>外部:Five unnamed global data-center customers · 外部节点 · 输入 1</title>
+<rect x="1400" y="1040" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#64748b" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="1416" y="1068" font-size="16" font-weight="750" fill="#f8fafc">外部:Five unnamed global data-center customers</text>
+<text x="1416" y="1092" font-size="13" font-weight="500" fill="#cbd5e1">外部节点 · 输入 1</text>
+</g>
+<g><title>外部:Ford · 外部节点 · 输入 1</title>
+<rect x="1400" y="1200" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#64748b" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="1416" y="1228" font-size="16" font-weight="750" fill="#f8fafc">外部:Ford</text>
+<text x="1416" y="1252" font-size="13" font-weight="500" fill="#cbd5e1">外部节点 · 输入 1</text>
+</g>
+<g><title>外部:Google Cloud customers · 外部节点 · 输入 1</title>
+<rect x="1400" y="1360" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#64748b" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="1416" y="1388" font-size="16" font-weight="750" fill="#f8fafc">外部:Google Cloud customers</text>
+<text x="1416" y="1412" font-size="13" font-weight="500" fill="#cbd5e1">外部节点 · 输入 1</text>
+</g>
+<g><title>外部:Meta users and advertisers · 外部节点 · 输入 1</title>
+<rect x="1400" y="1520" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#64748b" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="1416" y="1548" font-size="16" font-weight="750" fill="#f8fafc">外部:Meta users and advertisers</text>
+<text x="1416" y="1572" font-size="13" font-weight="500" fill="#cbd5e1">外部节点 · 输入 1</text>
+</g>
+<g><title>外部:Safe Superintelligence · 外部节点 · 输入 1</title>
+<rect x="1400" y="1680" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#64748b" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="1416" y="1708" font-size="16" font-weight="750" fill="#f8fafc">外部:Safe Superintelligence</text>
+<text x="1416" y="1732" font-size="13" font-weight="500" fill="#cbd5e1">外部节点 · 输入 1</text>
+</g>
+<g><title>外部:Sandisk · 外部节点 · 输入 1</title>
+<rect x="1400" y="1840" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#64748b" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="1416" y="1868" font-size="16" font-weight="750" fill="#f8fafc">外部:Sandisk</text>
+<text x="1416" y="1892" font-size="13" font-weight="500" fill="#cbd5e1">外部节点 · 输入 1</text>
+</g>
+<g><title>外部:SK Group / SK Telecom · 外部节点 · 输入 1</title>
+<rect x="1400" y="2000" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#64748b" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="1416" y="2028" font-size="16" font-weight="750" fill="#f8fafc">外部:SK Group / SK Telecom</text>
+<text x="1416" y="2052" font-size="13" font-weight="500" fill="#cbd5e1">外部节点 · 输入 1</text>
+</g>
+<g><title>关系索引 ·  · E01 · Apple → 外部:Ford · Apple Maps EV routing and in-vehicle navigation for Ford Universal EV Platform ·  · E02 · 外部:AMD → Microsoft · AMD Helios, ND MI455X v7 and EPYC for Azure AI and HPC infrastructure ·  · E03 · 外部:Mistral → Microsoft · Frontier AI model services for enterprises and regulated industries ·  · E04 · Alphabet / Google → 外部:Google Cloud customers · Google Cloud AI services, TPU pods and cloud infrastructure ·  · E05 · Anthropic → Amazon / AWS · Claude Opus 5 availability on Amazon Bedrock ·  · E06 · Meta → 外部:Meta users and advertisers · Facebook, Instagram, WhatsApp, Threads and advertising systems ·  · E07 · NVIDIA → 外部:SK Group / SK Telecom · NVIDIA AI infrastructure for AI factories and SK Telecom AI infrastructure ·  · E08 · SK Hynix → NVIDIA · HBM and next-generation AI memory ecosystem</title>
+<rect x="80" y="2300" width="580" height="650" rx="8" fill="#111827" fill-opacity="0.97" stroke="#334155" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="96" y="2328" font-size="20" font-weight="750" fill="#f8fafc">关系索引</text>
+<text x="96" y="2370" font-size="13" font-weight="500" fill="#cbd5e1">E01 · Apple → 外部:Ford</text>
+<text x="96" y="2391" font-size="13" font-weight="500" fill="#cbd5e1">Apple Maps EV routing and in-vehicle navigation for Ford Universal EV Platform</text>
+<text x="96" y="2426" font-size="13" font-weight="500" fill="#cbd5e1">E02 · 外部:AMD → Microsoft</text>
+<text x="96" y="2447" font-size="13" font-weight="500" fill="#cbd5e1">AMD Helios, ND MI455X v7 and EPYC for Azure AI and HPC infrastructure</text>
+<text x="96" y="2482" font-size="13" font-weight="500" fill="#cbd5e1">E03 · 外部:Mistral → Microsoft</text>
+<text x="96" y="2503" font-size="13" font-weight="500" fill="#cbd5e1">Frontier AI model services for enterprises and regulated industries</text>
+<text x="96" y="2538" font-size="13" font-weight="500" fill="#cbd5e1">E04 · Alphabet / Google → 外部:Google Cloud customers</text>
+<text x="96" y="2559" font-size="13" font-weight="500" fill="#cbd5e1">Google Cloud AI services, TPU pods and cloud infrastructure</text>
+<text x="96" y="2594" font-size="13" font-weight="500" fill="#cbd5e1">E05 · Anthropic → Amazon / AWS</text>
+<text x="96" y="2615" font-size="13" font-weight="500" fill="#cbd5e1">Claude Opus 5 availability on Amazon Bedrock</text>
+<text x="96" y="2650" font-size="13" font-weight="500" fill="#cbd5e1">E06 · Meta → 外部:Meta users and advertisers</text>
+<text x="96" y="2671" font-size="13" font-weight="500" fill="#cbd5e1">Facebook, Instagram, WhatsApp, Threads and advertising systems</text>
+<text x="96" y="2706" font-size="13" font-weight="500" fill="#cbd5e1">E07 · NVIDIA → 外部:SK Group / SK Telecom</text>
+<text x="96" y="2727" font-size="13" font-weight="500" fill="#cbd5e1">NVIDIA AI infrastructure for AI factories and SK Telecom AI infrastructure</text>
+<text x="96" y="2762" font-size="13" font-weight="500" fill="#cbd5e1">E08 · SK Hynix → NVIDIA</text>
+<text x="96" y="2783" font-size="13" font-weight="500" fill="#cbd5e1">HBM and next-generation AI memory ecosystem</text>
+</g>
+<g><title>关系索引 ·  · E09 · Samsung Electronics → 外部:Broadcom · HBM, 2nm-and-below foundry and 2.3D/2.5D advanced packaging ·  · E10 · Tesla → 外部:EV and energy storage customers · Electric vehicles, energy storage systems and energy services ·  · E11 · TSMC → NVIDIA · Advanced-node foundry and advanced packaging for AI GPUs ·  · E12 · TSMC → Apple · Advanced-node foundry for Apple A-series and M-series chips ·  · E13 · NVIDIA → 外部:Safe Superintelligence · Vera Rubin systems, long-term compute access and compute-platform co-development ·  · E14 · Amazon / AWS → OpenAI · Trainium-based multi-year, multi-gigawatt AI compute commitment ·  · E15 · Amazon / AWS → Anthropic · Trainium-based multi-year, multi-gigawatt AI compute commitment ·  · E16 · Microsoft → 外部:Azure and Copilot customers · Azure cloud and AI services plus Microsoft 365 Copilot</title>
+<rect x="720" y="2300" width="580" height="650" rx="8" fill="#111827" fill-opacity="0.97" stroke="#334155" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="736" y="2328" font-size="20" font-weight="750" fill="#f8fafc">关系索引</text>
+<text x="736" y="2370" font-size="13" font-weight="500" fill="#cbd5e1">E09 · Samsung Electronics → 外部:Broadcom</text>
+<text x="736" y="2391" font-size="13" font-weight="500" fill="#cbd5e1">HBM, 2nm-and-below foundry and 2.3D/2.5D advanced packaging</text>
+<text x="736" y="2426" font-size="13" font-weight="500" fill="#cbd5e1">E10 · Tesla → 外部:EV and energy storage customers</text>
+<text x="736" y="2447" font-size="13" font-weight="500" fill="#cbd5e1">Electric vehicles, energy storage systems and energy services</text>
+<text x="736" y="2482" font-size="13" font-weight="500" fill="#cbd5e1">E11 · TSMC → NVIDIA</text>
+<text x="736" y="2503" font-size="13" font-weight="500" fill="#cbd5e1">Advanced-node foundry and advanced packaging for AI GPUs</text>
+<text x="736" y="2538" font-size="13" font-weight="500" fill="#cbd5e1">E12 · TSMC → Apple</text>
+<text x="736" y="2559" font-size="13" font-weight="500" fill="#cbd5e1">Advanced-node foundry for Apple A-series and M-series chips</text>
+<text x="736" y="2594" font-size="13" font-weight="500" fill="#cbd5e1">E13 · NVIDIA → 外部:Safe Superintelligence</text>
+<text x="736" y="2615" font-size="13" font-weight="500" fill="#cbd5e1">Vera Rubin systems, long-term compute access and compute-platform</text>
+<text x="736" y="2636" font-size="13" font-weight="500" fill="#cbd5e1">co-development</text>
+<text x="736" y="2671" font-size="13" font-weight="500" fill="#cbd5e1">E14 · Amazon / AWS → OpenAI</text>
+<text x="736" y="2692" font-size="13" font-weight="500" fill="#cbd5e1">Trainium-based multi-year, multi-gigawatt AI compute commitment</text>
+<text x="736" y="2727" font-size="13" font-weight="500" fill="#cbd5e1">E15 · Amazon / AWS → Anthropic</text>
+<text x="736" y="2748" font-size="13" font-weight="500" fill="#cbd5e1">Trainium-based multi-year, multi-gigawatt AI compute commitment</text>
+<text x="736" y="2783" font-size="13" font-weight="500" fill="#cbd5e1">E16 · Microsoft → 外部:Azure and Copilot customers</text>
+<text x="736" y="2804" font-size="13" font-weight="500" fill="#cbd5e1">Azure cloud and AI services plus Microsoft 365 Copilot</text>
+</g>
+<g><title>关系索引 ·  · E17 · Samsung Electronics → 外部:Five unnamed global data-center customers · Long-term server-memory and AI-infrastructure chip supply contracts ·  · E18 · SK Hynix → 外部:Around ten unnamed key memory customers · HBM4, AI server DRAM, eSSD and long-term supply agreements ·  · E19 · SK Hynix → 外部:Sandisk · First open High Bandwidth Flash standard specification for AI inference memory tiers ·  · E20 · OpenAI → Amazon / AWS · Daybreak Blue and Daybreak Red cyber models available through Amazon Bedrock ·  · E21 · 外部:Cerebras → OpenAI · Cerebras-powered GPT-5.6 Sol Ultrafast inference at up to 750 output tokens per second</title>
+<rect x="1360" y="2300" width="580" height="440" rx="8" fill="#111827" fill-opacity="0.97" stroke="#334155" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="1376" y="2328" font-size="20" font-weight="750" fill="#f8fafc">关系索引</text>
+<text x="1376" y="2370" font-size="13" font-weight="500" fill="#cbd5e1">E17 · Samsung Electronics → 外部:Five unnamed global data-center customers</text>
+<text x="1376" y="2391" font-size="13" font-weight="500" fill="#cbd5e1">Long-term server-memory and AI-infrastructure chip supply contracts</text>
+<text x="1376" y="2426" font-size="13" font-weight="500" fill="#cbd5e1">E18 · SK Hynix → 外部:Around ten unnamed key memory customers</text>
+<text x="1376" y="2447" font-size="13" font-weight="500" fill="#cbd5e1">HBM4, AI server DRAM, eSSD and long-term supply agreements</text>
+<text x="1376" y="2482" font-size="13" font-weight="500" fill="#cbd5e1">E19 · SK Hynix → 外部:Sandisk</text>
+<text x="1376" y="2503" font-size="13" font-weight="500" fill="#cbd5e1">First open High Bandwidth Flash standard specification for AI inference</text>
+<text x="1376" y="2524" font-size="13" font-weight="500" fill="#cbd5e1">memory tiers</text>
+<text x="1376" y="2559" font-size="13" font-weight="500" fill="#cbd5e1">E20 · OpenAI → Amazon / AWS</text>
+<text x="1376" y="2580" font-size="13" font-weight="500" fill="#cbd5e1">Daybreak Blue and Daybreak Red cyber models available through Amazon Bedrock</text>
+<text x="1376" y="2615" font-size="13" font-weight="500" fill="#cbd5e1">E21 · 外部:Cerebras → OpenAI</text>
+<text x="1376" y="2636" font-size="13" font-weight="500" fill="#cbd5e1">Cerebras-powered GPT-5.6 Sol Ultrafast inference at up to 750 output tokens</text>
+<text x="1376" y="2657" font-size="13" font-weight="500" fill="#cbd5e1">per second</text>
+</g>
+</g>
 </svg>

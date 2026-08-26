@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "notes": "Documented corrections applied after loading immutable historical Git snapshots.",
+  "global_replacements": {
+    "https://news.skhynix.com/12-layer-hbm4e-sample/": "https://news.skhynix.com/en/12-layer-hbm4e-sample-1/"
+  },
+  "reports": {
+    "2026-07-06": {
+      "reason": "The original Samsung URL slug returned 404 and described a commercial-network trial as a deployment. The replacement is Samsung's official June 30, 2026 release.",
+      "replacements": {
+        "https://news.samsung.com/global/samsung-and-kddi-successfully-deploy-ai-powered-network-optimization-solution-on-commercial-5g-network": "https://news.samsung.com/global/samsung-and-kddi-successfully-complete-ai-powered-network-optimization-trial-on-commercial-5g-standalone-network-in-japan",
+        "与 KDDI 完成 AI 驱动 5G 网络优化商用部署": "与 KDDI 完成商用 5G SA 网络 AI 优化试验",
+        "与 KDDI 合作，在日本商用 5G 网络中部署 AI 驱动网络优化能力": "与 KDDI 在日本商用 5G SA 网络完成 AI 驱动 RAN 优化试验，峰值下行吞吐最高提升 52%",
+        "成功部署 AI 驱动网络优化方案": "完成 AI 驱动 RAN Speed Optimizer 试验",
+        "AI 驱动 5G 网络优化方案": "AI 驱动 RAN Speed Optimizer 商用网络试验",
+        "new_commercial_deployment": "new_commercial_network_trial",
+        "Samsung 与 KDDI 官方宣布商用 5G 网络部署。": "Samsung 官方披露与 KDDI 完成商用 5G SA 网络优化试验。",
+        "KDDI 是外部运营商客户。": "KDDI 是外部运营商试验合作方；官方来源未确认全面商业部署。",
+        "Samsung 与 KDDI 官方宣布商用网络部署": "Samsung 官方披露与 KDDI 完成商用 5G SA 网络试验",
+        "新增/商用部署": "新增/商用网络试验"
+      }
+    }
+  }
+}

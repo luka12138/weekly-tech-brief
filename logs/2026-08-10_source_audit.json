@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-14T04:33:56.481916+00:00",
+  "generated_at": "2026-08-26T03:02:55.093171+00:00",
   "report": "reports/2026-08-10_weekly_morning_brief.md",
-  "baseline": "state/supply_graph_baseline.json",
-  "product_graph": "state/product_relationships_2026.json",
-  "report_sha256": "661515c5fc7ca02f3dcb04a8b6e418303a860de71ca7f34e216911bf4c28ab54",
-  "baseline_sha256": "abca0d3db74fc9df9f11140e126ba5d398191cb9aef04335a5511fda27acee78",
-  "product_graph_sha256": "f1d504a3daceeec1426c615f63de396a5136b8c0cbf4df88e3652b001bca749e",
+  "baseline": "git:b8beba8a9cf232c28532e5b582c23267ae046b05:state/supply_graph_baseline.json",
+  "product_graph": "git:b8beba8a9cf232c28532e5b582c23267ae046b05:state/product_relationships_2026.json",
+  "report_sha256": "372a86b3aebc6a3e151e431a2c7838a4257f977a68a2e50121384dd0c474a73c",
+  "baseline_sha256": "890e6957a55885b5abca59fb9ea525f8526c0fa129e79423a49a25dc30b06f27",
+  "product_graph_sha256": "3e6aa07d1a90a26a7acf271bccd011bb699572abc7edc1d57d7ca45752f19c6b",
   "audited_urls": [
     "https://abc.xyz/assets/5d/f4/15f364a84a6c9b70a59f9f38d3a1/2026q2-alphabet-earnings-release.pdf",
     "https://abc.xyz/investor/",
@@ -18,23 +18,20 @@
     "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/",
     "https://investor.nvidia.com/financial-info/annual-reports-and-proxies/default.aspx",
     "https://investor.tsmc.com/english/annual-reports",
-    "https://ir.aboutamazon.com/",
     "https://ir.aboutamazon.com/annual-reports-proxies-and-shareholder-letters/default.aspx",
     "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Second-Quarter-Results/default.aspx",
     "https://ir.tesla.com/",
     "https://ir.tesla.com/press-release/tesla-releases-second-quarter-2026-financial-results",
-    "https://news.microsoft.com/source/",
     "https://news.microsoft.com/source/2026/07/20/microsoft-expands-azure-ai-and-hpc-infrastructure-with-amd/",
     "https://news.microsoft.com/source/2026/07/21/microsoft-and-mistral-expand-strategic-partnership-to-give-enterprises-and-regulated-industries-frontier-ai-they-can-control/",
     "https://news.samsung.com/global/samsung-electronics-and-broadcom-expand-strategic-collaboration-across-memory-and-foundry-technologies",
     "https://news.samsung.com/global/samsung-electronics-releases-2026-sustainability-report-expanding-water-replenishment-efforts",
-    "https://news.skhynix.com/12-layer-hbm4e-sample/",
+    "https://news.skhynix.com/en/12-layer-hbm4e-sample-1/",
     "https://news.skhynix.com/en/fab-facility-investment-2026/",
     "https://news.skhynix.com/en/fms-2026/",
     "https://news.skhynix.com/en/hbf-at-fms-2026/",
     "https://news.skhynix.com/en/q2-2026-business-results/",
     "https://news.skhynix.com/sk-hynix-and-sandisk-begin-global-standardization-ofnext-generation-memory-hbf/",
-    "https://nvidianews.nvidia.com/",
     "https://nvidianews.nvidia.com/news/ilya-sutskevers-safe-superintelligence-inc-and-nvidia-announce-long-term-strategic-partnership",
     "https://nvidianews.nvidia.com/news/sk-group-and-nvidia-expand-strategic-partnership-across-ai-factories-and-next-generation-memory",
     "https://openai.com/academy/getting-started/",
@@ -45,7 +42,6 @@
     "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models/",
     "https://openai.com/news/",
     "https://openai.com/safety/",
-    "https://pr.tsmc.com/english",
     "https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing",
     "https://www.anthropic.com/api",
     "https://www.anthropic.com/claude",
@@ -55,7 +51,6 @@
     "https://www.anthropic.com/news/microsoft-nvidia-anthropic-announce-strategic-partnerships",
     "https://www.anthropic.com/research",
     "https://www.apple.com/newsroom/2026/07/apple-maps-to-power-navigation-experience-for-ford-uev-platform/",
-    "https://www.axios.com/2026/07/31/inside-europe-lessons-ai-safety-trump-rules-loom",
     "https://www.axios.com/2026/08/04/anthropic-openai-uk-ai-security-institute",
     "https://www.axios.com/2026/08/04/trump-ai-framework-open-models",
     "https://www.axios.com/2026/08/06/openai-apple-motion-to-dismiss",
@@ -67,15 +62,17 @@
     "https://www.tomshardware.com/pc-components/dram/samsung-debuts-three-next-generation-memory-technologies-for-ai-data-centers-zhbm-znand-o-and-bv-nand-all-rely-on-advanced-wafer-bonding-technologies"
   ],
   "summary": {
-    "total": 58,
-    "reachable": 58,
-    "access_limited": 6,
+    "total": 53,
+    "reachable": 53,
+    "access_limited": 11,
     "unclassified": 0,
     "errors": 0,
     "claim_total": 14,
     "claim_matched": 14,
     "claim_manual": 0,
-    "claim_failed": 0
+    "claim_failed": 0,
+    "source_cache_reused": 0,
+    "claim_cache_reused": 0
   },
   "sources": [
     {
@@ -83,7 +80,7 @@
       "scheme": "https",
       "host": "abc.xyz",
       "source_class": "official_or_regulatory",
-      "status": 206,
+      "status": 200,
       "reachable": true,
       "access_limited": false,
       "content_verified": true,
@@ -211,18 +208,6 @@
       "error": null
     },
     {
-      "url": "https://ir.aboutamazon.com/",
-      "scheme": "https",
-      "host": "ir.aboutamazon.com",
-      "source_class": "official_or_regulatory",
-      "status": 200,
-      "reachable": true,
-      "access_limited": false,
-      "content_verified": true,
-      "requires_manual_verification": false,
-      "error": null
-    },
-    {
       "url": "https://ir.aboutamazon.com/annual-reports-proxies-and-shareholder-letters/default.aspx",
       "scheme": "https",
       "host": "ir.aboutamazon.com",
@@ -262,18 +247,6 @@
       "url": "https://ir.tesla.com/press-release/tesla-releases-second-quarter-2026-financial-results",
       "scheme": "https",
       "host": "ir.tesla.com",
-      "source_class": "official_or_regulatory",
-      "status": 200,
-      "reachable": true,
-      "access_limited": false,
-      "content_verified": true,
-      "requires_manual_verification": false,
-      "error": null
-    },
-    {
-      "url": "https://news.microsoft.com/source/",
-      "scheme": "https",
-      "host": "news.microsoft.com",
       "source_class": "official_or_regulatory",
       "status": 200,
       "reachable": true,
@@ -323,15 +296,15 @@
       "scheme": "https",
       "host": "news.samsung.com",
       "source_class": "official_or_regulatory",
-      "status": 200,
+      "status": 403,
       "reachable": true,
-      "access_limited": false,
-      "content_verified": true,
-      "requires_manual_verification": false,
+      "access_limited": true,
+      "content_verified": false,
+      "requires_manual_verification": true,
       "error": null
     },
     {
-      "url": "https://news.skhynix.com/12-layer-hbm4e-sample/",
+      "url": "https://news.skhynix.com/en/12-layer-hbm4e-sample-1/",
       "scheme": "https",
       "host": "news.skhynix.com",
       "source_class": "official_or_regulatory",
@@ -403,18 +376,6 @@
       "error": null
     },
     {
-      "url": "https://nvidianews.nvidia.com/",
-      "scheme": "https",
-      "host": "nvidianews.nvidia.com",
-      "source_class": "official_or_regulatory",
-      "status": 200,
-      "reachable": true,
-      "access_limited": false,
-      "content_verified": true,
-      "requires_manual_verification": false,
-      "error": null
-    },
-    {
       "url": "https://nvidianews.nvidia.com/news/ilya-sutskevers-safe-superintelligence-inc-and-nvidia-announce-long-term-strategic-partnership",
       "scheme": "https",
       "host": "nvidianews.nvidia.com",
@@ -443,11 +404,11 @@
       "scheme": "https",
       "host": "openai.com",
       "source_class": "official_or_regulatory",
-      "status": 200,
+      "status": 403,
       "reachable": true,
-      "access_limited": false,
-      "content_verified": true,
-      "requires_manual_verification": false,
+      "access_limited": true,
+      "content_verified": false,
+      "requires_manual_verification": true,
       "error": null
     },
     {
@@ -479,11 +440,11 @@
       "scheme": "https",
       "host": "openai.com",
       "source_class": "official_or_regulatory",
-      "status": 200,
+      "status": 403,
       "reachable": true,
-      "access_limited": false,
-      "content_verified": true,
-      "requires_manual_verification": false,
+      "access_limited": true,
+      "content_verified": false,
+      "requires_manual_verification": true,
       "error": null
     },
     {
@@ -503,11 +464,11 @@
       "scheme": "https",
       "host": "openai.com",
       "source_class": "official_or_regulatory",
-      "status": 200,
+      "status": 403,
       "reachable": true,
-      "access_limited": false,
-      "content_verified": true,
-      "requires_manual_verification": false,
+      "access_limited": true,
+      "content_verified": false,
+      "requires_manual_verification": true,
       "error": null
     },
     {
@@ -527,23 +488,11 @@
       "scheme": "https",
       "host": "openai.com",
       "source_class": "official_or_regulatory",
-      "status": 200,
+      "status": 403,
       "reachable": true,
-      "access_limited": false,
-      "content_verified": true,
-      "requires_manual_verification": false,
-      "error": null
-    },
-    {
-      "url": "https://pr.tsmc.com/english",
-      "scheme": "https",
-      "host": "pr.tsmc.com",
-      "source_class": "official_or_regulatory",
-      "status": 200,
-      "reachable": true,
-      "access_limited": false,
-      "content_verified": true,
-      "requires_manual_verification": false,
+      "access_limited": true,
+      "content_verified": false,
+      "requires_manual_verification": true,
       "error": null
     },
     {
@@ -655,18 +604,6 @@
       "error": null
     },
     {
-      "url": "https://www.axios.com/2026/07/31/inside-europe-lessons-ai-safety-trump-rules-loom",
-      "scheme": "https",
-      "host": "www.axios.com",
-      "source_class": "tier1_media",
-      "status": 403,
-      "reachable": true,
-      "access_limited": true,
-      "content_verified": false,
-      "requires_manual_verification": true,
-      "error": null
-    },
-    {
       "url": "https://www.axios.com/2026/08/04/anthropic-openai-uk-ai-security-institute",
       "scheme": "https",
       "host": "www.axios.com",
@@ -695,11 +632,11 @@
       "scheme": "https",
       "host": "www.axios.com",
       "source_class": "tier1_media",
-      "status": 200,
+      "status": 403,
       "reachable": true,
-      "access_limited": false,
-      "content_verified": true,
-      "requires_manual_verification": false,
+      "access_limited": true,
+      "content_verified": false,
+      "requires_manual_verification": true,
       "error": null
     },
     {
@@ -805,7 +742,10 @@
           "matched_keywords": [
             "ford",
             "apple maps"
-          ]
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 9112
         }
       ]
     },
@@ -838,7 +778,10 @@
           "matched_keywords": [
             "mi455x",
             "epyc"
-          ]
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 9109
         }
       ]
     },
@@ -871,7 +814,10 @@
           "matched_keywords": [
             "mistral",
             "regulated industries"
-          ]
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 13919
         }
       ]
     },
@@ -904,7 +850,10 @@
           "matched_keywords": [
             "claude opus 5",
             "bedrock"
-          ]
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 53892
         }
       ]
     },
@@ -937,7 +886,10 @@
           "matched_keywords": [
             "advertising",
             "family daily active people"
-          ]
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 20111
         }
       ]
     },
@@ -970,7 +922,10 @@
           "matched_keywords": [
             "sk telecom",
             "ai factories"
-          ]
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 16956
         }
       ]
     },
@@ -1004,7 +959,10 @@
           "matched_keywords": [
             "sk hynix",
             "next-generation memory"
-          ]
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 16956
         },
         {
           "url": "https://news.skhynix.com/en/q2-2026-business-results/",
@@ -1012,7 +970,10 @@
           "access_limited": false,
           "matched_keywords": [
             "sk hynix"
-          ]
+          ],
+          "text_fetch_retried": true,
+          "text_fetch_failed": false,
+          "text_length": 11255
         }
       ]
     },
@@ -1045,7 +1006,10 @@
           "matched_keywords": [
             "broadcom",
             "high bandwidth memory"
-          ]
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 5125
         }
       ]
     },
@@ -1081,7 +1045,10 @@
             "safe superintelligence",
             "vera rubin",
             "order of magnitude"
-          ]
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 11397
         }
       ]
     },
@@ -1117,7 +1084,10 @@
             "openai",
             "trainium",
             "multi-gigawatt"
-          ]
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 53892
         }
       ]
     },
@@ -1153,7 +1123,10 @@
             "anthropic",
             "trainium",
             "multi-gigawatt"
-          ]
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 53892
         }
       ]
     },
@@ -1189,7 +1162,10 @@
             "azure",
             "43%",
             "copilot"
-          ]
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 31642
         }
       ]
     },
@@ -1225,7 +1201,10 @@
             "long-term agreements",
             "around 10",
             "hbm4"
-          ]
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 11255
         }
       ]
     },
@@ -1265,7 +1244,10 @@
             "hbf",
             "512gb",
             "ocp"
-          ]
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 10840
         },
         {
           "url": "https://news.skhynix.com/sk-hynix-and-sandisk-begin-global-standardization-ofnext-generation-memory-hbf/",
@@ -1275,7 +1257,10 @@
             "sandisk",
             "hbf",
             "ocp"
-          ]
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 5939
         }
       ]
     }

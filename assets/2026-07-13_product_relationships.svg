@@ -1,65 +1,374 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="860" viewBox="0 0 1180 860">
-<rect width="100%" height="100%" fill="#0f172a"/>
-<circle cx="590" cy="442" r="160" fill="none" stroke="#334155" stroke-width="1" stroke-opacity="0.75"/>
-<circle cx="590" cy="442" r="250" fill="none" stroke="#334155" stroke-width="1" stroke-opacity="0.55"/>
-<circle cx="590" cy="442" r="335" fill="none" stroke="#334155" stroke-width="1" stroke-opacity="0.35"/>
-<text x="40" y="44" font-size="22" font-weight="800" fill="#f8fafc">2026 年度十家公司主营产品上下游关系图</text>
-<text x="40" y="68" font-size="12" fill="#94a3b8">Obsidian 风格网络图。来源基线：基于 2026 年可取得的官方年报、投资者关系页面、公司新闻稿和监管披露；媒体报道或历史基线关系单独标注。</text>
-<text x="40" y="820" font-size="11" fill="#94a3b8">边颜色：绿色=本年度官方证据，蓝色=官方基线，橙色=媒体报道或待复核。</text>
-<path d="M 404.8 187.2 Q 543.7 299.5 590.0 127.0" fill="none" stroke="#f59e0b" stroke-width="1.45" stroke-opacity="0.68"/>
-<text x="520.6" y="228.3" font-size="9" fill="#f59e0b" fill-opacity="0.92">P01 Apple silicon 先进制程代工</text>
-<path d="M 404.8 187.2 Q 543.7 457.0 590.0 757.0" fill="none" stroke="#f59e0b" stroke-width="1.45" stroke-opacity="0.68"/>
-<text x="520.6" y="464.6" font-size="9" fill="#f59e0b" fill-opacity="0.92">P02 AI 芯片先进制程代工与封装</text>
-<path d="M 290.4 344.7 Q 515.1 496.4 590.0 757.0" fill="none" stroke="#22c55e" stroke-width="1.45" stroke-opacity="0.68"/>
-<text x="477.7" y="523.6" font-size="9" fill="#22c55e" fill-opacity="0.92">P03 AI 加速器用 HBM</text>
-<path d="M 290.4 539.3 Q 515.1 545.1 590.0 757.0" fill="none" stroke="#f59e0b" stroke-width="1.45" stroke-opacity="0.68"/>
-<text x="477.7" y="596.6" font-size="9" fill="#f59e0b" fill-opacity="0.92">P04 HBM/DRAM 供应基线</text>
-<path d="M 590.0 757.0 Q 664.9 545.1 889.6 539.3" fill="none" stroke="#22c55e" stroke-width="1.45" stroke-opacity="0.68"/>
-<text x="702.3" y="596.6" font-size="9" fill="#22c55e" fill-opacity="0.92">P05 AWS 上的 GPU 与 AI 基础设施</text>
-<path d="M 590.0 757.0 Q 636.3 457.0 775.2 187.2" fill="none" stroke="#f59e0b" stroke-width="1.45" stroke-opacity="0.68"/>
-<text x="659.4" y="464.6" font-size="9" fill="#f59e0b" fill-opacity="0.92">P06 Azure AI 加速器生态</text>
-<path d="M 290.4 539.3 Q 515.1 387.6 590.0 127.0" fill="none" stroke="#f59e0b" stroke-width="1.45" stroke-opacity="0.68"/>
-<text x="477.7" y="360.4" font-size="9" fill="#f59e0b" fill-opacity="0.92">P08 存储/显示组件基线</text>
-<path d="M 590.0 757.0 Q 543.7 584.5 404.8 696.8" fill="none" stroke="#f59e0b" stroke-width="1.45" stroke-opacity="0.68"/>
-<text x="520.6" y="655.7" font-size="9" fill="#f59e0b" fill-opacity="0.92">P09 汽车/AI 计算生态基线</text>
-<circle cx="590.0" cy="127.0" r="27" fill="#60a5fa" fill-opacity="0.22" stroke="#60a5fa" stroke-width="2.2"/>
-<circle cx="590.0" cy="127.0" r="5.2" fill="#60a5fa"/>
-<text x="590.0" y="89.0" text-anchor="middle" font-size="13" font-weight="700" fill="#e5e7eb">Apple</text>
-<text x="590.0" y="170.0" text-anchor="middle" font-size="9.5" fill="#94a3b8">iPhone, Mac, iPad, 可穿戴设备</text>
-<circle cx="775.2" cy="187.2" r="27" fill="#34d399" fill-opacity="0.22" stroke="#34d399" stroke-width="2.2"/>
-<circle cx="775.2" cy="187.2" r="5.2" fill="#34d399"/>
-<text x="775.2" y="149.2" text-anchor="middle" font-size="13" font-weight="700" fill="#e5e7eb">Microsoft</text>
-<text x="775.2" y="230.2" text-anchor="middle" font-size="9.5" fill="#94a3b8">Azure, Microsoft 365, Windows, GitHub</text>
-<circle cx="889.6" cy="344.7" r="27" fill="#34d399" fill-opacity="0.22" stroke="#34d399" stroke-width="2.2"/>
-<circle cx="889.6" cy="344.7" r="5.2" fill="#34d399"/>
-<text x="889.6" y="306.7" text-anchor="middle" font-size="13" font-weight="700" fill="#e5e7eb">Alphabet / Google</text>
-<text x="889.6" y="387.7" text-anchor="middle" font-size="9.5" fill="#94a3b8">搜索, YouTube, Google Cloud, Gemini</text>
-<circle cx="889.6" cy="539.3" r="27" fill="#34d399" fill-opacity="0.22" stroke="#34d399" stroke-width="2.2"/>
-<circle cx="889.6" cy="539.3" r="5.2" fill="#34d399"/>
-<text x="889.6" y="501.3" text-anchor="middle" font-size="13" font-weight="700" fill="#e5e7eb">Amazon / AWS</text>
-<text x="889.6" y="582.3" text-anchor="middle" font-size="9.5" fill="#94a3b8">AWS, Marketplace, Prime, 广告</text>
-<circle cx="775.2" cy="696.8" r="27" fill="#34d399" fill-opacity="0.22" stroke="#34d399" stroke-width="2.2"/>
-<circle cx="775.2" cy="696.8" r="5.2" fill="#34d399"/>
-<text x="775.2" y="658.8" text-anchor="middle" font-size="13" font-weight="700" fill="#e5e7eb">Meta</text>
-<text x="775.2" y="739.8" text-anchor="middle" font-size="9.5" fill="#94a3b8">Facebook, Instagram, WhatsApp, Threads</text>
-<circle cx="590.0" cy="757.0" r="27" fill="#fbbf24" fill-opacity="0.22" stroke="#fbbf24" stroke-width="2.2"/>
-<circle cx="590.0" cy="757.0" r="5.2" fill="#fbbf24"/>
-<text x="590.0" y="719.0" text-anchor="middle" font-size="13" font-weight="700" fill="#e5e7eb">NVIDIA</text>
-<text x="590.0" y="800.0" text-anchor="middle" font-size="9.5" fill="#94a3b8">数据中心 GPU, 网络产品, CUDA, AI 软件</text>
-<circle cx="404.8" cy="696.8" r="27" fill="#fb7185" fill-opacity="0.22" stroke="#fb7185" stroke-width="2.2"/>
-<circle cx="404.8" cy="696.8" r="5.2" fill="#fb7185"/>
-<text x="404.8" y="658.8" text-anchor="middle" font-size="13" font-weight="700" fill="#e5e7eb">Tesla</text>
-<text x="404.8" y="739.8" text-anchor="middle" font-size="9.5" fill="#94a3b8">电动车, 储能, 太阳能, FSD</text>
-<circle cx="290.4" cy="539.3" r="27" fill="#c084fc" fill-opacity="0.22" stroke="#c084fc" stroke-width="2.2"/>
-<circle cx="290.4" cy="539.3" r="5.2" fill="#c084fc"/>
-<text x="290.4" y="501.3" text-anchor="middle" font-size="13" font-weight="700" fill="#e5e7eb">Samsung Electronics</text>
-<text x="290.4" y="582.3" text-anchor="middle" font-size="9.5" fill="#94a3b8">存储, 晶圆代工, OLED, 移动设备</text>
-<circle cx="290.4" cy="344.7" r="27" fill="#c084fc" fill-opacity="0.22" stroke="#c084fc" stroke-width="2.2"/>
-<circle cx="290.4" cy="344.7" r="5.2" fill="#c084fc"/>
-<text x="290.4" y="306.7" text-anchor="middle" font-size="13" font-weight="700" fill="#e5e7eb">SK Hynix</text>
-<text x="290.4" y="387.7" text-anchor="middle" font-size="9.5" fill="#94a3b8">DRAM, NAND, HBM, CXL 存储</text>
-<circle cx="404.8" cy="187.2" r="27" fill="#fbbf24" fill-opacity="0.22" stroke="#fbbf24" stroke-width="2.2"/>
-<circle cx="404.8" cy="187.2" r="5.2" fill="#fbbf24"/>
-<text x="404.8" y="149.2" text-anchor="middle" font-size="13" font-weight="700" fill="#e5e7eb">TSMC</text>
-<text x="404.8" y="230.2" text-anchor="middle" font-size="9.5" fill="#94a3b8">先进逻辑代工, 特殊制程, 3DFabric, CoWoS</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="2640" height="3150" viewBox="30 -20 2640 3150">
+<defs>
+<pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1e293b" stroke-width="0.6" stroke-opacity="0.38"/></pattern>
+<marker id="arrow-06bcfa879942a99a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#22c55e"/></marker>
+<marker id="arrow-1719c8c5c3aeab8e" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#f59e0b"/></marker>
+</defs>
+<rect x="30" y="-20" width="2640" height="3150" fill="#0b0f14"/>
+<rect x="30" y="-20" width="2640" height="3150" fill="url(#grid)"/>
+<g font-family="-apple-system, BlinkMacSystemFont, PingFang SC, Noto Sans CJK SC, Segoe UI, sans-serif">
+<rect x="80" y="320" width="560" height="600" rx="8" fill="#fbbf24" fill-opacity="0.045" stroke="#fbbf24" stroke-opacity="0.52" stroke-width="2" stroke-dasharray="8 8"/>
+<text x="98" y="350" font-size="15" font-weight="700" fill="#fbbf24">TSMC</text>
+<rect x="740" y="320" width="560" height="600" rx="8" fill="#c084fc" fill-opacity="0.045" stroke="#c084fc" stroke-opacity="0.52" stroke-width="2" stroke-dasharray="8 8"/>
+<text x="758" y="350" font-size="15" font-weight="700" fill="#c084fc">SK Hynix</text>
+<rect x="1400" y="320" width="560" height="600" rx="8" fill="#c084fc" fill-opacity="0.045" stroke="#c084fc" stroke-opacity="0.52" stroke-width="2" stroke-dasharray="8 8"/>
+<text x="1418" y="350" font-size="15" font-weight="700" fill="#c084fc">Samsung Electronics</text>
+<rect x="2060" y="320" width="560" height="600" rx="8" fill="#fbbf24" fill-opacity="0.045" stroke="#fbbf24" stroke-opacity="0.52" stroke-width="2" stroke-dasharray="8 8"/>
+<text x="2078" y="350" font-size="15" font-weight="700" fill="#fbbf24">NVIDIA</text>
+<rect x="80" y="1020" width="560" height="600" rx="8" fill="#60a5fa" fill-opacity="0.045" stroke="#60a5fa" stroke-opacity="0.52" stroke-width="2" stroke-dasharray="8 8"/>
+<text x="98" y="1050" font-size="15" font-weight="700" fill="#60a5fa">Apple</text>
+<rect x="740" y="1020" width="560" height="600" rx="8" fill="#34d399" fill-opacity="0.045" stroke="#34d399" stroke-opacity="0.52" stroke-width="2" stroke-dasharray="8 8"/>
+<text x="758" y="1050" font-size="15" font-weight="700" fill="#34d399">Microsoft</text>
+<rect x="1400" y="1020" width="560" height="600" rx="8" fill="#34d399" fill-opacity="0.045" stroke="#34d399" stroke-opacity="0.52" stroke-width="2" stroke-dasharray="8 8"/>
+<text x="1418" y="1050" font-size="15" font-weight="700" fill="#34d399">Alphabet / Google</text>
+<rect x="2060" y="1020" width="560" height="600" rx="8" fill="#34d399" fill-opacity="0.045" stroke="#34d399" stroke-opacity="0.52" stroke-width="2" stroke-dasharray="8 8"/>
+<text x="2078" y="1050" font-size="15" font-weight="700" fill="#34d399">Amazon / AWS</text>
+<rect x="80" y="1720" width="560" height="600" rx="8" fill="#34d399" fill-opacity="0.045" stroke="#34d399" stroke-opacity="0.52" stroke-width="2" stroke-dasharray="8 8"/>
+<text x="98" y="1750" font-size="15" font-weight="700" fill="#34d399">Meta</text>
+<rect x="740" y="1720" width="560" height="600" rx="8" fill="#fb7185" fill-opacity="0.045" stroke="#fb7185" stroke-opacity="0.52" stroke-width="2" stroke-dasharray="8 8"/>
+<text x="758" y="1750" font-size="15" font-weight="700" fill="#fb7185">Tesla</text>
+<path d="M 360.0 440.0 C 360.0 660.5, 360.0 849.5, 360.0 1070.0" fill="none" stroke="#f59e0b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-1719c8c5c3aeab8e)"/>
+<rect x="335.5" y="669.2" width="49" height="24" rx="5" fill="#0b0f14" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="360.0" y="685.7" text-anchor="middle" font-size="12" font-weight="750" fill="#f59e0b">P01</text>
+<path d="M 590.0 405.0 C 910.0 405.0, 1790.0 405.0, 2110.0 405.0" fill="none" stroke="#f59e0b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-1719c8c5c3aeab8e)"/>
+<rect x="1111.4" y="393.0" width="49" height="24" rx="5" fill="#0b0f14" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="1135.9" y="409.5" text-anchor="middle" font-size="12" font-weight="750" fill="#f59e0b">P02</text>
+<path d="M 1250.0 405.0 C 1551.0 405.0, 1809.0 405.0, 2110.0 405.0" fill="none" stroke="#22c55e" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-06bcfa879942a99a)"/>
+<rect x="1554.7" y="393.0" width="49" height="24" rx="5" fill="#0b0f14" stroke="#22c55e" stroke-width="1.2"/>
+<text x="1579.2" y="409.5" text-anchor="middle" font-size="12" font-weight="750" fill="#22c55e">P03</text>
+<path d="M 1910.0 405.0 C 1990.0 405.0, 2030.0 405.0, 2110.0 405.0" fill="none" stroke="#f59e0b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-1719c8c5c3aeab8e)"/>
+<rect x="1963.8" y="393.0" width="49" height="24" rx="5" fill="#0b0f14" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="1988.3" y="409.5" text-anchor="middle" font-size="12" font-weight="750" fill="#f59e0b">P04</text>
+<path d="M 2340.0 440.0 C 2340.0 660.5, 2340.0 849.5, 2340.0 1070.0" fill="none" stroke="#22c55e" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-06bcfa879942a99a)"/>
+<rect x="2315.5" y="669.2" width="49" height="24" rx="5" fill="#0b0f14" stroke="#22c55e" stroke-width="1.2"/>
+<text x="2340.0" y="685.7" text-anchor="middle" font-size="12" font-weight="750" fill="#22c55e">P05</text>
+<path d="M 2110.0 405.0 C 1790.0 405.0, 1570.0 1105.0, 1250.0 1105.0" fill="none" stroke="#f59e0b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-1719c8c5c3aeab8e)"/>
+<rect x="1753.0" y="619.4" width="49" height="24" rx="5" fill="#0b0f14" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="1777.5" y="635.9" text-anchor="middle" font-size="12" font-weight="750" fill="#f59e0b">P06</text>
+<path d="M 1450.0 405.0 C 1130.0 405.0, 910.0 1105.0, 590.0 1105.0" fill="none" stroke="#f59e0b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-1719c8c5c3aeab8e)"/>
+<rect x="1093.0" y="619.4" width="49" height="24" rx="5" fill="#0b0f14" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="1117.5" y="635.9" text-anchor="middle" font-size="12" font-weight="750" fill="#f59e0b">P08</text>
+<path d="M 2340.0 440.0 C 2340.0 760.0, 1020.0 1450.0, 1020.0 1770.0" fill="none" stroke="#f59e0b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-1719c8c5c3aeab8e)"/>
+<rect x="1888.5" y="912.5" width="49" height="24" rx="5" fill="#0b0f14" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="1913.0" y="929.0" text-anchor="middle" font-size="12" font-weight="750" fill="#f59e0b">P09</text>
+<g><title>2026 年度十家公司主营产品上下游关系图 · 2026-07-13 快照</title>
+<rect x="80" y="20" width="2460" height="90" rx="8" fill="#0b0f14" fill-opacity="0" stroke="#64748b" stroke-opacity="0" stroke-width="1.5"/>
+<text x="96" y="62" font-size="34" font-weight="750" fill="#f8fafc">2026 年度十家公司主营产品上下游关系图 · 2026-07-13 快照</text>
+</g>
+<g><title>公司分组内为主营产品节点；淡色边为内部产品栈，带 Edge ID 的边为跨公司依赖。 · 绿色=本年度官方证据 · 蓝色=官方基线 · 橙色=市场共识、历史基线或待直接证据。</title>
+<rect x="80" y="160" width="2460" height="90" rx="8" fill="#111827" fill-opacity="0.94" stroke="#475569" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="96" y="188" font-size="13" font-weight="500" fill="#cbd5e1">公司分组内为主营产品节点；淡色边为内部产品栈，带 Edge ID 的边为跨公司依赖。</text>
+<text x="96" y="209" font-size="13" font-weight="500" fill="#cbd5e1">绿色=本年度官方证据 · 蓝色=官方基线 · 橙色=市场共识、历史基线或待直接证据。</text>
+</g>
+<g><title>TSMC · semiconductor</title>
+<rect x="130" y="370" width="460" height="70" rx="8" fill="#111827" fill-opacity="0.94" stroke="#fbbf24" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="146" y="398" font-size="20" font-weight="750" fill="#f8fafc">TSMC</text>
+<text x="146" y="426" font-size="13" font-weight="500" fill="#cbd5e1">semiconductor</text>
+</g>
+<g><title>先进逻辑代工</title>
+<rect x="130" y="500" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#fbbf24" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="146" y="528" font-size="16" font-weight="750" fill="#f8fafc">先进逻辑代工</text>
+</g>
+<g><title>特殊制程</title>
+<rect x="400" y="500" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#fbbf24" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="416" y="528" font-size="16" font-weight="750" fill="#f8fafc">特殊制程</text>
+</g>
+<g><title>3DFabric</title>
+<rect x="130" y="640" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#fbbf24" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="146" y="668" font-size="16" font-weight="750" fill="#f8fafc">3DFabric</text>
+</g>
+<g><title>CoWoS</title>
+<rect x="400" y="640" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#fbbf24" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="416" y="668" font-size="16" font-weight="750" fill="#f8fafc">CoWoS</text>
+</g>
+<g><title>N3/N2 节点</title>
+<rect x="130" y="780" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#fbbf24" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="146" y="808" font-size="16" font-weight="750" fill="#f8fafc">N3/N2 节点</text>
+</g>
+<g><title>晶圆服务</title>
+<rect x="400" y="780" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#fbbf24" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="416" y="808" font-size="16" font-weight="750" fill="#f8fafc">晶圆服务</text>
+</g>
+<g><title>SK Hynix · memory</title>
+<rect x="790" y="370" width="460" height="70" rx="8" fill="#111827" fill-opacity="0.94" stroke="#c084fc" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="806" y="398" font-size="20" font-weight="750" fill="#f8fafc">SK Hynix</text>
+<text x="806" y="426" font-size="13" font-weight="500" fill="#cbd5e1">memory</text>
+</g>
+<g><title>DRAM</title>
+<rect x="790" y="500" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#c084fc" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="806" y="528" font-size="16" font-weight="750" fill="#f8fafc">DRAM</text>
+</g>
+<g><title>NAND</title>
+<rect x="1060" y="500" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#c084fc" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="1076" y="528" font-size="16" font-weight="750" fill="#f8fafc">NAND</text>
+</g>
+<g><title>HBM</title>
+<rect x="790" y="640" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#c084fc" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="806" y="668" font-size="16" font-weight="750" fill="#f8fafc">HBM</text>
+</g>
+<g><title>CXL 存储</title>
+<rect x="1060" y="640" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#c084fc" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="1076" y="668" font-size="16" font-weight="750" fill="#f8fafc">CXL 存储</text>
+</g>
+<g><title>企业级 SSD</title>
+<rect x="790" y="780" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#c084fc" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="806" y="808" font-size="16" font-weight="750" fill="#f8fafc">企业级 SSD</text>
+</g>
+<g><title>先进封装</title>
+<rect x="1060" y="780" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#c084fc" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="1076" y="808" font-size="16" font-weight="750" fill="#f8fafc">先进封装</text>
+</g>
+<g><title>Samsung Electronics · memory</title>
+<rect x="1450" y="370" width="460" height="70" rx="8" fill="#111827" fill-opacity="0.94" stroke="#c084fc" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="1466" y="398" font-size="20" font-weight="750" fill="#f8fafc">Samsung Electronics</text>
+<text x="1466" y="426" font-size="13" font-weight="500" fill="#cbd5e1">memory</text>
+</g>
+<g><title>存储</title>
+<rect x="1450" y="500" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#c084fc" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="1466" y="528" font-size="16" font-weight="750" fill="#f8fafc">存储</text>
+</g>
+<g><title>晶圆代工</title>
+<rect x="1720" y="500" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#c084fc" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="1736" y="528" font-size="16" font-weight="750" fill="#f8fafc">晶圆代工</text>
+</g>
+<g><title>OLED</title>
+<rect x="1450" y="640" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#c084fc" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="1466" y="668" font-size="16" font-weight="750" fill="#f8fafc">OLED</text>
+</g>
+<g><title>移动设备</title>
+<rect x="1720" y="640" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#c084fc" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="1736" y="668" font-size="16" font-weight="750" fill="#f8fafc">移动设备</text>
+</g>
+<g><title>电视/显示</title>
+<rect x="1450" y="780" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#c084fc" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="1466" y="808" font-size="16" font-weight="750" fill="#f8fafc">电视/显示</text>
+</g>
+<g><title>家电</title>
+<rect x="1720" y="780" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#c084fc" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="1736" y="808" font-size="16" font-weight="750" fill="#f8fafc">家电</text>
+</g>
+<g><title>NVIDIA · semiconductor</title>
+<rect x="2110" y="370" width="460" height="70" rx="8" fill="#111827" fill-opacity="0.94" stroke="#fbbf24" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="2126" y="398" font-size="20" font-weight="750" fill="#f8fafc">NVIDIA</text>
+<text x="2126" y="426" font-size="13" font-weight="500" fill="#cbd5e1">semiconductor</text>
+</g>
+<g><title>数据中心 GPU</title>
+<rect x="2110" y="500" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#fbbf24" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="2126" y="528" font-size="16" font-weight="750" fill="#f8fafc">数据中心 GPU</text>
+</g>
+<g><title>网络产品</title>
+<rect x="2380" y="500" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#fbbf24" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="2396" y="528" font-size="16" font-weight="750" fill="#f8fafc">网络产品</text>
+</g>
+<g><title>CUDA</title>
+<rect x="2110" y="640" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#fbbf24" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="2126" y="668" font-size="16" font-weight="750" fill="#f8fafc">CUDA</text>
+</g>
+<g><title>AI 软件</title>
+<rect x="2380" y="640" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#fbbf24" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="2396" y="668" font-size="16" font-weight="750" fill="#f8fafc">AI 软件</text>
+</g>
+<g><title>游戏 GPU</title>
+<rect x="2110" y="780" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#fbbf24" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="2126" y="808" font-size="16" font-weight="750" fill="#f8fafc">游戏 GPU</text>
+</g>
+<g><title>汽车业务</title>
+<rect x="2380" y="780" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#fbbf24" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="2396" y="808" font-size="16" font-weight="750" fill="#f8fafc">汽车业务</text>
+</g>
+<g><title>Apple · device</title>
+<rect x="130" y="1070" width="460" height="70" rx="8" fill="#111827" fill-opacity="0.94" stroke="#60a5fa" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="146" y="1098" font-size="20" font-weight="750" fill="#f8fafc">Apple</text>
+<text x="146" y="1126" font-size="13" font-weight="500" fill="#cbd5e1">device</text>
+</g>
+<g><title>iPhone</title>
+<rect x="130" y="1200" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#60a5fa" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="146" y="1228" font-size="16" font-weight="750" fill="#f8fafc">iPhone</text>
+</g>
+<g><title>Mac</title>
+<rect x="400" y="1200" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#60a5fa" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="416" y="1228" font-size="16" font-weight="750" fill="#f8fafc">Mac</text>
+</g>
+<g><title>iPad</title>
+<rect x="130" y="1340" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#60a5fa" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="146" y="1368" font-size="16" font-weight="750" fill="#f8fafc">iPad</text>
+</g>
+<g><title>可穿戴设备</title>
+<rect x="400" y="1340" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#60a5fa" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="416" y="1368" font-size="16" font-weight="750" fill="#f8fafc">可穿戴设备</text>
+</g>
+<g><title>服务</title>
+<rect x="130" y="1480" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#60a5fa" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="146" y="1508" font-size="16" font-weight="750" fill="#f8fafc">服务</text>
+</g>
+<g><title>Apple silicon</title>
+<rect x="400" y="1480" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#60a5fa" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="416" y="1508" font-size="16" font-weight="750" fill="#f8fafc">Apple silicon</text>
+</g>
+<g><title>Microsoft · cloud ai</title>
+<rect x="790" y="1070" width="460" height="70" rx="8" fill="#111827" fill-opacity="0.94" stroke="#34d399" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="806" y="1098" font-size="20" font-weight="750" fill="#f8fafc">Microsoft</text>
+<text x="806" y="1126" font-size="13" font-weight="500" fill="#cbd5e1">cloud ai</text>
+</g>
+<g><title>Azure</title>
+<rect x="790" y="1200" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#34d399" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="806" y="1228" font-size="16" font-weight="750" fill="#f8fafc">Azure</text>
+</g>
+<g><title>Microsoft 365</title>
+<rect x="1060" y="1200" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#34d399" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="1076" y="1228" font-size="16" font-weight="750" fill="#f8fafc">Microsoft 365</text>
+</g>
+<g><title>Windows</title>
+<rect x="790" y="1340" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#34d399" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="806" y="1368" font-size="16" font-weight="750" fill="#f8fafc">Windows</text>
+</g>
+<g><title>GitHub</title>
+<rect x="1060" y="1340" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#34d399" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="1076" y="1368" font-size="16" font-weight="750" fill="#f8fafc">GitHub</text>
+</g>
+<g><title>LinkedIn</title>
+<rect x="790" y="1480" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#34d399" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="806" y="1508" font-size="16" font-weight="750" fill="#f8fafc">LinkedIn</text>
+</g>
+<g><title>Xbox</title>
+<rect x="1060" y="1480" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#34d399" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="1076" y="1508" font-size="16" font-weight="750" fill="#f8fafc">Xbox</text>
+</g>
+<g><title>Alphabet / Google · cloud ai</title>
+<rect x="1450" y="1070" width="460" height="70" rx="8" fill="#111827" fill-opacity="0.94" stroke="#34d399" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="1466" y="1098" font-size="20" font-weight="750" fill="#f8fafc">Alphabet / Google</text>
+<text x="1466" y="1126" font-size="13" font-weight="500" fill="#cbd5e1">cloud ai</text>
+</g>
+<g><title>搜索</title>
+<rect x="1450" y="1200" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#34d399" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="1466" y="1228" font-size="16" font-weight="750" fill="#f8fafc">搜索</text>
+</g>
+<g><title>YouTube</title>
+<rect x="1720" y="1200" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#34d399" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="1736" y="1228" font-size="16" font-weight="750" fill="#f8fafc">YouTube</text>
+</g>
+<g><title>Google Cloud</title>
+<rect x="1450" y="1340" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#34d399" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="1466" y="1368" font-size="16" font-weight="750" fill="#f8fafc">Google Cloud</text>
+</g>
+<g><title>Gemini</title>
+<rect x="1720" y="1340" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#34d399" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="1736" y="1368" font-size="16" font-weight="750" fill="#f8fafc">Gemini</text>
+</g>
+<g><title>Android</title>
+<rect x="1450" y="1480" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#34d399" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="1466" y="1508" font-size="16" font-weight="750" fill="#f8fafc">Android</text>
+</g>
+<g><title>Pixel</title>
+<rect x="1720" y="1480" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#34d399" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="1736" y="1508" font-size="16" font-weight="750" fill="#f8fafc">Pixel</text>
+</g>
+<g><title>Amazon / AWS · cloud ai</title>
+<rect x="2110" y="1070" width="460" height="70" rx="8" fill="#111827" fill-opacity="0.94" stroke="#34d399" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="2126" y="1098" font-size="20" font-weight="750" fill="#f8fafc">Amazon / AWS</text>
+<text x="2126" y="1126" font-size="13" font-weight="500" fill="#cbd5e1">cloud ai</text>
+</g>
+<g><title>AWS</title>
+<rect x="2110" y="1200" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#34d399" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="2126" y="1228" font-size="16" font-weight="750" fill="#f8fafc">AWS</text>
+</g>
+<g><title>Marketplace</title>
+<rect x="2380" y="1200" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#34d399" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="2396" y="1228" font-size="16" font-weight="750" fill="#f8fafc">Marketplace</text>
+</g>
+<g><title>Prime</title>
+<rect x="2110" y="1340" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#34d399" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="2126" y="1368" font-size="16" font-weight="750" fill="#f8fafc">Prime</text>
+</g>
+<g><title>广告</title>
+<rect x="2380" y="1340" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#34d399" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="2396" y="1368" font-size="16" font-weight="750" fill="#f8fafc">广告</text>
+</g>
+<g><title>物流</title>
+<rect x="2110" y="1480" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#34d399" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="2126" y="1508" font-size="16" font-weight="750" fill="#f8fafc">物流</text>
+</g>
+<g><title>设备</title>
+<rect x="2380" y="1480" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#34d399" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="2396" y="1508" font-size="16" font-weight="750" fill="#f8fafc">设备</text>
+</g>
+<g><title>Meta · cloud ai</title>
+<rect x="130" y="1770" width="460" height="70" rx="8" fill="#111827" fill-opacity="0.94" stroke="#34d399" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="146" y="1798" font-size="20" font-weight="750" fill="#f8fafc">Meta</text>
+<text x="146" y="1826" font-size="13" font-weight="500" fill="#cbd5e1">cloud ai</text>
+</g>
+<g><title>Facebook</title>
+<rect x="130" y="1900" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#34d399" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="146" y="1928" font-size="16" font-weight="750" fill="#f8fafc">Facebook</text>
+</g>
+<g><title>Instagram</title>
+<rect x="400" y="1900" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#34d399" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="416" y="1928" font-size="16" font-weight="750" fill="#f8fafc">Instagram</text>
+</g>
+<g><title>WhatsApp</title>
+<rect x="130" y="2040" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#34d399" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="146" y="2068" font-size="16" font-weight="750" fill="#f8fafc">WhatsApp</text>
+</g>
+<g><title>Threads</title>
+<rect x="400" y="2040" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#34d399" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="416" y="2068" font-size="16" font-weight="750" fill="#f8fafc">Threads</text>
+</g>
+<g><title>Meta AI</title>
+<rect x="130" y="2180" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#34d399" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="146" y="2208" font-size="16" font-weight="750" fill="#f8fafc">Meta AI</text>
+</g>
+<g><title>Reality Labs</title>
+<rect x="400" y="2180" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#34d399" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="416" y="2208" font-size="16" font-weight="750" fill="#f8fafc">Reality Labs</text>
+</g>
+<g><title>Tesla · auto energy</title>
+<rect x="790" y="1770" width="460" height="70" rx="8" fill="#111827" fill-opacity="0.94" stroke="#fb7185" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="806" y="1798" font-size="20" font-weight="750" fill="#f8fafc">Tesla</text>
+<text x="806" y="1826" font-size="13" font-weight="500" fill="#cbd5e1">auto energy</text>
+</g>
+<g><title>电动车</title>
+<rect x="790" y="1900" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#fb7185" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="806" y="1928" font-size="16" font-weight="750" fill="#f8fafc">电动车</text>
+</g>
+<g><title>储能</title>
+<rect x="1060" y="1900" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#fb7185" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="1076" y="1928" font-size="16" font-weight="750" fill="#f8fafc">储能</text>
+</g>
+<g><title>太阳能</title>
+<rect x="790" y="2040" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#fb7185" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="806" y="2068" font-size="16" font-weight="750" fill="#f8fafc">太阳能</text>
+</g>
+<g><title>FSD</title>
+<rect x="1060" y="2040" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#fb7185" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="1076" y="2068" font-size="16" font-weight="750" fill="#f8fafc">FSD</text>
+</g>
+<g><title>超级充电</title>
+<rect x="790" y="2180" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#fb7185" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="806" y="2208" font-size="16" font-weight="750" fill="#f8fafc">超级充电</text>
+</g>
+<g><title>机器人</title>
+<rect x="1060" y="2180" width="190" height="80" rx="8" fill="#111827" fill-opacity="0.94" stroke="#fb7185" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="1076" y="2208" font-size="16" font-weight="750" fill="#f8fafc">机器人</text>
+</g>
+<g><title>跨公司关系索引 ·  · P01 · TSMC → Apple · Apple silicon 先进制程代工 ·  · P02 · TSMC → NVIDIA · AI 芯片先进制程代工与封装 ·  · P03 · SK Hynix → NVIDIA · AI 加速器用 HBM ·  · P04 · Samsung Electronics → NVIDIA · HBM/DRAM 供应基线 ·  · P05 · NVIDIA → Amazon / AWS · AWS 上的 GPU 与 AI 基础设施 ·  · P06 · NVIDIA → Microsoft · Azure AI 加速器生态 ·  · P08 · Samsung Electronics → Apple · 存储/显示组件基线 ·  · P09 · NVIDIA → Tesla · 汽车/AI 计算生态基线</title>
+<rect x="80" y="2420" width="800" height="650" rx="8" fill="#111827" fill-opacity="0.97" stroke="#334155" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="96" y="2448" font-size="20" font-weight="750" fill="#f8fafc">跨公司关系索引</text>
+<text x="96" y="2490" font-size="13" font-weight="500" fill="#cbd5e1">P01 · TSMC → Apple</text>
+<text x="96" y="2511" font-size="13" font-weight="500" fill="#cbd5e1">Apple silicon 先进制程代工</text>
+<text x="96" y="2546" font-size="13" font-weight="500" fill="#cbd5e1">P02 · TSMC → NVIDIA</text>
+<text x="96" y="2567" font-size="13" font-weight="500" fill="#cbd5e1">AI 芯片先进制程代工与封装</text>
+<text x="96" y="2602" font-size="13" font-weight="500" fill="#cbd5e1">P03 · SK Hynix → NVIDIA</text>
+<text x="96" y="2623" font-size="13" font-weight="500" fill="#cbd5e1">AI 加速器用 HBM</text>
+<text x="96" y="2658" font-size="13" font-weight="500" fill="#cbd5e1">P04 · Samsung Electronics → NVIDIA</text>
+<text x="96" y="2679" font-size="13" font-weight="500" fill="#cbd5e1">HBM/DRAM 供应基线</text>
+<text x="96" y="2714" font-size="13" font-weight="500" fill="#cbd5e1">P05 · NVIDIA → Amazon / AWS</text>
+<text x="96" y="2735" font-size="13" font-weight="500" fill="#cbd5e1">AWS 上的 GPU 与 AI 基础设施</text>
+<text x="96" y="2770" font-size="13" font-weight="500" fill="#cbd5e1">P06 · NVIDIA → Microsoft</text>
+<text x="96" y="2791" font-size="13" font-weight="500" fill="#cbd5e1">Azure AI 加速器生态</text>
+<text x="96" y="2826" font-size="13" font-weight="500" fill="#cbd5e1">P08 · Samsung Electronics → Apple</text>
+<text x="96" y="2847" font-size="13" font-weight="500" fill="#cbd5e1">存储/显示组件基线</text>
+<text x="96" y="2882" font-size="13" font-weight="500" fill="#cbd5e1">P09 · NVIDIA → Tesla</text>
+<text x="96" y="2903" font-size="13" font-weight="500" fill="#cbd5e1">汽车/AI 计算生态基线</text>
+</g>
+</g>
 </svg>

@@ -1,0 +1,1685 @@
+{
+  "nodes": [
+    {
+      "id": "122abc234cf1175d",
+      "type": "text",
+      "x": 80,
+      "y": 20,
+      "width": 2460,
+      "height": 90,
+      "text": "# 2026 年度十二家公司主营产品上下游关系图 · 2026-08-10 快照"
+    },
+    {
+      "id": "96c2e617086c3156",
+      "type": "text",
+      "x": 80,
+      "y": 160,
+      "width": 2460,
+      "height": 90,
+      "text": "公司分组内为主营产品节点；淡色边为内部产品栈，带 Edge ID 的边为跨公司依赖。\n绿色=本年度官方证据 · 蓝色=官方基线 · 橙色=市场共识、历史基线或待直接证据。",
+      "color": "#475569"
+    },
+    {
+      "id": "b6cd682287b181a3",
+      "type": "group",
+      "x": 80,
+      "y": 320,
+      "width": 560,
+      "height": 600,
+      "label": "TSMC",
+      "color": "#fbbf24"
+    },
+    {
+      "id": "b569102f52521c14",
+      "type": "text",
+      "x": 130,
+      "y": 370,
+      "width": 460,
+      "height": 70,
+      "text": "## TSMC\nsemiconductor",
+      "color": "#fbbf24"
+    },
+    {
+      "id": "30a924ae1127b547",
+      "type": "text",
+      "x": 130,
+      "y": 500,
+      "width": 190,
+      "height": 80,
+      "text": "**先进逻辑代工**",
+      "color": "#fbbf24"
+    },
+    {
+      "id": "057482513780446a",
+      "type": "text",
+      "x": 400,
+      "y": 500,
+      "width": 190,
+      "height": 80,
+      "text": "**特殊制程**",
+      "color": "#fbbf24"
+    },
+    {
+      "id": "1411317103dcc92a",
+      "type": "text",
+      "x": 130,
+      "y": 640,
+      "width": 190,
+      "height": 80,
+      "text": "**3DFabric**",
+      "color": "#fbbf24"
+    },
+    {
+      "id": "e6925829d29b8b49",
+      "type": "text",
+      "x": 400,
+      "y": 640,
+      "width": 190,
+      "height": 80,
+      "text": "**CoWoS**",
+      "color": "#fbbf24"
+    },
+    {
+      "id": "709ad69fa6fec9a7",
+      "type": "text",
+      "x": 130,
+      "y": 780,
+      "width": 190,
+      "height": 80,
+      "text": "**N3/N2 节点**",
+      "color": "#fbbf24"
+    },
+    {
+      "id": "bea888f82a5b7071",
+      "type": "text",
+      "x": 400,
+      "y": 780,
+      "width": 190,
+      "height": 80,
+      "text": "**晶圆服务**",
+      "color": "#fbbf24"
+    },
+    {
+      "id": "1079fe9faad3b5a0",
+      "type": "group",
+      "x": 740,
+      "y": 320,
+      "width": 560,
+      "height": 600,
+      "label": "SK Hynix",
+      "color": "#c084fc"
+    },
+    {
+      "id": "eb943c77f1cdbfc5",
+      "type": "text",
+      "x": 790,
+      "y": 370,
+      "width": 460,
+      "height": 70,
+      "text": "## SK Hynix\nmemory",
+      "color": "#c084fc"
+    },
+    {
+      "id": "a67db8ff05bcd532",
+      "type": "text",
+      "x": 790,
+      "y": 500,
+      "width": 190,
+      "height": 80,
+      "text": "**DRAM**",
+      "color": "#c084fc"
+    },
+    {
+      "id": "609055bec2353788",
+      "type": "text",
+      "x": 1060,
+      "y": 500,
+      "width": 190,
+      "height": 80,
+      "text": "**NAND**",
+      "color": "#c084fc"
+    },
+    {
+      "id": "fc55c487791688ff",
+      "type": "text",
+      "x": 790,
+      "y": 640,
+      "width": 190,
+      "height": 80,
+      "text": "**HBM**",
+      "color": "#c084fc"
+    },
+    {
+      "id": "02d327d3930eded6",
+      "type": "text",
+      "x": 1060,
+      "y": 640,
+      "width": 190,
+      "height": 80,
+      "text": "**CXL 存储**",
+      "color": "#c084fc"
+    },
+    {
+      "id": "8a17f6dc92e9289c",
+      "type": "text",
+      "x": 790,
+      "y": 780,
+      "width": 190,
+      "height": 80,
+      "text": "**企业级 SSD**",
+      "color": "#c084fc"
+    },
+    {
+      "id": "3638e2c4faa44c53",
+      "type": "text",
+      "x": 1060,
+      "y": 780,
+      "width": 190,
+      "height": 80,
+      "text": "**先进封装**",
+      "color": "#c084fc"
+    },
+    {
+      "id": "c789e054c22b0603",
+      "type": "group",
+      "x": 1400,
+      "y": 320,
+      "width": 560,
+      "height": 600,
+      "label": "Samsung Electronics",
+      "color": "#c084fc"
+    },
+    {
+      "id": "323e68e3e19dffb3",
+      "type": "text",
+      "x": 1450,
+      "y": 370,
+      "width": 460,
+      "height": 70,
+      "text": "## Samsung Electronics\nmemory",
+      "color": "#c084fc"
+    },
+    {
+      "id": "0812817bd842678e",
+      "type": "text",
+      "x": 1450,
+      "y": 500,
+      "width": 190,
+      "height": 80,
+      "text": "**存储**",
+      "color": "#c084fc"
+    },
+    {
+      "id": "a6b9619ee0c5e4e7",
+      "type": "text",
+      "x": 1720,
+      "y": 500,
+      "width": 190,
+      "height": 80,
+      "text": "**晶圆代工**",
+      "color": "#c084fc"
+    },
+    {
+      "id": "68aa9e2565dc1341",
+      "type": "text",
+      "x": 1450,
+      "y": 640,
+      "width": 190,
+      "height": 80,
+      "text": "**OLED**",
+      "color": "#c084fc"
+    },
+    {
+      "id": "ee3e5d6e417db469",
+      "type": "text",
+      "x": 1720,
+      "y": 640,
+      "width": 190,
+      "height": 80,
+      "text": "**移动设备**",
+      "color": "#c084fc"
+    },
+    {
+      "id": "5960169e1fd052b4",
+      "type": "text",
+      "x": 1450,
+      "y": 780,
+      "width": 190,
+      "height": 80,
+      "text": "**电视/显示**",
+      "color": "#c084fc"
+    },
+    {
+      "id": "e567017e69030f12",
+      "type": "text",
+      "x": 1720,
+      "y": 780,
+      "width": 190,
+      "height": 80,
+      "text": "**家电**",
+      "color": "#c084fc"
+    },
+    {
+      "id": "dd70a426e06e0cfe",
+      "type": "group",
+      "x": 2060,
+      "y": 320,
+      "width": 560,
+      "height": 600,
+      "label": "NVIDIA",
+      "color": "#fbbf24"
+    },
+    {
+      "id": "6982ef44b7ae61de",
+      "type": "text",
+      "x": 2110,
+      "y": 370,
+      "width": 460,
+      "height": 70,
+      "text": "## NVIDIA\nsemiconductor",
+      "color": "#fbbf24"
+    },
+    {
+      "id": "ff798c7b60c196cd",
+      "type": "text",
+      "x": 2110,
+      "y": 500,
+      "width": 190,
+      "height": 80,
+      "text": "**数据中心 GPU**",
+      "color": "#fbbf24"
+    },
+    {
+      "id": "20115bb77149ead5",
+      "type": "text",
+      "x": 2380,
+      "y": 500,
+      "width": 190,
+      "height": 80,
+      "text": "**网络产品**",
+      "color": "#fbbf24"
+    },
+    {
+      "id": "0c621ccee2d1201a",
+      "type": "text",
+      "x": 2110,
+      "y": 640,
+      "width": 190,
+      "height": 80,
+      "text": "**CUDA**",
+      "color": "#fbbf24"
+    },
+    {
+      "id": "3d5649c5e0a2c74b",
+      "type": "text",
+      "x": 2380,
+      "y": 640,
+      "width": 190,
+      "height": 80,
+      "text": "**AI 软件**",
+      "color": "#fbbf24"
+    },
+    {
+      "id": "3c05ed1ad75a5811",
+      "type": "text",
+      "x": 2110,
+      "y": 780,
+      "width": 190,
+      "height": 80,
+      "text": "**游戏 GPU**",
+      "color": "#fbbf24"
+    },
+    {
+      "id": "2f48a0e29092145e",
+      "type": "text",
+      "x": 2380,
+      "y": 780,
+      "width": 190,
+      "height": 80,
+      "text": "**汽车业务**",
+      "color": "#fbbf24"
+    },
+    {
+      "id": "3627165de889c0f2",
+      "type": "group",
+      "x": 80,
+      "y": 1020,
+      "width": 560,
+      "height": 600,
+      "label": "Apple",
+      "color": "#60a5fa"
+    },
+    {
+      "id": "0cc7c744786c6887",
+      "type": "text",
+      "x": 130,
+      "y": 1070,
+      "width": 460,
+      "height": 70,
+      "text": "## Apple\ndevice",
+      "color": "#60a5fa"
+    },
+    {
+      "id": "e1452733d811e08a",
+      "type": "text",
+      "x": 130,
+      "y": 1200,
+      "width": 190,
+      "height": 80,
+      "text": "**iPhone**",
+      "color": "#60a5fa"
+    },
+    {
+      "id": "088e0193ba99c7f1",
+      "type": "text",
+      "x": 400,
+      "y": 1200,
+      "width": 190,
+      "height": 80,
+      "text": "**Mac**",
+      "color": "#60a5fa"
+    },
+    {
+      "id": "bb8eae1dcb681191",
+      "type": "text",
+      "x": 130,
+      "y": 1340,
+      "width": 190,
+      "height": 80,
+      "text": "**iPad**",
+      "color": "#60a5fa"
+    },
+    {
+      "id": "ab538bc53a29e839",
+      "type": "text",
+      "x": 400,
+      "y": 1340,
+      "width": 190,
+      "height": 80,
+      "text": "**可穿戴设备**",
+      "color": "#60a5fa"
+    },
+    {
+      "id": "fa04597af3ee028f",
+      "type": "text",
+      "x": 130,
+      "y": 1480,
+      "width": 190,
+      "height": 80,
+      "text": "**服务**",
+      "color": "#60a5fa"
+    },
+    {
+      "id": "a8ef06c6b662e509",
+      "type": "text",
+      "x": 400,
+      "y": 1480,
+      "width": 190,
+      "height": 80,
+      "text": "**Apple silicon**",
+      "color": "#60a5fa"
+    },
+    {
+      "id": "bd49062787946e66",
+      "type": "group",
+      "x": 740,
+      "y": 1020,
+      "width": 560,
+      "height": 600,
+      "label": "Microsoft",
+      "color": "#34d399"
+    },
+    {
+      "id": "1d36b5a83de9b41b",
+      "type": "text",
+      "x": 790,
+      "y": 1070,
+      "width": 460,
+      "height": 70,
+      "text": "## Microsoft\ncloud ai",
+      "color": "#34d399"
+    },
+    {
+      "id": "bc481558d63f00a9",
+      "type": "text",
+      "x": 790,
+      "y": 1200,
+      "width": 190,
+      "height": 80,
+      "text": "**Azure**",
+      "color": "#34d399"
+    },
+    {
+      "id": "aa468b086b15d2e1",
+      "type": "text",
+      "x": 1060,
+      "y": 1200,
+      "width": 190,
+      "height": 80,
+      "text": "**Microsoft 365**",
+      "color": "#34d399"
+    },
+    {
+      "id": "8cd204cedac63748",
+      "type": "text",
+      "x": 790,
+      "y": 1340,
+      "width": 190,
+      "height": 80,
+      "text": "**Windows**",
+      "color": "#34d399"
+    },
+    {
+      "id": "5aa0a264da7429f8",
+      "type": "text",
+      "x": 1060,
+      "y": 1340,
+      "width": 190,
+      "height": 80,
+      "text": "**GitHub**",
+      "color": "#34d399"
+    },
+    {
+      "id": "34c9784b2a6d632f",
+      "type": "text",
+      "x": 790,
+      "y": 1480,
+      "width": 190,
+      "height": 80,
+      "text": "**LinkedIn**",
+      "color": "#34d399"
+    },
+    {
+      "id": "ddf6da3f4b999218",
+      "type": "text",
+      "x": 1060,
+      "y": 1480,
+      "width": 190,
+      "height": 80,
+      "text": "**Xbox**",
+      "color": "#34d399"
+    },
+    {
+      "id": "08c587e0ce6ca986",
+      "type": "group",
+      "x": 1400,
+      "y": 1020,
+      "width": 560,
+      "height": 600,
+      "label": "Alphabet / Google",
+      "color": "#34d399"
+    },
+    {
+      "id": "cfdc95063d6c5015",
+      "type": "text",
+      "x": 1450,
+      "y": 1070,
+      "width": 460,
+      "height": 70,
+      "text": "## Alphabet / Google\ncloud ai",
+      "color": "#34d399"
+    },
+    {
+      "id": "f1973f0ede738ad3",
+      "type": "text",
+      "x": 1450,
+      "y": 1200,
+      "width": 190,
+      "height": 80,
+      "text": "**搜索**",
+      "color": "#34d399"
+    },
+    {
+      "id": "aea2efe9a73285ee",
+      "type": "text",
+      "x": 1720,
+      "y": 1200,
+      "width": 190,
+      "height": 80,
+      "text": "**YouTube**",
+      "color": "#34d399"
+    },
+    {
+      "id": "8a2671cdf11ddfa8",
+      "type": "text",
+      "x": 1450,
+      "y": 1340,
+      "width": 190,
+      "height": 80,
+      "text": "**Google Cloud**",
+      "color": "#34d399"
+    },
+    {
+      "id": "b78bf6b1c25707b7",
+      "type": "text",
+      "x": 1720,
+      "y": 1340,
+      "width": 190,
+      "height": 80,
+      "text": "**Gemini**",
+      "color": "#34d399"
+    },
+    {
+      "id": "891b1c3437b8e95f",
+      "type": "text",
+      "x": 1450,
+      "y": 1480,
+      "width": 190,
+      "height": 80,
+      "text": "**Android**",
+      "color": "#34d399"
+    },
+    {
+      "id": "e62056302556f7ff",
+      "type": "text",
+      "x": 1720,
+      "y": 1480,
+      "width": 190,
+      "height": 80,
+      "text": "**Pixel**",
+      "color": "#34d399"
+    },
+    {
+      "id": "1f56d4becdd55468",
+      "type": "group",
+      "x": 2060,
+      "y": 1020,
+      "width": 560,
+      "height": 600,
+      "label": "Amazon / AWS",
+      "color": "#34d399"
+    },
+    {
+      "id": "c719a63fc6e48d1c",
+      "type": "text",
+      "x": 2110,
+      "y": 1070,
+      "width": 460,
+      "height": 70,
+      "text": "## Amazon / AWS\ncloud ai",
+      "color": "#34d399"
+    },
+    {
+      "id": "5ab1990f010c0429",
+      "type": "text",
+      "x": 2110,
+      "y": 1200,
+      "width": 190,
+      "height": 80,
+      "text": "**AWS**",
+      "color": "#34d399"
+    },
+    {
+      "id": "17486926275e58d4",
+      "type": "text",
+      "x": 2380,
+      "y": 1200,
+      "width": 190,
+      "height": 80,
+      "text": "**Marketplace**",
+      "color": "#34d399"
+    },
+    {
+      "id": "f648c202b41af4a0",
+      "type": "text",
+      "x": 2110,
+      "y": 1340,
+      "width": 190,
+      "height": 80,
+      "text": "**Prime**",
+      "color": "#34d399"
+    },
+    {
+      "id": "0395352ebe4dd6e4",
+      "type": "text",
+      "x": 2380,
+      "y": 1340,
+      "width": 190,
+      "height": 80,
+      "text": "**广告**",
+      "color": "#34d399"
+    },
+    {
+      "id": "6d80a4562ee5a8a9",
+      "type": "text",
+      "x": 2110,
+      "y": 1480,
+      "width": 190,
+      "height": 80,
+      "text": "**物流**",
+      "color": "#34d399"
+    },
+    {
+      "id": "e33ab121fea78e94",
+      "type": "text",
+      "x": 2380,
+      "y": 1480,
+      "width": 190,
+      "height": 80,
+      "text": "**设备**",
+      "color": "#34d399"
+    },
+    {
+      "id": "b0878f3ab3f103e0",
+      "type": "group",
+      "x": 80,
+      "y": 1720,
+      "width": 560,
+      "height": 600,
+      "label": "Meta",
+      "color": "#34d399"
+    },
+    {
+      "id": "e0dcda2f4df54eff",
+      "type": "text",
+      "x": 130,
+      "y": 1770,
+      "width": 460,
+      "height": 70,
+      "text": "## Meta\ncloud ai",
+      "color": "#34d399"
+    },
+    {
+      "id": "60855f41fa050a05",
+      "type": "text",
+      "x": 130,
+      "y": 1900,
+      "width": 190,
+      "height": 80,
+      "text": "**Facebook**",
+      "color": "#34d399"
+    },
+    {
+      "id": "41eec1d4d9113540",
+      "type": "text",
+      "x": 400,
+      "y": 1900,
+      "width": 190,
+      "height": 80,
+      "text": "**Instagram**",
+      "color": "#34d399"
+    },
+    {
+      "id": "233f47f96796e02f",
+      "type": "text",
+      "x": 130,
+      "y": 2040,
+      "width": 190,
+      "height": 80,
+      "text": "**WhatsApp**",
+      "color": "#34d399"
+    },
+    {
+      "id": "ac88be900a3a92b8",
+      "type": "text",
+      "x": 400,
+      "y": 2040,
+      "width": 190,
+      "height": 80,
+      "text": "**Threads**",
+      "color": "#34d399"
+    },
+    {
+      "id": "16117cf5b88bf891",
+      "type": "text",
+      "x": 130,
+      "y": 2180,
+      "width": 190,
+      "height": 80,
+      "text": "**Meta AI**",
+      "color": "#34d399"
+    },
+    {
+      "id": "6d4863e1a6cb6ac8",
+      "type": "text",
+      "x": 400,
+      "y": 2180,
+      "width": 190,
+      "height": 80,
+      "text": "**Reality Labs**",
+      "color": "#34d399"
+    },
+    {
+      "id": "274f841d25720c82",
+      "type": "group",
+      "x": 740,
+      "y": 1720,
+      "width": 560,
+      "height": 600,
+      "label": "Tesla",
+      "color": "#fb7185"
+    },
+    {
+      "id": "787d0ccfc81d33d1",
+      "type": "text",
+      "x": 790,
+      "y": 1770,
+      "width": 460,
+      "height": 70,
+      "text": "## Tesla\nauto energy",
+      "color": "#fb7185"
+    },
+    {
+      "id": "3e8de4e3dd85d58a",
+      "type": "text",
+      "x": 790,
+      "y": 1900,
+      "width": 190,
+      "height": 80,
+      "text": "**电动车**",
+      "color": "#fb7185"
+    },
+    {
+      "id": "45b1528cc04cacbc",
+      "type": "text",
+      "x": 1060,
+      "y": 1900,
+      "width": 190,
+      "height": 80,
+      "text": "**储能**",
+      "color": "#fb7185"
+    },
+    {
+      "id": "4fee5bc2e5562f23",
+      "type": "text",
+      "x": 790,
+      "y": 2040,
+      "width": 190,
+      "height": 80,
+      "text": "**太阳能**",
+      "color": "#fb7185"
+    },
+    {
+      "id": "98ae41d8839030b8",
+      "type": "text",
+      "x": 1060,
+      "y": 2040,
+      "width": 190,
+      "height": 80,
+      "text": "**FSD**",
+      "color": "#fb7185"
+    },
+    {
+      "id": "9f2cbe4c59af7482",
+      "type": "text",
+      "x": 790,
+      "y": 2180,
+      "width": 190,
+      "height": 80,
+      "text": "**超级充电**",
+      "color": "#fb7185"
+    },
+    {
+      "id": "9b435d6c5459f484",
+      "type": "text",
+      "x": 1060,
+      "y": 2180,
+      "width": 190,
+      "height": 80,
+      "text": "**机器人**",
+      "color": "#fb7185"
+    },
+    {
+      "id": "632f3396522868e7",
+      "type": "group",
+      "x": 1400,
+      "y": 1720,
+      "width": 560,
+      "height": 600,
+      "label": "OpenAI",
+      "color": "#22d3ee"
+    },
+    {
+      "id": "fd12dbadc45f19d2",
+      "type": "text",
+      "x": 1450,
+      "y": 1770,
+      "width": 460,
+      "height": 70,
+      "text": "## OpenAI\nmodel ai",
+      "color": "#22d3ee"
+    },
+    {
+      "id": "bf58a09d27c0a7b3",
+      "type": "text",
+      "x": 1450,
+      "y": 1900,
+      "width": 190,
+      "height": 80,
+      "text": "**GPT 模型**",
+      "color": "#22d3ee"
+    },
+    {
+      "id": "6c552c07414db875",
+      "type": "text",
+      "x": 1720,
+      "y": 1900,
+      "width": 190,
+      "height": 80,
+      "text": "**ChatGPT**",
+      "color": "#22d3ee"
+    },
+    {
+      "id": "04d3de2c9d389add",
+      "type": "text",
+      "x": 1450,
+      "y": 2040,
+      "width": 190,
+      "height": 80,
+      "text": "**OpenAI API**",
+      "color": "#22d3ee"
+    },
+    {
+      "id": "c49c9077fa5705dc",
+      "type": "text",
+      "x": 1720,
+      "y": 2040,
+      "width": 190,
+      "height": 80,
+      "text": "**Codex**",
+      "color": "#22d3ee"
+    },
+    {
+      "id": "c909867dcb785ffe",
+      "type": "text",
+      "x": 1450,
+      "y": 2180,
+      "width": 190,
+      "height": 80,
+      "text": "**ChatGPT Work**",
+      "color": "#22d3ee"
+    },
+    {
+      "id": "bc38ad99da875fbd",
+      "type": "text",
+      "x": 1720,
+      "y": 2180,
+      "width": 190,
+      "height": 80,
+      "text": "**AI 安全评估**",
+      "color": "#22d3ee"
+    },
+    {
+      "id": "40ec2547c7f26f32",
+      "type": "group",
+      "x": 2060,
+      "y": 1720,
+      "width": 560,
+      "height": 600,
+      "label": "Anthropic",
+      "color": "#22d3ee"
+    },
+    {
+      "id": "acc5258d944aa74f",
+      "type": "text",
+      "x": 2110,
+      "y": 1770,
+      "width": 460,
+      "height": 70,
+      "text": "## Anthropic\nmodel ai",
+      "color": "#22d3ee"
+    },
+    {
+      "id": "7f9b62e3ccc85530",
+      "type": "text",
+      "x": 2110,
+      "y": 1900,
+      "width": 190,
+      "height": 80,
+      "text": "**Claude 模型**",
+      "color": "#22d3ee"
+    },
+    {
+      "id": "0c7f234f2058cb07",
+      "type": "text",
+      "x": 2380,
+      "y": 1900,
+      "width": 190,
+      "height": 80,
+      "text": "**Claude**",
+      "color": "#22d3ee"
+    },
+    {
+      "id": "71afe3fb4e623bc4",
+      "type": "text",
+      "x": 2110,
+      "y": 2040,
+      "width": 190,
+      "height": 80,
+      "text": "**Claude API**",
+      "color": "#22d3ee"
+    },
+    {
+      "id": "8dd2a9ceb50b4115",
+      "type": "text",
+      "x": 2380,
+      "y": 2040,
+      "width": 190,
+      "height": 80,
+      "text": "**Claude Code**",
+      "color": "#22d3ee"
+    },
+    {
+      "id": "ac702f1a4356fc52",
+      "type": "text",
+      "x": 2110,
+      "y": 2180,
+      "width": 190,
+      "height": 80,
+      "text": "**Claude Cowork**",
+      "color": "#22d3ee"
+    },
+    {
+      "id": "ff3c5860c4e21296",
+      "type": "text",
+      "x": 2380,
+      "y": 2180,
+      "width": 190,
+      "height": 80,
+      "text": "**AI 安全研究**",
+      "color": "#22d3ee"
+    },
+    {
+      "id": "c8b98118c4b56666",
+      "type": "text",
+      "x": 80,
+      "y": 2420,
+      "width": 800,
+      "height": 650,
+      "text": "## 跨公司关系索引\n\n**PX51** · TSMC → Apple\nTSMC 先进节点支撑 Apple silicon 代工\n\n**PX52** · TSMC → NVIDIA\nTSMC 先进封装支撑 NVIDIA AI 加速器\n\n**PX53** · SK Hynix → NVIDIA\nHBM 支撑 NVIDIA AI 加速器内存带宽\n\n**PX54** · Samsung Electronics → Apple\nSamsung 存储组件与 Apple 终端供应基线\n\n**PX55** · Samsung Electronics → Apple\nSamsung OLED 与 Apple 终端显示供应基线\n\n**PX56** · NVIDIA → Amazon / AWS\nNVIDIA GPU 支撑 AWS AI 基础设施\n\n**PX57** · NVIDIA → Microsoft\nNVIDIA GPU 支撑 Azure AI 基础设施\n\n**PX58** · NVIDIA → Alphabet / Google\nNVIDIA GPU 支撑 Google Cloud AI 基础设施",
+      "color": "#334155"
+    },
+    {
+      "id": "24f6be71530c790b",
+      "type": "text",
+      "x": 940,
+      "y": 2420,
+      "width": 800,
+      "height": 510,
+      "text": "## 跨公司关系索引\n\n**PX59** · NVIDIA → Meta\nNVIDIA GPU 支撑 Meta AI 训练/推理基础设施\n\n**PX60** · TSMC → NVIDIA\nTSMC 先进逻辑代工支撑 NVIDIA 数据中心 GPU\n\n**PX71** · Amazon / AWS → OpenAI\nAWS Trainium 计算资源用于 OpenAI 模型训练与推理\n\n**PX72** · Amazon / AWS → Anthropic\nAWS Trainium 计算资源支撑 Claude 模型训练与部署\n\n**PX73** · Anthropic → Amazon / AWS\nClaude 模型通过 Amazon Bedrock 分发给云客户\n\n**PX74** · NVIDIA → Anthropic\nNVIDIA 与 Anthropic 开展架构和模型性能优化协同",
+      "color": "#334155"
+    }
+  ],
+  "edges": [
+    {
+      "id": "18131854ca9fa0db",
+      "fromNode": "a8ef06c6b662e509",
+      "fromSide": "top",
+      "toNode": "e1452733d811e08a",
+      "toSide": "bottom",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "9f84b73adbbc015a",
+      "fromNode": "a8ef06c6b662e509",
+      "fromSide": "top",
+      "toNode": "088e0193ba99c7f1",
+      "toSide": "bottom",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "ab2559e9a9135b09",
+      "fromNode": "a8ef06c6b662e509",
+      "fromSide": "left",
+      "toNode": "bb8eae1dcb681191",
+      "toSide": "right",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "5bebe262608db3fc",
+      "fromNode": "e1452733d811e08a",
+      "fromSide": "right",
+      "toNode": "ab538bc53a29e839",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "71ac0badb405a377",
+      "fromNode": "e1452733d811e08a",
+      "fromSide": "bottom",
+      "toNode": "fa04597af3ee028f",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "fbd7f09a21033a66",
+      "fromNode": "bc481558d63f00a9",
+      "fromSide": "right",
+      "toNode": "aa468b086b15d2e1",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "17f2590bd8433fc8",
+      "fromNode": "bc481558d63f00a9",
+      "fromSide": "right",
+      "toNode": "5aa0a264da7429f8",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "c811a4d0c847ab16",
+      "fromNode": "8cd204cedac63748",
+      "fromSide": "right",
+      "toNode": "aa468b086b15d2e1",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "0de1fbd6e53b89d1",
+      "fromNode": "34c9784b2a6d632f",
+      "fromSide": "top",
+      "toNode": "aa468b086b15d2e1",
+      "toSide": "bottom",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "48d5094bd92b96ae",
+      "fromNode": "bc481558d63f00a9",
+      "fromSide": "bottom",
+      "toNode": "ddf6da3f4b999218",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "f1042b52a96ecef1",
+      "fromNode": "b78bf6b1c25707b7",
+      "fromSide": "left",
+      "toNode": "f1973f0ede738ad3",
+      "toSide": "right",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "f81eaeab326c3f68",
+      "fromNode": "b78bf6b1c25707b7",
+      "fromSide": "left",
+      "toNode": "8a2671cdf11ddfa8",
+      "toSide": "right",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "2fd4858dcb283955",
+      "fromNode": "891b1c3437b8e95f",
+      "fromSide": "right",
+      "toNode": "e62056302556f7ff",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "5f5b418e25e9b1c9",
+      "fromNode": "b78bf6b1c25707b7",
+      "fromSide": "left",
+      "toNode": "891b1c3437b8e95f",
+      "toSide": "right",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "e7df6834ebe444f9",
+      "fromNode": "aea2efe9a73285ee",
+      "fromSide": "left",
+      "toNode": "f1973f0ede738ad3",
+      "toSide": "right",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "7038d537b96fa839",
+      "fromNode": "5ab1990f010c0429",
+      "fromSide": "right",
+      "toNode": "17486926275e58d4",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "380f1b9b26edaa1d",
+      "fromNode": "6d80a4562ee5a8a9",
+      "fromSide": "top",
+      "toNode": "17486926275e58d4",
+      "toSide": "bottom",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "814f23d56746acc3",
+      "fromNode": "f648c202b41af4a0",
+      "fromSide": "right",
+      "toNode": "17486926275e58d4",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "7f17877ec3be0cf1",
+      "fromNode": "0395352ebe4dd6e4",
+      "fromSide": "top",
+      "toNode": "17486926275e58d4",
+      "toSide": "bottom",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "600202edb4d47129",
+      "fromNode": "e33ab121fea78e94",
+      "fromSide": "left",
+      "toNode": "f648c202b41af4a0",
+      "toSide": "right",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "524c7db8766d5945",
+      "fromNode": "16117cf5b88bf891",
+      "fromSide": "top",
+      "toNode": "60855f41fa050a05",
+      "toSide": "bottom",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "3bfcfcaec7e2505d",
+      "fromNode": "16117cf5b88bf891",
+      "fromSide": "top",
+      "toNode": "41eec1d4d9113540",
+      "toSide": "bottom",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "762b7f7d5344ceec",
+      "fromNode": "16117cf5b88bf891",
+      "fromSide": "top",
+      "toNode": "233f47f96796e02f",
+      "toSide": "bottom",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "716811e557053233",
+      "fromNode": "16117cf5b88bf891",
+      "fromSide": "right",
+      "toNode": "ac88be900a3a92b8",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "9777397862ddbc83",
+      "fromNode": "6d4863e1a6cb6ac8",
+      "fromSide": "left",
+      "toNode": "16117cf5b88bf891",
+      "toSide": "right",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "a390815dd1d05c8c",
+      "fromNode": "ff798c7b60c196cd",
+      "fromSide": "bottom",
+      "toNode": "0c621ccee2d1201a",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "6bee444a2703d681",
+      "fromNode": "0c621ccee2d1201a",
+      "fromSide": "right",
+      "toNode": "3d5649c5e0a2c74b",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "8a49142481c07702",
+      "fromNode": "20115bb77149ead5",
+      "fromSide": "left",
+      "toNode": "ff798c7b60c196cd",
+      "toSide": "right",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "c9c1fc1a79d72a37",
+      "fromNode": "3c05ed1ad75a5811",
+      "fromSide": "top",
+      "toNode": "0c621ccee2d1201a",
+      "toSide": "bottom",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "67a844e9ecc45424",
+      "fromNode": "3d5649c5e0a2c74b",
+      "fromSide": "bottom",
+      "toNode": "2f48a0e29092145e",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "9627678152ba2dee",
+      "fromNode": "3e8de4e3dd85d58a",
+      "fromSide": "right",
+      "toNode": "98ae41d8839030b8",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "f2760e8cde6082dc",
+      "fromNode": "3e8de4e3dd85d58a",
+      "fromSide": "bottom",
+      "toNode": "9f2cbe4c59af7482",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "fb5f7e434f5fc71f",
+      "fromNode": "4fee5bc2e5562f23",
+      "fromSide": "right",
+      "toNode": "45b1528cc04cacbc",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "34e558afd22b6bf1",
+      "fromNode": "45b1528cc04cacbc",
+      "fromSide": "bottom",
+      "toNode": "9f2cbe4c59af7482",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "f901c60c6fd5f2cb",
+      "fromNode": "98ae41d8839030b8",
+      "fromSide": "bottom",
+      "toNode": "9b435d6c5459f484",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "9addaab269bffee5",
+      "fromNode": "0812817bd842678e",
+      "fromSide": "right",
+      "toNode": "ee3e5d6e417db469",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "b5eae4486b16afb3",
+      "fromNode": "68aa9e2565dc1341",
+      "fromSide": "right",
+      "toNode": "ee3e5d6e417db469",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "74648ea51f13ab94",
+      "fromNode": "68aa9e2565dc1341",
+      "fromSide": "bottom",
+      "toNode": "5960169e1fd052b4",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "61c2fee0b590e205",
+      "fromNode": "a6b9619ee0c5e4e7",
+      "fromSide": "bottom",
+      "toNode": "ee3e5d6e417db469",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "19f003e4a1f7eb50",
+      "fromNode": "e567017e69030f12",
+      "fromSide": "top",
+      "toNode": "ee3e5d6e417db469",
+      "toSide": "bottom",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "c6087bfd46598047",
+      "fromNode": "a67db8ff05bcd532",
+      "fromSide": "right",
+      "toNode": "02d327d3930eded6",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "4c6bf78e4a163fc5",
+      "fromNode": "609055bec2353788",
+      "fromSide": "bottom",
+      "toNode": "8a17f6dc92e9289c",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "9e7f9e9f770dbcb9",
+      "fromNode": "fc55c487791688ff",
+      "fromSide": "right",
+      "toNode": "3638e2c4faa44c53",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "ebf8f4aeb672a59d",
+      "fromNode": "a67db8ff05bcd532",
+      "fromSide": "bottom",
+      "toNode": "fc55c487791688ff",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "b7f5f6f0bb21c562",
+      "fromNode": "3638e2c4faa44c53",
+      "fromSide": "left",
+      "toNode": "8a17f6dc92e9289c",
+      "toSide": "right",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "104081547ae49d2b",
+      "fromNode": "709ad69fa6fec9a7",
+      "fromSide": "top",
+      "toNode": "30a924ae1127b547",
+      "toSide": "bottom",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "3d79146ecab01951",
+      "fromNode": "e6925829d29b8b49",
+      "fromSide": "left",
+      "toNode": "1411317103dcc92a",
+      "toSide": "right",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "5ec06a03e08a77b5",
+      "fromNode": "1411317103dcc92a",
+      "fromSide": "top",
+      "toNode": "30a924ae1127b547",
+      "toSide": "bottom",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "2712eec85509cdb8",
+      "fromNode": "057482513780446a",
+      "fromSide": "bottom",
+      "toNode": "bea888f82a5b7071",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "25f881b5a6c70fef",
+      "fromNode": "bea888f82a5b7071",
+      "fromSide": "top",
+      "toNode": "30a924ae1127b547",
+      "toSide": "bottom",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "9a0e90eecf8ae2e6",
+      "fromNode": "709ad69fa6fec9a7",
+      "fromSide": "bottom",
+      "toNode": "a8ef06c6b662e509",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "#f59e0b",
+      "label": "PX51"
+    },
+    {
+      "id": "547dcea89ba5db57",
+      "fromNode": "e6925829d29b8b49",
+      "fromSide": "right",
+      "toNode": "ff798c7b60c196cd",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "#f59e0b",
+      "label": "PX52"
+    },
+    {
+      "id": "af55634232bb0c80",
+      "fromNode": "fc55c487791688ff",
+      "fromSide": "right",
+      "toNode": "ff798c7b60c196cd",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "#22c55e",
+      "label": "PX53"
+    },
+    {
+      "id": "95ebc8ea39dc6620",
+      "fromNode": "0812817bd842678e",
+      "fromSide": "left",
+      "toNode": "e1452733d811e08a",
+      "toSide": "right",
+      "toEnd": "arrow",
+      "color": "#f59e0b",
+      "label": "PX54"
+    },
+    {
+      "id": "03e153ce7c52f789",
+      "fromNode": "68aa9e2565dc1341",
+      "fromSide": "left",
+      "toNode": "e1452733d811e08a",
+      "toSide": "right",
+      "toEnd": "arrow",
+      "color": "#f59e0b",
+      "label": "PX55"
+    },
+    {
+      "id": "23de4c71898840dd",
+      "fromNode": "ff798c7b60c196cd",
+      "fromSide": "bottom",
+      "toNode": "5ab1990f010c0429",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "#22c55e",
+      "label": "PX56"
+    },
+    {
+      "id": "8d8a545cbdf741c4",
+      "fromNode": "ff798c7b60c196cd",
+      "fromSide": "left",
+      "toNode": "bc481558d63f00a9",
+      "toSide": "right",
+      "toEnd": "arrow",
+      "color": "#f59e0b",
+      "label": "PX57"
+    },
+    {
+      "id": "e52da055de9ac6bf",
+      "fromNode": "ff798c7b60c196cd",
+      "fromSide": "bottom",
+      "toNode": "8a2671cdf11ddfa8",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "#38bdf8",
+      "label": "PX58"
+    },
+    {
+      "id": "ef6f361256c62ad0",
+      "fromNode": "ff798c7b60c196cd",
+      "fromSide": "left",
+      "toNode": "16117cf5b88bf891",
+      "toSide": "right",
+      "toEnd": "arrow",
+      "color": "#f59e0b",
+      "label": "PX59"
+    },
+    {
+      "id": "850105624f02121d",
+      "fromNode": "30a924ae1127b547",
+      "fromSide": "right",
+      "toNode": "ff798c7b60c196cd",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "#f59e0b",
+      "label": "PX60"
+    },
+    {
+      "id": "ac81183fcfc62051",
+      "fromNode": "bf58a09d27c0a7b3",
+      "fromSide": "right",
+      "toNode": "6c552c07414db875",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "095bd7e9cd62a240",
+      "fromNode": "bf58a09d27c0a7b3",
+      "fromSide": "bottom",
+      "toNode": "04d3de2c9d389add",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "b0dbaf8c3b08a9c7",
+      "fromNode": "bf58a09d27c0a7b3",
+      "fromSide": "right",
+      "toNode": "c49c9077fa5705dc",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "28955896fc07ad9e",
+      "fromNode": "6c552c07414db875",
+      "fromSide": "bottom",
+      "toNode": "c909867dcb785ffe",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "6e612fd3f1a7043d",
+      "fromNode": "bc38ad99da875fbd",
+      "fromSide": "top",
+      "toNode": "bf58a09d27c0a7b3",
+      "toSide": "bottom",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "adce9cc34e1286b2",
+      "fromNode": "7f9b62e3ccc85530",
+      "fromSide": "right",
+      "toNode": "0c7f234f2058cb07",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "d8fde12074a38683",
+      "fromNode": "7f9b62e3ccc85530",
+      "fromSide": "bottom",
+      "toNode": "71afe3fb4e623bc4",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "d19d8568b4a5e4c3",
+      "fromNode": "7f9b62e3ccc85530",
+      "fromSide": "right",
+      "toNode": "8dd2a9ceb50b4115",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "8de23a056be989b7",
+      "fromNode": "0c7f234f2058cb07",
+      "fromSide": "bottom",
+      "toNode": "ac702f1a4356fc52",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "bfa2444d35386a4b",
+      "fromNode": "ff3c5860c4e21296",
+      "fromSide": "top",
+      "toNode": "7f9b62e3ccc85530",
+      "toSide": "bottom",
+      "toEnd": "arrow",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "da766c3b2a94cc64",
+      "fromNode": "5ab1990f010c0429",
+      "fromSide": "bottom",
+      "toNode": "bf58a09d27c0a7b3",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "#22c55e",
+      "label": "PX71"
+    },
+    {
+      "id": "bc815c74258e92bd",
+      "fromNode": "5ab1990f010c0429",
+      "fromSide": "bottom",
+      "toNode": "7f9b62e3ccc85530",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "#38bdf8",
+      "label": "PX72"
+    },
+    {
+      "id": "6724a469fdd1d6b7",
+      "fromNode": "7f9b62e3ccc85530",
+      "fromSide": "top",
+      "toNode": "5ab1990f010c0429",
+      "toSide": "bottom",
+      "toEnd": "arrow",
+      "color": "#38bdf8",
+      "label": "PX73"
+    },
+    {
+      "id": "4ff4de8f17ced7b5",
+      "fromNode": "ff798c7b60c196cd",
+      "fromSide": "bottom",
+      "toNode": "7f9b62e3ccc85530",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "#38bdf8",
+      "label": "PX74"
+    }
+  ]
+}

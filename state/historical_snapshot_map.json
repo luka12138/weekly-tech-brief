@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "notes": "Immutable source snapshots used to rebuild historical reports after repository-wide migrations.",
+  "reports": {
+    "2026-06-29": "ccf3cb58123b3dda9a5a8fb06c91cf53cb2f904b",
+    "2026-07-06": "2c1fbaac39273a8ed17996277bc3269de46765c1",
+    "2026-07-13": "3a40e32a6a5783dd22779980c09f7cb104caf7ce",
+    "2026-07-20": "cfe6638fd34d00533824ed71dc1ff7bdec30fc8a",
+    "2026-07-27": "ea3758d3edea056f4987a5c839f24f6f7b05c8af",
+    "2026-08-03": "07a2dd1adb1ebdfcc10dc53c6a10253bb80685a6",
+    "2026-08-10": "b8beba8a9cf232c28532e5b582c23267ae046b05",
+    "2026-08-17": "1cc3396ba9fff621eec81b5d40516a56f8890772",
+    "2026-08-24": "e57bbe812f6f8707dd591776723e5a22cd136789"
+  }
+}

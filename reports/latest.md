@@ -3,6 +3,6 @@
 - 生成时间：2026-08-24 10:15（Asia/Shanghai）
 - 本期文件：reports/2026-08-24_weekly_morning_brief.md
 
-本文件是最新晨报入口。本期固定覆盖 12 家公司，并列出 10 件最重要事件。完整内容请查看：
+本文件是最新晨报入口。当前正文采用紧凑投资判断 schema v2，图谱按实质变化策略更新。
 
 [2026-08-24_weekly_morning_brief.md](2026-08-24_weekly_morning_brief.md)

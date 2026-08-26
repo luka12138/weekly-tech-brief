@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-03T03:39:30.847910+00:00",
+  "generated_at": "2026-08-26T03:02:48.607563+00:00",
   "report": "reports/2026-08-03_weekly_morning_brief.md",
-  "baseline": "state/supply_graph_baseline.json",
-  "product_graph": "state/product_relationships_2026.json",
-  "report_sha256": "191716e26a910f73c0a8eb4a0e4a1c3114b50732bd820f9363c71355c3b8be20",
-  "baseline_sha256": "91fb9fb53d1aa79ea6dd85436c086818654d855cb549f1fcab34644a3a0d63ac",
-  "product_graph_sha256": "083ecb39bebc7c517e40abf3356108f2dcd7aac4dac7cceda553ac5e36c981ad",
+  "baseline": "git:07a2dd1adb1ebdfcc10dc53c6a10253bb80685a6:state/supply_graph_baseline.json",
+  "product_graph": "git:07a2dd1adb1ebdfcc10dc53c6a10253bb80685a6:state/product_relationships_2026.json",
+  "report_sha256": "7dc62810b06121b385e7148f5a2951d48b00d861a8a9b287494b6bfb28d3d34e",
+  "baseline_sha256": "12377e7b7e5a1d0cefc3795c4fbf28ee7452cad7f7163affba44d4c791b230b9",
+  "product_graph_sha256": "d2c23d73e57c72ddd23fca290434ff99cc9bc7974696439911750c98a8ef7de6",
   "audited_urls": [
     "https://abc.xyz/assets/5d/f4/15f364a84a6c9b70a59f9f38d3a1/2026q2-alphabet-earnings-release.pdf",
     "https://abc.xyz/investor/",
@@ -25,11 +25,10 @@
     "https://news.microsoft.com/source/2026/07/21/microsoft-and-mistral-expand-strategic-partnership-to-give-enterprises-and-regulated-industries-frontier-ai-they-can-control/",
     "https://news.samsung.com/global/samsung-electronics-and-broadcom-expand-strategic-collaboration-across-memory-and-foundry-technologies",
     "https://news.samsung.com/global/samsung-electronics-releases-2026-sustainability-report-expanding-water-replenishment-efforts",
-    "https://news.skhynix.com/12-layer-hbm4e-sample/",
+    "https://news.skhynix.com/en/12-layer-hbm4e-sample-1/",
     "https://news.skhynix.com/en/q2-2026-business-results/",
     "https://nvidianews.nvidia.com/news/ilya-sutskevers-safe-superintelligence-inc-and-nvidia-announce-long-term-strategic-partnership",
     "https://nvidianews.nvidia.com/news/sk-group-and-nvidia-expand-strategic-partnership-across-ai-factories-and-next-generation-memory",
-    "https://pr.tsmc.com/english",
     "https://www.apple.com/newsroom/2026/07/apple-maps-to-power-navigation-experience-for-ford-uev-platform/",
     "https://www.apple.com/newsroom/2026/07/apple-reports-third-quarter-results/",
     "https://www.microsoft.com/en-us/Investor/annual-reports.aspx",
@@ -38,15 +37,17 @@
     "https://www.skhynix.com/ir/UI-FR-IR02"
   ],
   "summary": {
-    "total": 29,
-    "reachable": 29,
+    "total": 28,
+    "reachable": 28,
     "access_limited": 3,
     "unclassified": 0,
     "errors": 0,
     "claim_total": 13,
     "claim_matched": 13,
     "claim_manual": 0,
-    "claim_failed": 0
+    "claim_failed": 0,
+    "source_cache_reused": 0,
+    "claim_cache_reused": 0
   },
   "sources": [
     {
@@ -266,7 +267,7 @@
       "error": null
     },
     {
-      "url": "https://news.skhynix.com/12-layer-hbm4e-sample/",
+      "url": "https://news.skhynix.com/en/12-layer-hbm4e-sample-1/",
       "scheme": "https",
       "host": "news.skhynix.com",
       "source_class": "official_or_regulatory",
@@ -305,18 +306,6 @@
       "url": "https://nvidianews.nvidia.com/news/sk-group-and-nvidia-expand-strategic-partnership-across-ai-factories-and-next-generation-memory",
       "scheme": "https",
       "host": "nvidianews.nvidia.com",
-      "source_class": "official_or_regulatory",
-      "status": 200,
-      "reachable": true,
-      "access_limited": false,
-      "content_verified": true,
-      "requires_manual_verification": false,
-      "error": null
-    },
-    {
-      "url": "https://pr.tsmc.com/english",
-      "scheme": "https",
-      "host": "pr.tsmc.com",
       "source_class": "official_or_regulatory",
       "status": 200,
       "reachable": true,
@@ -428,7 +417,10 @@
           "matched_keywords": [
             "ford",
             "apple maps"
-          ]
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 9112
         }
       ]
     },
@@ -461,7 +453,10 @@
           "matched_keywords": [
             "mi455x",
             "epyc"
-          ]
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 9109
         }
       ]
     },
@@ -494,7 +489,10 @@
           "matched_keywords": [
             "mistral",
             "regulated industries"
-          ]
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 13919
         }
       ]
     },
@@ -527,7 +525,10 @@
           "matched_keywords": [
             "claude opus 5",
             "bedrock"
-          ]
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 53892
         }
       ]
     },
@@ -560,7 +561,10 @@
           "matched_keywords": [
             "advertising",
             "family daily active people"
-          ]
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 20111
         }
       ]
     },
@@ -593,7 +597,10 @@
           "matched_keywords": [
             "sk telecom",
             "ai factories"
-          ]
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 16956
         }
       ]
     },
@@ -627,7 +634,10 @@
           "matched_keywords": [
             "sk hynix",
             "next-generation memory"
-          ]
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 16956
         },
         {
           "url": "https://news.skhynix.com/en/q2-2026-business-results/",
@@ -635,7 +645,10 @@
           "access_limited": false,
           "matched_keywords": [
             "sk hynix"
-          ]
+          ],
+          "text_fetch_retried": true,
+          "text_fetch_failed": false,
+          "text_length": 11255
         }
       ]
     },
@@ -668,7 +681,10 @@
           "matched_keywords": [
             "broadcom",
             "high bandwidth memory"
-          ]
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 5125
         }
       ]
     },
@@ -704,7 +720,10 @@
             "safe superintelligence",
             "vera rubin",
             "order of magnitude"
-          ]
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 11397
         }
       ]
     },
@@ -740,7 +759,10 @@
             "openai",
             "trainium",
             "multi-gigawatt"
-          ]
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 53892
         }
       ]
     },
@@ -776,7 +798,10 @@
             "anthropic",
             "trainium",
             "multi-gigawatt"
-          ]
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 53892
         }
       ]
     },
@@ -812,7 +837,10 @@
             "azure",
             "43%",
             "copilot"
-          ]
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 31642
         }
       ]
     },
@@ -848,7 +876,10 @@
             "long-term agreements",
             "around 10",
             "hbm4"
-          ]
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 11255
         }
       ]
     }

@@ -12,7 +12,7 @@
 4. 写入周报正文
 5. 更新供应关系基线
 6. 更新年度产品关系基线
-7. 生成两张 SVG 图片
+7. 运行图表更新计划，仅生成需要变化的 Canvas/SVG
 8. 审查消息来源真实性
 9. 运行主质量闸门
 10. 提交并推送 GitHub
@@ -87,14 +87,15 @@ python3 scripts/audit_sources.py \
 
 ## 五、周报正文查验
 
-正文必须包含：
+schema v2 正文必须包含：
 
 - 本周最重要的 10 件事
-- 12 家公司影响力速览
-- 每家公司单独小节
-- 跨公司与产业链观察
-- 下周需关注
-- 供应关系图谱与周度变化
+- 12 家公司投资判断速览
+- 仅展开存在重大变化的公司
+- 无重大变化公司集中一行汇总
+- 跨公司与产业链判断
+- 下周催化与验证条件
+- 研究附录
 - 本期自检
 
 每条事件必须有：
@@ -102,7 +103,10 @@ python3 scripts/audit_sources.py \
 ```text
 日期
 事件
-影响
+投资影响
+影响指标
+预期差
+验证条件
 可信度
 来源
 ```
@@ -116,13 +120,12 @@ python3 scripts/audit_sources.py \
 
 ## 六、供应关系查验
 
-供应关系有三层：
+schema v2 的供应关系分为两个职责清晰的层：
 
-1. Markdown 中的 Mermaid 图
-2. 周报 6.2 的供应关系明细表
-3. `state/supply_graph_baseline.json`
+1. `state/supply_graph_baseline.json` 保存完整事实基线
+2. Canvas/SVG 提供唯一可视化；周报 6.2 只列本周实质变化
 
-三者必须使用同一组 `Edge ID`。
+不再保留 Mermaid，也不在周报中复制完整关系表。
 
 查验命令：
 
@@ -133,47 +136,72 @@ python3 scripts/validate_weekly_brief.py \
   --latest reports/latest.md \
   --source-audit logs/YYYY-MM-DD_source_audit.json \
   --product-graph state/product_relationships_YYYY.json \
-  --product-image assets/YYYY-MM-DD_product_relationships.svg \
-  --supply-image assets/YYYY-MM-DD_supply_relationships.svg
+  --product-image assets/PRODUCT_GRAPH_DATE_product_relationships.svg \
+  --product-canvas assets/PRODUCT_GRAPH_DATE_product_relationships.canvas \
+  --supply-image assets/SUPPLY_GRAPH_DATE_supply_relationships.svg \
+  --supply-canvas assets/SUPPLY_GRAPH_DATE_supply_relationships.canvas
 ```
 
 查验点：
 
-- Mermaid 中每条边都有 `E01`、`E02` 等 Edge ID
-- 6.2 表格中存在相同 Edge ID
-- JSON 中存在相同 Edge ID
+- Canvas 中全部 Edge ID 必须存在于 JSON
+- 6.2 只包含本周新增、强化、弱化或风险 Edge ID
 - 无本周直接证据的长期关系不能标为“新增”或“增强”
 - 低置信度关系必须解释限制条件
 
-## 七、两张图片查验
+## 七、Canvas 与图片查验
 
-每周必须生成两张图：
+每期必须引用一份产品图和一份供应图，但不要求每周创建新文件。先运行：
 
-```text
-assets/YYYY-MM-DD_product_relationships.svg
-assets/YYYY-MM-DD_supply_relationships.svg
+```bash
+python3 scripts/plan_graph_updates.py --report-date YYYY-MM-DD
 ```
+
+策略规则：
+
+- 供应图仅在关系新增、强化、弱化或出现新风险时生成
+- 产品图仅在季度首个周一或产品关系实质变化时生成
+- 其余周沿用最近一期 `.canvas` 与 `.svg`
+
+只有计划返回 `action: generate` 时才运行相应生成命令；返回 `reuse` 时不得复制出新的日期文件。
 
 生成命令：
 
 ```bash
 python3 scripts/build_product_graph_svg.py \
   --input state/product_relationships_YYYY.json \
-  --output assets/YYYY-MM-DD_product_relationships.svg
+  --output assets/YYYY-MM-DD_product_relationships.svg \
+  --canvas-output assets/YYYY-MM-DD_product_relationships.canvas
 
 python3 scripts/build_supply_graph_svg.py \
   --input state/supply_graph_baseline.json \
-  --output assets/YYYY-MM-DD_supply_relationships.svg
+  --output assets/YYYY-MM-DD_supply_relationships.svg \
+  --canvas-output assets/YYYY-MM-DD_supply_relationships.canvas
+
+python3 scripts/validate_json_canvas.py assets/YYYY-MM-DD_*.canvas
 ```
 
 查验点：
 
 - 两张图都能在 GitHub 页面渲染
-- 两张图都采用 Obsidian 风格网络图
+- `.canvas` 文件符合 JSON Canvas 1.0，使用唯一 16 位小写十六进制 ID
+- 所有 Canvas 边引用有效，节点不重叠，并留有 50-100px 间距
+- 两张 SVG 与对应 Canvas 使用同一布局和 Edge ID
 - 年度产品图必须包含公司节点、主营产品节点和产品级 `PX` 关系边
-- 周报 6.0 引用产品上下游图
-- 周报 6.1 引用供应关系图
+- 周报 6.1 引用计划指定日期的产品图和供应图
 - 图片背后的 JSON 存在且可解析
+
+重建全部历史产物时必须使用 `state/historical_snapshot_map.json` 中的不可变 Git 快照，不得以当前基线覆盖历史关系，也不得依赖迁移后的最新提交反推旧状态。已核实的历史 URL 或事实措辞修订必须写入 `state/historical_snapshot_overrides.json`，不能静默改写原提交：
+
+```bash
+python3 scripts/rebuild_historical_obsidian_graphs.py --prune-redundant
+python3 scripts/migrate_historical_briefs_v2.py
+python3 scripts/rebuild_historical_source_audits.py --allow-cache-fallback
+python3 scripts/validate_json_canvas.py assets/*.canvas
+python3 scripts/validate_historical_briefs.py --require-source-audits
+```
+
+历史来源批量审计会对 URL 去重。仅当实时网络瞬时失败且同一 URL 或同一 claim 过去已经成功时，`--allow-cache-fallback` 才允许复用，并在日志中保留 `cache_fallback` 与实时失败原因；没有既往成功记录的来源仍然失败。
 
 ## 八、年度产品关系基线查验
 
@@ -227,8 +255,10 @@ python3 scripts/validate_weekly_brief.py \
   --latest reports/latest.md \
   --source-audit logs/YYYY-MM-DD_source_audit.json \
   --product-graph state/product_relationships_YYYY.json \
-  --product-image assets/YYYY-MM-DD_product_relationships.svg \
-  --supply-image assets/YYYY-MM-DD_supply_relationships.svg
+  --product-image assets/PRODUCT_GRAPH_DATE_product_relationships.svg \
+  --product-canvas assets/PRODUCT_GRAPH_DATE_product_relationships.canvas \
+  --supply-image assets/SUPPLY_GRAPH_DATE_supply_relationships.svg \
+  --supply-canvas assets/SUPPLY_GRAPH_DATE_supply_relationships.canvas
 
 git diff --check
 git status

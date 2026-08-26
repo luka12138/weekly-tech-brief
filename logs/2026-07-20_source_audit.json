@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-21T01:52:56.706897+00:00",
+  "generated_at": "2026-08-26T03:02:36.408081+00:00",
   "report": "reports/2026-07-20_weekly_morning_brief.md",
-  "baseline": "state/supply_graph_baseline.json",
-  "product_graph": "state/product_relationships_2026.json",
-  "report_sha256": "ea146f623f30925325855d3b3b92785b05e5b4055118dbe25254ff98dc45ba8a",
+  "baseline": "git:cfe6638fd34d00533824ed71dc1ff7bdec30fc8a:state/supply_graph_baseline.json",
+  "product_graph": "git:cfe6638fd34d00533824ed71dc1ff7bdec30fc8a:state/product_relationships_2026.json",
+  "report_sha256": "fd2e2ff18ebd244db0ce3d3296b8e99381cec1d6a79d66b1b506681df45b296c",
   "baseline_sha256": "0dfa84970255b97f03b78eba36f286b364717e76990fbdb7baf35249d8eae261",
-  "product_graph_sha256": "de71e59544acd75691cf5fb46b05d914f582c630f9c544dff4bd22e9fe18360c",
+  "product_graph_sha256": "03f5d24b68ed053960305878d04369fea0276116bdad2ae889ccd4c4c5d90d8a",
   "audited_urls": [
     "https://abc.xyz/investor/",
     "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-guardduty-ai-protection-aws/",
@@ -22,7 +22,7 @@
     "https://news.microsoft.com/source/2026/07/15/3m-and-microsoft-announce-strategic-partnership-to-advance-ai-data-center-infrastructure-and-enterprise-transformation/",
     "https://news.samsung.com/global/samsung-electronics-releases-2026-sustainability-report-expanding-water-replenishment-efforts",
     "https://news.samsung.com/global/samsung-introduces-flex-titanium-technology-to-advance-foldable-displays",
-    "https://news.skhynix.com/12-layer-hbm4e-sample/",
+    "https://news.skhynix.com/en/12-layer-hbm4e-sample-1/",
     "https://news.skhynix.com/skhynix-lists-adrs-on-nasdaq/",
     "https://nvidianews.nvidia.com/news/japan-government-industrial-leaders-and-nvidia-launch-the-worlds-first-national-ai-infrastructure",
     "https://pr.tsmc.com/english/news/3326",
@@ -40,7 +40,9 @@
     "claim_total": 10,
     "claim_matched": 9,
     "claim_manual": 0,
-    "claim_failed": 0
+    "claim_failed": 0,
+    "source_cache_reused": 0,
+    "claim_cache_reused": 0
   },
   "sources": [
     {
@@ -224,7 +226,7 @@
       "error": null
     },
     {
-      "url": "https://news.skhynix.com/12-layer-hbm4e-sample/",
+      "url": "https://news.skhynix.com/en/12-layer-hbm4e-sample-1/",
       "scheme": "https",
       "host": "news.skhynix.com",
       "source_class": "official_or_regulatory",
@@ -350,7 +352,10 @@
           "matched_keywords": [
             "madden nfl 27",
             "apple arcade"
-          ]
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 14529
         }
       ]
     },
@@ -386,7 +391,10 @@
             "3m",
             "expanded beam optical",
             "azure"
-          ]
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 8588
         }
       ]
     },
@@ -422,7 +430,10 @@
             "steel river",
             "solar",
             "storage"
-          ]
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 10835
         }
       ]
     },
@@ -458,7 +469,10 @@
             "guardduty ai protection",
             "bedrock",
             "sagemaker"
-          ]
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 8909
         }
       ]
     },
@@ -494,7 +508,10 @@
             "richland parish",
             "data center",
             "louisiana"
-          ]
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 10463
         }
       ]
     },
@@ -530,7 +547,10 @@
             "noetra",
             "vera rubin",
             "13,750"
-          ]
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 14353
         }
       ]
     },
@@ -556,7 +576,10 @@
           "url": "https://ir.tesla.com/press",
           "status": 200,
           "access_limited": false,
-          "matched_keywords": []
+          "matched_keywords": [],
+          "text_fetch_retried": true,
+          "text_fetch_failed": true,
+          "text_length": 0
         }
       ]
     },
@@ -589,7 +612,10 @@
           "matched_keywords": [
             "flex titanium",
             "foldable"
-          ]
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 7752
         }
       ]
     },
@@ -625,7 +651,10 @@
             "sk hynix",
             "adrs",
             "nasdaq"
-          ]
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 9630
         }
       ]
     },
@@ -661,7 +690,10 @@
             "tsmc",
             "second quarter",
             "2026"
-          ]
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 9092
         }
       ]
     }

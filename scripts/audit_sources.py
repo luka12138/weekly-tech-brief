@@ -61,6 +61,7 @@ TIER1_MEDIA_HOST_KEYWORDS = [
     "theinformation.com",
     "caixin.com",
     "axios.com",
+    "barrons.com",
 ]
 
 TRADE_MEDIA_HOST_KEYWORDS = [
@@ -200,30 +201,49 @@ def probe_url(url: str, timeout: int) -> dict[str, object]:
 
 def fetch_text(url: str, timeout: int) -> str:
     context = ssl.create_default_context()
+    audit_user_agent = "Mozilla/5.0 weekly-tech-brief-source-audit/1.0"
+    browser_user_agent = (
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0 Safari/537.36"
+    )
     attempts = [
         {
-            "User-Agent": "Mozilla/5.0 weekly-tech-brief-source-audit/1.0",
+            "User-Agent": audit_user_agent,
             "Accept": "text/html,application/pdf,text/plain,*/*",
             "Accept-Encoding": "identity",
             "Range": "bytes=0-262143",
         },
         {
-            "User-Agent": "Mozilla/5.0 weekly-tech-brief-source-audit/1.0",
+            "User-Agent": audit_user_agent,
             "Accept": "text/html,application/pdf,text/plain,*/*",
             "Accept-Encoding": "identity",
+        },
+        {
+            "User-Agent": browser_user_agent,
+            "Accept": "text/html,application/xhtml+xml,application/pdf,text/plain,*/*",
+            "Accept-Encoding": "identity",
+        },
+        {
+            "User-Agent": browser_user_agent,
+            "Accept": "text/html,application/xhtml+xml,application/pdf,text/plain,*/*",
+            "Accept-Encoding": "identity",
+            "Cache-Control": "no-cache",
         },
     ]
     raw = b""
     encoding = ""
-    for headers in attempts:
+    for index, headers in enumerate(attempts):
         request = urllib.request.Request(url, method="GET", headers=headers)
         try:
             with urllib.request.urlopen(request, timeout=timeout, context=context) as response:
                 raw = response.read(1048576)
                 encoding = response.headers.get("Content-Encoding", "")
-                break
+                if raw:
+                    break
         except Exception:
-            continue
+            pass
+        if index < len(attempts) - 1:
+            time.sleep(0.5 * (index + 1))
     if not raw:
         return ""
     if encoding.lower() == "gzip":
@@ -241,9 +261,11 @@ def check_claims(
     claims: list[dict[str, object]],
     audited: list[dict[str, object]],
     timeout: int,
+    text_cache: dict[str, str] | None = None,
 ) -> list[dict[str, object]]:
     source_by_url = {str(item["url"]): item for item in audited}
-    text_cache: dict[str, str] = {}
+    if text_cache is None:
+        text_cache = {}
     checked: list[dict[str, object]] = []
     for claim in claims:
         keywords = [str(keyword).lower() for keyword in claim.get("keywords", [])]
@@ -260,6 +282,14 @@ def check_claims(
                 text_cache[url] = fetch_text(url, timeout)
             text = text_cache[url]
             matched_keywords = [keyword for keyword in keywords if keyword and keyword in text]
+            text_fetch_retried = False
+            if len(matched_keywords) < min_matches and not source.get("access_limited"):
+                text_fetch_retried = True
+                refreshed_text = fetch_text(url, timeout)
+                if refreshed_text:
+                    text = refreshed_text
+                    text_cache[url] = refreshed_text
+                    matched_keywords = [keyword for keyword in keywords if keyword and keyword in text]
             if len(matched_keywords) > best_count:
                 best_count = len(matched_keywords)
                 best_keywords = matched_keywords
@@ -269,6 +299,9 @@ def check_claims(
                     "status": source.get("status"),
                     "access_limited": source.get("access_limited", False),
                     "matched_keywords": matched_keywords,
+                    "text_fetch_retried": text_fetch_retried,
+                    "text_fetch_failed": not bool(text),
+                    "text_length": len(text),
                 }
             )
         matched = best_count >= min_matches

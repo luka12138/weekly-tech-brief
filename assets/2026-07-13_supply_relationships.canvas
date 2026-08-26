@@ -1,0 +1,365 @@
+{
+  "nodes": [
+    {
+      "id": "6fed2e2885f103f6",
+      "type": "text",
+      "x": 80,
+      "y": 20,
+      "width": 1700,
+      "height": 90,
+      "text": "# 本周供应关系图 · 2026-07-06 至 2026-07-12"
+    },
+    {
+      "id": "1a0fab479b79b0c4",
+      "type": "text",
+      "x": 80,
+      "y": 160,
+      "width": 1700,
+      "height": 90,
+      "text": "绿色=本周新增 · 蓝色=本周强化 · 橙色=风险或媒体证据 · 灰色=基线无新增证据\n边标签对应周报 6.2 与供应关系 JSON 的 Edge ID。",
+      "color": "#475569"
+    },
+    {
+      "id": "39b03a6ac8717b97",
+      "type": "group",
+      "x": 80,
+      "y": 320,
+      "width": 580,
+      "height": 1560,
+      "label": "供应方 / 能力提供方",
+      "color": "#22c55e"
+    },
+    {
+      "id": "9a048740dcfd3080",
+      "type": "text",
+      "x": 120,
+      "y": 400,
+      "width": 500,
+      "height": 100,
+      "text": "**Microsoft**\n覆盖公司 · 输出 1",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "a08efa0068f26a39",
+      "type": "text",
+      "x": 120,
+      "y": 560,
+      "width": 500,
+      "height": 100,
+      "text": "**Alphabet / Google**\n覆盖公司 · 输出 1",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "54d0e17345a68a0e",
+      "type": "text",
+      "x": 120,
+      "y": 720,
+      "width": 500,
+      "height": 100,
+      "text": "**Amazon / AWS**\n覆盖公司 · 输出 1",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "82c38c350aa5ddb5",
+      "type": "text",
+      "x": 120,
+      "y": 880,
+      "width": 500,
+      "height": 100,
+      "text": "**Meta**\n覆盖公司 · 输出 1",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "80dc7342f88ec56d",
+      "type": "text",
+      "x": 120,
+      "y": 1040,
+      "width": 500,
+      "height": 100,
+      "text": "**Tesla**\n覆盖公司 · 输出 1",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "30ffe9f2c99a72eb",
+      "type": "text",
+      "x": 120,
+      "y": 1200,
+      "width": 500,
+      "height": 100,
+      "text": "**Samsung Electronics**\n覆盖公司 · 输出 1",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "3436d83bc4c101c8",
+      "type": "text",
+      "x": 120,
+      "y": 1360,
+      "width": 500,
+      "height": 100,
+      "text": "**SK Hynix**\n覆盖公司 · 输出 1",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "ef5b4470a16661f5",
+      "type": "text",
+      "x": 120,
+      "y": 1520,
+      "width": 500,
+      "height": 100,
+      "text": "**TSMC**\n覆盖公司 · 输出 1",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "831648888cd364ef",
+      "type": "text",
+      "x": 120,
+      "y": 1680,
+      "width": 500,
+      "height": 100,
+      "text": "**外部:Broadcom**\n外部节点 · 输出 1",
+      "color": "#64748b"
+    },
+    {
+      "id": "3cedaa14f30d9f32",
+      "type": "group",
+      "x": 720,
+      "y": 320,
+      "width": 580,
+      "height": 280,
+      "label": "双重角色 / 覆盖公司",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "493ffe44f4aac644",
+      "type": "text",
+      "x": 760,
+      "y": 400,
+      "width": 500,
+      "height": 100,
+      "text": "**NVIDIA**\n覆盖公司 · 输出 1 · 输入 1",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "ca31839f88916ec5",
+      "type": "group",
+      "x": 1360,
+      "y": 320,
+      "width": 580,
+      "height": 1560,
+      "label": "客户 / 使用方",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "565a2cad388409d5",
+      "type": "text",
+      "x": 1400,
+      "y": 400,
+      "width": 500,
+      "height": 100,
+      "text": "**Apple**\n覆盖公司 · 输入 1",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "9ac5da76e84677b4",
+      "type": "text",
+      "x": 1400,
+      "y": 560,
+      "width": 500,
+      "height": 100,
+      "text": "**外部:AI 基础设施客户**\n外部节点 · 输入 1",
+      "color": "#64748b"
+    },
+    {
+      "id": "84c2591a4f39187b",
+      "type": "text",
+      "x": 1400,
+      "y": 720,
+      "width": 500,
+      "height": 100,
+      "text": "**外部:AI/HPC 服务器客户**\n外部节点 · 输入 1",
+      "color": "#64748b"
+    },
+    {
+      "id": "59715f4b5a0c1711",
+      "type": "text",
+      "x": 1400,
+      "y": 880,
+      "width": 500,
+      "height": 100,
+      "text": "**外部:Bedrock/OpenAI 模型客户**\n外部节点 · 输入 1",
+      "color": "#64748b"
+    },
+    {
+      "id": "d686c7fdbc71045e",
+      "type": "text",
+      "x": 1400,
+      "y": 1040,
+      "width": 500,
+      "height": 100,
+      "text": "**外部:EV/储能客户**\n外部节点 · 输入 1",
+      "color": "#64748b"
+    },
+    {
+      "id": "4c89331a5886e65e",
+      "type": "text",
+      "x": 1400,
+      "y": 1200,
+      "width": 500,
+      "height": 100,
+      "text": "**外部:Meta AI/Instagram/WhatsApp 用户**\n外部节点 · 输入 1",
+      "color": "#64748b"
+    },
+    {
+      "id": "187d3f6df8914834",
+      "type": "text",
+      "x": 1400,
+      "y": 1360,
+      "width": 500,
+      "height": 100,
+      "text": "**外部:Perplexity/AI 工厂客户**\n外部节点 · 输入 1",
+      "color": "#64748b"
+    },
+    {
+      "id": "39450540fc2b72c8",
+      "type": "text",
+      "x": 1400,
+      "y": 1520,
+      "width": 500,
+      "height": 100,
+      "text": "**外部:Xbox 玩家/开发者**\n外部节点 · 输入 1",
+      "color": "#64748b"
+    },
+    {
+      "id": "0a08da0830f9bf27",
+      "type": "text",
+      "x": 1400,
+      "y": 1680,
+      "width": 500,
+      "height": 100,
+      "text": "**外部:全球投资者/AI 生态**\n外部节点 · 输入 1",
+      "color": "#64748b"
+    },
+    {
+      "id": "bf268c9648f626e3",
+      "type": "text",
+      "x": 80,
+      "y": 1980,
+      "width": 580,
+      "height": 650,
+      "text": "## 关系索引\n\n**E01** · 外部:Broadcom → Apple\nFBAR 滤波器、先进射频组件、无线连接技术\n\n**E02** · Amazon / AWS → 外部:Bedrock/OpenAI 模型客户\nAmazon Bedrock 上的 OpenAI GPT-5.6 Sol、Terra、Luna\n\n**E03** · Meta → 外部:Meta AI/Instagram/WhatsApp 用户\nMuse Image、Instagram Stories AI 效果、WhatsApp 对话图像生成\n\n**E04** · Samsung Electronics → 外部:AI/HPC 服务器客户\nPM1763 PCIe 6.0 企业级 SSD、9 代 V-NAND、4nm 控制器\n\n**E05** · Alphabet / Google → 外部:AI 基础设施客户\nGoogle Cloud AI Hypercomputer、TPU 8t/8i、GKE Inference Gateway、NVIDIA GPU 服务\n\n**E06** · Microsoft → 外部:Xbox 玩家/开发者\nXbox 内容组合、Game Pass、多平台发行、开发工具和共享服务\n\n**E07** · NVIDIA → 外部:Perplexity/AI 工厂客户\nNVIDIA Vera CPU、Vera Rubin、BlueField-4 STX、agentic AI CPU 架构\n\n**E08** · SK Hynix → 外部:全球投资者/AI 生态\nNasdaq ADR、HBM/DRAM/NAND 资本市场可获得性",
+      "color": "#334155"
+    },
+    {
+      "id": "dd52617dfea274aa",
+      "type": "text",
+      "x": 720,
+      "y": 1980,
+      "width": 580,
+      "height": 230,
+      "text": "## 关系索引\n\n**E09** · Tesla → 外部:EV/储能客户\n电动车交付、储能部署、Supercharger/能源生态\n\n**E10** · TSMC → NVIDIA\n先进逻辑制程、CoWoS/3DFabric 先进封装基线",
+      "color": "#334155"
+    }
+  ],
+  "edges": [
+    {
+      "id": "cac85e59baa4477f",
+      "fromNode": "831648888cd364ef",
+      "fromSide": "right",
+      "toNode": "565a2cad388409d5",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "#22c55e",
+      "label": "E01"
+    },
+    {
+      "id": "95fa82850d457a83",
+      "fromNode": "54d0e17345a68a0e",
+      "fromSide": "right",
+      "toNode": "59715f4b5a0c1711",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "#22c55e",
+      "label": "E02"
+    },
+    {
+      "id": "c433cc673f8a46f8",
+      "fromNode": "82c38c350aa5ddb5",
+      "fromSide": "right",
+      "toNode": "4c89331a5886e65e",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "#22c55e",
+      "label": "E03"
+    },
+    {
+      "id": "f7c1bda2f5b9c4d7",
+      "fromNode": "30ffe9f2c99a72eb",
+      "fromSide": "right",
+      "toNode": "84c2591a4f39187b",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "#22c55e",
+      "label": "E04"
+    },
+    {
+      "id": "14f0fd7c391a2e44",
+      "fromNode": "a08efa0068f26a39",
+      "fromSide": "right",
+      "toNode": "9ac5da76e84677b4",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "#38bdf8",
+      "label": "E05"
+    },
+    {
+      "id": "eff4e82549837ac6",
+      "fromNode": "9a048740dcfd3080",
+      "fromSide": "right",
+      "toNode": "39450540fc2b72c8",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "#f59e0b",
+      "label": "E06"
+    },
+    {
+      "id": "52d3ce8e0ae0623d",
+      "fromNode": "493ffe44f4aac644",
+      "fromSide": "bottom",
+      "toNode": "187d3f6df8914834",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "#22c55e",
+      "label": "E07"
+    },
+    {
+      "id": "ae23c292117f253c",
+      "fromNode": "3436d83bc4c101c8",
+      "fromSide": "right",
+      "toNode": "0a08da0830f9bf27",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "#22c55e",
+      "label": "E08"
+    },
+    {
+      "id": "10847cafc496bc65",
+      "fromNode": "80dc7342f88ec56d",
+      "fromSide": "right",
+      "toNode": "d686c7fdbc71045e",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "#64748b",
+      "label": "E09"
+    },
+    {
+      "id": "d2cf1d45ea865fd5",
+      "fromNode": "ef5b4470a16661f5",
+      "fromSide": "top",
+      "toNode": "493ffe44f4aac644",
+      "toSide": "bottom",
+      "toEnd": "arrow",
+      "color": "#64748b",
+      "label": "E10"
+    }
+  ]
+}

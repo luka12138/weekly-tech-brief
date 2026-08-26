@@ -11,6 +11,9 @@ import sys
 from datetime import date, timedelta
 from pathlib import Path
 
+from graph_update_policy import is_schema_v2, supply_changed_edge_ids
+from json_canvas_graphs import validate_canvas_file
+
 
 REQUIRED_COMPANIES = [
     "Apple",
@@ -26,6 +29,10 @@ REQUIRED_COMPANIES = [
     "SK Hynix",
     "TSMC",
 ]
+LEGACY_REQUIRED_COMPANIES = [
+    company for company in REQUIRED_COMPANIES if company not in {"OpenAI", "Anthropic"}
+]
+ALLOWED_COMPANY_SCOPES = (LEGACY_REQUIRED_COMPANIES, REQUIRED_COMPANIES)
 
 REQUIRED_EDGE_FIELDS = [
     "edge_id",
@@ -171,8 +178,13 @@ def validate_source_audit(
         fail("来源审查包含未分类来源")
     if summary.get("errors", 0) != 0:
         fail("来源审查包含可达性错误")
-    if summary.get("claim_total", 0) <= 0:
-        fail("来源审查没有执行核心事实 claim 检查")
+    baseline = json.loads(baseline_path.read_text(encoding="utf-8"))
+    expected_claims = sum(1 for edge in baseline.get("edges", []) if edge.get("claim_keywords"))
+    if summary.get("claim_total", 0) != expected_claims:
+        fail(
+            "来源审查 claim 数量与基线不一致："
+            f"expected={expected_claims} actual={summary.get('claim_total', 0)}"
+        )
     if summary.get("claim_failed", 0) != 0:
         fail("来源审查包含未通过关键词匹配的核心事实 claim")
     for source in audit.get("sources", []):
@@ -182,28 +194,47 @@ def validate_source_audit(
             fail(f"来源审查包含不可达 URL：{source}")
 
 
-def validate_product_graph(report: str, product_graph_path: Path | None, product_image_path: Path | None) -> None:
-    if product_graph_path is None and product_image_path is None:
+def validate_product_graph(
+    report: str,
+    product_graph_path: Path | None,
+    product_image_path: Path | None,
+    product_canvas_path: Path | None,
+    required_companies: list[str],
+) -> None:
+    if product_graph_path is None and product_image_path is None and product_canvas_path is None:
         return
-    if product_graph_path is None or product_image_path is None:
-        fail("产品关系 JSON 和产品关系图片必须同时提供")
+    if product_graph_path is None or product_image_path is None or product_canvas_path is None:
+        fail("产品关系 JSON、Canvas 和 SVG 图片必须同时提供")
     if not product_graph_path.exists():
         fail(f"产品关系 JSON 不存在：{product_graph_path}")
     if not product_image_path.exists():
         fail(f"产品关系图片不存在：{product_image_path}")
+    if not product_canvas_path.exists():
+        fail(f"产品关系 Canvas 不存在：{product_canvas_path}")
+    if product_canvas_path.suffix.lower() != ".canvas":
+        fail(f"产品关系 Canvas 扩展名无效：{product_canvas_path}")
+    try:
+        validate_canvas_file(product_canvas_path)
+    except (ValueError, json.JSONDecodeError) as exc:
+        fail(f"产品关系 Canvas 校验失败：{exc}")
     if product_image_path.suffix.lower() not in {".svg", ".png", ".jpg", ".jpeg", ".webp"}:
         fail(f"不支持的产品关系图片类型：{product_image_path}")
     expected_image_ref = str(product_image_path).replace("\\", "/")
     alternate_image_ref = "../" + expected_image_ref
     if expected_image_ref not in report and alternate_image_ref not in report:
         fail(f"周报没有引用产品关系图片：{expected_image_ref}")
+    if is_schema_v2(report):
+        expected_canvas_ref = str(product_canvas_path).replace("\\", "/")
+        alternate_canvas_ref = "../" + expected_canvas_ref
+        if expected_canvas_ref not in report and alternate_canvas_ref not in report:
+            fail(f"schema v2 周报没有引用产品关系 Canvas：{expected_canvas_ref}")
 
     product_graph = json.loads(product_graph_path.read_text(encoding="utf-8"))
     companies = product_graph.get("companies")
     if not isinstance(companies, list):
         fail("产品关系图 companies 必须是列表")
     names = [item.get("name") for item in companies]
-    if names != REQUIRED_COMPANIES:
+    if names != required_companies:
         fail("产品关系图公司列表缺失，或未按标准顺序排列")
     for company in companies:
         if not company.get("main_products"):
@@ -234,10 +265,23 @@ def validate_product_graph(report: str, product_graph_path: Path | None, product
 
     product_nodes = product_graph.get("product_nodes")
     product_edges = product_graph.get("product_edges")
+    legacy_company_graph = not product_nodes and not product_edges
+    if legacy_company_graph:
+        canvas = json.loads(product_canvas_path.read_text(encoding="utf-8"))
+        canvas_labels = {str(edge.get("label")) for edge in canvas.get("edges", []) if edge.get("label")}
+        expected_labels = {
+            str(relation["edge_id"])
+            for relation in relationships
+            if relation.get("source") != relation.get("target")
+        }
+        missing_labels = expected_labels - canvas_labels
+        if missing_labels:
+            fail(f"旧版产品关系 Canvas 缺少公司级 Edge ID：{sorted(missing_labels)}")
+        return
     if not isinstance(product_nodes, list) or not product_nodes:
-        fail("产品关系图 product_nodes 必须是非空列表")
+        fail("产品关系图 product_nodes 必须是非空列表，或与 product_edges 同时省略")
     if not isinstance(product_edges, list) or not product_edges:
-        fail("产品关系图 product_edges 必须是非空列表")
+        fail("产品关系图 product_edges 必须是非空列表，或与 product_nodes 同时省略")
 
     nodes_by_id: dict[str, dict[str, object]] = {}
     products_by_company = {company["name"]: set(company["main_products"]) for company in companies}
@@ -291,25 +335,215 @@ def validate_product_graph(report: str, product_graph_path: Path | None, product
     if unattached:
         fail(f"产品节点未进入任何产品级关系：{sorted(unattached)[:8]}")
 
+    canvas = json.loads(product_canvas_path.read_text(encoding="utf-8"))
+    canvas_labels = {str(edge.get("label")) for edge in canvas.get("edges", []) if edge.get("label")}
+    expected_labels = {
+        str(edge["edge_id"])
+        for edge in product_edges
+        if edge.get("source_company") != edge.get("target_company")
+    }
+    missing_labels = expected_labels - canvas_labels
+    if missing_labels:
+        fail(f"产品关系 Canvas 缺少跨公司 Edge ID：{sorted(missing_labels)}")
 
-def validate_supply_image(report: str, supply_image_path: Path | None) -> None:
-    if supply_image_path is None:
+
+def validate_supply_artifacts(
+    report: str,
+    supply_image_path: Path | None,
+    supply_canvas_path: Path | None,
+    expected_edge_ids: set[str],
+) -> None:
+    if supply_image_path is None and supply_canvas_path is None:
         return
+    if supply_image_path is None or supply_canvas_path is None:
+        fail("供应关系 Canvas 和 SVG 图片必须同时提供")
     if not supply_image_path.exists():
         fail(f"供应关系图片不存在：{supply_image_path}")
+    if not supply_canvas_path.exists():
+        fail(f"供应关系 Canvas 不存在：{supply_canvas_path}")
+    if supply_canvas_path.suffix.lower() != ".canvas":
+        fail(f"供应关系 Canvas 扩展名无效：{supply_canvas_path}")
+    try:
+        validate_canvas_file(supply_canvas_path)
+    except (ValueError, json.JSONDecodeError) as exc:
+        fail(f"供应关系 Canvas 校验失败：{exc}")
     if supply_image_path.suffix.lower() not in {".svg", ".png", ".jpg", ".jpeg", ".webp"}:
         fail(f"不支持的供应关系图片类型：{supply_image_path}")
     expected_image_ref = str(supply_image_path).replace("\\", "/")
     alternate_image_ref = "../" + expected_image_ref
     if expected_image_ref not in report and alternate_image_ref not in report:
         fail(f"周报没有引用供应关系图片：{expected_image_ref}")
+    if is_schema_v2(report):
+        expected_canvas_ref = str(supply_canvas_path).replace("\\", "/")
+        alternate_canvas_ref = "../" + expected_canvas_ref
+        if expected_canvas_ref not in report and alternate_canvas_ref not in report:
+            fail(f"schema v2 周报没有引用供应关系 Canvas：{expected_canvas_ref}")
+    canvas = json.loads(supply_canvas_path.read_text(encoding="utf-8"))
+    canvas_labels = {str(edge.get("label")) for edge in canvas.get("edges", []) if edge.get("label")}
+    if canvas_labels != expected_edge_ids:
+        fail(f"供应关系 Canvas Edge ID 不一致：canvas={sorted(canvas_labels)} json={sorted(expected_edge_ids)}")
 
 
-def validate_headlines(report: str) -> None:
+def validate_headlines(report: str, schema_v2: bool = False) -> None:
     section = extract_section(report, "## 1. 本周最重要的 10 件事", "## 2.")
     numbers = [int(value) for value in re.findall(r"^(\d+)\. ", section, flags=re.M)]
     if numbers != list(range(1, 11)):
         fail(f"第 1 节必须按 1-10 编号且恰好包含 10 件事：actual={numbers}")
+    if not schema_v2:
+        return
+    items = re.findall(r"(?ms)^\d+\. (.*?)(?=^\d+\. |\Z)", section)
+    for index, item in enumerate(items, start=1):
+        if "https://" not in item:
+            fail(f"第 1 节第 {index} 件事缺少 HTTPS 来源")
+        if "重要性：" not in item and "投资判断：" not in item:
+            fail(f"第 1 节第 {index} 件事缺少“重要性”或“投资判断”")
+        prose = re.sub(r"https://[^\s)]+", "", item)
+        if len(prose) > 700:
+            fail(f"第 1 节第 {index} 件事过长，应压缩为事件、重要性和来源")
+
+
+def _numbered_blocks(section: str) -> list[str]:
+    return re.findall(r"(?ms)^\d+\. (.*?)(?=^\d+\. |\Z)", section)
+
+
+def _heading_blocks(section: str, prefix: str) -> list[tuple[str, str]]:
+    pattern = re.compile(rf"(?m)^### {re.escape(prefix)}\d+ (.+)$")
+    matches = list(pattern.finditer(section))
+    blocks: list[tuple[str, str]] = []
+    for index, match in enumerate(matches):
+        end = matches[index + 1].start() if index + 1 < len(matches) else len(section)
+        blocks.append((match.group(1).strip(), section[match.end() : end]))
+    return blocks
+
+
+def validate_v2_investment_table(report: str, required_companies: list[str]) -> None:
+    section = extract_section(report, "## 2. 投资判断速览", "## 3.")
+    header = next((line for line in section.splitlines() if line.strip().startswith("|")), "")
+    for column in ("公司", "本周变化", "影响指标", "预期差", "判断", "验证条件"):
+        if column not in header:
+            fail(f"第 2 节投资判断表缺少列：{column}")
+    for company in required_companies:
+        if not re.search(rf"(?m)^\|\s*{re.escape(company)}\s*\|", section):
+            fail(f"第 2 节投资判断表缺少公司：{company}")
+
+
+def validate_v2_company_details(report: str, required_companies: list[str]) -> None:
+    section = extract_section(report, "## 3. 发生变化的公司", "## 4.")
+    blocks = _heading_blocks(section, "3.")
+    if not blocks:
+        fail("第 3 节缺少公司小节和“无重大变化公司”汇总")
+    unchanged_blocks = [block for title, block in blocks if title == "无重大变化公司"]
+    if len(unchanged_blocks) != 1:
+        fail("第 3 节必须且只能有一个“无重大变化公司”汇总小节")
+
+    changed_companies: set[str] = set()
+    required_fields = ("日期", "事件", "投资影响", "影响指标", "预期差", "验证条件", "可信度", "来源")
+    for title, block in blocks:
+        if title == "无重大变化公司":
+            continue
+        if title not in required_companies:
+            fail(f"第 3 节公司标题不在覆盖范围内：{title}")
+        if title in changed_companies:
+            fail(f"第 3 节公司标题重复：{title}")
+        changed_companies.add(title)
+        event_count = len(re.findall(r"(?m)^- 事件：\s*\S", block))
+        if not (1 <= event_count <= 4):
+            fail(f"{title} 应包含 1-4 条重大事件，actual={event_count}")
+        for field in required_fields:
+            count = len(re.findall(rf"(?m)^- {field}：\s*\S", block))
+            if count != event_count:
+                fail(f"{title} 的“{field}”数量必须与事件数量一致：events={event_count} actual={count}")
+        source_lines = re.findall(r"(?m)^- 来源：\s*(.+)$", block)
+        if any("https://" not in line for line in source_lines):
+            fail(f"{title} 的每条事件来源必须包含 HTTPS 链接")
+
+    unchanged_block = unchanged_blocks[0]
+    unchanged_companies = {company for company in required_companies if company in unchanged_block}
+    overlap = changed_companies & unchanged_companies
+    if overlap:
+        fail(f"公司不能同时列为发生变化和无重大变化：{sorted(overlap)}")
+    covered = changed_companies | unchanged_companies
+    if covered != set(required_companies):
+        fail(f"第 3 节公司覆盖不完整：missing={sorted(set(required_companies) - covered)}")
+
+
+def validate_v2_trends_and_catalysts(report: str) -> None:
+    trends = extract_section(report, "## 4. 跨公司与产业链判断", "## 5.")
+    trend_items = _numbered_blocks(trends)
+    if not (3 <= len(trend_items) <= 5):
+        fail(f"第 4 节必须包含 3-5 条跨公司判断：actual={len(trend_items)}")
+    catalysts = extract_section(report, "## 5. 下周催化与验证条件", "## 6.")
+    catalyst_items = _numbered_blocks(catalysts)
+    if not (1 <= len(catalyst_items) <= 5):
+        fail(f"第 5 节必须包含 1-5 条催化事项：actual={len(catalyst_items)}")
+    for index, item in enumerate(catalyst_items, start=1):
+        if "触发条件：" not in item or "可能影响：" not in item:
+            fail(f"第 5 节第 {index} 项必须同时包含“触发条件”和“可能影响”")
+
+
+def validate_v2_appendix(
+    report: str,
+    baseline: dict[str, object],
+    expected_changed_edge_ids: set[str] | None = None,
+) -> None:
+    if "```mermaid" in report:
+        fail("schema v2 不再保留 Mermaid；JSON 是关系事实源，Canvas/SVG 是唯一可视化层")
+    status = extract_section(report, "### 6.1 图谱更新状态与可视化", "### 6.2")
+    for graph_name in ("产品图：", "供应图："):
+        match = re.search(rf"(?m)^- {graph_name}(.+)$", status)
+        if not match:
+            fail(f"第 6.1 节缺少更新状态：{graph_name}")
+        if "本期更新" not in match.group(1) and "沿用" not in match.group(1):
+            fail(f"第 6.1 节必须逐图说明是本期更新还是沿用历史版本：{graph_name}")
+
+    table = extract_section(report, "### 6.2 本周供应关系变化表", "### 6.3")
+    table_ids = set(re.findall(r"\|\s*(E\d{2})\s*\|", table))
+    changed_ids = (
+        expected_changed_edge_ids
+        if expected_changed_edge_ids is not None
+        else set(supply_changed_edge_ids(baseline))
+    )
+    if table_ids != changed_ids:
+        fail(f"第 6.2 节只能列本周实质变化关系：table={sorted(table_ids)} expected={sorted(changed_ids)}")
+    if not changed_ids and "本周无供应关系实质变化" not in table:
+        fail("本周无变化时，第 6.2 节必须明确写“本周无供应关系实质变化”")
+
+
+def validate_v2_compactness(report: str) -> None:
+    nonempty_lines = [line for line in report.splitlines() if line.strip()]
+    if len(nonempty_lines) > 220:
+        fail(f"schema v2 周报非空行数不得超过 220：actual={len(nonempty_lines)}")
+    core = report.split("## 6. 研究附录：产业链与图谱", 1)[0]
+    core_lines = [line for line in core.splitlines() if line.strip()]
+    if len(core_lines) > 150:
+        fail(f"第 1-5 节非空行数不得超过 150：actual={len(core_lines)}")
+    if len(core) > 24000:
+        fail(f"第 1-5 节正文过长，应压缩事件描述：characters={len(core)}")
+
+
+def validate_v2_structure(
+    report: str,
+    baseline: dict[str, object],
+    required_companies: list[str],
+    expected_changed_edge_ids: set[str] | None = None,
+) -> None:
+    for heading in (
+        "## 2. 投资判断速览",
+        "## 3. 发生变化的公司",
+        "## 4. 跨公司与产业链判断",
+        "## 5. 下周催化与验证条件",
+        "## 6. 研究附录：产业链与图谱",
+        "### 6.1 图谱更新状态与可视化",
+        "### 6.2 本周供应关系变化表",
+        "### 6.3 与上周的区别",
+    ):
+        if heading not in report:
+            fail(f"schema v2 缺少章节：{heading}")
+    validate_v2_investment_table(report, required_companies)
+    validate_v2_company_details(report, required_companies)
+    validate_v2_trends_and_catalysts(report)
+    validate_v2_appendix(report, baseline, expected_changed_edge_ids)
+    validate_v2_compactness(report)
 
 
 def validate_report(
@@ -319,12 +553,16 @@ def validate_report(
     source_audit_path: Path | None = None,
     product_graph_path: Path | None = None,
     product_image_path: Path | None = None,
+    product_canvas_path: Path | None = None,
     supply_image_path: Path | None = None,
+    supply_canvas_path: Path | None = None,
+    expected_changed_edge_ids: set[str] | None = None,
 ) -> None:
     report = report_path.read_text(encoding="utf-8")
     baseline = json.loads(baseline_path.read_text(encoding="utf-8"))
+    schema_v2 = is_schema_v2(report)
 
-    validate_headlines(report)
+    validate_headlines(report, schema_v2)
 
     period = baseline.get("coverage_period", {})
     start = period.get("start")
@@ -351,9 +589,10 @@ def validate_report(
         fail(f"周报没有包含覆盖周期：{expected_period}")
 
     companies = baseline.get("companies")
-    if companies != REQUIRED_COMPANIES:
+    if companies not in ALLOWED_COMPANY_SCOPES:
         fail("基线公司列表缺失，或未按要求的标准顺序排列")
-    for company in REQUIRED_COMPANIES:
+    required_companies = list(companies)
+    for company in required_companies:
         if company not in report:
             fail(f"周报未提及必需公司：{company}")
 
@@ -387,21 +626,24 @@ def validate_report(
         if low_confidence and not re.search(limitation_pattern, joined, re.I):
             fail(f"低/中可信度供应关系缺少限制说明：{edge_id}")
 
-    mermaid = extract_mermaid(report)
-    if "flowchart LR" not in mermaid:
-        fail("Mermaid 图必须使用 flowchart LR")
-    for company in REQUIRED_COMPANIES:
-        if company not in mermaid:
-            fail(f"Mermaid 图缺少公司节点：{company}")
-    mermaid_ids = edge_ids_from_text(mermaid)
+    if schema_v2:
+        validate_v2_structure(report, baseline, required_companies, expected_changed_edge_ids)
+    else:
+        mermaid = extract_mermaid(report)
+        if "flowchart LR" not in mermaid:
+            fail("Mermaid 图必须使用 flowchart LR")
+        for company in required_companies:
+            if company not in mermaid:
+                fail(f"Mermaid 图缺少公司节点：{company}")
+        mermaid_ids = edge_ids_from_text(mermaid)
 
-    table = extract_section(report, "### 6.2 供应关系明细表", "### 6.3")
-    table_ids = set(re.findall(r"\| (E\d{2}) \|", table))
-    if json_ids != mermaid_ids or json_ids != table_ids:
-        fail(
-            "Edge ID 不一致："
-            f"json={sorted(json_ids)} mermaid={sorted(mermaid_ids)} table={sorted(table_ids)}"
-        )
+        table = extract_section(report, "### 6.2 供应关系明细表", "### 6.3")
+        table_ids = set(re.findall(r"\| (E\d{2}) \|", table))
+        if json_ids != mermaid_ids or json_ids != table_ids:
+            fail(
+                "Edge ID 不一致："
+                f"json={sorted(json_ids)} mermaid={sorted(mermaid_ids)} table={sorted(table_ids)}"
+            )
 
     disallowed_phrases = [
         "提交与推送在本次文件校验后执行",
@@ -416,8 +658,14 @@ def validate_report(
 
     validate_latest(latest_path)
     validate_source_audit(source_audit_path, report_path, baseline_path, product_graph_path)
-    validate_product_graph(report, product_graph_path, product_image_path)
-    validate_supply_image(report, supply_image_path)
+    validate_product_graph(
+        report,
+        product_graph_path,
+        product_image_path,
+        product_canvas_path,
+        required_companies,
+    )
+    validate_supply_artifacts(report, supply_image_path, supply_canvas_path, json_ids)
 
 
 def main() -> None:
@@ -428,7 +676,10 @@ def main() -> None:
     parser.add_argument("--source-audit")
     parser.add_argument("--product-graph")
     parser.add_argument("--product-image")
+    parser.add_argument("--product-canvas")
     parser.add_argument("--supply-image")
+    parser.add_argument("--supply-canvas")
+    parser.add_argument("--expected-changed-edge-ids", nargs="*")
     args = parser.parse_args()
 
     validate_report(
@@ -438,7 +689,10 @@ def main() -> None:
         Path(args.source_audit) if args.source_audit else None,
         Path(args.product_graph) if args.product_graph else None,
         Path(args.product_image) if args.product_image else None,
+        Path(args.product_canvas) if args.product_canvas else None,
         Path(args.supply_image) if args.supply_image else None,
+        Path(args.supply_canvas) if args.supply_canvas else None,
+        set(args.expected_changed_edge_ids) if args.expected_changed_edge_ids is not None else None,
     )
     print("周报主校验通过")
 

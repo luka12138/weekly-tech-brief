@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-17T05:33:38.331771+00:00",
+  "generated_at": "2026-08-26T03:03:04.698493+00:00",
   "report": "reports/2026-08-17_weekly_morning_brief.md",
-  "baseline": "state/supply_graph_baseline.json",
-  "product_graph": "state/product_relationships_2026.json",
-  "report_sha256": "881d51f573b30d8eb819314b2960d04f9f35a5005ca85a92b19fabf7057d7b72",
+  "baseline": "git:1cc3396ba9fff621eec81b5d40516a56f8890772:state/supply_graph_baseline.json",
+  "product_graph": "git:1cc3396ba9fff621eec81b5d40516a56f8890772:state/product_relationships_2026.json",
+  "report_sha256": "721570fed2644366603cfe08cef7ded56b63b527458773a2365c6927d0f364d3",
   "baseline_sha256": "82d11c48dc03097a44a5db319b5d8da5b43c6ba5344b47cd5a8d22140fa23212",
-  "product_graph_sha256": "d8a177b0753fe14cb105f52b281eaf638e4e45d21e59d5a995cfc8e0268e10c2",
+  "product_graph_sha256": "1efbfc939e72425ca4f6d18a1f4c9debc41e2067d6ff369369b26b94fe56064a",
   "audited_urls": [
     "https://abc.xyz/assets/5d/f4/15f364a84a6c9b70a59f9f38d3a1/2026q2-alphabet-earnings-release.pdf",
     "https://abc.xyz/investor/",
@@ -17,7 +17,6 @@
     "https://investor.apple.com/sec-filings/default.aspx",
     "https://investor.atmeta.com/financials/",
     "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/",
-    "https://investor.nvidia.com/",
     "https://investor.nvidia.com/financial-info/annual-reports-and-proxies/default.aspx",
     "https://investor.tsmc.com/english/annual-reports",
     "https://investor.tsmc.com/english/monthly-revenue/2026",
@@ -25,18 +24,14 @@
     "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Second-Quarter-Results/default.aspx",
     "https://ir.tesla.com/",
     "https://ir.tesla.com/press-release/tesla-releases-second-quarter-2026-financial-results",
-    "https://news.microsoft.com/source/",
     "https://news.microsoft.com/source/2026/07/20/microsoft-expands-azure-ai-and-hpc-infrastructure-with-amd/",
     "https://news.microsoft.com/source/2026/07/21/microsoft-and-mistral-expand-strategic-partnership-to-give-enterprises-and-regulated-industries-frontier-ai-they-can-control/",
-    "https://news.samsung.com/global/",
     "https://news.samsung.com/global/samsung-electronics-and-broadcom-expand-strategic-collaboration-across-memory-and-foundry-technologies",
     "https://news.samsung.com/global/samsung-electronics-releases-2026-sustainability-report-expanding-water-replenishment-efforts",
-    "https://news.skhynix.com/",
-    "https://news.skhynix.com/12-layer-hbm4e-sample/",
+    "https://news.skhynix.com/en/12-layer-hbm4e-sample-1/",
     "https://news.skhynix.com/en/hbf-at-fms-2026/",
     "https://news.skhynix.com/en/q2-2026-business-results/",
     "https://news.skhynix.com/sk-hynix-and-sandisk-begin-global-standardization-ofnext-generation-memory-hbf/",
-    "https://nvidianews.nvidia.com/",
     "https://nvidianews.nvidia.com/news/ilya-sutskevers-safe-superintelligence-inc-and-nvidia-announce-long-term-strategic-partnership",
     "https://nvidianews.nvidia.com/news/sk-group-and-nvidia-expand-strategic-partnership-across-ai-factories-and-next-generation-memory",
     "https://openai.com/academy/getting-started/",
@@ -61,28 +56,26 @@
     "https://www.anthropic.com/news/microsoft-nvidia-anthropic-announce-strategic-partnerships",
     "https://www.anthropic.com/product/claude-code",
     "https://www.anthropic.com/research",
-    "https://www.apple.com/newsroom/",
     "https://www.apple.com/newsroom/2026/07/apple-maps-to-power-navigation-experience-for-ford-uev-platform/",
     "https://www.axios.com/2026/08/10/openai-gpt-astra-restrictions-safety-hacking-defenders",
     "https://www.axios.com/2026/08/14/anthropic-model-2-ai-risk",
-    "https://www.microsoft.com/en-us/Investor/",
     "https://www.microsoft.com/en-us/Investor/annual-reports.aspx",
     "https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q4/press-release-webcast",
-    "https://www.samsung.com/global/ir/",
     "https://www.samsung.com/global/ir/reports-disclosures/business-report/",
-    "https://www.skhynix.com/ir/UI-FR-IR01/",
     "https://www.skhynix.com/ir/UI-FR-IR02"
   ],
   "summary": {
-    "total": 65,
-    "reachable": 65,
-    "access_limited": 9,
+    "total": 56,
+    "reachable": 56,
+    "access_limited": 8,
     "unclassified": 0,
     "errors": 0,
     "claim_total": 16,
     "claim_matched": 16,
     "claim_manual": 0,
-    "claim_failed": 0
+    "claim_failed": 0,
+    "source_cache_reused": 0,
+    "claim_cache_reused": 0
   },
   "sources": [
     {
@@ -206,18 +199,6 @@
       "error": null
     },
     {
-      "url": "https://investor.nvidia.com/",
-      "scheme": "https",
-      "host": "investor.nvidia.com",
-      "source_class": "official_or_regulatory",
-      "status": 200,
-      "reachable": true,
-      "access_limited": false,
-      "content_verified": true,
-      "requires_manual_verification": false,
-      "error": null
-    },
-    {
       "url": "https://investor.nvidia.com/financial-info/annual-reports-and-proxies/default.aspx",
       "scheme": "https",
       "host": "investor.nvidia.com",
@@ -234,11 +215,11 @@
       "scheme": "https",
       "host": "investor.tsmc.com",
       "source_class": "official_or_regulatory",
-      "status": 403,
+      "status": 200,
       "reachable": true,
-      "access_limited": true,
-      "content_verified": false,
-      "requires_manual_verification": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
       "error": null
     },
     {
@@ -302,18 +283,6 @@
       "error": null
     },
     {
-      "url": "https://news.microsoft.com/source/",
-      "scheme": "https",
-      "host": "news.microsoft.com",
-      "source_class": "official_or_regulatory",
-      "status": 200,
-      "reachable": true,
-      "access_limited": false,
-      "content_verified": true,
-      "requires_manual_verification": false,
-      "error": null
-    },
-    {
       "url": "https://news.microsoft.com/source/2026/07/20/microsoft-expands-azure-ai-and-hpc-infrastructure-with-amd/",
       "scheme": "https",
       "host": "news.microsoft.com",
@@ -335,18 +304,6 @@
       "access_limited": false,
       "content_verified": true,
       "requires_manual_verification": false,
-      "error": null
-    },
-    {
-      "url": "https://news.samsung.com/global/",
-      "scheme": "https",
-      "host": "news.samsung.com",
-      "source_class": "official_or_regulatory",
-      "status": 403,
-      "reachable": true,
-      "access_limited": true,
-      "content_verified": false,
-      "requires_manual_verification": true,
       "error": null
     },
     {
@@ -374,19 +331,7 @@
       "error": null
     },
     {
-      "url": "https://news.skhynix.com/",
-      "scheme": "https",
-      "host": "news.skhynix.com",
-      "source_class": "official_or_regulatory",
-      "status": 200,
-      "reachable": true,
-      "access_limited": false,
-      "content_verified": true,
-      "requires_manual_verification": false,
-      "error": null
-    },
-    {
-      "url": "https://news.skhynix.com/12-layer-hbm4e-sample/",
+      "url": "https://news.skhynix.com/en/12-layer-hbm4e-sample-1/",
       "scheme": "https",
       "host": "news.skhynix.com",
       "source_class": "official_or_regulatory",
@@ -434,18 +379,6 @@
       "error": null
     },
     {
-      "url": "https://nvidianews.nvidia.com/",
-      "scheme": "https",
-      "host": "nvidianews.nvidia.com",
-      "source_class": "official_or_regulatory",
-      "status": 200,
-      "reachable": true,
-      "access_limited": false,
-      "content_verified": true,
-      "requires_manual_verification": false,
-      "error": null
-    },
-    {
       "url": "https://nvidianews.nvidia.com/news/ilya-sutskevers-safe-superintelligence-inc-and-nvidia-announce-long-term-strategic-partnership",
       "scheme": "https",
       "host": "nvidianews.nvidia.com",
@@ -474,11 +407,11 @@
       "scheme": "https",
       "host": "openai.com",
       "source_class": "official_or_regulatory",
-      "status": 200,
+      "status": 403,
       "reachable": true,
-      "access_limited": false,
-      "content_verified": true,
-      "requires_manual_verification": false,
+      "access_limited": true,
+      "content_verified": false,
+      "requires_manual_verification": true,
       "error": null
     },
     {
@@ -510,11 +443,11 @@
       "scheme": "https",
       "host": "openai.com",
       "source_class": "official_or_regulatory",
-      "status": 200,
+      "status": 403,
       "reachable": true,
-      "access_limited": false,
-      "content_verified": true,
-      "requires_manual_verification": false,
+      "access_limited": true,
+      "content_verified": false,
+      "requires_manual_verification": true,
       "error": null
     },
     {
@@ -522,11 +455,11 @@
       "scheme": "https",
       "host": "openai.com",
       "source_class": "official_or_regulatory",
-      "status": 200,
+      "status": 403,
       "reachable": true,
-      "access_limited": false,
-      "content_verified": true,
-      "requires_manual_verification": false,
+      "access_limited": true,
+      "content_verified": false,
+      "requires_manual_verification": true,
       "error": null
     },
     {
@@ -546,11 +479,11 @@
       "scheme": "https",
       "host": "openai.com",
       "source_class": "official_or_regulatory",
-      "status": 200,
+      "status": 403,
       "reachable": true,
-      "access_limited": false,
-      "content_verified": true,
-      "requires_manual_verification": false,
+      "access_limited": true,
+      "content_verified": false,
+      "requires_manual_verification": true,
       "error": null
     },
     {
@@ -734,18 +667,6 @@
       "error": null
     },
     {
-      "url": "https://www.apple.com/newsroom/",
-      "scheme": "https",
-      "host": "www.apple.com",
-      "source_class": "official_or_regulatory",
-      "status": 200,
-      "reachable": true,
-      "access_limited": false,
-      "content_verified": true,
-      "requires_manual_verification": false,
-      "error": null
-    },
-    {
       "url": "https://www.apple.com/newsroom/2026/07/apple-maps-to-power-navigation-experience-for-ford-uev-platform/",
       "scheme": "https",
       "host": "www.apple.com",
@@ -762,11 +683,11 @@
       "scheme": "https",
       "host": "www.axios.com",
       "source_class": "tier1_media",
-      "status": 403,
+      "status": 200,
       "reachable": true,
-      "access_limited": true,
-      "content_verified": false,
-      "requires_manual_verification": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
       "error": null
     },
     {
@@ -774,18 +695,6 @@
       "scheme": "https",
       "host": "www.axios.com",
       "source_class": "tier1_media",
-      "status": 403,
-      "reachable": true,
-      "access_limited": true,
-      "content_verified": false,
-      "requires_manual_verification": true,
-      "error": null
-    },
-    {
-      "url": "https://www.microsoft.com/en-us/Investor/",
-      "scheme": "https",
-      "host": "www.microsoft.com",
-      "source_class": "official_or_regulatory",
       "status": 200,
       "reachable": true,
       "access_limited": false,
@@ -818,18 +727,6 @@
       "error": null
     },
     {
-      "url": "https://www.samsung.com/global/ir/",
-      "scheme": "https",
-      "host": "www.samsung.com",
-      "source_class": "official_or_regulatory",
-      "status": 403,
-      "reachable": true,
-      "access_limited": true,
-      "content_verified": false,
-      "requires_manual_verification": true,
-      "error": null
-    },
-    {
       "url": "https://www.samsung.com/global/ir/reports-disclosures/business-report/",
       "scheme": "https",
       "host": "www.samsung.com",
@@ -839,18 +736,6 @@
       "access_limited": true,
       "content_verified": false,
       "requires_manual_verification": true,
-      "error": null
-    },
-    {
-      "url": "https://www.skhynix.com/ir/UI-FR-IR01/",
-      "scheme": "https",
-      "host": "www.skhynix.com",
-      "source_class": "official_or_regulatory",
-      "status": 200,
-      "reachable": true,
-      "access_limited": false,
-      "content_verified": true,
-      "requires_manual_verification": false,
       "error": null
     },
     {
@@ -896,7 +781,10 @@
           "matched_keywords": [
             "ford",
             "apple maps"
-          ]
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 9112
         }
       ]
     },
@@ -929,7 +817,10 @@
           "matched_keywords": [
             "mi455x",
             "epyc"
-          ]
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 9109
         }
       ]
     },
@@ -962,7 +853,10 @@
           "matched_keywords": [
             "mistral",
             "regulated industries"
-          ]
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 13919
         }
       ]
     },
@@ -995,7 +889,10 @@
           "matched_keywords": [
             "claude opus 5",
             "bedrock"
-          ]
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 53892
         }
       ]
     },
@@ -1028,7 +925,10 @@
           "matched_keywords": [
             "advertising",
             "family daily active people"
-          ]
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 20111
         }
       ]
     },
@@ -1061,7 +961,10 @@
           "matched_keywords": [
             "sk telecom",
             "ai factories"
-          ]
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 16956
         }
       ]
     },
@@ -1095,7 +998,10 @@
           "matched_keywords": [
             "sk hynix",
             "next-generation memory"
-          ]
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 16956
         },
         {
           "url": "https://news.skhynix.com/en/q2-2026-business-results/",
@@ -1103,7 +1009,10 @@
           "access_limited": false,
           "matched_keywords": [
             "sk hynix"
-          ]
+          ],
+          "text_fetch_retried": true,
+          "text_fetch_failed": false,
+          "text_length": 11255
         }
       ]
     },
@@ -1136,7 +1045,10 @@
           "matched_keywords": [
             "broadcom",
             "high bandwidth memory"
-          ]
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 5125
         }
       ]
     },
@@ -1172,7 +1084,10 @@
             "safe superintelligence",
             "vera rubin",
             "order of magnitude"
-          ]
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 11397
         }
       ]
     },
@@ -1208,7 +1123,10 @@
             "openai",
             "trainium",
             "multi-gigawatt"
-          ]
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 53892
         }
       ]
     },
@@ -1244,7 +1162,10 @@
             "anthropic",
             "trainium",
             "multi-gigawatt"
-          ]
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 53892
         }
       ]
     },
@@ -1280,7 +1201,10 @@
             "azure",
             "43%",
             "copilot"
-          ]
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 31642
         }
       ]
     },
@@ -1316,7 +1240,10 @@
             "long-term agreements",
             "around 10",
             "hbm4"
-          ]
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 11255
         }
       ]
     },
@@ -1356,7 +1283,10 @@
             "hbf",
             "512gb",
             "ocp"
-          ]
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 10840
         },
         {
           "url": "https://news.skhynix.com/sk-hynix-and-sandisk-begin-global-standardization-ofnext-generation-memory-hbf/",
@@ -1366,7 +1296,10 @@
             "sandisk",
             "hbf",
             "ocp"
-          ]
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 5939
         }
       ]
     },
@@ -1402,7 +1335,10 @@
             "daybreak",
             "amazon bedrock",
             "daybreak red"
-          ]
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 4025
         }
       ]
     },
@@ -1439,16 +1375,22 @@
             "ultrafast",
             "cerebras",
             "750"
-          ]
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 7937
         },
         {
           "url": "https://openai.com/index/cerebras-partnership/",
-          "status": 200,
-          "access_limited": false,
+          "status": 403,
+          "access_limited": true,
           "matched_keywords": [
             "cerebras",
             "750"
-          ]
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 67939
         }
       ]
     }
