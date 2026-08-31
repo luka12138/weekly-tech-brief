@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import sys
-import tempfile
 import unittest
 from contextlib import redirect_stderr
 from io import StringIO
@@ -16,6 +15,7 @@ from validate_weekly_brief import (  # noqa: E402
     validate_report,
     validate_v2_structure,
 )
+from graph_update_policy import extract_graph_asset_date, has_meaningful_supply_change  # noqa: E402
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -100,29 +100,30 @@ class WeeklyBriefSchemaTests(unittest.TestCase):
 
         baseline_path = ROOT / "state" / "supply_graph_baseline.json"
         baseline = json.loads(baseline_path.read_text(encoding="utf-8"))
-        changed_ids = [
+        changed_ids = {
             str(edge["edge_id"])
             for edge in baseline["edges"]
-            if edge.get("changed_this_week") in {"new", "strengthened", "risk", "weakened"}
-        ]
-        report_text = valid_report(changed_ids)
-        with tempfile.TemporaryDirectory() as directory:
-            reports = Path(directory) / "reports"
-            reports.mkdir()
-            report_path = reports / "2026-08-24_weekly_morning_brief.md"
-            report_path.write_text(report_text, encoding="utf-8")
-            latest_path = reports / "latest.md"
-            latest_path.write_text("[latest](2026-08-24_weekly_morning_brief.md)\n", encoding="utf-8")
-            validate_report(
-                report_path,
-                baseline_path,
-                latest_path,
-                product_graph_path=Path("state/product_relationships_2026.json"),
-                product_image_path=Path("assets/2026-08-24_product_relationships.svg"),
-                product_canvas_path=Path("assets/2026-08-24_product_relationships.canvas"),
-                supply_image_path=Path("assets/2026-08-24_supply_relationships.svg"),
-                supply_canvas_path=Path("assets/2026-08-24_supply_relationships.canvas"),
-            )
+            if has_meaningful_supply_change(edge)
+        }
+        report_date = str(baseline["generation_date"])
+        report_path = ROOT / "reports" / f"{report_date}_weekly_morning_brief.md"
+        report_text = report_path.read_text(encoding="utf-8")
+        product_asset_date = extract_graph_asset_date(report_text, "product")
+        supply_asset_date = extract_graph_asset_date(report_text, "supply")
+        self.assertIsNotNone(product_asset_date)
+        self.assertIsNotNone(supply_asset_date)
+
+        validate_report(
+            report_path,
+            baseline_path,
+            ROOT / "reports" / "latest.md",
+            product_graph_path=Path("state/product_relationships_2026.json"),
+            product_image_path=Path(f"assets/{product_asset_date}_product_relationships.svg"),
+            product_canvas_path=Path(f"assets/{product_asset_date}_product_relationships.canvas"),
+            supply_image_path=Path(f"assets/{supply_asset_date}_supply_relationships.svg"),
+            supply_canvas_path=Path(f"assets/{supply_asset_date}_supply_relationships.canvas"),
+            expected_changed_edge_ids=changed_ids,
+        )
 
 
 if __name__ == "__main__":

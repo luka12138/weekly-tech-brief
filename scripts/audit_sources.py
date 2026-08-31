@@ -47,6 +47,7 @@ OFFICIAL_HOST_KEYWORDS = [
     "tsmc.com",
     "sec.gov",
     "aisi.gov.uk",
+    "metr.org",
     "essilorluxottica.com",
 ]
 
@@ -74,6 +75,8 @@ TRADE_MEDIA_HOST_KEYWORDS = [
     "theguardian.com",
     "prnewswire.com",
     "top500.org",
+    "boursorama.com",
+    "marketscreener.com",
 ]
 
 ACCESS_LIMITED_STATUSES = {401, 403, 429}

@@ -1,8 +1,8 @@
 {
-  "generation_date": "2026-08-24",
+  "generation_date": "2026-08-31",
   "coverage_period": {
-    "start": "2026-08-17",
-    "end": "2026-08-23",
+    "start": "2026-08-24",
+    "end": "2026-08-30",
     "timezone": "Asia/Shanghai"
   },
   "companies": [
@@ -522,8 +522,8 @@
       "evidence_date": "2026-08-17",
       "source_type": "official_cross_company_release",
       "last_seen": "2026-08-24",
-      "changed_this_week": "new",
-      "status": "new_current_week_phased_deployment",
+      "changed_this_week": "no_new_weekly_evidence",
+      "status": "baseline_no_new_weekly_evidence_phased_deployment",
       "confidence": "high",
       "confidence_reason": "NVIDIA and OpenAI official materials identify OpenAI as the approximately 8 IT-GW customer and NVIDIA DSX as the compute stack.",
       "markdown_section_ref": "6.2 E22",
@@ -548,8 +548,8 @@
       "evidence_date": "2026-08-17",
       "source_type": "official_cross_company_release",
       "last_seen": "2026-08-24",
-      "changed_this_week": "new",
-      "status": "new_current_week_long_term_lease",
+      "changed_this_week": "no_new_weekly_evidence",
+      "status": "baseline_no_new_weekly_evidence_long_term_lease",
       "confidence": "high",
       "confidence_reason": "NVIDIA's official release states that SB Energy will build, own and operate the campus under a 20-year lease to OpenAI; OpenAI confirms the approximately 8 IT-GW agreement.",
       "markdown_section_ref": "6.2 E23",
@@ -564,6 +564,57 @@
       ],
       "min_keyword_matches": 3,
       "notes": "This is a long-dated infrastructure commitment rather than delivered capacity; project-specific energy, permitting, financing and construction milestones remain execution conditions."
+    },
+    {
+      "edge_id": "E24",
+      "supplier": "NVIDIA",
+      "customer": "Amazon / AWS",
+      "product_or_service": "Two million additional Blackwell Ultra, Rubin and Rubin Ultra GPUs for AWS global infrastructure in 2027-2028",
+      "relationship_type": "ai_gpu_cloud_infrastructure_supply",
+      "evidence_date": "2026-08-26",
+      "source_type": "official_joint_release",
+      "last_seen": "2026-08-31",
+      "changed_this_week": "strengthened",
+      "status": "strengthened_current_week_future_phased_deployment",
+      "confidence": "high",
+      "confidence_reason": "AWS and NVIDIA jointly quantified the incremental deployment at two million GPUs across AWS global infrastructure in 2027-2028.",
+      "markdown_section_ref": "6.2 E24",
+      "sources": [
+        "https://press.aboutamazon.com/aws/2026/8/aws-and-nvidia-to-deliver-2-million-additional-gpus-and-next-generation-infrastructure-for-agentic-and-physical-ai"
+      ],
+      "claim_keywords": [
+        "2 million",
+        "AWS",
+        "2027",
+        "2028"
+      ],
+      "min_keyword_matches": 3,
+      "notes": "This strengthens a 16-year relationship rather than creating a new supplier. The GPUs are planned, not delivered; exact model mix, quarterly cadence, sites, purchase economics and utilization remain undisclosed."
+    },
+    {
+      "edge_id": "E25",
+      "supplier": "OpenAI",
+      "customer": "Cursor",
+      "product_or_service": "OpenAI model access in Cursor, with a proposed service shutoff on 2026-11-12",
+      "relationship_type": "third_party_model_distribution",
+      "evidence_date": "2026-08-28",
+      "source_type": "official_supplier_release",
+      "last_seen": "2026-08-31",
+      "changed_this_week": "weakened_risk_planned_termination",
+      "status": "weakened_current_week_planned_contract_wind_down",
+      "confidence": "high",
+      "confidence_reason": "OpenAI officially notified SpaceX that it intends to wind down the Cursor model contract and proposed November 12, 2026 as the shutoff date.",
+      "markdown_section_ref": "6.2 E25",
+      "sources": [
+        "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/"
+      ],
+      "claim_keywords": [
+        "Cursor",
+        "wind down",
+        "November 12, 2026"
+      ],
+      "min_keyword_matches": 2,
+      "notes": "The shutoff date is proposed and access continues during the notice period. Historical usage, revenue exposure and migration destinations were not disclosed; the prior relationship was absent from last week's graph baseline."
     }
   ],
   "sources": [
@@ -589,8 +640,10 @@
     "https://openai.com/index/previewing-ultrafast/",
     "https://openai.com/index/cerebras-partnership/",
     "https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute",
-    "https://openai.com/index/openai-joins-ports-pike-project/"
+    "https://openai.com/index/openai-joins-ports-pike-project/",
+    "https://press.aboutamazon.com/aws/2026/8/aws-and-nvidia-to-deliver-2-million-additional-gpus-and-next-generation-infrastructure-for-agentic-and-physical-ai",
+    "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/"
   ],
   "confidence": "mixed_high",
-  "notes": "本基线覆盖 2026-08-17 至 2026-08-23，并按固定口径覆盖 12 家公司。图、Markdown 表格和 JSON 共用 E01-E23。E22 为 NVIDIA 向 OpenAI 提供 PORTS-Pike DSX 计算栈的新关系，E23 为 SB Energy 向 OpenAI 提供土地、电力与机房壳体的长期租赁关系；E01-E21 本周均无可确认的客户级新增证据。"
+  "notes": "本基线覆盖 2026-08-24 至 2026-08-30，并按固定口径覆盖 12 家公司。图、Markdown 变化表和 JSON 共用 E01-E25；变化表仅列本周实质变化的 E24-E25。E24 为 NVIDIA 与 AWS 既有关系因新增 200 万颗 GPU 计划而强化；E25 为 OpenAI 向 Cursor 提供模型的关系进入拟终止阶段。E01-E23 本周均无可确认的客户级新增或执行证据，Apple 发布 M6 不能在未点名代工方时推断 TSMC 关系强化。"
 }
