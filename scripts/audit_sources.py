@@ -26,6 +26,7 @@ from pathlib import Path
 OFFICIAL_HOST_KEYWORDS = [
     "apple.com",
     "microsoft.com",
+    "github.blog",
     "xbox.com",
     "abc.xyz",
     "google.com",
@@ -35,6 +36,7 @@ OFFICIAL_HOST_KEYWORDS = [
     "aboutamazon.com",
     "amazon.com",
     "meta.com",
+    "research.meta.ai",
     "fb.com",
     "atmeta.com",
     "nvidia.com",
@@ -52,6 +54,8 @@ OFFICIAL_HOST_KEYWORDS = [
 ]
 
 TIER1_MEDIA_HOST_KEYWORDS = [
+    "focustaiwan.tw",
+    "channelnewsasia.com",
     "apnews.com",
     "reuters.com",
     "bloomberg.com",
@@ -66,6 +70,7 @@ TIER1_MEDIA_HOST_KEYWORDS = [
 ]
 
 TRADE_MEDIA_HOST_KEYWORDS = [
+    "finance.yahoo.com",
     "tomshardware.com",
     "techcrunch.com",
     "thestreet.com",

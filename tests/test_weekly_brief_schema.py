@@ -1,6 +1,8 @@
 from __future__ import annotations
 
+import json
 import sys
+import tempfile
 import unittest
 from contextlib import redirect_stderr
 from io import StringIO
@@ -94,6 +96,41 @@ class WeeklyBriefSchemaTests(unittest.TestCase):
         report = valid_report().replace("## 7. 本期自检", "```mermaid\nflowchart LR\n```\n## 7. 本期自检")
         with redirect_stderr(StringIO()), self.assertRaises(SystemExit):
             validate_v2_structure(report, self.baseline, REQUIRED_COMPANIES)
+
+    def _validate_large_baseline(self, duplicate_id: bool = False) -> None:
+        template = {
+            "supplier": "Apple", "customer": "Ford", "product_or_service": "Maps",
+            "relationship_type": "software", "evidence_date": "2026-08-18",
+            "source_type": "official", "last_seen": "2026-08-24", "status": "confirmed",
+            "confidence": "high", "confidence_reason": "Official announcement",
+            "markdown_section_ref": "6.2 E01", "sources": ["https://www.apple.com/"],
+        }
+        edges = [
+            dict(template, edge_id=f"E{index:02}", changed_this_week="new" if index == 1 else "no_new")
+            for index in range(1, 29)
+        ]
+        if duplicate_id:
+            edges[-1]["edge_id"] = edges[-2]["edge_id"]
+        baseline = {
+            "coverage_period": {"start": "2026-08-17", "end": "2026-08-23"},
+            "companies": REQUIRED_COMPANIES, "edges": edges,
+        }
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            report = root / "2026-08-24_weekly_morning_brief.md"
+            report.write_text(valid_report(), encoding="utf-8")
+            state = root / "baseline.json"
+            state.write_text(json.dumps(baseline), encoding="utf-8")
+            latest = root / "latest.md"
+            latest.write_text(f"[latest]({report.name})", encoding="utf-8")
+            validate_report(report, state, latest)
+
+    def test_v2_cumulative_baseline_can_exceed_25_edges(self) -> None:
+        self._validate_large_baseline()
+
+    def test_v2_large_baseline_still_rejects_duplicate_edge_ids(self) -> None:
+        with redirect_stderr(StringIO()), self.assertRaises(SystemExit):
+            self._validate_large_baseline(duplicate_id=True)
 
     def test_v2_report_validates_against_current_graph_artifacts(self) -> None:
         import json

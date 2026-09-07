@@ -308,6 +308,11 @@ def build_supply_canvas(data: dict[str, Any]) -> dict[str, list[dict[str, Any]]]
                 semantic_id,
             )
         )
+        source = node_by_name[supplier]
+        target = node_by_name[customer]
+        if source["x"] == target["x"]:
+            side = "right" if target["y"] > source["y"] else "left"
+            canvas_edges[-1].update(fromSide=side, toSide=side)
 
     index_top = group_top + max(group_heights) + 100
     for index, batch in enumerate(chunks(normalized_edges, 8)):
@@ -687,6 +692,8 @@ def _bezier_points(
     sx, sy = source
     tx, ty = target
     distance = max(80.0, min(320.0, math.hypot(tx - sx, ty - sy) * 0.35))
+    if from_side == to_side and from_side in {"left", "right"}:
+        distance = 100.0
     vectors = {
         "left": (-distance, 0.0),
         "right": (distance, 0.0),
@@ -771,6 +778,41 @@ def _render_text_node(node: dict[str, Any]) -> str:
     return "\n".join(parts)
 
 
+def _edge_label_position(
+    start: tuple[float, float],
+    control1: tuple[float, float],
+    control2: tuple[float, float],
+    end: tuple[float, float],
+    width: float,
+    occupied: list[dict[str, Any]],
+    viewport: tuple[float, float, float, float],
+) -> tuple[float, float, tuple[float, float] | None]:
+    # Keep badges on their curve while avoiding nodes and earlier badges.
+    for t in sorted((i / 100 for i in range(5, 96)), key=lambda value: abs(value - 0.38)):
+        x, y = _bezier_midpoint(start, control1, control2, end, t)
+        bounds = {"x": x - width / 2 - 4, "y": y - 16, "width": width + 8, "height": 32}
+        if not any(_overlaps(bounds, rectangle) for rectangle in occupied):
+            occupied.append(bounds)
+            return x, y, None
+    # Legacy layouts can have fully blocked curves; use a nearby badge with a leader.
+    midpoint = _bezier_midpoint(start, control1, control2, end)
+    left, top, right, bottom = viewport
+    for radius in range(20, 801, 20):
+        for dx in range(-radius, radius + 1, 20):
+            dy = radius - abs(dx)
+            for offset_y in sorted({-dy, dy}):
+                x, y = midpoint[0] + dx, midpoint[1] + offset_y
+                bounds = {"x": x - width / 2 - 4, "y": y - 16, "width": width + 8, "height": 32}
+                if not (left <= bounds["x"] and top <= bounds["y"]
+                        and bounds["x"] + bounds["width"] <= right
+                        and bounds["y"] + bounds["height"] <= bottom):
+                    continue
+                if not any(_overlaps(bounds, rectangle) for rectangle in occupied):
+                    occupied.append(bounds)
+                    return x, y, midpoint
+    raise ValueError("Cannot place an edge label without overlapping a node or another label")
+
+
 def render_canvas_svg(canvas: dict[str, Any]) -> str:
     validate_canvas(canvas)
     nodes = [dict(node) for node in canvas.get("nodes", [])]
@@ -815,6 +857,12 @@ def render_canvas_svg(canvas: dict[str, Any]) -> str:
             ]
         )
 
+    label_occupied = [node for node in nodes if node["type"] != "group"]
+    label_occupied.extend(
+        {"x": node["x"] + 12, "y": node["y"] + 6, "width": node["width"] - 24, "height": 36}
+        for node in nodes if node["type"] == "group"
+    )
+    label_parts: list[str] = []
     for edge in edges:
         source_node = node_by_id[edge["fromNode"]]
         target_node = node_by_id[edge["toNode"]]
@@ -828,9 +876,16 @@ def render_canvas_svg(canvas: dict[str, Any]) -> str:
         )
         label = str(edge.get("label", ""))
         if label:
-            label_x, label_y = _bezier_midpoint(start, control1, control2, end)
             badge_width = max(42, 11 * len(label) + 16)
-            parts.extend(
+            label_x, label_y, leader = _edge_label_position(
+                start, control1, control2, end, badge_width, label_occupied,
+                (min_x, min_y, max_x, max_y),
+            )
+            if leader is not None:
+                parts.append(
+                    f'<path d="M {leader[0]:.1f} {leader[1]:.1f} L {label_x:.1f} {label_y:.1f}" fill="none" stroke="{escape(color)}" stroke-width="1" stroke-dasharray="3 3"/>'
+                )
+            label_parts.extend(
                 [
                     f'<rect x="{label_x - badge_width / 2:.1f}" y="{label_y - 12:.1f}" width="{badge_width}" height="24" rx="5" fill="#0b0f14" stroke="{escape(color)}" stroke-width="1.2"/>',
                     f'<text x="{label_x:.1f}" y="{label_y + 4.5:.1f}" text-anchor="middle" font-size="12" font-weight="750" fill="{escape(color)}">{escape(label)}</text>',
@@ -840,6 +895,7 @@ def render_canvas_svg(canvas: dict[str, Any]) -> str:
     for node in nodes:
         if node["type"] == "text":
             parts.append(_render_text_node(node))
+    parts.extend(label_parts)
     parts.extend(["</g>", "</svg>"])
     return "\n".join(parts)
 

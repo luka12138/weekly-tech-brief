@@ -599,7 +599,8 @@ def validate_report(
     edges = baseline.get("edges")
     if not isinstance(edges, list) or not edges:
         fail("基线 edges 必须是非空列表")
-    if not (8 <= len(edges) <= 25):
+    # Schema v2 keeps the cumulative baseline; only weekly changes enter the table.
+    if len(edges) < 8 or (not schema_v2 and len(edges) > 25):
         fail(f"基线关系数量超出预期范围：{len(edges)}")
 
     json_ids: set[str] = set()

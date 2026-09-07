@@ -1,7 +1,7 @@
 {
   "title": "2026 年度十二家公司主营产品上下游关系图",
   "source_baseline": "基于 2026 年可取得的官方年报、投资者关系页面、公司新闻稿和监管披露；媒体报道或历史基线关系单独标注。",
-  "generated_for_report_date": "2026-08-24",
+  "generated_for_report_date": "2026-09-07",
   "companies": [
     {
       "name": "Apple",
@@ -316,10 +316,11 @@
       "edge_id": "P13",
       "source": "OpenAI",
       "target": "Amazon / AWS",
-      "product_or_service": "Daybreak 网络安全模型通过 Amazon Bedrock 分发",
+      "product_or_service": "OpenAI Daybreak 与 GPT-6 Astra 模型经 Amazon Bedrock 分发（Astra 分批推出）",
       "evidence_level": "本年度官方证据",
       "official_sources": [
-        "https://openai.com/index/daybreak-models-are-now-available-on-aws/"
+        "https://openai.com/index/daybreak-models-are-now-available-on-aws/",
+        "https://openai.com/index/gpt-6-astra/"
       ]
     },
     {
@@ -332,6 +333,41 @@
         "https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute",
         "https://openai.com/index/openai-joins-ports-pike-project/"
       ]
+    },
+    {
+      "edge_id": "P15",
+      "source": "Anthropic",
+      "target": "Microsoft",
+      "product_or_service": "Claude 模型接入 Microsoft Copilot 与 GitHub 工作流",
+      "evidence_level": "本年度官方证据",
+      "official_sources": [
+        "https://techcommunity.microsoft.com/blog/microsoft365copilotblog/available-today-anthropic-claude-fable-5-1-in-microsoft-copilot/4551974",
+        "https://github.blog/changelog/2026-09-01-claude-fable-5-1-generally-available-in-github-copilot/"
+      ],
+      "notes": "补记既有跨公司关系，本周获得具名模型上线或分批推出证据；不表示首次建立合作。"
+    },
+    {
+      "edge_id": "P16",
+      "source": "OpenAI",
+      "target": "Microsoft",
+      "product_or_service": "GPT 模型通过 Microsoft Azure 分发，Astra 分批推出",
+      "evidence_level": "本年度官方证据",
+      "official_sources": [
+        "https://openai.com/index/gpt-6-astra/"
+      ],
+      "notes": "补记既有跨公司关系，本周获得具名模型上线或分批推出证据；不表示首次建立合作。"
+    },
+    {
+      "edge_id": "P17",
+      "source": "Anthropic",
+      "target": "Alphabet / Google",
+      "product_or_service": "Claude 模型通过 Google Cloud 分发",
+      "evidence_level": "本年度官方证据",
+      "official_sources": [
+        "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+        "https://platform.claude.com/docs/en/models/fable-5-1/overview"
+      ],
+      "notes": "补记既有跨公司关系，本周获得具名模型上线或分批推出证据；不表示首次建立合作。"
     }
   ],
   "product_nodes": [
@@ -2037,13 +2073,14 @@
       "target_node": "Amazon_AWS::AWS",
       "source_company": "OpenAI",
       "target_company": "Amazon / AWS",
-      "product_or_service": "Daybreak Blue 与 Red 通过 Amazon Bedrock 分发",
+      "product_or_service": "Daybreak 与 GPT-6 Astra 通过 Amazon Bedrock 分发",
       "relationship_type": "model_distribution",
       "evidence_level": "本年度官方证据",
       "official_sources": [
-        "https://openai.com/index/daybreak-models-are-now-available-on-aws/"
+        "https://openai.com/index/daybreak-models-are-now-available-on-aws/",
+        "https://openai.com/index/gpt-6-astra/"
       ],
-      "notes": "本年度官方确认的模型分发关系；需通过 Daybreak Access 审批，未披露客户数与收入。"
+      "notes": "本年度官方分发关系；Daybreak 需审批，Astra 于 9 月 3 日宣布分批推出。未确认全区域上线、客户数和收入。"
     },
     {
       "edge_id": "PX76",
@@ -2059,6 +2096,63 @@
         "https://openai.com/index/openai-joins-ports-pike-project/"
       ],
       "notes": "双方本年度官方材料确认项目、客户角色与技术栈；初始容量预计 2028 年起分期可用，建设、融资、许可和交付节奏仍有执行风险。"
+    },
+    {
+      "edge_id": "PX77",
+      "source_node": "Anthropic::Claude_模型",
+      "target_node": "Microsoft::Microsoft_365",
+      "source_company": "Anthropic",
+      "target_company": "Microsoft",
+      "product_or_service": "Claude Fable 5.1 接入 Copilot Cowork 与 Copilot Studio",
+      "relationship_type": "model_distribution",
+      "evidence_level": "本年度官方证据",
+      "official_sources": [
+        "https://techcommunity.microsoft.com/blog/microsoft365copilotblog/available-today-anthropic-claude-fable-5-1-in-microsoft-copilot/4551974"
+      ],
+      "notes": "本周补齐上期未入图的既有分发关系；上线与默认数据保留受平台、区域和管理员控制限制，收入与全区域可用性未披露。"
+    },
+    {
+      "edge_id": "PX78",
+      "source_node": "Anthropic::Claude_模型",
+      "target_node": "Microsoft::GitHub",
+      "source_company": "Anthropic",
+      "target_company": "Microsoft",
+      "product_or_service": "Claude Fable 5.1 接入 GitHub Copilot",
+      "relationship_type": "model_distribution",
+      "evidence_level": "本年度官方证据",
+      "official_sources": [
+        "https://github.blog/changelog/2026-09-01-claude-fable-5-1-generally-available-in-github-copilot/"
+      ],
+      "notes": "本周补齐上期未入图的既有分发关系；上线与默认数据保留受平台、区域和管理员控制限制，收入与全区域可用性未披露。"
+    },
+    {
+      "edge_id": "PX79",
+      "source_node": "OpenAI::GPT_模型",
+      "target_node": "Microsoft::Azure",
+      "source_company": "OpenAI",
+      "target_company": "Microsoft",
+      "product_or_service": "GPT-6 Astra 通过 Microsoft Azure 分批推出",
+      "relationship_type": "model_distribution",
+      "evidence_level": "本年度官方证据",
+      "official_sources": [
+        "https://openai.com/index/gpt-6-astra/"
+      ],
+      "notes": "本周补齐上期未入图的既有分发关系；上线与默认数据保留受平台、区域和管理员控制限制，收入与全区域可用性未披露。"
+    },
+    {
+      "edge_id": "PX80",
+      "source_node": "Anthropic::Claude_模型",
+      "target_node": "Alphabet_Google::Google_Cloud",
+      "source_company": "Anthropic",
+      "target_company": "Alphabet / Google",
+      "product_or_service": "Claude Fable 5.1 通过 Google Cloud 分发",
+      "relationship_type": "model_distribution",
+      "evidence_level": "本年度官方证据",
+      "official_sources": [
+        "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+        "https://platform.claude.com/docs/en/models/fable-5-1/overview"
+      ],
+      "notes": "本周补齐上期未入图的既有分发关系；上线与默认数据保留受平台、区域和管理员控制限制，收入与全区域可用性未披露。"
     }
   ]
 }

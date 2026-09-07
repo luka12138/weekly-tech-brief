@@ -23,12 +23,12 @@
 
 ## 当前产物
 
-- 周报正文：[reports/2026-08-24_weekly_morning_brief.md](reports/2026-08-24_weekly_morning_brief.md)
-- 年度主营产品上下游图：[assets/2026-08-24_product_relationships.svg](assets/2026-08-24_product_relationships.svg)
-- 年度产品关系 Canvas：[assets/2026-08-24_product_relationships.canvas](assets/2026-08-24_product_relationships.canvas)
-- 本周供应关系图：[assets/2026-08-24_supply_relationships.svg](assets/2026-08-24_supply_relationships.svg)
-- 本周供应关系 Canvas：[assets/2026-08-24_supply_relationships.canvas](assets/2026-08-24_supply_relationships.canvas)
-- 来源审查日志：[logs/2026-08-24_source_audit.json](logs/2026-08-24_source_audit.json)
+- 周报正文：[reports/2026-09-07_weekly_morning_brief.md](reports/2026-09-07_weekly_morning_brief.md)
+- 年度主营产品上下游图：[assets/2026-09-07_product_relationships.svg](assets/2026-09-07_product_relationships.svg)
+- 年度产品关系 Canvas：[assets/2026-09-07_product_relationships.canvas](assets/2026-09-07_product_relationships.canvas)
+- 本周供应关系图：[assets/2026-09-07_supply_relationships.svg](assets/2026-09-07_supply_relationships.svg)
+- 本周供应关系 Canvas：[assets/2026-09-07_supply_relationships.canvas](assets/2026-09-07_supply_relationships.canvas)
+- 来源审查日志：[logs/2026-09-07_source_audit.json](logs/2026-09-07_source_audit.json)
 - 查验手册：[docs/verification_manual.md](docs/verification_manual.md)
 
 ## 目录结构
