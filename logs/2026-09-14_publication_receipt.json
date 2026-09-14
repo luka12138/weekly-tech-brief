@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "report_date": "2026-09-14",
+  "status": "published",
+  "verified_at": "2026-09-14T04:25:53.391Z",
+  "report_commit": "e62df6b2bfe2f2f6df8cb2645eb3fc95e32ea437",
+  "remote": "https://github.com/luka12138/weekly-tech-brief.git",
+  "branch": "main",
+  "observed_remote_head": "e62df6b2bfe2f2f6df8cb2645eb3fc95e32ea437",
+  "confirmation": "git push succeeded; subsequent git ls-remote returned the same commit for refs/heads/main",
+  "files": {
+    "reports/2026-09-14_weekly_morning_brief.md": "81902b2228caf5b5dc4126cb57042608e91b9c2d5bfe26d0ad8c7119b44290ab",
+    "reports/latest.md": "b5f290363a65dcddd3a1dd213cab2be7f1461ab82e1d3d16f56d52f9e7227e4d",
+    "state/supply_graph_baseline.json": "68fbf8e426bcfb1133b98883342ca9496e0d59b34ae9c7a501ce2089fb3c8137",
+    "state/product_relationships_2026.json": "9cab5511530a248a814852befcbd02402645c23370fe2747e54f069089041396"
+  },
+  "selection": {
+    "companies": 12,
+    "independent_events": 23,
+    "company_entries": 26,
+    "headlines": 12,
+    "maximum_per_company": 5
+  },
+  "verification": {
+    "canonical_quality_gate": "passed",
+    "published_tree_quality_gate": "passed",
+    "local_python_tests": 183,
+    "published_tree_python_tests": 137,
+    "tool_adapter_tests": 11,
+    "source_urls": 85,
+    "access_limited": 11,
+    "unclassified": 0,
+    "hard_failed": 0,
+    "temporal_claims": 56,
+    "targets": 63,
+    "svg_visual_review": "completed"
+  },
+  "limitations": [
+    "Not an exhaustive news inventory or independent scientific/legal audit.",
+    "The 11 access-limited source checks do not imply every original document was readable.",
+    "Unrelated historical report corrections and raw web-tool returns were not published.",
+    "This receipt records the report commit; a later receipt-only commit may advance main without changing the report.",
+    "Token ledgers are measured through their stated persisted counter timestamps; final response and later bookkeeping are not silently counted as zero."
+  ]
+}
