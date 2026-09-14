@@ -1,0 +1,251 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-09-14T04:17:52.493Z",
+  "note": "公开核读摘要及真实回执时间，不是逐字原文或历史网页快照。完整原始工具返回仅在本地保留，未随Git公开发布。",
+  "records": [
+    {
+      "id": "APL-O",
+      "checked_at": "2026-09-14T03:54:02.562Z",
+      "url": "https://www.apple.com/ie/newsroom/topics/iphone/",
+      "note": "官方iPhone目录可读；美国Newsroom仅导航。9月9日Pro公告、9月11日预售更新，不能以页面存在证明全部型号。",
+      "original_local_receipt": "logs/2026-09-14_discovery_02.json#W14-D02",
+      "raw_capture_local_only": true
+    },
+    {
+      "id": "APL-I",
+      "checked_at": "2026-09-14T03:51:38.317Z",
+      "url": "https://www.techradar.com/tech-events/15-things-we-learned-from-apples-big-iphone-duo-and-iphone-18-pro-launch-from-its-first-ever-foldable-to-new-airpods",
+      "note": "独立发布会报道校准新折叠手机的重要性；预发布Ultra传闻不作事实；监管检索返回旧事件，不能证明无监管变化。",
+      "original_local_receipt": "logs/2026-09-14_discovery_01.json#W14-D01",
+      "raw_capture_local_only": true
+    },
+    {
+      "id": "MS-O",
+      "checked_at": "2026-09-14T03:54:02.562Z",
+      "url": "https://news.microsoft.com/source/tag/press-releases/",
+      "note": "官方新闻入口9月9日学校AI安全标准；6月股息支付不作为9月新宣布。",
+      "original_local_receipt": "logs/2026-09-14_discovery_02.json#W14-D02",
+      "raw_capture_local_only": true
+    },
+    {
+      "id": "MS-I",
+      "checked_at": "2026-09-14T03:54:56.703Z",
+      "url": "https://www.schwab.wallst.com/schwab/Prospect/research/stocks/news.asp?symbol=MSFT&type=all",
+      "note": "路透9月10日转述Bloomberg38GW扩容计划；2025年Teams和解已排除。",
+      "original_local_receipt": "logs/2026-09-14_discovery_04.json#W14-D04",
+      "raw_capture_local_only": true
+    },
+    {
+      "id": "GOO-O",
+      "checked_at": "2026-09-14T03:54:30.008Z",
+      "url": "https://www.googlecloudpresscorner.com/press-releases?keywords=2026&l=100",
+      "note": "云官方目录发现芬兰资本项目、Avid合作；教育9月3日非本期。",
+      "original_local_receipt": "logs/2026-09-14_discovery_03.json#W14-D03",
+      "raw_capture_local_only": true
+    },
+    {
+      "id": "AWS-O",
+      "checked_at": "2026-09-14T03:54:30.008Z",
+      "url": "https://www.aboutamazon.com/news/aws?p=5",
+      "note": "官方目录Astra9月8日上架、Quick9月10日桌面GA；8月26日GPU合作为旧计划。",
+      "original_local_receipt": "logs/2026-09-14_discovery_03.json#W14-D03",
+      "raw_capture_local_only": true,
+      "correction": "核读9月9日更新段后，更正目录/初筛所记9月10日：Quick增量发布日期为9月9日。"
+    },
+    {
+      "id": "AWS-I",
+      "checked_at": "2026-09-14T03:54:56.703Z",
+      "url": "https://www.marketscreener.com/news/amazon-accused-in-lawsuit-of-systematic-pregnancy-discrimination-ce785bd8df8ffe2d",
+      "note": "独立校准发现全国拟集体劳动诉讼；MLex另有Perplexity当事人动议线索，非判决。",
+      "original_local_receipt": "logs/2026-09-14_discovery_04.json#W14-D04",
+      "raw_capture_local_only": true
+    },
+    {
+      "id": "META-O",
+      "checked_at": "2026-09-14T03:55:20.046Z",
+      "url": "https://about.fb.com/news/",
+      "note": "官方首页9月8日Muse个人agent发布，非上周Muse1.3模型的重复。",
+      "original_local_receipt": "logs/2026-09-14_discovery_05.json#W14-D05",
+      "raw_capture_local_only": true
+    },
+    {
+      "id": "NV-O",
+      "checked_at": "2026-09-14T03:55:20.046Z",
+      "url": "https://nvidianews.nvidia.com/news",
+      "note": "官方目录：d-Matrix NVLink计划、Palantir合作、澳洲基建容量；GeForce周更不入选。",
+      "original_local_receipt": "logs/2026-09-14_discovery_05.json#W14-D05",
+      "raw_capture_local_only": true
+    },
+    {
+      "id": "NV-I",
+      "checked_at": "2026-09-14T03:54:56.703Z",
+      "url": "https://www.axios.com/2026/09/10/nvidia-ceo-jensen-huang-ai-anthropic",
+      "note": "独立媒体校准安全评论和客户投资循环的争议；CEO评论本身不优先于基础设施与协议。",
+      "original_local_receipt": "logs/2026-09-14_discovery_04.json#W14-D04",
+      "raw_capture_local_only": true
+    },
+    {
+      "id": "OA-O",
+      "checked_at": "2026-09-14T03:55:46.095Z",
+      "url": "https://openai.com/news/",
+      "note": "官方列表9月10日AgentsAPI、GPT-Live-1、金融服务与数据工作产品；Astra目录9月9日与前周发布冲突需核版本，不能重发。",
+      "original_local_receipt": "logs/2026-09-14_discovery_07.json#W14-D07",
+      "raw_capture_local_only": true
+    },
+    {
+      "id": "OA-I",
+      "checked_at": "2026-09-14T03:55:20.046Z",
+      "url": "https://www.marketscreener.com/news/openai-faces-senate-probe-into-hugging-face-incident-ce785bdedd88f123",
+      "note": "独立新闻检索发现国会议员调查与安全立法；优先级高于常规产品案例。",
+      "original_local_receipt": "logs/2026-09-14_discovery_05.json#W14-D05",
+      "raw_capture_local_only": true
+    },
+    {
+      "id": "AN-O",
+      "checked_at": "2026-09-14T03:55:46.095Z",
+      "url": "https://www.anthropic.com/news",
+      "note": "官方9月10日滥用报告；9月1日模型与8月31日安全更新不重发。",
+      "original_local_receipt": "logs/2026-09-14_discovery_07.json#W14-D07",
+      "raw_capture_local_only": true
+    },
+    {
+      "id": "AN-I",
+      "checked_at": "2026-09-14T03:55:20.046Z",
+      "url": "https://apnews.com/article/2ed549e07f2f941600a135070487d83d",
+      "note": "AP核对研究员离职安全担忧；是个人判断而非灭绝事实，CEO回应可作为同事件后续。",
+      "original_local_receipt": "logs/2026-09-14_discovery_05.json#W14-D05",
+      "raw_capture_local_only": true
+    },
+    {
+      "id": "TSLA-O",
+      "checked_at": "2026-09-14T03:55:46.095Z",
+      "url": "https://ir.tesla.com/",
+      "note": "官方IR读到最新Q2披露；本轮有限入口未发现本周正式财务更新，不代表产品渠道无更新。",
+      "original_local_receipt": "logs/2026-09-14_discovery_07.json#W14-D07",
+      "raw_capture_local_only": true
+    },
+    {
+      "id": "TSLA-I",
+      "checked_at": "2026-09-14T03:55:34.859Z",
+      "url": "https://www.boursorama.com/bourse/actualites/les-etats-unis-ouvrent-une-enquete-sur-l-autocertification-par-tesla-de-ses-robotaxis-cybercab-601c8b425bb7548b8f72a29947133d21",
+      "note": "独立检索所得Cybercab监管报道为9月4日，旧闻排除；需本周有限日期筛选补全，不宣称无更新。",
+      "original_local_receipt": "logs/2026-09-14_discovery_06.json#W14-D06",
+      "raw_capture_local_only": true,
+      "correction": "后续TSLA-CAL-I完成有限本周日期筛选；仅日本静态展示不入选，不等于无经营或监管变化。"
+    },
+    {
+      "id": "SS-I",
+      "checked_at": "2026-09-14T03:55:34.859Z",
+      "url": "https://in.marketscreener.com/news/samsung-sk-hynix-payouts-test-south-korea-s-reform-drive-as-investors-seek-more-ce785bded980f42d",
+      "note": "路透9月10日股东回报消息，待核首次公告和财务期间。",
+      "original_local_receipt": "logs/2026-09-14_discovery_06.json#W14-D06",
+      "raw_capture_local_only": true,
+      "correction": "具体官方版本核定首次公告8月21日，本周报道不是新回报承诺。"
+    },
+    {
+      "id": "SK-I",
+      "checked_at": "2026-09-14T03:55:34.859Z",
+      "url": "https://in.marketscreener.com/news/samsung-sk-hynix-payouts-test-south-korea-s-reform-drive-as-investors-seek-more-ce785bded980f42d",
+      "note": "路透9月10日股东回报消息，待核首次公告和财务期间。",
+      "original_local_receipt": "logs/2026-09-14_discovery_06.json#W14-D06",
+      "raw_capture_local_only": true,
+      "correction": "具体官方版本核定首次公告8月19日，本周报道不是新回购承诺。"
+    },
+    {
+      "id": "TSM-O",
+      "checked_at": "2026-09-14T03:55:34.859Z",
+      "url": "https://pr.cld.tsmc.com/english/news/3340",
+      "note": "9月10日发布8月合并收入，不能写成9月收入。",
+      "original_local_receipt": "logs/2026-09-14_discovery_06.json#W14-D06",
+      "raw_capture_local_only": true
+    },
+    {
+      "id": "TSM-I",
+      "checked_at": "2026-09-14T03:55:34.859Z",
+      "url": "https://www.pcgamer.com/hardware/tsmc-continues-to-rake-it-in-from-the-multi-year-ai-megatrend-making-a-record-breaking-usd16-35-billion-in-august-alone/",
+      "note": "独立校准确认月收入重要性；媒体美元换算不沿用，未额外发现可核实本周监管事件。",
+      "original_local_receipt": "logs/2026-09-14_discovery_06.json#W14-D06",
+      "raw_capture_local_only": true
+    },
+    {
+      "id": "GOO-I",
+      "checked_at": "2026-09-14T03:57:20.917Z",
+      "url": "https://www.marketscreener.com/news/google-to-invest-15-billion-in-ai-infrastructure-and-buy-nuclear-power-in-finland-ce785bd9da80f027",
+      "note": "独立校准投资承诺与核电PPA，监管栏目发现加州儿童科技法；限于本期重大影响，不复查全部旧案。",
+      "original_local_receipt": "logs/2026-09-14_discovery_09.json#W14-D09",
+      "raw_capture_local_only": true
+    },
+    {
+      "id": "META-I",
+      "checked_at": "2026-09-14T03:57:20.917Z",
+      "url": "https://www.investing.com/news/stock-market-news/meta-launches-ai-agent-that-can-access-other-apps-to-send-emails-make-payments-4892258",
+      "note": "阅读全文保留路透所见内部隐私失误和公司未即时回应；不以官方安全自称覆盖反例。",
+      "original_local_receipt": "logs/2026-09-14_discovery_09.json#W14-D09",
+      "raw_capture_local_only": true
+    },
+    {
+      "id": "META-REG",
+      "checked_at": "2026-09-14T03:58:32.209Z",
+      "url": "https://www.marketscreener.com/news/california-enacts-new-curbs-on-social-media-for-children-ce785bdfd88df225",
+      "note": "校准中发现9月10日签署法包，区别8月州级和解旧闻。",
+      "original_local_receipt": "logs/2026-09-14_verify_04.json#W14-V04",
+      "raw_capture_local_only": true
+    },
+    {
+      "id": "OA-REG",
+      "checked_at": "2026-09-14T03:59:21.425Z",
+      "url": "https://www.gov.ca.gov/2026/09/10/governor-newsom-signs-the-strongest-child-safety-chatbot-and-social-media-laws-in-the-nation/",
+      "note": "监管机关公告发现聊天机器人义务，影响产品经营而非仅公司倡议。",
+      "original_local_receipt": "logs/2026-09-14_verify_06.json#W14-V06",
+      "raw_capture_local_only": true
+    },
+    {
+      "id": "NV-IPO-I",
+      "checked_at": "2026-09-14T03:58:32.209Z",
+      "url": "https://www.marketscreener.com/news/nvidia-in-talks-to-invest-in-anthropic-s-mega-ipo-sources-say-ce785bdfd18ff127",
+      "note": "校准栏目带出路透两位匿名源的IPO投资讨论；非已承诺非交割。",
+      "original_local_receipt": "logs/2026-09-14_verify_04.json#W14-V04",
+      "raw_capture_local_only": true
+    },
+    {
+      "id": "AN-IPO-I",
+      "checked_at": "2026-09-14T03:58:32.209Z",
+      "url": "https://www.marketscreener.com/news/nvidia-in-talks-to-invest-in-anthropic-s-mega-ipo-sources-say-ce785bdfd18ff127",
+      "note": "路透正文核对IPO金额、估值与谈判可变性，更新前周IPO观察。",
+      "original_local_receipt": "logs/2026-09-14_verify_04.json#W14-V04",
+      "raw_capture_local_only": true
+    },
+    {
+      "id": "SS-O",
+      "checked_at": "2026-09-14T03:57:33.054Z",
+      "url": "https://news.samsung.com/global/",
+      "note": "完整最新目录：本周Mistral、ASML半导体合作优先；折叠设计回顾和上周家电IFA展示不入选。",
+      "original_local_receipt": "logs/2026-09-14_verify_01.json#W14-V01",
+      "raw_capture_local_only": true
+    },
+    {
+      "id": "SK-O",
+      "checked_at": "2026-09-14T03:57:20.917Z",
+      "url": "https://news.skhynix.com/en/",
+      "note": "本周仅Future Forum方向宣示，8月回购和Indiana开工旧闻不重发；不以论坛参加建立供货关系。",
+      "original_local_receipt": "logs/2026-09-14_discovery_09.json#W14-D09",
+      "raw_capture_local_only": true
+    },
+    {
+      "id": "TSLA-CAL-I",
+      "checked_at": "2026-09-14T03:57:03.865Z",
+      "url": "https://teslanorth.com/2026/09/11/tesla-cybercab-japan-tour-opens-tokyo/",
+      "note": "本周独立日期筛选只得到日本静态展示；不等于日本商业运营许可，不凑入重要更新。",
+      "original_local_receipt": "logs/2026-09-14_discovery_08.json#W14-D08",
+      "raw_capture_local_only": true
+    },
+    {
+      "id": "OA-MATH-O",
+      "checked_at": "2026-09-14T04:00:19.218Z",
+      "url": "https://openai.com/index/navier-stokes-solution/",
+      "note": "已读具体研究声明；本报未独立复核数学证明，保留方程与内部模型范围。",
+      "original_local_receipt": "logs/2026-09-14_verify_08.json#W14-V08",
+      "raw_capture_local_only": true
+    }
+  ]
+}

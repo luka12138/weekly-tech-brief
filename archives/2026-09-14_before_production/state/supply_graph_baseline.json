@@ -1,8 +1,8 @@
 {
-  "generation_date": "2026-09-14",
+  "generation_date": "2026-09-07",
   "coverage_period": {
-    "start": "2026-09-07",
-    "end": "2026-09-13",
+    "start": "2026-08-31",
+    "end": "2026-09-06",
     "timezone": "Asia/Shanghai"
   },
   "companies": [
@@ -120,7 +120,7 @@
       "evidence_date": "2026-09-01",
       "source_type": "official_cross_company_releases",
       "last_seen": "2026-09-07",
-      "changed_this_week": "no_new_weekly_evidence",
+      "changed_this_week": "strengthened",
       "status": "strengthened_current_week_model_availability_and_enterprise_controls",
       "confidence": "high",
       "confidence_reason": "AWS and Anthropic confirm Fable 5.1 availability and enterprise data-retention controls; this is an existing model-distribution partnership.",
@@ -468,29 +468,27 @@
       "edge_id": "E20",
       "supplier": "OpenAI",
       "customer": "Amazon / AWS",
-      "product_or_service": "GPT-6 Astra在Amazon Bedrock正式可用",
-      "relationship_type": "model_distribution",
-      "evidence_date": "2026-09-08",
+      "product_or_service": "Daybreak models and phased GPT-6 Astra distribution through Amazon Bedrock",
+      "relationship_type": "third_party_model_hosting_and_distribution",
+      "evidence_date": "2026-09-03",
       "source_type": "official_company_release",
-      "last_seen": "2026-09-14",
+      "last_seen": "2026-09-07",
       "changed_this_week": "strengthened",
-      "status": "generally_available",
+      "status": "strengthened_current_week_announced_phased_model_distribution",
       "confidence": "high",
-      "confidence_reason": "官方确认公告或合同阶段，不认证未来投运/收益。",
+      "confidence_reason": "OpenAI's Astra launch explicitly includes Amazon Bedrock in the staged rollout, broadening the prior Daybreak-specific distribution baseline.",
       "markdown_section_ref": "6.2 E20",
       "sources": [
-        "https://www.aboutamazon.com/news/aws/bedrock-openai-models"
+        "https://openai.com/index/gpt-6-astra/",
+        "https://openai.com/index/daybreak-models-are-now-available-on-aws/"
       ],
       "claim_keywords": [
-        "GPT-6 Astra",
-        "September 8"
+        "GPT",
+        "Astra",
+        "Amazon Bedrock"
       ],
-      "min_keyword_matches": 2,
-      "notes": "9月8日GA是本周增量；旧AWS算力协议不是新事件。不外推全区域、客户数或收入。",
-      "claim_ids": [
-        "AWS-ASTRA-1",
-        "AWS-ASTRA-2"
-      ]
+      "min_keyword_matches": 3,
+      "notes": "Astra starts with limited organizations and expands over the coming days. OpenAI's announcement does not establish completed Bedrock-wide availability, regional rollout, customer count or AWS revenue; Daybreak remains a separate access-controlled offering."
     },
     {
       "edge_id": "E21",
@@ -630,7 +628,7 @@
       "evidence_date": "2026-09-01",
       "source_type": "official_cross_company_releases",
       "last_seen": "2026-09-07",
-      "changed_this_week": "no_new_weekly_evidence",
+      "changed_this_week": "strengthened",
       "status": "strengthened_existing_partnership_newly_recorded",
       "confidence": "high",
       "confidence_reason": "Official current-week release names the model and distribution surface; commercial scale is not disclosed.",
@@ -656,7 +654,7 @@
       "evidence_date": "2026-09-03",
       "source_type": "official_supplier_release",
       "last_seen": "2026-09-07",
-      "changed_this_week": "no_new_weekly_evidence",
+      "changed_this_week": "strengthened",
       "status": "strengthened_existing_partnership_newly_recorded",
       "confidence": "high",
       "confidence_reason": "Official current-week release names the model and distribution surface; commercial scale is not disclosed.",
@@ -680,7 +678,7 @@
       "evidence_date": "2026-09-01",
       "source_type": "official_cross_company_releases",
       "last_seen": "2026-09-07",
-      "changed_this_week": "no_new_weekly_evidence",
+      "changed_this_week": "strengthened",
       "status": "strengthened_existing_partnership_newly_recorded",
       "confidence": "high",
       "confidence_reason": "Official current-week release names the model and distribution surface; commercial scale is not disclosed.",
@@ -704,7 +702,7 @@
       "product_or_service": "AWS / Azure 双向云互联公开预览，非已确认采购",
       "relationship_type": "multicloud_interconnect",
       "evidence_date": "2026-08-31",
-      "changed_this_week": "no_new_weekly_evidence",
+      "changed_this_week": "new",
       "status": "announced_joint_public_preview_not_ga_or_procurement",
       "sources": [
         "https://aws.amazon.com/blogs/networking-and-content-delivery/aws-and-microsoft-azure-collaborate-to-expand-multicloud-networking/"
@@ -731,7 +729,7 @@
       "product_or_service": "NVLink Fusion 计划采用及多代平台合作，尚非量产交付",
       "relationship_type": "planned_interconnect_platform_adoption",
       "evidence_date": "2026-08-31",
-      "changed_this_week": "no_new_weekly_evidence",
+      "changed_this_week": "strengthened",
       "status": "existing_partnership_newly_recorded_adoption_plan",
       "sources": [
         "https://www.nasdaq.com/press-release/nvidia-and-mediatek-deepen-long-standing-partnership-build-ai-edge-cloud-computing",
@@ -759,7 +757,7 @@
       "product_or_service": "西弗吉尼亚太阳能及储能的未来能源/容量供应安排",
       "relationship_type": "planned_energy_and_capacity_offtake",
       "evidence_date": "2026-09-02",
-      "changed_this_week": "no_new_weekly_evidence",
+      "changed_this_week": "new",
       "status": "announced_future_project_not_operational",
       "sources": [
         "https://mn8.com/mn8-energy-google-and-eos-energy-enterprises-bring-advanced-clean-energy-solutions-to-west-virginia/",
@@ -781,147 +779,6 @@
       "confidence": "high",
       "confidence_reason": "具日期原文确认的是公告、预览或计划；未升级成正式商用/投产。",
       "markdown_section_ref": "6.2 E31"
-    },
-    {
-      "edge_id": "E32",
-      "supplier": "Fortum",
-      "customer": "Alphabet / Google",
-      "product_or_service": "22年Loviisa核电购电协议，2028年起供",
-      "relationship_type": "planned_power_purchase",
-      "evidence_date": "2026-09-09",
-      "changed_this_week": "new",
-      "status": "announced_future_adoption_or_supply",
-      "sources": [
-        "https://www.fortum.com/en/media/2026/09/inside-information-fortum-and-google-partner-drive-sustainable-growth-finland-sign-nuclear-power-purchase-agreement"
-      ],
-      "claim_keywords": [
-        "Loviisa",
-        "2030"
-      ],
-      "min_keyword_matches": 2,
-      "notes": "2028年较小容量起步，2030-2049年50%容量；Fortum仍拥有电站，非已交付。",
-      "source_type": "official_company_release",
-      "last_seen": "2026-09-14",
-      "confidence": "high",
-      "confidence_reason": "官方确认公告或合同阶段，不认证未来投运/收益。",
-      "markdown_section_ref": "6.2 E32",
-      "claim_ids": [
-        "GOO-PPA-1",
-        "GOO-PPA-2"
-      ]
-    },
-    {
-      "edge_id": "E33",
-      "supplier": "NVIDIA",
-      "customer": "d-Matrix",
-      "product_or_service": "NVLink Fusion与MGX接入Raptor XPU的计划",
-      "relationship_type": "planned_interconnect_platform_adoption",
-      "evidence_date": "2026-09-10",
-      "changed_this_week": "new",
-      "status": "announced_future_adoption_or_supply",
-      "sources": [
-        "https://www.d-matrix.ai/announcements/d-matrix-rackscale-nvidia/",
-        "https://blogs.nvidia.com/blog/d-matrix-nvlink-fusion/"
-      ],
-      "claim_keywords": [
-        "Raptor",
-        "2027"
-      ],
-      "min_keyword_matches": 2,
-      "notes": "多年产品合作；Raptor流片目标2026年末，集成机架初步供货目标2027Q4，非已交付。",
-      "source_type": "official_company_release",
-      "last_seen": "2026-09-14",
-      "confidence": "high",
-      "confidence_reason": "官方确认公告或合同阶段，不认证未来投运/收益。",
-      "markdown_section_ref": "6.2 E33",
-      "claim_ids": [
-        "NV-DM-1",
-        "NV-DM-2"
-      ]
-    },
-    {
-      "edge_id": "E34",
-      "supplier": "NVIDIA",
-      "customer": "澳大利亚数据中心合作生态",
-      "product_or_service": "DSX架构部署合作，最高2GW基础设施目标",
-      "relationship_type": "planned_platform_adoption",
-      "evidence_date": "2026-09-09",
-      "changed_this_week": "new",
-      "status": "announced_future_adoption_or_supply",
-      "sources": [
-        "https://nvidianews.nvidia.com/news/nvidia-expands-ai-infrastructure-capacity-in-partnership-with-australias-data-center-ecosystem"
-      ],
-      "claim_keywords": [
-        "NVIDIA",
-        "2027"
-      ],
-      "min_keyword_matches": 2,
-      "notes": "伙伴建设运营土地、电力及建筑，目标2027年；不是NVIDIA已拥有算力或确定GPU采购。",
-      "source_type": "official_company_release",
-      "last_seen": "2026-09-14",
-      "confidence": "high",
-      "confidence_reason": "官方确认公告或合同阶段，不认证未来投运/收益。",
-      "markdown_section_ref": "6.2 E34",
-      "claim_ids": [
-        "NV-AU-1",
-        "NV-AU-2"
-      ]
-    },
-    {
-      "edge_id": "E35",
-      "supplier": "Mistral",
-      "customer": "Samsung Electronics",
-      "product_or_service": "本地定制Mistral Large用于半导体流程",
-      "relationship_type": "planned_model_deployment",
-      "evidence_date": "2026-09-09",
-      "changed_this_week": "new",
-      "status": "announced_future_adoption_or_supply",
-      "sources": [
-        "https://news.samsung.com/global/samsung-and-mistral-ai-announce-strategic-partnership-for-intelligence-driven-semiconductor-infrastructure"
-      ],
-      "claim_keywords": [
-        "Mistral",
-        "semiconductor"
-      ],
-      "min_keyword_matches": 2,
-      "notes": "Mistral即Mistral AI，复用既有公司节点。战略合作及部署计划；Samsung另称领投Series D但金额未知，箭头不表示融资流向或已实现良率改善。",
-      "source_type": "official_company_release",
-      "last_seen": "2026-09-14",
-      "confidence": "high",
-      "confidence_reason": "官方确认公告或合同阶段，不认证未来投运/收益。",
-      "markdown_section_ref": "6.2 E35",
-      "claim_ids": [
-        "SS-MISTRAL-1",
-        "SS-MISTRAL-2"
-      ]
-    },
-    {
-      "edge_id": "E36",
-      "supplier": "ASML",
-      "customer": "Samsung Electronics",
-      "product_or_service": "High-NA EUV与12英寸光掩模合作",
-      "relationship_type": "planned_manufacturing_technology_adoption",
-      "evidence_date": "2026-09-08",
-      "changed_this_week": "new",
-      "status": "announced_future_adoption_or_supply",
-      "sources": [
-        "https://news.samsung.com/global/samsung-electronics-and-asml-expand-strategic-collaboration-for-next-generation-semiconductor-manufacturing"
-      ],
-      "claim_keywords": [
-        "ASML",
-        "2028"
-      ],
-      "min_keyword_matches": 2,
-      "notes": "DRAM大批量制造目标2028年；12英寸为光掩模，不是已量产结果或确定采购数量。",
-      "source_type": "official_company_release",
-      "last_seen": "2026-09-14",
-      "confidence": "high",
-      "confidence_reason": "官方确认公告或合同阶段，不认证未来投运/收益。",
-      "markdown_section_ref": "6.2 E36",
-      "claim_ids": [
-        "SS-ASML-1",
-        "SS-ASML-2"
-      ]
     }
   ],
   "sources": [
@@ -945,7 +802,8 @@
     "https://apnews.com/article/samsung-ai-profit-memory-chips-10c2c548a392988862d8c7bd3f6fae05",
     "https://news.skhynix.com/en/hbf-at-fms-2026/",
     "https://news.skhynix.com/sk-hynix-and-sandisk-begin-global-standardization-ofnext-generation-memory-hbf/",
-    "https://www.aboutamazon.com/news/aws/bedrock-openai-models",
+    "https://openai.com/index/gpt-6-astra/",
+    "https://openai.com/index/daybreak-models-are-now-available-on-aws/",
     "https://openai.com/index/previewing-ultrafast/",
     "https://openai.com/index/cerebras-partnership/",
     "https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute",
@@ -954,30 +812,12 @@
     "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/",
     "https://techcommunity.microsoft.com/blog/microsoft365copilotblog/available-today-anthropic-claude-fable-5-1-in-microsoft-copilot/4551974",
     "https://github.blog/changelog/2026-09-01-claude-fable-5-1-generally-available-in-github-copilot/",
-    "https://openai.com/index/gpt-6-astra/",
     "https://platform.claude.com/docs/en/models/fable-5-1/overview",
     "https://aws.amazon.com/blogs/networking-and-content-delivery/aws-and-microsoft-azure-collaborate-to-expand-multicloud-networking/",
     "https://www.nasdaq.com/press-release/nvidia-and-mediatek-deepen-long-standing-partnership-build-ai-edge-cloud-computing",
     "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-MediaTek-Deepen-Long-Standing-Partnership-to-Build-AI-Edge-to-Cloud-Computing-Platforms/default.aspx",
-    "https://mn8.com/mn8-energy-google-and-eos-energy-enterprises-bring-advanced-clean-energy-solutions-to-west-virginia/",
-    "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/west-virginia-long-duration-energy-storage/",
-    "https://www.fortum.com/en/media/2026/09/inside-information-fortum-and-google-partner-drive-sustainable-growth-finland-sign-nuclear-power-purchase-agreement",
-    "https://www.d-matrix.ai/announcements/d-matrix-rackscale-nvidia/",
-    "https://blogs.nvidia.com/blog/d-matrix-nvlink-fusion/",
-    "https://nvidianews.nvidia.com/news/nvidia-expands-ai-infrastructure-capacity-in-partnership-with-australias-data-center-ecosystem",
-    "https://news.samsung.com/global/samsung-and-mistral-ai-announce-strategic-partnership-for-intelligence-driven-semiconductor-infrastructure",
-    "https://news.samsung.com/global/samsung-electronics-and-asml-expand-strategic-collaboration-for-next-generation-semiconductor-manufacturing"
+    "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/west-virginia-long-duration-energy-storage/"
   ],
   "confidence": "mixed_high",
-  "notes": "本周只更新入选且已核关系。其余沿用9月7日冻结基线，原evidence_date、风险和弱证据等级不变；沿用不是本周重新确证。新计划箭头表示公告关系，不表示完成交付。",
-  "comparison_snapshots": {
-    "supply": {
-      "path": "archives/2026-09-14_before_production/state/supply_graph_baseline.json",
-      "sha256": "f0b72672eb7dcc8573ea3f0f68e733eb2fc1a7b398873ed334595a5529f6a674"
-    },
-    "product": {
-      "path": "archives/2026-09-14_before_production/state/product_relationships_2026.json",
-      "sha256": "2608cf80d6adef906d6fc4c2c2d3415b9b5e5911fff0e10865d9082a4ebe4690"
-    }
-  }
+  "notes": "本基线覆盖 2026-08-31 至 2026-09-06（Asia/Shanghai），固定 12 家公司，完整关系 E01-E28。本周变化为 E05、E20、E26-E28，均属既有模型分发合作强化；E26-E28 首次入图源于上期基线遗漏，不是新签伙伴。Astra 的云渠道为官方宣布分批推出，不代表全区域已上线。E24 的远期 GPU 计划与 E25 的拟终止风险继续存在但无本周新增证据。NVIDIA/Hugging Face 签约并购未作为已交割供应关系；Lambda/Nscale 媒体报道未升级为已确认算力订单。未从 TSMC 设备需求、韩美谈判推断具名客户订单。 本期纳入E29-E31，分别保留预览、计划采用和未来投运限制；沿用关系不重新认证历史可得性。"
 }

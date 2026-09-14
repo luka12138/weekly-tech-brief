@@ -2,6 +2,8 @@
 
 这个仓库用于保存每周一生成的中文科技行业晨报，以及支撑周度对比的结构化供应链数据、来源审查日志和可视化图。
 
+现行执行规则见[项目 skill](.agents/skills/weekly-tech-brief/SKILL.md)、[时点规范](docs/point_in_time_policy.md)和[有限筛选规范](docs/research_coverage.md)。每家公司0-5条重要信息，不凑数；时点证据和具体版本必须核实，机器通过不等于零遗漏。
+
 最新晨报入口：
 
 - [reports/latest.md](reports/latest.md)
@@ -23,12 +25,12 @@
 
 ## 当前产物
 
-- 周报正文：[reports/2026-09-07_weekly_morning_brief.md](reports/2026-09-07_weekly_morning_brief.md)
-- 年度主营产品上下游图：[assets/2026-09-07_product_relationships.svg](assets/2026-09-07_product_relationships.svg)
-- 年度产品关系 Canvas：[assets/2026-09-07_product_relationships.canvas](assets/2026-09-07_product_relationships.canvas)
-- 本周供应关系图：[assets/2026-09-07_supply_relationships.svg](assets/2026-09-07_supply_relationships.svg)
-- 本周供应关系 Canvas：[assets/2026-09-07_supply_relationships.canvas](assets/2026-09-07_supply_relationships.canvas)
-- 来源审查日志：[logs/2026-09-07_source_audit.json](logs/2026-09-07_source_audit.json)
+- 周报正文：[reports/2026-09-14_weekly_morning_brief.md](reports/2026-09-14_weekly_morning_brief.md)
+- 年度主营产品上下游图：[assets/2026-09-14_product_relationships.svg](assets/2026-09-14_product_relationships.svg)
+- 年度产品关系 Canvas：[assets/2026-09-14_product_relationships.canvas](assets/2026-09-14_product_relationships.canvas)
+- 本周供应关系图：[assets/2026-09-14_supply_relationships.svg](assets/2026-09-14_supply_relationships.svg)
+- 本周供应关系 Canvas：[assets/2026-09-14_supply_relationships.canvas](assets/2026-09-14_supply_relationships.canvas)
+- 来源审查日志：[logs/2026-09-14_source_audit.json](logs/2026-09-14_source_audit.json)
 - 查验手册：[docs/verification_manual.md](docs/verification_manual.md)
 
 ## 目录结构
@@ -82,9 +84,9 @@ tests/
 
 新周报使用 `<!-- weekly-brief-schema: 2 -->`，必须包含：
 
-1. 本周最重要的 10 件事
+1. 本周最重要的至多12件事，只提炼已入选事项
 2. 12 家公司的投资判断速览
-3. 只展开存在重大变化的公司；其余公司集中用一行汇总
+3. 每家公司0-5条重要独立事项；无合格入选信息时说明有限筛选范围
 4. 跨公司与产业链判断
 5. 下周催化与验证条件
 6. 研究附录：图谱、变化关系和上周对比
@@ -101,7 +103,7 @@ tests/
 
 ## 图表更新策略
 
-写周报前先运行：
+完成正文预检和逐条证据后，查看图表计划：
 
 ```bash
 python3 scripts/plan_graph_updates.py --report-date YYYY-MM-DD
@@ -123,11 +125,11 @@ python3 scripts/run_quality_gate.py
 
 它会依次执行：
 
-1. 计算产品图和供应图的生成/沿用计划
-2. 只生成策略要求更新的 Canvas 与 SVG，其余沿用历史版本
-3. 执行来源审查
-4. 执行主校验
-5. 执行 `git diff --check`
+1. 正文格式预检
+2. 有限筛选与逐条时点证据校验
+3. 计算图表计划，只生成需要更新的 Canvas 与 SVG
+4. 来源审查和主校验
+5. `git diff --check`；真实提交和远端回执另验
 
 如需分步排错，可使用下面的命令。
 
@@ -161,9 +163,9 @@ python3 scripts/validate_weekly_brief.py \
 - JSON 能否解析
 - 覆盖日期是否写入周报
 - 12 家公司是否全部覆盖
-- 第 1 节是否按 1-10 编号且恰好包含 10 件事
+- 第1节是否按实际数量连续编号，最多12件，不凑数
 - `reports/latest.md` 是否指向真实文件
-- schema v2 前五节是否满足精简行数上限
+- 入选事件八字段与关键限制完整，不设行数或字符硬上限
 - 变化公司是否包含影响指标、预期差和验证条件
 - 无重大变化公司是否集中汇总，而非重复创建空小节
 - 6.2 是否只列本周实质变化的 `Edge ID`
@@ -207,7 +209,8 @@ python3 scripts/validate_historical_briefs.py --require-source-audits
 
 ```bash
 git status
-git add reports/ assets/ state/ logs/ scripts/ docs/ README.md
+# 逐项暂存本期清单，不暂存整个目录或夹带历史改稿
+# git add -- <本期报告、证据、状态、图谱和必要依赖文件>
 git commit -m "chore: add weekly brief YYYY-MM-DD"
 git push
 ```
@@ -218,9 +221,9 @@ git push
 
 1. Windows 台式机每周一 09:00（Asia/Shanghai）触发 Codex 自动化。
 2. 自动化读取上一期 `reports/latest.md` 和 `state/supply_graph_baseline.json`。
-3. 联网检索并生成新周报。
+3. 读取项目skill，有限官方筛选加独立重要性校准，生成每家0-5条的新周报。
 4. 更新供应关系 JSON；只有产品关系实质变化时才更新产品关系 JSON 的刷新日期。
-5. 运行图表计划，只生成需要变化的 Canvas/SVG，其余沿用历史图。
+5. 先预检正文并绑定逐条时点证据，再运行图表计划生成或沿用图。
 6. 执行来源审查，并写入当前周报、供应关系基线和年度产品关系图的 SHA-256。
 7. 执行主质量闸门，确认来源审查日志与当前文件一致，并检查核心事实 claim。
 8. 校验通过后提交并推送到 GitHub。

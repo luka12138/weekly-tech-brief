@@ -1,7 +1,7 @@
 {
   "title": "2026 年度十二家公司主营产品上下游关系图",
   "source_baseline": "基于 2026 年可取得的官方年报、投资者关系页面、公司新闻稿和监管披露；媒体报道或历史基线关系单独标注。",
-  "generated_for_report_date": "2026-09-14",
+  "generated_for_report_date": "2026-09-07",
   "companies": [
     {
       "name": "Apple",
@@ -316,13 +316,12 @@
       "edge_id": "P13",
       "source": "OpenAI",
       "target": "Amazon / AWS",
-      "product_or_service": "OpenAI模型经Bedrock分发；Astra于9月8日GA",
+      "product_or_service": "OpenAI Daybreak 与 GPT-6 Astra 模型经 Amazon Bedrock 分发（Astra 分批推出）",
       "evidence_level": "本年度官方证据",
       "official_sources": [
-        "https://www.aboutamazon.com/news/aws/bedrock-openai-models"
-      ],
-      "evidence_date": "2026-09-08",
-      "notes": "只更新Astra分发阶段，不合并旧算力协议或扩大Daybreak资格。"
+        "https://openai.com/index/daybreak-models-are-now-available-on-aws/",
+        "https://openai.com/index/gpt-6-astra/"
+      ]
     },
     {
       "edge_id": "P14",
@@ -1041,15 +1040,13 @@
       "target_node": "Apple::iPhone",
       "source_company": "Apple",
       "target_company": "Apple",
-      "product_or_service": "A20 Pro支撑iPhone Duo及18 Pro系列",
+      "product_or_service": "Apple silicon 支撑 iPhone 计算平台",
       "relationship_type": "internal_product_stack",
-      "evidence_level": "本年度官方证据",
+      "evidence_level": "官方产品基线",
       "official_sources": [
-        "https://www.apple.com/newsroom/2026/09/apple-unveils-iphone-duo/",
-        "https://www.apple.com/ie/newsroom/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/"
+        "https://investor.apple.com/sec-filings/default.aspx"
       ],
-      "notes": "发布不等于全部交付；Duo计划10月，18 Pro爱尔兰计划9月18日。",
-      "evidence_date": "2026-09-09"
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
     },
     {
       "edge_id": "PX02",
@@ -1351,14 +1348,13 @@
       "target_node": "Meta::WhatsApp",
       "source_company": "Meta",
       "target_company": "Meta",
-      "product_or_service": "Muse个人智能体进入WhatsApp入口（先美国）",
+      "product_or_service": "Meta AI 进入 WhatsApp 对话体验",
       "relationship_type": "ai_feature_supply",
-      "evidence_level": "本年度官方证据",
+      "evidence_level": "官方产品基线",
       "official_sources": [
-        "https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/"
+        "https://investor.atmeta.com/financials/"
       ],
-      "notes": "基于Muse Spark，安全能力有边界；Confidential VM仍是年内计划。",
-      "evidence_date": "2026-09-08"
+      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
     },
     {
       "edge_id": "PX24",
@@ -1908,14 +1904,13 @@
       "target_node": "OpenAI::OpenAI_API",
       "source_company": "OpenAI",
       "target_company": "OpenAI",
-      "product_or_service": "GPT模型及托管Codex框架经Agents API公开测试版提供",
+      "product_or_service": "GPT 模型通过 OpenAI API 向开发者提供服务",
       "relationship_type": "internal_product_stack",
-      "evidence_level": "本年度官方证据",
+      "evidence_level": "官方产品基线",
       "official_sources": [
-        "https://openai.com/index/introducing-the-agents-api/"
+        "https://openai.com/api/"
       ],
-      "notes": "公开beta，模型token和工具仍计费；不是整体免费或正式GA。",
-      "evidence_date": "2026-09-10"
+      "notes": "年度主营产品上下游关系；可用模型、定价与区域覆盖以官方文档为准。"
     },
     {
       "edge_id": "PX63",
@@ -2091,14 +2086,14 @@
       "target_node": "Amazon_AWS::AWS",
       "source_company": "OpenAI",
       "target_company": "Amazon / AWS",
-      "product_or_service": "GPT-6 Astra在Amazon Bedrock正式可用",
+      "product_or_service": "Daybreak 与 GPT-6 Astra 通过 Amazon Bedrock 分发",
       "relationship_type": "model_distribution",
       "evidence_level": "本年度官方证据",
       "official_sources": [
-        "https://www.aboutamazon.com/news/aws/bedrock-openai-models"
+        "https://openai.com/index/daybreak-models-are-now-available-on-aws/",
+        "https://openai.com/index/gpt-6-astra/"
       ],
-      "notes": "9月8日GA强化既有分发；历史Daybreak仍保留其独立资格限制，不是新算力采购。",
-      "evidence_date": "2026-09-08"
+      "notes": "本年度官方分发关系；Daybreak 需审批，Astra 于 9 月 3 日宣布分批推出。未确认全区域上线、客户数和收入。"
     },
     {
       "edge_id": "PX76",
@@ -2188,6 +2183,5 @@
       "evidence_date": "2026-08-31",
       "notes": "双方提供互联能力；双向箭头不表示买卖双方或已全面正式商用。"
     }
-  ],
-  "changed_this_week": true
+  ]
 }

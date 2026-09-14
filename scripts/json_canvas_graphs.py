@@ -79,6 +79,8 @@ def supply_edge_color(edge: dict[str, Any]) -> str:
     source_type = str(edge.get("source_type", "")).lower()
     changed = str(edge.get("changed_this_week", "")).lower()
     joined = " ".join((status, source_type, changed))
+    if changed.startswith("no_new"):
+        return "#f59e0b" if "risk" in joined or "media" in joined else "#64748b"
     if changed == "new" or status.startswith("new"):
         return "#22c55e"
     if "risk" in joined or "media" in joined:
@@ -308,6 +310,8 @@ def build_supply_canvas(data: dict[str, Any]) -> dict[str, list[dict[str, Any]]]
                 semantic_id,
             )
         )
+        if edge.get("direction") == "bidirectional":
+            canvas_edges[-1]["fromEnd"] = "arrow"
         source = node_by_name[supplier]
         target = node_by_name[customer]
         if source["x"] == target["x"]:
@@ -449,6 +453,8 @@ def build_product_canvas(data: dict[str, Any]) -> dict[str, list[dict[str, Any]]
                     semantic_id if cross_company else None,
                 )
             )
+            if edge.get("direction") == "bidirectional":
+                canvas_edges[-1]["fromEnd"] = "arrow"
             if cross_company:
                 index_relations.append(
                     (
@@ -871,6 +877,8 @@ def render_canvas_svg(canvas: dict[str, Any]) -> str:
         control1, control2 = _bezier_points(start, end, edge.get("fromSide"), edge.get("toSide"))
         color = canvas_color(edge.get("color"))
         marker = f' marker-end="url(#{marker_ids[color]})"' if edge.get("toEnd", "arrow") == "arrow" else ""
+        if edge.get("fromEnd") == "arrow":
+            marker += f' marker-start="url(#{marker_ids[color]})"'
         parts.append(
             f'<path d="M {start[0]:.1f} {start[1]:.1f} C {control1[0]:.1f} {control1[1]:.1f}, {control2[0]:.1f} {control2[1]:.1f}, {end[0]:.1f} {end[1]:.1f}" fill="none" stroke="{escape(color)}" stroke-width="2" stroke-opacity="0.68"{marker}/>'
         )

@@ -1,0 +1,1453 @@
+{
+  "created_at": "2026-09-14T04:17:52.376Z",
+  "source_status": "reviewed by current model; not independent review",
+  "sources": {
+    "duo": {
+      "url": "https://www.apple.com/newsroom/2026/09/apple-unveils-iphone-duo/",
+      "retrieved_at": "2026-09-14T03:58:03.414Z",
+      "basis": "dated_release",
+      "locator": "September 9 release: opening, Apple Intelligence limitations, Pricing and Availability",
+      "claim_first_public_interval": {
+        "published_date": "2026-09-09",
+        "earliest": "2026-09-08T10:00:00.000Z",
+        "latest_exclusive": "2026-09-10T12:00:00.000Z",
+        "timezone_basis": "global_utc_minus12_to_plus14",
+        "version_locator": "September 9 release: opening, Apple Intelligence limitations, Pricing and Availability",
+        "note": "原文只确证日期，时区不明；保留完整50小时可能区间，端点不是实际发布时间。"
+      },
+      "capture_fingerprint": {
+        "record_id": "W14-V02",
+        "file_sha256": "6512d7b62c59bfa393d389700ad1b6cfaeac3e415207aa8dbf06e32b9f74214b",
+        "completed_at": "2026-09-14T03:58:03.414Z",
+        "raw_local_only": true
+      }
+    },
+    "pro": {
+      "url": "https://www.apple.com/ie/newsroom/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/",
+      "retrieved_at": "2026-09-14T03:58:17.262Z",
+      "basis": "dated_release",
+      "locator": "September 9 Ireland release: opening and September 12/18 ordering schedule",
+      "claim_first_public_interval": {
+        "published_date": "2026-09-09",
+        "earliest": "2026-09-08T10:00:00.000Z",
+        "latest_exclusive": "2026-09-10T12:00:00.000Z",
+        "timezone_basis": "global_utc_minus12_to_plus14",
+        "version_locator": "September 9 Ireland release: opening and September 12/18 ordering schedule",
+        "note": "原文只确证日期，时区不明；保留完整50小时可能区间，端点不是实际发布时间。"
+      },
+      "capture_fingerprint": {
+        "record_id": "W14-V03",
+        "file_sha256": "5247e16d49df31821523476be1876b7811e62238abfd6168ef5033ac620296ba",
+        "completed_at": "2026-09-14T03:58:17.262Z",
+        "raw_local_only": true
+      }
+    },
+    "school": {
+      "url": "https://news.microsoft.com/source/2026/09/09/aft-uft-and-microsoft-announce-national-ai-safety-privacy-standard-for-schools-to-protect-students-families-and-educators/",
+      "retrieved_at": "2026-09-14T04:00:19.218Z",
+      "basis": "dated_release",
+      "locator": "September 9 body: agreement, district incorporation into customer agreements, data restrictions",
+      "claim_first_public_interval": {
+        "published_date": "2026-09-09",
+        "earliest": "2026-09-08T10:00:00.000Z",
+        "latest_exclusive": "2026-09-10T12:00:00.000Z",
+        "timezone_basis": "global_utc_minus12_to_plus14",
+        "version_locator": "September 9 body: agreement, district incorporation into customer agreements, data restrictions",
+        "note": "原文只确证日期，时区不明；保留完整50小时可能区间，端点不是实际发布时间。"
+      },
+      "capture_fingerprint": {
+        "record_id": "W14-V08",
+        "file_sha256": "293d8bfbe013e4d862d85090711596487af30862ac2b5d3652ff6ce116a0ff0e",
+        "completed_at": "2026-09-14T04:00:19.218Z",
+        "raw_local_only": true
+      }
+    },
+    "ms38": {
+      "url": "https://www.investing.com/news/stock-market-news/microsoft-plans-38-gigawatts-of-data-center-capacity-by-2032-bloomberg-news-reports-4897030",
+      "retrieved_at": "2026-09-14T04:00:07.075Z",
+      "basis": "dated_media",
+      "locator": "Reuters September 10 updated 18:24 displayed without timezone: 12 to 38 GW, Bloomberg sourcing and Microsoft response",
+      "claim_first_public_interval": {
+        "published_date": "2026-09-10",
+        "earliest": "2026-09-09T10:00:00.000Z",
+        "latest_exclusive": "2026-09-11T12:00:00.000Z",
+        "timezone_basis": "global_utc_minus12_to_plus14",
+        "version_locator": "Reuters September 10 updated 18:24 displayed without timezone: 12 to 38 GW, Bloomberg sourcing and Microsoft response",
+        "note": "原文只确证日期，时区不明；保留完整50小时可能区间，端点不是实际发布时间。"
+      },
+      "capture_fingerprint": {
+        "record_id": "W14-V07",
+        "file_sha256": "bb5841585417a058f2d6e017f474a00c0c25ceec5ccf482e7e62910033e3b17b",
+        "completed_at": "2026-09-14T04:00:07.075Z",
+        "raw_local_only": true
+      }
+    },
+    "fin": {
+      "url": "https://www.googlecloudpresscorner.com/2026-09-09-Google-Deepens-Commitment-to-Finland-with-Two-Year-EUR13-Billion-investment-in-AI-Infrastructure",
+      "retrieved_at": "2026-09-14T03:58:56.906Z",
+      "basis": "dated_release",
+      "locator": "September 9 release: at least EUR13 billion over 2027-2028, four Finland sites",
+      "claim_first_public_interval": {
+        "published_date": "2026-09-09",
+        "earliest": "2026-09-08T10:00:00.000Z",
+        "latest_exclusive": "2026-09-10T12:00:00.000Z",
+        "timezone_basis": "global_utc_minus12_to_plus14",
+        "version_locator": "September 9 release: at least EUR13 billion over 2027-2028, four Finland sites",
+        "note": "原文只确证日期，时区不明；保留完整50小时可能区间，端点不是实际发布时间。"
+      },
+      "capture_fingerprint": {
+        "record_id": "W14-V05",
+        "file_sha256": "b3ff9f5abddea52454b273a285e741ad98c7077ed6fe27ba6eadada8e45c9887",
+        "completed_at": "2026-09-14T03:58:56.906Z",
+        "raw_local_only": true
+      }
+    },
+    "fortum": {
+      "url": "https://www.fortum.com/en/media/2026/09/inside-information-fortum-and-google-partner-drive-sustainable-growth-finland-sign-nuclear-power-purchase-agreement",
+      "retrieved_at": "2026-09-14T04:00:07.075Z",
+      "basis": "dated_release",
+      "locator": "September 9 10:00 EEST release: 22-year PPA; 2028 start; 50% of Loviisa 2030-2049",
+      "claim_first_public_at": "2026-09-09T10:00:00+03:00",
+      "capture_fingerprint": {
+        "record_id": "W14-V07",
+        "file_sha256": "bb5841585417a058f2d6e017f474a00c0c25ceec5ccf482e7e62910033e3b17b",
+        "completed_at": "2026-09-14T04:00:07.075Z",
+        "raw_local_only": true
+      }
+    },
+    "ca": {
+      "url": "https://www.gov.ca.gov/2026/09/10/governor-newsom-signs-the-strongest-child-safety-chatbot-and-social-media-laws-in-the-nation/",
+      "retrieved_at": "2026-09-14T04:00:33.101Z",
+      "basis": "dated_release",
+      "locator": "September 10 governor release: AB1709 and SB1119 signing, child social-media and chatbot safeguards",
+      "claim_first_public_interval": {
+        "published_date": "2026-09-10",
+        "earliest": "2026-09-09T10:00:00.000Z",
+        "latest_exclusive": "2026-09-11T12:00:00.000Z",
+        "timezone_basis": "global_utc_minus12_to_plus14",
+        "version_locator": "September 10 governor release: AB1709 and SB1119 signing, child social-media and chatbot safeguards",
+        "note": "原文只确证日期，时区不明；保留完整50小时可能区间，端点不是实际发布时间。"
+      },
+      "capture_fingerprint": {
+        "record_id": "W14-V09",
+        "file_sha256": "22f0ddfe899e93b4cb5843b952490e5278f289ac15363eb2a7e7f4f120a009dd",
+        "completed_at": "2026-09-14T04:00:33.101Z",
+        "raw_local_only": true
+      }
+    },
+    "sb1119": {
+      "url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB1119",
+      "retrieved_at": "2026-09-14T04:05:02.851Z",
+      "basis": "filing",
+      "locator": "SB1119:v92#DOCUMENT, chapter 190, Date Published 09/11/2026 02:00 PM (timezone absent); sections 21811-21814",
+      "claim_first_public_interval": {
+        "published_date": "2026-09-11",
+        "earliest": "2026-09-10T10:00:00.000Z",
+        "latest_exclusive": "2026-09-12T12:00:00.000Z",
+        "timezone_basis": "global_utc_minus12_to_plus14",
+        "version_locator": "SB1119:v92#DOCUMENT, chapter 190, Date Published 09/11/2026 02:00 PM (timezone absent); sections 21811-21814",
+        "note": "原文只确证日期，时区不明；保留完整50小时可能区间，端点不是实际发布时间。"
+      },
+      "capture_fingerprint": {
+        "record_id": "W14-V13",
+        "file_sha256": "898138b011f061053581567332a6e39958b0b0c79af42da667fc7a630f2023d3",
+        "completed_at": "2026-09-14T04:05:02.851Z",
+        "raw_local_only": true
+      }
+    },
+    "ab1709": {
+      "url": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB1709",
+      "retrieved_at": "2026-09-14T04:05:28.615Z",
+      "basis": "filing",
+      "locator": "AB1709:v91#DOCUMENT, chapter 183, Date Published 09/11/2026 02:00 PM (timezone absent); sections 22682-22684",
+      "claim_first_public_interval": {
+        "published_date": "2026-09-11",
+        "earliest": "2026-09-10T10:00:00.000Z",
+        "latest_exclusive": "2026-09-12T12:00:00.000Z",
+        "timezone_basis": "global_utc_minus12_to_plus14",
+        "version_locator": "AB1709:v91#DOCUMENT, chapter 183, Date Published 09/11/2026 02:00 PM (timezone absent); sections 22682-22684",
+        "note": "原文只确证日期，时区不明；保留完整50小时可能区间，端点不是实际发布时间。"
+      },
+      "capture_fingerprint": {
+        "record_id": "W14-V15",
+        "file_sha256": "f305cb54700e2328083638ecb3197b9939f32fec53d410f23bbd0848df2ea1a7",
+        "completed_at": "2026-09-14T04:05:28.615Z",
+        "raw_local_only": true
+      }
+    },
+    "astra": {
+      "url": "https://www.aboutamazon.com/news/aws/bedrock-openai-models",
+      "retrieved_at": "2026-09-14T04:05:02.851Z",
+      "basis": "dated_section",
+      "locator": "Explicit September 8, 2026 section and its key takeaways only; April 28/July 9/August 11 sections are old background",
+      "claim_first_public_interval": {
+        "published_date": "2026-09-08",
+        "earliest": "2026-09-07T10:00:00.000Z",
+        "latest_exclusive": "2026-09-09T12:00:00.000Z",
+        "timezone_basis": "global_utc_minus12_to_plus14",
+        "version_locator": "Explicit September 8, 2026 section and its key takeaways only; April 28/July 9/August 11 sections are old background",
+        "note": "原文只确证日期，时区不明；保留完整50小时可能区间，端点不是实际发布时间。"
+      },
+      "capture_fingerprint": {
+        "record_id": "W14-V13",
+        "file_sha256": "898138b011f061053581567332a6e39958b0b0c79af42da667fc7a630f2023d3",
+        "completed_at": "2026-09-14T04:05:02.851Z",
+        "raw_local_only": true
+      }
+    },
+    "quick": {
+      "url": "https://www.aboutamazon.com/news/aws/amazon-quick-desktop-ai-assistant",
+      "retrieved_at": "2026-09-14T04:05:16.781Z",
+      "basis": "dated_section",
+      "locator": "Explicit September 9 update before the original April 28 article divider: desktop GA and mobile activity feed",
+      "claim_first_public_interval": {
+        "published_date": "2026-09-09",
+        "earliest": "2026-09-08T10:00:00.000Z",
+        "latest_exclusive": "2026-09-10T12:00:00.000Z",
+        "timezone_basis": "global_utc_minus12_to_plus14",
+        "version_locator": "Explicit September 9 update before the original April 28 article divider: desktop GA and mobile activity feed",
+        "note": "原文只确证日期，时区不明；保留完整50小时可能区间，端点不是实际发布时间。"
+      },
+      "capture_fingerprint": {
+        "record_id": "W14-V14",
+        "file_sha256": "10f00880f781c59c954094c04da7b0a94a0c40695baab5cbea472396ef87cccd",
+        "completed_at": "2026-09-14T04:05:16.781Z",
+        "raw_local_only": true
+      }
+    },
+    "labor": {
+      "url": "https://www.marketscreener.com/news/amazon-accused-in-lawsuit-of-systematic-pregnancy-discrimination-ce785bd8df8ffe2d",
+      "retrieved_at": "2026-09-14T04:01:58.248Z",
+      "basis": "dated_media",
+      "locator": "Reuters September 8 updated 17:26 EDT body: four former workers, Brooklyn proposed class action, Amazon response",
+      "claim_first_public_at": "2026-09-08T17:26:00-04:00",
+      "capture_fingerprint": {
+        "record_id": "W14-V12",
+        "file_sha256": "6aeccfbc1a1074de7fb8b62ebe8edac1a1b6e53c1aff62c70f723749ded7bd58",
+        "completed_at": "2026-09-14T04:01:58.248Z",
+        "raw_local_only": true
+      }
+    },
+    "muse": {
+      "url": "https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/",
+      "retrieved_at": "2026-09-14T03:58:32.209Z",
+      "basis": "dated_release",
+      "locator": "September 8 launch: Muse Spark, US rollout, Secure VM, Sentinel, future Confidential VM",
+      "claim_first_public_interval": {
+        "published_date": "2026-09-08",
+        "earliest": "2026-09-07T10:00:00.000Z",
+        "latest_exclusive": "2026-09-09T12:00:00.000Z",
+        "timezone_basis": "global_utc_minus12_to_plus14",
+        "version_locator": "September 8 launch: Muse Spark, US rollout, Secure VM, Sentinel, future Confidential VM",
+        "note": "原文只确证日期，时区不明；保留完整50小时可能区间，端点不是实际发布时间。"
+      },
+      "capture_fingerprint": {
+        "record_id": "W14-V04",
+        "file_sha256": "aefc1942e1dfae3dbb2364c5980f842ed868b0150caef2345cafbe41c3e8797e",
+        "completed_at": "2026-09-14T03:58:32.209Z",
+        "raw_local_only": true
+      }
+    },
+    "muse-risk": {
+      "url": "https://www.investing.com/news/stock-market-news/meta-launches-ai-agent-that-can-access-other-apps-to-send-emails-make-payments-4892258",
+      "retrieved_at": "2026-09-14T03:57:20.917Z",
+      "basis": "dated_media",
+      "locator": "Reuters September 8 body: internal monitoring/privacy errors, specific allegation and company response",
+      "claim_first_public_interval": {
+        "published_date": "2026-09-08",
+        "earliest": "2026-09-07T10:00:00.000Z",
+        "latest_exclusive": "2026-09-09T12:00:00.000Z",
+        "timezone_basis": "global_utc_minus12_to_plus14",
+        "version_locator": "Reuters September 8 body: internal monitoring/privacy errors, specific allegation and company response",
+        "note": "原文只确证日期，时区不明；保留完整50小时可能区间，端点不是实际发布时间。"
+      },
+      "capture_fingerprint": {
+        "record_id": "W14-D09",
+        "file_sha256": "3054bde987422b3d1502e40426ce89f3a34cc485e71d22440b49f06b2900eee5",
+        "completed_at": "2026-09-14T03:57:20.917Z",
+        "raw_local_only": true
+      }
+    },
+    "dm": {
+      "url": "https://www.d-matrix.ai/announcements/d-matrix-rackscale-nvidia/",
+      "retrieved_at": "2026-09-14T04:05:02.851Z",
+      "basis": "dated_release",
+      "locator": "September 10 release: Raptor/NVLink Fusion/MGX; expected tape-out before year end; Availability Q4 2027",
+      "claim_first_public_interval": {
+        "published_date": "2026-09-10",
+        "earliest": "2026-09-09T10:00:00.000Z",
+        "latest_exclusive": "2026-09-11T12:00:00.000Z",
+        "timezone_basis": "global_utc_minus12_to_plus14",
+        "version_locator": "September 10 release: Raptor/NVLink Fusion/MGX; expected tape-out before year end; Availability Q4 2027",
+        "note": "原文只确证日期，时区不明；保留完整50小时可能区间，端点不是实际发布时间。"
+      },
+      "capture_fingerprint": {
+        "record_id": "W14-V13",
+        "file_sha256": "898138b011f061053581567332a6e39958b0b0c79af42da667fc7a630f2023d3",
+        "completed_at": "2026-09-14T04:05:02.851Z",
+        "raw_local_only": true
+      }
+    },
+    "nv-dm": {
+      "url": "https://blogs.nvidia.com/blog/d-matrix-nvlink-fusion/",
+      "retrieved_at": "2026-09-14T04:00:19.218Z",
+      "basis": "dated_release",
+      "locator": "September 10 NVIDIA body: planned integration of Raptor XPUs with NVLink Fusion and MGX",
+      "claim_first_public_interval": {
+        "published_date": "2026-09-10",
+        "earliest": "2026-09-09T10:00:00.000Z",
+        "latest_exclusive": "2026-09-11T12:00:00.000Z",
+        "timezone_basis": "global_utc_minus12_to_plus14",
+        "version_locator": "September 10 NVIDIA body: planned integration of Raptor XPUs with NVLink Fusion and MGX",
+        "note": "原文只确证日期，时区不明；保留完整50小时可能区间，端点不是实际发布时间。"
+      },
+      "capture_fingerprint": {
+        "record_id": "W14-V08",
+        "file_sha256": "293d8bfbe013e4d862d85090711596487af30862ac2b5d3652ff6ce116a0ff0e",
+        "completed_at": "2026-09-14T04:00:19.218Z",
+        "raw_local_only": true
+      }
+    },
+    "nv-au": {
+      "url": "https://nvidianews.nvidia.com/news/nvidia-expands-ai-infrastructure-capacity-in-partnership-with-australias-data-center-ecosystem",
+      "retrieved_at": "2026-09-14T03:58:32.209Z",
+      "basis": "dated_release",
+      "locator": "September 9 release opening: partner-operated land/power/shell capacity up to 2GW by 2027, DSX platform",
+      "claim_first_public_interval": {
+        "published_date": "2026-09-09",
+        "earliest": "2026-09-08T10:00:00.000Z",
+        "latest_exclusive": "2026-09-10T12:00:00.000Z",
+        "timezone_basis": "global_utc_minus12_to_plus14",
+        "version_locator": "September 9 release opening: partner-operated land/power/shell capacity up to 2GW by 2027, DSX platform",
+        "note": "原文只确证日期，时区不明；保留完整50小时可能区间，端点不是实际发布时间。"
+      },
+      "capture_fingerprint": {
+        "record_id": "W14-V04",
+        "file_sha256": "aefc1942e1dfae3dbb2364c5980f842ed868b0150caef2345cafbe41c3e8797e",
+        "completed_at": "2026-09-14T03:58:32.209Z",
+        "raw_local_only": true
+      }
+    },
+    "ipo": {
+      "url": "https://www.marketscreener.com/news/nvidia-in-talks-to-invest-in-anthropic-s-mega-ipo-sources-say-ce785bdfd18ff127",
+      "retrieved_at": "2026-09-14T03:58:32.209Z",
+      "basis": "dated_media",
+      "locator": "Reuters September 11 updated 20:02 EDT: anonymous-source talks, up to $100bn IPO/$2tn valuation/$10bn NVIDIA; company responses",
+      "claim_first_public_at": "2026-09-11T20:02:00-04:00",
+      "capture_fingerprint": {
+        "record_id": "W14-V04",
+        "file_sha256": "aefc1942e1dfae3dbb2364c5980f842ed868b0150caef2345cafbe41c3e8797e",
+        "completed_at": "2026-09-14T03:58:32.209Z",
+        "raw_local_only": true
+      }
+    },
+    "math": {
+      "url": "https://openai.com/index/navier-stokes-solution/",
+      "retrieved_at": "2026-09-14T04:00:19.218Z",
+      "basis": "dated_release",
+      "locator": "September 8 announcement main text: forced incompressible constant-density equation, C/D statement, internal model and proof artifacts; September 10 concurrent-work note not used as independent validation",
+      "claim_first_public_interval": {
+        "published_date": "2026-09-08",
+        "earliest": "2026-09-07T10:00:00.000Z",
+        "latest_exclusive": "2026-09-09T12:00:00.000Z",
+        "timezone_basis": "global_utc_minus12_to_plus14",
+        "version_locator": "September 8 announcement main text: forced incompressible constant-density equation, C/D statement, internal model and proof artifacts; September 10 concurrent-work note not used as independent validation",
+        "note": "原文只确证日期，时区不明；保留完整50小时可能区间，端点不是实际发布时间。"
+      },
+      "capture_fingerprint": {
+        "record_id": "W14-V08",
+        "file_sha256": "293d8bfbe013e4d862d85090711596487af30862ac2b5d3652ff6ce116a0ff0e",
+        "completed_at": "2026-09-14T04:00:19.218Z",
+        "raw_local_only": true
+      }
+    },
+    "agents": {
+      "url": "https://openai.com/index/introducing-the-agents-api/",
+      "retrieved_at": "2026-09-14T04:01:16.523Z",
+      "basis": "dated_release",
+      "locator": "September 10 launch: public beta, managed Codex harness, sandbox choice, pricing excludes additional API fee but bills model/tools",
+      "claim_first_public_interval": {
+        "published_date": "2026-09-10",
+        "earliest": "2026-09-09T10:00:00.000Z",
+        "latest_exclusive": "2026-09-11T12:00:00.000Z",
+        "timezone_basis": "global_utc_minus12_to_plus14",
+        "version_locator": "September 10 launch: public beta, managed Codex harness, sandbox choice, pricing excludes additional API fee but bills model/tools",
+        "note": "原文只确证日期，时区不明；保留完整50小时可能区间，端点不是实际发布时间。"
+      },
+      "capture_fingerprint": {
+        "record_id": "W14-V11",
+        "file_sha256": "5b8208e7aba370a1588be91f0a57af002661a5b89b999fc76ab6e967586093e4",
+        "completed_at": "2026-09-14T04:01:16.523Z",
+        "raw_local_only": true
+      }
+    },
+    "probe": {
+      "url": "https://apnews.com/article/openai-hugging-face-congress-investigation-artificial-intelligence-1f730a59284c718f2e758898748a8069",
+      "retrieved_at": "2026-09-14T04:00:33.101Z",
+      "basis": "dated_media",
+      "locator": "AP September 10 body: Hawley Senate inquiry into July incident, not a new September intrusion; OpenAI response",
+      "claim_first_public_interval": {
+        "published_date": "2026-09-10",
+        "earliest": "2026-09-09T10:00:00.000Z",
+        "latest_exclusive": "2026-09-11T12:00:00.000Z",
+        "timezone_basis": "global_utc_minus12_to_plus14",
+        "version_locator": "AP September 10 body: Hawley Senate inquiry into July incident, not a new September intrusion; OpenAI response",
+        "note": "原文只确证日期，时区不明；保留完整50小时可能区间，端点不是实际发布时间。"
+      },
+      "capture_fingerprint": {
+        "record_id": "W14-V09",
+        "file_sha256": "22f0ddfe899e93b4cb5843b952490e5278f289ac15363eb2a7e7f4f120a009dd",
+        "completed_at": "2026-09-14T04:00:33.101Z",
+        "raw_local_only": true
+      }
+    },
+    "policy": {
+      "url": "https://openai.com/index/ai-policy-window/",
+      "retrieved_at": "2026-09-14T03:58:56.906Z",
+      "basis": "dated_release",
+      "locator": "September 9 policy statement: mandatory capability-based frontier regulation and California support, not enacted federal law",
+      "claim_first_public_interval": {
+        "published_date": "2026-09-09",
+        "earliest": "2026-09-08T10:00:00.000Z",
+        "latest_exclusive": "2026-09-10T12:00:00.000Z",
+        "timezone_basis": "global_utc_minus12_to_plus14",
+        "version_locator": "September 9 policy statement: mandatory capability-based frontier regulation and California support, not enacted federal law",
+        "note": "原文只确证日期，时区不明；保留完整50小时可能区间，端点不是实际发布时间。"
+      },
+      "capture_fingerprint": {
+        "record_id": "W14-V05",
+        "file_sha256": "b3ff9f5abddea52454b273a285e741ad98c7077ed6fe27ba6eadada8e45c9887",
+        "completed_at": "2026-09-14T03:58:56.906Z",
+        "raw_local_only": true
+      }
+    },
+    "misuse": {
+      "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+      "retrieved_at": "2026-09-14T04:01:16.523Z",
+      "basis": "dated_section",
+      "locator": "September 2026 report opening: Dec 2025-Aug 2026 cases, disruption claimed; publication date anchored by September 10 entry linking this report in company news (W14-D07)",
+      "claim_first_public_interval": {
+        "published_date": "2026-09-10",
+        "earliest": "2026-09-09T10:00:00.000Z",
+        "latest_exclusive": "2026-09-11T12:00:00.000Z",
+        "timezone_basis": "global_utc_minus12_to_plus14",
+        "version_locator": "September 2026 report opening: Dec 2025-Aug 2026 cases, disruption claimed; publication date anchored by September 10 entry linking this report in company news (W14-D07)",
+        "note": "原文只确证日期，时区不明；保留完整50小时可能区间，端点不是实际发布时间。"
+      },
+      "capture_fingerprint": {
+        "record_id": "W14-V11",
+        "file_sha256": "5b8208e7aba370a1588be91f0a57af002661a5b89b999fc76ab6e967586093e4",
+        "completed_at": "2026-09-14T04:01:16.523Z",
+        "raw_local_only": true
+      }
+    },
+    "resign": {
+      "url": "https://apnews.com/article/anthropic-ai-safety-jacob-coxon-2ed549e07f2f941600a135070487d83d",
+      "retrieved_at": "2026-09-14T04:00:33.101Z",
+      "basis": "dated_media",
+      "locator": "AP September 9 body: Jacob Coxon announced resignation Tuesday September 8, personal safety concerns",
+      "claim_first_public_interval": {
+        "published_date": "2026-09-09",
+        "earliest": "2026-09-08T10:00:00.000Z",
+        "latest_exclusive": "2026-09-10T12:00:00.000Z",
+        "timezone_basis": "global_utc_minus12_to_plus14",
+        "version_locator": "AP September 9 body: Jacob Coxon announced resignation Tuesday September 8, personal safety concerns",
+        "note": "原文只确证日期，时区不明；保留完整50小时可能区间，端点不是实际发布时间。"
+      },
+      "capture_fingerprint": {
+        "record_id": "W14-V09",
+        "file_sha256": "22f0ddfe899e93b4cb5843b952490e5278f289ac15363eb2a7e7f4f120a009dd",
+        "completed_at": "2026-09-14T04:00:33.101Z",
+        "raw_local_only": true
+      }
+    },
+    "mistral": {
+      "url": "https://news.samsung.com/global/samsung-and-mistral-ai-announce-strategic-partnership-for-intelligence-driven-semiconductor-infrastructure",
+      "retrieved_at": "2026-09-14T03:58:17.262Z",
+      "basis": "dated_release",
+      "locator": "September 9 Samsung release: on-premise Mistral Large, semiconductor workflows and Series D strategic stake; no amount",
+      "claim_first_public_interval": {
+        "published_date": "2026-09-09",
+        "earliest": "2026-09-08T10:00:00.000Z",
+        "latest_exclusive": "2026-09-10T12:00:00.000Z",
+        "timezone_basis": "global_utc_minus12_to_plus14",
+        "version_locator": "September 9 Samsung release: on-premise Mistral Large, semiconductor workflows and Series D strategic stake; no amount",
+        "note": "原文只确证日期，时区不明；保留完整50小时可能区间，端点不是实际发布时间。"
+      },
+      "capture_fingerprint": {
+        "record_id": "W14-V03",
+        "file_sha256": "5247e16d49df31821523476be1876b7811e62238abfd6168ef5033ac620296ba",
+        "completed_at": "2026-09-14T03:58:17.262Z",
+        "raw_local_only": true
+      }
+    },
+    "asml": {
+      "url": "https://news.samsung.com/global/samsung-electronics-and-asml-expand-strategic-collaboration-for-next-generation-semiconductor-manufacturing",
+      "retrieved_at": "2026-09-14T03:58:17.262Z",
+      "basis": "dated_release",
+      "locator": "September 8 Samsung release: 12-inch photomask initiative and High-NA EUV DRAM volume manufacturing goal by 2028",
+      "claim_first_public_interval": {
+        "published_date": "2026-09-08",
+        "earliest": "2026-09-07T10:00:00.000Z",
+        "latest_exclusive": "2026-09-09T12:00:00.000Z",
+        "timezone_basis": "global_utc_minus12_to_plus14",
+        "version_locator": "September 8 Samsung release: 12-inch photomask initiative and High-NA EUV DRAM volume manufacturing goal by 2028",
+        "note": "原文只确证日期，时区不明；保留完整50小时可能区间，端点不是实际发布时间。"
+      },
+      "capture_fingerprint": {
+        "record_id": "W14-V03",
+        "file_sha256": "5247e16d49df31821523476be1876b7811e62238abfd6168ef5033ac620296ba",
+        "completed_at": "2026-09-14T03:58:17.262Z",
+        "raw_local_only": true
+      }
+    },
+    "tsm": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000658/tsm-revenue20260910.htm",
+      "retrieved_at": "2026-09-14T04:01:16.523Z",
+      "basis": "filing",
+      "locator": "September 10 6-K exhibit monthly-revenue table (NT$ million): Aug 514806, +10.1% MoM/+53.3% YoY; Jan-Aug 3386870, +39.3%",
+      "claim_first_public_interval": {
+        "published_date": "2026-09-10",
+        "earliest": "2026-09-09T10:00:00.000Z",
+        "latest_exclusive": "2026-09-11T12:00:00.000Z",
+        "timezone_basis": "global_utc_minus12_to_plus14",
+        "version_locator": "September 10 6-K exhibit monthly-revenue table (NT$ million): Aug 514806, +10.1% MoM/+53.3% YoY; Jan-Aug 3386870, +39.3%",
+        "note": "原文只确证日期，时区不明；保留完整50小时可能区间，端点不是实际发布时间。"
+      },
+      "capture_fingerprint": {
+        "record_id": "W14-V11",
+        "file_sha256": "5b8208e7aba370a1588be91f0a57af002661a5b89b999fc76ab6e967586093e4",
+        "completed_at": "2026-09-14T04:01:16.523Z",
+        "raw_local_only": true
+      }
+    },
+    "sk-forum": {
+      "url": "https://news.skhynix.com/en/future-forum-2026/",
+      "retrieved_at": "2026-09-14T03:57:33.054Z",
+      "basis": "dated_release",
+      "locator": "September 9 account of September 8 Future Forum; strategic co-design discussion, not a verified new supply order",
+      "claim_first_public_interval": {
+        "published_date": "2026-09-09",
+        "earliest": "2026-09-08T10:00:00.000Z",
+        "latest_exclusive": "2026-09-10T12:00:00.000Z",
+        "timezone_basis": "global_utc_minus12_to_plus14",
+        "version_locator": "September 9 account of September 8 Future Forum; strategic co-design discussion, not a verified new supply order",
+        "note": "原文只确证日期，时区不明；保留完整50小时可能区间，端点不是实际发布时间。"
+      },
+      "capture_fingerprint": {
+        "record_id": "W14-V01",
+        "file_sha256": "3ca491a1e4c8107568500d1b2848e897b3448c9f55dc7303e11d6f2e44549dfc",
+        "completed_at": "2026-09-14T03:57:33.054Z",
+        "raw_local_only": true
+      }
+    }
+  },
+  "events": [
+    {
+      "id": "APL-DUO",
+      "companies": [
+        "Apple"
+      ],
+      "date": "2026-09-09",
+      "facts": [
+        {
+          "statement": "Apple发布首款折叠iPhone Duo，采用A20 Pro；美国起价1,999美元，预售和首批上市分别计划10月16日、10月23日。",
+          "source_ids": [
+            "duo"
+          ]
+        },
+        {
+          "statement": "Siri AI测试版计划9月14日起先支持英语，其他语言后续开放；这不是本周已交付手机或全面可用AI。",
+          "source_ids": [
+            "duo"
+          ]
+        }
+      ],
+      "impact": "新增高价产品形态，需求与供货仍待实际销售验证。",
+      "metrics": "预订、交付、产品组合、AI实际开放",
+      "condition": "按公告日程核对预售与交付，不把发布等同收入确认。",
+      "confidence": "官方发布；未来日期是计划，地区和语言限制保留。",
+      "headline": "首款折叠iPhone发布，交付在10月",
+      "claim_ids": [
+        "APL-DUO-1",
+        "APL-DUO-2"
+      ]
+    },
+    {
+      "id": "APL-PRO",
+      "companies": [
+        "Apple"
+      ],
+      "date": "2026-09-09",
+      "facts": [
+        {
+          "statement": "Apple发布iPhone 18 Pro/Pro Max，采用A20 Pro及可变光圈主摄；爱尔兰公告列9月12日预订、9月18日上市。",
+          "source_ids": [
+            "pro"
+          ]
+        }
+      ],
+      "impact": "主力高端机更新，与折叠机的交付节奏不同。",
+      "metrics": "高端产品组合、供货、毛利率",
+      "condition": "核对正式开售与公司后续经营披露；本期不推算销售量。",
+      "confidence": "官方爱尔兰公告；当地日期不外推为所有国家均已交付。",
+      "headline": "",
+      "claim_ids": [
+        "APL-PRO-1"
+      ]
+    },
+    {
+      "id": "MS-38GW",
+      "companies": [
+        "Microsoft"
+      ],
+      "date": "2026-09-10",
+      "facts": [
+        {
+          "statement": "Reuters转述Bloomberg匿名消息称，Microsoft计划2032年数据中心总容量达到约38GW，当前约12GW；公司未立即回应。",
+          "source_ids": [
+            "ms38"
+          ]
+        },
+        {
+          "statement": "该报道是远期总容量计划，不是已建成容量，也不是38GW全部专供AI。",
+          "source_ids": [
+            "ms38"
+          ]
+        }
+      ],
+      "impact": "若兑现将扩大长期基础设施负担，不能据此确认资本开支金额。",
+      "metrics": "投运容量、电力、资本投入、利用率",
+      "condition": "公司正式计划及分阶段投运。",
+      "confidence": "媒体转述匿名来源，尚非公司指引。",
+      "headline": "据报道谋划2032年38GW总容量",
+      "claim_ids": [
+        "MS-38GW-1",
+        "MS-38GW-2"
+      ]
+    },
+    {
+      "id": "MS-SCHOOL",
+      "companies": [
+        "Microsoft"
+      ],
+      "date": "2026-09-09",
+      "facts": [
+        {
+          "statement": "Microsoft与AFT、UFT公布学校AI安全及隐私标准；学区可将条款纳入Microsoft客户协议，学生和教育者数据不用于模型训练或出售。",
+          "source_ids": [
+            "school"
+          ]
+        },
+        {
+          "statement": "其约束力来自纳入后的合同，不是联邦新法律，也不代表所有学校已经采用。",
+          "source_ids": [
+            "school"
+          ]
+        }
+      ],
+      "impact": "采购与部署的合规条件更明确，采用规模仍待观察。",
+      "metrics": "学区采用、合同要求、数据治理",
+      "condition": "实际签约和条款执行。",
+      "confidence": "三方官方公告；不扩写未取得的合同救济细节。",
+      "headline": "",
+      "claim_ids": [
+        "MS-SCHOOL-1",
+        "MS-SCHOOL-2"
+      ]
+    },
+    {
+      "id": "GOO-FIN",
+      "companies": [
+        "Alphabet / Google"
+      ],
+      "date": "2026-09-09",
+      "facts": [
+        {
+          "statement": "Google宣布2027-2028年在芬兰至少投资130亿欧元，涉及Hamina、Kajaani、Muhos和Vaala的AI及数字基础设施。",
+          "source_ids": [
+            "fin"
+          ]
+        },
+        {
+          "statement": "130亿欧元是未来两年的地区投资承诺，不是2026年已支出或Alphabet财报收入。",
+          "source_ids": [
+            "fin"
+          ]
+        }
+      ],
+      "impact": "欧洲计算能力与长期资本需求上升，回报取决于建设和需求兑现。",
+      "metrics": "地区投资、建设进度、容量利用率",
+      "condition": "公司分期建设与资金支出披露。",
+      "confidence": "官方日期公告；不混入未经原财报核实的集团全年资本开支。",
+      "headline": "芬兰未来两年投资至少130亿欧元",
+      "claim_ids": [
+        "GOO-FIN-1",
+        "GOO-FIN-2"
+      ]
+    },
+    {
+      "id": "GOO-PPA",
+      "companies": [
+        "Alphabet / Google"
+      ],
+      "date": "2026-09-09",
+      "facts": [
+        {
+          "statement": "Fortum与Google签署22年核电购电协议：2028年以较小容量起步，2030-2049年覆盖Loviisa核电站50%的容量。",
+          "source_ids": [
+            "fortum"
+          ]
+        },
+        {
+          "statement": "这是未来购电安排，Fortum仍拥有电站；不是Google收购半座电站或本周已取得全部电力。",
+          "source_ids": [
+            "fortum"
+          ]
+        }
+      ],
+      "impact": "长期电力安排有助于计算基础设施部署，但交付仍在未来。",
+      "metrics": "供电比例、履约期、数据中心建设",
+      "condition": "2028年起供及2030年爬坡条件。",
+      "confidence": "交易对手官方内幕信息公告，有明确时区。",
+      "headline": "",
+      "claim_ids": [
+        "GOO-PPA-1",
+        "GOO-PPA-2"
+      ]
+    },
+    {
+      "id": "CA-YOUTH",
+      "companies": [
+        "Alphabet / Google",
+        "Meta",
+        "OpenAI"
+      ],
+      "date": "2026-09-10（签署）；09-11（成文版本发布）",
+      "facts": [
+        {
+          "statement": "加州签署AB1709和SB1119，分别涉及未成年人社交平台功能和伴侣聊天机器人安全。",
+          "source_ids": [
+            "ca"
+          ]
+        },
+        {
+          "statement": "AB1709限制向16岁以下用户提供成瘾功能，但允许不提供这些功能的账户；不是全面禁止未成年人使用社交平台。",
+          "source_ids": [
+            "ab1709"
+          ]
+        },
+        {
+          "statement": "SB1119的风险评估及相关儿童保护义务自2027年7月1日起分期实施；签署不等于本周全部义务已生效或已处罚具体公司。",
+          "source_ids": [
+            "sb1119"
+          ]
+        }
+      ],
+      "impact": "社交平台及符合定义的聊天机器人面临产品设计和合规调整；对各公司适用范围是本报分析，非个案执法结论。",
+      "metrics": "未成年人体验、年龄识别、风险评估、合规成本",
+      "condition": "具体服务是否落入法定定义，以及后续实施规则。",
+      "confidence": "州长公告及9月11日成文法版本；不把立法声明当法院事实认定。",
+      "headline": "加州签署社交平台及聊天机器人儿童保护法",
+      "claim_ids": [
+        "CA-YOUTH-1",
+        "CA-YOUTH-2",
+        "CA-YOUTH-3"
+      ]
+    },
+    {
+      "id": "AWS-ASTRA",
+      "companies": [
+        "Amazon / AWS"
+      ],
+      "date": "2026-09-08",
+      "facts": [
+        {
+          "statement": "Amazon在具日期更新中宣布GPT-6 Astra于Bedrock正式可用；推理数据不用于模型训练，使用该模型无需同意向OpenAI共享数据。",
+          "source_ids": [
+            "astra"
+          ]
+        },
+        {
+          "statement": "本周增量是Bedrock的GA阶段，不是Astra首次发布，更不是重新签订旧AWS/OpenAI算力协议。",
+          "source_ids": [
+            "astra"
+          ]
+        }
+      ],
+      "impact": "既有模型分发关系进入新的可用阶段，商业采用仍须观察。",
+      "metrics": "企业采用、分发渠道、服务使用条件",
+      "condition": "客户实际可用入口与使用量；不据GA推断全区域或合同收入。",
+      "confidence": "Amazon 9月8日独立段落，未使用4月旧协议作本周证据。",
+      "headline": "",
+      "claim_ids": [
+        "AWS-ASTRA-1",
+        "AWS-ASTRA-2"
+      ]
+    },
+    {
+      "id": "AWS-QUICK",
+      "companies": [
+        "Amazon / AWS"
+      ],
+      "date": "2026-09-09",
+      "facts": [
+        {
+          "statement": "Amazon Quick桌面应用在macOS和Windows正式可用，并推出iOS/Android活动流，整合待处理事项及跨设备工作。",
+          "source_ids": [
+            "quick"
+          ]
+        },
+        {
+          "statement": "9月9日更新才是本期增量；原文4月28日预览与当时连接器发布不重新计作本周新品。",
+          "source_ids": [
+            "quick"
+          ]
+        }
+      ],
+      "impact": "企业助手从预览走向更广部署，竞争焦点转向权限、可靠性和实际采用。",
+      "metrics": "企业采用、任务完成率、权限控制",
+      "condition": "正式部署与同任务表现，不能由客户引述推算收入。",
+      "confidence": "官方滚动页面的9月9日明确更新段。",
+      "headline": "Quick桌面版正式可用，新增移动活动流",
+      "claim_ids": [
+        "AWS-QUICK-1",
+        "AWS-QUICK-2"
+      ]
+    },
+    {
+      "id": "AWS-LABOR",
+      "companies": [
+        "Amazon / AWS"
+      ],
+      "date": "2026-09-08",
+      "facts": [
+        {
+          "statement": "Reuters报道四名前仓库员工在纽约布鲁克林联邦法院提出拟集体诉讼，指控Amazon系统性孕期歧视；责任和赔偿尚未裁定。",
+          "source_ids": [
+            "labor"
+          ]
+        },
+        {
+          "statement": "Amazon回应称相关说法存在遗漏或不准确，并称上年超过99.9%的孕期便利申请获批准；这是公司说法，不是法院认定。",
+          "source_ids": [
+            "labor"
+          ]
+        }
+      ],
+      "impact": "用工合规和诉讼风险值得跟踪，不能把请求赔偿计为已确认损失。",
+      "metrics": "诉讼程序、用工政策、或有负债",
+      "condition": "法院是否认证集体诉讼及后续实体裁决。",
+      "confidence": "Reuters正文含双方说法；未取得诉状原件，不认证未载细节。",
+      "headline": "",
+      "claim_ids": [
+        "AWS-LABOR-1",
+        "AWS-LABOR-2"
+      ]
+    },
+    {
+      "id": "META-MUSE",
+      "companies": [
+        "Meta"
+      ],
+      "date": "2026-09-08",
+      "facts": [
+        {
+          "statement": "Meta推出基于Muse Spark的Muse个人智能体，先在美国开放应用、网页及WhatsApp入口。",
+          "source_ids": [
+            "muse"
+          ]
+        },
+        {
+          "statement": "公司称通过Secure VM、Sentinel及敏感操作确认控制权限；仅用户持钥的Confidential VM仍是年内计划。",
+          "source_ids": [
+            "muse"
+          ]
+        },
+        {
+          "statement": "Reuters另报道内部测试出现监控和隐私错误；这些报道与公司安全主张需并列，不能宣称风险已解决。",
+          "source_ids": [
+            "muse-risk"
+          ]
+        }
+      ],
+      "impact": "从回答问题走向跨应用执行，潜在使用价值伴随权限和隐私风险。",
+      "metrics": "留存、任务可靠性、隐私事故、付费采用",
+      "condition": "实际开放范围、安全改善及后续Confidential VM交付。",
+      "confidence": "官方发布与Reuters反向材料；性能和安全保证不当作独立证实。",
+      "headline": "Muse进入个人智能体市场，安全限制仍重要",
+      "claim_ids": [
+        "META-MUSE-1",
+        "META-MUSE-2",
+        "META-MUSE-3"
+      ]
+    },
+    {
+      "id": "NV-DM",
+      "companies": [
+        "NVIDIA"
+      ],
+      "date": "2026-09-10",
+      "facts": [
+        {
+          "statement": "d-Matrix与NVIDIA宣布多年合作，将Raptor推理XPU接入NVLink Fusion和MGX机架体系。",
+          "source_ids": [
+            "dm",
+            "nv-dm"
+          ]
+        },
+        {
+          "statement": "d-Matrix预计Raptor年末前流片，集成机架初步供货目标为2027年第四季度；不是本周量产或已交付订单。",
+          "source_ids": [
+            "dm"
+          ]
+        }
+      ],
+      "impact": "NVIDIA互联平台向非自有加速器扩展，商业贡献需等待产品实现。",
+      "metrics": "接口采用、流片、机架交付、生态收入",
+      "condition": "Raptor流片及2027年第四季度初步供货进度。",
+      "confidence": "双方具日期公告；供货时间为预期，订单金额未披露。",
+      "headline": "d-Matrix采用NVLink Fusion，初步供货目标2027Q4",
+      "claim_ids": [
+        "NV-DM-1",
+        "NV-DM-2"
+      ]
+    },
+    {
+      "id": "NV-AU",
+      "companies": [
+        "NVIDIA"
+      ],
+      "date": "2026-09-09",
+      "facts": [
+        {
+          "statement": "NVIDIA宣布与澳大利亚数据中心生态合作，目标到2027年形成最高2GW、可承载DSX架构的基础设施容量。",
+          "source_ids": [
+            "nv-au"
+          ]
+        },
+        {
+          "statement": "土地、电力和建筑容量由当地伙伴建设运营；不是NVIDIA已拥有2GW在用算力，亦不是确定GPU订单。",
+          "source_ids": [
+            "nv-au"
+          ]
+        }
+      ],
+      "impact": "区域部署基础扩大，但数据中心容量与加速器交付必须分开。",
+      "metrics": "接电、建筑就绪、设备部署",
+      "condition": "伙伴实际交付和平台安装进度。",
+      "confidence": "NVIDIA公告；目标上限与伙伴运营属性保留。",
+      "headline": "",
+      "claim_ids": [
+        "NV-AU-1",
+        "NV-AU-2"
+      ]
+    },
+    {
+      "id": "NV-AN-IPO",
+      "companies": [
+        "NVIDIA",
+        "Anthropic"
+      ],
+      "date": "2026-09-11",
+      "facts": [
+        {
+          "statement": "Reuters援引匿名消息称Anthropic讨论最高1,000亿美元IPO融资及约2万亿美元估值，NVIDIA考虑最高100亿美元基石投资。",
+          "source_ids": [
+            "ipo"
+          ]
+        },
+        {
+          "statement": "讨论仍可能变化；Anthropic拒评，NVIDIA未立即回应。没有确认投资承诺、IPO完成或已到账资金。",
+          "source_ids": [
+            "ipo"
+          ]
+        }
+      ],
+      "impact": "若落实将影响融资结构和生态关系；现阶段不能当作资本到账或供应订单。",
+      "metrics": "招股文件、募资规模、估值、投资条件",
+      "condition": "正式文件及双方确认，不依据传闻计算确定持股比例。",
+      "confidence": "Reuters匿名来源，明确未定；不与旧投资额度合并。",
+      "headline": "NVIDIA据报洽谈参与Anthropic IPO，尚未落定",
+      "claim_ids": [
+        "NV-AN-IPO-1",
+        "NV-AN-IPO-2"
+      ]
+    },
+    {
+      "id": "OA-MATH",
+      "companies": [
+        "OpenAI"
+      ],
+      "date": "2026-09-08",
+      "facts": [
+        {
+          "statement": "OpenAI发布关于带外力、三维不可压缩恒密度Navier-Stokes方程有限时爆破的候选证明及形式化材料，指向千禧问题C/D表述。",
+          "source_ids": [
+            "math"
+          ]
+        },
+        {
+          "statement": "公司称使用能力强于公开GPT-6 Astra的内部模型；本报未独立复核证明，也未认证数学界正式认可，不写成公开Astra已独立解决全部Navier-Stokes问题。",
+          "source_ids": [
+            "math"
+          ]
+        }
+      ],
+      "impact": "显示公司正探索高难科学研究，但数学论证和通用产品价值不能直接等同。",
+      "metrics": "独立审查、可复现性、公开工具能力",
+      "condition": "数学专家及形式化代码的独立核验；无确定商业兑现日期。",
+      "confidence": "公司研究披露，非本报数学认证；保留强迫项及模型范围。",
+      "headline": "发布Navier-Stokes候选证明，独立核验仍待完成",
+      "claim_ids": [
+        "OA-MATH-1",
+        "OA-MATH-2"
+      ]
+    },
+    {
+      "id": "OA-AGENTS",
+      "companies": [
+        "OpenAI"
+      ],
+      "date": "2026-09-10",
+      "facts": [
+        {
+          "statement": "OpenAI发布Agents API公开测试版，提供托管Codex执行框架，并允许选择OpenAI或自有等沙箱环境。",
+          "source_ids": [
+            "agents"
+          ]
+        },
+        {
+          "statement": "API本身不另收服务费，但模型token及工具使用仍计费；公开测试不等于正式GA或整体免费。",
+          "source_ids": [
+            "agents"
+          ]
+        }
+      ],
+      "impact": "降低智能体基础设施接入工作，实际成本仍取决于任务用量和工具。",
+      "metrics": "开发者采用、成功任务成本、运行可靠性",
+      "condition": "固定工作负载表现及正式版使用条件。",
+      "confidence": "官方9月10日发布正文，未用后续滚动文档反推当日能力。",
+      "headline": "",
+      "claim_ids": [
+        "OA-AGENTS-1",
+        "OA-AGENTS-2"
+      ]
+    },
+    {
+      "id": "OA-PROBE",
+      "companies": [
+        "OpenAI"
+      ],
+      "date": "2026-09-10",
+      "facts": [
+        {
+          "statement": "AP报道参议员Hawley就7月Hugging Face事件向OpenAI发起调查问询；这是立法监督新进展，不是9月又发生一次入侵或法院已判违法。",
+          "source_ids": [
+            "probe"
+          ]
+        },
+        {
+          "statement": "OpenAI回应称已开展调查、发布报告并改进安全；本报未取得问询原件，不认证报道未载条款。",
+          "source_ids": [
+            "probe"
+          ]
+        }
+      ],
+      "impact": "安全事件进入进一步监督程序，治理与对外合作风险需持续观察。",
+      "metrics": "正式答复、信息安全措施、程序进展",
+      "condition": "公开问询及答复材料；不预填处罚或结案日期。",
+      "confidence": "AP当日报道，事实范围限已读正文。",
+      "headline": "Hugging Face旧事件进入参议院调查问询",
+      "claim_ids": [
+        "OA-PROBE-1",
+        "OA-PROBE-2"
+      ]
+    },
+    {
+      "id": "OA-POLICY",
+      "companies": [
+        "OpenAI"
+      ],
+      "date": "2026-09-09",
+      "facts": [
+        {
+          "statement": "OpenAI主张对高能力前沿AI实行基于能力的强制监管，并支持加州安全立法；行业自愿措施不能替代法律。",
+          "source_ids": [
+            "policy"
+          ]
+        },
+        {
+          "statement": "这是公司的政策立场，不是联邦法律已通过；本周州法签署另列，不能把获支持法案一概写成截止时仍待签署。",
+          "source_ids": [
+            "policy",
+            "ca"
+          ]
+        }
+      ],
+      "impact": "安全治理立场更明确，最终经营约束取决于立法和实施。",
+      "metrics": "法定义务、合规投入、发布条件",
+      "condition": "国会及监管机关正式规则，而非仅公司倡议。",
+      "confidence": "官方政策声明；不把表态等同有效法律。",
+      "headline": "",
+      "claim_ids": [
+        "OA-POLICY-1",
+        "OA-POLICY-2"
+      ]
+    },
+    {
+      "id": "AN-MISUSE",
+      "companies": [
+        "Anthropic"
+      ],
+      "date": "2026-09-10（披露）",
+      "facts": [
+        {
+          "statement": "Anthropic发布9月威胁情报报告，案例覆盖2025年12月至2026年8月，涉及网络、影响行动及其他滥用；公司称已中断所述行动。",
+          "source_ids": [
+            "misuse"
+          ]
+        },
+        {
+          "statement": "案例主要涉及Haiku、Sonnet及Opus；除一项蒸馏案例外不涉及Fable/Mythos。披露日在本周，案例并非全部本周发生。",
+          "source_ids": [
+            "misuse"
+          ]
+        }
+      ],
+      "impact": "滥用治理与披露能力影响企业和监管信任，防护成效仍属公司叙述。",
+      "metrics": "滥用趋势、防护响应、透明度",
+      "condition": "后续可验证处置结果和独立研究。",
+      "confidence": "公司报告及新闻入口日期；未独立验证攻击归因或全部处置。",
+      "headline": "",
+      "claim_ids": [
+        "AN-MISUSE-1",
+        "AN-MISUSE-2"
+      ]
+    },
+    {
+      "id": "AN-RESIGN",
+      "companies": [
+        "Anthropic"
+      ],
+      "date": "2026-09-08（宣布）；09-09（报道）",
+      "facts": [
+        {
+          "statement": "AP报道Anthropic研究员Jacob Coxon因安全分歧宣布离职，并表达对AI风险的个人担忧。",
+          "source_ids": [
+            "resign"
+          ]
+        },
+        {
+          "statement": "个人风险判断不是已证实的技术失控或确定灾难时间表。",
+          "source_ids": [
+            "resign"
+          ]
+        }
+      ],
+      "impact": "安全治理分歧可能影响人才与组织信任，不能据个人观点推断公司整体停止研发。",
+      "metrics": "核心人才、治理机制、官方后续说明",
+      "condition": "后续正式人员和治理披露。",
+      "confidence": "AP报道中的离职与个人观点分开，不把稿件发表时未回应外推至截止日。",
+      "headline": "",
+      "claim_ids": [
+        "AN-RESIGN-1",
+        "AN-RESIGN-2"
+      ]
+    },
+    {
+      "id": "SS-MISTRAL",
+      "companies": [
+        "Samsung Electronics"
+      ],
+      "date": "2026-09-09",
+      "facts": [
+        {
+          "statement": "Samsung与Mistral AI宣布战略合作，在半导体工程和制造场景采用本地部署的定制Mistral Large；Samsung称领投其Series D并取得战略权益，未披露金额。",
+          "source_ids": [
+            "mistral"
+          ]
+        },
+        {
+          "statement": "制造数据留在Samsung基础设施内；预期效率和良率改善不是本周已验证结果。",
+          "source_ids": [
+            "mistral"
+          ]
+        }
+      ],
+      "impact": "AI进入芯片研发和制造流程，效果取决于部署、数据治理及工程验证。",
+      "metrics": "部署进度、良率、工程效率、投资条款",
+      "condition": "实际应用和可核实经营指标；不自行补融资金额。",
+      "confidence": "Samsung官方公告，缺交易金额及独立收益数据。",
+      "headline": "与Mistral合作，将本地AI用于半导体流程",
+      "claim_ids": [
+        "SS-MISTRAL-1",
+        "SS-MISTRAL-2"
+      ]
+    },
+    {
+      "id": "SS-ASML",
+      "companies": [
+        "Samsung Electronics"
+      ],
+      "date": "2026-09-08",
+      "facts": [
+        {
+          "statement": "Samsung与ASML扩大合作，包含12英寸光掩模方案，并计划到2028年把High-NA EUV用于DRAM大批量制造。",
+          "source_ids": [
+            "asml"
+          ]
+        },
+        {
+          "statement": "12英寸指光掩模，不是晶圆尺寸创新；2028年目标不是现已量产或设备订单金额。",
+          "source_ids": [
+            "asml"
+          ]
+        }
+      ],
+      "impact": "先进存储制造路线推进，实施进度与经济性尚待验证。",
+      "metrics": "工艺验证、设备导入、量产时间",
+      "condition": "2028年目标前的验证及正式量产披露。",
+      "confidence": "Samsung公告，未披露设备数量和采购金额。",
+      "headline": "",
+      "claim_ids": [
+        "SS-ASML-1",
+        "SS-ASML-2"
+      ]
+    },
+    {
+      "id": "TSM-REV",
+      "companies": [
+        "TSMC"
+      ],
+      "date": "2026-09-10（披露8月营收）",
+      "facts": [
+        {
+          "statement": "TSMC披露2026年8月合并净营收514,806百万新台币，即5,148.06亿元新台币；环比2026年7月增10.1%，同比2025年8月增53.3%。",
+          "source_ids": [
+            "tsm"
+          ]
+        },
+        {
+          "statement": "2026年1-8月累计为3,386,870百万新台币，同比增39.3%；这不是9月营收或AI业务单独收入。",
+          "source_ids": [
+            "tsm"
+          ]
+        }
+      ],
+      "impact": "单月及累计营收增长，但不能从公司总数拆出AI贡献或直接推算利润率。",
+      "metrics": "月营收、累计营收、产能利用率",
+      "condition": "后续季度分项及利润率披露。",
+      "confidence": "SEC申报所附原表；采用百万新台币表头，不混用美元或下表千元口径。",
+      "headline": "8月营收同比增53.3%，财务期间与单位分列",
+      "claim_ids": [
+        "TSM-REV-1",
+        "TSM-REV-2"
+      ]
+    }
+  ],
+  "targets": {
+    "APL-DUO": [
+      "event:1",
+      "company:Apple",
+      "headline:1"
+    ],
+    "APL-PRO": [
+      "event:2",
+      "company:Apple"
+    ],
+    "MS-38GW": [
+      "event:3",
+      "company:Microsoft",
+      "headline:6"
+    ],
+    "MS-SCHOOL": [
+      "event:4",
+      "company:Microsoft"
+    ],
+    "GOO-FIN": [
+      "event:5",
+      "company:Alphabet / Google",
+      "headline:4"
+    ],
+    "GOO-PPA": [
+      "event:6",
+      "company:Alphabet / Google"
+    ],
+    "CA-YOUTH": [
+      "event:7",
+      "company:Alphabet / Google",
+      "event:11",
+      "company:Meta",
+      "event:16",
+      "company:OpenAI",
+      "headline:8"
+    ],
+    "AWS-ASTRA": [
+      "event:8",
+      "company:Amazon / AWS"
+    ],
+    "AWS-QUICK": [
+      "event:9",
+      "company:Amazon / AWS",
+      "headline:12"
+    ],
+    "AWS-LABOR": [
+      "event:10",
+      "company:Amazon / AWS"
+    ],
+    "META-MUSE": [
+      "event:12",
+      "company:Meta",
+      "headline:3"
+    ],
+    "NV-DM": [
+      "event:13",
+      "company:NVIDIA",
+      "headline:10"
+    ],
+    "NV-AU": [
+      "event:14",
+      "company:NVIDIA"
+    ],
+    "NV-AN-IPO": [
+      "event:15",
+      "company:NVIDIA",
+      "event:21",
+      "company:Anthropic",
+      "headline:5"
+    ],
+    "OA-MATH": [
+      "event:17",
+      "company:OpenAI",
+      "headline:2"
+    ],
+    "OA-AGENTS": [
+      "event:18",
+      "company:OpenAI"
+    ],
+    "OA-PROBE": [
+      "event:19",
+      "company:OpenAI",
+      "headline:9"
+    ],
+    "OA-POLICY": [
+      "event:20",
+      "company:OpenAI"
+    ],
+    "AN-MISUSE": [
+      "event:22",
+      "company:Anthropic"
+    ],
+    "AN-RESIGN": [
+      "event:23",
+      "company:Anthropic"
+    ],
+    "SS-MISTRAL": [
+      "event:24",
+      "company:Samsung Electronics",
+      "headline:11"
+    ],
+    "SS-ASML": [
+      "event:25",
+      "company:Samsung Electronics"
+    ],
+    "TSM-REV": [
+      "event:26",
+      "company:TSMC",
+      "headline:7"
+    ]
+  },
+  "priority": [
+    "APL-DUO",
+    "OA-MATH",
+    "META-MUSE",
+    "GOO-FIN",
+    "NV-AN-IPO",
+    "MS-38GW",
+    "TSM-REV",
+    "CA-YOUTH",
+    "OA-PROBE",
+    "NV-DM",
+    "SS-MISTRAL",
+    "AWS-QUICK"
+  ],
+  "analyses": [
+    [
+      "可用阶段比发布数量更重要。Astra的Bedrock GA、Quick桌面GA、Agents API beta与iPhone未来交付不是同一状态，不能合计为本周已实现收入。",
+      [
+        "AWS-ASTRA",
+        "AWS-QUICK",
+        "OA-AGENTS",
+        "APL-DUO"
+      ]
+    ],
+    [
+      "基础设施扩张要分清容量、投资和电力。芬兰投资承诺、Loviisa购电与澳大利亚伙伴2GW目标彼此不是同一金额或同一已交付资产；Microsoft计划仍属匿名报道。",
+      [
+        "GOO-FIN",
+        "GOO-PPA",
+        "NV-AU",
+        "MS-38GW"
+      ]
+    ],
+    [
+      "科学能力、安全和监管需分别验证。候选数学证明不等于独立定论，智能体安全承诺不等于零事故，州法签署和国会调查也不等于个案已处罚。",
+      [
+        "OA-MATH",
+        "META-MUSE",
+        "CA-YOUTH",
+        "OA-PROBE"
+      ]
+    ]
+  ],
+  "catalysts": [
+    [
+      "产品按期落地",
+      "按已公布日程观察iPhone 18 Pro及Duo交付；核对Agents API测试版实际表现",
+      "产品采用与成功任务成本",
+      [
+        "APL-PRO",
+        "APL-DUO",
+        "OA-AGENTS"
+      ]
+    ],
+    [
+      "融资及容量兑现",
+      "等待Anthropic正式融资文件、Microsoft容量指引及伙伴建设公告",
+      "资本承诺和长期回报；不预填完成日期",
+      [
+        "NV-AN-IPO",
+        "MS-38GW",
+        "NV-AU"
+      ]
+    ],
+    [
+      "治理和法律执行",
+      "等待州法实施细则、具体服务适用说明及OpenAI调查答复",
+      "合规成本、产品边界和治理可信度",
+      [
+        "CA-YOUTH",
+        "OA-PROBE"
+      ]
+    ],
+    [
+      "工艺及科研核验",
+      "跟踪Raptor流片、Samsung制造验证及候选证明独立审查",
+      "技术可行性与商业兑现；不是下周一定发生",
+      [
+        "NV-DM",
+        "SS-ASML",
+        "OA-MATH"
+      ]
+    ]
+  ],
+  "edgeEvents": {
+    "E20": "AWS-ASTRA",
+    "E32": "GOO-PPA",
+    "E33": "NV-DM",
+    "E34": "NV-AU",
+    "E35": "SS-MISTRAL",
+    "E36": "SS-ASML"
+  }
+}

@@ -4,6 +4,8 @@
 本脚本会检查 URL 是否可达或明确访问受限、来源域名分类、年度产品关系图来源是否
 纳入审计，并对带有 claim_keywords 的结构化事实做关键词匹配。关键词匹配不能替代
 人工事实判断，但能拦截“来源链接存在却完全不支持该事实”的常见错误。
+本脚本不核验首次公开时间、财报期间或网页历史版本；不得以 HTTP/关键词通过
+替代 validate_point_in_time.py 与 docs/point_in_time_policy.md 的逐条复核。
 """
 
 from __future__ import annotations
@@ -14,6 +16,7 @@ import hashlib
 import json
 import re
 import ssl
+import subprocess
 import sys
 import time
 import urllib.error
@@ -48,9 +51,20 @@ OFFICIAL_HOST_KEYWORDS = [
     "skhynix.com",
     "tsmc.com",
     "sec.gov",
+    "ftc.gov",
+    "nhtsa.gov",
     "aisi.gov.uk",
     "metr.org",
     "essilorluxottica.com",
+    "ec.europa.eu",
+    "curia.europa.eu",
+    "motir.go.kr",
+    "mn8.com",
+    "leginfo.legislature.ca.gov",
+    "gov.ca.gov",
+    "d-matrix.ai",
+    "fortum.com",
+    "googlecloudpresscorner.com",
 ]
 
 TIER1_MEDIA_HOST_KEYWORDS = [
@@ -67,6 +81,7 @@ TIER1_MEDIA_HOST_KEYWORDS = [
     "caixin.com",
     "axios.com",
     "barrons.com",
+    "cna.com.tw",
 ]
 
 TRADE_MEDIA_HOST_KEYWORDS = [
@@ -82,6 +97,15 @@ TRADE_MEDIA_HOST_KEYWORDS = [
     "top500.org",
     "boursorama.com",
     "marketscreener.com",
+    "macrumors.com",
+    "electrek.co",
+    "globalnews.ca",
+    "iclg.com",
+    "news.cision.com",
+    "tech.yahoo.com",
+    "law360.com",
+    "nasdaq.com",
+    "investing.com",
 ]
 
 ACCESS_LIMITED_STATUSES = {401, 403, 429}
@@ -144,6 +168,8 @@ def collect_claims(baseline_path: Path | None) -> list[dict[str, object]]:
 
 def classify_host(host: str) -> str:
     host = host.lower()
+    if host == "newsmediaalliance.org" or host.endswith(".newsmediaalliance.org"):
+        return "industry_association_statement"
     if any(host == key or host.endswith("." + key) for key in OFFICIAL_HOST_KEYWORDS):
         return "official_or_regulatory"
     if any(host == key or host.endswith("." + key) for key in TIER1_MEDIA_HOST_KEYWORDS):
@@ -195,6 +221,23 @@ def probe_url(url: str, timeout: int) -> dict[str, object]:
             if index < len(attempts) - 1:
                 time.sleep(0.5 * (index + 1))
 
+    # A different TLS client can recover a transport failure, not an HTTP denial.
+    if result["status"] is None and isinstance(last_error, urllib.error.URLError) and isinstance(last_error.reason, (ssl.SSLError, TimeoutError)):
+        result["prior_transport_error"] = f"{type(last_error).__name__}: {last_error}"
+        try:
+            fallback = subprocess.run(
+                ["curl", "--location", "--max-time", str(timeout), "--silent", "--show-error",
+                 "--output", "/dev/null", "--write-out", "%{http_code}", url],
+                capture_output=True, text=True, timeout=timeout + 2, check=False,
+            )
+            result["fallback_transport"] = "curl"
+            result["fallback_returncode"] = fallback.returncode
+            if fallback.returncode == 0 and re.fullmatch(r"[1-5][0-9]{2}", fallback.stdout.strip()):
+                result["status"] = int(fallback.stdout.strip())
+            else:
+                result["fallback_error"] = fallback.stderr.strip()
+        except (OSError, subprocess.TimeoutExpired) as exc:
+            result["fallback_error"] = f"{type(exc).__name__}: {exc}"
     if result["status"] is None:
         result["error"] = f"{type(last_error).__name__}: {last_error}"
         return result
@@ -329,6 +372,26 @@ def check_claims(
     return checked
 
 
+def reusable_audit(path: Path, report: Path, baseline: Path | None,
+                   product: Path | None, urls: list[str], claims: list[dict]) -> dict:
+    old = json.loads(path.read_text(encoding="utf-8"))
+    at = datetime.fromisoformat(old["generated_at"].replace("Z", "+00:00"))
+    if at.tzinfo is None or not 0 <= (datetime.now(timezone.utc) - at).total_seconds() <= 900:
+        raise ValueError("Resume audit must be from the preceding 15 minutes")
+    for key, source in (("report_sha256", report), ("baseline_sha256", baseline), ("product_graph_sha256", product)):
+        if old.get(key) != (sha256_file(source) if source else None):
+            raise ValueError("Resume audit input changed: " + key)
+    if old.get("audited_urls") != urls or [s.get("url") for s in old.get("sources", [])] != urls:
+        raise ValueError("Resume audit URL inventory changed")
+    prior_claims = old.get("claim_checks", [])
+    if len(prior_claims) != len(claims) or any(
+        any(prior.get(k) != value for k, value in claim.items())
+        for prior, claim in zip(prior_claims, claims)
+    ):
+        raise ValueError("Resume audit claim definitions changed")
+    return old
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--report", required=True)
@@ -337,14 +400,36 @@ def main() -> None:
     parser.add_argument("--output", required=True)
     parser.add_argument("--timeout", type=int, default=12)
     parser.add_argument("--strict", action="store_true")
+    parser.add_argument("--resume-audit", type=Path, help="Reuse only unchanged successful checks from an audit less than 15 minutes old")
     args = parser.parse_args()
 
     report_path = Path(args.report)
     baseline_path = Path(args.baseline) if args.baseline else None
     product_graph_path = Path(args.product_graph) if args.product_graph else None
     urls = collect_urls(report_path, baseline_path, product_graph_path)
-    audited = [probe_url(url, args.timeout) for url in urls]
-    claim_checks = check_claims(collect_claims(baseline_path), audited, args.timeout)
+    claims = collect_claims(baseline_path)
+    old = reusable_audit(args.resume_audit, report_path, baseline_path, product_graph_path, urls, claims) if args.resume_audit else None
+    previous_sources = {s["url"]: s for s in old["sources"]} if old else {}
+    previous_claims = {c["claim_id"]: c for c in old["claim_checks"]} if old else {}
+    audited = []
+    reused_urls = []
+    for url in urls:
+        previous = previous_sources.get(url)
+        if previous and previous.get("reachable") is True and not previous.get("error"):
+            audited.append({**previous, "source_class": classify_host(urllib.parse.urlparse(url).netloc)})
+            reused_urls.append(url)
+        else:
+            audited.append(probe_url(url, args.timeout))
+    claim_checks = []
+    reused_claims = []
+    text_cache = {}
+    for claim in claims:
+        previous = previous_claims.get(claim["claim_id"])
+        if previous and previous.get("matched") is True and previous.get("failed") is False and set(claim["source_urls"]) <= set(reused_urls):
+            claim_checks.append(previous)
+            reused_claims.append(claim["claim_id"])
+        else:
+            claim_checks.extend(check_claims([claim], audited, args.timeout, text_cache))
     summary = {
         "total": len(audited),
         "reachable": sum(1 for item in audited if item["reachable"]),
@@ -369,6 +454,11 @@ def main() -> None:
         "sources": audited,
         "claim_checks": claim_checks,
     }
+    if old:
+        payload["resume"] = {"path": str(args.resume_audit), "sha256": sha256_file(args.resume_audit),
+                             "previous_generated_at": old["generated_at"], "reused_urls": reused_urls,
+                             "reused_claims": reused_claims,
+                             "note": "Unchanged recent successful checks reused; failures re-probed, not overwritten as success."}
     output = Path(args.output)
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

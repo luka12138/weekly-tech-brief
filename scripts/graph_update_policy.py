@@ -4,9 +4,10 @@
 from __future__ import annotations
 
 import json
+import hashlib
 import re
 import subprocess
-from datetime import date
+from datetime import date, timedelta
 from pathlib import Path
 from typing import Any
 
@@ -292,6 +293,26 @@ def build_graph_plan(
     current_product = json.loads(product_file.read_text(encoding="utf-8"))
     previous_supply = load_head_json(root, baseline_file)
     previous_product = load_head_json(root, product_file)
+    snapshots = current_supply.get("comparison_snapshots")
+    if snapshots is not None:
+        if not isinstance(snapshots, dict) or set(snapshots) != {"supply", "product"}:
+            raise ValueError("comparison_snapshots must bind both prior graph inputs")
+        loaded = {}
+        for kind, binding in snapshots.items():
+            if not isinstance(binding, dict) or not isinstance(binding.get("path"), str):
+                raise ValueError("invalid comparison snapshot binding")
+            snapshot = (root / binding["path"]).resolve()
+            if not snapshot.is_relative_to((root / "archives").resolve()):
+                raise ValueError("comparison snapshot must remain inside archives")
+            raw = snapshot.read_bytes()
+            if hashlib.sha256(raw).hexdigest() != binding.get("sha256"):
+                raise ValueError("comparison snapshot hash mismatch")
+            loaded[kind] = json.loads(raw)
+            key = "generation_date" if kind == "supply" else "generated_for_report_date"
+            previous_date = str(loaded[kind].get(key, ""))
+            if previous_date != (report_date - timedelta(days=7)).isoformat():
+                raise ValueError("comparison snapshot must be the preceding report week")
+        previous_supply, previous_product = loaded["supply"], loaded["product"]
 
     latest_supply = latest_asset_date(root, "supply", report_date)
     latest_product = latest_asset_date(root, "product", report_date)

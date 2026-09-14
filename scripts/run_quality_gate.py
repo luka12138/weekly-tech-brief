@@ -11,6 +11,9 @@ import sys
 from pathlib import Path
 
 from graph_update_policy import build_graph_plan, extract_graph_asset_date, is_schema_v2
+from validate_point_in_time import check_report as check_point_in_time
+from validate_weekly_brief import preflight_report
+from validate_research_coverage import check_coverage
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -69,8 +72,10 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="运行图生成、来源审查、主校验和 diff 检查。")
     parser.add_argument("--report", help="周报路径；默认读取 reports/latest.md 指向的文件")
     parser.add_argument("--baseline", default="state/supply_graph_baseline.json")
+    parser.add_argument("--historical", action="store_true", help="只读校验指定历史周报、冻结状态及已生成图表；不改当前基线或 latest")
     parser.add_argument("--latest", default="reports/latest.md")
     parser.add_argument("--expected-report-date", help="期望周报日期，例如 2026-07-06")
+    parser.add_argument("--resume-source-audit", help="仅续用15分钟内、全部输入哈希未变的审查成功项，失败项重新检查")
     parser.add_argument("--require-clean-git", action="store_true", help="只检查工作区是否干净，不重新生成文件；适合提交/推送后复核")
     parser.add_argument("--require-pushed", action="store_true", help="只检查 HEAD 是否已推送到 origin/main，不重新生成文件；适合推送后复核")
     args = parser.parse_args()
@@ -84,10 +89,29 @@ def main() -> None:
     date = report_date(report)
     if args.expected_report_date and date != args.expected_report_date:
         raise SystemExit(f"错误：周报日期 {date} 与期望日期 {args.expected_report_date} 不一致")
+    if args.historical:
+        if not args.report or args.require_clean_git or args.require_pushed:
+            raise SystemExit("错误：历史校验必须明确 --report，且不与发布状态检查混用")
+        if report != (ROOT / "reports" / f"{date}_weekly_morning_brief.md").resolve():
+            raise SystemExit("错误：历史校验只接受项目中对应日期的规范报告路径")
+        run([sys.executable, "scripts/validate_historical_briefs.py", "--dates", date, "--require-source-audits"])
+        run(["git", "diff", "--check"])
+        print("历史展示版质量检查完成；不认证原报告日期的可得性")
+        return
     year = date[:4]
     baseline = Path(args.baseline)
     latest = Path(args.latest)
     product_graph = Path(f"state/product_relationships_{year}.json")
+    preflight_report(report, ROOT / baseline)
+    print("正文格式预检通过；继续完整取证与产物校验")
+    try:
+        print(check_coverage(report, ROOT / product_graph, ROOT))
+    except (ValueError, OSError, TypeError, KeyError, AttributeError) as exc:
+        raise SystemExit(f"错误：研究覆盖校验失败：{exc}") from exc
+    try:
+        print(check_point_in_time(report, ROOT / baseline, ROOT / product_graph))
+    except (ValueError, OSError, TypeError, AttributeError) as exc:
+        raise SystemExit(f"错误：时点证据校验失败：{exc}") from exc
     report_text = report.read_text(encoding="utf-8")
     schema_v2 = is_schema_v2(report_text)
     graph_plan = None
@@ -206,12 +230,13 @@ def main() -> None:
             str(product_graph),
             "--output",
             str(source_audit),
-            "--strict",
+                "--strict",
+                *(["--resume-audit", args.resume_source_audit] if args.resume_source_audit else []),
         ]
     )
     run(validator_command)
     run(["git", "diff", "--check"])
-    print("质量闸门全部通过")
+    print("质量闸门完成；legacy_unverified 不代表历史信息可得性已获认证")
 
 
 if __name__ == "__main__":

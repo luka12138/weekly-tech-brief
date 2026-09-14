@@ -1,0 +1,404 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3240" height="3670" viewBox="30 -20 3240 3670">
+<defs>
+<pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1e293b" stroke-width="0.6" stroke-opacity="0.38"/></pattern>
+<marker id="arrow-06bcfa879942a99a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#22c55e"/></marker>
+<marker id="arrow-2ef3b12970f9d637" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#38bdf8"/></marker>
+<marker id="arrow-75df7b9df85d4777" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b"/></marker>
+<marker id="arrow-1719c8c5c3aeab8e" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#f59e0b"/></marker>
+</defs>
+<rect x="30" y="-20" width="3240" height="3670" fill="#0b0f14"/>
+<rect x="30" y="-20" width="3240" height="3670" fill="url(#grid)"/>
+<g font-family="-apple-system, BlinkMacSystemFont, PingFang SC, Noto Sans CJK SC, Segoe UI, sans-serif">
+<rect x="80" y="320" width="580" height="1880" rx="8" fill="#22c55e" fill-opacity="0.045" stroke="#22c55e" stroke-opacity="0.52" stroke-width="2" stroke-dasharray="8 8"/>
+<text x="98" y="350" font-size="15" font-weight="700" fill="#22c55e">供应方 / 能力提供方</text>
+<rect x="720" y="320" width="580" height="1400" rx="8" fill="#8b5cf6" fill-opacity="0.045" stroke="#8b5cf6" stroke-opacity="0.52" stroke-width="2" stroke-dasharray="8 8"/>
+<text x="738" y="350" font-size="15" font-weight="700" fill="#8b5cf6">双重角色 / 覆盖公司</text>
+<rect x="1360" y="320" width="580" height="2520" rx="8" fill="#38bdf8" fill-opacity="0.045" stroke="#38bdf8" stroke-opacity="0.52" stroke-width="2" stroke-dasharray="8 8"/>
+<text x="1378" y="350" font-size="15" font-weight="700" fill="#38bdf8">客户 / 使用方</text>
+<path d="M 1010.0 500.0 C 1010.0 820.0, 1650.0 1200.0, 1650.0 1520.0" fill="none" stroke="#64748b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-75df7b9df85d4777)"/>
+<path d="M 620.0 1090.0 C 795.0 1090.0, 585.0 610.0, 760.0 610.0" fill="none" stroke="#64748b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-75df7b9df85d4777)"/>
+<path d="M 370.0 1680.0 C 370.0 1360.0, 1010.0 980.0, 1010.0 660.0" fill="none" stroke="#64748b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-75df7b9df85d4777)"/>
+<path d="M 1010.0 820.0 C 1010.0 1140.0, 1650.0 1360.0, 1650.0 1680.0" fill="none" stroke="#64748b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-75df7b9df85d4777)"/>
+<path d="M 760.0 1410.0 C 660.0 1410.0, 660.0 930.0, 760.0 930.0" fill="none" stroke="#64748b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-75df7b9df85d4777)"/>
+<path d="M 370.0 500.0 C 370.0 820.0, 1650.0 1680.0, 1650.0 2000.0" fill="none" stroke="#64748b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-75df7b9df85d4777)"/>
+<path d="M 1010.0 1140.0 C 1010.0 1460.0, 1650.0 2160.0, 1650.0 2480.0" fill="none" stroke="#64748b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-75df7b9df85d4777)"/>
+<path d="M 620.0 770.0 C 742.2 770.0, 637.8 1090.0, 760.0 1090.0" fill="none" stroke="#64748b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-75df7b9df85d4777)"/>
+<path d="M 1010.0 1520.0 C 1010.0 1200.0, 1650.0 1140.0, 1650.0 820.0" fill="none" stroke="#64748b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-75df7b9df85d4777)"/>
+<path d="M 620.0 610.0 C 940.0 610.0, 1080.0 1250.0, 1400.0 1250.0" fill="none" stroke="#64748b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-75df7b9df85d4777)"/>
+<path d="M 620.0 930.0 C 700.0 930.0, 680.0 1090.0, 760.0 1090.0" fill="none" stroke="#64748b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-75df7b9df85d4777)"/>
+<path d="M 620.0 930.0 C 795.0 930.0, 585.0 450.0, 760.0 450.0" fill="none" stroke="#64748b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-75df7b9df85d4777)"/>
+<path d="M 1010.0 1140.0 C 1010.0 1460.0, 1650.0 1840.0, 1650.0 2160.0" fill="none" stroke="#64748b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-75df7b9df85d4777)"/>
+<path d="M 1260.0 930.0 C 1360.0 930.0, 1360.0 1250.0, 1260.0 1250.0" fill="none" stroke="#64748b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-75df7b9df85d4777)"/>
+<path d="M 1260.0 930.0 C 1360.0 930.0, 1360.0 1410.0, 1260.0 1410.0" fill="none" stroke="#64748b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-75df7b9df85d4777)"/>
+<path d="M 1260.0 610.0 C 1340.0 610.0, 1320.0 610.0, 1400.0 610.0" fill="none" stroke="#64748b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-75df7b9df85d4777)"/>
+<path d="M 1260.0 1570.0 C 1340.0 1570.0, 1320.0 1410.0, 1400.0 1410.0" fill="none" stroke="#f59e0b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-1719c8c5c3aeab8e)"/>
+<path d="M 620.0 770.0 C 915.1 770.0, 1104.9 450.0, 1400.0 450.0" fill="none" stroke="#64748b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-75df7b9df85d4777)"/>
+<path d="M 370.0 820.0 C 370.0 1140.0, 1650.0 2000.0, 1650.0 2320.0" fill="none" stroke="#64748b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-75df7b9df85d4777)"/>
+<path d="M 760.0 1250.0 C 660.0 1250.0, 660.0 930.0, 760.0 930.0" fill="none" stroke="#38bdf8" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-2ef3b12970f9d637)"/>
+<path d="M 620.0 1410.0 C 700.0 1410.0, 680.0 1250.0, 760.0 1250.0" fill="none" stroke="#64748b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-75df7b9df85d4777)"/>
+<path d="M 1260.0 1090.0 C 1360.0 1090.0, 1360.0 1250.0, 1260.0 1250.0" fill="none" stroke="#64748b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-75df7b9df85d4777)"/>
+<path d="M 370.0 2000.0 C 370.0 1680.0, 1010.0 1620.0, 1010.0 1300.0" fill="none" stroke="#64748b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-75df7b9df85d4777)"/>
+<path d="M 760.0 1090.0 C 660.0 1090.0, 660.0 930.0, 760.0 930.0" fill="none" stroke="#64748b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-75df7b9df85d4777)"/>
+<path d="M 1260.0 1250.0 C 1382.2 1250.0, 1277.8 930.0, 1400.0 930.0" fill="none" stroke="#f59e0b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-1719c8c5c3aeab8e)"/>
+<path d="M 760.0 1410.0 C 660.0 1410.0, 660.0 610.0, 760.0 610.0" fill="none" stroke="#64748b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-75df7b9df85d4777)"/>
+<path d="M 760.0 1250.0 C 660.0 1250.0, 660.0 610.0, 760.0 610.0" fill="none" stroke="#64748b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-75df7b9df85d4777)"/>
+<path d="M 760.0 1410.0 C 660.0 1410.0, 660.0 770.0, 760.0 770.0" fill="none" stroke="#64748b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-75df7b9df85d4777)"/>
+<path d="M 760.0 930.0 C 660.0 930.0, 660.0 610.0, 760.0 610.0" fill="none" stroke="#64748b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-75df7b9df85d4777)" marker-start="url(#arrow-75df7b9df85d4777)"/>
+<path d="M 1010.0 1140.0 C 1010.0 1460.0, 1650.0 1520.0, 1650.0 1840.0" fill="none" stroke="#64748b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-75df7b9df85d4777)"/>
+<path d="M 370.0 1840.0 C 370.0 1520.0, 1010.0 1140.0, 1010.0 820.0" fill="none" stroke="#64748b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-75df7b9df85d4777)"/>
+<path d="M 370.0 1520.0 C 370.0 1200.0, 1010.0 1140.0, 1010.0 820.0" fill="none" stroke="#22c55e" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-06bcfa879942a99a)"/>
+<path d="M 1260.0 1090.0 C 1340.0 1090.0, 1320.0 1090.0, 1400.0 1090.0" fill="none" stroke="#22c55e" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-06bcfa879942a99a)"/>
+<path d="M 1318.9 1090.0 L 1318.9 990.0" fill="none" stroke="#22c55e" stroke-width="1" stroke-dasharray="3 3"/>
+<path d="M 1010.0 1140.0 C 1010.0 1460.0, 1650.0 2320.0, 1650.0 2640.0" fill="none" stroke="#22c55e" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-06bcfa879942a99a)"/>
+<path d="M 620.0 1730.0 C 700.0 1730.0, 680.0 1570.0, 760.0 1570.0" fill="none" stroke="#22c55e" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-06bcfa879942a99a)"/>
+<path d="M 620.0 1250.0 C 742.2 1250.0, 637.8 1570.0, 760.0 1570.0" fill="none" stroke="#22c55e" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-06bcfa879942a99a)"/>
+<g><title>本周供应关系图 · 2026-09-07 至 2026-09-13</title>
+<rect x="80" y="20" width="1700" height="90" rx="8" fill="#0b0f14" fill-opacity="0" stroke="#64748b" stroke-opacity="0" stroke-width="1.5"/>
+<text x="96" y="62" font-size="34" font-weight="750" fill="#f8fafc">本周供应关系图 · 2026-09-07 至 2026-09-13</text>
+</g>
+<g><title>绿色=本周新增 · 蓝色=本周强化 · 橙色=风险或媒体证据 · 灰色=基线无新增证据 · 边标签对应周报 6.2 与供应关系 JSON 的 Edge ID。</title>
+<rect x="80" y="160" width="1700" height="90" rx="8" fill="#111827" fill-opacity="0.94" stroke="#475569" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="96" y="188" font-size="13" font-weight="500" fill="#cbd5e1">绿色=本周新增 · 蓝色=本周强化 · 橙色=风险或媒体证据 · 灰色=基线无新增证据</text>
+<text x="96" y="209" font-size="13" font-weight="500" fill="#cbd5e1">边标签对应周报 6.2 与供应关系 JSON 的 Edge ID。</text>
+</g>
+<g><title>Meta · 覆盖公司 · 输出 1</title>
+<rect x="120" y="400" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#8b5cf6" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="136" y="428" font-size="16" font-weight="750" fill="#f8fafc">Meta</text>
+<text x="136" y="452" font-size="13" font-weight="500" fill="#cbd5e1">覆盖公司 · 输出 1</text>
+</g>
+<g><title>Tesla · 覆盖公司 · 输出 1</title>
+<rect x="120" y="560" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#8b5cf6" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="136" y="588" font-size="16" font-weight="750" fill="#f8fafc">Tesla</text>
+<text x="136" y="612" font-size="13" font-weight="500" fill="#cbd5e1">覆盖公司 · 输出 1</text>
+</g>
+<g><title>SK Hynix · 覆盖公司 · 输出 3</title>
+<rect x="120" y="720" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#8b5cf6" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="136" y="748" font-size="16" font-weight="750" fill="#f8fafc">SK Hynix</text>
+<text x="136" y="772" font-size="13" font-weight="500" fill="#cbd5e1">覆盖公司 · 输出 3</text>
+</g>
+<g><title>TSMC · 覆盖公司 · 输出 2</title>
+<rect x="120" y="880" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#8b5cf6" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="136" y="908" font-size="16" font-weight="750" fill="#f8fafc">TSMC</text>
+<text x="136" y="932" font-size="13" font-weight="500" fill="#cbd5e1">覆盖公司 · 输出 2</text>
+</g>
+<g><title>外部:AMD · 外部节点 · 输出 1</title>
+<rect x="120" y="1040" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#64748b" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="136" y="1068" font-size="16" font-weight="750" fill="#f8fafc">外部:AMD</text>
+<text x="136" y="1092" font-size="13" font-weight="500" fill="#cbd5e1">外部节点 · 输出 1</text>
+</g>
+<g><title>外部:ASML · 外部节点 · 输出 1</title>
+<rect x="120" y="1200" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#64748b" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="136" y="1228" font-size="16" font-weight="750" fill="#f8fafc">外部:ASML</text>
+<text x="136" y="1252" font-size="13" font-weight="500" fill="#cbd5e1">外部节点 · 输出 1</text>
+</g>
+<g><title>外部:Cerebras · 外部节点 · 输出 1</title>
+<rect x="120" y="1360" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#64748b" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="136" y="1388" font-size="16" font-weight="750" fill="#f8fafc">外部:Cerebras</text>
+<text x="136" y="1412" font-size="13" font-weight="500" fill="#cbd5e1">外部节点 · 输出 1</text>
+</g>
+<g><title>外部:Fortum · 外部节点 · 输出 1</title>
+<rect x="120" y="1520" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#64748b" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="136" y="1548" font-size="16" font-weight="750" fill="#f8fafc">外部:Fortum</text>
+<text x="136" y="1572" font-size="13" font-weight="500" fill="#cbd5e1">外部节点 · 输出 1</text>
+</g>
+<g><title>外部:Mistral · 外部节点 · 输出 2</title>
+<rect x="120" y="1680" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#64748b" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="136" y="1708" font-size="16" font-weight="750" fill="#f8fafc">外部:Mistral</text>
+<text x="136" y="1732" font-size="13" font-weight="500" fill="#cbd5e1">外部节点 · 输出 2</text>
+</g>
+<g><title>外部:MN8 Energy · 外部节点 · 输出 1</title>
+<rect x="120" y="1840" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#64748b" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="136" y="1868" font-size="16" font-weight="750" fill="#f8fafc">外部:MN8 Energy</text>
+<text x="136" y="1892" font-size="13" font-weight="500" fill="#cbd5e1">外部节点 · 输出 1</text>
+</g>
+<g><title>外部:SB Energy · 外部节点 · 输出 1</title>
+<rect x="120" y="2000" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#64748b" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="136" y="2028" font-size="16" font-weight="750" fill="#f8fafc">外部:SB Energy</text>
+<text x="136" y="2052" font-size="13" font-weight="500" fill="#cbd5e1">外部节点 · 输出 1</text>
+</g>
+<g><title>Apple · 覆盖公司 · 输出 1 · 输入 1</title>
+<rect x="760" y="400" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#8b5cf6" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="776" y="428" font-size="16" font-weight="750" fill="#f8fafc">Apple</text>
+<text x="776" y="452" font-size="13" font-weight="500" fill="#cbd5e1">覆盖公司 · 输出 1 · 输入 1</text>
+</g>
+<g><title>Microsoft · 覆盖公司 · 输出 1 · 输入 5</title>
+<rect x="760" y="560" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#8b5cf6" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="776" y="588" font-size="16" font-weight="750" fill="#f8fafc">Microsoft</text>
+<text x="776" y="612" font-size="13" font-weight="500" fill="#cbd5e1">覆盖公司 · 输出 1 · 输入 5</text>
+</g>
+<g><title>Alphabet / Google · 覆盖公司 · 输出 1 · 输入 3</title>
+<rect x="760" y="720" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#8b5cf6" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="776" y="748" font-size="16" font-weight="750" fill="#f8fafc">Alphabet / Google</text>
+<text x="776" y="772" font-size="13" font-weight="500" fill="#cbd5e1">覆盖公司 · 输出 1 · 输入 3</text>
+</g>
+<g><title>Amazon / AWS · 覆盖公司 · 输出 3 · 输入 3</title>
+<rect x="760" y="880" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#8b5cf6" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="776" y="908" font-size="16" font-weight="750" fill="#f8fafc">Amazon / AWS</text>
+<text x="776" y="932" font-size="13" font-weight="500" fill="#cbd5e1">覆盖公司 · 输出 3 · 输入 3</text>
+</g>
+<g><title>NVIDIA · 覆盖公司 · 输出 7 · 输入 2</title>
+<rect x="760" y="1040" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#8b5cf6" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="776" y="1068" font-size="16" font-weight="750" fill="#f8fafc">NVIDIA</text>
+<text x="776" y="1092" font-size="13" font-weight="500" fill="#cbd5e1">覆盖公司 · 输出 7 · 输入 2</text>
+</g>
+<g><title>OpenAI · 覆盖公司 · 输出 3 · 输入 4</title>
+<rect x="760" y="1200" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#8b5cf6" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="776" y="1228" font-size="16" font-weight="750" fill="#f8fafc">OpenAI</text>
+<text x="776" y="1252" font-size="13" font-weight="500" fill="#cbd5e1">覆盖公司 · 输出 3 · 输入 4</text>
+</g>
+<g><title>Anthropic · 覆盖公司 · 输出 3 · 输入 1</title>
+<rect x="760" y="1360" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#8b5cf6" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="776" y="1388" font-size="16" font-weight="750" fill="#f8fafc">Anthropic</text>
+<text x="776" y="1412" font-size="13" font-weight="500" fill="#cbd5e1">覆盖公司 · 输出 3 · 输入 1</text>
+</g>
+<g><title>Samsung Electronics · 覆盖公司 · 输出 2 · 输入 2</title>
+<rect x="760" y="1520" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#8b5cf6" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="776" y="1548" font-size="16" font-weight="750" fill="#f8fafc">Samsung Electronics</text>
+<text x="776" y="1572" font-size="13" font-weight="500" fill="#cbd5e1">覆盖公司 · 输出 2 · 输入 2</text>
+</g>
+<g><title>外部:Around ten unnamed key memory customers · 外部节点 · 输入 1</title>
+<rect x="1400" y="400" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#64748b" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="1416" y="428" font-size="16" font-weight="750" fill="#f8fafc">外部:Around ten unnamed key memory customers</text>
+<text x="1416" y="452" font-size="13" font-weight="500" fill="#cbd5e1">外部节点 · 输入 1</text>
+</g>
+<g><title>外部:Azure and Copilot customers · 外部节点 · 输入 1</title>
+<rect x="1400" y="560" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#64748b" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="1416" y="588" font-size="16" font-weight="750" fill="#f8fafc">外部:Azure and Copilot customers</text>
+<text x="1416" y="612" font-size="13" font-weight="500" fill="#cbd5e1">外部节点 · 输入 1</text>
+</g>
+<g><title>外部:Broadcom · 外部节点 · 输入 1</title>
+<rect x="1400" y="720" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#64748b" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="1416" y="748" font-size="16" font-weight="750" fill="#f8fafc">外部:Broadcom</text>
+<text x="1416" y="772" font-size="13" font-weight="500" fill="#cbd5e1">外部节点 · 输入 1</text>
+</g>
+<g><title>外部:Cursor · 外部节点 · 输入 1</title>
+<rect x="1400" y="880" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#64748b" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="1416" y="908" font-size="16" font-weight="750" fill="#f8fafc">外部:Cursor</text>
+<text x="1416" y="932" font-size="13" font-weight="500" fill="#cbd5e1">外部节点 · 输入 1</text>
+</g>
+<g><title>外部:d-Matrix · 外部节点 · 输入 1</title>
+<rect x="1400" y="1040" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#64748b" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="1416" y="1068" font-size="16" font-weight="750" fill="#f8fafc">外部:d-Matrix</text>
+<text x="1416" y="1092" font-size="13" font-weight="500" fill="#cbd5e1">外部节点 · 输入 1</text>
+</g>
+<g><title>外部:EV and energy storage customers · 外部节点 · 输入 1</title>
+<rect x="1400" y="1200" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#64748b" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="1416" y="1228" font-size="16" font-weight="750" fill="#f8fafc">外部:EV and energy storage customers</text>
+<text x="1416" y="1252" font-size="13" font-weight="500" fill="#cbd5e1">外部节点 · 输入 1</text>
+</g>
+<g><title>外部:Five unnamed global data-center customers · 外部节点 · 输入 1</title>
+<rect x="1400" y="1360" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#64748b" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="1416" y="1388" font-size="16" font-weight="750" fill="#f8fafc">外部:Five unnamed global data-center customers</text>
+<text x="1416" y="1412" font-size="13" font-weight="500" fill="#cbd5e1">外部节点 · 输入 1</text>
+</g>
+<g><title>外部:Ford · 外部节点 · 输入 1</title>
+<rect x="1400" y="1520" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#64748b" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="1416" y="1548" font-size="16" font-weight="750" fill="#f8fafc">外部:Ford</text>
+<text x="1416" y="1572" font-size="13" font-weight="500" fill="#cbd5e1">外部节点 · 输入 1</text>
+</g>
+<g><title>外部:Google Cloud customers · 外部节点 · 输入 1</title>
+<rect x="1400" y="1680" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#64748b" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="1416" y="1708" font-size="16" font-weight="750" fill="#f8fafc">外部:Google Cloud customers</text>
+<text x="1416" y="1732" font-size="13" font-weight="500" fill="#cbd5e1">外部节点 · 输入 1</text>
+</g>
+<g><title>外部:MediaTek · 外部节点 · 输入 1</title>
+<rect x="1400" y="1840" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#64748b" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="1416" y="1868" font-size="16" font-weight="750" fill="#f8fafc">外部:MediaTek</text>
+<text x="1416" y="1892" font-size="13" font-weight="500" fill="#cbd5e1">外部节点 · 输入 1</text>
+</g>
+<g><title>外部:Meta users and advertisers · 外部节点 · 输入 1</title>
+<rect x="1400" y="2000" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#64748b" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="1416" y="2028" font-size="16" font-weight="750" fill="#f8fafc">外部:Meta users and advertisers</text>
+<text x="1416" y="2052" font-size="13" font-weight="500" fill="#cbd5e1">外部节点 · 输入 1</text>
+</g>
+<g><title>外部:Safe Superintelligence · 外部节点 · 输入 1</title>
+<rect x="1400" y="2160" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#64748b" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="1416" y="2188" font-size="16" font-weight="750" fill="#f8fafc">外部:Safe Superintelligence</text>
+<text x="1416" y="2212" font-size="13" font-weight="500" fill="#cbd5e1">外部节点 · 输入 1</text>
+</g>
+<g><title>外部:Sandisk · 外部节点 · 输入 1</title>
+<rect x="1400" y="2320" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#64748b" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="1416" y="2348" font-size="16" font-weight="750" fill="#f8fafc">外部:Sandisk</text>
+<text x="1416" y="2372" font-size="13" font-weight="500" fill="#cbd5e1">外部节点 · 输入 1</text>
+</g>
+<g><title>外部:SK Group / SK Telecom · 外部节点 · 输入 1</title>
+<rect x="1400" y="2480" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#64748b" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="1416" y="2508" font-size="16" font-weight="750" fill="#f8fafc">外部:SK Group / SK Telecom</text>
+<text x="1416" y="2532" font-size="13" font-weight="500" fill="#cbd5e1">外部节点 · 输入 1</text>
+</g>
+<g><title>外部:澳大利亚数据中心合作生态 · 外部节点 · 输入 1</title>
+<rect x="1400" y="2640" width="500" height="100" rx="8" fill="#111827" fill-opacity="0.94" stroke="#64748b" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="1416" y="2668" font-size="16" font-weight="750" fill="#f8fafc">外部:澳大利亚数据中心合作生态</text>
+<text x="1416" y="2692" font-size="13" font-weight="500" fill="#cbd5e1">外部节点 · 输入 1</text>
+</g>
+<g><title>关系索引 ·  · E01 · Apple → 外部:Ford · Apple Maps EV routing and in-vehicle navigation for Ford Universal EV Platform ·  · E02 · 外部:AMD → Microsoft · AMD Helios, ND MI455X v7 and EPYC for Azure AI and HPC infrastructure ·  · E03 · 外部:Mistral → Microsoft · Frontier AI model services for enterprises and regulated industries ·  · E04 · Alphabet / Google → 外部:Google Cloud customers · Google Cloud AI services, TPU pods and cloud infrastructure ·  · E05 · Anthropic → Amazon / AWS · Claude models including Fable 5.1 available on Amazon Bedrock and Claude Platform on AWS ·  · E06 · Meta → 外部:Meta users and advertisers · Facebook, Instagram, WhatsApp, Threads and advertising systems ·  · E07 · NVIDIA → 外部:SK Group / SK Telecom · NVIDIA AI infrastructure for AI factories and SK Telecom AI infrastructure ·  · E08 · SK Hynix → NVIDIA · HBM and next-generation AI memory ecosystem</title>
+<rect x="80" y="2940" width="580" height="650" rx="8" fill="#111827" fill-opacity="0.97" stroke="#334155" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="96" y="2968" font-size="20" font-weight="750" fill="#f8fafc">关系索引</text>
+<text x="96" y="3010" font-size="13" font-weight="500" fill="#cbd5e1">E01 · Apple → 外部:Ford</text>
+<text x="96" y="3031" font-size="13" font-weight="500" fill="#cbd5e1">Apple Maps EV routing and in-vehicle navigation for Ford Universal EV Platform</text>
+<text x="96" y="3066" font-size="13" font-weight="500" fill="#cbd5e1">E02 · 外部:AMD → Microsoft</text>
+<text x="96" y="3087" font-size="13" font-weight="500" fill="#cbd5e1">AMD Helios, ND MI455X v7 and EPYC for Azure AI and HPC infrastructure</text>
+<text x="96" y="3122" font-size="13" font-weight="500" fill="#cbd5e1">E03 · 外部:Mistral → Microsoft</text>
+<text x="96" y="3143" font-size="13" font-weight="500" fill="#cbd5e1">Frontier AI model services for enterprises and regulated industries</text>
+<text x="96" y="3178" font-size="13" font-weight="500" fill="#cbd5e1">E04 · Alphabet / Google → 外部:Google Cloud customers</text>
+<text x="96" y="3199" font-size="13" font-weight="500" fill="#cbd5e1">Google Cloud AI services, TPU pods and cloud infrastructure</text>
+<text x="96" y="3234" font-size="13" font-weight="500" fill="#cbd5e1">E05 · Anthropic → Amazon / AWS</text>
+<text x="96" y="3255" font-size="13" font-weight="500" fill="#cbd5e1">Claude models including Fable 5.1 available on Amazon Bedrock and Claude</text>
+<text x="96" y="3276" font-size="13" font-weight="500" fill="#cbd5e1">Platform on AWS</text>
+<text x="96" y="3311" font-size="13" font-weight="500" fill="#cbd5e1">E06 · Meta → 外部:Meta users and advertisers</text>
+<text x="96" y="3332" font-size="13" font-weight="500" fill="#cbd5e1">Facebook, Instagram, WhatsApp, Threads and advertising systems</text>
+<text x="96" y="3367" font-size="13" font-weight="500" fill="#cbd5e1">E07 · NVIDIA → 外部:SK Group / SK Telecom</text>
+<text x="96" y="3388" font-size="13" font-weight="500" fill="#cbd5e1">NVIDIA AI infrastructure for AI factories and SK Telecom AI infrastructure</text>
+<text x="96" y="3423" font-size="13" font-weight="500" fill="#cbd5e1">E08 · SK Hynix → NVIDIA</text>
+<text x="96" y="3444" font-size="13" font-weight="500" fill="#cbd5e1">HBM and next-generation AI memory ecosystem</text>
+</g>
+<g><title>关系索引 ·  · E09 · Samsung Electronics → 外部:Broadcom · HBM, 2nm-and-below foundry and 2.3D/2.5D advanced packaging ·  · E10 · Tesla → 外部:EV and energy storage customers · Electric vehicles, energy storage systems and energy services ·  · E11 · TSMC → NVIDIA · Advanced-node foundry and advanced packaging for AI GPUs ·  · E12 · TSMC → Apple · Advanced-node foundry for Apple A-series and M-series chips ·  · E13 · NVIDIA → 外部:Safe Superintelligence · Vera Rubin systems, long-term compute access and compute-platform co-development ·  · E14 · Amazon / AWS → OpenAI · Trainium-based multi-year, multi-gigawatt AI compute commitment ·  · E15 · Amazon / AWS → Anthropic · Trainium-based multi-year, multi-gigawatt AI compute commitment ·  · E16 · Microsoft → 外部:Azure and Copilot customers · Azure cloud and AI services plus Microsoft 365 Copilot</title>
+<rect x="720" y="2940" width="580" height="650" rx="8" fill="#111827" fill-opacity="0.97" stroke="#334155" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="736" y="2968" font-size="20" font-weight="750" fill="#f8fafc">关系索引</text>
+<text x="736" y="3010" font-size="13" font-weight="500" fill="#cbd5e1">E09 · Samsung Electronics → 外部:Broadcom</text>
+<text x="736" y="3031" font-size="13" font-weight="500" fill="#cbd5e1">HBM, 2nm-and-below foundry and 2.3D/2.5D advanced packaging</text>
+<text x="736" y="3066" font-size="13" font-weight="500" fill="#cbd5e1">E10 · Tesla → 外部:EV and energy storage customers</text>
+<text x="736" y="3087" font-size="13" font-weight="500" fill="#cbd5e1">Electric vehicles, energy storage systems and energy services</text>
+<text x="736" y="3122" font-size="13" font-weight="500" fill="#cbd5e1">E11 · TSMC → NVIDIA</text>
+<text x="736" y="3143" font-size="13" font-weight="500" fill="#cbd5e1">Advanced-node foundry and advanced packaging for AI GPUs</text>
+<text x="736" y="3178" font-size="13" font-weight="500" fill="#cbd5e1">E12 · TSMC → Apple</text>
+<text x="736" y="3199" font-size="13" font-weight="500" fill="#cbd5e1">Advanced-node foundry for Apple A-series and M-series chips</text>
+<text x="736" y="3234" font-size="13" font-weight="500" fill="#cbd5e1">E13 · NVIDIA → 外部:Safe Superintelligence</text>
+<text x="736" y="3255" font-size="13" font-weight="500" fill="#cbd5e1">Vera Rubin systems, long-term compute access and compute-platform</text>
+<text x="736" y="3276" font-size="13" font-weight="500" fill="#cbd5e1">co-development</text>
+<text x="736" y="3311" font-size="13" font-weight="500" fill="#cbd5e1">E14 · Amazon / AWS → OpenAI</text>
+<text x="736" y="3332" font-size="13" font-weight="500" fill="#cbd5e1">Trainium-based multi-year, multi-gigawatt AI compute commitment</text>
+<text x="736" y="3367" font-size="13" font-weight="500" fill="#cbd5e1">E15 · Amazon / AWS → Anthropic</text>
+<text x="736" y="3388" font-size="13" font-weight="500" fill="#cbd5e1">Trainium-based multi-year, multi-gigawatt AI compute commitment</text>
+<text x="736" y="3423" font-size="13" font-weight="500" fill="#cbd5e1">E16 · Microsoft → 外部:Azure and Copilot customers</text>
+<text x="736" y="3444" font-size="13" font-weight="500" fill="#cbd5e1">Azure cloud and AI services plus Microsoft 365 Copilot</text>
+</g>
+<g><title>关系索引 ·  · E17 · Samsung Electronics → 外部:Five unnamed global data-center customers · Long-term server-memory and AI-infrastructure chip supply contracts ·  · E18 · SK Hynix → 外部:Around ten unnamed key memory customers · HBM4, AI server DRAM, eSSD and long-term supply agreements ·  · E19 · SK Hynix → 外部:Sandisk · First open High Bandwidth Flash standard specification for AI inference memory tiers ·  · E20 · OpenAI → Amazon / AWS · GPT-6 Astra在Amazon Bedrock正式可用 ·  · E21 · 外部:Cerebras → OpenAI · Cerebras-powered GPT-5.6 Sol Ultrafast inference at up to 750 output tokens per second ·  · E22 · NVIDIA → OpenAI · NVIDIA DSX full-stack AI compute for approximately 8 IT-GW at PORTS-Pike ·  · E23 · 外部:SB Energy → OpenAI · Land, power and shell capacity for approximately 8 IT-GW under a 20-year lease ·  · E24 · NVIDIA → Amazon / AWS · Two million additional Blackwell Ultra, Rubin and Rubin Ultra GPUs for AWS global infrastructure in 2027-2028</title>
+<rect x="1360" y="2940" width="580" height="650" rx="8" fill="#111827" fill-opacity="0.97" stroke="#334155" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="1376" y="2968" font-size="20" font-weight="750" fill="#f8fafc">关系索引</text>
+<text x="1376" y="3010" font-size="13" font-weight="500" fill="#cbd5e1">E17 · Samsung Electronics → 外部:Five unnamed global data-center customers</text>
+<text x="1376" y="3031" font-size="13" font-weight="500" fill="#cbd5e1">Long-term server-memory and AI-infrastructure chip supply contracts</text>
+<text x="1376" y="3066" font-size="13" font-weight="500" fill="#cbd5e1">E18 · SK Hynix → 外部:Around ten unnamed key memory customers</text>
+<text x="1376" y="3087" font-size="13" font-weight="500" fill="#cbd5e1">HBM4, AI server DRAM, eSSD and long-term supply agreements</text>
+<text x="1376" y="3122" font-size="13" font-weight="500" fill="#cbd5e1">E19 · SK Hynix → 外部:Sandisk</text>
+<text x="1376" y="3143" font-size="13" font-weight="500" fill="#cbd5e1">First open High Bandwidth Flash standard specification for AI inference</text>
+<text x="1376" y="3164" font-size="13" font-weight="500" fill="#cbd5e1">memory tiers</text>
+<text x="1376" y="3199" font-size="13" font-weight="500" fill="#cbd5e1">E20 · OpenAI → Amazon / AWS</text>
+<text x="1376" y="3220" font-size="13" font-weight="500" fill="#cbd5e1">GPT-6 Astra在Amazon Bedrock正式可用</text>
+<text x="1376" y="3255" font-size="13" font-weight="500" fill="#cbd5e1">E21 · 外部:Cerebras → OpenAI</text>
+<text x="1376" y="3276" font-size="13" font-weight="500" fill="#cbd5e1">Cerebras-powered GPT-5.6 Sol Ultrafast inference at up to 750 output tokens</text>
+<text x="1376" y="3297" font-size="13" font-weight="500" fill="#cbd5e1">per second</text>
+<text x="1376" y="3332" font-size="13" font-weight="500" fill="#cbd5e1">E22 · NVIDIA → OpenAI</text>
+<text x="1376" y="3353" font-size="13" font-weight="500" fill="#cbd5e1">NVIDIA DSX full-stack AI compute for approximately 8 IT-GW at PORTS-Pike</text>
+<text x="1376" y="3388" font-size="13" font-weight="500" fill="#cbd5e1">E23 · 外部:SB Energy → OpenAI</text>
+<text x="1376" y="3409" font-size="13" font-weight="500" fill="#cbd5e1">Land, power and shell capacity for approximately 8 IT-GW under a 20-year lease</text>
+<text x="1376" y="3444" font-size="13" font-weight="500" fill="#cbd5e1">E24 · NVIDIA → Amazon / AWS</text>
+<text x="1376" y="3465" font-size="13" font-weight="500" fill="#cbd5e1">Two million additional Blackwell Ultra, Rubin and Rubin Ultra GPUs for AWS</text>
+<text x="1376" y="3486" font-size="13" font-weight="500" fill="#cbd5e1">global infrastructure in 2027-2028</text>
+</g>
+<g><title>关系索引 ·  · E25 · OpenAI → 外部:Cursor · OpenAI model access in Cursor, with a proposed service shutoff on 2026-11-12 ·  · E26 · Anthropic → Microsoft · Claude Fable 5.1 in Copilot Cowork, Copilot Studio and GitHub Copilot ·  · E27 · OpenAI → Microsoft · GPT-6 Astra phased distribution through Microsoft Azure ·  · E28 · Anthropic → Alphabet / Google · Claude Fable 5.1 distribution through Google Cloud Agent Platform ·  · E29 · Amazon / AWS → Microsoft · AWS / Azure 双向云互联公开预览，非已确认采购 ·  · E30 · NVIDIA → 外部:MediaTek · NVLink Fusion 计划采用及多代平台合作，尚非量产交付 ·  · E31 · 外部:MN8 Energy → Alphabet / Google · 西弗吉尼亚太阳能及储能的未来能源/容量供应安排 ·  · E32 · 外部:Fortum → Alphabet / Google · 22年Loviisa核电购电协议，2028年起供</title>
+<rect x="2000" y="2940" width="580" height="650" rx="8" fill="#111827" fill-opacity="0.97" stroke="#334155" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="2016" y="2968" font-size="20" font-weight="750" fill="#f8fafc">关系索引</text>
+<text x="2016" y="3010" font-size="13" font-weight="500" fill="#cbd5e1">E25 · OpenAI → 外部:Cursor</text>
+<text x="2016" y="3031" font-size="13" font-weight="500" fill="#cbd5e1">OpenAI model access in Cursor, with a proposed service shutoff on 2026-11-12</text>
+<text x="2016" y="3066" font-size="13" font-weight="500" fill="#cbd5e1">E26 · Anthropic → Microsoft</text>
+<text x="2016" y="3087" font-size="13" font-weight="500" fill="#cbd5e1">Claude Fable 5.1 in Copilot Cowork, Copilot Studio and GitHub Copilot</text>
+<text x="2016" y="3122" font-size="13" font-weight="500" fill="#cbd5e1">E27 · OpenAI → Microsoft</text>
+<text x="2016" y="3143" font-size="13" font-weight="500" fill="#cbd5e1">GPT-6 Astra phased distribution through Microsoft Azure</text>
+<text x="2016" y="3178" font-size="13" font-weight="500" fill="#cbd5e1">E28 · Anthropic → Alphabet / Google</text>
+<text x="2016" y="3199" font-size="13" font-weight="500" fill="#cbd5e1">Claude Fable 5.1 distribution through Google Cloud Agent Platform</text>
+<text x="2016" y="3234" font-size="13" font-weight="500" fill="#cbd5e1">E29 · Amazon / AWS → Microsoft</text>
+<text x="2016" y="3255" font-size="13" font-weight="500" fill="#cbd5e1">AWS / Azure 双向云互联公开预览，非已确认采购</text>
+<text x="2016" y="3290" font-size="13" font-weight="500" fill="#cbd5e1">E30 · NVIDIA → 外部:MediaTek</text>
+<text x="2016" y="3311" font-size="13" font-weight="500" fill="#cbd5e1">NVLink Fusion 计划采用及多代平台合作，尚非量产交付</text>
+<text x="2016" y="3346" font-size="13" font-weight="500" fill="#cbd5e1">E31 · 外部:MN8 Energy → Alphabet / Google</text>
+<text x="2016" y="3367" font-size="13" font-weight="500" fill="#cbd5e1">西弗吉尼亚太阳能及储能的未来能源/容量供应安排</text>
+<text x="2016" y="3402" font-size="13" font-weight="500" fill="#cbd5e1">E32 · 外部:Fortum → Alphabet / Google</text>
+<text x="2016" y="3423" font-size="13" font-weight="500" fill="#cbd5e1">22年Loviisa核电购电协议，2028年起供</text>
+</g>
+<g><title>关系索引 ·  · E33 · NVIDIA → 外部:d-Matrix · NVLink Fusion与MGX接入Raptor XPU的计划 ·  · E34 · NVIDIA → 外部:澳大利亚数据中心合作生态 · DSX架构部署合作，最高2GW基础设施目标 ·  · E35 · 外部:Mistral → Samsung Electronics · 本地定制Mistral Large用于半导体流程 ·  · E36 · 外部:ASML → Samsung Electronics · High-NA EUV与12英寸光掩模合作</title>
+<rect x="2640" y="2940" width="580" height="370" rx="8" fill="#111827" fill-opacity="0.97" stroke="#334155" stroke-opacity="0.78" stroke-width="1.5"/>
+<text x="2656" y="2968" font-size="20" font-weight="750" fill="#f8fafc">关系索引</text>
+<text x="2656" y="3010" font-size="13" font-weight="500" fill="#cbd5e1">E33 · NVIDIA → 外部:d-Matrix</text>
+<text x="2656" y="3031" font-size="13" font-weight="500" fill="#cbd5e1">NVLink Fusion与MGX接入Raptor XPU的计划</text>
+<text x="2656" y="3066" font-size="13" font-weight="500" fill="#cbd5e1">E34 · NVIDIA → 外部:澳大利亚数据中心合作生态</text>
+<text x="2656" y="3087" font-size="13" font-weight="500" fill="#cbd5e1">DSX架构部署合作，最高2GW基础设施目标</text>
+<text x="2656" y="3122" font-size="13" font-weight="500" fill="#cbd5e1">E35 · 外部:Mistral → Samsung Electronics</text>
+<text x="2656" y="3143" font-size="13" font-weight="500" fill="#cbd5e1">本地定制Mistral Large用于半导体流程</text>
+<text x="2656" y="3178" font-size="13" font-weight="500" fill="#cbd5e1">E36 · 外部:ASML → Samsung Electronics</text>
+<text x="2656" y="3199" font-size="13" font-weight="500" fill="#cbd5e1">High-NA EUV与12英寸光掩模合作</text>
+</g>
+<rect x="1174.6" y="851.3" width="49" height="24" rx="5" fill="#0b0f14" stroke="#64748b" stroke-width="1.2"/>
+<text x="1199.1" y="867.8" text-anchor="middle" font-size="12" font-weight="750" fill="#64748b">E01</text>
+<rect x="670.5" y="922.7" width="49" height="24" rx="5" fill="#0b0f14" stroke="#64748b" stroke-width="1.2"/>
+<text x="695.0" y="939.2" text-anchor="middle" font-size="12" font-weight="750" fill="#64748b">E02</text>
+<rect x="534.6" y="1304.7" width="49" height="24" rx="5" fill="#0b0f14" stroke="#64748b" stroke-width="1.2"/>
+<text x="559.1" y="1321.2" text-anchor="middle" font-size="12" font-weight="750" fill="#64748b">E03</text>
+<rect x="1201.6" y="1148.6" width="49" height="24" rx="5" fill="#0b0f14" stroke="#64748b" stroke-width="1.2"/>
+<text x="1226.1" y="1165.1" text-anchor="middle" font-size="12" font-weight="750" fill="#64748b">E04</text>
+<rect x="664.8" y="1242.7" width="49" height="24" rx="5" fill="#0b0f14" stroke="#64748b" stroke-width="1.2"/>
+<text x="689.3" y="1259.2" text-anchor="middle" font-size="12" font-weight="750" fill="#64748b">E05</text>
+<rect x="741.5" y="1010.3" width="49" height="24" rx="5" fill="#0b0f14" stroke="#64748b" stroke-width="1.2"/>
+<text x="766.0" y="1026.8" text-anchor="middle" font-size="12" font-weight="750" fill="#64748b">E06</text>
+<rect x="1201.6" y="1630.7" width="49" height="24" rx="5" fill="#0b0f14" stroke="#64748b" stroke-width="1.2"/>
+<text x="1226.1" y="1647.2" text-anchor="middle" font-size="12" font-weight="750" fill="#64748b">E07</text>
+<rect x="661.5" y="861.5" width="49" height="24" rx="5" fill="#0b0f14" stroke="#64748b" stroke-width="1.2"/>
+<text x="686.0" y="878.0" text-anchor="middle" font-size="12" font-weight="750" fill="#64748b">E08</text>
+<rect x="1267.2" y="1180.8" width="49" height="24" rx="5" fill="#0b0f14" stroke="#64748b" stroke-width="1.2"/>
+<text x="1291.7" y="1197.3" text-anchor="middle" font-size="12" font-weight="750" fill="#64748b">E09</text>
+<rect x="923.1" y="832.5" width="49" height="24" rx="5" fill="#0b0f14" stroke="#64748b" stroke-width="1.2"/>
+<text x="947.6" y="849.0" text-anchor="middle" font-size="12" font-weight="750" fill="#64748b">E10</text>
+<rect x="654.4" y="969.8" width="49" height="24" rx="5" fill="#0b0f14" stroke="#64748b" stroke-width="1.2"/>
+<text x="678.9" y="986.3" text-anchor="middle" font-size="12" font-weight="750" fill="#64748b">E11</text>
+<rect x="670.5" y="762.7" width="49" height="24" rx="5" fill="#0b0f14" stroke="#64748b" stroke-width="1.2"/>
+<text x="695.0" y="779.2" text-anchor="middle" font-size="12" font-weight="750" fill="#64748b">E12</text>
+<rect x="1174.6" y="1491.3" width="49" height="24" rx="5" fill="#0b0f14" stroke="#64748b" stroke-width="1.2"/>
+<text x="1199.1" y="1507.8" text-anchor="middle" font-size="12" font-weight="750" fill="#64748b">E13</text>
+<rect x="1306.2" y="1021.5" width="49" height="24" rx="5" fill="#0b0f14" stroke="#64748b" stroke-width="1.2"/>
+<text x="1330.7" y="1038.0" text-anchor="middle" font-size="12" font-weight="750" fill="#64748b">E14</text>
+<rect x="1306.2" y="1073.3" width="49" height="24" rx="5" fill="#0b0f14" stroke="#64748b" stroke-width="1.2"/>
+<text x="1330.7" y="1089.8" text-anchor="middle" font-size="12" font-weight="750" fill="#64748b">E15</text>
+<rect x="1294.4" y="598.0" width="49" height="24" rx="5" fill="#0b0f14" stroke="#64748b" stroke-width="1.2"/>
+<text x="1318.9" y="614.5" text-anchor="middle" font-size="12" font-weight="750" fill="#64748b">E16</text>
+<rect x="1294.4" y="1506.2" width="49" height="24" rx="5" fill="#0b0f14" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="1318.9" y="1522.7" text-anchor="middle" font-size="12" font-weight="750" fill="#f59e0b">E17</text>
+<rect x="875.7" y="667.8" width="49" height="24" rx="5" fill="#0b0f14" stroke="#64748b" stroke-width="1.2"/>
+<text x="900.2" y="684.3" text-anchor="middle" font-size="12" font-weight="750" fill="#64748b">E18</text>
+<rect x="741.5" y="1330.3" width="49" height="24" rx="5" fill="#0b0f14" stroke="#64748b" stroke-width="1.2"/>
+<text x="766.0" y="1346.8" text-anchor="middle" font-size="12" font-weight="750" fill="#64748b">E19</text>
+<rect x="664.8" y="1134.5" width="49" height="24" rx="5" fill="#0b0f14" stroke="#38bdf8" stroke-width="1.2"/>
+<text x="689.3" y="1151.0" text-anchor="middle" font-size="12" font-weight="750" fill="#38bdf8">E20</text>
+<rect x="654.4" y="1346.2" width="49" height="24" rx="5" fill="#0b0f14" stroke="#64748b" stroke-width="1.2"/>
+<text x="678.9" y="1362.7" text-anchor="middle" font-size="12" font-weight="750" fill="#64748b">E21</text>
+<rect x="1306.2" y="1129.8" width="49" height="24" rx="5" fill="#0b0f14" stroke="#64748b" stroke-width="1.2"/>
+<text x="1330.7" y="1146.3" text-anchor="middle" font-size="12" font-weight="750" fill="#64748b">E22</text>
+<rect x="627.2" y="1660.8" width="49" height="24" rx="5" fill="#0b0f14" stroke="#64748b" stroke-width="1.2"/>
+<text x="651.7" y="1677.3" text-anchor="middle" font-size="12" font-weight="750" fill="#64748b">E23</text>
+<rect x="664.8" y="1026.2" width="49" height="24" rx="5" fill="#0b0f14" stroke="#64748b" stroke-width="1.2"/>
+<text x="689.3" y="1042.7" text-anchor="middle" font-size="12" font-weight="750" fill="#64748b">E24</text>
+<rect x="1280.4" y="1213.4" width="49" height="24" rx="5" fill="#0b0f14" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="1304.9" y="1229.9" text-anchor="middle" font-size="12" font-weight="750" fill="#f59e0b">E25</text>
+<rect x="667.3" y="1172.6" width="49" height="24" rx="5" fill="#0b0f14" stroke="#64748b" stroke-width="1.2"/>
+<text x="691.8" y="1189.1" text-anchor="middle" font-size="12" font-weight="750" fill="#64748b">E26</text>
+<rect x="668.2" y="1066.4" width="49" height="24" rx="5" fill="#0b0f14" stroke="#64748b" stroke-width="1.2"/>
+<text x="692.7" y="1082.9" text-anchor="middle" font-size="12" font-weight="750" fill="#64748b">E27</text>
+<rect x="666.4" y="1208.9" width="49" height="24" rx="5" fill="#0b0f14" stroke="#64748b" stroke-width="1.2"/>
+<text x="690.9" y="1225.4" text-anchor="middle" font-size="12" font-weight="750" fill="#64748b">E28</text>
+<rect x="664.8" y="814.5" width="49" height="24" rx="5" fill="#0b0f14" stroke="#64748b" stroke-width="1.2"/>
+<text x="689.3" y="831.0" text-anchor="middle" font-size="12" font-weight="750" fill="#64748b">E29</text>
+<rect x="1267.2" y="1455.2" width="49" height="24" rx="5" fill="#0b0f14" stroke="#64748b" stroke-width="1.2"/>
+<text x="1291.7" y="1471.7" text-anchor="middle" font-size="12" font-weight="750" fill="#64748b">E30</text>
+<rect x="534.6" y="1464.7" width="49" height="24" rx="5" fill="#0b0f14" stroke="#64748b" stroke-width="1.2"/>
+<text x="559.1" y="1481.2" text-anchor="middle" font-size="12" font-weight="750" fill="#64748b">E31</text>
+<rect x="445.5" y="1308.6" width="49" height="24" rx="5" fill="#0b0f14" stroke="#22c55e" stroke-width="1.2"/>
+<text x="470.0" y="1325.1" text-anchor="middle" font-size="12" font-weight="750" fill="#22c55e">E32</text>
+<rect x="1294.4" y="978.0" width="49" height="24" rx="5" fill="#0b0f14" stroke="#22c55e" stroke-width="1.2"/>
+<text x="1318.9" y="994.5" text-anchor="middle" font-size="12" font-weight="750" fill="#22c55e">E33</text>
+<rect x="1192.5" y="1667.5" width="49" height="24" rx="5" fill="#0b0f14" stroke="#22c55e" stroke-width="1.2"/>
+<text x="1217.0" y="1684.0" text-anchor="middle" font-size="12" font-weight="750" fill="#22c55e">E34</text>
+<rect x="639.9" y="1693.0" width="49" height="24" rx="5" fill="#0b0f14" stroke="#22c55e" stroke-width="1.2"/>
+<text x="664.4" y="1709.5" text-anchor="middle" font-size="12" font-weight="750" fill="#22c55e">E35</text>
+<rect x="657.3" y="1311.2" width="49" height="24" rx="5" fill="#0b0f14" stroke="#22c55e" stroke-width="1.2"/>
+<text x="681.8" y="1327.7" text-anchor="middle" font-size="12" font-weight="750" fill="#22c55e">E36</text>
+</g>
+</svg>

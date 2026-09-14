@@ -12,8 +12,11 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 
 from validate_weekly_brief import (  # noqa: E402
+    DEFAULT_FORMAT_LIMITS,
     REQUIRED_COMPANIES,
     validate_headlines,
+    validate_v2_compactness,
+    validate_v2_company_details,
     validate_report,
     validate_v2_structure,
 )
@@ -84,6 +87,40 @@ def valid_report(changed_edge_ids: list[str] | None = None) -> str:
 
 
 class WeeklyBriefSchemaTests(unittest.TestCase):
+    def test_top5_selection_accepts_five_and_rejects_six(self) -> None:
+        report = valid_report() + "\n<!-- company-selection: top5 -->\n"
+        start = report.index("- 日期：", report.index("### 3.1 Apple"))
+        end = report.index("### 3.2 无重大变化公司")
+        event = report[start:end]
+        validate_v2_company_details(report[:start] + event * 5 + report[end:], REQUIRED_COMPANIES)
+        with redirect_stderr(StringIO()), self.assertRaises(SystemExit):
+            validate_v2_company_details(report[:start] + event * 6 + report[end:], REQUIRED_COMPANIES)
+
+    def test_more_than_four_company_events_keep_all_eight_fields(self) -> None:
+        report = valid_report()
+        start = report.index("- 日期：", report.index("### 3.1 Apple"))
+        end = report.index("### 3.2 无重大变化公司")
+        event = report[start:end]
+        expanded = report[:start] + event * 5 + report[end:]
+        validate_v2_company_details(expanded, REQUIRED_COMPANIES)
+        broken = expanded.replace("- 验证条件：下季度财报披露增速\n", "", 1)
+        with redirect_stderr(StringIO()), self.assertRaises(SystemExit):
+            validate_v2_company_details(broken, REQUIRED_COMPANIES)
+
+    def test_twelve_headlines_and_fact_driven_length_are_permanent(self) -> None:
+        items = "\n".join(f"{i}. 事件{i}。重要性：独立事实。[来源](https://example.com/{i})" for i in range(1, 13))
+        report = f"## 1. 本周最重要的 12 件事\n{items}\n## 2. 投资判断速览"
+        validate_headlines(report, True)
+        validate_v2_compactness("正文\n" * 300)
+        validate_v2_compactness("长" * 24001)
+        validate_v2_compactness("完整事实\n" * 20000)
+
+    def test_explicit_historical_character_limit_is_still_enforced(self) -> None:
+        limits = {**DEFAULT_FORMAT_LIMITS, "core_chars": 24000}
+        validate_v2_compactness("长" * 24000, limits)
+        with redirect_stderr(StringIO()), self.assertRaises(SystemExit):
+            validate_v2_compactness("长" * 24001, limits)
+
     def setUp(self) -> None:
         self.baseline = {"edges": [{"edge_id": "E01", "changed_this_week": "new"}]}
 
@@ -91,6 +128,36 @@ class WeeklyBriefSchemaTests(unittest.TestCase):
         report = valid_report()
         validate_headlines(report, schema_v2=True)
         validate_v2_structure(report, self.baseline, REQUIRED_COMPANIES)
+
+    def test_up_to_twelve_headlines_are_allowed(self) -> None:
+        for count in (1, 3, 8, 10, 11, 12):
+            with self.subTest(count=count):
+                items = "\n".join(
+                    f"{i}. **公司：事件 {i}。** 重要性：有直接证据。[来源](https://example.com/{i})"
+                    for i in range(1, count + 1)
+                )
+                validate_headlines(f"## 1. 本周最重要的 {count} 件事\n{items}\n## 2. 投资判断速览", True)
+
+    def test_zero_headlines_require_explicit_statement(self) -> None:
+        validate_headlines("## 1. 本周重大事件\n本周未发现可确认重大事件。\n## 2. 投资判断速览", True)
+        with redirect_stderr(StringIO()), self.assertRaises(SystemExit):
+            validate_headlines("## 1. 本周重大事件\n\n## 2. 投资判断速览", True)
+
+    def test_wrong_count_skipped_number_and_more_than_twelve_fail(self) -> None:
+        cases = [
+            "## 1. 本周最重要的 10 件事\n1. One",
+            "## 1. 本周最重要的 2 件事\n1. One\n3. Three",
+            "## 1. 本周最重要的 13 件事\n" + "\n".join(f"{i}. Item" for i in range(1, 14)),
+        ]
+        for report in cases:
+            with self.subTest(report=report), redirect_stderr(StringIO()), self.assertRaises(SystemExit):
+                validate_headlines(report + "\n## 2. 投资判断速览", True)
+
+    def test_identical_headlines_cannot_fill_slots(self) -> None:
+        item = "**公司：同一事件。** 重要性：同一影响。[来源](https://example.com/)"
+        report = f"## 1. 本周最重要的 2 件事\n1. {item}\n2. {item}\n## 2. 投资判断速览"
+        with redirect_stderr(StringIO()), self.assertRaises(SystemExit):
+            validate_headlines(report, True)
 
     def test_mermaid_is_rejected_in_v2(self) -> None:
         report = valid_report().replace("## 7. 本期自检", "```mermaid\nflowchart LR\n```\n## 7. 本期自检")

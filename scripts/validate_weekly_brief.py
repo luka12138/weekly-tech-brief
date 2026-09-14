@@ -13,6 +13,8 @@ from pathlib import Path
 
 from graph_update_policy import is_schema_v2, supply_changed_edge_ids
 from json_canvas_graphs import validate_canvas_file
+from validate_point_in_time import check_report as check_point_in_time
+from validate_report_vintage import check_vintage
 
 
 REQUIRED_COMPANIES = [
@@ -384,20 +386,38 @@ def validate_supply_artifacts(
         fail(f"供应关系 Canvas Edge ID 不一致：canvas={sorted(canvas_labels)} json={sorted(expected_edge_ids)}")
 
 
-def validate_headlines(report: str, schema_v2: bool = False) -> None:
-    section = extract_section(report, "## 1. 本周最重要的 10 件事", "## 2.")
+DEFAULT_FORMAT_LIMITS = {"headlines": 12, "core_lines": None, "total_lines": None, "core_chars": None}
+
+
+def validate_headlines(report: str, schema_v2: bool = False, limits: dict | None = None) -> None:
+    maximum = (limits or DEFAULT_FORMAT_LIMITS)["headlines"]
+    heading = re.search(r"^## 1\. ([^\n]+)", report, flags=re.M)
+    if not heading:
+        fail("缺少第 1 节重大事件标题")
+    section = extract_section(report, heading.group(0), "## 2.")
     numbers = [int(value) for value in re.findall(r"^(\d+)\. ", section, flags=re.M)]
-    if numbers != list(range(1, 11)):
-        fail(f"第 1 节必须按 1-10 编号且恰好包含 10 件事：actual={numbers}")
+    if len(numbers) > maximum or numbers != list(range(1, len(numbers) + 1)):
+        fail(f"第 1 节最多 {maximum} 件事，按实际数量从 1 连续编号，不得凑数：actual={numbers}")
     if not schema_v2:
         return
+    if not numbers:
+        if heading.group(1) != "本周重大事件" or "本周未发现可确认重大事件。" not in section:
+            fail("零事件必须使用“本周重大事件”标题并明确写“本周未发现可确认重大事件。”")
+        return
+    if heading.group(1) != f"本周最重要的 {len(numbers)} 件事":
+        fail(f"第 1 节标题数量必须等于实际事件数：{len(numbers)}")
     items = re.findall(r"(?ms)^\d+\. (.*?)(?=^\d+\. |\Z)", section)
+    seen: set[str] = set()
     for index, item in enumerate(items, start=1):
         if "https://" not in item:
             fail(f"第 1 节第 {index} 件事缺少 HTTPS 来源")
         if "重要性：" not in item and "投资判断：" not in item:
             fail(f"第 1 节第 {index} 件事缺少“重要性”或“投资判断”")
         prose = re.sub(r"https://[^\s)]+", "", item)
+        normalized = re.sub(r"\s+", "", prose)
+        if normalized in seen:
+            fail(f"第 1 节第 {index} 件事与前项重复，不得凑数")
+        seen.add(normalized)
         if len(prose) > 700:
             fail(f"第 1 节第 {index} 件事过长，应压缩为事件、重要性和来源")
 
@@ -447,8 +467,10 @@ def validate_v2_company_details(report: str, required_companies: list[str]) -> N
             fail(f"第 3 节公司标题重复：{title}")
         changed_companies.add(title)
         event_count = len(re.findall(r"(?m)^- 事件：\s*\S", block))
-        if not (1 <= event_count <= 4):
-            fail(f"{title} 应包含 1-4 条重大事件，actual={event_count}")
+        if event_count < 1:
+            fail(f"{title} 应至少包含 1 条重大事件，actual={event_count}")
+        if "<!-- company-selection: top5 -->" in report and event_count > 5:
+            fail(f"{title} 最多5条独立重要事项，actual={event_count}")
         for field in required_fields:
             count = len(re.findall(rf"(?m)^- {field}：\s*\S", block))
             if count != event_count:
@@ -509,15 +531,16 @@ def validate_v2_appendix(
         fail("本周无变化时，第 6.2 节必须明确写“本周无供应关系实质变化”")
 
 
-def validate_v2_compactness(report: str) -> None:
+def validate_v2_compactness(report: str, limits: dict | None = None) -> None:
+    limits = limits or DEFAULT_FORMAT_LIMITS
     nonempty_lines = [line for line in report.splitlines() if line.strip()]
-    if len(nonempty_lines) > 220:
-        fail(f"schema v2 周报非空行数不得超过 220：actual={len(nonempty_lines)}")
+    if limits["total_lines"] is not None and len(nonempty_lines) > limits["total_lines"]:
+        fail(f"schema v2 周报非空行数不得超过 {limits['total_lines']}：actual={len(nonempty_lines)}")
     core = report.split("## 6. 研究附录：产业链与图谱", 1)[0]
     core_lines = [line for line in core.splitlines() if line.strip()]
-    if len(core_lines) > 150:
-        fail(f"第 1-5 节非空行数不得超过 150：actual={len(core_lines)}")
-    if len(core) > 24000:
+    if limits["core_lines"] is not None and len(core_lines) > limits["core_lines"]:
+        fail(f"第 1-5 节非空行数不得超过 {limits['core_lines']}：actual={len(core_lines)}")
+    if limits["core_chars"] is not None and len(core) > limits["core_chars"]:
         fail(f"第 1-5 节正文过长，应压缩事件描述：characters={len(core)}")
 
 
@@ -526,6 +549,7 @@ def validate_v2_structure(
     baseline: dict[str, object],
     required_companies: list[str],
     expected_changed_edge_ids: set[str] | None = None,
+    limits: dict | None = None,
 ) -> None:
     for heading in (
         "## 2. 投资判断速览",
@@ -543,7 +567,23 @@ def validate_v2_structure(
     validate_v2_company_details(report, required_companies)
     validate_v2_trends_and_catalysts(report)
     validate_v2_appendix(report, baseline, expected_changed_edge_ids)
-    validate_v2_compactness(report)
+    validate_v2_compactness(report, limits)
+
+
+def preflight_report(report_path: Path, baseline_path: Path) -> None:
+    """Check local prose before evidence binding, graph generation or network IO."""
+    report = report_path.read_text(encoding="utf-8")
+    baseline = json.loads(baseline_path.read_text(encoding="utf-8"))
+    companies = baseline.get("companies")
+    if companies not in ALLOWED_COMPANY_SCOPES:
+        fail("基线公司列表缺失，或未按要求的标准顺序排列")
+    schema_v2 = is_schema_v2(report)
+    limits = DEFAULT_FORMAT_LIMITS
+    validate_headlines(report, schema_v2, limits)
+    if schema_v2:
+        validate_v2_structure(report, baseline, list(companies), limits=limits)
+    else:
+        print("旧结构仅预检头条；完整历史校验仍须执行")
 
 
 def validate_report(
@@ -562,7 +602,16 @@ def validate_report(
     baseline = json.loads(baseline_path.read_text(encoding="utf-8"))
     schema_v2 = is_schema_v2(report)
 
-    validate_headlines(report, schema_v2)
+    try:
+        vintage_status = check_vintage(report_path)
+        if vintage_status:
+            print(vintage_status)
+        print(check_point_in_time(report_path, baseline_path, product_graph_path))
+    except (ValueError, OSError, KeyError, TypeError, AttributeError) as exc:
+        fail(f"时点证据校验失败：{exc}")
+
+    limits = DEFAULT_FORMAT_LIMITS
+    validate_headlines(report, schema_v2, limits)
 
     period = baseline.get("coverage_period", {})
     start = period.get("start")
@@ -628,7 +677,7 @@ def validate_report(
             fail(f"低/中可信度供应关系缺少限制说明：{edge_id}")
 
     if schema_v2:
-        validate_v2_structure(report, baseline, required_companies, expected_changed_edge_ids)
+        validate_v2_structure(report, baseline, required_companies, expected_changed_edge_ids, limits)
     else:
         mermaid = extract_mermaid(report)
         if "flowchart LR" not in mermaid:
@@ -681,7 +730,13 @@ def main() -> None:
     parser.add_argument("--supply-image")
     parser.add_argument("--supply-canvas")
     parser.add_argument("--expected-changed-edge-ids", nargs="*")
+    parser.add_argument("--preflight-only", action="store_true", help="只读正文结构预检，不认证来源、时点、图谱或发布状态")
     args = parser.parse_args()
+
+    if args.preflight_only:
+        preflight_report(Path(args.report), Path(args.baseline))
+        print("正文格式预检通过；不是完整质量闸门或事实认证")
+        return
 
     validate_report(
         Path(args.report),

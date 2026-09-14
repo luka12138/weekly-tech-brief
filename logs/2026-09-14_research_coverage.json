@@ -1,0 +1,2246 @@
+{
+  "schema_version": 1,
+  "workflow_version": 2,
+  "selection_policy": "company_top5",
+  "report_date": "2026-09-14",
+  "cutoff_exclusive": "2026-09-14T00:00:00+08:00",
+  "status": "ready",
+  "run_started_at": "2026-09-14T03:51:34.186Z",
+  "checks": [
+    {
+      "id": "APL-O",
+      "company": "Apple",
+      "stage": "discovery",
+      "source_family": "company",
+      "status": "reviewed",
+      "query_or_url": "https://www.apple.com/ie/newsroom/topics/iphone/",
+      "entrypoint": "https://www.apple.com/ie/newsroom/topics/iphone/",
+      "result_ref": "logs/2026-09-14_source_reviews.json#APL-O",
+      "note": "官方iPhone目录可读；美国Newsroom仅导航。9月9日Pro公告、9月11日预售更新，不能以页面存在证明全部型号。",
+      "checked_at": "2026-09-14T03:54:02.562Z",
+      "businesses": [
+        "iPhone"
+      ],
+      "categories": [
+        "product",
+        "capital",
+        "operations"
+      ],
+      "candidate_ids": [
+        "APL-PRO"
+      ]
+    },
+    {
+      "id": "APL-I",
+      "company": "Apple",
+      "stage": "countercheck",
+      "source_family": "media",
+      "status": "reviewed",
+      "query_or_url": "https://www.techradar.com/tech-events/15-things-we-learned-from-apples-big-iphone-duo-and-iphone-18-pro-launch-from-its-first-ever-foldable-to-new-airpods",
+      "entrypoint": "https://www.techradar.com/tech-events/15-things-we-learned-from-apples-big-iphone-duo-and-iphone-18-pro-launch-from-its-first-ever-foldable-to-new-airpods",
+      "result_ref": "logs/2026-09-14_source_reviews.json#APL-I",
+      "note": "独立发布会报道校准新折叠手机的重要性；预发布Ultra传闻不作事实；监管检索返回旧事件，不能证明无监管变化。",
+      "checked_at": "2026-09-14T03:51:38.317Z",
+      "businesses": [],
+      "categories": [
+        "legal",
+        "governance",
+        "capital"
+      ],
+      "candidate_ids": [
+        "APL-DUO"
+      ]
+    },
+    {
+      "id": "MS-O",
+      "company": "Microsoft",
+      "stage": "discovery",
+      "source_family": "company",
+      "status": "reviewed",
+      "query_or_url": "https://news.microsoft.com/source/tag/press-releases/",
+      "entrypoint": "https://news.microsoft.com/source/tag/press-releases/",
+      "result_ref": "logs/2026-09-14_source_reviews.json#MS-O",
+      "note": "官方新闻入口9月9日学校AI安全标准；6月股息支付不作为9月新宣布。",
+      "checked_at": "2026-09-14T03:54:02.562Z",
+      "businesses": [
+        "Azure"
+      ],
+      "categories": [
+        "product",
+        "capital",
+        "operations"
+      ],
+      "candidate_ids": [
+        "MS-SCHOOL"
+      ]
+    },
+    {
+      "id": "MS-I",
+      "company": "Microsoft",
+      "stage": "countercheck",
+      "source_family": "media",
+      "status": "reviewed",
+      "query_or_url": "https://www.schwab.wallst.com/schwab/Prospect/research/stocks/news.asp?symbol=MSFT&type=all",
+      "entrypoint": "https://www.schwab.wallst.com/schwab/Prospect/research/stocks/news.asp?symbol=MSFT&type=all",
+      "result_ref": "logs/2026-09-14_source_reviews.json#MS-I",
+      "note": "路透9月10日转述Bloomberg38GW扩容计划；2025年Teams和解已排除。",
+      "checked_at": "2026-09-14T03:54:56.703Z",
+      "businesses": [],
+      "categories": [
+        "legal",
+        "governance",
+        "capital"
+      ],
+      "candidate_ids": [
+        "MS-38GW"
+      ]
+    },
+    {
+      "id": "GOO-O",
+      "company": "Alphabet / Google",
+      "stage": "discovery",
+      "source_family": "company",
+      "status": "reviewed",
+      "query_or_url": "https://www.googlecloudpresscorner.com/press-releases?keywords=2026&l=100",
+      "entrypoint": "https://www.googlecloudpresscorner.com/press-releases?keywords=2026&l=100",
+      "result_ref": "logs/2026-09-14_source_reviews.json#GOO-O",
+      "note": "云官方目录发现芬兰资本项目、Avid合作；教育9月3日非本期。",
+      "checked_at": "2026-09-14T03:54:30.008Z",
+      "businesses": [
+        "搜索"
+      ],
+      "categories": [
+        "product",
+        "capital",
+        "operations"
+      ],
+      "candidate_ids": [
+        "GOO-FIN"
+      ]
+    },
+    {
+      "id": "AWS-O",
+      "company": "Amazon / AWS",
+      "stage": "discovery",
+      "source_family": "company",
+      "status": "reviewed",
+      "query_or_url": "https://www.aboutamazon.com/news/aws?p=5",
+      "entrypoint": "https://www.aboutamazon.com/news/aws?p=5",
+      "result_ref": "logs/2026-09-14_source_reviews.json#AWS-O",
+      "note": "官方目录Astra9月8日上架、Quick9月10日桌面GA；8月26日GPU合作为旧计划。 核读9月9日更新段后，更正目录/初筛所记9月10日：Quick增量发布日期为9月9日。",
+      "checked_at": "2026-09-14T03:54:30.008Z",
+      "businesses": [
+        "AWS"
+      ],
+      "categories": [
+        "product",
+        "capital",
+        "operations"
+      ],
+      "candidate_ids": [
+        "AWS-ASTRA",
+        "AWS-QUICK"
+      ]
+    },
+    {
+      "id": "AWS-I",
+      "company": "Amazon / AWS",
+      "stage": "countercheck",
+      "source_family": "media",
+      "status": "reviewed",
+      "query_or_url": "https://www.marketscreener.com/news/amazon-accused-in-lawsuit-of-systematic-pregnancy-discrimination-ce785bd8df8ffe2d",
+      "entrypoint": "https://www.marketscreener.com/news/amazon-accused-in-lawsuit-of-systematic-pregnancy-discrimination-ce785bd8df8ffe2d",
+      "result_ref": "logs/2026-09-14_source_reviews.json#AWS-I",
+      "note": "独立校准发现全国拟集体劳动诉讼；MLex另有Perplexity当事人动议线索，非判决。",
+      "checked_at": "2026-09-14T03:54:56.703Z",
+      "businesses": [],
+      "categories": [
+        "legal",
+        "governance",
+        "capital"
+      ],
+      "candidate_ids": [
+        "AWS-LABOR"
+      ]
+    },
+    {
+      "id": "META-O",
+      "company": "Meta",
+      "stage": "discovery",
+      "source_family": "company",
+      "status": "reviewed",
+      "query_or_url": "https://about.fb.com/news/",
+      "entrypoint": "https://about.fb.com/news/",
+      "result_ref": "logs/2026-09-14_source_reviews.json#META-O",
+      "note": "官方首页9月8日Muse个人agent发布，非上周Muse1.3模型的重复。",
+      "checked_at": "2026-09-14T03:55:20.046Z",
+      "businesses": [
+        "Facebook"
+      ],
+      "categories": [
+        "product",
+        "capital",
+        "operations"
+      ],
+      "candidate_ids": [
+        "META-MUSE"
+      ]
+    },
+    {
+      "id": "NV-O",
+      "company": "NVIDIA",
+      "stage": "discovery",
+      "source_family": "company",
+      "status": "reviewed",
+      "query_or_url": "https://nvidianews.nvidia.com/news",
+      "entrypoint": "https://nvidianews.nvidia.com/news",
+      "result_ref": "logs/2026-09-14_source_reviews.json#NV-O",
+      "note": "官方目录：d-Matrix NVLink计划、Palantir合作、澳洲基建容量；GeForce周更不入选。",
+      "checked_at": "2026-09-14T03:55:20.046Z",
+      "businesses": [
+        "数据中心 GPU"
+      ],
+      "categories": [
+        "product",
+        "capital",
+        "operations"
+      ],
+      "candidate_ids": [
+        "NV-DM",
+        "NV-AU",
+        "NV-PAL"
+      ]
+    },
+    {
+      "id": "NV-I",
+      "company": "NVIDIA",
+      "stage": "countercheck",
+      "source_family": "media",
+      "status": "reviewed",
+      "query_or_url": "https://www.axios.com/2026/09/10/nvidia-ceo-jensen-huang-ai-anthropic",
+      "entrypoint": "https://www.axios.com/2026/09/10/nvidia-ceo-jensen-huang-ai-anthropic",
+      "result_ref": "logs/2026-09-14_source_reviews.json#NV-I",
+      "note": "独立媒体校准安全评论和客户投资循环的争议；CEO评论本身不优先于基础设施与协议。",
+      "checked_at": "2026-09-14T03:54:56.703Z",
+      "businesses": [],
+      "categories": [
+        "legal",
+        "governance",
+        "capital"
+      ],
+      "candidate_ids": []
+    },
+    {
+      "id": "OA-O",
+      "company": "OpenAI",
+      "stage": "discovery",
+      "source_family": "company",
+      "status": "reviewed",
+      "query_or_url": "https://openai.com/news/",
+      "entrypoint": "https://openai.com/news/",
+      "result_ref": "logs/2026-09-14_source_reviews.json#OA-O",
+      "note": "官方列表9月10日AgentsAPI、GPT-Live-1、金融服务与数据工作产品；Astra目录9月9日与前周发布冲突需核版本，不能重发。",
+      "checked_at": "2026-09-14T03:55:46.095Z",
+      "businesses": [
+        "GPT 模型"
+      ],
+      "categories": [
+        "product",
+        "capital",
+        "operations"
+      ],
+      "candidate_ids": [
+        "OA-AGENTS",
+        "OA-LIVE",
+        "OA-FIN",
+        "OA-DATA"
+      ]
+    },
+    {
+      "id": "OA-I",
+      "company": "OpenAI",
+      "stage": "countercheck",
+      "source_family": "media",
+      "status": "reviewed",
+      "query_or_url": "https://www.marketscreener.com/news/openai-faces-senate-probe-into-hugging-face-incident-ce785bdedd88f123",
+      "entrypoint": "https://www.marketscreener.com/news/openai-faces-senate-probe-into-hugging-face-incident-ce785bdedd88f123",
+      "result_ref": "logs/2026-09-14_source_reviews.json#OA-I",
+      "note": "独立新闻检索发现国会议员调查与安全立法；优先级高于常规产品案例。",
+      "checked_at": "2026-09-14T03:55:20.046Z",
+      "businesses": [],
+      "categories": [
+        "legal",
+        "governance",
+        "capital"
+      ],
+      "candidate_ids": [
+        "OA-PROBE",
+        "OA-POLICY"
+      ]
+    },
+    {
+      "id": "AN-O",
+      "company": "Anthropic",
+      "stage": "discovery",
+      "source_family": "company",
+      "status": "reviewed",
+      "query_or_url": "https://www.anthropic.com/news",
+      "entrypoint": "https://www.anthropic.com/news",
+      "result_ref": "logs/2026-09-14_source_reviews.json#AN-O",
+      "note": "官方9月10日滥用报告；9月1日模型与8月31日安全更新不重发。",
+      "checked_at": "2026-09-14T03:55:46.095Z",
+      "businesses": [
+        "Claude 模型"
+      ],
+      "categories": [
+        "product",
+        "capital",
+        "operations"
+      ],
+      "candidate_ids": [
+        "AN-MISUSE"
+      ]
+    },
+    {
+      "id": "AN-I",
+      "company": "Anthropic",
+      "stage": "countercheck",
+      "source_family": "media",
+      "status": "reviewed",
+      "query_or_url": "https://apnews.com/article/2ed549e07f2f941600a135070487d83d",
+      "entrypoint": "https://apnews.com/article/2ed549e07f2f941600a135070487d83d",
+      "result_ref": "logs/2026-09-14_source_reviews.json#AN-I",
+      "note": "AP核对研究员离职安全担忧；是个人判断而非灭绝事实，CEO回应可作为同事件后续。",
+      "checked_at": "2026-09-14T03:55:20.046Z",
+      "businesses": [],
+      "categories": [
+        "legal",
+        "governance",
+        "capital"
+      ],
+      "candidate_ids": [
+        "AN-RESIGN"
+      ]
+    },
+    {
+      "id": "TSLA-O",
+      "company": "Tesla",
+      "stage": "discovery",
+      "source_family": "company",
+      "status": "reviewed",
+      "query_or_url": "https://ir.tesla.com/",
+      "entrypoint": "https://ir.tesla.com/",
+      "result_ref": "logs/2026-09-14_source_reviews.json#TSLA-O",
+      "note": "官方IR读到最新Q2披露；本轮有限入口未发现本周正式财务更新，不代表产品渠道无更新。",
+      "checked_at": "2026-09-14T03:55:46.095Z",
+      "businesses": [
+        "电动车"
+      ],
+      "categories": [
+        "product",
+        "capital",
+        "operations"
+      ],
+      "candidate_ids": []
+    },
+    {
+      "id": "TSLA-I",
+      "company": "Tesla",
+      "stage": "countercheck",
+      "source_family": "media",
+      "status": "reviewed",
+      "query_or_url": "https://www.boursorama.com/bourse/actualites/les-etats-unis-ouvrent-une-enquete-sur-l-autocertification-par-tesla-de-ses-robotaxis-cybercab-601c8b425bb7548b8f72a29947133d21",
+      "entrypoint": "https://www.boursorama.com/bourse/actualites/les-etats-unis-ouvrent-une-enquete-sur-l-autocertification-par-tesla-de-ses-robotaxis-cybercab-601c8b425bb7548b8f72a29947133d21",
+      "result_ref": "logs/2026-09-14_source_reviews.json#TSLA-I",
+      "note": "独立检索所得Cybercab监管报道为9月4日，旧闻排除；需本周有限日期筛选补全，不宣称无更新。 后续TSLA-CAL-I完成有限本周日期筛选；仅日本静态展示不入选，不等于无经营或监管变化。",
+      "checked_at": "2026-09-14T03:55:34.859Z",
+      "businesses": [],
+      "categories": [
+        "legal",
+        "governance",
+        "capital"
+      ],
+      "candidate_ids": []
+    },
+    {
+      "id": "SS-I",
+      "company": "Samsung Electronics",
+      "stage": "countercheck",
+      "source_family": "media",
+      "status": "reviewed",
+      "query_or_url": "https://in.marketscreener.com/news/samsung-sk-hynix-payouts-test-south-korea-s-reform-drive-as-investors-seek-more-ce785bded980f42d",
+      "entrypoint": "https://in.marketscreener.com/news/samsung-sk-hynix-payouts-test-south-korea-s-reform-drive-as-investors-seek-more-ce785bded980f42d",
+      "result_ref": "logs/2026-09-14_source_reviews.json#SS-I",
+      "note": "路透9月10日股东回报消息，待核首次公告和财务期间。 具体官方版本核定首次公告8月21日，本周报道不是新回报承诺。",
+      "checked_at": "2026-09-14T03:55:34.859Z",
+      "businesses": [],
+      "categories": [
+        "legal",
+        "governance",
+        "capital"
+      ],
+      "candidate_ids": [
+        "SS-RETURN"
+      ]
+    },
+    {
+      "id": "SK-I",
+      "company": "SK Hynix",
+      "stage": "countercheck",
+      "source_family": "media",
+      "status": "reviewed",
+      "query_or_url": "https://in.marketscreener.com/news/samsung-sk-hynix-payouts-test-south-korea-s-reform-drive-as-investors-seek-more-ce785bded980f42d",
+      "entrypoint": "https://in.marketscreener.com/news/samsung-sk-hynix-payouts-test-south-korea-s-reform-drive-as-investors-seek-more-ce785bded980f42d",
+      "result_ref": "logs/2026-09-14_source_reviews.json#SK-I",
+      "note": "路透9月10日股东回报消息，待核首次公告和财务期间。 具体官方版本核定首次公告8月19日，本周报道不是新回购承诺。",
+      "checked_at": "2026-09-14T03:55:34.859Z",
+      "businesses": [],
+      "categories": [
+        "legal",
+        "governance",
+        "capital"
+      ],
+      "candidate_ids": [
+        "SK-RETURN"
+      ]
+    },
+    {
+      "id": "TSM-O",
+      "company": "TSMC",
+      "stage": "discovery",
+      "source_family": "company",
+      "status": "reviewed",
+      "query_or_url": "https://pr.cld.tsmc.com/english/news/3340",
+      "entrypoint": "https://pr.cld.tsmc.com/english/news/3340",
+      "result_ref": "logs/2026-09-14_source_reviews.json#TSM-O",
+      "note": "9月10日发布8月合并收入，不能写成9月收入。",
+      "checked_at": "2026-09-14T03:55:34.859Z",
+      "businesses": [
+        "先进逻辑代工"
+      ],
+      "categories": [
+        "product",
+        "capital",
+        "operations"
+      ],
+      "candidate_ids": [
+        "TSM-REV"
+      ]
+    },
+    {
+      "id": "TSM-I",
+      "company": "TSMC",
+      "stage": "countercheck",
+      "source_family": "media",
+      "status": "reviewed",
+      "query_or_url": "https://www.pcgamer.com/hardware/tsmc-continues-to-rake-it-in-from-the-multi-year-ai-megatrend-making-a-record-breaking-usd16-35-billion-in-august-alone/",
+      "entrypoint": "https://www.pcgamer.com/hardware/tsmc-continues-to-rake-it-in-from-the-multi-year-ai-megatrend-making-a-record-breaking-usd16-35-billion-in-august-alone/",
+      "result_ref": "logs/2026-09-14_source_reviews.json#TSM-I",
+      "note": "独立校准确认月收入重要性；媒体美元换算不沿用，未额外发现可核实本周监管事件。",
+      "checked_at": "2026-09-14T03:55:34.859Z",
+      "businesses": [],
+      "categories": [
+        "legal",
+        "governance",
+        "capital"
+      ],
+      "candidate_ids": [
+        "TSM-REV"
+      ]
+    },
+    {
+      "id": "GOO-I",
+      "company": "Alphabet / Google",
+      "stage": "countercheck",
+      "source_family": "media",
+      "status": "reviewed",
+      "query_or_url": "https://www.marketscreener.com/news/google-to-invest-15-billion-in-ai-infrastructure-and-buy-nuclear-power-in-finland-ce785bd9da80f027",
+      "entrypoint": "https://www.marketscreener.com/news/google-to-invest-15-billion-in-ai-infrastructure-and-buy-nuclear-power-in-finland-ce785bd9da80f027",
+      "result_ref": "logs/2026-09-14_source_reviews.json#GOO-I",
+      "note": "独立校准投资承诺与核电PPA，监管栏目发现加州儿童科技法；限于本期重大影响，不复查全部旧案。",
+      "checked_at": "2026-09-14T03:57:20.917Z",
+      "businesses": [],
+      "categories": [
+        "legal",
+        "governance",
+        "capital"
+      ],
+      "candidate_ids": [
+        "GOO-PPA",
+        "CA-YOUTH"
+      ]
+    },
+    {
+      "id": "META-I",
+      "company": "Meta",
+      "stage": "countercheck",
+      "source_family": "media",
+      "status": "reviewed",
+      "query_or_url": "https://www.investing.com/news/stock-market-news/meta-launches-ai-agent-that-can-access-other-apps-to-send-emails-make-payments-4892258",
+      "entrypoint": "https://www.investing.com/news/stock-market-news/meta-launches-ai-agent-that-can-access-other-apps-to-send-emails-make-payments-4892258",
+      "result_ref": "logs/2026-09-14_source_reviews.json#META-I",
+      "note": "阅读全文保留路透所见内部隐私失误和公司未即时回应；不以官方安全自称覆盖反例。",
+      "checked_at": "2026-09-14T03:57:20.917Z",
+      "businesses": [],
+      "categories": [
+        "legal",
+        "governance",
+        "capital"
+      ],
+      "candidate_ids": [
+        "META-MUSE"
+      ]
+    },
+    {
+      "id": "META-REG",
+      "company": "Meta",
+      "stage": "countercheck",
+      "source_family": "media",
+      "status": "reviewed",
+      "query_or_url": "https://www.marketscreener.com/news/california-enacts-new-curbs-on-social-media-for-children-ce785bdfd88df225",
+      "entrypoint": "https://www.marketscreener.com/news/california-enacts-new-curbs-on-social-media-for-children-ce785bdfd88df225",
+      "result_ref": "logs/2026-09-14_source_reviews.json#META-REG",
+      "note": "校准中发现9月10日签署法包，区别8月州级和解旧闻。",
+      "checked_at": "2026-09-14T03:58:32.209Z",
+      "businesses": [],
+      "categories": [
+        "legal",
+        "governance",
+        "capital"
+      ],
+      "candidate_ids": [
+        "CA-YOUTH"
+      ]
+    },
+    {
+      "id": "OA-REG",
+      "company": "OpenAI",
+      "stage": "countercheck",
+      "source_family": "authority",
+      "status": "reviewed",
+      "query_or_url": "https://www.gov.ca.gov/2026/09/10/governor-newsom-signs-the-strongest-child-safety-chatbot-and-social-media-laws-in-the-nation/",
+      "entrypoint": "https://www.gov.ca.gov/2026/09/10/governor-newsom-signs-the-strongest-child-safety-chatbot-and-social-media-laws-in-the-nation/",
+      "result_ref": "logs/2026-09-14_source_reviews.json#OA-REG",
+      "note": "监管机关公告发现聊天机器人义务，影响产品经营而非仅公司倡议。",
+      "checked_at": "2026-09-14T03:59:21.425Z",
+      "businesses": [],
+      "categories": [
+        "legal",
+        "governance",
+        "capital"
+      ],
+      "candidate_ids": [
+        "CA-YOUTH"
+      ]
+    },
+    {
+      "id": "NV-IPO-I",
+      "company": "NVIDIA",
+      "stage": "countercheck",
+      "source_family": "media",
+      "status": "reviewed",
+      "query_or_url": "https://www.marketscreener.com/news/nvidia-in-talks-to-invest-in-anthropic-s-mega-ipo-sources-say-ce785bdfd18ff127",
+      "entrypoint": "https://www.marketscreener.com/news/nvidia-in-talks-to-invest-in-anthropic-s-mega-ipo-sources-say-ce785bdfd18ff127",
+      "result_ref": "logs/2026-09-14_source_reviews.json#NV-IPO-I",
+      "note": "校准栏目带出路透两位匿名源的IPO投资讨论；非已承诺非交割。",
+      "checked_at": "2026-09-14T03:58:32.209Z",
+      "businesses": [],
+      "categories": [
+        "legal",
+        "governance",
+        "capital"
+      ],
+      "candidate_ids": [
+        "NV-AN-IPO"
+      ]
+    },
+    {
+      "id": "AN-IPO-I",
+      "company": "Anthropic",
+      "stage": "countercheck",
+      "source_family": "media",
+      "status": "reviewed",
+      "query_or_url": "https://www.marketscreener.com/news/nvidia-in-talks-to-invest-in-anthropic-s-mega-ipo-sources-say-ce785bdfd18ff127",
+      "entrypoint": "https://www.marketscreener.com/news/nvidia-in-talks-to-invest-in-anthropic-s-mega-ipo-sources-say-ce785bdfd18ff127",
+      "result_ref": "logs/2026-09-14_source_reviews.json#AN-IPO-I",
+      "note": "路透正文核对IPO金额、估值与谈判可变性，更新前周IPO观察。",
+      "checked_at": "2026-09-14T03:58:32.209Z",
+      "businesses": [],
+      "categories": [
+        "legal",
+        "governance",
+        "capital"
+      ],
+      "candidate_ids": [
+        "NV-AN-IPO"
+      ]
+    },
+    {
+      "id": "SS-O",
+      "company": "Samsung Electronics",
+      "stage": "discovery",
+      "source_family": "company",
+      "status": "reviewed",
+      "query_or_url": "https://news.samsung.com/global/",
+      "entrypoint": "https://news.samsung.com/global/",
+      "result_ref": "logs/2026-09-14_source_reviews.json#SS-O",
+      "note": "完整最新目录：本周Mistral、ASML半导体合作优先；折叠设计回顾和上周家电IFA展示不入选。",
+      "checked_at": "2026-09-14T03:57:33.054Z",
+      "businesses": [
+        "存储"
+      ],
+      "categories": [
+        "product",
+        "capital",
+        "operations"
+      ],
+      "candidate_ids": [
+        "SS-MISTRAL",
+        "SS-ASML"
+      ]
+    },
+    {
+      "id": "SK-O",
+      "company": "SK Hynix",
+      "stage": "discovery",
+      "source_family": "company",
+      "status": "reviewed",
+      "query_or_url": "https://news.skhynix.com/en/",
+      "entrypoint": "https://news.skhynix.com/en/",
+      "result_ref": "logs/2026-09-14_source_reviews.json#SK-O",
+      "note": "本周仅Future Forum方向宣示，8月回购和Indiana开工旧闻不重发；不以论坛参加建立供货关系。",
+      "checked_at": "2026-09-14T03:57:20.917Z",
+      "businesses": [
+        "DRAM"
+      ],
+      "categories": [
+        "product",
+        "capital",
+        "operations"
+      ],
+      "candidate_ids": []
+    },
+    {
+      "id": "TSLA-CAL-I",
+      "company": "Tesla",
+      "stage": "countercheck",
+      "source_family": "media",
+      "status": "reviewed",
+      "query_or_url": "https://teslanorth.com/2026/09/11/tesla-cybercab-japan-tour-opens-tokyo/",
+      "entrypoint": "https://teslanorth.com/2026/09/11/tesla-cybercab-japan-tour-opens-tokyo/",
+      "result_ref": "logs/2026-09-14_source_reviews.json#TSLA-CAL-I",
+      "note": "本周独立日期筛选只得到日本静态展示；不等于日本商业运营许可，不凑入重要更新。",
+      "checked_at": "2026-09-14T03:57:03.865Z",
+      "businesses": [],
+      "categories": [
+        "legal",
+        "governance",
+        "capital"
+      ],
+      "candidate_ids": []
+    },
+    {
+      "id": "OA-MATH-O",
+      "company": "OpenAI",
+      "stage": "discovery",
+      "source_family": "company",
+      "status": "reviewed",
+      "query_or_url": "https://openai.com/index/navier-stokes-solution/",
+      "entrypoint": "https://openai.com/index/navier-stokes-solution/",
+      "result_ref": "logs/2026-09-14_source_reviews.json#OA-MATH-O",
+      "note": "独立重要性校准发现后定向核读公司9月8日研究正文；候选证明与公开产品能力分开。",
+      "checked_at": "2026-09-14T04:00:19.218Z",
+      "businesses": [
+        "GPT 模型"
+      ],
+      "categories": [
+        "product"
+      ],
+      "candidate_ids": [
+        "OA-MATH"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "id": "APL-PRO",
+      "companies": [
+        "Apple"
+      ],
+      "discovered_by": [
+        "APL-O"
+      ],
+      "summary": "iPhone18Pro/Max正式公告",
+      "materiality": "material",
+      "materiality_reason": "主力高端机更新，与折叠机的交付节奏不同。",
+      "disposition": "included",
+      "reason": "入选事实的具体版本、日期、归因、关键限制与正文已逐项核对。",
+      "research": {
+        "event_key": "APL-PRO",
+        "canonical_id": "APL-PRO",
+        "identity_status": "identified",
+        "member_ids": [
+          "APL-PRO"
+        ],
+        "materials": [
+          {
+            "role": "source_review",
+            "path": "logs/2026-09-14_verified_events.json",
+            "locator": "events[id=APL-PRO]; sources with explicit version locators"
+          }
+        ],
+        "open_questions": [],
+        "next_action": {
+          "kind": "closed",
+          "target": "APL-PRO-1",
+          "question": "入选事实已绑定；不代表穷尽公司消息。"
+        }
+      },
+      "claim_ids": [
+        "APL-PRO-1"
+      ],
+      "targets": [
+        "event:2",
+        "company:Apple"
+      ]
+    },
+    {
+      "id": "APL-DUO",
+      "companies": [
+        "Apple"
+      ],
+      "discovered_by": [
+        "APL-I"
+      ],
+      "summary": "iPhone Duo折叠手机发布",
+      "materiality": "material",
+      "materiality_reason": "新增高价产品形态，需求与供货仍待实际销售验证。",
+      "disposition": "included",
+      "reason": "入选事实的具体版本、日期、归因、关键限制与正文已逐项核对。",
+      "research": {
+        "event_key": "APL-DUO",
+        "canonical_id": "APL-DUO",
+        "identity_status": "identified",
+        "member_ids": [
+          "APL-DUO"
+        ],
+        "materials": [
+          {
+            "role": "source_review",
+            "path": "logs/2026-09-14_verified_events.json",
+            "locator": "events[id=APL-DUO]; sources with explicit version locators"
+          }
+        ],
+        "open_questions": [],
+        "next_action": {
+          "kind": "closed",
+          "target": "APL-DUO-1, APL-DUO-2",
+          "question": "入选事实已绑定；不代表穷尽公司消息。"
+        }
+      },
+      "claim_ids": [
+        "APL-DUO-1",
+        "APL-DUO-2"
+      ],
+      "targets": [
+        "event:1",
+        "company:Apple",
+        "headline:1"
+      ]
+    },
+    {
+      "id": "MS-SCHOOL",
+      "companies": [
+        "Microsoft"
+      ],
+      "discovered_by": [
+        "MS-O"
+      ],
+      "summary": "学校AI安全与隐私标准",
+      "materiality": "material",
+      "materiality_reason": "采购与部署的合规条件更明确，采用规模仍待观察。",
+      "disposition": "included",
+      "reason": "入选事实的具体版本、日期、归因、关键限制与正文已逐项核对。",
+      "research": {
+        "event_key": "MS-SCHOOL",
+        "canonical_id": "MS-SCHOOL",
+        "identity_status": "identified",
+        "member_ids": [
+          "MS-SCHOOL"
+        ],
+        "materials": [
+          {
+            "role": "source_review",
+            "path": "logs/2026-09-14_verified_events.json",
+            "locator": "events[id=MS-SCHOOL]; sources with explicit version locators"
+          }
+        ],
+        "open_questions": [],
+        "next_action": {
+          "kind": "closed",
+          "target": "MS-SCHOOL-1, MS-SCHOOL-2",
+          "question": "入选事实已绑定；不代表穷尽公司消息。"
+        }
+      },
+      "claim_ids": [
+        "MS-SCHOOL-1",
+        "MS-SCHOOL-2"
+      ],
+      "targets": [
+        "event:4",
+        "company:Microsoft"
+      ]
+    },
+    {
+      "id": "MS-38GW",
+      "companies": [
+        "Microsoft"
+      ],
+      "discovered_by": [
+        "MS-I"
+      ],
+      "summary": "微软2032年38GW数据中心规划报道",
+      "materiality": "material",
+      "materiality_reason": "若兑现将扩大长期基础设施负担，不能据此确认资本开支金额。",
+      "disposition": "included",
+      "reason": "入选事实的具体版本、日期、归因、关键限制与正文已逐项核对。",
+      "research": {
+        "event_key": "MS-38GW",
+        "canonical_id": "MS-38GW",
+        "identity_status": "identified",
+        "member_ids": [
+          "MS-38GW"
+        ],
+        "materials": [
+          {
+            "role": "source_review",
+            "path": "logs/2026-09-14_verified_events.json",
+            "locator": "events[id=MS-38GW]; sources with explicit version locators"
+          }
+        ],
+        "open_questions": [],
+        "next_action": {
+          "kind": "closed",
+          "target": "MS-38GW-1, MS-38GW-2",
+          "question": "入选事实已绑定；不代表穷尽公司消息。"
+        }
+      },
+      "claim_ids": [
+        "MS-38GW-1",
+        "MS-38GW-2"
+      ],
+      "targets": [
+        "event:3",
+        "company:Microsoft",
+        "headline:6"
+      ]
+    },
+    {
+      "id": "GOO-FIN",
+      "companies": [
+        "Alphabet / Google"
+      ],
+      "discovered_by": [
+        "GOO-O"
+      ],
+      "summary": "Google芬兰两年130亿欧元投资计划",
+      "materiality": "material",
+      "materiality_reason": "欧洲计算能力与长期资本需求上升，回报取决于建设和需求兑现。",
+      "disposition": "included",
+      "reason": "入选事实的具体版本、日期、归因、关键限制与正文已逐项核对。",
+      "research": {
+        "event_key": "GOO-FIN",
+        "canonical_id": "GOO-FIN",
+        "identity_status": "identified",
+        "member_ids": [
+          "GOO-FIN"
+        ],
+        "materials": [
+          {
+            "role": "source_review",
+            "path": "logs/2026-09-14_verified_events.json",
+            "locator": "events[id=GOO-FIN]; sources with explicit version locators"
+          }
+        ],
+        "open_questions": [],
+        "next_action": {
+          "kind": "closed",
+          "target": "GOO-FIN-1, GOO-FIN-2",
+          "question": "入选事实已绑定；不代表穷尽公司消息。"
+        }
+      },
+      "claim_ids": [
+        "GOO-FIN-1",
+        "GOO-FIN-2"
+      ],
+      "targets": [
+        "event:5",
+        "company:Alphabet / Google",
+        "headline:4"
+      ]
+    },
+    {
+      "id": "AWS-ASTRA",
+      "companies": [
+        "Amazon / AWS"
+      ],
+      "discovered_by": [
+        "AWS-O"
+      ],
+      "summary": "Astra在Bedrock可用状态进展",
+      "materiality": "material",
+      "materiality_reason": "既有模型分发关系进入新的可用阶段，商业采用仍须观察。",
+      "disposition": "included",
+      "reason": "入选事实的具体版本、日期、归因、关键限制与正文已逐项核对。",
+      "research": {
+        "event_key": "AWS-ASTRA",
+        "canonical_id": "AWS-ASTRA",
+        "identity_status": "identified",
+        "member_ids": [
+          "AWS-ASTRA"
+        ],
+        "materials": [
+          {
+            "role": "source_review",
+            "path": "logs/2026-09-14_verified_events.json",
+            "locator": "events[id=AWS-ASTRA]; sources with explicit version locators"
+          }
+        ],
+        "open_questions": [],
+        "next_action": {
+          "kind": "closed",
+          "target": "AWS-ASTRA-1, AWS-ASTRA-2",
+          "question": "入选事实已绑定；不代表穷尽公司消息。"
+        }
+      },
+      "claim_ids": [
+        "AWS-ASTRA-1",
+        "AWS-ASTRA-2"
+      ],
+      "targets": [
+        "event:8",
+        "company:Amazon / AWS"
+      ]
+    },
+    {
+      "id": "AWS-QUICK",
+      "companies": [
+        "Amazon / AWS"
+      ],
+      "discovered_by": [
+        "AWS-O"
+      ],
+      "summary": "Amazon Quick桌面应用GA",
+      "materiality": "material",
+      "materiality_reason": "企业助手从预览走向更广部署，竞争焦点转向权限、可靠性和实际采用。",
+      "disposition": "included",
+      "reason": "入选事实的具体版本、日期、归因、关键限制与正文已逐项核对。",
+      "research": {
+        "event_key": "AWS-QUICK",
+        "canonical_id": "AWS-QUICK",
+        "identity_status": "identified",
+        "member_ids": [
+          "AWS-QUICK"
+        ],
+        "materials": [
+          {
+            "role": "source_review",
+            "path": "logs/2026-09-14_verified_events.json",
+            "locator": "events[id=AWS-QUICK]; sources with explicit version locators"
+          }
+        ],
+        "open_questions": [],
+        "next_action": {
+          "kind": "closed",
+          "target": "AWS-QUICK-1, AWS-QUICK-2",
+          "question": "入选事实已绑定；不代表穷尽公司消息。"
+        }
+      },
+      "claim_ids": [
+        "AWS-QUICK-1",
+        "AWS-QUICK-2"
+      ],
+      "targets": [
+        "event:9",
+        "company:Amazon / AWS",
+        "headline:12"
+      ]
+    },
+    {
+      "id": "AWS-LABOR",
+      "companies": [
+        "Amazon / AWS"
+      ],
+      "discovered_by": [
+        "AWS-I"
+      ],
+      "summary": "亚马逊被诉孕期员工歧视",
+      "materiality": "material",
+      "materiality_reason": "用工合规和诉讼风险值得跟踪，不能把请求赔偿计为已确认损失。",
+      "disposition": "included",
+      "reason": "入选事实的具体版本、日期、归因、关键限制与正文已逐项核对。",
+      "research": {
+        "event_key": "AWS-LABOR",
+        "canonical_id": "AWS-LABOR",
+        "identity_status": "identified",
+        "member_ids": [
+          "AWS-LABOR"
+        ],
+        "materials": [
+          {
+            "role": "source_review",
+            "path": "logs/2026-09-14_verified_events.json",
+            "locator": "events[id=AWS-LABOR]; sources with explicit version locators"
+          }
+        ],
+        "open_questions": [],
+        "next_action": {
+          "kind": "closed",
+          "target": "AWS-LABOR-1, AWS-LABOR-2",
+          "question": "入选事实已绑定；不代表穷尽公司消息。"
+        }
+      },
+      "claim_ids": [
+        "AWS-LABOR-1",
+        "AWS-LABOR-2"
+      ],
+      "targets": [
+        "event:10",
+        "company:Amazon / AWS"
+      ]
+    },
+    {
+      "id": "META-MUSE",
+      "companies": [
+        "Meta"
+      ],
+      "discovered_by": [
+        "META-O",
+        "META-I"
+      ],
+      "summary": "Muse个人AI agent发布",
+      "materiality": "material",
+      "materiality_reason": "从回答问题走向跨应用执行，潜在使用价值伴随权限和隐私风险。",
+      "disposition": "included",
+      "reason": "入选事实的具体版本、日期、归因、关键限制与正文已逐项核对。",
+      "research": {
+        "event_key": "META-MUSE",
+        "canonical_id": "META-MUSE",
+        "identity_status": "identified",
+        "member_ids": [
+          "META-MUSE"
+        ],
+        "materials": [
+          {
+            "role": "source_review",
+            "path": "logs/2026-09-14_verified_events.json",
+            "locator": "events[id=META-MUSE]; sources with explicit version locators"
+          }
+        ],
+        "open_questions": [],
+        "next_action": {
+          "kind": "closed",
+          "target": "META-MUSE-1, META-MUSE-2, META-MUSE-3",
+          "question": "入选事实已绑定；不代表穷尽公司消息。"
+        }
+      },
+      "claim_ids": [
+        "META-MUSE-1",
+        "META-MUSE-2",
+        "META-MUSE-3"
+      ],
+      "targets": [
+        "event:12",
+        "company:Meta",
+        "headline:3"
+      ]
+    },
+    {
+      "id": "NV-DM",
+      "companies": [
+        "NVIDIA"
+      ],
+      "discovered_by": [
+        "NV-O"
+      ],
+      "summary": "d-Matrix采用NVLink Fusion计划",
+      "materiality": "material",
+      "materiality_reason": "NVIDIA互联平台向非自有加速器扩展，商业贡献需等待产品实现。",
+      "disposition": "included",
+      "reason": "入选事实的具体版本、日期、归因、关键限制与正文已逐项核对。",
+      "research": {
+        "event_key": "NV-DM",
+        "canonical_id": "NV-DM",
+        "identity_status": "identified",
+        "member_ids": [
+          "NV-DM"
+        ],
+        "materials": [
+          {
+            "role": "source_review",
+            "path": "logs/2026-09-14_verified_events.json",
+            "locator": "events[id=NV-DM]; sources with explicit version locators"
+          }
+        ],
+        "open_questions": [],
+        "next_action": {
+          "kind": "closed",
+          "target": "NV-DM-1, NV-DM-2",
+          "question": "入选事实已绑定；不代表穷尽公司消息。"
+        }
+      },
+      "claim_ids": [
+        "NV-DM-1",
+        "NV-DM-2"
+      ],
+      "targets": [
+        "event:13",
+        "company:NVIDIA",
+        "headline:10"
+      ]
+    },
+    {
+      "id": "NV-AU",
+      "companies": [
+        "NVIDIA"
+      ],
+      "discovered_by": [
+        "NV-O"
+      ],
+      "summary": "澳大利亚AI基础设施合作",
+      "materiality": "material",
+      "materiality_reason": "区域部署基础扩大，但数据中心容量与加速器交付必须分开。",
+      "disposition": "included",
+      "reason": "入选事实的具体版本、日期、归因、关键限制与正文已逐项核对。",
+      "research": {
+        "event_key": "NV-AU",
+        "canonical_id": "NV-AU",
+        "identity_status": "identified",
+        "member_ids": [
+          "NV-AU"
+        ],
+        "materials": [
+          {
+            "role": "source_review",
+            "path": "logs/2026-09-14_verified_events.json",
+            "locator": "events[id=NV-AU]; sources with explicit version locators"
+          }
+        ],
+        "open_questions": [],
+        "next_action": {
+          "kind": "closed",
+          "target": "NV-AU-1, NV-AU-2",
+          "question": "入选事实已绑定；不代表穷尽公司消息。"
+        }
+      },
+      "claim_ids": [
+        "NV-AU-1",
+        "NV-AU-2"
+      ],
+      "targets": [
+        "event:14",
+        "company:NVIDIA"
+      ]
+    },
+    {
+      "id": "NV-PAL",
+      "companies": [
+        "NVIDIA"
+      ],
+      "discovered_by": [
+        "NV-O"
+      ],
+      "summary": "NVIDIA与Palantir供应链AI合作",
+      "materiality": "unresolved",
+      "materiality_reason": "初筛可能改变经营、资本或关键产品判断；入选前核对具体正文。",
+      "disposition": "deferred",
+      "reason": "本期优先独立加速器互联、澳大利亚基础设施规模和IPO资本讨论。Palantir应用合作留资料池，未对其完整正文作最终认证；不是因不满5条而继续扩搜。",
+      "research": {
+        "event_key": "NV-PAL",
+        "canonical_id": "NV-PAL",
+        "identity_status": "identified",
+        "member_ids": [
+          "NV-PAL"
+        ],
+        "materials": [
+          {
+            "role": "source_review",
+            "path": "logs/2026-09-14_source_reviews.json",
+            "locator": "NV-O; selection rationale in canonical coverage"
+          }
+        ],
+        "open_questions": [
+          "核对采购方向、实际部署与计划范围"
+        ],
+        "next_action": {
+          "kind": "fetch_gap",
+          "target": "NV-PAL",
+          "question": "核对采购方向、实际部署与计划范围"
+        }
+      },
+      "decision_evidence": "logs/2026-09-14_source_reviews.json#NV-O; 本期优先独立加速器互联、澳大利亚基础设施规模和IPO资本讨论。Palantir应用合作留资料池，未对其完整正文作最终认证；不是因不满5条而继续扩搜。"
+    },
+    {
+      "id": "OA-AGENTS",
+      "companies": [
+        "OpenAI"
+      ],
+      "discovered_by": [
+        "OA-O"
+      ],
+      "summary": "Agents API发布",
+      "materiality": "material",
+      "materiality_reason": "降低智能体基础设施接入工作，实际成本仍取决于任务用量和工具。",
+      "disposition": "included",
+      "reason": "入选事实的具体版本、日期、归因、关键限制与正文已逐项核对。",
+      "research": {
+        "event_key": "OA-AGENTS",
+        "canonical_id": "OA-AGENTS",
+        "identity_status": "identified",
+        "member_ids": [
+          "OA-AGENTS"
+        ],
+        "materials": [
+          {
+            "role": "source_review",
+            "path": "logs/2026-09-14_verified_events.json",
+            "locator": "events[id=OA-AGENTS]; sources with explicit version locators"
+          }
+        ],
+        "open_questions": [],
+        "next_action": {
+          "kind": "closed",
+          "target": "OA-AGENTS-1, OA-AGENTS-2",
+          "question": "入选事实已绑定；不代表穷尽公司消息。"
+        }
+      },
+      "claim_ids": [
+        "OA-AGENTS-1",
+        "OA-AGENTS-2"
+      ],
+      "targets": [
+        "event:18",
+        "company:OpenAI"
+      ]
+    },
+    {
+      "id": "OA-LIVE",
+      "companies": [
+        "OpenAI"
+      ],
+      "discovered_by": [
+        "OA-O"
+      ],
+      "summary": "GPT-Live-1语音API发布",
+      "materiality": "unresolved",
+      "materiality_reason": "初筛可能改变经营、资本或关键产品判断；入选前核对具体正文。",
+      "disposition": "deferred",
+      "reason": "本期五项优先高难研究、通用Agents API、国会调查、监管立场及州法适用。语音专用API留资料池，未完成深核，不称不重大。",
+      "research": {
+        "event_key": "OA-LIVE",
+        "canonical_id": "OA-LIVE",
+        "identity_status": "identified",
+        "member_ids": [
+          "OA-LIVE"
+        ],
+        "materials": [
+          {
+            "role": "source_review",
+            "path": "logs/2026-09-14_source_reviews.json",
+            "locator": "OA-O; selection rationale in canonical coverage"
+          }
+        ],
+        "open_questions": [
+          "核对功能、可用性与价格"
+        ],
+        "next_action": {
+          "kind": "fetch_gap",
+          "target": "OA-LIVE",
+          "question": "核对功能、可用性与价格"
+        }
+      },
+      "decision_evidence": "logs/2026-09-14_source_reviews.json#OA-O; 本期五项优先高难研究、通用Agents API、国会调查、监管立场及州法适用。语音专用API留资料池，未完成深核，不称不重大。"
+    },
+    {
+      "id": "OA-FIN",
+      "companies": [
+        "OpenAI"
+      ],
+      "discovered_by": [
+        "OA-O"
+      ],
+      "summary": "ChatGPT金融服务产品发布",
+      "materiality": "unresolved",
+      "materiality_reason": "初筛可能改变经营、资本或关键产品判断；入选前核对具体正文。",
+      "disposition": "deferred",
+      "reason": "本期五项优先跨行业产品和重大研究/治理变化，金融垂直产品留资料池；未完成条款深核，不称已核完。",
+      "research": {
+        "event_key": "OA-FIN",
+        "canonical_id": "OA-FIN",
+        "identity_status": "identified",
+        "member_ids": [
+          "OA-FIN"
+        ],
+        "materials": [
+          {
+            "role": "source_review",
+            "path": "logs/2026-09-14_source_reviews.json",
+            "locator": "OA-O; selection rationale in canonical coverage"
+          }
+        ],
+        "open_questions": [
+          "核对访问层级与适用范围"
+        ],
+        "next_action": {
+          "kind": "fetch_gap",
+          "target": "OA-FIN",
+          "question": "核对访问层级与适用范围"
+        }
+      },
+      "decision_evidence": "logs/2026-09-14_source_reviews.json#OA-O; 本期五项优先跨行业产品和重大研究/治理变化，金融垂直产品留资料池；未完成条款深核，不称已核完。"
+    },
+    {
+      "id": "OA-DATA",
+      "companies": [
+        "OpenAI"
+      ],
+      "discovered_by": [
+        "OA-O"
+      ],
+      "summary": "数据工作产品发布",
+      "materiality": "unresolved",
+      "materiality_reason": "初筛可能改变经营、资本或关键产品判断；入选前核对具体正文。",
+      "disposition": "deferred",
+      "reason": "本期五项优先跨行业产品和重大研究/治理变化，数据工作垂直产品留资料池；未完成条款深核，不称已核完。",
+      "research": {
+        "event_key": "OA-DATA",
+        "canonical_id": "OA-DATA",
+        "identity_status": "identified",
+        "member_ids": [
+          "OA-DATA"
+        ],
+        "materials": [
+          {
+            "role": "source_review",
+            "path": "logs/2026-09-14_source_reviews.json",
+            "locator": "OA-O; selection rationale in canonical coverage"
+          }
+        ],
+        "open_questions": [
+          "读取正文后决定是否与其他产品同一事件"
+        ],
+        "next_action": {
+          "kind": "fetch_gap",
+          "target": "OA-DATA",
+          "question": "读取正文后决定是否与其他产品同一事件"
+        }
+      },
+      "decision_evidence": "logs/2026-09-14_source_reviews.json#OA-O; 本期五项优先跨行业产品和重大研究/治理变化，数据工作垂直产品留资料池；未完成条款深核，不称已核完。"
+    },
+    {
+      "id": "OA-PROBE",
+      "companies": [
+        "OpenAI"
+      ],
+      "discovered_by": [
+        "OA-I"
+      ],
+      "summary": "参议院追问HuggingFace事件与AI安全",
+      "materiality": "material",
+      "materiality_reason": "安全事件进入进一步监督程序，治理与对外合作风险需持续观察。",
+      "disposition": "included",
+      "reason": "入选事实的具体版本、日期、归因、关键限制与正文已逐项核对。",
+      "research": {
+        "event_key": "OA-PROBE",
+        "canonical_id": "OA-PROBE",
+        "identity_status": "identified",
+        "member_ids": [
+          "OA-PROBE"
+        ],
+        "materials": [
+          {
+            "role": "source_review",
+            "path": "logs/2026-09-14_verified_events.json",
+            "locator": "events[id=OA-PROBE]; sources with explicit version locators"
+          }
+        ],
+        "open_questions": [],
+        "next_action": {
+          "kind": "closed",
+          "target": "OA-PROBE-1, OA-PROBE-2",
+          "question": "入选事实已绑定；不代表穷尽公司消息。"
+        }
+      },
+      "claim_ids": [
+        "OA-PROBE-1",
+        "OA-PROBE-2"
+      ],
+      "targets": [
+        "event:19",
+        "company:OpenAI",
+        "headline:9"
+      ]
+    },
+    {
+      "id": "OA-POLICY",
+      "companies": [
+        "OpenAI"
+      ],
+      "discovered_by": [
+        "OA-I"
+      ],
+      "summary": "OpenAI支持强制全国AI安全要求",
+      "materiality": "material",
+      "materiality_reason": "安全治理立场更明确，最终经营约束取决于立法和实施。",
+      "disposition": "included",
+      "reason": "入选事实的具体版本、日期、归因、关键限制与正文已逐项核对。",
+      "research": {
+        "event_key": "OA-POLICY",
+        "canonical_id": "OA-POLICY",
+        "identity_status": "identified",
+        "member_ids": [
+          "OA-POLICY"
+        ],
+        "materials": [
+          {
+            "role": "source_review",
+            "path": "logs/2026-09-14_verified_events.json",
+            "locator": "events[id=OA-POLICY]; sources with explicit version locators"
+          }
+        ],
+        "open_questions": [],
+        "next_action": {
+          "kind": "closed",
+          "target": "OA-POLICY-1, OA-POLICY-2",
+          "question": "入选事实已绑定；不代表穷尽公司消息。"
+        }
+      },
+      "claim_ids": [
+        "OA-POLICY-1",
+        "OA-POLICY-2"
+      ],
+      "targets": [
+        "event:20",
+        "company:OpenAI"
+      ]
+    },
+    {
+      "id": "AN-MISUSE",
+      "companies": [
+        "Anthropic"
+      ],
+      "discovered_by": [
+        "AN-O"
+      ],
+      "summary": "Anthropic9月威胁活动披露",
+      "materiality": "material",
+      "materiality_reason": "滥用治理与披露能力影响企业和监管信任，防护成效仍属公司叙述。",
+      "disposition": "included",
+      "reason": "入选事实的具体版本、日期、归因、关键限制与正文已逐项核对。",
+      "research": {
+        "event_key": "AN-MISUSE",
+        "canonical_id": "AN-MISUSE",
+        "identity_status": "identified",
+        "member_ids": [
+          "AN-MISUSE"
+        ],
+        "materials": [
+          {
+            "role": "source_review",
+            "path": "logs/2026-09-14_verified_events.json",
+            "locator": "events[id=AN-MISUSE]; sources with explicit version locators"
+          }
+        ],
+        "open_questions": [],
+        "next_action": {
+          "kind": "closed",
+          "target": "AN-MISUSE-1, AN-MISUSE-2",
+          "question": "入选事实已绑定；不代表穷尽公司消息。"
+        }
+      },
+      "claim_ids": [
+        "AN-MISUSE-1",
+        "AN-MISUSE-2"
+      ],
+      "targets": [
+        "event:22",
+        "company:Anthropic"
+      ]
+    },
+    {
+      "id": "AN-RESIGN",
+      "companies": [
+        "Anthropic"
+      ],
+      "discovered_by": [
+        "AN-I"
+      ],
+      "summary": "Anthropic研究员辞职并公开安全担忧",
+      "materiality": "material",
+      "materiality_reason": "安全治理分歧可能影响人才与组织信任，不能据个人观点推断公司整体停止研发。",
+      "disposition": "included",
+      "reason": "入选事实的具体版本、日期、归因、关键限制与正文已逐项核对。",
+      "research": {
+        "event_key": "AN-RESIGN",
+        "canonical_id": "AN-RESIGN",
+        "identity_status": "identified",
+        "member_ids": [
+          "AN-RESIGN"
+        ],
+        "materials": [
+          {
+            "role": "source_review",
+            "path": "logs/2026-09-14_verified_events.json",
+            "locator": "events[id=AN-RESIGN]; sources with explicit version locators"
+          }
+        ],
+        "open_questions": [],
+        "next_action": {
+          "kind": "closed",
+          "target": "AN-RESIGN-1, AN-RESIGN-2",
+          "question": "入选事实已绑定；不代表穷尽公司消息。"
+        }
+      },
+      "claim_ids": [
+        "AN-RESIGN-1",
+        "AN-RESIGN-2"
+      ],
+      "targets": [
+        "event:23",
+        "company:Anthropic"
+      ]
+    },
+    {
+      "id": "SS-RETURN",
+      "companies": [
+        "Samsung Electronics"
+      ],
+      "discovered_by": [
+        "SS-I"
+      ],
+      "summary": "Samsung股东回报计划",
+      "materiality": "routine",
+      "materiality_reason": "本周媒体重述旧资本计划，不是新的本周承诺",
+      "disposition": "excluded",
+      "reason": "原公告日期在8月，不能作为本周新事件。",
+      "research": {
+        "event_key": "SS-RETURN",
+        "canonical_id": "SS-RETURN",
+        "identity_status": "identified",
+        "member_ids": [
+          "SS-RETURN"
+        ],
+        "materials": [
+          {
+            "role": "source_review",
+            "path": "logs/2026-09-14_source_reviews.json",
+            "locator": "SS-I; selection rationale in canonical coverage"
+          }
+        ],
+        "open_questions": [],
+        "next_action": {
+          "kind": "closed",
+          "target": "SS-RETURN",
+          "question": "已核首次公告时间并排除本周重复。"
+        }
+      },
+      "exclusion_basis": "outside_window",
+      "decision_evidence": "W14-D08官方公告为2026-08-21；https://news.samsung.com/global/samsung-electronics-to-implement-largest-ever-shareholder-return-in-2026-estimated-at-krw-90-to-110-trillion"
+    },
+    {
+      "id": "SK-RETURN",
+      "companies": [
+        "SK Hynix"
+      ],
+      "discovered_by": [
+        "SK-I"
+      ],
+      "summary": "SK Hynix股东回报计划",
+      "materiality": "routine",
+      "materiality_reason": "本周媒体重述旧资本计划，不是新的本周承诺",
+      "disposition": "excluded",
+      "reason": "原公告日期在8月，不能作为本周新事件。",
+      "research": {
+        "event_key": "SK-RETURN",
+        "canonical_id": "SK-RETURN",
+        "identity_status": "identified",
+        "member_ids": [
+          "SK-RETURN"
+        ],
+        "materials": [
+          {
+            "role": "source_review",
+            "path": "logs/2026-09-14_source_reviews.json",
+            "locator": "SK-I; selection rationale in canonical coverage"
+          }
+        ],
+        "open_questions": [],
+        "next_action": {
+          "kind": "closed",
+          "target": "SK-RETURN",
+          "question": "已核首次公告时间并排除本周重复。"
+        }
+      },
+      "exclusion_basis": "outside_window",
+      "decision_evidence": "W14-D08官方公告为2026-08-19；https://news.skhynix.com/en/share-buyback-and-retirement/"
+    },
+    {
+      "id": "TSM-REV",
+      "companies": [
+        "TSMC"
+      ],
+      "discovered_by": [
+        "TSM-O",
+        "TSM-I"
+      ],
+      "summary": "TSMC8月合并收入",
+      "materiality": "material",
+      "materiality_reason": "单月及累计营收增长，但不能从公司总数拆出AI贡献或直接推算利润率。",
+      "disposition": "included",
+      "reason": "入选事实的具体版本、日期、归因、关键限制与正文已逐项核对。",
+      "research": {
+        "event_key": "TSM-REV",
+        "canonical_id": "TSM-REV",
+        "identity_status": "identified",
+        "member_ids": [
+          "TSM-REV"
+        ],
+        "materials": [
+          {
+            "role": "source_review",
+            "path": "logs/2026-09-14_verified_events.json",
+            "locator": "events[id=TSM-REV]; sources with explicit version locators"
+          }
+        ],
+        "open_questions": [],
+        "next_action": {
+          "kind": "closed",
+          "target": "TSM-REV-1, TSM-REV-2",
+          "question": "入选事实已绑定；不代表穷尽公司消息。"
+        }
+      },
+      "claim_ids": [
+        "TSM-REV-1",
+        "TSM-REV-2"
+      ],
+      "targets": [
+        "event:26",
+        "company:TSMC",
+        "headline:7"
+      ]
+    },
+    {
+      "id": "GOO-PPA",
+      "companies": [
+        "Alphabet / Google"
+      ],
+      "discovered_by": [
+        "GOO-I"
+      ],
+      "summary": "Fortum与Google签核电PPA",
+      "materiality": "material",
+      "materiality_reason": "长期电力安排有助于计算基础设施部署，但交付仍在未来。",
+      "disposition": "included",
+      "reason": "入选事实的具体版本、日期、归因、关键限制与正文已逐项核对。",
+      "research": {
+        "event_key": "GOO-PPA",
+        "canonical_id": "GOO-PPA",
+        "identity_status": "identified",
+        "member_ids": [
+          "GOO-PPA"
+        ],
+        "materials": [
+          {
+            "role": "source_review",
+            "path": "logs/2026-09-14_verified_events.json",
+            "locator": "events[id=GOO-PPA]; sources with explicit version locators"
+          }
+        ],
+        "open_questions": [],
+        "next_action": {
+          "kind": "closed",
+          "target": "GOO-PPA-1, GOO-PPA-2",
+          "question": "入选事实已绑定；不代表穷尽公司消息。"
+        }
+      },
+      "claim_ids": [
+        "GOO-PPA-1",
+        "GOO-PPA-2"
+      ],
+      "targets": [
+        "event:6",
+        "company:Alphabet / Google"
+      ]
+    },
+    {
+      "id": "CA-YOUTH",
+      "companies": [
+        "Alphabet / Google",
+        "Meta",
+        "OpenAI"
+      ],
+      "discovered_by": [
+        "GOO-I",
+        "META-REG",
+        "OA-REG"
+      ],
+      "summary": "加州签署儿童社交媒体与聊天机器人保护法包",
+      "materiality": "material",
+      "materiality_reason": "社交平台及符合定义的聊天机器人面临产品设计和合规调整；对各公司适用范围是本报分析，非个案执法结论。",
+      "disposition": "included",
+      "reason": "入选事实的具体版本、日期、归因、关键限制与正文已逐项核对。",
+      "research": {
+        "event_key": "CA-YOUTH",
+        "canonical_id": "CA-YOUTH",
+        "identity_status": "identified",
+        "member_ids": [
+          "CA-YOUTH"
+        ],
+        "materials": [
+          {
+            "role": "source_review",
+            "path": "logs/2026-09-14_verified_events.json",
+            "locator": "events[id=CA-YOUTH]; sources with explicit version locators"
+          }
+        ],
+        "open_questions": [],
+        "next_action": {
+          "kind": "closed",
+          "target": "CA-YOUTH-1, CA-YOUTH-2, CA-YOUTH-3",
+          "question": "入选事实已绑定；不代表穷尽公司消息。"
+        }
+      },
+      "claim_ids": [
+        "CA-YOUTH-1",
+        "CA-YOUTH-2",
+        "CA-YOUTH-3"
+      ],
+      "targets": [
+        "event:7",
+        "company:Alphabet / Google",
+        "event:11",
+        "company:Meta",
+        "event:16",
+        "company:OpenAI",
+        "headline:8"
+      ]
+    },
+    {
+      "id": "NV-AN-IPO",
+      "companies": [
+        "NVIDIA",
+        "Anthropic"
+      ],
+      "discovered_by": [
+        "NV-IPO-I",
+        "AN-IPO-I"
+      ],
+      "summary": "NVIDIA讨论参与Anthropic IPO",
+      "materiality": "material",
+      "materiality_reason": "若落实将影响融资结构和生态关系；现阶段不能当作资本到账或供应订单。",
+      "disposition": "included",
+      "reason": "入选事实的具体版本、日期、归因、关键限制与正文已逐项核对。",
+      "research": {
+        "event_key": "NV-AN-IPO",
+        "canonical_id": "NV-AN-IPO",
+        "identity_status": "identified",
+        "member_ids": [
+          "NV-AN-IPO"
+        ],
+        "materials": [
+          {
+            "role": "source_review",
+            "path": "logs/2026-09-14_verified_events.json",
+            "locator": "events[id=NV-AN-IPO]; sources with explicit version locators"
+          }
+        ],
+        "open_questions": [],
+        "next_action": {
+          "kind": "closed",
+          "target": "NV-AN-IPO-1, NV-AN-IPO-2",
+          "question": "入选事实已绑定；不代表穷尽公司消息。"
+        }
+      },
+      "claim_ids": [
+        "NV-AN-IPO-1",
+        "NV-AN-IPO-2"
+      ],
+      "targets": [
+        "event:15",
+        "company:NVIDIA",
+        "event:21",
+        "company:Anthropic",
+        "headline:5"
+      ]
+    },
+    {
+      "id": "SS-MISTRAL",
+      "companies": [
+        "Samsung Electronics"
+      ],
+      "discovered_by": [
+        "SS-O"
+      ],
+      "summary": "Samsung与Mistral半导体AI合作",
+      "materiality": "material",
+      "materiality_reason": "AI进入芯片研发和制造流程，效果取决于部署、数据治理及工程验证。",
+      "disposition": "included",
+      "reason": "入选事实的具体版本、日期、归因、关键限制与正文已逐项核对。",
+      "research": {
+        "event_key": "SS-MISTRAL",
+        "canonical_id": "SS-MISTRAL",
+        "identity_status": "identified",
+        "member_ids": [
+          "SS-MISTRAL"
+        ],
+        "materials": [
+          {
+            "role": "source_review",
+            "path": "logs/2026-09-14_verified_events.json",
+            "locator": "events[id=SS-MISTRAL]; sources with explicit version locators"
+          }
+        ],
+        "open_questions": [],
+        "next_action": {
+          "kind": "closed",
+          "target": "SS-MISTRAL-1, SS-MISTRAL-2",
+          "question": "入选事实已绑定；不代表穷尽公司消息。"
+        }
+      },
+      "claim_ids": [
+        "SS-MISTRAL-1",
+        "SS-MISTRAL-2"
+      ],
+      "targets": [
+        "event:24",
+        "company:Samsung Electronics",
+        "headline:11"
+      ]
+    },
+    {
+      "id": "SS-ASML",
+      "companies": [
+        "Samsung Electronics"
+      ],
+      "discovered_by": [
+        "SS-O"
+      ],
+      "summary": "Samsung与ASML扩大High NA合作",
+      "materiality": "material",
+      "materiality_reason": "先进存储制造路线推进，实施进度与经济性尚待验证。",
+      "disposition": "included",
+      "reason": "入选事实的具体版本、日期、归因、关键限制与正文已逐项核对。",
+      "research": {
+        "event_key": "SS-ASML",
+        "canonical_id": "SS-ASML",
+        "identity_status": "identified",
+        "member_ids": [
+          "SS-ASML"
+        ],
+        "materials": [
+          {
+            "role": "source_review",
+            "path": "logs/2026-09-14_verified_events.json",
+            "locator": "events[id=SS-ASML]; sources with explicit version locators"
+          }
+        ],
+        "open_questions": [],
+        "next_action": {
+          "kind": "closed",
+          "target": "SS-ASML-1, SS-ASML-2",
+          "question": "入选事实已绑定；不代表穷尽公司消息。"
+        }
+      },
+      "claim_ids": [
+        "SS-ASML-1",
+        "SS-ASML-2"
+      ],
+      "targets": [
+        "event:25",
+        "company:Samsung Electronics"
+      ]
+    },
+    {
+      "id": "OA-MATH",
+      "companies": [
+        "OpenAI"
+      ],
+      "discovered_by": [
+        "OA-MATH-O"
+      ],
+      "summary": "OpenAI发布Navier-Stokes候选证明",
+      "materiality": "material",
+      "materiality_reason": "显示公司正探索高难科学研究，但数学论证和通用产品价值不能直接等同。",
+      "disposition": "included",
+      "reason": "入选事实的具体版本、日期、归因、关键限制与正文已逐项核对。",
+      "research": {
+        "event_key": "OA-MATH",
+        "canonical_id": "OA-MATH",
+        "member_ids": [
+          "OA-MATH"
+        ],
+        "identity_status": "identified",
+        "materials": [
+          {
+            "role": "source_review",
+            "path": "logs/2026-09-14_verified_events.json",
+            "locator": "events[id=OA-MATH]; sources with explicit version locators"
+          }
+        ],
+        "open_questions": [],
+        "next_action": {
+          "kind": "closed",
+          "target": "OA-MATH-1, OA-MATH-2",
+          "question": "入选事实已绑定；不代表穷尽公司消息。"
+        }
+      },
+      "claim_ids": [
+        "OA-MATH-1",
+        "OA-MATH-2"
+      ],
+      "targets": [
+        "event:17",
+        "company:OpenAI",
+        "headline:2"
+      ]
+    }
+  ],
+  "company_conclusions": {
+    "Apple": {
+      "status": "events",
+      "selected_candidate_ids": [
+        "APL-DUO",
+        "APL-PRO"
+      ],
+      "note": "有限官方入口与一次独立重要性校准；本期入选2项，不是全业务无遗漏认证。",
+      "selection_reason": "按经营/资本影响、关键产品、技术限制、监管治理排序；只核本期入选事项。",
+      "legal_review": "独立校准排除旧监管报道，不认证本周监管无变化。",
+      "check_ids": [
+        "APL-O",
+        "APL-I"
+      ]
+    },
+    "Microsoft": {
+      "status": "events",
+      "selected_candidate_ids": [
+        "MS-38GW",
+        "MS-SCHOOL"
+      ],
+      "note": "有限官方入口与一次独立重要性校准；本期入选2项，不是全业务无遗漏认证。",
+      "selection_reason": "按经营/资本影响、关键产品、技术限制、监管治理排序；只核本期入选事项。",
+      "legal_review": "学校合同标准有别于法律；旧Teams案件不重发。",
+      "check_ids": [
+        "MS-O",
+        "MS-I"
+      ]
+    },
+    "Alphabet / Google": {
+      "status": "events",
+      "selected_candidate_ids": [
+        "GOO-FIN",
+        "GOO-PPA",
+        "CA-YOUTH"
+      ],
+      "note": "有限官方入口与一次独立重要性校准；本期入选3项，不是全业务无遗漏认证。",
+      "selection_reason": "按经营/资本影响、关键产品、技术限制、监管治理排序；只核本期入选事项。",
+      "legal_review": "政府及成文法版本确认儿童保护新法，未把旧广告案当新进展。",
+      "check_ids": [
+        "GOO-O",
+        "GOO-I"
+      ]
+    },
+    "Amazon / AWS": {
+      "status": "events",
+      "selected_candidate_ids": [
+        "AWS-ASTRA",
+        "AWS-QUICK",
+        "AWS-LABOR"
+      ],
+      "note": "有限官方入口与一次独立重要性校准；本期入选3项，不是全业务无遗漏认证。",
+      "selection_reason": "按经营/资本影响、关键产品、技术限制、监管治理排序；只核本期入选事项。",
+      "legal_review": "入选孕期劳动诉讼，双方观点并列；其他未入选动议留资料池。",
+      "check_ids": [
+        "AWS-O",
+        "AWS-I"
+      ]
+    },
+    "Meta": {
+      "status": "events",
+      "selected_candidate_ids": [
+        "CA-YOUTH",
+        "META-MUSE"
+      ],
+      "note": "有限官方入口与一次独立重要性校准；本期入选2项，不是全业务无遗漏认证。",
+      "selection_reason": "按经营/资本影响、关键产品、技术限制、监管治理排序；只核本期入选事项。",
+      "legal_review": "州法与隐私反证均保留，未用公司安全自宣替代独立校准。",
+      "check_ids": [
+        "META-O",
+        "META-I",
+        "META-REG"
+      ]
+    },
+    "NVIDIA": {
+      "status": "events",
+      "selected_candidate_ids": [
+        "NV-DM",
+        "NV-AU",
+        "NV-AN-IPO"
+      ],
+      "note": "有限官方入口与一次独立重要性校准；本期入选3项，不是全业务无遗漏认证。",
+      "selection_reason": "按经营/资本影响、关键产品、技术限制、监管治理排序；只核本期入选事项。",
+      "legal_review": "融资讨论未定，不形成确认供应/股权结果；评论不升级个案裁判。",
+      "check_ids": [
+        "NV-O",
+        "NV-I",
+        "NV-IPO-I"
+      ]
+    },
+    "Tesla": {
+      "status": "no_selected_update",
+      "selected_candidate_ids": [],
+      "note": "有限官方入口与一次独立重要性校准；本期入选0项，不是全业务无遗漏认证。",
+      "selection_reason": "无合格重要增量；旧闻、战略交流或静态展示不凑数。",
+      "legal_review": "本期检索识别9月4日旧调查；日本展示不等运营许可，未宣称风险解除。",
+      "check_ids": [
+        "TSLA-O",
+        "TSLA-I",
+        "TSLA-CAL-I"
+      ]
+    },
+    "OpenAI": {
+      "status": "events",
+      "selected_candidate_ids": [
+        "CA-YOUTH",
+        "OA-MATH",
+        "OA-AGENTS",
+        "OA-PROBE",
+        "OA-POLICY"
+      ],
+      "note": "有限官方入口与一次独立重要性校准；本期入选5项，不是全业务无遗漏认证。",
+      "selection_reason": "按经营/资本影响、关键产品、技术限制、监管治理排序；只核本期入选事项。",
+      "legal_review": "入选参议院监督与州法，政策立场不当成已生效联邦法。",
+      "check_ids": [
+        "OA-O",
+        "OA-I",
+        "OA-REG",
+        "OA-MATH-O"
+      ]
+    },
+    "Anthropic": {
+      "status": "events",
+      "selected_candidate_ids": [
+        "NV-AN-IPO",
+        "AN-MISUSE",
+        "AN-RESIGN"
+      ],
+      "note": "有限官方入口与一次独立重要性校准；本期入选3项，不是全业务无遗漏认证。",
+      "selection_reason": "按经营/资本影响、关键产品、技术限制、监管治理排序；只核本期入选事项。",
+      "legal_review": "滥用披露、安全观点和融资讨论分别归因；不自动解除上期国防限制。",
+      "check_ids": [
+        "AN-O",
+        "AN-I",
+        "AN-IPO-I"
+      ]
+    },
+    "Samsung Electronics": {
+      "status": "events",
+      "selected_candidate_ids": [
+        "SS-MISTRAL",
+        "SS-ASML"
+      ],
+      "note": "有限官方入口与一次独立重要性校准；本期入选2项，不是全业务无遗漏认证。",
+      "selection_reason": "按经营/资本影响、关键产品、技术限制、监管治理排序；只核本期入选事项。",
+      "legal_review": "本地部署与工艺计划保留限制，未将旧股东回报重发；不是全监管审计。",
+      "check_ids": [
+        "SS-I",
+        "SS-O"
+      ]
+    },
+    "SK Hynix": {
+      "status": "no_selected_update",
+      "selected_candidate_ids": [],
+      "note": "有限官方入口与一次独立重要性校准；本期入选0项，不是全业务无遗漏认证。",
+      "selection_reason": "无合格重要增量；旧闻、战略交流或静态展示不凑数。",
+      "legal_review": "独立校准与旧回购时点核对；未宣称上期许可或项目问题解决。",
+      "check_ids": [
+        "SK-I",
+        "SK-O"
+      ]
+    },
+    "TSMC": {
+      "status": "events",
+      "selected_candidate_ids": [
+        "TSM-REV"
+      ],
+      "note": "有限官方入口与一次独立重要性校准；本期入选1项，不是全业务无遗漏认证。",
+      "selection_reason": "按经营/资本影响、关键产品、技术限制、监管治理排序；只核本期入选事项。",
+      "legal_review": "本期独立有限筛选未新增可核实重大监管事项，不认证所有法域无事。",
+      "check_ids": [
+        "TSM-O",
+        "TSM-I"
+      ]
+    }
+  },
+  "watchlist": [
+    {
+      "id": "W-APPLE-EVENT",
+      "companies": [
+        "Apple"
+      ],
+      "topic": "9月发布会及产品交付安排",
+      "status": "active",
+      "review_scope": "selected",
+      "note": "已发布Duo及Pro；后续交付仍未完成，保持active。",
+      "check_ids": [
+        "APL-O",
+        "APL-I"
+      ]
+    },
+    {
+      "id": "W-APPLE-MAC",
+      "companies": [
+        "Apple"
+      ],
+      "topic": "上期Mac芯片/9月活动计划",
+      "status": "active",
+      "review_scope": "not_selected",
+      "defer_reason": "本期有限筛选未将该活跃事项选作独立更新，保留未决状态；不要求每周重复所有案卷。",
+      "note": "保留稳定ID及活跃风险，不据本期未入选认定关闭。"
+    },
+    {
+      "id": "W-NVIDIA-HF",
+      "companies": [
+        "NVIDIA"
+      ],
+      "topic": "Hugging Face并购阶段",
+      "status": "active",
+      "review_scope": "not_selected",
+      "defer_reason": "本期有限筛选未将该活跃事项选作独立更新，保留未决状态；不要求每周重复所有案卷。",
+      "note": "保留稳定ID及活跃风险，不据本期未入选认定关闭。"
+    },
+    {
+      "id": "W-AWS-NVIDIA-GPU",
+      "companies": [
+        "Amazon / AWS",
+        "NVIDIA"
+      ],
+      "topic": "上期GPU部署长期计划",
+      "status": "active",
+      "review_scope": "not_selected",
+      "defer_reason": "本期有限筛选未将该活跃事项选作独立更新，保留未决状态；不要求每周重复所有案卷。",
+      "note": "保留稳定ID及活跃风险，不据本期未入选认定关闭。"
+    },
+    {
+      "id": "W-META-SETTLEMENT",
+      "companies": [
+        "Meta"
+      ],
+      "topic": "上期州级和解与执行",
+      "status": "active",
+      "review_scope": "not_selected",
+      "defer_reason": "本期有限筛选未将该活跃事项选作独立更新，保留未决状态；不要求每周重复所有案卷。",
+      "note": "保留稳定ID及活跃风险，不据本期未入选认定关闭。"
+    },
+    {
+      "id": "W-OPENAI-HF-INCIDENT",
+      "companies": [
+        "OpenAI"
+      ],
+      "topic": "上期Hugging Face安全事件",
+      "status": "active",
+      "review_scope": "selected",
+      "note": "7月事件本周进入参议院调查报道，尚未结案，保持active。",
+      "check_ids": [
+        "OA-I"
+      ]
+    },
+    {
+      "id": "W-OPENAI-CURSOR",
+      "companies": [
+        "OpenAI"
+      ],
+      "topic": "上期Cursor合作/终止计划",
+      "status": "active",
+      "review_scope": "not_selected",
+      "defer_reason": "本期有限筛选未将该活跃事项选作独立更新，保留未决状态；不要求每周重复所有案卷。",
+      "note": "保留稳定ID及活跃风险，不据本期未入选认定关闭。"
+    },
+    {
+      "id": "W-OPENAI-JALAPENO",
+      "companies": [
+        "OpenAI"
+      ],
+      "topic": "上期自研芯片计划",
+      "status": "active",
+      "review_scope": "not_selected",
+      "defer_reason": "本期有限筛选未将该活跃事项选作独立更新，保留未决状态；不要求每周重复所有案卷。",
+      "note": "保留稳定ID及活跃风险，不据本期未入选认定关闭。"
+    },
+    {
+      "id": "W-ANTHROPIC-NSCALE",
+      "companies": [
+        "Anthropic"
+      ],
+      "topic": "上期Nscale合作报道",
+      "status": "active",
+      "review_scope": "not_selected",
+      "defer_reason": "本期有限筛选未将该活跃事项选作独立更新，保留未决状态；不要求每周重复所有案卷。",
+      "note": "保留稳定ID及活跃风险，不据本期未入选认定关闭。"
+    },
+    {
+      "id": "W-SAMSUNG-S26FE",
+      "companies": [
+        "Samsung Electronics"
+      ],
+      "topic": "上期S26FE上市预告",
+      "status": "active",
+      "review_scope": "not_selected",
+      "defer_reason": "本期有限筛选未将该活跃事项选作独立更新，保留未决状态；不要求每周重复所有案卷。",
+      "note": "保留稳定ID及活跃风险，不据本期未入选认定关闭。"
+    },
+    {
+      "id": "W-SKHYNIX-INDIANA",
+      "companies": [
+        "SK Hynix"
+      ],
+      "topic": "上期Indiana项目投产计划",
+      "status": "active",
+      "review_scope": "not_selected",
+      "defer_reason": "本期有限筛选未将该活跃事项选作独立更新，保留未决状态；不要求每周重复所有案卷。",
+      "note": "保留稳定ID及活跃风险，不据本期未入选认定关闭。"
+    },
+    {
+      "id": "W-GOOGLE-SEARCH-2020",
+      "companies": [
+        "Alphabet / Google"
+      ],
+      "topic": "DOJ Google搜索垄断案2020，救济执行与上诉；与2023广告技术案分开",
+      "status": "active",
+      "review_scope": "not_selected",
+      "defer_reason": "本期有限筛选未将该活跃事项选作独立更新，保留未决状态；不要求每周重复所有案卷。",
+      "note": "保留稳定ID及活跃风险，不据本期未入选认定关闭。"
+    }
+  ],
+  "prior_report": {
+    "path": "reports/2026-09-07_weekly_morning_brief.md",
+    "sha256": "b4c1ae749c6b85aeb300eb65274448e9485a1dcee494474ebb2d2857add14e92",
+    "note": "本轮实际读取9/9本地修订稿及活跃事项；冻结相同字节供比较。此次不替换远端9/7旧正文，不认证历史实时可得性。",
+    "frozen_path": "archives/2026-09-14_before_production/reports/2026-09-07_weekly_morning_brief.md"
+  },
+  "baseline_start_hashes": {
+    "state/supply_graph_baseline.json": "f0b72672eb7dcc8573ea3f0f68e733eb2fc1a7b398873ed334595a5529f6a674",
+    "state/product_relationships_2026.json": "2608cf80d6adef906d6fc4c2c2d3415b9b5e5911fff0e10865d9082a4ebe4690",
+    "reports/latest.md": "135ff048b64ad1b00bbaa51f3631e0102fc4e7c0015db747485d4b0b6a4c6955"
+  },
+  "gaps": [],
+  "reviewed_at": "2026-09-14T04:17:52.493Z",
+  "report_sha256": "81902b2228caf5b5dc4126cb57042608e91b9c2d5bfe26d0ad8c7119b44290ab",
+  "product_graph_sha256": "9cab5511530a248a814852befcbd02402645c23370fe2747e54f069089041396",
+  "skill_sha256": "abb65eeb71a83c1f9a2e1d816799d8c7489a8e76f482b95717437127b6f6858f",
+  "selection_frozen_at": "2026-09-14T04:17:52.376Z",
+  "scope_limitations": [
+    "不保证零遗漏；未入选候选不认证为已核实。",
+    "受限原件事项仅保留已读媒体范围，未认证诉状或问询未载内容。",
+    "使用当前单一模型顺序研究与复核，未冒称独立模型审查。"
+  ]
+}

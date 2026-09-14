@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import hashlib
 import sys
 import tempfile
 import unittest
@@ -31,6 +32,27 @@ def supply_edge(edge_id: str, changed: str, product: str = "GPU") -> dict[str, o
 
 
 class GraphUpdatePolicyTests(unittest.TestCase):
+    def test_frozen_comparison_uses_verified_previous_week(self) -> None:
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            (root / "archives").mkdir()
+            old_supply = {"generation_date": "2026-09-07", "edges": [supply_edge("E01", "new")]}
+            old_product = {"generated_for_report_date": "2026-09-07", "companies": []}
+            bindings = {}
+            for kind, data in (("supply", old_supply), ("product", old_product)):
+                raw = json.dumps(data).encode()
+                (root / f"archives/{kind}.json").write_bytes(raw)
+                bindings[kind] = {"path": f"archives/{kind}.json", "sha256": hashlib.sha256(raw).hexdigest()}
+            current = {"generation_date": "2026-09-14", "edges": [supply_edge("E01", "no_new_weekly_evidence")], "comparison_snapshots": bindings}
+            (root / "supply.json").write_text(json.dumps(current))
+            (root / "product.json").write_text(json.dumps(old_product))
+            with patch("graph_update_policy.load_head_json", return_value=None):
+                plan = build_graph_plan(root, "2026-09-14", Path("supply.json"), Path("product.json"))
+                self.assertEqual(plan["supply"]["changed_edge_ids"], [])
+                (root / "archives/supply.json").write_text("tampered")
+                with self.assertRaisesRegex(ValueError, "hash mismatch"):
+                    build_graph_plan(root, "2026-09-14", Path("supply.json"), Path("product.json"))
+
     def test_quarterly_refresh_is_first_monday(self) -> None:
         self.assertTrue(is_quarterly_refresh(date(2026, 10, 5)))
         self.assertFalse(is_quarterly_refresh(date(2026, 8, 31)))
