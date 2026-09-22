@@ -1,0 +1,437 @@
+{
+  "schema_version": 1,
+  "evidence_type": "targeted_historical_correction",
+  "report_date": "2026-07-27",
+  "recorded_at_utc": "2026-09-07 03:48:40 UTC",
+  "report_revised_at": "2026-09-07T11:46:04+08:00",
+  "cutoff_exclusive": "2026-07-27T00:00:00+08:00",
+  "scope": "原报告候选的定向纠错及替换，不是全网新闻穷尽重研或全量历史时点认证",
+  "temporal_certification": "legacy_unverified",
+  "backtest_eligible_for_original_report_time": false,
+  "report_path": "reports/2026-07-27_weekly_morning_brief.md",
+  "report_sha256": "a9224c5457ab1ddaed0c4ccda6239444d3f91820988a3acc2ce0d9313274c133",
+  "original_snapshot_commit": "ea3758d3edea056f4987a5c839f24f6f7b05c8af",
+  "pre_correction_commit": "0d6033a12ad001e5fbda8d584cf31712021735f6",
+  "pre_correction_sha256": "fdc59410c74f084ecb74d53fe10eaf99e293c49a01080316285f27519ddfef8e",
+  "archive_path": "archives/2026-09-07_before_correction.tar.gz",
+  "archive_sha256": "5e49167d545d9603768b1bb21404f2ead323961e34598575fa591796877b1eef",
+  "input_and_artifact_hashes": {
+    "state/historical_snapshot_overrides.json": "7c1f5371e599c00b0c1cfedbb2ab814a8bcbd5ef13e5f58c0d9190e5bd606096",
+    "state/historical/2026-07-27_supply.json": "2d0a3a39d997de52bee4f595c7e3e6782b8c587194c4faa64b16029d540fc73a",
+    "state/historical/2026-07-27_product.json": "03f5d24b68ed053960305878d04369fea0276116bdad2ae889ccd4c4c5d90d8a",
+    "logs/2026-07-27_correction_inventory.json": "b827acab82176b35ea60e84b736600feedc19decbd6e29b5e72a37ef9eb4fe2d",
+    "assets/2026-07-27_supply_relationships.svg": "dbaea9b590ee52dd0047f10aa563ae9465020dcaf3e691c4a3584b5e2b69eae1",
+    "assets/2026-07-27_supply_relationships.canvas": "5cb30b8523ba597ca18ee4e397972650309742de0159c0359d8dcec0c4a52401"
+  },
+  "headline_count": 9,
+  "corrections": [
+    {
+      "id": "ALPHABET-Q2-2026",
+      "finding": "旧版 Cloud 收入 15.6 billion、经营利润 37.2 billion 错误，85 billion 全年资本开支指引年份混用",
+      "action": "头条、公司速览、详细事件、横向判断与 E04 同步纠正；错误数值不作为一致预期；删除来源不足的 TPU 客户部署断言；不猜测另一 2026 全年指引",
+      "targets": [
+        "headline:1",
+        "company:Alphabet / Google",
+        "event:4",
+        "analysis:1",
+        "supply:E04"
+      ],
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm",
+          "original_dateline": "2026-07-22",
+          "claim_first_public_at": null,
+          "locator": "Consolidated Statements of Income、分部结果、Statements of Cash Flows、Free Cash Flow reconciliation 的三个月列",
+          "support": "截至 2026-06-30 单季财务原表，单位百万美元；不取六个月列",
+          "reviewed_on": "2026-09-07",
+          "review_method": "本次联网阅读原文；日期来自页面正文或明示元数据，不从 URL 推定",
+          "historical_complete_page_version_verified": false,
+          "document_kind": "SEC Exhibit 99.1",
+          "period_specific_document": true
+        },
+        {
+          "url": "https://abc.xyz/investor/events/event-details/2025/2025-Q2-Earnings-Call/",
+          "original_dateline": "2025-07-23",
+          "claim_first_public_at": null,
+          "locator": "2025 Q2 电话会 CFO 全年资本开支指引段",
+          "support": "85 billion 指引明确属于 2025 年，不是 2026 全年指引",
+          "reviewed_on": "2026-09-07",
+          "review_method": "本次联网阅读原文；日期来自页面正文或明示元数据，不从 URL 推定",
+          "historical_complete_page_version_verified": false
+        }
+      ]
+    },
+    {
+      "id": "APPLE-FORD-DATE",
+      "action": "纠正公告日期 7/21 为 7/23；保留合作计划语气并披露网页历史版本限制",
+      "targets": [
+        "headline:9",
+        "event:1",
+        "supply:E01"
+      ],
+      "sources": [
+        {
+          "url": "https://www.apple.com/newsroom/2026/07/apple-maps-to-power-navigation-experience-for-ford-uev-platform/",
+          "original_dateline": "2026-07-23",
+          "claim_first_public_at": null,
+          "locator": "公告日期与开头合作段",
+          "support": "Apple Maps/Ford UEV 导航合作，不是硬件订单",
+          "reviewed_on": "2026-09-07",
+          "review_method": "本次联网阅读原文；日期来自页面正文或明示元数据，不从 URL 推定",
+          "historical_complete_page_version_verified": false,
+          "page_modified_date_observed": "2026-08-19",
+          "limitation": "当前页晚改，未取得完整同期快照；不认证各段均在原截止前公开"
+        }
+      ]
+    },
+    {
+      "id": "AMD-ROADMAP",
+      "action": "更正具体路线为 Helios、EPYC、HDv2/HXv2/ND MI455X v7；upcoming 不写成已全面上线，删除 MI450/Pensando 拼接",
+      "targets": [
+        "headline:5",
+        "event:2",
+        "supply:E02"
+      ],
+      "sources": [
+        {
+          "url": "https://blogs.microsoft.com/blog/2026/07/20/microsoft-expands-azure-ai-and-hpc-infrastructure-with-amd/",
+          "original_dateline": "2026-07-20",
+          "claim_first_public_at": null,
+          "locator": "三类 Azure VM 及 upcoming 段",
+          "support": "公布产品路线，未披露采购金额",
+          "reviewed_on": "2026-09-07",
+          "review_method": "本次联网阅读原文；日期来自页面正文或明示元数据，不从 URL 推定",
+          "historical_complete_page_version_verified": false,
+          "page_date_published_metadata": "2026-07-20T13:00:02Z"
+        }
+      ]
+    },
+    {
+      "id": "MISTRAL-PARTNERSHIP",
+      "action": "保留扩大合作事实，不推导其他模型合作减少",
+      "targets": [
+        "headline:6",
+        "event:3",
+        "supply:E03"
+      ],
+      "sources": [
+        {
+          "url": "https://news.microsoft.com/source/2026/07/21/microsoft-and-mistral-expand-strategic-partnership-to-give-enterprises-and-regulated-industries-frontier-ai-they-can-control/",
+          "original_dateline": "2026-07-21",
+          "claim_first_public_at": null,
+          "locator": "欧洲算力、模型分发及部署选择段",
+          "support": "面向企业及受监管行业的可控部署合作",
+          "reviewed_on": "2026-09-07",
+          "review_method": "本次联网阅读原文；日期来自页面正文或明示元数据，不从 URL 推定",
+          "historical_complete_page_version_verified": false,
+          "page_date_published_metadata": "2026-07-21T12:30:12Z"
+        }
+      ]
+    },
+    {
+      "id": "AWS-OPUS",
+      "action": "仅使用该期公告支持的可用性，不从当前产品文档补后来功能",
+      "targets": [
+        "headline:7",
+        "event:5",
+        "supply:E05"
+      ],
+      "sources": [
+        {
+          "url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-opus-5-on-aws-anthropics-most-capable-opus-model/",
+          "original_dateline": "2026-07-24",
+          "claim_first_public_at": null,
+          "locator": "发布日期与 Bedrock/Claude Platform on AWS 可用段",
+          "support": "Claude Opus 5 可用性；非独家订单认证",
+          "reviewed_on": "2026-09-07",
+          "review_method": "本次联网阅读原文；日期来自页面正文或明示元数据，不从 URL 推定",
+          "historical_complete_page_version_verified": false
+        }
+      ]
+    },
+    {
+      "id": "SK-LETTER-OF-INTENT",
+      "action": "区分已签意向书、最高 2GW 计划、2027 年一期计划与实际投产；同一合作的 SK Hynix 视角不另算头条",
+      "targets": [
+        "headline:3",
+        "event:6",
+        "event:10",
+        "supply:E07",
+        "supply:E08"
+      ],
+      "sources": [
+        {
+          "url": "https://nvidianews.nvidia.com/news/sk-group-and-nvidia-expand-strategic-partnership-across-ai-factories-and-next-generation-memory",
+          "original_dateline": "2026-07-24",
+          "claim_first_public_at": null,
+          "locator": "letters of intent、AI factories 与 memory 合作段",
+          "support": "最高 2GW AI 工厂及 HBM 等下一代内存合作；不是已完成建设或确定全部订单",
+          "reviewed_on": "2026-09-07",
+          "review_method": "本次联网阅读原文；日期来自页面正文或明示元数据，不从 URL 推定",
+          "historical_complete_page_version_verified": false
+        }
+      ]
+    },
+    {
+      "id": "NAVER-PLAN",
+      "action": "200MW 与 2028 年均保留远期目标语气，不计当期 GPU 收入",
+      "targets": [
+        "headline:8",
+        "event:7"
+      ],
+      "sources": [
+        {
+          "url": "https://nvidianews.nvidia.com/news/naver-nvidia-and-brookfield-to-expand-koreas-national-ai-factory-infrastructure-buildout",
+          "original_dateline": "2026-07-24",
+          "claim_first_public_at": null,
+          "locator": "初始项目扩建目标段",
+          "support": "目标到 2028 年将初始项目扩至 200MW",
+          "reviewed_on": "2026-09-07",
+          "review_method": "本次联网阅读原文；日期来自页面正文或明示元数据，不从 URL 推定",
+          "historical_complete_page_version_verified": false
+        }
+      ]
+    },
+    {
+      "id": "BROADCOM-MOU",
+      "action": "超过 2000 亿美元是至 2030 年五年合作规模估计，不是已实现收入或确定采购承诺",
+      "targets": [
+        "headline:2",
+        "event:9",
+        "supply:E09"
+      ],
+      "sources": [
+        {
+          "url": "https://news.samsung.com/global/samsung-electronics-and-broadcom-expand-strategic-collaboration-across-memory-and-foundry-technologies",
+          "original_dateline": "2026-07-25",
+          "claim_first_public_at": null,
+          "locator": "MOU、技术范围及合作规模估计段",
+          "support": "内存、代工、先进封装合作，保留估计和计划限定",
+          "reviewed_on": "2026-09-07",
+          "review_method": "本次联网阅读原文；日期来自页面正文或明示元数据，不从 URL 推定",
+          "historical_complete_page_version_verified": false
+        }
+      ]
+    },
+    {
+      "id": "TESLA-Q2-2026",
+      "action": "使用 SEC 单季原表，区分 GAAP 利润和非 GAAP 自由现金流；已举行的财报电话会不再列入下周催化",
+      "targets": [
+        "headline:4",
+        "company:Tesla",
+        "event:8",
+        "analysis:1"
+      ],
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049213/exhibit991.htm",
+          "original_dateline": "2026-07-22",
+          "claim_first_public_at": null,
+          "locator": "Q2 2026 Update 第 4 页财务摘要，Q2-2026 列",
+          "support": "单季营收、利润、现金流、capex 与公司定义的 FCF",
+          "reviewed_on": "2026-09-07",
+          "review_method": "本次联网阅读原文；日期来自页面正文或明示元数据，不从 URL 推定",
+          "historical_complete_page_version_verified": false,
+          "document_kind": "SEC Exhibit 99.1",
+          "period_specific_document": true
+        }
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "url": "https://www.barrons.com/articles/tsmc-stock-ai-chips-price-hike-0a2bb9f8",
+      "affected_edges": [
+        "E11",
+        "E12"
+      ],
+      "reason": "未核全文和历史版本，删除头条和当周 risk 归类；旧边保留为低置信媒体背景，不声称已核事实"
+    }
+  ],
+  "financial_review": {
+    "status": "primary_tables_checked_for_listed_values_only",
+    "alphabet": [
+      {
+        "metric": "Revenue",
+        "period": "three months ended 2026-06-30",
+        "period_type": "single_quarter",
+        "scope": "consolidated",
+        "actual_or_guidance": "actual",
+        "currency": "USD",
+        "source_unit": "million",
+        "source_value": 119796,
+        "display_unit": "亿美元",
+        "display_value": "1197.96",
+        "accounting": "GAAP"
+      },
+      {
+        "metric": "Operating income",
+        "period": "three months ended 2026-06-30",
+        "period_type": "single_quarter",
+        "scope": "consolidated",
+        "actual_or_guidance": "actual",
+        "currency": "USD",
+        "source_unit": "million",
+        "source_value": 40770,
+        "display_unit": "亿美元",
+        "display_value": "407.70",
+        "accounting": "GAAP"
+      },
+      {
+        "metric": "Revenue",
+        "period": "three months ended 2026-06-30",
+        "period_type": "single_quarter",
+        "scope": "Google Cloud",
+        "actual_or_guidance": "actual",
+        "currency": "USD",
+        "source_unit": "million",
+        "source_value": 24768,
+        "display_unit": "亿美元",
+        "display_value": "247.68",
+        "accounting": "GAAP"
+      },
+      {
+        "metric": "Operating income",
+        "period": "three months ended 2026-06-30",
+        "period_type": "single_quarter",
+        "scope": "Google Cloud",
+        "actual_or_guidance": "actual",
+        "currency": "USD",
+        "source_unit": "million",
+        "source_value": 8814,
+        "display_unit": "亿美元",
+        "display_value": "88.14",
+        "accounting": "GAAP"
+      },
+      {
+        "metric": "Purchases of property and equipment",
+        "period": "three months ended 2026-06-30",
+        "period_type": "single_quarter",
+        "scope": "consolidated",
+        "actual_or_guidance": "actual",
+        "currency": "USD",
+        "source_unit": "million",
+        "source_value": 44924,
+        "display_unit": "亿美元",
+        "display_value": "449.24",
+        "accounting": "GAAP"
+      },
+      {
+        "metric": "Operating cash flow",
+        "period": "three months ended 2026-06-30",
+        "period_type": "single_quarter",
+        "scope": "consolidated",
+        "actual_or_guidance": "actual",
+        "currency": "USD",
+        "source_unit": "million",
+        "source_value": 39069,
+        "display_unit": "亿美元",
+        "display_value": "390.69",
+        "accounting": "GAAP"
+      },
+      {
+        "metric": "Free cash flow",
+        "period": "three months ended 2026-06-30",
+        "period_type": "single_quarter",
+        "scope": "consolidated",
+        "actual_or_guidance": "actual",
+        "currency": "USD",
+        "source_unit": "million",
+        "source_value": -5855,
+        "display_unit": "亿美元",
+        "display_value": "-58.55",
+        "accounting": "non-GAAP"
+      }
+    ],
+    "alphabet_arithmetic": "39069 - 44924 = -5855 (million USD); 亿美元 = 百万美元 / 100",
+    "discarded_guidance": {
+      "value": 85,
+      "unit": "billion USD",
+      "period": "full year 2025",
+      "metric": "capital expenditure guidance",
+      "source": "https://abc.xyz/investor/events/event-details/2025/2025-Q2-Earnings-Call/",
+      "action": "不得用作 2026 全年指引；本次未补一个未核的替代值"
+    },
+    "tesla": [
+      {
+        "metric": "Revenue",
+        "period": "three months ended 2026-06-30",
+        "period_type": "single_quarter",
+        "scope": "consolidated",
+        "actual_or_guidance": "actual",
+        "currency": "USD",
+        "source_unit": "million",
+        "source_value": 28236,
+        "display_unit": "亿美元",
+        "display_value": "282.36",
+        "accounting": "GAAP"
+      },
+      {
+        "metric": "Operating income",
+        "period": "three months ended 2026-06-30",
+        "period_type": "single_quarter",
+        "scope": "consolidated",
+        "actual_or_guidance": "actual",
+        "currency": "USD",
+        "source_unit": "million",
+        "source_value": 398,
+        "display_unit": "亿美元",
+        "display_value": "3.98",
+        "accounting": "GAAP"
+      },
+      {
+        "metric": "Operating cash flow",
+        "period": "three months ended 2026-06-30",
+        "period_type": "single_quarter",
+        "scope": "consolidated",
+        "actual_or_guidance": "actual",
+        "currency": "USD",
+        "source_unit": "million",
+        "source_value": 4697,
+        "display_unit": "亿美元",
+        "display_value": "46.97",
+        "accounting": "GAAP"
+      },
+      {
+        "metric": "Capital expenditure",
+        "period": "three months ended 2026-06-30",
+        "period_type": "single_quarter",
+        "scope": "consolidated",
+        "actual_or_guidance": "actual",
+        "currency": "USD",
+        "source_unit": "million",
+        "source_value": 5789,
+        "display_unit": "亿美元",
+        "display_value": "57.89",
+        "accounting": "GAAP"
+      },
+      {
+        "metric": "Free cash flow",
+        "period": "three months ended 2026-06-30",
+        "period_type": "single_quarter",
+        "scope": "consolidated",
+        "actual_or_guidance": "actual",
+        "currency": "USD",
+        "source_unit": "million",
+        "source_value": -1092,
+        "display_unit": "亿美元",
+        "display_value": "-10.92",
+        "accounting": "non-GAAP"
+      }
+    ],
+    "tesla_operating_margin": {
+      "value": 1.4,
+      "unit": "percent",
+      "period": "Q2 2026",
+      "accounting": "GAAP"
+    },
+    "tesla_arithmetic": "4697 - 5789 = -1092 (million USD)"
+  },
+  "remaining_limits": [
+    "逐条记录的原公告日期或元数据不等于已取得整页历史快照；未知精确首次公开时间保留 null，不补造时间。",
+    "原公司范围按当期十家保留。排除候选不等于当周全网没有其他重大新闻。",
+    "产品图沿用原冻结材料，未认证其全部历史边或滚动网页版本；历史遗留弱证据不变成直接供货事实。",
+    "当前文件真实修订于 2026-09-07；即使事实来自早期披露，也不能当作原周一已发布的投资判断。",
+    "correction_inventory 是目标定位，不代表其所有内容均获全量时点认证；不得将本文件改名冒充 temporal_evidence。"
+  ]
+}

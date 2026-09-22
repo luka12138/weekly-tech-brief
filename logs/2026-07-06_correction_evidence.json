@@ -1,0 +1,219 @@
+{
+  "schema_version": 1,
+  "evidence_type": "targeted_historical_correction",
+  "report_date": "2026-07-06",
+  "recorded_at_utc": "2026-09-07 03:48:40 UTC",
+  "report_revised_at": "2026-09-07T11:46:04+08:00",
+  "cutoff_exclusive": "2026-07-06T00:00:00+08:00",
+  "scope": "原报告候选的定向纠错及替换，不是全网新闻穷尽重研或全量历史时点认证",
+  "temporal_certification": "legacy_unverified",
+  "backtest_eligible_for_original_report_time": false,
+  "report_path": "reports/2026-07-06_weekly_morning_brief.md",
+  "report_sha256": "2bfbef9bdff69f853569f58b8ef0c0508090565eeb22713d5add9ea54eebb588",
+  "original_snapshot_commit": "2c1fbaac39273a8ed17996277bc3269de46765c1",
+  "pre_correction_commit": "0d6033a12ad001e5fbda8d584cf31712021735f6",
+  "pre_correction_sha256": "9b3b4c5a5b79452ec0061eed854603a9e568db6bb9efa145d56b9d93847992a0",
+  "archive_path": "archives/2026-09-07_before_correction.tar.gz",
+  "archive_sha256": "5e49167d545d9603768b1bb21404f2ead323961e34598575fa591796877b1eef",
+  "input_and_artifact_hashes": {
+    "state/historical_snapshot_overrides.json": "7c1f5371e599c00b0c1cfedbb2ab814a8bcbd5ef13e5f58c0d9190e5bd606096",
+    "state/historical/2026-07-06_supply.json": "1f478e563a77d4bb6375795e3d109358668b2944742f8ca62c8d0ada8d979a98",
+    "state/historical/2026-07-06_product.json": "b264d1b9fd879d943203ec007d4080bbfdd8b3b8248ef94371729a592ba4e077",
+    "logs/2026-07-06_correction_inventory.json": "137c36dc79cd561ebc81892e74b05371d686c5ac1351cd094f5015d98469e328",
+    "assets/2026-07-06_supply_relationships.svg": "1281173d167a90b0e31874423744d803f60a613143ce1a6284bdbca4b7118253",
+    "assets/2026-07-06_supply_relationships.canvas": "bb53d5045da6bf74646c488008175c434e5b8aa12d354394a636f785ed31fcf8"
+  },
+  "headline_count": 6,
+  "corrections": [
+    {
+      "id": "AWS-OLD-AGREEMENT",
+      "finding": "旧版把 2025 年协议写成 2026-07-01 当周新合作，并派生新订单判断",
+      "action": "从头条、变化公司和当周催化中删除；E03/E05 改为旧协议背景，不再 new/strengthened；不抹除历史记录",
+      "affected_sections": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6.2",
+        "6.3"
+      ],
+      "affected_edges": [
+        "E03",
+        "E05"
+      ],
+      "sources": [
+        {
+          "url": "https://openai.com/index/aws-and-openai-partnership/",
+          "original_dateline": "2025-11-03",
+          "claim_first_public_at": null,
+          "locator": "日期、首段及算力部署段",
+          "support": "七年 380 亿美元合作；该发布不是 2026-06-29 至 2026-07-05 周内新事件",
+          "reviewed_on": "2026-09-07",
+          "review_method": "本次联网阅读原文；日期来自页面正文或明示元数据，不从 URL 推定",
+          "historical_complete_page_version_verified": false
+        },
+        {
+          "url": "https://www.aboutamazon.com/news/aws/aws-open-ai-workloads-compute-infrastructure",
+          "original_dateline": "2025-11-03",
+          "claim_first_public_at": null,
+          "locator": "页面日期及合作首段",
+          "support": "交叉支持 AWS/OpenAI 合作与旧公告日期",
+          "reviewed_on": "2026-09-07",
+          "review_method": "本次联网阅读原文；日期来自页面正文或明示元数据，不从 URL 推定",
+          "historical_complete_page_version_verified": false
+        }
+      ]
+    },
+    {
+      "id": "MICROSOFT-FRONTIER",
+      "action": "保留已宣布的投入及专家配置计划，不能计作实现收入",
+      "targets": [
+        "headline:1",
+        "event:2",
+        "supply:E02"
+      ],
+      "sources": [
+        {
+          "url": "https://blogs.microsoft.com/blog/2026/07/02/microsoft-frontier-company-ai-engineering-that-amplifies-and-protects-your-intelligence/",
+          "original_dateline": "2026-07-02",
+          "claim_first_public_at": null,
+          "locator": "业务宣布、投资及专家配置段",
+          "support": "计划投入 25 亿美元，配置 6000 名行业和工程专家",
+          "reviewed_on": "2026-09-07",
+          "review_method": "本次联网阅读原文；日期来自页面正文或明示元数据，不从 URL 推定",
+          "historical_complete_page_version_verified": false,
+          "page_date_published_metadata": "2026-07-02T12:59:05+00:00"
+        }
+      ]
+    },
+    {
+      "id": "NVIDIA-AZURE",
+      "action": "保留 Claude/GB300 可用性；删去缺少本文支持的具体 Claude 版本号；上海日期改为 6/30",
+      "targets": [
+        "headline:2",
+        "event:4",
+        "supply:E04"
+      ],
+      "sources": [
+        {
+          "url": "https://blogs.nvidia.com/blog/anthropic-nvidia-gb300-blackwell-ultra-microsoft-azure/",
+          "original_dateline": "2026-06-29",
+          "claim_first_public_at": null,
+          "locator": "发布日期元数据及 Foundry 可用性段",
+          "support": "Claude 在 Azure GB300 Blackwell Ultra 平台正式可用；不等于具体采购合同",
+          "reviewed_on": "2026-09-07",
+          "review_method": "本次联网阅读原文；日期来自页面正文或明示元数据，不从 URL 推定",
+          "historical_complete_page_version_verified": false,
+          "page_date_published_metadata": "2026-06-29T17:00:19Z"
+        }
+      ]
+    },
+    {
+      "id": "TESLA-OPERATIONS",
+      "action": "使用固定运营公告，删除仅指向滚动目录的证据依赖；财务结果不提前回填",
+      "targets": [
+        "headline:3",
+        "event:5"
+      ],
+      "sources": [
+        {
+          "url": "https://ir.tesla.com/press-release/tesla-second-quarter-2026-production-deliveries-and-deployments",
+          "original_dateline": "2026-07-02",
+          "claim_first_public_at": null,
+          "locator": "Q2 产量/交付/储能表和财报安排段",
+          "support": "Q2 生产 451758 辆、交付 480126 辆、储能部署 13.5GWh；公告预告 7/22 财报，利润当时尚未披露",
+          "reviewed_on": "2026-09-07",
+          "review_method": "本次联网阅读原文；日期来自页面正文或明示元数据，不从 URL 推定",
+          "historical_complete_page_version_verified": false
+        }
+      ]
+    },
+    {
+      "id": "APPLE-FUNCTIONS",
+      "action": "更正为 Apple 应用内工作流集成，撤销 Adobe Creative Cloud、跨设备项目同步和 Vision Pro 协作等未获本文支持说法",
+      "targets": [
+        "headline:4",
+        "event:1",
+        "supply:E01"
+      ],
+      "sources": [
+        {
+          "url": "https://www.apple.com/newsroom/2026/06/apple-creator-studio-gets-smarter-faster-and-more-connected/",
+          "original_dateline": "2026-06-30",
+          "claim_first_public_at": null,
+          "locator": "Final Cut Pro 与 Pixelmator Pro 功能段",
+          "support": "支持 AI 编辑与图像/视频帧编辑联动，不证明旧文的 Adobe 集成",
+          "reviewed_on": "2026-09-07",
+          "review_method": "本次联网阅读原文；日期来自页面正文或明示元数据，不从 URL 推定",
+          "historical_complete_page_version_verified": false
+        }
+      ]
+    },
+    {
+      "id": "SAMSUNG-TRIAL",
+      "action": "区分商用网络试验与全面商用部署，区分平均 31% 和最高 52%",
+      "targets": [
+        "headline:5",
+        "event:6",
+        "supply:E06"
+      ],
+      "sources": [
+        {
+          "url": "https://news.samsung.com/global/samsung-and-kddi-successfully-complete-ai-powered-network-optimization-trial-on-commercial-5g-standalone-network-in-japan",
+          "original_dateline": "2026-06-30",
+          "claim_first_public_at": null,
+          "locator": "试验结果及场景段",
+          "support": "高峰时段全试验区平均下行吞吐提升 31%，密集城区最高提升 52%；不能外推为所有网络或确定订单",
+          "reviewed_on": "2026-09-07",
+          "review_method": "本次联网阅读原文；日期来自页面正文或明示元数据，不从 URL 推定",
+          "historical_complete_page_version_verified": false,
+          "page_date_published_metadata": "2026-06-30T21:00:00+09:00"
+        }
+      ]
+    },
+    {
+      "id": "META-RESERVATION",
+      "action": "更正上海日期为 6/30，区分用户名预约与稍后正式推出",
+      "targets": [
+        "headline:6",
+        "event:3",
+        "supply:E07"
+      ],
+      "sources": [
+        {
+          "url": "https://about.fb.com/news/2026/06/its-time-to-reserve-your-whatsapp-username/",
+          "original_dateline": "2026-06-29",
+          "claim_first_public_at": null,
+          "locator": "预约及后续推出段",
+          "support": "已开放预约，正式功能计划当年稍后推出",
+          "reviewed_on": "2026-09-07",
+          "review_method": "本次联网阅读原文；日期来自页面正文或明示元数据，不从 URL 推定",
+          "historical_complete_page_version_verified": false,
+          "page_date_published_metadata": "2026-06-29T16:00:06Z"
+        }
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "url": "https://www.businessinsider.com/microsoft-job-cuts-layoffs-sales-consulting-2026-6",
+      "reason": "未取得可核验全文与具体历史版本，不纳入已确认头条；不是认定报道为假"
+    },
+    {
+      "item": "Apple/Microsoft 重复候选",
+      "reason": "同一事项合并；6 件而非补足十件"
+    }
+  ],
+  "financial_review": {
+    "scope": "本期仅披露运营量、投资计划及试验数据，未加入尚未公布的季度利润",
+    "status": "targeted_review_only"
+  },
+  "remaining_limits": [
+    "逐条记录的原公告日期或元数据不等于已取得整页历史快照；未知精确首次公开时间保留 null，不补造时间。",
+    "原公司范围按当期十家保留。排除候选不等于当周全网没有其他重大新闻。",
+    "产品图沿用原冻结材料，未认证其全部历史边或滚动网页版本；历史遗留弱证据不变成直接供货事实。",
+    "当前文件真实修订于 2026-09-07；即使事实来自早期披露，也不能当作原周一已发布的投资判断。",
+    "correction_inventory 是目标定位，不代表其所有内容均获全量时点认证；不得将本文件改名冒充 temporal_evidence。"
+  ]
+}

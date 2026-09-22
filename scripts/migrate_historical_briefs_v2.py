@@ -196,68 +196,16 @@ def normalize_headline(item: str, fallback_impact: str) -> str:
     return clip(item, 680)
 
 
-def build_headlines(
-    old_items: list[str],
-    events_by_company: dict[str, list[dict[str, str]]],
-    baseline: dict[str, Any],
-) -> list[str]:
-    fallback_impact = next(
-        (event["影响"] for events in events_by_company.values() for event in events if event_is_material(event)),
-        "影响相关业务预期与产业链资源配置",
-    )
-    headlines = [normalize_headline(item, fallback_impact) for item in old_items[:10]]
-    if len(headlines) == 10:
-        return headlines
-    seen_urls = set().union(*(markdown_urls(item) for item in headlines)) if headlines else set()
-    candidates = [
-        (company, event)
-        for company, events in events_by_company.items()
-        for event in events
-        if event_is_material(event)
-    ]
-    deferred: list[tuple[str, dict[str, str]]] = []
-    for company, event in candidates:
-        urls = markdown_urls(event["来源"])
-        if urls and urls & seen_urls:
-            deferred.append((company, event))
-            continue
-        headline = (
-            f"**{company}：{clip(event['事件'], 145)}。** "
-            f"重要性：{clip(event['影响'], 145)}。{event['来源']}"
-        )
-        headlines.append(clip(headline, 680))
-        seen_urls.update(urls)
+def build_headlines(old_items: list[str]) -> list[str]:
+    # A presentation migration must not promote old baseline edges to new news.
+    headlines: list[str] = []
+    for item in old_items:
+        headline = normalize_headline(item, "原版未单独说明投资影响，待核验")
+        if headline not in headlines:
+            headlines.append(headline)
         if len(headlines) == 10:
-            return headlines
-    for company, event in deferred:
-        event_key = clip(event["事件"], 36)
-        if any(event_key in item for item in headlines):
-            continue
-        headline = (
-            f"**{company}：{clip(event['事件'], 145)}。** "
-            f"重要性：{clip(event['影响'], 145)}。{event['来源']}"
-        )
-        headlines.append(clip(headline, 680))
-        if len(headlines) == 10:
-            return headlines
-
-    for edge in baseline.get("edges", []):
-        sources = edge.get("sources", [])
-        if not sources:
-            continue
-        source_links = "、".join(f"[来源{index}](%s)" % url for index, url in enumerate(sources[:2], 1))
-        headline = (
-            f"**供应链：{edge.get('supplier')} 向 {edge.get('customer')} 提供 "
-            f"{clip(str(edge.get('product_or_service', '')), 110)}。** "
-            f"重要性：该关系影响供给弹性、资本开支与客户集中度。{source_links}"
-        )
-        if markdown_urls(headline) & seen_urls:
-            continue
-        headlines.append(clip(headline, 680))
-        seen_urls.update(markdown_urls(headline))
-        if len(headlines) == 10:
-            return headlines
-    raise ValueError(f"只能从已核实材料中形成 {len(headlines)} 条头条，无法满足 10 条要求")
+            break
+    return headlines
 
 
 def select_detail_events(
@@ -347,11 +295,16 @@ def migrate_report(
         if company in events_by_company:
             events_by_company[company] = parse_events(block)
     old_impact = parse_old_impact_table(markdown_section(original, 2))
-    headlines = build_headlines(numbered_blocks(markdown_section(original, 1)), events_by_company, baseline)
+    headlines = build_headlines(numbered_blocks(markdown_section(original, 1)))
+    if not headlines and "本周未发现可确认重大事件。" not in markdown_section(original, 1):
+        raise ValueError(f"{report_date}: 原版头条缺失，须人工复核，不能自动声称本周无事件")
     detail_events = select_detail_events(companies, events_by_company, headlines)
 
-    lines = ["# 周一晨间科技巨头简报", SCHEMA_V2_MARKER, *metadata, "", "## 1. 本周最重要的 10 件事"]
+    headline_title = f"## 1. 本周最重要的 {len(headlines)} 件事" if headlines else "## 1. 本周重大事件"
+    lines = ["# 周一晨间科技巨头简报", SCHEMA_V2_MARKER, *metadata, "", headline_title]
     lines.extend(f"{index}. {item}" for index, item in enumerate(headlines, 1))
+    if not headlines:
+        lines.append("本周未发现可确认重大事件。")
 
     lines.extend(
         [
@@ -506,7 +459,7 @@ def migrate_report(
             "## 7. 本期自检",
             f"- 日期范围：基线覆盖 {baseline['coverage_period']['start']} 至 {baseline['coverage_period']['end']}，与报告周一的上一完整自然周一致。",
             f"- 公司覆盖：完整覆盖当期 {len(companies)} 家公司；未把后续新增研究对象倒灌至早期报告。",
-            "- 事件与投资判断：10 条头条均保留 HTTPS 来源；详细事件补充影响指标、预期差和验证条件。",
+            f"- 事件与投资判断：保留 {len(headlines)} 条原版头条，不以背景关系补足数量；事后展示迁移不构成事实或时点认证。",
             f"- 图谱策略：产品图 {product_plan['action']}，供应图 {supply_plan['action']}；Canvas/SVG 均由对应历史 JSON 快照生成或沿用。",
             "- 证据边界：无直接证据的关系未标为新增或强化；媒体报道和未确认事项保留原可信度限制。",
             "- GitHub 同步：历史正文不回写可变同步状态，以本文件所在 Git 提交与远端记录为准。",
@@ -525,6 +478,13 @@ def main() -> None:
     graph_plan_payload = json.loads((ROOT / args.graph_plan).read_text(encoding="utf-8"))
     graph_plans = graph_plan_payload.get("reports", {})
     snapshots = report_snapshots()
+    protected = [
+        day for day, _ in snapshots
+        if (selected is None or day in selected)
+        and "<!-- report-vintage: revised -->" in (ROOT / "reports" / f"{day}_weekly_morning_brief.md").read_text(encoding="utf-8")
+    ]
+    if protected:
+        raise SystemExit("错误：已有纠错展示版，不能用旧快照迁移覆盖并复活错误：" + ", ".join(protected))
     previous_baseline: dict[str, Any] | None = None
     written = 0
     latest_date = ""

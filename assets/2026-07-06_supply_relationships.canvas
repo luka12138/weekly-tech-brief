@@ -216,7 +216,7 @@
       "y": 1500,
       "width": 580,
       "height": 650,
-      "text": "## 关系索引\n\n**E01** · Apple → 外部:创意专业用户\nApple Creator Studio、Final Cut Pro、Creative Cloud/Pixelmator Pro 集成\n\n**E02** · Microsoft → 外部:企业 AI 客户\nFrontier Company、AI 工程服务、Azure/Microsoft 365/GitHub 生态\n\n**E03** · Amazon / AWS → 外部:OpenAI\nAWS Compute、EC2 UltraServers、云基础设施\n\n**E04** · NVIDIA → Microsoft\nGB300 Blackwell Ultra、Claude 模型推理基础设施\n\n**E05** · NVIDIA → Amazon / AWS\nNVIDIA GPU、EC2 UltraServers、AI 集群网络\n\n**E06** · Samsung Electronics → 外部:KDDI\nAI 驱动 RAN Speed Optimizer 商用网络试验\n\n**E07** · Meta → 外部:WhatsApp 用户\nWhatsApp 用户名预约、手机号隐私保护\n\n**E08** · Tesla → 外部:EV/储能客户\n车辆交付、储能部署",
+      "text": "## 关系索引\n\n**E01** · Apple → 外部:创意专业用户\nApple Creator Studio、Final Cut Pro 与 Pixelmator Pro 集成\n\n**E02** · Microsoft → 外部:企业 AI 客户\nFrontier Company、AI 工程服务、Azure/Microsoft 365/GitHub 生态\n\n**E03** · Amazon / AWS → 外部:OpenAI\nAWS Compute、EC2 UltraServers、云基础设施\n\n**E04** · NVIDIA → Microsoft\nGB300 Blackwell Ultra、Claude 模型推理基础设施\n\n**E05** · NVIDIA → Amazon / AWS\nNVIDIA GPU、EC2 UltraServers、AI 集群网络\n\n**E06** · Samsung Electronics → 外部:KDDI\nAI 驱动 RAN Speed Optimizer 商用网络试验\n\n**E07** · Meta → 外部:WhatsApp 用户\nWhatsApp 用户名预约、手机号隐私保护\n\n**E08** · Tesla → 外部:EV/储能客户\n车辆交付、储能部署",
       "color": "#334155"
     },
     {
@@ -258,15 +258,15 @@
       "toNode": "03f2de0a3c0395c7",
       "toSide": "left",
       "toEnd": "arrow",
-      "color": "#22c55e",
+      "color": "#64748b",
       "label": "E03"
     },
     {
       "id": "f7c1bda2f5b9c4d7",
       "fromNode": "493ffe44f4aac644",
-      "fromSide": "top",
+      "fromSide": "left",
       "toNode": "9a048740dcfd3080",
-      "toSide": "bottom",
+      "toSide": "left",
       "toEnd": "arrow",
       "color": "#38bdf8",
       "label": "E04"
@@ -274,11 +274,11 @@
     {
       "id": "14f0fd7c391a2e44",
       "fromNode": "493ffe44f4aac644",
-      "fromSide": "top",
+      "fromSide": "left",
       "toNode": "54d0e17345a68a0e",
-      "toSide": "bottom",
+      "toSide": "left",
       "toEnd": "arrow",
-      "color": "#38bdf8",
+      "color": "#64748b",
       "label": "E05"
     },
     {

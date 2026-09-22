@@ -45,18 +45,13 @@
       },
       "supply": {
         "action": "generate",
-        "reason": "存在实质变化关系：E01, E02, E03, E04, E05, E06, E07, E08, E09, E10",
+        "reason": "纠错后按已核当周显式标记生成；历史 Edge ID 重排不构成新增证据",
         "changed_edge_ids": [
           "E01",
           "E02",
-          "E03",
           "E04",
-          "E05",
           "E06",
-          "E07",
-          "E08",
-          "E09",
-          "E10"
+          "E07"
         ],
         "asset_date": "2026-07-06",
         "svg": "assets/2026-07-06_supply_relationships.svg",
@@ -138,20 +133,16 @@
       },
       "supply": {
         "action": "generate",
-        "reason": "存在实质变化关系：E01, E02, E03, E04, E05, E06, E07, E08, E09, E10, E11, E12",
+        "reason": "纠错后按已核当周显式标记生成；历史 Edge ID 重排不构成新增证据",
         "changed_edge_ids": [
           "E01",
           "E02",
           "E03",
           "E04",
           "E05",
-          "E06",
           "E07",
           "E08",
-          "E09",
-          "E10",
-          "E11",
-          "E12"
+          "E09"
         ],
         "asset_date": "2026-07-27",
         "svg": "assets/2026-07-27_supply_relationships.svg",
@@ -171,11 +162,12 @@
       },
       "supply": {
         "action": "generate",
-        "reason": "存在实质变化关系：E01, E02, E03, E05, E06, E07, E08, E09, E10, E11, E12, E13, E14, E15, E16, E17, E18",
+        "reason": "存在实质变化关系：E01, E02, E03, E04, E05, E06, E07, E08, E09, E10, E11, E12, E13, E14, E15, E16, E17, E18",
         "changed_edge_ids": [
           "E01",
           "E02",
           "E03",
+          "E04",
           "E05",
           "E06",
           "E07",
@@ -262,6 +254,107 @@
         "asset_date": "2026-08-24",
         "svg": "assets/2026-08-24_supply_relationships.svg",
         "canvas": "assets/2026-08-24_supply_relationships.canvas"
+      }
+    },
+    "2026-08-31": {
+      "source_commit": "92e442df61732e18573c68aea378cfa63908f384",
+      "schema_version": 2,
+      "report_date": "2026-08-31",
+      "product": {
+        "action": "reuse",
+        "reason": "未到季度刷新点且产品关系无实质变化",
+        "asset_date": "2026-08-24",
+        "svg": "assets/2026-08-24_product_relationships.svg",
+        "canvas": "assets/2026-08-24_product_relationships.canvas"
+      },
+      "supply": {
+        "action": "generate",
+        "reason": "存在实质变化关系：E24, E25",
+        "changed_edge_ids": [
+          "E24",
+          "E25"
+        ],
+        "asset_date": "2026-08-31",
+        "svg": "assets/2026-08-31_supply_relationships.svg",
+        "canvas": "assets/2026-08-31_supply_relationships.canvas"
+      }
+    },
+    "2026-09-07": {
+      "source_commit": "0d6033a12ad001e5fbda8d584cf31712021735f6",
+      "schema_version": 2,
+      "report_date": "2026-09-07",
+      "product": {
+        "action": "generate",
+        "reason": "主营产品或跨公司产品关系发生实质变化",
+        "asset_date": "2026-09-07",
+        "svg": "assets/2026-09-07_product_relationships.svg",
+        "canvas": "assets/2026-09-07_product_relationships.canvas"
+      },
+      "supply": {
+        "action": "generate",
+        "reason": "存在实质变化关系：E05, E20, E26, E27, E28",
+        "changed_edge_ids": [
+          "E05",
+          "E20",
+          "E26",
+          "E27",
+          "E28"
+        ],
+        "asset_date": "2026-09-07",
+        "svg": "assets/2026-09-07_supply_relationships.svg",
+        "canvas": "assets/2026-09-07_supply_relationships.canvas"
+      }
+    },
+    "2026-09-14": {
+      "source_commit": "e62df6b2bfe2f2f6df8cb2645eb3fc95e32ea437",
+      "schema_version": 2,
+      "report_date": "2026-09-14",
+      "product": {
+        "action": "generate",
+        "reason": "主营产品或跨公司产品关系发生实质变化",
+        "asset_date": "2026-09-14",
+        "svg": "assets/2026-09-14_product_relationships.svg",
+        "canvas": "assets/2026-09-14_product_relationships.canvas"
+      },
+      "supply": {
+        "action": "generate",
+        "reason": "存在实质变化关系：E20, E29, E30, E31, E32, E33, E34, E35, E36",
+        "changed_edge_ids": [
+          "E20",
+          "E29",
+          "E30",
+          "E31",
+          "E32",
+          "E33",
+          "E34",
+          "E35",
+          "E36"
+        ],
+        "asset_date": "2026-09-14",
+        "svg": "assets/2026-09-14_supply_relationships.svg",
+        "canvas": "assets/2026-09-14_supply_relationships.canvas"
+      }
+    },
+    "2026-09-21": {
+      "source_commit": "02653e7a4a4cca2db0ea170142e91b0aaf0e9db7",
+      "schema_version": 2,
+      "report_date": "2026-09-21",
+      "product": {
+        "action": "reuse",
+        "reason": "未到季度刷新点且产品关系无实质变化",
+        "asset_date": "2026-09-14",
+        "svg": "assets/2026-09-14_product_relationships.svg",
+        "canvas": "assets/2026-09-14_product_relationships.canvas"
+      },
+      "supply": {
+        "action": "generate",
+        "reason": "存在实质变化关系：E37",
+        "changed_edge_ids": [
+          "E37"
+        ],
+        "asset_date": "2026-09-21",
+        "svg": "assets/2026-09-21_supply_relationships.svg",
+        "canvas": "assets/2026-09-21_supply_relationships.canvas"
       }
     }
   }

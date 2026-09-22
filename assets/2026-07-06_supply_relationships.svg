@@ -15,35 +15,15 @@
 <rect x="1360" y="320" width="580" height="1080" rx="8" fill="#38bdf8" fill-opacity="0.045" stroke="#38bdf8" stroke-opacity="0.52" stroke-width="2" stroke-dasharray="8 8"/>
 <text x="1378" y="350" font-size="15" font-weight="700" fill="#38bdf8">客户 / 使用方</text>
 <path d="M 620.0 450.0 C 940.0 450.0, 1080.0 1250.0, 1400.0 1250.0" fill="none" stroke="#22c55e" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-06bcfa879942a99a)"/>
-<rect x="902.1" y="696.8" width="49" height="24" rx="5" fill="#0b0f14" stroke="#22c55e" stroke-width="1.2"/>
-<text x="926.6" y="713.3" text-anchor="middle" font-size="12" font-weight="750" fill="#22c55e">E01</text>
 <path d="M 1260.0 450.0 C 1489.3 450.0, 1170.7 1090.0, 1400.0 1090.0" fill="none" stroke="#22c55e" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-06bcfa879942a99a)"/>
-<rect x="1319.7" y="645.0" width="49" height="24" rx="5" fill="#0b0f14" stroke="#22c55e" stroke-width="1.2"/>
-<text x="1344.2" y="661.5" text-anchor="middle" font-size="12" font-weight="750" fill="#22c55e">E02</text>
-<path d="M 1260.0 770.0 C 1340.0 770.0, 1320.0 770.0, 1400.0 770.0" fill="none" stroke="#22c55e" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-06bcfa879942a99a)"/>
-<rect x="1294.4" y="758.0" width="49" height="24" rx="5" fill="#0b0f14" stroke="#22c55e" stroke-width="1.2"/>
-<text x="1318.9" y="774.5" text-anchor="middle" font-size="12" font-weight="750" fill="#22c55e">E03</text>
-<path d="M 1010.0 880.0 C 1010.0 747.0, 1010.0 633.0, 1010.0 500.0" fill="none" stroke="#38bdf8" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-2ef3b12970f9d637)"/>
-<rect x="985.5" y="722.5" width="49" height="24" rx="5" fill="#0b0f14" stroke="#38bdf8" stroke-width="1.2"/>
-<text x="1010.0" y="739.0" text-anchor="middle" font-size="12" font-weight="750" fill="#38bdf8">E04</text>
-<path d="M 1010.0 880.0 C 1010.0 800.0, 1010.0 900.0, 1010.0 820.0" fill="none" stroke="#38bdf8" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-2ef3b12970f9d637)"/>
-<rect x="985.5" y="835.0" width="49" height="24" rx="5" fill="#0b0f14" stroke="#38bdf8" stroke-width="1.2"/>
-<text x="1010.0" y="851.5" text-anchor="middle" font-size="12" font-weight="750" fill="#38bdf8">E05</text>
+<path d="M 1260.0 770.0 C 1340.0 770.0, 1320.0 770.0, 1400.0 770.0" fill="none" stroke="#64748b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-75df7b9df85d4777)"/>
+<path d="M 760.0 930.0 C 660.0 930.0, 660.0 450.0, 760.0 450.0" fill="none" stroke="#38bdf8" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-2ef3b12970f9d637)"/>
+<path d="M 760.0 930.0 C 660.0 930.0, 660.0 770.0, 760.0 770.0" fill="none" stroke="#64748b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-75df7b9df85d4777)"/>
 <path d="M 620.0 930.0 C 915.1 930.0, 1104.9 610.0, 1400.0 610.0" fill="none" stroke="#22c55e" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-06bcfa879942a99a)"/>
-<rect x="897.9" y="814.5" width="49" height="24" rx="5" fill="#0b0f14" stroke="#22c55e" stroke-width="1.2"/>
-<text x="922.4" y="831.0" text-anchor="middle" font-size="12" font-weight="750" fill="#22c55e">E06</text>
 <path d="M 620.0 610.0 C 915.1 610.0, 1104.9 930.0, 1400.0 930.0" fill="none" stroke="#22c55e" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-06bcfa879942a99a)"/>
-<rect x="897.9" y="701.5" width="49" height="24" rx="5" fill="#0b0f14" stroke="#22c55e" stroke-width="1.2"/>
-<text x="922.4" y="718.0" text-anchor="middle" font-size="12" font-weight="750" fill="#22c55e">E07</text>
 <path d="M 620.0 770.0 C 915.1 770.0, 1104.9 450.0, 1400.0 450.0" fill="none" stroke="#64748b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-75df7b9df85d4777)"/>
-<rect x="897.9" y="654.5" width="49" height="24" rx="5" fill="#0b0f14" stroke="#64748b" stroke-width="1.2"/>
-<text x="922.4" y="671.0" text-anchor="middle" font-size="12" font-weight="750" fill="#64748b">E08</text>
 <path d="M 620.0 1090.0 C 700.0 1090.0, 680.0 930.0, 760.0 930.0" fill="none" stroke="#64748b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-75df7b9df85d4777)"/>
-<rect x="654.4" y="1026.2" width="49" height="24" rx="5" fill="#0b0f14" stroke="#64748b" stroke-width="1.2"/>
-<text x="678.9" y="1042.7" text-anchor="middle" font-size="12" font-weight="750" fill="#64748b">E09</text>
 <path d="M 620.0 1250.0 C 742.2 1250.0, 637.8 930.0, 760.0 930.0" fill="none" stroke="#64748b" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-75df7b9df85d4777)"/>
-<rect x="661.5" y="1134.5" width="49" height="24" rx="5" fill="#0b0f14" stroke="#64748b" stroke-width="1.2"/>
-<text x="686.0" y="1151.0" text-anchor="middle" font-size="12" font-weight="750" fill="#64748b">E10</text>
 <g><title>本周供应关系图 · 2026-06-29 至 2026-07-05</title>
 <rect x="80" y="20" width="1700" height="90" rx="8" fill="#0b0f14" fill-opacity="0" stroke="#64748b" stroke-opacity="0" stroke-width="1.5"/>
 <text x="96" y="62" font-size="34" font-weight="750" fill="#f8fafc">本周供应关系图 · 2026-06-29 至 2026-07-05</text>
@@ -133,11 +113,11 @@
 <text x="1416" y="1228" font-size="16" font-weight="750" fill="#f8fafc">外部:创意专业用户</text>
 <text x="1416" y="1252" font-size="13" font-weight="500" fill="#cbd5e1">外部节点 · 输入 1</text>
 </g>
-<g><title>关系索引 ·  · E01 · Apple → 外部:创意专业用户 · Apple Creator Studio、Final Cut Pro、Creative Cloud/Pixelmator Pro 集成 ·  · E02 · Microsoft → 外部:企业 AI 客户 · Frontier Company、AI 工程服务、Azure/Microsoft 365/GitHub 生态 ·  · E03 · Amazon / AWS → 外部:OpenAI · AWS Compute、EC2 UltraServers、云基础设施 ·  · E04 · NVIDIA → Microsoft · GB300 Blackwell Ultra、Claude 模型推理基础设施 ·  · E05 · NVIDIA → Amazon / AWS · NVIDIA GPU、EC2 UltraServers、AI 集群网络 ·  · E06 · Samsung Electronics → 外部:KDDI · AI 驱动 RAN Speed Optimizer 商用网络试验 ·  · E07 · Meta → 外部:WhatsApp 用户 · WhatsApp 用户名预约、手机号隐私保护 ·  · E08 · Tesla → 外部:EV/储能客户 · 车辆交付、储能部署</title>
+<g><title>关系索引 ·  · E01 · Apple → 外部:创意专业用户 · Apple Creator Studio、Final Cut Pro 与 Pixelmator Pro 集成 ·  · E02 · Microsoft → 外部:企业 AI 客户 · Frontier Company、AI 工程服务、Azure/Microsoft 365/GitHub 生态 ·  · E03 · Amazon / AWS → 外部:OpenAI · AWS Compute、EC2 UltraServers、云基础设施 ·  · E04 · NVIDIA → Microsoft · GB300 Blackwell Ultra、Claude 模型推理基础设施 ·  · E05 · NVIDIA → Amazon / AWS · NVIDIA GPU、EC2 UltraServers、AI 集群网络 ·  · E06 · Samsung Electronics → 外部:KDDI · AI 驱动 RAN Speed Optimizer 商用网络试验 ·  · E07 · Meta → 外部:WhatsApp 用户 · WhatsApp 用户名预约、手机号隐私保护 ·  · E08 · Tesla → 外部:EV/储能客户 · 车辆交付、储能部署</title>
 <rect x="80" y="1500" width="580" height="650" rx="8" fill="#111827" fill-opacity="0.97" stroke="#334155" stroke-opacity="0.78" stroke-width="1.5"/>
 <text x="96" y="1528" font-size="20" font-weight="750" fill="#f8fafc">关系索引</text>
 <text x="96" y="1570" font-size="13" font-weight="500" fill="#cbd5e1">E01 · Apple → 外部:创意专业用户</text>
-<text x="96" y="1591" font-size="13" font-weight="500" fill="#cbd5e1">Apple Creator Studio、Final Cut Pro、Creative Cloud/Pixelmator Pro 集成</text>
+<text x="96" y="1591" font-size="13" font-weight="500" fill="#cbd5e1">Apple Creator Studio、Final Cut Pro 与 Pixelmator Pro 集成</text>
 <text x="96" y="1626" font-size="13" font-weight="500" fill="#cbd5e1">E02 · Microsoft → 外部:企业 AI 客户</text>
 <text x="96" y="1647" font-size="13" font-weight="500" fill="#cbd5e1">Frontier Company、AI 工程服务、Azure/Microsoft 365/GitHub 生态</text>
 <text x="96" y="1682" font-size="13" font-weight="500" fill="#cbd5e1">E03 · Amazon / AWS → 外部:OpenAI</text>
@@ -161,5 +141,25 @@
 <text x="736" y="1626" font-size="13" font-weight="500" fill="#cbd5e1">E10 · TSMC → NVIDIA</text>
 <text x="736" y="1647" font-size="13" font-weight="500" fill="#cbd5e1">先进制程与先进封装关键基线</text>
 </g>
+<rect x="895.0" y="685.5" width="49" height="24" rx="5" fill="#0b0f14" stroke="#22c55e" stroke-width="1.2"/>
+<text x="919.5" y="702.0" text-anchor="middle" font-size="12" font-weight="750" fill="#22c55e">E01</text>
+<rect x="1319.7" y="645.0" width="49" height="24" rx="5" fill="#0b0f14" stroke="#22c55e" stroke-width="1.2"/>
+<text x="1344.2" y="661.5" text-anchor="middle" font-size="12" font-weight="750" fill="#22c55e">E02</text>
+<rect x="1294.4" y="758.0" width="49" height="24" rx="5" fill="#0b0f14" stroke="#64748b" stroke-width="1.2"/>
+<text x="1318.9" y="774.5" text-anchor="middle" font-size="12" font-weight="750" fill="#64748b">E03</text>
+<rect x="664.8" y="762.7" width="49" height="24" rx="5" fill="#0b0f14" stroke="#38bdf8" stroke-width="1.2"/>
+<text x="689.3" y="779.2" text-anchor="middle" font-size="12" font-weight="750" fill="#38bdf8">E04</text>
+<rect x="664.8" y="866.2" width="49" height="24" rx="5" fill="#0b0f14" stroke="#64748b" stroke-width="1.2"/>
+<text x="689.3" y="882.7" text-anchor="middle" font-size="12" font-weight="750" fill="#64748b">E05</text>
+<rect x="875.7" y="827.8" width="49" height="24" rx="5" fill="#0b0f14" stroke="#22c55e" stroke-width="1.2"/>
+<text x="900.2" y="844.3" text-anchor="middle" font-size="12" font-weight="750" fill="#22c55e">E06</text>
+<rect x="705.7" y="612.8" width="49" height="24" rx="5" fill="#0b0f14" stroke="#22c55e" stroke-width="1.2"/>
+<text x="730.2" y="629.3" text-anchor="middle" font-size="12" font-weight="750" fill="#22c55e">E07</text>
+<rect x="1095.3" y="528.2" width="49" height="24" rx="5" fill="#0b0f14" stroke="#64748b" stroke-width="1.2"/>
+<text x="1119.8" y="544.7" text-anchor="middle" font-size="12" font-weight="750" fill="#64748b">E08</text>
+<rect x="654.4" y="1026.2" width="49" height="24" rx="5" fill="#0b0f14" stroke="#64748b" stroke-width="1.2"/>
+<text x="678.9" y="1042.7" text-anchor="middle" font-size="12" font-weight="750" fill="#64748b">E09</text>
+<rect x="661.5" y="1134.5" width="49" height="24" rx="5" fill="#0b0f14" stroke="#64748b" stroke-width="1.2"/>
+<text x="686.0" y="1151.0" text-anchor="middle" font-size="12" font-weight="750" fill="#64748b">E10</text>
 </g>
 </svg>

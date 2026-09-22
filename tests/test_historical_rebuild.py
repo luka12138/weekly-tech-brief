@@ -10,7 +10,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 
 from historical_snapshot_overrides import apply_data_overrides, apply_text_overrides  # noqa: E402
 from audit_sources import check_claims, classify_host  # noqa: E402
-from migrate_historical_briefs_v2 import expectation_gap, impact_metric, validation_condition  # noqa: E402
+from migrate_historical_briefs_v2 import build_headlines, expectation_gap, impact_metric, validation_condition  # noqa: E402
 from rebuild_historical_source_audits import (  # noqa: E402
     can_reuse_claim_cache,
     can_reuse_source_cache,
@@ -18,6 +18,12 @@ from rebuild_historical_source_audits import (  # noqa: E402
 
 
 class HistoricalRebuildTests(unittest.TestCase):
+    def test_migration_never_pads_headlines_from_background(self) -> None:
+        item = "**Apple：公告。** 重要性：订单变化。[来源](https://example.com/apple)"
+        self.assertEqual(build_headlines([item]), [item])
+        self.assertEqual(build_headlines([item, item]), [item])
+        self.assertEqual(build_headlines([]), [])
+
     def test_weekly_primary_and_syndicated_sources_are_classified(self) -> None:
         self.assertEqual(classify_host("metr.org"), "official_or_regulatory")
         self.assertEqual(classify_host("www.boursorama.com"), "trade_or_press_media")

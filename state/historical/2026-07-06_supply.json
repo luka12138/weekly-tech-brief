@@ -1,0 +1,225 @@
+{
+  "generation_date": "2026-07-06",
+  "coverage_period": {
+    "start": "2026-06-29",
+    "end": "2026-07-05",
+    "timezone": "Asia/Shanghai"
+  },
+  "companies": [
+    "Apple",
+    "Microsoft",
+    "Alphabet / Google",
+    "Amazon / AWS",
+    "Meta",
+    "NVIDIA",
+    "Tesla",
+    "Samsung Electronics",
+    "SK Hynix",
+    "TSMC"
+  ],
+  "edges": [
+    {
+      "edge_id": "E01",
+      "supplier": "Apple",
+      "customer": "创意专业用户",
+      "product_or_service": "Apple Creator Studio、Final Cut Pro 与 Pixelmator Pro 集成",
+      "relationship_type": "software_service",
+      "evidence_date": "2026-06-30",
+      "source_type": "official_company_release",
+      "last_seen": "2026-07-06",
+      "changed_this_week": "new",
+      "status": "new_product_update",
+      "confidence": "high",
+      "confidence_reason": "Apple 官方发布 Creator Studio 更新。",
+      "markdown_section_ref": "6.2 E01",
+      "sources": [
+        "https://www.apple.com/newsroom/2026/06/apple-creator-studio-gets-smarter-faster-and-more-connected/"
+      ],
+      "notes": "官方正文支持 Apple 应用内集成，不支持旧文的 Adobe Creative Cloud 集成；不是硬件供货。"
+    },
+    {
+      "edge_id": "E02",
+      "supplier": "Microsoft",
+      "customer": "企业 AI 客户",
+      "product_or_service": "Frontier Company、AI 工程服务、Azure/Microsoft 365/GitHub 生态",
+      "relationship_type": "enterprise_ai_service",
+      "evidence_date": "2026-07-02",
+      "source_type": "official_company_release",
+      "last_seen": "2026-07-06",
+      "changed_this_week": "new",
+      "status": "new_service_program",
+      "confidence": "high",
+      "confidence_reason": "Microsoft 官方宣布 Frontier Company 计划。",
+      "markdown_section_ref": "6.2 E02",
+      "sources": [
+        "https://blogs.microsoft.com/blog/2026/07/02/microsoft-frontier-company-ai-engineering-that-amplifies-and-protects-your-intelligence/"
+      ],
+      "notes": "该边代表企业 AI 服务关系，不代表具体 GPU 采购。"
+    },
+    {
+      "edge_id": "E03",
+      "supplier": "Amazon / AWS",
+      "customer": "OpenAI",
+      "product_or_service": "AWS Compute、EC2 UltraServers、云基础设施",
+      "relationship_type": "cloud_infrastructure",
+      "evidence_date": "2025-11-03",
+      "source_type": "official_company_release",
+      "last_seen": "2026-07-06",
+      "changed_this_week": "no_new_weekly_evidence",
+      "status": "continued_prior_agreement",
+      "confidence": "high",
+      "confidence_reason": "2025-11-03 旧协议，仅作背景；没有本覆盖周新签约证据。",
+      "markdown_section_ref": "6.2 E03",
+      "sources": [
+        "https://openai.com/index/aws-and-openai-partnership/"
+      ],
+      "notes": "2026-09-07 撤销旧文错误的当周 new 标记；不据此确认本周新增采购。"
+    },
+    {
+      "edge_id": "E04",
+      "supplier": "NVIDIA",
+      "customer": "Microsoft",
+      "product_or_service": "GB300 Blackwell Ultra、Claude 模型推理基础设施",
+      "relationship_type": "ai_accelerator_cloud_infrastructure",
+      "evidence_date": "2026-06-30",
+      "source_type": "official_supplier_blog",
+      "last_seen": "2026-07-06",
+      "changed_this_week": "strengthened",
+      "status": "strengthened",
+      "confidence": "high",
+      "confidence_reason": "NVIDIA 官方说明 Anthropic Claude 模型在 Microsoft Azure 上使用 GB300。",
+      "markdown_section_ref": "6.2 E04",
+      "sources": [
+        "https://blogs.nvidia.com/blog/anthropic-nvidia-gb300-blackwell-ultra-microsoft-azure/"
+      ],
+      "notes": "公告时间 2026-06-29T17:00:19Z，上海为 6 月 30 日；只确认 Claude 在 GB300 上的可用性，不沿用缺少该文支持的具体模型版本号。"
+    },
+    {
+      "edge_id": "E05",
+      "supplier": "NVIDIA",
+      "customer": "Amazon / AWS",
+      "product_or_service": "NVIDIA GPU、EC2 UltraServers、AI 集群网络",
+      "relationship_type": "ai_accelerator_cloud_infrastructure",
+      "evidence_date": "2025-11-03",
+      "source_type": "official_customer_release",
+      "last_seen": "2026-07-06",
+      "changed_this_week": "no_new_weekly_evidence",
+      "status": "continued_prior_agreement",
+      "confidence": "high",
+      "confidence_reason": "NVIDIA GPU/UltraServers 来自同一 2025-11-03 协议，不能标为本周强化。",
+      "markdown_section_ref": "6.2 E05",
+      "sources": [
+        "https://openai.com/index/aws-and-openai-partnership/"
+      ],
+      "notes": "撤销当周 strengthened；保留旧协议背景，不能把计划容量写成已交付。"
+    },
+    {
+      "edge_id": "E06",
+      "supplier": "Samsung Electronics",
+      "customer": "KDDI",
+      "product_or_service": "AI 驱动 RAN Speed Optimizer 商用网络试验",
+      "relationship_type": "network_equipment_ai_software",
+      "evidence_date": "2026-06-30",
+      "source_type": "official_company_release",
+      "last_seen": "2026-07-06",
+      "changed_this_week": "new",
+      "status": "new_commercial_network_trial",
+      "confidence": "high",
+      "confidence_reason": "Samsung 官方披露与 KDDI 完成商用 5G SA 网络优化试验。",
+      "markdown_section_ref": "6.2 E06",
+      "sources": [
+        "https://news.samsung.com/global/samsung-and-kddi-successfully-complete-ai-powered-network-optimization-trial-on-commercial-5g-standalone-network-in-japan"
+      ],
+      "notes": "KDDI 是外部运营商试验合作方；官方来源未确认全面商业部署。"
+    },
+    {
+      "edge_id": "E07",
+      "supplier": "Meta",
+      "customer": "WhatsApp 用户",
+      "product_or_service": "WhatsApp 用户名预约、手机号隐私保护",
+      "relationship_type": "platform_identity_feature",
+      "evidence_date": "2026-06-30",
+      "source_type": "official_company_release",
+      "last_seen": "2026-07-06",
+      "changed_this_week": "new",
+      "status": "new_product_update",
+      "confidence": "high",
+      "confidence_reason": "Meta 官方宣布 WhatsApp 用户名预约。",
+      "markdown_section_ref": "6.2 E07",
+      "sources": [
+        "https://about.fb.com/news/2026/06/its-time-to-reserve-your-whatsapp-username/"
+      ],
+      "notes": "公告时间 2026-06-29T16:00:06Z，上海为 6 月 30 日；当时开放预约，正式功能仍待推出。"
+    },
+    {
+      "edge_id": "E08",
+      "supplier": "Tesla",
+      "customer": "EV/储能客户",
+      "product_or_service": "车辆交付、储能部署",
+      "relationship_type": "end_product_delivery",
+      "evidence_date": "2026-07-02",
+      "source_type": "official_ir_release",
+      "last_seen": "2026-07-06",
+      "changed_this_week": "result_disclosure",
+      "status": "continued_product_delivery",
+      "confidence": "high",
+      "confidence_reason": "7 月 2 日固定公告支持生产 451758 辆、交付 480126 辆及储能 13.5GWh；不是新增供应订单。",
+      "markdown_section_ref": "6.2 E08",
+      "sources": [
+        "https://ir.tesla.com/press-release/tesla-second-quarter-2026-production-deliveries-and-deployments"
+      ],
+      "notes": "该边不披露具体电池供应商或客户结构。"
+    },
+    {
+      "edge_id": "E09",
+      "supplier": "SK Hynix",
+      "customer": "NVIDIA 与 AI 加速器客户",
+      "product_or_service": "HBM4E/HBM4/HBM3E",
+      "relationship_type": "memory_supply_baseline",
+      "evidence_date": "2026-06-18",
+      "source_type": "official_prior_release",
+      "last_seen": "2026-07-06",
+      "changed_this_week": "no_new_weekly_evidence",
+      "status": "continued_no_weekly_order_evidence",
+      "confidence": "medium",
+      "confidence_reason": "HBM4E 样品出货是官方消息但早于覆盖周；覆盖周无新增官方供货公告。",
+      "markdown_section_ref": "6.2 E09",
+      "sources": [
+        "https://www.prnewswire.com/news-releases/sk-hynix-ships-samples-of-12-layer-next-gen-hbm4e-302803714.html"
+      ],
+      "notes": "不能写成覆盖周新增订单或新增客户。"
+    },
+    {
+      "edge_id": "E10",
+      "supplier": "TSMC",
+      "customer": "NVIDIA",
+      "product_or_service": "先进制程与先进封装关键基线",
+      "relationship_type": "foundry_packaging_baseline",
+      "evidence_date": "2026-07-05",
+      "source_type": "official_investor_calendar",
+      "last_seen": "2026-07-06",
+      "changed_this_week": "no_new_weekly_evidence",
+      "status": "continued_baseline_insufficient",
+      "confidence": "medium",
+      "confidence_reason": "TSMC 日程显示 7 月进入营收和业绩披露窗口，但本周没有官方新供货公告。",
+      "markdown_section_ref": "6.2 E10",
+      "sources": [
+        "https://investor.tsmc.com/english/financial-calendar"
+      ],
+      "notes": "仅保留核心基线，不能写成价格或订单已确认。"
+    }
+  ],
+  "sources": [
+    "https://about.fb.com/news/2026/06/its-time-to-reserve-your-whatsapp-username/",
+    "https://blogs.microsoft.com/blog/2026/07/02/microsoft-frontier-company-ai-engineering-that-amplifies-and-protects-your-intelligence/",
+    "https://blogs.nvidia.com/blog/anthropic-nvidia-gb300-blackwell-ultra-microsoft-azure/",
+    "https://investor.tsmc.com/english/financial-calendar",
+    "https://ir.tesla.com/press-release/tesla-second-quarter-2026-production-deliveries-and-deployments",
+    "https://news.samsung.com/global/samsung-and-kddi-successfully-complete-ai-powered-network-optimization-trial-on-commercial-5g-standalone-network-in-japan",
+    "https://openai.com/index/aws-and-openai-partnership/",
+    "https://www.apple.com/newsroom/2026/06/apple-creator-studio-gets-smarter-faster-and-more-connected/",
+    "https://www.prnewswire.com/news-releases/sk-hynix-ships-samples-of-12-layer-next-gen-hbm4e-302803714.html"
+  ],
+  "confidence": "mixed",
+  "notes": "本基线覆盖 2026-06-29 至 2026-07-05。图、Markdown 表格和 JSON 共用 E01-E10；不可达来源中的具体断言已从周报删除或降级为后续跟踪。"
+}

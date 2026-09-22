@@ -11,7 +11,7 @@ from pathlib import Path
 from typing import Any
 
 from graph_update_policy import build_graph_plan_from_data
-from historical_snapshot_overrides import apply_data_overrides
+from historical_snapshot_overrides import apply_data_overrides, apply_plan_overrides
 from json_canvas_graphs import build_product_canvas, build_supply_canvas, write_canvas_and_svg
 
 
@@ -96,6 +96,7 @@ def main() -> None:
             latest_supply_date,
             latest_product_date,
         )
+        apply_plan_overrides(report_date, plan, supply_data)
         plans[report_date] = {"source_commit": commit, **plan}
         should_rebuild = selected is None or report_date in selected
         summaries: dict[str, dict[str, int] | None] = {"product": None, "supply": None}

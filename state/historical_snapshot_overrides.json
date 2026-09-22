@@ -6,7 +6,16 @@
   },
   "reports": {
     "2026-07-06": {
-      "reason": "The original Samsung URL slug returned 404 and described a commercial-network trial as a deployment. The replacement is Samsung's official June 30, 2026 release.",
+      "use_explicit_weekly_changes": true,
+      "reason": "2026-09-07 correction: AWS/OpenAI agreement is dated 2025-11-03, not July 2026. Also retain the earlier Samsung trial correction and align product wording with the primary releases. These are retrospective display corrections, not original-time evidence.",
+      "edge_overrides": {
+        "E01": {"product_or_service": "Apple Creator Studio、Final Cut Pro 与 Pixelmator Pro 集成", "notes": "官方正文支持 Apple 应用内集成，不支持旧文的 Adobe Creative Cloud 集成；不是硬件供货。"},
+        "E03": {"evidence_date": "2025-11-03", "changed_this_week": "no_new_weekly_evidence", "status": "continued_prior_agreement", "confidence_reason": "2025-11-03 旧协议，仅作背景；没有本覆盖周新签约证据。", "sources": ["https://openai.com/index/aws-and-openai-partnership/"], "notes": "2026-09-07 撤销旧文错误的当周 new 标记；不据此确认本周新增采购。"},
+        "E04": {"evidence_date": "2026-06-30", "notes": "公告时间 2026-06-29T17:00:19Z，上海为 6 月 30 日；只确认 Claude 在 GB300 上的可用性，不沿用缺少该文支持的具体模型版本号。"},
+        "E05": {"evidence_date": "2025-11-03", "changed_this_week": "no_new_weekly_evidence", "status": "continued_prior_agreement", "confidence_reason": "NVIDIA GPU/UltraServers 来自同一 2025-11-03 协议，不能标为本周强化。", "sources": ["https://openai.com/index/aws-and-openai-partnership/"], "notes": "撤销当周 strengthened；保留旧协议背景，不能把计划容量写成已交付。"},
+        "E07": {"evidence_date": "2026-06-30", "notes": "公告时间 2026-06-29T16:00:06Z，上海为 6 月 30 日；当时开放预约，正式功能仍待推出。"},
+        "E08": {"sources": ["https://ir.tesla.com/press-release/tesla-second-quarter-2026-production-deliveries-and-deployments"], "confidence_reason": "7 月 2 日固定公告支持生产 451758 辆、交付 480126 辆及储能 13.5GWh；不是新增供应订单。"}
+      },
       "replacements": {
         "https://news.samsung.com/global/samsung-and-kddi-successfully-deploy-ai-powered-network-optimization-solution-on-commercial-5g-network": "https://news.samsung.com/global/samsung-and-kddi-successfully-complete-ai-powered-network-optimization-trial-on-commercial-5g-standalone-network-in-japan",
         "与 KDDI 完成 AI 驱动 5G 网络优化商用部署": "与 KDDI 完成商用 5G SA 网络 AI 优化试验",
@@ -18,6 +27,22 @@
         "KDDI 是外部运营商客户。": "KDDI 是外部运营商试验合作方；官方来源未确认全面商业部署。",
         "Samsung 与 KDDI 官方宣布商用网络部署": "Samsung 官方披露与 KDDI 完成商用 5G SA 网络试验",
         "新增/商用部署": "新增/商用网络试验"
+      }
+    },
+    "2026-07-27": {
+      "use_explicit_weekly_changes": true,
+      "reason": "2026-09-07 reissue: correct Alphabet Q2 2026 values and remove 2025 capex guidance; align related claims, dates and supply descriptions with dated primary releases. Unknown media claims are excluded, not certified.",
+      "edge_overrides": {
+        "E01": {"evidence_date": "2026-07-23", "notes": "Apple 公告日期为 7 月 23 日；导航合作是已公布计划，不是新硬件订单。页面后改，历史完整网页版本未认证。"},
+        "E02": {"product_or_service": "AMD Helios、EPYC 与 Azure HDv2/HXv2/ND MI455X v7 计划", "status": "announced_upcoming_infrastructure", "confidence_reason": "Microsoft 7 月 20 日公告支持即将推出的三类 VM，不支持旧文 MI450/Pensando 组合。", "notes": "产品路线已宣布，不将 upcoming 写成已全面上线；未披露采购金额。"},
+        "E04": {"product_or_service": "Google Cloud AI 与云服务需求", "sources": ["https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm"], "confidence_reason": "Q2 2026 Cloud 收入 24768 百万美元；合并经营利润 40770 百万美元；财务需求信号不是新客户订单。", "notes": "删除错误的 2026 年 850 亿美元 capex 指引与该来源未直接支持的 TPU 客户部署说法。"},
+        "E06": {"confidence_reason": "延续背景，原日期区间只是当期检索范围，不是公开日期；未纳入已确认新增事件。"},
+        "E07": {"status": "announced_letter_of_intent", "confidence_reason": "7 月 24 日官方公告支持签署意向书及最高 2GW AI 工厂计划，不是已投产或已确认全部订单。", "notes": "一期计划 2027 年上线；保留计划语气，金额不视为已实现收入。"},
+        "E08": {"confidence_reason": "官方公告支持 HBM 等下一代 AI 内存长期合作与共同开发方向。", "notes": "项目提及 HBM4；具体采购数量、价格与逐期产能分配未核实，不据此计算确定订单。"},
+        "E09": {"status": "announced_memorandum_of_understanding", "confidence_reason": "Samsung/Broadcom 签署 MOU；超过 2000 亿美元是至 2030 年五年合作规模估计，不是确定已签采购额。", "notes": "官方提及 2nm 及以下与先进封装；收入确认、产能和落地订单仍待验证。"},
+        "E10": {"sources": ["https://www.sec.gov/Archives/edgar/data/1318605/000162828026049213/exhibit991.htm"], "confidence_reason": "Q2 2026 收入 28236 百万美元、经营利润 398 百万美元、非 GAAP 自由现金流 -1092 百万美元；不是供应关系新增。"},
+        "E11": {"changed_this_week": "no_new_weekly_evidence", "status": "baseline_unverified_media_claim", "confidence": "low", "confidence_reason": "原涨价报道全文和具体版本未核实，撤销本周 risk 纳入，保留历史追溯记录。", "notes": "原日期区间不证明公开时间；不得把该媒体说法当作本周已核事实或新订单。"},
+        "E12": {"changed_this_week": "no_new_weekly_evidence", "status": "baseline_unverified_media_claim", "confidence": "low", "confidence_reason": "原涨价报道全文和具体版本未核实，撤销本周 risk 纳入，保留历史追溯记录。", "notes": "保留弱背景以免抹除记录，不按已确认本周增量展示。"}
       }
     }
   }

@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-09-07T05:57:27.205Z",
+  "notes": "事后展示版登记，不认证原始发布时点。Git 留痕不是远端可用回执。",
+  "reports": {
+    "2026-07-06": {
+      "path": "reports/2026-07-06_weekly_morning_brief.md",
+      "version_type": "retrospective_revision",
+      "revision_scope": "事实纠错重生成；原报告候选重核；不认证全部历史网页或产品图时点",
+      "revised_at": "2026-09-07T11:46:04+08:00",
+      "published_at": null,
+      "backtest_eligible_for_original_report_time": false,
+      "first_git_commit": "4d0692b78f22c3cfed8bc81a089b045554c2c45c",
+      "first_git_recorded_at": "2026-07-07T10:06:26+08:00",
+      "original_snapshot_commit": "2c1fbaac39273a8ed17996277bc3269de46765c1",
+      "pre_correction_commit": "0d6033a12ad001e5fbda8d584cf31712021735f6",
+      "pre_correction_sha256": "9b3b4c5a5b79452ec0061eed854603a9e568db6bb9efa145d56b9d93847992a0",
+      "current_sha256": "2bfbef9bdff69f853569f58b8ef0c0508090565eeb22713d5add9ea54eebb588",
+      "archive_path": "archives/2026-09-07_before_correction.tar.gz",
+      "archive_sha256": "5e49167d545d9603768b1bb21404f2ead323961e34598575fa591796877b1eef",
+      "original_release_time_verified": false
+    },
+    "2026-07-27": {
+      "path": "reports/2026-07-27_weekly_morning_brief.md",
+      "version_type": "retrospective_revision",
+      "revision_scope": "事实纠错重生成；原报告候选重核；不认证全部历史网页或产品图时点",
+      "revised_at": "2026-09-07T11:46:04+08:00",
+      "published_at": null,
+      "backtest_eligible_for_original_report_time": false,
+      "first_git_commit": "ea3758d3edea056f4987a5c839f24f6f7b05c8af",
+      "first_git_recorded_at": "2026-07-27T10:01:04+08:00",
+      "original_snapshot_commit": "ea3758d3edea056f4987a5c839f24f6f7b05c8af",
+      "pre_correction_commit": "0d6033a12ad001e5fbda8d584cf31712021735f6",
+      "pre_correction_sha256": "fdc59410c74f084ecb74d53fe10eaf99e293c49a01080316285f27519ddfef8e",
+      "current_sha256": "a9224c5457ab1ddaed0c4ccda6239444d3f91820988a3acc2ce0d9313274c133",
+      "archive_path": "archives/2026-09-07_before_correction.tar.gz",
+      "archive_sha256": "5e49167d545d9603768b1bb21404f2ead323961e34598575fa591796877b1eef",
+      "original_release_time_verified": false
+    }
+  }
+}
