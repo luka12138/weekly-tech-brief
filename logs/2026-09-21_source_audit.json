@@ -1,0 +1,2474 @@
+{
+  "generated_at": "2026-09-22T06:41:11.745091+00:00",
+  "report": "reports/2026-09-21_weekly_morning_brief.md",
+  "baseline": "state/supply_graph_baseline.json",
+  "product_graph": "state/product_relationships_2026.json",
+  "report_sha256": "f0888f4d34922ebc64ec5393c0efd8d3143fb462989310276efffd6b8ccf5631",
+  "baseline_sha256": "ca90485c04614209139379e8c3edf1abf39fd9d36543d0b491aecbb8dcef60a6",
+  "product_graph_sha256": "9cab5511530a248a814852befcbd02402645c23370fe2747e54f069089041396",
+  "audited_urls": [
+    "https://abc.xyz/assets/5d/f4/15f364a84a6c9b70a59f9f38d3a1/2026q2-alphabet-earnings-release.pdf",
+    "https://abc.xyz/investor/",
+    "https://about.fb.com/news/2026/09/introducing-meta-one-subscription-service-more-features-ai/",
+    "https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/",
+    "https://apnews.com/article/samsung-ai-profit-memory-chips-10c2c548a392988862d8c7bd3f6fae05",
+    "https://aws.amazon.com/blogs/machine-learning/introducing-claude-fable-5-1-on-aws/",
+    "https://aws.amazon.com/blogs/networking-and-content-delivery/aws-and-microsoft-azure-collaborate-to-expand-multicloud-networking/",
+    "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/west-virginia-long-duration-energy-storage/",
+    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/",
+    "https://blogs.nvidia.com/blog/d-matrix-nvlink-fusion/",
+    "https://blogs.nvidia.com/blog/nvidia-aws-ai-production-scale/",
+    "https://blogs.nvidia.com/blog/vera-rubin-nvl72-mlperf-inference/",
+    "https://github.blog/changelog/2026-09-01-claude-fable-5-1-generally-available-in-github-copilot/",
+    "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2026_2Q_conference_eng.pdf",
+    "https://investor.apple.com/sec-filings/default.aspx",
+    "https://investor.atmeta.com/financials/",
+    "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/",
+    "https://investor.nvidia.com/financial-info/annual-reports-and-proxies/default.aspx",
+    "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-MediaTek-Deepen-Long-Standing-Partnership-to-Build-AI-Edge-to-Cloud-Computing-Platforms/default.aspx",
+    "https://investor.tsmc.com/english/annual-reports",
+    "https://ir.aboutamazon.com/annual-reports-proxies-and-shareholder-letters/default.aspx",
+    "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Second-Quarter-Results/default.aspx",
+    "https://ir.tesla.com/",
+    "https://ir.tesla.com/press-release/tesla-releases-second-quarter-2026-financial-results",
+    "https://mn8.com/mn8-energy-google-and-eos-energy-enterprises-bring-advanced-clean-energy-solutions-to-west-virginia/",
+    "https://news.microsoft.com/source/2026/07/20/microsoft-expands-azure-ai-and-hpc-infrastructure-with-amd/",
+    "https://news.microsoft.com/source/2026/07/21/microsoft-and-mistral-expand-strategic-partnership-to-give-enterprises-and-regulated-industries-frontier-ai-they-can-control/",
+    "https://news.microsoft.com/source/2026/09/15/microsoft-announces-quarterly-dividend-increase-7/",
+    "https://news.samsung.com/global/samsung-and-mistral-ai-announce-strategic-partnership-for-intelligence-driven-semiconductor-infrastructure",
+    "https://news.samsung.com/global/samsung-begins-official-rollout-of-one-ui-9-bringing-the-latest-galaxy-experiences-to-more-devices",
+    "https://news.samsung.com/global/samsung-electronics-and-asml-expand-strategic-collaboration-for-next-generation-semiconductor-manufacturing",
+    "https://news.samsung.com/global/samsung-electronics-and-broadcom-expand-strategic-collaboration-across-memory-and-foundry-technologies",
+    "https://news.samsung.com/global/samsung-electronics-releases-2026-sustainability-report-expanding-water-replenishment-efforts",
+    "https://news.skhynix.com/en/12-layer-hbm4e-sample-1/",
+    "https://news.skhynix.com/en/fact-10/",
+    "https://news.skhynix.com/en/hbf-at-fms-2026/",
+    "https://news.skhynix.com/en/q2-2026-business-results/",
+    "https://news.skhynix.com/sk-hynix-and-sandisk-begin-global-standardization-ofnext-generation-memory-hbf/",
+    "https://nvidianews.nvidia.com/news/ilya-sutskevers-safe-superintelligence-inc-and-nvidia-announce-long-term-strategic-partnership",
+    "https://nvidianews.nvidia.com/news/nvidia-expands-ai-infrastructure-capacity-in-partnership-with-australias-data-center-ecosystem",
+    "https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute",
+    "https://nvidianews.nvidia.com/news/sk-group-and-nvidia-expand-strategic-partnership-across-ai-factories-and-next-generation-memory",
+    "https://openai.com/academy/getting-started/",
+    "https://openai.com/api/",
+    "https://openai.com/codex/",
+    "https://openai.com/index/astra-for-law/",
+    "https://openai.com/index/cerebras-partnership/",
+    "https://openai.com/index/gpt-6-astra/",
+    "https://openai.com/index/introducing-the-agents-api/",
+    "https://openai.com/index/model-misalignment-reporting-framework/",
+    "https://openai.com/index/openai-joins-ports-pike-project/",
+    "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/",
+    "https://openai.com/index/previewing-ultrafast/",
+    "https://openai.com/index/reimagining-advertising-with-ai/",
+    "https://openai.com/news/",
+    "https://openai.com/safety/",
+    "https://platform.claude.com/docs/en/models/fable-5-1/overview",
+    "https://press.aboutamazon.com/aws/2026/8/aws-and-nvidia-to-deliver-2-million-additional-gpus-and-next-generation-infrastructure-for-agentic-and-physical-ai",
+    "https://techcommunity.microsoft.com/blog/microsoft365copilotblog/available-today-anthropic-claude-fable-5-1-in-microsoft-copilot/4551974",
+    "https://www.aboutamazon.com/news/aws/bedrock-openai-models",
+    "https://www.anthropic.com/api",
+    "https://www.anthropic.com/claude",
+    "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+    "https://www.anthropic.com/institute/measuring-pace-of-ai-development",
+    "https://www.anthropic.com/news",
+    "https://www.anthropic.com/news/accenture-embedded-evaluation",
+    "https://www.anthropic.com/news/anthropic-amazon-compute",
+    "https://www.anthropic.com/news/microsoft-nvidia-anthropic-announce-strategic-partnerships",
+    "https://www.anthropic.com/product/claude-code",
+    "https://www.anthropic.com/research",
+    "https://www.apple.com/ie/newsroom/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/",
+    "https://www.apple.com/newsroom/2026/07/apple-maps-to-power-navigation-experience-for-ford-uev-platform/",
+    "https://www.apple.com/newsroom/2026/09/apple-unveils-iphone-duo/",
+    "https://www.apple.com/uk/newsroom/2026/09/the-latest-iphone-apple-watch-and-airpods-lineups-arrive-in-stores-worldwide/",
+    "https://www.d-matrix.ai/announcements/d-matrix-rackscale-nvidia/",
+    "https://www.fortum.com/en/media/2026/09/inside-information-fortum-and-google-partner-drive-sustainable-growth-finland-sign-nuclear-power-purchase-agreement",
+    "https://www.justice.gov/opa/pr/department-justice-again-wins-substantial-relief-against-google",
+    "https://www.marketscreener.com/news/us-agency-orders-tesla-to-answer-questions-on-cybercab-certification-ce785bddde80f524",
+    "https://www.microsoft.com/en-us/Investor/annual-reports.aspx",
+    "https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q4/press-release-webcast",
+    "https://www.microsoft.com/en-us/microsoft-cloud/blog/industry-government/government-operations-and-infrastructure/2026/09/15/introducing-microsoft-365-g7-intelligence-trust-for-the-mission-ahead/",
+    "https://www.nasdaq.com/press-release/nvidia-and-mediatek-deepen-long-standing-partnership-build-ai-edge-cloud-computing",
+    "https://www.samsung.com/global/ir/reports-disclosures/business-report/",
+    "https://www.sec.gov/Archives/edgar/data/1474735/000143774926030550/gnrc20260915_8k.htm",
+    "https://www.skhynix.com/ir/UI-FR-IR02"
+  ],
+  "summary": {
+    "total": 85,
+    "reachable": 85,
+    "access_limited": 13,
+    "unclassified": 0,
+    "errors": 0,
+    "claim_total": 32,
+    "claim_matched": 31,
+    "claim_manual": 1,
+    "claim_failed": 0
+  },
+  "sources": [
+    {
+      "url": "https://abc.xyz/assets/5d/f4/15f364a84a6c9b70a59f9f38d3a1/2026q2-alphabet-earnings-release.pdf",
+      "scheme": "https",
+      "host": "abc.xyz",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://abc.xyz/investor/",
+      "scheme": "https",
+      "host": "abc.xyz",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://about.fb.com/news/2026/09/introducing-meta-one-subscription-service-more-features-ai/",
+      "scheme": "https",
+      "host": "about.fb.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/",
+      "scheme": "https",
+      "host": "about.fb.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://apnews.com/article/samsung-ai-profit-memory-chips-10c2c548a392988862d8c7bd3f6fae05",
+      "scheme": "https",
+      "host": "apnews.com",
+      "source_class": "tier1_media",
+      "status": 403,
+      "reachable": true,
+      "access_limited": true,
+      "content_verified": false,
+      "requires_manual_verification": true,
+      "error": null
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-fable-5-1-on-aws/",
+      "scheme": "https",
+      "host": "aws.amazon.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/networking-and-content-delivery/aws-and-microsoft-azure-collaborate-to-expand-multicloud-networking/",
+      "scheme": "https",
+      "host": "aws.amazon.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/west-virginia-long-duration-energy-storage/",
+      "scheme": "https",
+      "host": "blog.google",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/",
+      "scheme": "https",
+      "host": "blog.google",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/d-matrix-nvlink-fusion/",
+      "scheme": "https",
+      "host": "blogs.nvidia.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/nvidia-aws-ai-production-scale/",
+      "scheme": "https",
+      "host": "blogs.nvidia.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/vera-rubin-nvl72-mlperf-inference/",
+      "scheme": "https",
+      "host": "blogs.nvidia.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://github.blog/changelog/2026-09-01-claude-fable-5-1-generally-available-in-github-copilot/",
+      "scheme": "https",
+      "host": "github.blog",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2026_2Q_conference_eng.pdf",
+      "scheme": "https",
+      "host": "images.samsung.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://investor.apple.com/sec-filings/default.aspx",
+      "scheme": "https",
+      "host": "investor.apple.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://investor.atmeta.com/financials/",
+      "scheme": "https",
+      "host": "investor.atmeta.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/",
+      "scheme": "https",
+      "host": "investor.atmeta.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://investor.nvidia.com/financial-info/annual-reports-and-proxies/default.aspx",
+      "scheme": "https",
+      "host": "investor.nvidia.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-MediaTek-Deepen-Long-Standing-Partnership-to-Build-AI-Edge-to-Cloud-Computing-Platforms/default.aspx",
+      "scheme": "https",
+      "host": "investor.nvidia.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://investor.tsmc.com/english/annual-reports",
+      "scheme": "https",
+      "host": "investor.tsmc.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://ir.aboutamazon.com/annual-reports-proxies-and-shareholder-letters/default.aspx",
+      "scheme": "https",
+      "host": "ir.aboutamazon.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Second-Quarter-Results/default.aspx",
+      "scheme": "https",
+      "host": "ir.aboutamazon.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://ir.tesla.com/",
+      "scheme": "https",
+      "host": "ir.tesla.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://ir.tesla.com/press-release/tesla-releases-second-quarter-2026-financial-results",
+      "scheme": "https",
+      "host": "ir.tesla.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://mn8.com/mn8-energy-google-and-eos-energy-enterprises-bring-advanced-clean-energy-solutions-to-west-virginia/",
+      "scheme": "https",
+      "host": "mn8.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://news.microsoft.com/source/2026/07/20/microsoft-expands-azure-ai-and-hpc-infrastructure-with-amd/",
+      "scheme": "https",
+      "host": "news.microsoft.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://news.microsoft.com/source/2026/07/21/microsoft-and-mistral-expand-strategic-partnership-to-give-enterprises-and-regulated-industries-frontier-ai-they-can-control/",
+      "scheme": "https",
+      "host": "news.microsoft.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://news.microsoft.com/source/2026/09/15/microsoft-announces-quarterly-dividend-increase-7/",
+      "scheme": "https",
+      "host": "news.microsoft.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://news.samsung.com/global/samsung-and-mistral-ai-announce-strategic-partnership-for-intelligence-driven-semiconductor-infrastructure",
+      "scheme": "https",
+      "host": "news.samsung.com",
+      "source_class": "official_or_regulatory",
+      "status": 403,
+      "reachable": true,
+      "access_limited": true,
+      "content_verified": false,
+      "requires_manual_verification": true,
+      "error": null
+    },
+    {
+      "url": "https://news.samsung.com/global/samsung-begins-official-rollout-of-one-ui-9-bringing-the-latest-galaxy-experiences-to-more-devices",
+      "scheme": "https",
+      "host": "news.samsung.com",
+      "source_class": "official_or_regulatory",
+      "status": 403,
+      "reachable": true,
+      "access_limited": true,
+      "content_verified": false,
+      "requires_manual_verification": true,
+      "error": null
+    },
+    {
+      "url": "https://news.samsung.com/global/samsung-electronics-and-asml-expand-strategic-collaboration-for-next-generation-semiconductor-manufacturing",
+      "scheme": "https",
+      "host": "news.samsung.com",
+      "source_class": "official_or_regulatory",
+      "status": 403,
+      "reachable": true,
+      "access_limited": true,
+      "content_verified": false,
+      "requires_manual_verification": true,
+      "error": null
+    },
+    {
+      "url": "https://news.samsung.com/global/samsung-electronics-and-broadcom-expand-strategic-collaboration-across-memory-and-foundry-technologies",
+      "scheme": "https",
+      "host": "news.samsung.com",
+      "source_class": "official_or_regulatory",
+      "status": 403,
+      "reachable": true,
+      "access_limited": true,
+      "content_verified": false,
+      "requires_manual_verification": true,
+      "error": null
+    },
+    {
+      "url": "https://news.samsung.com/global/samsung-electronics-releases-2026-sustainability-report-expanding-water-replenishment-efforts",
+      "scheme": "https",
+      "host": "news.samsung.com",
+      "source_class": "official_or_regulatory",
+      "status": 403,
+      "reachable": true,
+      "access_limited": true,
+      "content_verified": false,
+      "requires_manual_verification": true,
+      "error": null
+    },
+    {
+      "url": "https://news.skhynix.com/en/12-layer-hbm4e-sample-1/",
+      "scheme": "https",
+      "host": "news.skhynix.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://news.skhynix.com/en/fact-10/",
+      "scheme": "https",
+      "host": "news.skhynix.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://news.skhynix.com/en/hbf-at-fms-2026/",
+      "scheme": "https",
+      "host": "news.skhynix.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://news.skhynix.com/en/q2-2026-business-results/",
+      "scheme": "https",
+      "host": "news.skhynix.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://news.skhynix.com/sk-hynix-and-sandisk-begin-global-standardization-ofnext-generation-memory-hbf/",
+      "scheme": "https",
+      "host": "news.skhynix.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://nvidianews.nvidia.com/news/ilya-sutskevers-safe-superintelligence-inc-and-nvidia-announce-long-term-strategic-partnership",
+      "scheme": "https",
+      "host": "nvidianews.nvidia.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://nvidianews.nvidia.com/news/nvidia-expands-ai-infrastructure-capacity-in-partnership-with-australias-data-center-ecosystem",
+      "scheme": "https",
+      "host": "nvidianews.nvidia.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute",
+      "scheme": "https",
+      "host": "nvidianews.nvidia.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://nvidianews.nvidia.com/news/sk-group-and-nvidia-expand-strategic-partnership-across-ai-factories-and-next-generation-memory",
+      "scheme": "https",
+      "host": "nvidianews.nvidia.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://openai.com/academy/getting-started/",
+      "scheme": "https",
+      "host": "openai.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://openai.com/api/",
+      "scheme": "https",
+      "host": "openai.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://openai.com/codex/",
+      "scheme": "https",
+      "host": "openai.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://openai.com/index/astra-for-law/",
+      "scheme": "https",
+      "host": "openai.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://openai.com/index/cerebras-partnership/",
+      "scheme": "https",
+      "host": "openai.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://openai.com/index/gpt-6-astra/",
+      "scheme": "https",
+      "host": "openai.com",
+      "source_class": "official_or_regulatory",
+      "status": 403,
+      "reachable": true,
+      "access_limited": true,
+      "content_verified": false,
+      "requires_manual_verification": true,
+      "error": null
+    },
+    {
+      "url": "https://openai.com/index/introducing-the-agents-api/",
+      "scheme": "https",
+      "host": "openai.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://openai.com/index/model-misalignment-reporting-framework/",
+      "scheme": "https",
+      "host": "openai.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://openai.com/index/openai-joins-ports-pike-project/",
+      "scheme": "https",
+      "host": "openai.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/",
+      "scheme": "https",
+      "host": "openai.com",
+      "source_class": "official_or_regulatory",
+      "status": 403,
+      "reachable": true,
+      "access_limited": true,
+      "content_verified": false,
+      "requires_manual_verification": true,
+      "error": null
+    },
+    {
+      "url": "https://openai.com/index/previewing-ultrafast/",
+      "scheme": "https",
+      "host": "openai.com",
+      "source_class": "official_or_regulatory",
+      "status": 403,
+      "reachable": true,
+      "access_limited": true,
+      "content_verified": false,
+      "requires_manual_verification": true,
+      "error": null
+    },
+    {
+      "url": "https://openai.com/index/reimagining-advertising-with-ai/",
+      "scheme": "https",
+      "host": "openai.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://openai.com/news/",
+      "scheme": "https",
+      "host": "openai.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://openai.com/safety/",
+      "scheme": "https",
+      "host": "openai.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/models/fable-5-1/overview",
+      "scheme": "https",
+      "host": "platform.claude.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://press.aboutamazon.com/aws/2026/8/aws-and-nvidia-to-deliver-2-million-additional-gpus-and-next-generation-infrastructure-for-agentic-and-physical-ai",
+      "scheme": "https",
+      "host": "press.aboutamazon.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://techcommunity.microsoft.com/blog/microsoft365copilotblog/available-today-anthropic-claude-fable-5-1-in-microsoft-copilot/4551974",
+      "scheme": "https",
+      "host": "techcommunity.microsoft.com",
+      "source_class": "official_or_regulatory",
+      "status": 403,
+      "reachable": true,
+      "access_limited": true,
+      "content_verified": false,
+      "requires_manual_verification": true,
+      "error": null
+    },
+    {
+      "url": "https://www.aboutamazon.com/news/aws/bedrock-openai-models",
+      "scheme": "https",
+      "host": "www.aboutamazon.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://www.anthropic.com/api",
+      "scheme": "https",
+      "host": "www.anthropic.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://www.anthropic.com/claude",
+      "scheme": "https",
+      "host": "www.anthropic.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+      "scheme": "https",
+      "host": "www.anthropic.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://www.anthropic.com/institute/measuring-pace-of-ai-development",
+      "scheme": "https",
+      "host": "www.anthropic.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://www.anthropic.com/news",
+      "scheme": "https",
+      "host": "www.anthropic.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://www.anthropic.com/news/accenture-embedded-evaluation",
+      "scheme": "https",
+      "host": "www.anthropic.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://www.anthropic.com/news/anthropic-amazon-compute",
+      "scheme": "https",
+      "host": "www.anthropic.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://www.anthropic.com/news/microsoft-nvidia-anthropic-announce-strategic-partnerships",
+      "scheme": "https",
+      "host": "www.anthropic.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://www.anthropic.com/product/claude-code",
+      "scheme": "https",
+      "host": "www.anthropic.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://www.anthropic.com/research",
+      "scheme": "https",
+      "host": "www.anthropic.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://www.apple.com/ie/newsroom/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/",
+      "scheme": "https",
+      "host": "www.apple.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://www.apple.com/newsroom/2026/07/apple-maps-to-power-navigation-experience-for-ford-uev-platform/",
+      "scheme": "https",
+      "host": "www.apple.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://www.apple.com/newsroom/2026/09/apple-unveils-iphone-duo/",
+      "scheme": "https",
+      "host": "www.apple.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://www.apple.com/uk/newsroom/2026/09/the-latest-iphone-apple-watch-and-airpods-lineups-arrive-in-stores-worldwide/",
+      "scheme": "https",
+      "host": "www.apple.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://www.d-matrix.ai/announcements/d-matrix-rackscale-nvidia/",
+      "scheme": "https",
+      "host": "www.d-matrix.ai",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://www.fortum.com/en/media/2026/09/inside-information-fortum-and-google-partner-drive-sustainable-growth-finland-sign-nuclear-power-purchase-agreement",
+      "scheme": "https",
+      "host": "www.fortum.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://www.justice.gov/opa/pr/department-justice-again-wins-substantial-relief-against-google",
+      "scheme": "https",
+      "host": "www.justice.gov",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://www.marketscreener.com/news/us-agency-orders-tesla-to-answer-questions-on-cybercab-certification-ce785bddde80f524",
+      "scheme": "https",
+      "host": "www.marketscreener.com",
+      "source_class": "trade_or_press_media",
+      "status": 403,
+      "reachable": true,
+      "access_limited": true,
+      "content_verified": false,
+      "requires_manual_verification": true,
+      "error": null
+    },
+    {
+      "url": "https://www.microsoft.com/en-us/Investor/annual-reports.aspx",
+      "scheme": "https",
+      "host": "www.microsoft.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q4/press-release-webcast",
+      "scheme": "https",
+      "host": "www.microsoft.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/industry-government/government-operations-and-infrastructure/2026/09/15/introducing-microsoft-365-g7-intelligence-trust-for-the-mission-ahead/",
+      "scheme": "https",
+      "host": "www.microsoft.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://www.nasdaq.com/press-release/nvidia-and-mediatek-deepen-long-standing-partnership-build-ai-edge-cloud-computing",
+      "scheme": "https",
+      "host": "www.nasdaq.com",
+      "source_class": "trade_or_press_media",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://www.samsung.com/global/ir/reports-disclosures/business-report/",
+      "scheme": "https",
+      "host": "www.samsung.com",
+      "source_class": "official_or_regulatory",
+      "status": 403,
+      "reachable": true,
+      "access_limited": true,
+      "content_verified": false,
+      "requires_manual_verification": true,
+      "error": null
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1474735/000143774926030550/gnrc20260915_8k.htm",
+      "scheme": "https",
+      "host": "www.sec.gov",
+      "source_class": "official_or_regulatory",
+      "status": 403,
+      "reachable": true,
+      "access_limited": true,
+      "content_verified": false,
+      "requires_manual_verification": true,
+      "error": null
+    },
+    {
+      "url": "https://www.skhynix.com/ir/UI-FR-IR02",
+      "scheme": "https",
+      "host": "www.skhynix.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    }
+  ],
+  "claim_checks": [
+    {
+      "claim_id": "E01",
+      "scope": "weekly_supply_edge",
+      "description": "Apple Maps EV routing and in-vehicle navigation for Ford Universal EV Platform",
+      "source_urls": [
+        "https://www.apple.com/newsroom/2026/07/apple-maps-to-power-navigation-experience-for-ford-uev-platform/"
+      ],
+      "keywords": [
+        "Ford",
+        "Apple Maps"
+      ],
+      "min_keyword_matches": 2,
+      "required": true,
+      "matched": true,
+      "requires_manual_verification": false,
+      "failed": false,
+      "best_match_count": 2,
+      "best_matched_keywords": [
+        "ford",
+        "apple maps"
+      ],
+      "url_results": [
+        {
+          "url": "https://www.apple.com/newsroom/2026/07/apple-maps-to-power-navigation-experience-for-ford-uev-platform/",
+          "status": 200,
+          "access_limited": false,
+          "matched_keywords": [
+            "ford",
+            "apple maps"
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 9097
+        }
+      ]
+    },
+    {
+      "claim_id": "E02",
+      "scope": "weekly_supply_edge",
+      "description": "AMD Helios, ND MI455X v7 and EPYC for Azure AI and HPC infrastructure",
+      "source_urls": [
+        "https://news.microsoft.com/source/2026/07/20/microsoft-expands-azure-ai-and-hpc-infrastructure-with-amd/"
+      ],
+      "keywords": [
+        "MI455X",
+        "EPYC"
+      ],
+      "min_keyword_matches": 2,
+      "required": true,
+      "matched": true,
+      "requires_manual_verification": false,
+      "failed": false,
+      "best_match_count": 2,
+      "best_matched_keywords": [
+        "mi455x",
+        "epyc"
+      ],
+      "url_results": [
+        {
+          "url": "https://news.microsoft.com/source/2026/07/20/microsoft-expands-azure-ai-and-hpc-infrastructure-with-amd/",
+          "status": 200,
+          "access_limited": false,
+          "matched_keywords": [
+            "mi455x",
+            "epyc"
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 9109
+        }
+      ]
+    },
+    {
+      "claim_id": "E03",
+      "scope": "weekly_supply_edge",
+      "description": "Frontier AI model services for enterprises and regulated industries",
+      "source_urls": [
+        "https://news.microsoft.com/source/2026/07/21/microsoft-and-mistral-expand-strategic-partnership-to-give-enterprises-and-regulated-industries-frontier-ai-they-can-control/"
+      ],
+      "keywords": [
+        "Mistral",
+        "regulated industries"
+      ],
+      "min_keyword_matches": 2,
+      "required": true,
+      "matched": true,
+      "requires_manual_verification": false,
+      "failed": false,
+      "best_match_count": 2,
+      "best_matched_keywords": [
+        "mistral",
+        "regulated industries"
+      ],
+      "url_results": [
+        {
+          "url": "https://news.microsoft.com/source/2026/07/21/microsoft-and-mistral-expand-strategic-partnership-to-give-enterprises-and-regulated-industries-frontier-ai-they-can-control/",
+          "status": 200,
+          "access_limited": false,
+          "matched_keywords": [
+            "mistral",
+            "regulated industries"
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 13931
+        }
+      ]
+    },
+    {
+      "claim_id": "E05",
+      "scope": "weekly_supply_edge",
+      "description": "Claude models including Fable 5.1 available on Amazon Bedrock and Claude Platform on AWS",
+      "source_urls": [
+        "https://aws.amazon.com/blogs/machine-learning/introducing-claude-fable-5-1-on-aws/",
+        "https://www.anthropic.com/claude-fable-and-mythos-5-1"
+      ],
+      "keywords": [
+        "Fable 5.1",
+        "Amazon Bedrock",
+        "data retention"
+      ],
+      "min_keyword_matches": 3,
+      "required": true,
+      "matched": true,
+      "requires_manual_verification": false,
+      "failed": false,
+      "best_match_count": 3,
+      "best_matched_keywords": [
+        "fable 5.1",
+        "amazon bedrock",
+        "data retention"
+      ],
+      "url_results": [
+        {
+          "url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-fable-5-1-on-aws/",
+          "status": 200,
+          "access_limited": false,
+          "matched_keywords": [
+            "fable 5.1",
+            "amazon bedrock",
+            "data retention"
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 97089
+        },
+        {
+          "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+          "status": 200,
+          "access_limited": false,
+          "matched_keywords": [
+            "fable 5.1",
+            "amazon bedrock",
+            "data retention"
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 37455
+        }
+      ]
+    },
+    {
+      "claim_id": "E06",
+      "scope": "weekly_supply_edge",
+      "description": "Facebook, Instagram, WhatsApp, Threads and advertising systems",
+      "source_urls": [
+        "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/"
+      ],
+      "keywords": [
+        "Advertising",
+        "Family daily active people"
+      ],
+      "min_keyword_matches": 2,
+      "required": true,
+      "matched": true,
+      "requires_manual_verification": false,
+      "failed": false,
+      "best_match_count": 2,
+      "best_matched_keywords": [
+        "advertising",
+        "family daily active people"
+      ],
+      "url_results": [
+        {
+          "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/",
+          "status": 200,
+          "access_limited": false,
+          "matched_keywords": [
+            "advertising",
+            "family daily active people"
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 20111
+        }
+      ]
+    },
+    {
+      "claim_id": "E07",
+      "scope": "weekly_supply_edge",
+      "description": "NVIDIA AI infrastructure for AI factories and SK Telecom AI infrastructure",
+      "source_urls": [
+        "https://nvidianews.nvidia.com/news/sk-group-and-nvidia-expand-strategic-partnership-across-ai-factories-and-next-generation-memory"
+      ],
+      "keywords": [
+        "SK Telecom",
+        "AI factories"
+      ],
+      "min_keyword_matches": 2,
+      "required": true,
+      "matched": true,
+      "requires_manual_verification": false,
+      "failed": false,
+      "best_match_count": 2,
+      "best_matched_keywords": [
+        "sk telecom",
+        "ai factories"
+      ],
+      "url_results": [
+        {
+          "url": "https://nvidianews.nvidia.com/news/sk-group-and-nvidia-expand-strategic-partnership-across-ai-factories-and-next-generation-memory",
+          "status": 200,
+          "access_limited": false,
+          "matched_keywords": [
+            "sk telecom",
+            "ai factories"
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 16828
+        }
+      ]
+    },
+    {
+      "claim_id": "E08",
+      "scope": "weekly_supply_edge",
+      "description": "HBM and next-generation AI memory ecosystem",
+      "source_urls": [
+        "https://nvidianews.nvidia.com/news/sk-group-and-nvidia-expand-strategic-partnership-across-ai-factories-and-next-generation-memory",
+        "https://news.skhynix.com/en/q2-2026-business-results/"
+      ],
+      "keywords": [
+        "SK hynix",
+        "next-generation memory"
+      ],
+      "min_keyword_matches": 2,
+      "required": true,
+      "matched": true,
+      "requires_manual_verification": false,
+      "failed": false,
+      "best_match_count": 2,
+      "best_matched_keywords": [
+        "sk hynix",
+        "next-generation memory"
+      ],
+      "url_results": [
+        {
+          "url": "https://nvidianews.nvidia.com/news/sk-group-and-nvidia-expand-strategic-partnership-across-ai-factories-and-next-generation-memory",
+          "status": 200,
+          "access_limited": false,
+          "matched_keywords": [
+            "sk hynix",
+            "next-generation memory"
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 16828
+        },
+        {
+          "url": "https://news.skhynix.com/en/q2-2026-business-results/",
+          "status": 200,
+          "access_limited": false,
+          "matched_keywords": [
+            "sk hynix"
+          ],
+          "text_fetch_retried": true,
+          "text_fetch_failed": false,
+          "text_length": 11255
+        }
+      ]
+    },
+    {
+      "claim_id": "E09",
+      "scope": "weekly_supply_edge",
+      "description": "HBM, 2nm-and-below foundry and 2.3D/2.5D advanced packaging",
+      "source_urls": [
+        "https://news.samsung.com/global/samsung-electronics-and-broadcom-expand-strategic-collaboration-across-memory-and-foundry-technologies"
+      ],
+      "keywords": [
+        "Broadcom",
+        "High Bandwidth Memory"
+      ],
+      "min_keyword_matches": 2,
+      "required": true,
+      "matched": true,
+      "requires_manual_verification": false,
+      "failed": false,
+      "best_match_count": 2,
+      "best_matched_keywords": [
+        "broadcom",
+        "high bandwidth memory"
+      ],
+      "url_results": [
+        {
+          "url": "https://news.samsung.com/global/samsung-electronics-and-broadcom-expand-strategic-collaboration-across-memory-and-foundry-technologies",
+          "status": 403,
+          "access_limited": true,
+          "matched_keywords": [
+            "broadcom",
+            "high bandwidth memory"
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 5126
+        }
+      ]
+    },
+    {
+      "claim_id": "E13",
+      "scope": "weekly_supply_edge",
+      "description": "Vera Rubin systems, long-term compute access and compute-platform co-development",
+      "source_urls": [
+        "https://nvidianews.nvidia.com/news/ilya-sutskevers-safe-superintelligence-inc-and-nvidia-announce-long-term-strategic-partnership"
+      ],
+      "keywords": [
+        "Safe Superintelligence",
+        "Vera Rubin",
+        "order of magnitude"
+      ],
+      "min_keyword_matches": 2,
+      "required": true,
+      "matched": true,
+      "requires_manual_verification": false,
+      "failed": false,
+      "best_match_count": 3,
+      "best_matched_keywords": [
+        "safe superintelligence",
+        "vera rubin",
+        "order of magnitude"
+      ],
+      "url_results": [
+        {
+          "url": "https://nvidianews.nvidia.com/news/ilya-sutskevers-safe-superintelligence-inc-and-nvidia-announce-long-term-strategic-partnership",
+          "status": 200,
+          "access_limited": false,
+          "matched_keywords": [
+            "safe superintelligence",
+            "vera rubin",
+            "order of magnitude"
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 11269
+        }
+      ]
+    },
+    {
+      "claim_id": "E14",
+      "scope": "weekly_supply_edge",
+      "description": "Trainium-based multi-year, multi-gigawatt AI compute commitment",
+      "source_urls": [
+        "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Second-Quarter-Results/default.aspx"
+      ],
+      "keywords": [
+        "OpenAI",
+        "Trainium",
+        "multi-gigawatt"
+      ],
+      "min_keyword_matches": 2,
+      "required": true,
+      "matched": true,
+      "requires_manual_verification": false,
+      "failed": false,
+      "best_match_count": 3,
+      "best_matched_keywords": [
+        "openai",
+        "trainium",
+        "multi-gigawatt"
+      ],
+      "url_results": [
+        {
+          "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Second-Quarter-Results/default.aspx",
+          "status": 200,
+          "access_limited": false,
+          "matched_keywords": [
+            "openai",
+            "trainium",
+            "multi-gigawatt"
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 53892
+        }
+      ]
+    },
+    {
+      "claim_id": "E15",
+      "scope": "weekly_supply_edge",
+      "description": "Trainium-based multi-year, multi-gigawatt AI compute commitment",
+      "source_urls": [
+        "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Second-Quarter-Results/default.aspx"
+      ],
+      "keywords": [
+        "Anthropic",
+        "Trainium",
+        "multi-gigawatt"
+      ],
+      "min_keyword_matches": 2,
+      "required": true,
+      "matched": true,
+      "requires_manual_verification": false,
+      "failed": false,
+      "best_match_count": 3,
+      "best_matched_keywords": [
+        "anthropic",
+        "trainium",
+        "multi-gigawatt"
+      ],
+      "url_results": [
+        {
+          "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Second-Quarter-Results/default.aspx",
+          "status": 200,
+          "access_limited": false,
+          "matched_keywords": [
+            "anthropic",
+            "trainium",
+            "multi-gigawatt"
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 53892
+        }
+      ]
+    },
+    {
+      "claim_id": "E16",
+      "scope": "weekly_supply_edge",
+      "description": "Azure cloud and AI services plus Microsoft 365 Copilot",
+      "source_urls": [
+        "https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q4/press-release-webcast"
+      ],
+      "keywords": [
+        "Azure",
+        "43%",
+        "Copilot"
+      ],
+      "min_keyword_matches": 2,
+      "required": true,
+      "matched": true,
+      "requires_manual_verification": false,
+      "failed": false,
+      "best_match_count": 3,
+      "best_matched_keywords": [
+        "azure",
+        "43%",
+        "copilot"
+      ],
+      "url_results": [
+        {
+          "url": "https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q4/press-release-webcast",
+          "status": 200,
+          "access_limited": false,
+          "matched_keywords": [
+            "azure",
+            "43%",
+            "copilot"
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 31642
+        }
+      ]
+    },
+    {
+      "claim_id": "E18",
+      "scope": "weekly_supply_edge",
+      "description": "HBM4, AI server DRAM, eSSD and long-term supply agreements",
+      "source_urls": [
+        "https://news.skhynix.com/en/q2-2026-business-results/"
+      ],
+      "keywords": [
+        "Long-Term Agreements",
+        "around 10",
+        "HBM4"
+      ],
+      "min_keyword_matches": 2,
+      "required": true,
+      "matched": true,
+      "requires_manual_verification": false,
+      "failed": false,
+      "best_match_count": 3,
+      "best_matched_keywords": [
+        "long-term agreements",
+        "around 10",
+        "hbm4"
+      ],
+      "url_results": [
+        {
+          "url": "https://news.skhynix.com/en/q2-2026-business-results/",
+          "status": 200,
+          "access_limited": false,
+          "matched_keywords": [
+            "long-term agreements",
+            "around 10",
+            "hbm4"
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 11255
+        }
+      ]
+    },
+    {
+      "claim_id": "E19",
+      "scope": "weekly_supply_edge",
+      "description": "First open High Bandwidth Flash standard specification for AI inference memory tiers",
+      "source_urls": [
+        "https://news.skhynix.com/en/hbf-at-fms-2026/",
+        "https://news.skhynix.com/sk-hynix-and-sandisk-begin-global-standardization-ofnext-generation-memory-hbf/"
+      ],
+      "keywords": [
+        "Sandisk",
+        "HBF",
+        "512GB",
+        "OCP"
+      ],
+      "min_keyword_matches": 3,
+      "required": true,
+      "matched": true,
+      "requires_manual_verification": false,
+      "failed": false,
+      "best_match_count": 4,
+      "best_matched_keywords": [
+        "sandisk",
+        "hbf",
+        "512gb",
+        "ocp"
+      ],
+      "url_results": [
+        {
+          "url": "https://news.skhynix.com/en/hbf-at-fms-2026/",
+          "status": 200,
+          "access_limited": false,
+          "matched_keywords": [
+            "sandisk",
+            "hbf",
+            "512gb",
+            "ocp"
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 10724
+        },
+        {
+          "url": "https://news.skhynix.com/sk-hynix-and-sandisk-begin-global-standardization-ofnext-generation-memory-hbf/",
+          "status": 200,
+          "access_limited": false,
+          "matched_keywords": [
+            "sandisk",
+            "hbf",
+            "ocp"
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 5727
+        }
+      ]
+    },
+    {
+      "claim_id": "E20",
+      "scope": "weekly_supply_edge",
+      "description": "GPT-6 Astra在Amazon Bedrock正式可用",
+      "source_urls": [
+        "https://www.aboutamazon.com/news/aws/bedrock-openai-models"
+      ],
+      "keywords": [
+        "GPT-6 Astra",
+        "September 8"
+      ],
+      "min_keyword_matches": 2,
+      "required": true,
+      "matched": true,
+      "requires_manual_verification": false,
+      "failed": false,
+      "best_match_count": 2,
+      "best_matched_keywords": [
+        "gpt-6 astra",
+        "september 8"
+      ],
+      "url_results": [
+        {
+          "url": "https://www.aboutamazon.com/news/aws/bedrock-openai-models",
+          "status": 200,
+          "access_limited": false,
+          "matched_keywords": [
+            "gpt-6 astra",
+            "september 8"
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 12600
+        }
+      ]
+    },
+    {
+      "claim_id": "E21",
+      "scope": "weekly_supply_edge",
+      "description": "Cerebras-powered GPT-5.6 Sol Ultrafast inference at up to 750 output tokens per second",
+      "source_urls": [
+        "https://openai.com/index/previewing-ultrafast/",
+        "https://openai.com/index/cerebras-partnership/"
+      ],
+      "keywords": [
+        "Ultrafast",
+        "Cerebras",
+        "750"
+      ],
+      "min_keyword_matches": 2,
+      "required": true,
+      "matched": true,
+      "requires_manual_verification": false,
+      "failed": false,
+      "best_match_count": 3,
+      "best_matched_keywords": [
+        "ultrafast",
+        "cerebras",
+        "750"
+      ],
+      "url_results": [
+        {
+          "url": "https://openai.com/index/previewing-ultrafast/",
+          "status": 403,
+          "access_limited": true,
+          "matched_keywords": [
+            "ultrafast",
+            "cerebras",
+            "750"
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 7997
+        },
+        {
+          "url": "https://openai.com/index/cerebras-partnership/",
+          "status": 200,
+          "access_limited": false,
+          "matched_keywords": [
+            "cerebras",
+            "750"
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 3406
+        }
+      ]
+    },
+    {
+      "claim_id": "E22",
+      "scope": "weekly_supply_edge",
+      "description": "NVIDIA DSX full-stack AI compute for approximately 8 IT-GW at PORTS-Pike",
+      "source_urls": [
+        "https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute",
+        "https://openai.com/index/openai-joins-ports-pike-project/"
+      ],
+      "keywords": [
+        "PORTS-Pike",
+        "OpenAI",
+        "DSX"
+      ],
+      "min_keyword_matches": 3,
+      "required": true,
+      "matched": true,
+      "requires_manual_verification": false,
+      "failed": false,
+      "best_match_count": 3,
+      "best_matched_keywords": [
+        "ports-pike",
+        "openai",
+        "dsx"
+      ],
+      "url_results": [
+        {
+          "url": "https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute",
+          "status": 200,
+          "access_limited": false,
+          "matched_keywords": [
+            "ports-pike",
+            "openai",
+            "dsx"
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 16372
+        },
+        {
+          "url": "https://openai.com/index/openai-joins-ports-pike-project/",
+          "status": 200,
+          "access_limited": false,
+          "matched_keywords": [
+            "ports-pike",
+            "openai"
+          ],
+          "text_fetch_retried": true,
+          "text_fetch_failed": false,
+          "text_length": 11106
+        }
+      ]
+    },
+    {
+      "claim_id": "E23",
+      "scope": "weekly_supply_edge",
+      "description": "Land, power and shell capacity for approximately 8 IT-GW under a 20-year lease",
+      "source_urls": [
+        "https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute",
+        "https://openai.com/index/openai-joins-ports-pike-project/"
+      ],
+      "keywords": [
+        "SB Energy",
+        "20-year lease",
+        "OpenAI"
+      ],
+      "min_keyword_matches": 3,
+      "required": true,
+      "matched": true,
+      "requires_manual_verification": false,
+      "failed": false,
+      "best_match_count": 3,
+      "best_matched_keywords": [
+        "sb energy",
+        "20-year lease",
+        "openai"
+      ],
+      "url_results": [
+        {
+          "url": "https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute",
+          "status": 200,
+          "access_limited": false,
+          "matched_keywords": [
+            "sb energy",
+            "20-year lease",
+            "openai"
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 16372
+        },
+        {
+          "url": "https://openai.com/index/openai-joins-ports-pike-project/",
+          "status": 200,
+          "access_limited": false,
+          "matched_keywords": [
+            "sb energy",
+            "20-year lease",
+            "openai"
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 11106
+        }
+      ]
+    },
+    {
+      "claim_id": "E24",
+      "scope": "weekly_supply_edge",
+      "description": "Two million additional Blackwell Ultra, Rubin and Rubin Ultra GPUs for AWS global infrastructure in 2027-2028",
+      "source_urls": [
+        "https://press.aboutamazon.com/aws/2026/8/aws-and-nvidia-to-deliver-2-million-additional-gpus-and-next-generation-infrastructure-for-agentic-and-physical-ai"
+      ],
+      "keywords": [
+        "2 million",
+        "AWS",
+        "2027",
+        "2028"
+      ],
+      "min_keyword_matches": 3,
+      "required": true,
+      "matched": true,
+      "requires_manual_verification": false,
+      "failed": false,
+      "best_match_count": 4,
+      "best_matched_keywords": [
+        "2 million",
+        "aws",
+        "2027",
+        "2028"
+      ],
+      "url_results": [
+        {
+          "url": "https://press.aboutamazon.com/aws/2026/8/aws-and-nvidia-to-deliver-2-million-additional-gpus-and-next-generation-infrastructure-for-agentic-and-physical-ai",
+          "status": 200,
+          "access_limited": false,
+          "matched_keywords": [
+            "2 million",
+            "aws",
+            "2027",
+            "2028"
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 16921
+        }
+      ]
+    },
+    {
+      "claim_id": "E25",
+      "scope": "weekly_supply_edge",
+      "description": "OpenAI model access in Cursor, with a proposed service shutoff on 2026-11-12",
+      "source_urls": [
+        "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/"
+      ],
+      "keywords": [
+        "Cursor",
+        "wind down",
+        "November 12, 2026"
+      ],
+      "min_keyword_matches": 2,
+      "required": true,
+      "matched": true,
+      "requires_manual_verification": false,
+      "failed": false,
+      "best_match_count": 3,
+      "best_matched_keywords": [
+        "cursor",
+        "wind down",
+        "november 12, 2026"
+      ],
+      "url_results": [
+        {
+          "url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/",
+          "status": 403,
+          "access_limited": true,
+          "matched_keywords": [
+            "cursor",
+            "wind down",
+            "november 12, 2026"
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 3774
+        }
+      ]
+    },
+    {
+      "claim_id": "E26",
+      "scope": "weekly_supply_edge",
+      "description": "Claude Fable 5.1 in Copilot Cowork, Copilot Studio and GitHub Copilot",
+      "source_urls": [
+        "https://techcommunity.microsoft.com/blog/microsoft365copilotblog/available-today-anthropic-claude-fable-5-1-in-microsoft-copilot/4551974",
+        "https://github.blog/changelog/2026-09-01-claude-fable-5-1-generally-available-in-github-copilot/",
+        "https://www.anthropic.com/claude-fable-and-mythos-5-1"
+      ],
+      "keywords": [
+        "Fable 5.1",
+        "Copilot"
+      ],
+      "min_keyword_matches": 2,
+      "required": true,
+      "matched": true,
+      "requires_manual_verification": false,
+      "failed": false,
+      "best_match_count": 2,
+      "best_matched_keywords": [
+        "fable 5.1",
+        "copilot"
+      ],
+      "url_results": [
+        {
+          "url": "https://techcommunity.microsoft.com/blog/microsoft365copilotblog/available-today-anthropic-claude-fable-5-1-in-microsoft-copilot/4551974",
+          "status": 403,
+          "access_limited": true,
+          "matched_keywords": [],
+          "text_fetch_retried": false,
+          "text_fetch_failed": true,
+          "text_length": 0
+        },
+        {
+          "url": "https://github.blog/changelog/2026-09-01-claude-fable-5-1-generally-available-in-github-copilot/",
+          "status": 200,
+          "access_limited": false,
+          "matched_keywords": [
+            "fable 5.1",
+            "copilot"
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 6242
+        },
+        {
+          "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+          "status": 200,
+          "access_limited": false,
+          "matched_keywords": [
+            "fable 5.1"
+          ],
+          "text_fetch_retried": true,
+          "text_fetch_failed": false,
+          "text_length": 37455
+        }
+      ]
+    },
+    {
+      "claim_id": "E27",
+      "scope": "weekly_supply_edge",
+      "description": "GPT-6 Astra phased distribution through Microsoft Azure",
+      "source_urls": [
+        "https://openai.com/index/gpt-6-astra/"
+      ],
+      "keywords": [
+        "Astra",
+        "Microsoft Azure"
+      ],
+      "min_keyword_matches": 2,
+      "required": true,
+      "matched": true,
+      "requires_manual_verification": false,
+      "failed": false,
+      "best_match_count": 2,
+      "best_matched_keywords": [
+        "astra",
+        "microsoft azure"
+      ],
+      "url_results": [
+        {
+          "url": "https://openai.com/index/gpt-6-astra/",
+          "status": 403,
+          "access_limited": true,
+          "matched_keywords": [
+            "astra",
+            "microsoft azure"
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 177517
+        }
+      ]
+    },
+    {
+      "claim_id": "E28",
+      "scope": "weekly_supply_edge",
+      "description": "Claude Fable 5.1 distribution through Google Cloud Agent Platform",
+      "source_urls": [
+        "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+        "https://platform.claude.com/docs/en/models/fable-5-1/overview"
+      ],
+      "keywords": [
+        "Fable 5.1",
+        "Google Cloud"
+      ],
+      "min_keyword_matches": 2,
+      "required": true,
+      "matched": true,
+      "requires_manual_verification": false,
+      "failed": false,
+      "best_match_count": 2,
+      "best_matched_keywords": [
+        "fable 5.1",
+        "google cloud"
+      ],
+      "url_results": [
+        {
+          "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+          "status": 200,
+          "access_limited": false,
+          "matched_keywords": [
+            "fable 5.1",
+            "google cloud"
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 37455
+        },
+        {
+          "url": "https://platform.claude.com/docs/en/models/fable-5-1/overview",
+          "status": 200,
+          "access_limited": false,
+          "matched_keywords": [
+            "fable 5.1",
+            "google cloud"
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 5404
+        }
+      ]
+    },
+    {
+      "claim_id": "E29",
+      "scope": "weekly_supply_edge",
+      "description": "AWS / Azure 双向云互联公开预览，非已确认采购",
+      "source_urls": [
+        "https://aws.amazon.com/blogs/networking-and-content-delivery/aws-and-microsoft-azure-collaborate-to-expand-multicloud-networking/"
+      ],
+      "keywords": [
+        "Azure",
+        "preview"
+      ],
+      "min_keyword_matches": 2,
+      "required": true,
+      "matched": true,
+      "requires_manual_verification": false,
+      "failed": false,
+      "best_match_count": 2,
+      "best_matched_keywords": [
+        "azure",
+        "preview"
+      ],
+      "url_results": [
+        {
+          "url": "https://aws.amazon.com/blogs/networking-and-content-delivery/aws-and-microsoft-azure-collaborate-to-expand-multicloud-networking/",
+          "status": 200,
+          "access_limited": false,
+          "matched_keywords": [
+            "azure",
+            "preview"
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 102599
+        }
+      ]
+    },
+    {
+      "claim_id": "E30",
+      "scope": "weekly_supply_edge",
+      "description": "NVLink Fusion 计划采用及多代平台合作，尚非量产交付",
+      "source_urls": [
+        "https://www.nasdaq.com/press-release/nvidia-and-mediatek-deepen-long-standing-partnership-build-ai-edge-cloud-computing",
+        "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-MediaTek-Deepen-Long-Standing-Partnership-to-Build-AI-Edge-to-Cloud-Computing-Platforms/default.aspx"
+      ],
+      "keywords": [
+        "MediaTek",
+        "NVLink Fusion"
+      ],
+      "min_keyword_matches": 2,
+      "required": true,
+      "matched": true,
+      "requires_manual_verification": false,
+      "failed": false,
+      "best_match_count": 2,
+      "best_matched_keywords": [
+        "mediatek",
+        "nvlink fusion"
+      ],
+      "url_results": [
+        {
+          "url": "https://www.nasdaq.com/press-release/nvidia-and-mediatek-deepen-long-standing-partnership-build-ai-edge-cloud-computing",
+          "status": 200,
+          "access_limited": false,
+          "matched_keywords": [
+            "mediatek",
+            "nvlink fusion"
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 16544
+        },
+        {
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-MediaTek-Deepen-Long-Standing-Partnership-to-Build-AI-Edge-to-Cloud-Computing-Platforms/default.aspx",
+          "status": 200,
+          "access_limited": false,
+          "matched_keywords": [
+            "mediatek",
+            "nvlink fusion"
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 16358
+        }
+      ]
+    },
+    {
+      "claim_id": "E31",
+      "scope": "weekly_supply_edge",
+      "description": "西弗吉尼亚太阳能及储能的未来能源/容量供应安排",
+      "source_urls": [
+        "https://mn8.com/mn8-energy-google-and-eos-energy-enterprises-bring-advanced-clean-energy-solutions-to-west-virginia/",
+        "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/west-virginia-long-duration-energy-storage/"
+      ],
+      "keywords": [
+        "MN8",
+        "2028",
+        "2030"
+      ],
+      "min_keyword_matches": 2,
+      "required": true,
+      "matched": true,
+      "requires_manual_verification": false,
+      "failed": false,
+      "best_match_count": 3,
+      "best_matched_keywords": [
+        "mn8",
+        "2028",
+        "2030"
+      ],
+      "url_results": [
+        {
+          "url": "https://mn8.com/mn8-energy-google-and-eos-energy-enterprises-bring-advanced-clean-energy-solutions-to-west-virginia/",
+          "status": 200,
+          "access_limited": false,
+          "matched_keywords": [
+            "mn8",
+            "2028",
+            "2030"
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 8949
+        },
+        {
+          "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/west-virginia-long-duration-energy-storage/",
+          "status": 200,
+          "access_limited": false,
+          "matched_keywords": [
+            "mn8"
+          ],
+          "text_fetch_retried": true,
+          "text_fetch_failed": false,
+          "text_length": 5029
+        }
+      ]
+    },
+    {
+      "claim_id": "E32",
+      "scope": "weekly_supply_edge",
+      "description": "22年Loviisa核电购电协议，2028年起供",
+      "source_urls": [
+        "https://www.fortum.com/en/media/2026/09/inside-information-fortum-and-google-partner-drive-sustainable-growth-finland-sign-nuclear-power-purchase-agreement"
+      ],
+      "keywords": [
+        "Loviisa",
+        "2030"
+      ],
+      "min_keyword_matches": 2,
+      "required": true,
+      "matched": true,
+      "requires_manual_verification": false,
+      "failed": false,
+      "best_match_count": 2,
+      "best_matched_keywords": [
+        "loviisa",
+        "2030"
+      ],
+      "url_results": [
+        {
+          "url": "https://www.fortum.com/en/media/2026/09/inside-information-fortum-and-google-partner-drive-sustainable-growth-finland-sign-nuclear-power-purchase-agreement",
+          "status": 200,
+          "access_limited": false,
+          "matched_keywords": [
+            "loviisa",
+            "2030"
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 13854
+        }
+      ]
+    },
+    {
+      "claim_id": "E33",
+      "scope": "weekly_supply_edge",
+      "description": "NVLink Fusion与MGX接入Raptor XPU的计划",
+      "source_urls": [
+        "https://www.d-matrix.ai/announcements/d-matrix-rackscale-nvidia/",
+        "https://blogs.nvidia.com/blog/d-matrix-nvlink-fusion/"
+      ],
+      "keywords": [
+        "Raptor",
+        "2027"
+      ],
+      "min_keyword_matches": 2,
+      "required": true,
+      "matched": true,
+      "requires_manual_verification": false,
+      "failed": false,
+      "best_match_count": 2,
+      "best_matched_keywords": [
+        "raptor",
+        "2027"
+      ],
+      "url_results": [
+        {
+          "url": "https://www.d-matrix.ai/announcements/d-matrix-rackscale-nvidia/",
+          "status": 200,
+          "access_limited": false,
+          "matched_keywords": [
+            "raptor",
+            "2027"
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 7718
+        },
+        {
+          "url": "https://blogs.nvidia.com/blog/d-matrix-nvlink-fusion/",
+          "status": 200,
+          "access_limited": false,
+          "matched_keywords": [
+            "raptor"
+          ],
+          "text_fetch_retried": true,
+          "text_fetch_failed": false,
+          "text_length": 6954
+        }
+      ]
+    },
+    {
+      "claim_id": "E34",
+      "scope": "weekly_supply_edge",
+      "description": "DSX架构部署合作，最高2GW基础设施目标",
+      "source_urls": [
+        "https://nvidianews.nvidia.com/news/nvidia-expands-ai-infrastructure-capacity-in-partnership-with-australias-data-center-ecosystem"
+      ],
+      "keywords": [
+        "NVIDIA",
+        "2027"
+      ],
+      "min_keyword_matches": 2,
+      "required": true,
+      "matched": true,
+      "requires_manual_verification": false,
+      "failed": false,
+      "best_match_count": 2,
+      "best_matched_keywords": [
+        "nvidia",
+        "2027"
+      ],
+      "url_results": [
+        {
+          "url": "https://nvidianews.nvidia.com/news/nvidia-expands-ai-infrastructure-capacity-in-partnership-with-australias-data-center-ecosystem",
+          "status": 200,
+          "access_limited": false,
+          "matched_keywords": [
+            "nvidia",
+            "2027"
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 20948
+        }
+      ]
+    },
+    {
+      "claim_id": "E35",
+      "scope": "weekly_supply_edge",
+      "description": "本地定制Mistral Large用于半导体流程",
+      "source_urls": [
+        "https://news.samsung.com/global/samsung-and-mistral-ai-announce-strategic-partnership-for-intelligence-driven-semiconductor-infrastructure"
+      ],
+      "keywords": [
+        "Mistral",
+        "semiconductor"
+      ],
+      "min_keyword_matches": 2,
+      "required": true,
+      "matched": true,
+      "requires_manual_verification": false,
+      "failed": false,
+      "best_match_count": 2,
+      "best_matched_keywords": [
+        "mistral",
+        "semiconductor"
+      ],
+      "url_results": [
+        {
+          "url": "https://news.samsung.com/global/samsung-and-mistral-ai-announce-strategic-partnership-for-intelligence-driven-semiconductor-infrastructure",
+          "status": 403,
+          "access_limited": true,
+          "matched_keywords": [
+            "mistral",
+            "semiconductor"
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 5281
+        }
+      ]
+    },
+    {
+      "claim_id": "E36",
+      "scope": "weekly_supply_edge",
+      "description": "High-NA EUV与12英寸光掩模合作",
+      "source_urls": [
+        "https://news.samsung.com/global/samsung-electronics-and-asml-expand-strategic-collaboration-for-next-generation-semiconductor-manufacturing"
+      ],
+      "keywords": [
+        "ASML",
+        "2028"
+      ],
+      "min_keyword_matches": 2,
+      "required": true,
+      "matched": true,
+      "requires_manual_verification": false,
+      "failed": false,
+      "best_match_count": 2,
+      "best_matched_keywords": [
+        "asml",
+        "2028"
+      ],
+      "url_results": [
+        {
+          "url": "https://news.samsung.com/global/samsung-electronics-and-asml-expand-strategic-collaboration-for-next-generation-semiconductor-manufacturing",
+          "status": 403,
+          "access_limited": true,
+          "matched_keywords": [
+            "asml",
+            "2028"
+          ],
+          "text_fetch_retried": false,
+          "text_fetch_failed": false,
+          "text_length": 6770
+        }
+      ]
+    },
+    {
+      "claim_id": "E37",
+      "scope": "weekly_supply_edge",
+      "description": "Amazon数据中心后备发电机供货协议；初始交付预计2027—2028年",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1474735/000143774926030550/gnrc20260915_8k.htm"
+      ],
+      "keywords": [
+        "Generac",
+        "Amazon"
+      ],
+      "min_keyword_matches": 2,
+      "required": true,
+      "matched": false,
+      "requires_manual_verification": true,
+      "failed": false,
+      "best_match_count": 0,
+      "best_matched_keywords": [],
+      "url_results": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1474735/000143774926030550/gnrc20260915_8k.htm",
+          "status": 403,
+          "access_limited": true,
+          "matched_keywords": [],
+          "text_fetch_retried": false,
+          "text_fetch_failed": true,
+          "text_length": 0
+        }
+      ]
+    }
+  ]
+}

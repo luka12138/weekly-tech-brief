@@ -12,13 +12,13 @@ from audit_sources import classify_host, probe_url
 
 class SourceClassificationTests(unittest.TestCase):
     def test_regulators_and_stakeholders_stay_distinct(self):
-        for host in ("ftc.gov", "www.nhtsa.gov"):
+        for host in ("ftc.gov", "www.nhtsa.gov", "www.justice.gov"):
             self.assertEqual(classify_host(host), "official_or_regulatory")
         self.assertEqual(classify_host("www.newsmediaalliance.org"), "industry_association_statement")
         self.assertEqual(classify_host("www.macrumors.com"), "trade_or_press_media")
 
     def test_lookalike_domains_are_not_trusted(self):
-        for host in ("ftc.gov.example.com", "fakenhtsa.gov", "newsmediaalliance.org.example.com"):
+        for host in ("ftc.gov.example.com", "fakenhtsa.gov", "justice.gov.example.com", "newsmediaalliance.org.example.com"):
             self.assertEqual(classify_host(host), "unclassified")
 
     def test_current_week_official_channels_and_reuters_republisher(self):

@@ -1,0 +1,1102 @@
+{
+  "schema_version": 1,
+  "report_date": "2026-09-21",
+  "cutoff_exclusive": "2026-09-21T00:00:00+08:00",
+  "status": "ready",
+  "report_created_at": "2026-09-22T06:34:38.349271+00:00",
+  "reviewed_at": "2026-09-22T06:38:24.761403+00:00",
+  "report_sha256": "f0888f4d34922ebc64ec5393c0efd8d3143fb462989310276efffd6b8ccf5631",
+  "baseline_sha256": "ca90485c04614209139379e8c3edf1abf39fd9d36543d0b491aecbb8dcef60a6",
+  "product_graph_sha256": "9cab5511530a248a814852befcbd02402645c23370fe2747e54f069089041396",
+  "manual_reviews": {
+    "financial_periods_and_units": {
+      "status": "reviewed",
+      "note": "SEC 8-K的24亿美元是2027—2028年预计初始交付、80亿美元为认股权证后续归属付款阶梯；Microsoft 0.98美元是每股季度股息，11月登记、12月支付；Anthropic/Accenture是双方各自五年预计至少10亿美元。三者不合并为本期收入。"
+    },
+    "source_versions": {
+      "status": "reviewed",
+      "note": "逐项核对16项官方或Reuters具体正文及日期；Meta页面显示9月15日及16日更新，Google Live页面显示9月15日及17日更新，均在截止前。9月14日边界不明候选与9月10日Windows旧闻未作为news。研究原文回执在raw及direct_source_receipts。"
+    },
+    "product_graph": {
+      "status": "reviewed",
+      "note": "按年度产品图索引及本期变化核对；9月21日没有已证实的主营产品关系实质变化，沿用9月14日图。MediaTek原文未具名TSMC，故不增产品或供应边；供应图仅新合同E37。"
+    },
+    "report_vintage": {
+      "status": "reviewed",
+      "note": "9月21日报告在截止后生成并以当前文件哈希绑定；9月14日已发布报告和图保持原哈希，只读用于上周对照。归档的9月21日生产前快照不冒充原周一发布版本。"
+    }
+  },
+  "claims": [
+    {
+      "id": "APL-STORE-1",
+      "candidate_id": "APL-STORE",
+      "kind": "news",
+      "statement": "Apple称iPhone 18 Pro和Pro Max于9月18日在其全球门店开售",
+      "targets": [
+        "event:1",
+        "company:Apple",
+        "headline:8",
+        "catalyst:4"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.apple.com/uk/newsroom/2026/09/the-latest-iphone-apple-watch-and-airpods-lineups-arrive-in-stores-worldwide/",
+          "retrieved_at": "2026-09-21T04:14:48+00:00",
+          "basis": "dated_release",
+          "locator": "9月18日正文首段，iPhone 18 Pro/Pro Max门店上市；本地回执 logs/2026-09-21_raw_d03.json#APL-STORE",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-18",
+            "earliest": "2026-09-17T10:00:00+00:00",
+            "latest_exclusive": "2026-09-19T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "9月18日正文首段，iPhone 18 Pro/Pro Max门店上市",
+            "note": "原文只证明日期，未证明时区或钟点；保留完整全球50小时可能区间，端点不是实际发布时间。"
+          },
+          "support": "Apple称iPhone 18 Pro和Pro Max于9月18日在其全球门店开售"
+        }
+      ]
+    },
+    {
+      "id": "APL-STORE-2",
+      "candidate_id": "APL-STORE",
+      "kind": "news",
+      "statement": "活动照片和到店人流不能推算销量或收入",
+      "targets": [
+        "event:1",
+        "company:Apple",
+        "headline:8",
+        "catalyst:4"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.apple.com/uk/newsroom/2026/09/the-latest-iphone-apple-watch-and-airpods-lineups-arrive-in-stores-worldwide/",
+          "retrieved_at": "2026-09-21T04:14:48+00:00",
+          "basis": "dated_release",
+          "locator": "9月18日正文首段，iPhone 18 Pro/Pro Max门店上市；本地回执 logs/2026-09-21_raw_d03.json#APL-STORE",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-18",
+            "earliest": "2026-09-17T10:00:00+00:00",
+            "latest_exclusive": "2026-09-19T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "9月18日正文首段，iPhone 18 Pro/Pro Max门店上市",
+            "note": "原文只证明日期，未证明时区或钟点；保留完整全球50小时可能区间，端点不是实际发布时间。"
+          },
+          "support": "活动照片和到店人流不能推算销量或收入"
+        }
+      ]
+    },
+    {
+      "id": "MS-G7-1",
+      "candidate_id": "MS-G7",
+      "kind": "news",
+      "statement": "Microsoft宣布面向GCC的Microsoft 365 G7",
+      "targets": [
+        "event:2",
+        "company:Microsoft",
+        "headline:4",
+        "analysis:1",
+        "catalyst:1"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/industry-government/government-operations-and-infrastructure/2026/09/15/introducing-microsoft-365-g7-intelligence-trust-for-the-mission-ahead/",
+          "retrieved_at": "2026-09-21T04:19:22+00:00",
+          "basis": "dated_release",
+          "locator": "正文第33—35行，GCC与10月1日购买日期；本地回执 logs/2026-09-21_raw_d14.json#MS-G7",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-15",
+            "earliest": "2026-09-14T10:00:00+00:00",
+            "latest_exclusive": "2026-09-16T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "正文第33—35行，GCC与10月1日购买日期",
+            "note": "原文只证明日期，未证明时区或钟点；保留完整全球50小时可能区间，端点不是实际发布时间。"
+          },
+          "support": "Microsoft宣布面向GCC的Microsoft 365 G7"
+        }
+      ]
+    },
+    {
+      "id": "MS-G7-2",
+      "candidate_id": "MS-G7",
+      "kind": "news",
+      "statement": "G7和Agent 365计划10月1日起可购买，更多工作负载须分阶段完成GCC授权",
+      "targets": [
+        "event:2",
+        "company:Microsoft",
+        "headline:4",
+        "analysis:1",
+        "catalyst:1"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/industry-government/government-operations-and-infrastructure/2026/09/15/introducing-microsoft-365-g7-intelligence-trust-for-the-mission-ahead/",
+          "retrieved_at": "2026-09-21T04:19:22+00:00",
+          "basis": "dated_release",
+          "locator": "正文第33—35行，GCC与10月1日购买日期；本地回执 logs/2026-09-21_raw_d14.json#MS-G7",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-15",
+            "earliest": "2026-09-14T10:00:00+00:00",
+            "latest_exclusive": "2026-09-16T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "正文第33—35行，GCC与10月1日购买日期",
+            "note": "原文只证明日期，未证明时区或钟点；保留完整全球50小时可能区间，端点不是实际发布时间。"
+          },
+          "support": "G7和Agent 365计划10月1日起可购买，更多工作负载须分阶段完成GCC授权"
+        }
+      ]
+    },
+    {
+      "id": "MS-DIV-1",
+      "candidate_id": "MS-DIV",
+      "kind": "news",
+      "statement": "董事会宣布每股0.98美元季度股息，较上一季度增加0.07美元、约8%",
+      "targets": [
+        "event:3",
+        "company:Microsoft"
+      ],
+      "evidence": [
+        {
+          "url": "https://news.microsoft.com/source/2026/09/15/microsoft-announces-quarterly-dividend-increase-7/",
+          "retrieved_at": "2026-09-21T04:19:22+00:00",
+          "basis": "dated_release",
+          "locator": "9月15日公告首段，股息、登记与支付日期；本地回执 logs/2026-09-21_raw_d14.json#MS-DIV",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-15",
+            "earliest": "2026-09-14T10:00:00+00:00",
+            "latest_exclusive": "2026-09-16T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "9月15日公告首段，股息、登记与支付日期",
+            "note": "原文只证明日期，未证明时区或钟点；保留完整全球50小时可能区间，端点不是实际发布时间。"
+          },
+          "support": "董事会宣布每股0.98美元季度股息，较上一季度增加0.07美元、约8%"
+        }
+      ]
+    },
+    {
+      "id": "MS-DIV-2",
+      "candidate_id": "MS-DIV",
+      "kind": "news",
+      "statement": "登记日为11月19日，支付日为12月10日",
+      "targets": [
+        "event:3",
+        "company:Microsoft"
+      ],
+      "evidence": [
+        {
+          "url": "https://news.microsoft.com/source/2026/09/15/microsoft-announces-quarterly-dividend-increase-7/",
+          "retrieved_at": "2026-09-21T04:19:22+00:00",
+          "basis": "dated_release",
+          "locator": "9月15日公告首段，股息、登记与支付日期；本地回执 logs/2026-09-21_raw_d14.json#MS-DIV",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-15",
+            "earliest": "2026-09-14T10:00:00+00:00",
+            "latest_exclusive": "2026-09-16T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "9月15日公告首段，股息、登记与支付日期",
+            "note": "原文只证明日期，未证明时区或钟点；保留完整全球50小时可能区间，端点不是实际发布时间。"
+          },
+          "support": "登记日为11月19日，支付日为12月10日"
+        }
+      ]
+    },
+    {
+      "id": "GOO-LIVE-1",
+      "candidate_id": "GOO-LIVE",
+      "kind": "news",
+      "statement": "Google公布Gemini 3.8 Live与Live Extended Thinking，面向实时语音和更长推理",
+      "targets": [
+        "event:4",
+        "company:Alphabet / Google",
+        "headline:11",
+        "catalyst:4"
+      ],
+      "evidence": [
+        {
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/",
+          "retrieved_at": "2026-09-21T04:17:27+00:00",
+          "basis": "dated_release",
+          "locator": "9月15日公告标题及Availability段；9月17日页面更新；本地回执 logs/2026-09-21_raw_d11.json#GOO-LIVE",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-15",
+            "earliest": "2026-09-14T10:00:00+00:00",
+            "latest_exclusive": "2026-09-16T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "9月15日公告标题及Availability段；9月17日页面更新",
+            "note": "原文只证明日期，未证明时区或钟点；保留完整全球50小时可能区间，端点不是实际发布时间。"
+          },
+          "support": "Google公布Gemini 3.8 Live与Live Extended Thinking，面向实时语音和更长推理"
+        }
+      ]
+    },
+    {
+      "id": "GOO-LIVE-2",
+      "candidate_id": "GOO-LIVE",
+      "kind": "news",
+      "statement": "具体入口分产品和开发者渠道，不能把预览或订阅开放写成全面正式可用",
+      "targets": [
+        "event:4",
+        "company:Alphabet / Google",
+        "headline:11",
+        "catalyst:4"
+      ],
+      "evidence": [
+        {
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/",
+          "retrieved_at": "2026-09-21T04:17:27+00:00",
+          "basis": "dated_release",
+          "locator": "9月15日公告标题及Availability段；9月17日页面更新；本地回执 logs/2026-09-21_raw_d11.json#GOO-LIVE",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-15",
+            "earliest": "2026-09-14T10:00:00+00:00",
+            "latest_exclusive": "2026-09-16T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "9月15日公告标题及Availability段；9月17日页面更新",
+            "note": "原文只证明日期，未证明时区或钟点；保留完整全球50小时可能区间，端点不是实际发布时间。"
+          },
+          "support": "具体入口分产品和开发者渠道，不能把预览或订阅开放写成全面正式可用"
+        }
+      ]
+    },
+    {
+      "id": "GOO-ADS-1",
+      "candidate_id": "GOO-ADS",
+      "kind": "news",
+      "statement": "美国司法部9月16日公布广告技术案救济安排，涉及互操作、数据共享、自我优待限制及监督",
+      "targets": [
+        "event:5",
+        "company:Alphabet / Google",
+        "headline:2",
+        "analysis:3",
+        "catalyst:3"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.justice.gov/opa/pr/department-justice-again-wins-substantial-relief-against-google",
+          "retrieved_at": "2026-09-22T02:06:40.194540+00:00",
+          "basis": "dated_release",
+          "locator": "9月16日司法部公告救济要点，另以9月2日旧裁决作背景；本地回执 logs/2026-09-21_direct_source_receipts.json#GOO-ADS",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-16",
+            "earliest": "2026-09-15T10:00:00+00:00",
+            "latest_exclusive": "2026-09-17T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "9月16日司法部公告救济要点，另以9月2日旧裁决作背景",
+            "note": "原文只证明日期，未证明时区或钟点；保留完整全球50小时可能区间，端点不是实际发布时间。"
+          },
+          "support": "美国司法部9月16日公布广告技术案救济安排，涉及互操作、数据共享、自我优待限制及监督"
+        }
+      ]
+    },
+    {
+      "id": "GOO-ADS-2",
+      "candidate_id": "GOO-ADS",
+      "kind": "news",
+      "statement": "本周增量是救济细节，不是9月2日已作出的不拆分结论",
+      "targets": [
+        "event:5",
+        "company:Alphabet / Google",
+        "headline:2",
+        "analysis:3",
+        "catalyst:3"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.justice.gov/opa/pr/department-justice-again-wins-substantial-relief-against-google",
+          "retrieved_at": "2026-09-22T02:06:40.194540+00:00",
+          "basis": "dated_release",
+          "locator": "9月16日司法部公告救济要点，另以9月2日旧裁决作背景；本地回执 logs/2026-09-21_direct_source_receipts.json#GOO-ADS",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-16",
+            "earliest": "2026-09-15T10:00:00+00:00",
+            "latest_exclusive": "2026-09-17T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "9月16日司法部公告救济要点，另以9月2日旧裁决作背景",
+            "note": "原文只证明日期，未证明时区或钟点；保留完整全球50小时可能区间，端点不是实际发布时间。"
+          },
+          "support": "本周增量是救济细节，不是9月2日已作出的不拆分结论"
+        }
+      ]
+    },
+    {
+      "id": "AWS-GEN-1",
+      "candidate_id": "AWS-GEN",
+      "kind": "news",
+      "statement": "Generac在SEC 8-K披露Amazon后备发电机供货协议，初始约24亿美元交付预计在2027—2028年",
+      "targets": [
+        "event:6",
+        "company:Amazon / AWS",
+        "headline:1",
+        "analysis:2",
+        "catalyst:2",
+        "supply:E37"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1474735/000143774926030550/gnrc20260915_8k.htm",
+          "retrieved_at": "2026-09-22T02:06:40.958835+00:00",
+          "basis": "filing",
+          "locator": "9月16日Form 8-K Item 1.01及附件摘要，供货、交付期与认股权证条件；本地回执 logs/2026-09-21_direct_source_receipts.json#AWS-GEN",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-16",
+            "earliest": "2026-09-15T10:00:00+00:00",
+            "latest_exclusive": "2026-09-17T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "9月16日Form 8-K Item 1.01及附件摘要，供货、交付期与认股权证条件",
+            "note": "原文只证明日期，未证明时区或钟点；保留完整全球50小时可能区间，端点不是实际发布时间。"
+          },
+          "support": "Generac在SEC 8-K披露Amazon后备发电机供货协议，初始约24亿美元交付预计在2027—2028年"
+        }
+      ]
+    },
+    {
+      "id": "AWS-GEN-2",
+      "candidate_id": "AWS-GEN",
+      "kind": "news",
+      "statement": "同时授予Amazon附条件认股权证，潜在股份和付款门槛不等于已交付或已实现收入",
+      "targets": [
+        "event:6",
+        "company:Amazon / AWS",
+        "headline:1",
+        "analysis:2",
+        "catalyst:2",
+        "supply:E37"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1474735/000143774926030550/gnrc20260915_8k.htm",
+          "retrieved_at": "2026-09-22T02:06:40.958835+00:00",
+          "basis": "filing",
+          "locator": "9月16日Form 8-K Item 1.01及附件摘要，供货、交付期与认股权证条件；本地回执 logs/2026-09-21_direct_source_receipts.json#AWS-GEN",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-16",
+            "earliest": "2026-09-15T10:00:00+00:00",
+            "latest_exclusive": "2026-09-17T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "9月16日Form 8-K Item 1.01及附件摘要，供货、交付期与认股权证条件",
+            "note": "原文只证明日期，未证明时区或钟点；保留完整全球50小时可能区间，端点不是实际发布时间。"
+          },
+          "support": "同时授予Amazon附条件认股权证，潜在股份和付款门槛不等于已交付或已实现收入"
+        }
+      ]
+    },
+    {
+      "id": "META-ONE-1",
+      "candidate_id": "META-ONE",
+      "kind": "news",
+      "statement": "Meta公布Meta One分层订阅，以更多AI功能和使用量为卖点，并称免费基本服务仍保留",
+      "targets": [
+        "event:7",
+        "company:Meta",
+        "headline:7",
+        "catalyst:4"
+      ],
+      "evidence": [
+        {
+          "url": "https://about.fb.com/news/2026/09/introducing-meta-one-subscription-service-more-features-ai/",
+          "retrieved_at": "2026-09-21T04:18:05+00:00",
+          "basis": "dated_release",
+          "locator": "9月15日公告计划与免费服务、地区/账号限制段；本地回执 logs/2026-09-21_raw_v01.json#META-ONE",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-15",
+            "earliest": "2026-09-14T10:00:00+00:00",
+            "latest_exclusive": "2026-09-16T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "9月15日公告计划与免费服务、地区/账号限制段",
+            "note": "原文只证明日期，未证明时区或钟点；保留完整全球50小时可能区间，端点不是实际发布时间。"
+          },
+          "support": "Meta公布Meta One分层订阅，以更多AI功能和使用量为卖点，并称免费基本服务仍保留"
+        }
+      ]
+    },
+    {
+      "id": "META-ONE-2",
+      "candidate_id": "META-ONE",
+      "kind": "news",
+      "statement": "开放节奏和权益按应用、地区与账号不同",
+      "targets": [
+        "event:7",
+        "company:Meta",
+        "headline:7",
+        "catalyst:4"
+      ],
+      "evidence": [
+        {
+          "url": "https://about.fb.com/news/2026/09/introducing-meta-one-subscription-service-more-features-ai/",
+          "retrieved_at": "2026-09-21T04:18:05+00:00",
+          "basis": "dated_release",
+          "locator": "9月15日公告计划与免费服务、地区/账号限制段；本地回执 logs/2026-09-21_raw_v01.json#META-ONE",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-15",
+            "earliest": "2026-09-14T10:00:00+00:00",
+            "latest_exclusive": "2026-09-16T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "9月15日公告计划与免费服务、地区/账号限制段",
+            "note": "原文只证明日期，未证明时区或钟点；保留完整全球50小时可能区间，端点不是实际发布时间。"
+          },
+          "support": "开放节奏和权益按应用、地区与账号不同"
+        }
+      ]
+    },
+    {
+      "id": "NV-MLPERF-1",
+      "candidate_id": "NV-MLPERF",
+      "kind": "news",
+      "statement": "NVIDIA发布Vera Rubin NVL72在MLPerf Inference v6.1的预览提交结果，所列性能倍数针对特定模型和比较基线",
+      "targets": [
+        "event:8",
+        "company:NVIDIA",
+        "headline:5",
+        "analysis:1",
+        "catalyst:4"
+      ],
+      "evidence": [
+        {
+          "url": "https://blogs.nvidia.com/blog/vera-rubin-nvl72-mlperf-inference/",
+          "retrieved_at": "2026-09-21T04:23:09+00:00",
+          "basis": "dated_release",
+          "locator": "9月16日正文preview submissions及Qwen3-VL/DeepSeek-R1比较段；本地回执 logs/2026-09-21_raw_v04.json#NV-MLPERF",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-16",
+            "earliest": "2026-09-15T10:00:00+00:00",
+            "latest_exclusive": "2026-09-17T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "9月16日正文preview submissions及Qwen3-VL/DeepSeek-R1比较段",
+            "note": "原文只证明日期，未证明时区或钟点；保留完整全球50小时可能区间，端点不是实际发布时间。"
+          },
+          "support": "NVIDIA发布Vera Rubin NVL72在MLPerf Inference v6.1的预览提交结果，所列性能倍数针对特定模型和比较基线"
+        }
+      ]
+    },
+    {
+      "id": "NV-MLPERF-2",
+      "candidate_id": "NV-MLPERF",
+      "kind": "news",
+      "statement": "这是厂商测试表现，不是客户部署、收入或通用工作负载优势",
+      "targets": [
+        "event:8",
+        "company:NVIDIA",
+        "headline:5",
+        "analysis:1",
+        "catalyst:4"
+      ],
+      "evidence": [
+        {
+          "url": "https://blogs.nvidia.com/blog/vera-rubin-nvl72-mlperf-inference/",
+          "retrieved_at": "2026-09-21T04:23:09+00:00",
+          "basis": "dated_release",
+          "locator": "9月16日正文preview submissions及Qwen3-VL/DeepSeek-R1比较段；本地回执 logs/2026-09-21_raw_v04.json#NV-MLPERF",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-16",
+            "earliest": "2026-09-15T10:00:00+00:00",
+            "latest_exclusive": "2026-09-17T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "9月16日正文preview submissions及Qwen3-VL/DeepSeek-R1比较段",
+            "note": "原文只证明日期，未证明时区或钟点；保留完整全球50小时可能区间，端点不是实际发布时间。"
+          },
+          "support": "这是厂商测试表现，不是客户部署、收入或通用工作负载优势"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-CERT-1",
+      "candidate_id": "TSLA-CERT",
+      "kind": "news",
+      "statement": "Reuters报道美国NHTSA要求Tesla就Cybercab自我认证问题在9月30日前答复",
+      "targets": [
+        "event:9",
+        "company:Tesla",
+        "headline:9",
+        "analysis:3",
+        "catalyst:3"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.marketscreener.com/news/us-agency-orders-tesla-to-answer-questions-on-cybercab-certification-ce785bddde80f524",
+          "retrieved_at": "2026-09-21T04:15:38+00:00",
+          "basis": "dated_media",
+          "locator": "Reuters 9月15日报道NHTSA公开答复要求；9月10日命令为先前动作；本地回执 logs/2026-09-21_raw_d06.json#TSLA-CERT",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-15",
+            "earliest": "2026-09-14T10:00:00+00:00",
+            "latest_exclusive": "2026-09-16T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "Reuters 9月15日报道NHTSA公开答复要求；9月10日命令为先前动作",
+            "note": "原文只证明日期，未证明时区或钟点；保留完整全球50小时可能区间，端点不是实际发布时间。"
+          },
+          "support": "Reuters报道美国NHTSA要求Tesla就Cybercab自我认证问题在9月30日前答复"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-CERT-2",
+      "candidate_id": "TSLA-CERT",
+      "kind": "news",
+      "statement": "调查与问询不等于认定车辆违规，命令发出日期不误写为9月15日",
+      "targets": [
+        "event:9",
+        "company:Tesla",
+        "headline:9",
+        "analysis:3",
+        "catalyst:3"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.marketscreener.com/news/us-agency-orders-tesla-to-answer-questions-on-cybercab-certification-ce785bddde80f524",
+          "retrieved_at": "2026-09-21T04:15:38+00:00",
+          "basis": "dated_media",
+          "locator": "Reuters 9月15日报道NHTSA公开答复要求；9月10日命令为先前动作；本地回执 logs/2026-09-21_raw_d06.json#TSLA-CERT",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-15",
+            "earliest": "2026-09-14T10:00:00+00:00",
+            "latest_exclusive": "2026-09-16T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "Reuters 9月15日报道NHTSA公开答复要求；9月10日命令为先前动作",
+            "note": "原文只证明日期，未证明时区或钟点；保留完整全球50小时可能区间，端点不是实际发布时间。"
+          },
+          "support": "调查与问询不等于认定车辆违规，命令发出日期不误写为9月15日"
+        }
+      ]
+    },
+    {
+      "id": "OA-MISALIGN-1",
+      "candidate_id": "OA-MISALIGN",
+      "kind": "news",
+      "statement": "OpenAI公布报告框架并讨论过去六个月训练和评估中的六项历史观察",
+      "targets": [
+        "event:10",
+        "company:OpenAI",
+        "headline:6",
+        "analysis:3",
+        "catalyst:3"
+      ],
+      "evidence": [
+        {
+          "url": "https://openai.com/index/model-misalignment-reporting-framework/",
+          "retrieved_at": "2026-09-21T04:24:04+00:00",
+          "basis": "dated_release",
+          "locator": "9月16日正文框架及six instances in training/evaluation段；本地回执 logs/2026-09-21_raw_v06.json#OA-MISALIGN",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-16",
+            "earliest": "2026-09-15T10:00:00+00:00",
+            "latest_exclusive": "2026-09-17T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "9月16日正文框架及six instances in training/evaluation段",
+            "note": "原文只证明日期，未证明时区或钟点；保留完整全球50小时可能区间，端点不是实际发布时间。"
+          },
+          "support": "OpenAI公布报告框架并讨论过去六个月训练和评估中的六项历史观察"
+        }
+      ]
+    },
+    {
+      "id": "OA-MISALIGN-2",
+      "candidate_id": "OA-MISALIGN",
+      "kind": "news",
+      "statement": "六项不是本周发生的六起生产事故，也不能据此估计总体发生率",
+      "targets": [
+        "event:10",
+        "company:OpenAI",
+        "headline:6",
+        "analysis:3",
+        "catalyst:3"
+      ],
+      "evidence": [
+        {
+          "url": "https://openai.com/index/model-misalignment-reporting-framework/",
+          "retrieved_at": "2026-09-21T04:24:04+00:00",
+          "basis": "dated_release",
+          "locator": "9月16日正文框架及six instances in training/evaluation段；本地回执 logs/2026-09-21_raw_v06.json#OA-MISALIGN",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-16",
+            "earliest": "2026-09-15T10:00:00+00:00",
+            "latest_exclusive": "2026-09-17T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "9月16日正文框架及six instances in training/evaluation段",
+            "note": "原文只证明日期，未证明时区或钟点；保留完整全球50小时可能区间，端点不是实际发布时间。"
+          },
+          "support": "六项不是本周发生的六起生产事故，也不能据此估计总体发生率"
+        }
+      ]
+    },
+    {
+      "id": "OA-LAW-1",
+      "candidate_id": "OA-LAW",
+      "kind": "news",
+      "statement": "OpenAI公布Astra for Law，初期仅通过Trusted Access提供给选定律所",
+      "targets": [
+        "event:11",
+        "company:OpenAI",
+        "headline:12",
+        "analysis:1",
+        "catalyst:1"
+      ],
+      "evidence": [
+        {
+          "url": "https://openai.com/index/astra-for-law/",
+          "retrieved_at": "2026-09-21T04:24:29+00:00",
+          "basis": "dated_release",
+          "locator": "9月17日正文Trusted Access与API coming soon段；本地回执 logs/2026-09-21_raw_v07.json#OA-LAW",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-17",
+            "earliest": "2026-09-16T10:00:00+00:00",
+            "latest_exclusive": "2026-09-18T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "9月17日正文Trusted Access与API coming soon段",
+            "note": "原文只证明日期，未证明时区或钟点；保留完整全球50小时可能区间，端点不是实际发布时间。"
+          },
+          "support": "OpenAI公布Astra for Law，初期仅通过Trusted Access提供给选定律所"
+        }
+      ]
+    },
+    {
+      "id": "OA-LAW-2",
+      "candidate_id": "OA-LAW",
+      "kind": "news",
+      "statement": "API计划稍后开放，产品测试或自测结果不代表所有法律场景已可用",
+      "targets": [
+        "event:11",
+        "company:OpenAI",
+        "headline:12",
+        "analysis:1",
+        "catalyst:1"
+      ],
+      "evidence": [
+        {
+          "url": "https://openai.com/index/astra-for-law/",
+          "retrieved_at": "2026-09-21T04:24:29+00:00",
+          "basis": "dated_release",
+          "locator": "9月17日正文Trusted Access与API coming soon段；本地回执 logs/2026-09-21_raw_v07.json#OA-LAW",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-17",
+            "earliest": "2026-09-16T10:00:00+00:00",
+            "latest_exclusive": "2026-09-18T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "9月17日正文Trusted Access与API coming soon段",
+            "note": "原文只证明日期，未证明时区或钟点；保留完整全球50小时可能区间，端点不是实际发布时间。"
+          },
+          "support": "API计划稍后开放，产品测试或自测结果不代表所有法律场景已可用"
+        }
+      ]
+    },
+    {
+      "id": "OA-ADS-1",
+      "candidate_id": "OA-ADS",
+      "kind": "news",
+      "statement": "OpenAI公布广告AI方案，其中Sponsored Agents在美国选定广告主中测试",
+      "targets": [
+        "event:12",
+        "company:OpenAI",
+        "analysis:1",
+        "catalyst:1"
+      ],
+      "evidence": [
+        {
+          "url": "https://openai.com/index/reimagining-advertising-with-ai/",
+          "retrieved_at": "2026-09-21T04:24:29+00:00",
+          "basis": "dated_release",
+          "locator": "9月16日正文Sponsored Agents select US advertisers及Shopify/HubSpot段；本地回执 logs/2026-09-21_raw_v07.json#OA-ADS",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-16",
+            "earliest": "2026-09-15T10:00:00+00:00",
+            "latest_exclusive": "2026-09-17T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "9月16日正文Sponsored Agents select US advertisers及Shopify/HubSpot段",
+            "note": "原文只证明日期，未证明时区或钟点；保留完整全球50小时可能区间，端点不是实际发布时间。"
+          },
+          "support": "OpenAI公布广告AI方案，其中Sponsored Agents在美国选定广告主中测试"
+        }
+      ]
+    },
+    {
+      "id": "OA-ADS-2",
+      "candidate_id": "OA-ADS",
+      "kind": "news",
+      "statement": "Shopify与HubSpot相关入口按各自开放条件推进，不等于全面商用或确认广告收入",
+      "targets": [
+        "event:12",
+        "company:OpenAI",
+        "analysis:1",
+        "catalyst:1"
+      ],
+      "evidence": [
+        {
+          "url": "https://openai.com/index/reimagining-advertising-with-ai/",
+          "retrieved_at": "2026-09-21T04:24:29+00:00",
+          "basis": "dated_release",
+          "locator": "9月16日正文Sponsored Agents select US advertisers及Shopify/HubSpot段；本地回执 logs/2026-09-21_raw_v07.json#OA-ADS",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-16",
+            "earliest": "2026-09-15T10:00:00+00:00",
+            "latest_exclusive": "2026-09-17T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "9月16日正文Sponsored Agents select US advertisers及Shopify/HubSpot段",
+            "note": "原文只证明日期，未证明时区或钟点；保留完整全球50小时可能区间，端点不是实际发布时间。"
+          },
+          "support": "Shopify与HubSpot相关入口按各自开放条件推进，不等于全面商用或确认广告收入"
+        }
+      ]
+    },
+    {
+      "id": "AN-METRICS-1",
+      "candidate_id": "AN-METRICS",
+      "kind": "news",
+      "statement": "Anthropic提出AI参与研发、自主代理监督和算力分配三类指标，并披露内部快照",
+      "targets": [
+        "event:13",
+        "company:Anthropic"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.anthropic.com/institute/measuring-pace-of-ai-development",
+          "retrieved_at": "2026-09-21T04:18:56+00:00",
+          "basis": "dated_release",
+          "locator": "9月17日News索引链接版本；正文三类measurement与方法限制；本地回执 logs/2026-09-21_raw_v02.json#AN-METRICS",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-17",
+            "earliest": "2026-09-16T10:00:00+00:00",
+            "latest_exclusive": "2026-09-18T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "9月17日News索引链接版本；正文三类measurement与方法限制",
+            "note": "原文只证明日期，未证明时区或钟点；保留完整全球50小时可能区间，端点不是实际发布时间。"
+          },
+          "support": "Anthropic提出AI参与研发、自主代理监督和算力分配三类指标，并披露内部快照"
+        }
+      ]
+    },
+    {
+      "id": "AN-METRICS-2",
+      "candidate_id": "AN-METRICS",
+      "kind": "news",
+      "statement": "其数据和评价方法由公司提出，跨实验室可比性与外部验证仍有限",
+      "targets": [
+        "event:13",
+        "company:Anthropic"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.anthropic.com/institute/measuring-pace-of-ai-development",
+          "retrieved_at": "2026-09-21T04:18:56+00:00",
+          "basis": "dated_release",
+          "locator": "9月17日News索引链接版本；正文三类measurement与方法限制；本地回执 logs/2026-09-21_raw_v02.json#AN-METRICS",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-17",
+            "earliest": "2026-09-16T10:00:00+00:00",
+            "latest_exclusive": "2026-09-18T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "9月17日News索引链接版本；正文三类measurement与方法限制",
+            "note": "原文只证明日期，未证明时区或钟点；保留完整全球50小时可能区间，端点不是实际发布时间。"
+          },
+          "support": "其数据和评价方法由公司提出，跨实验室可比性与外部验证仍有限"
+        }
+      ]
+    },
+    {
+      "id": "AN-ACC-1",
+      "candidate_id": "AN-ACC",
+      "kind": "news",
+      "statement": "Anthropic称与Accenture合作开展嵌入式模型评估",
+      "targets": [
+        "event:14",
+        "company:Anthropic",
+        "headline:3",
+        "analysis:3",
+        "catalyst:3"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.anthropic.com/news/accenture-embedded-evaluation",
+          "retrieved_at": "2026-09-22T02:06:43.487163+00:00",
+          "basis": "dated_release",
+          "locator": "9月18日正文第15—23行，双方各自预计投入与非独家/资助边界；本地回执 logs/2026-09-21_direct_source_receipts.json#AN-ACC",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-18",
+            "earliest": "2026-09-17T10:00:00+00:00",
+            "latest_exclusive": "2026-09-19T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "9月18日正文第15—23行，双方各自预计投入与非独家/资助边界",
+            "note": "原文只证明日期，未证明时区或钟点；保留完整全球50小时可能区间，端点不是实际发布时间。"
+          },
+          "support": "Anthropic称与Accenture合作开展嵌入式模型评估"
+        }
+      ]
+    },
+    {
+      "id": "AN-ACC-2",
+      "candidate_id": "AN-ACC",
+      "kind": "news",
+      "statement": "双方各自预计五年投入至少10亿美元",
+      "targets": [
+        "event:14",
+        "company:Anthropic",
+        "headline:3",
+        "analysis:3",
+        "catalyst:3"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.anthropic.com/news/accenture-embedded-evaluation",
+          "retrieved_at": "2026-09-22T02:06:43.487163+00:00",
+          "basis": "dated_release",
+          "locator": "9月18日正文第15—23行，双方各自预计投入与非独家/资助边界；本地回执 logs/2026-09-21_direct_source_receipts.json#AN-ACC",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-18",
+            "earliest": "2026-09-17T10:00:00+00:00",
+            "latest_exclusive": "2026-09-19T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "9月18日正文第15—23行，双方各自预计投入与非独家/资助边界",
+            "note": "原文只证明日期，未证明时区或钟点；保留完整全球50小时可能区间，端点不是实际发布时间。"
+          },
+          "support": "双方各自预计五年投入至少10亿美元"
+        }
+      ]
+    },
+    {
+      "id": "AN-ACC-3",
+      "candidate_id": "AN-ACC",
+      "kind": "news",
+      "statement": "安排非独家，访问和报告标准尚未确定，Anthropic将直接支付Accenture工作",
+      "targets": [
+        "event:14",
+        "company:Anthropic",
+        "headline:3",
+        "analysis:3",
+        "catalyst:3"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.anthropic.com/news/accenture-embedded-evaluation",
+          "retrieved_at": "2026-09-22T02:06:43.487163+00:00",
+          "basis": "dated_release",
+          "locator": "9月18日正文第15—23行，双方各自预计投入与非独家/资助边界；本地回执 logs/2026-09-21_direct_source_receipts.json#AN-ACC",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-18",
+            "earliest": "2026-09-17T10:00:00+00:00",
+            "latest_exclusive": "2026-09-19T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "9月18日正文第15—23行，双方各自预计投入与非独家/资助边界",
+            "note": "原文只证明日期，未证明时区或钟点；保留完整全球50小时可能区间，端点不是实际发布时间。"
+          },
+          "support": "安排非独家，访问和报告标准尚未确定，Anthropic将直接支付Accenture工作"
+        }
+      ]
+    },
+    {
+      "id": "SS-UI-1",
+      "candidate_id": "SS-UI",
+      "kind": "news",
+      "statement": "Samsung宣布9月16日起将One UI 9扩至Galaxy S26系列",
+      "targets": [
+        "event:15",
+        "company:Samsung Electronics"
+      ],
+      "evidence": [
+        {
+          "url": "https://news.samsung.com/global/samsung-begins-official-rollout-of-one-ui-9-bringing-the-latest-galaxy-experiences-to-more-devices",
+          "retrieved_at": "2026-09-21T04:16:12+00:00",
+          "basis": "dated_release",
+          "locator": "9月16日公告 rollout order及feature availability脚注；本地回执 logs/2026-09-21_raw_d07.json#SS-UI",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-16",
+            "earliest": "2026-09-15T10:00:00+00:00",
+            "latest_exclusive": "2026-09-17T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "9月16日公告 rollout order及feature availability脚注",
+            "note": "原文只证明日期，未证明时区或钟点；保留完整全球50小时可能区间，端点不是实际发布时间。"
+          },
+          "support": "Samsung宣布9月16日起将One UI 9扩至Galaxy S26系列"
+        }
+      ]
+    },
+    {
+      "id": "SS-UI-2",
+      "candidate_id": "SS-UI",
+      "kind": "news",
+      "statement": "此前已在Z Fold8 Ultra、Fold8和Flip8首发",
+      "targets": [
+        "event:15",
+        "company:Samsung Electronics"
+      ],
+      "evidence": [
+        {
+          "url": "https://news.samsung.com/global/samsung-begins-official-rollout-of-one-ui-9-bringing-the-latest-galaxy-experiences-to-more-devices",
+          "retrieved_at": "2026-09-21T04:16:12+00:00",
+          "basis": "dated_release",
+          "locator": "9月16日公告 rollout order及feature availability脚注；本地回执 logs/2026-09-21_raw_d07.json#SS-UI",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-16",
+            "earliest": "2026-09-15T10:00:00+00:00",
+            "latest_exclusive": "2026-09-17T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "9月16日公告 rollout order及feature availability脚注",
+            "note": "原文只证明日期，未证明时区或钟点；保留完整全球50小时可能区间，端点不是实际发布时间。"
+          },
+          "support": "此前已在Z Fold8 Ultra、Fold8和Flip8首发"
+        }
+      ]
+    },
+    {
+      "id": "SS-UI-3",
+      "candidate_id": "SS-UI",
+      "kind": "news",
+      "statement": "功能按地区、型号和账号不同，不能宣称全部设备同步获得所有AI功能",
+      "targets": [
+        "event:15",
+        "company:Samsung Electronics"
+      ],
+      "evidence": [
+        {
+          "url": "https://news.samsung.com/global/samsung-begins-official-rollout-of-one-ui-9-bringing-the-latest-galaxy-experiences-to-more-devices",
+          "retrieved_at": "2026-09-21T04:16:12+00:00",
+          "basis": "dated_release",
+          "locator": "9月16日公告 rollout order及feature availability脚注；本地回执 logs/2026-09-21_raw_d07.json#SS-UI",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-16",
+            "earliest": "2026-09-15T10:00:00+00:00",
+            "latest_exclusive": "2026-09-17T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "9月16日公告 rollout order及feature availability脚注",
+            "note": "原文只证明日期，未证明时区或钟点；保留完整全球50小时可能区间，端点不是实际发布时间。"
+          },
+          "support": "功能按地区、型号和账号不同，不能宣称全部设备同步获得所有AI功能"
+        }
+      ]
+    },
+    {
+      "id": "SK-INTEL-1",
+      "candidate_id": "SK-INTEL",
+      "kind": "news",
+      "statement": "SK Hynix称正探索多种方案，但就媒体所述与Intel在美国制造内存芯片的洽谈，尚无具体计划、安排或决定",
+      "targets": [
+        "event:16",
+        "company:SK Hynix",
+        "headline:10"
+      ],
+      "evidence": [
+        {
+          "url": "https://news.skhynix.com/en/fact-10/",
+          "retrieved_at": "2026-09-21T04:18:56+00:00",
+          "basis": "dated_release",
+          "locator": "9月16日Facts回应正文，exploring options与no concrete plan/arrangement/decision；本地回执 logs/2026-09-21_raw_v02.json#SK-INTEL",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-16",
+            "earliest": "2026-09-15T10:00:00+00:00",
+            "latest_exclusive": "2026-09-17T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "9月16日Facts回应正文，exploring options与no concrete plan/arrangement/decision",
+            "note": "原文只证明日期，未证明时区或钟点；保留完整全球50小时可能区间，端点不是实际发布时间。"
+          },
+          "support": "SK Hynix称正探索多种方案，但就媒体所述与Intel在美国制造内存芯片的洽谈，尚无具体计划、安排或决定"
+        }
+      ]
+    },
+    {
+      "id": "SK-INTEL-2",
+      "candidate_id": "SK-INTEL",
+      "kind": "news",
+      "statement": "不能当作合资或建厂协议",
+      "targets": [
+        "event:16",
+        "company:SK Hynix",
+        "headline:10"
+      ],
+      "evidence": [
+        {
+          "url": "https://news.skhynix.com/en/fact-10/",
+          "retrieved_at": "2026-09-21T04:18:56+00:00",
+          "basis": "dated_release",
+          "locator": "9月16日Facts回应正文，exploring options与no concrete plan/arrangement/decision；本地回执 logs/2026-09-21_raw_v02.json#SK-INTEL",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-16",
+            "earliest": "2026-09-15T10:00:00+00:00",
+            "latest_exclusive": "2026-09-17T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "9月16日Facts回应正文，exploring options与no concrete plan/arrangement/decision",
+            "note": "原文只证明日期，未证明时区或钟点；保留完整全球50小时可能区间，端点不是实际发布时间。"
+          },
+          "support": "不能当作合资或建厂协议"
+        }
+      ]
+    },
+    {
+      "id": "TSMC-NO-SELECTED-1",
+      "kind": "analysis",
+      "statement": "本期有限检查未取得MediaTek 2nm产品与TSMC具名制造关系的官方确认，因此不新增TSMC供应边或公司特定入选事项。",
+      "targets": [
+        "company:TSMC"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.mediatek.com/press-room/mediatek-dimensity-9600-pro-sets-new-standard-for-flagship-smartphone-chips?hs_amp=true",
+          "retrieved_at": "2026-09-22T02:08:05.052216+00:00",
+          "basis": "dated_release",
+          "locator": "MediaTek 9月15日2nm Dimensity 9600 Pro公告全文及TSMC官方投资者入口有限检查；本地回执logs/2026-09-21_direct_source_receipts.json#TSM-MTK",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-15",
+            "earliest": "2026-09-14T10:00:00+00:00",
+            "latest_exclusive": "2026-09-16T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "MediaTek 9月15日公告具体正文",
+            "note": "原文只证明日期，未证明时区或钟点；保留完整全球50小时可能区间，端点不是实际发布时间。"
+          },
+          "support": "该公告称2nm产品，但未具名TSMC为制造方；有限范围内不推断确定关系。"
+        }
+      ]
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "id": "APL-SIRI",
+      "disposition": "deferred",
+      "reason": "9月14日Apple公告仅有日期，未知时区的完整可能区间跨越本周起点；缺少可认证的首次公开时刻，不能据此列为本期新事项。来源：Apple Siri公告datePublished=2026-09-14Z及raw_v03。"
+    },
+    {
+      "id": "APL-X",
+      "disposition": "deferred",
+      "reason": "诉讼撤回/和解报道称9月14日，但来源公开时区与具体版本时点不足以证明落在本期窗口；保留未决程序和条款问题。来源：Reuters转录raw_v03。"
+    },
+    {
+      "id": "MS-CODE",
+      "disposition": "deferred",
+      "reason": "9月14日AI准则草案报道缺乏可认证的本期首次公开时刻；且仍是草案，未发布为生效规则。来源：Reuters转录raw_d04。"
+    },
+    {
+      "id": "GOO-WIN",
+      "disposition": "deferred",
+      "reason": "Google官方Windows应用公告日期为9月10日，已属上期旧闻，不作为9月21日新事项。来源：Google 9/10公告及raw_d11。"
+    },
+    {
+      "id": "AWS-SAFETY",
+      "disposition": "deferred",
+      "reason": "Reuters采访为公司治理立场；在本期有限筛选中优先可核的发电机合同，对安全成效的关键事实和具体版本未完成入选核验，不作反面断言。来源：raw_d08。"
+    },
+    {
+      "id": "META-SAFETY",
+      "disposition": "deferred",
+      "reason": "Reuters所述安全立场与Meta One产品发布不同；未获能改变本期结论的实施证据，暂留资料池，不宣称治理风险解除。来源：raw_d08。"
+    },
+    {
+      "id": "NV-IP",
+      "disposition": "deferred",
+      "reason": "IP限制报道仍需核对具体合同、对象与因果；本期不将匿名/间接争议写成已确认供应约束，保留未决。来源：raw_d13。"
+    },
+    {
+      "id": "KR-POWER",
+      "disposition": "deferred",
+      "reason": "电力预付款提案报道缺乏可用的双方原始协议或拒绝文书；金额、义务与生效状态未能确认，不推成已确定资本约束。来源：raw_d07。"
+    },
+    {
+      "id": "SK-NAND",
+      "disposition": "deferred",
+      "reason": "美国NAND厂选址讨论尚无正式投资、厂址或协议；本期优先公司对Intel报道的明确回应，未核完该匿名线索。来源：raw_d09。"
+    },
+    {
+      "id": "SK-WAGE",
+      "disposition": "deferred",
+      "reason": "工资协议报道所涉批准日期为9月10日，属于上一窗口；不重复作为本周新事项。来源：raw_d09。"
+    },
+    {
+      "id": "TSM-MTK",
+      "disposition": "deferred",
+      "reason": "MediaTek 9月15日官方2nm芯片公告未具名TSMC制造关系；独立报道不足以建立可核供应边，不推断新订单。来源：MediaTek公告与raw_d09。"
+    }
+  ]
+}

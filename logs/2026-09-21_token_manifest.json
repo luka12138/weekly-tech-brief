@@ -1,0 +1,13 @@
+{
+  "run_id": "2026-09-21-weekly-production",
+  "start": "2026-09-22T01:30:16.664Z",
+  "end": "2026-09-24T01:20:00Z",
+  "counter_format": "thread_token_usage",
+  "phases": [
+    {
+      "name": "production",
+      "start": "2026-09-22T01:30:16.664Z",
+      "end": "2026-09-24T01:20:00Z"
+    }
+  ]
+}

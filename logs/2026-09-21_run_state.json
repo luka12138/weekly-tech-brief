@@ -1,0 +1,22 @@
+{
+  "report_date": "2026-09-21",
+  "status": "validated",
+  "started_at": "2026-09-21T01:12:29.642Z",
+  "rules": {
+    ".agents/skills/weekly-tech-brief/SKILL.md": "abb65eeb71a83c1f9a2e1d816799d8c7489a8e76f482b95717437127b6f6858f",
+    "docs/point_in_time_policy.md": "dc3bde9884d111f52277f6f392b94a53a0776b88ae7cac642c5aa3c5f9f1471e",
+    "docs/weekly_brief_template_v2.md": "23cad20e523f9b5db927aedfe3c04b366f107bec8e20fed3b5ea5498b7f75da7",
+    "docs/verification_manual.md": "6fd9defe164f002cad44511c3eab72e64aff10a69405f2b63751bb7ca9bd7140",
+    "docs/research_coverage.md": "3bfae6eb4268e28468618db6f9172c9638494ccc58649cb4b887b9915dcf3518",
+    "docs/task_consolidation.md": "b12a922ee36b58ad08a4dffe367cf73b0b083ad743b1e81edae9823174f34fdc",
+    "docs/context_efficiency.md": "69ebca5767ac469a5378eb5dffb8833cc8fbf23b4939021339485fe049acb92b",
+    "docs/tool_output_contract.md": "db4dd3e14a90744f72b6c0fbe1b71634ef45d9ffd47f4f079f62fb17c8b284ce",
+    "docs/research_source_routes.md": "7adfb657b16eebe5b9e57baaadf8d9a4801dd60250eb61d2115738717fc66412"
+  },
+  "archive": "archives/2026-09-21_before_production",
+  "scope": "12 companies, 0-5 selected independent events; sequential current model; production only",
+  "validated_at": "2026-09-22T06:41:34.066326+00:00",
+  "report_sha256": "f0888f4d34922ebc64ec5393c0efd8d3143fb462989310276efffd6b8ccf5631",
+  "baseline_sha256": "ca90485c04614209139379e8c3edf1abf39fd9d36543d0b491aecbb8dcef60a6",
+  "quality_gate": "passed"
+}

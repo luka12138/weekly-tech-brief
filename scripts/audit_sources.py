@@ -51,6 +51,7 @@ OFFICIAL_HOST_KEYWORDS = [
     "skhynix.com",
     "tsmc.com",
     "sec.gov",
+    "justice.gov",
     "ftc.gov",
     "nhtsa.gov",
     "aisi.gov.uk",

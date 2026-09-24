@@ -1,0 +1,826 @@
+{
+  "nodes": [
+    {
+      "id": "6fed2e2885f103f6",
+      "type": "text",
+      "x": 80,
+      "y": 20,
+      "width": 1700,
+      "height": 90,
+      "text": "# 本周供应关系图 · 2026-09-14 至 2026-09-20"
+    },
+    {
+      "id": "1a0fab479b79b0c4",
+      "type": "text",
+      "x": 80,
+      "y": 160,
+      "width": 1700,
+      "height": 90,
+      "text": "绿色=本周新增 · 蓝色=本周强化 · 橙色=风险或媒体证据 · 灰色=基线无新增证据\n边标签对应周报 6.2 与供应关系 JSON 的 Edge ID。",
+      "color": "#475569"
+    },
+    {
+      "id": "39b03a6ac8717b97",
+      "type": "group",
+      "x": 80,
+      "y": 320,
+      "width": 580,
+      "height": 2040,
+      "label": "供应方 / 能力提供方",
+      "color": "#22c55e"
+    },
+    {
+      "id": "82c38c350aa5ddb5",
+      "type": "text",
+      "x": 120,
+      "y": 400,
+      "width": 500,
+      "height": 100,
+      "text": "**Meta**\n覆盖公司 · 输出 1",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "80dc7342f88ec56d",
+      "type": "text",
+      "x": 120,
+      "y": 560,
+      "width": 500,
+      "height": 100,
+      "text": "**Tesla**\n覆盖公司 · 输出 1",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "3436d83bc4c101c8",
+      "type": "text",
+      "x": 120,
+      "y": 720,
+      "width": 500,
+      "height": 100,
+      "text": "**SK Hynix**\n覆盖公司 · 输出 3",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "ef5b4470a16661f5",
+      "type": "text",
+      "x": 120,
+      "y": 880,
+      "width": 500,
+      "height": 100,
+      "text": "**TSMC**\n覆盖公司 · 输出 2",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "10285f0ca2678c93",
+      "type": "text",
+      "x": 120,
+      "y": 1040,
+      "width": 500,
+      "height": 100,
+      "text": "**外部:AMD**\n外部节点 · 输出 1",
+      "color": "#64748b"
+    },
+    {
+      "id": "4cb2efee11ad543a",
+      "type": "text",
+      "x": 120,
+      "y": 1200,
+      "width": 500,
+      "height": 100,
+      "text": "**外部:ASML**\n外部节点 · 输出 1",
+      "color": "#64748b"
+    },
+    {
+      "id": "445810b26b399b56",
+      "type": "text",
+      "x": 120,
+      "y": 1360,
+      "width": 500,
+      "height": 100,
+      "text": "**外部:Cerebras**\n外部节点 · 输出 1",
+      "color": "#64748b"
+    },
+    {
+      "id": "caed57dbd142ed18",
+      "type": "text",
+      "x": 120,
+      "y": 1520,
+      "width": 500,
+      "height": 100,
+      "text": "**外部:Fortum**\n外部节点 · 输出 1",
+      "color": "#64748b"
+    },
+    {
+      "id": "8990ce6368c63fb6",
+      "type": "text",
+      "x": 120,
+      "y": 1680,
+      "width": 500,
+      "height": 100,
+      "text": "**外部:Generac**\n外部节点 · 输出 1",
+      "color": "#64748b"
+    },
+    {
+      "id": "ae7ca305bc52e867",
+      "type": "text",
+      "x": 120,
+      "y": 1840,
+      "width": 500,
+      "height": 100,
+      "text": "**外部:Mistral**\n外部节点 · 输出 2",
+      "color": "#64748b"
+    },
+    {
+      "id": "d15fc2ec49e9f248",
+      "type": "text",
+      "x": 120,
+      "y": 2000,
+      "width": 500,
+      "height": 100,
+      "text": "**外部:MN8 Energy**\n外部节点 · 输出 1",
+      "color": "#64748b"
+    },
+    {
+      "id": "5f107e5ce3d57e3a",
+      "type": "text",
+      "x": 120,
+      "y": 2160,
+      "width": 500,
+      "height": 100,
+      "text": "**外部:SB Energy**\n外部节点 · 输出 1",
+      "color": "#64748b"
+    },
+    {
+      "id": "3cedaa14f30d9f32",
+      "type": "group",
+      "x": 720,
+      "y": 320,
+      "width": 580,
+      "height": 1400,
+      "label": "双重角色 / 覆盖公司",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "565a2cad388409d5",
+      "type": "text",
+      "x": 760,
+      "y": 400,
+      "width": 500,
+      "height": 100,
+      "text": "**Apple**\n覆盖公司 · 输出 1 · 输入 1",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "9a048740dcfd3080",
+      "type": "text",
+      "x": 760,
+      "y": 560,
+      "width": 500,
+      "height": 100,
+      "text": "**Microsoft**\n覆盖公司 · 输出 1 · 输入 5",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "a08efa0068f26a39",
+      "type": "text",
+      "x": 760,
+      "y": 720,
+      "width": 500,
+      "height": 100,
+      "text": "**Alphabet / Google**\n覆盖公司 · 输出 1 · 输入 3",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "54d0e17345a68a0e",
+      "type": "text",
+      "x": 760,
+      "y": 880,
+      "width": 500,
+      "height": 100,
+      "text": "**Amazon / AWS**\n覆盖公司 · 输出 3 · 输入 4",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "493ffe44f4aac644",
+      "type": "text",
+      "x": 760,
+      "y": 1040,
+      "width": 500,
+      "height": 100,
+      "text": "**NVIDIA**\n覆盖公司 · 输出 7 · 输入 2",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "4068e8b2f90b6de8",
+      "type": "text",
+      "x": 760,
+      "y": 1200,
+      "width": 500,
+      "height": 100,
+      "text": "**OpenAI**\n覆盖公司 · 输出 3 · 输入 4",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "160d6265b49fe163",
+      "type": "text",
+      "x": 760,
+      "y": 1360,
+      "width": 500,
+      "height": 100,
+      "text": "**Anthropic**\n覆盖公司 · 输出 3 · 输入 1",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "30ffe9f2c99a72eb",
+      "type": "text",
+      "x": 760,
+      "y": 1520,
+      "width": 500,
+      "height": 100,
+      "text": "**Samsung Electronics**\n覆盖公司 · 输出 2 · 输入 2",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "ca31839f88916ec5",
+      "type": "group",
+      "x": 1360,
+      "y": 320,
+      "width": 580,
+      "height": 2520,
+      "label": "客户 / 使用方",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "af10f00f584c55d7",
+      "type": "text",
+      "x": 1400,
+      "y": 400,
+      "width": 500,
+      "height": 100,
+      "text": "**外部:Around ten unnamed key memory customers**\n外部节点 · 输入 1",
+      "color": "#64748b"
+    },
+    {
+      "id": "672f4844ff62cc2b",
+      "type": "text",
+      "x": 1400,
+      "y": 560,
+      "width": 500,
+      "height": 100,
+      "text": "**外部:Azure and Copilot customers**\n外部节点 · 输入 1",
+      "color": "#64748b"
+    },
+    {
+      "id": "831648888cd364ef",
+      "type": "text",
+      "x": 1400,
+      "y": 720,
+      "width": 500,
+      "height": 100,
+      "text": "**外部:Broadcom**\n外部节点 · 输入 1",
+      "color": "#64748b"
+    },
+    {
+      "id": "89b0a7071293b05f",
+      "type": "text",
+      "x": 1400,
+      "y": 880,
+      "width": 500,
+      "height": 100,
+      "text": "**外部:Cursor**\n外部节点 · 输入 1",
+      "color": "#64748b"
+    },
+    {
+      "id": "d1128788bea80567",
+      "type": "text",
+      "x": 1400,
+      "y": 1040,
+      "width": 500,
+      "height": 100,
+      "text": "**外部:d-Matrix**\n外部节点 · 输入 1",
+      "color": "#64748b"
+    },
+    {
+      "id": "16292eba6b94c968",
+      "type": "text",
+      "x": 1400,
+      "y": 1200,
+      "width": 500,
+      "height": 100,
+      "text": "**外部:EV and energy storage customers**\n外部节点 · 输入 1",
+      "color": "#64748b"
+    },
+    {
+      "id": "f974a76cefd3b50b",
+      "type": "text",
+      "x": 1400,
+      "y": 1360,
+      "width": 500,
+      "height": 100,
+      "text": "**外部:Five unnamed global data-center customers**\n外部节点 · 输入 1",
+      "color": "#64748b"
+    },
+    {
+      "id": "782446735549c6e9",
+      "type": "text",
+      "x": 1400,
+      "y": 1520,
+      "width": 500,
+      "height": 100,
+      "text": "**外部:Ford**\n外部节点 · 输入 1",
+      "color": "#64748b"
+    },
+    {
+      "id": "b644258c87ddeeaf",
+      "type": "text",
+      "x": 1400,
+      "y": 1680,
+      "width": 500,
+      "height": 100,
+      "text": "**外部:Google Cloud customers**\n外部节点 · 输入 1",
+      "color": "#64748b"
+    },
+    {
+      "id": "f597e502388de25b",
+      "type": "text",
+      "x": 1400,
+      "y": 1840,
+      "width": 500,
+      "height": 100,
+      "text": "**外部:MediaTek**\n外部节点 · 输入 1",
+      "color": "#64748b"
+    },
+    {
+      "id": "db3b6d738e4b4ad0",
+      "type": "text",
+      "x": 1400,
+      "y": 2000,
+      "width": 500,
+      "height": 100,
+      "text": "**外部:Meta users and advertisers**\n外部节点 · 输入 1",
+      "color": "#64748b"
+    },
+    {
+      "id": "f3cdf07ee59049ac",
+      "type": "text",
+      "x": 1400,
+      "y": 2160,
+      "width": 500,
+      "height": 100,
+      "text": "**外部:Safe Superintelligence**\n外部节点 · 输入 1",
+      "color": "#64748b"
+    },
+    {
+      "id": "24c8992dabfc40ac",
+      "type": "text",
+      "x": 1400,
+      "y": 2320,
+      "width": 500,
+      "height": 100,
+      "text": "**外部:Sandisk**\n外部节点 · 输入 1",
+      "color": "#64748b"
+    },
+    {
+      "id": "c4c96dfb591d9379",
+      "type": "text",
+      "x": 1400,
+      "y": 2480,
+      "width": 500,
+      "height": 100,
+      "text": "**外部:SK Group / SK Telecom**\n外部节点 · 输入 1",
+      "color": "#64748b"
+    },
+    {
+      "id": "88c65925c44eba07",
+      "type": "text",
+      "x": 1400,
+      "y": 2640,
+      "width": 500,
+      "height": 100,
+      "text": "**外部:澳大利亚数据中心合作生态**\n外部节点 · 输入 1",
+      "color": "#64748b"
+    },
+    {
+      "id": "bf268c9648f626e3",
+      "type": "text",
+      "x": 80,
+      "y": 2940,
+      "width": 580,
+      "height": 650,
+      "text": "## 关系索引\n\n**E01** · Apple → 外部:Ford\nApple Maps EV routing and in-vehicle navigation for Ford Universal EV Platform\n\n**E02** · 外部:AMD → Microsoft\nAMD Helios, ND MI455X v7 and EPYC for Azure AI and HPC infrastructure\n\n**E03** · 外部:Mistral → Microsoft\nFrontier AI model services for enterprises and regulated industries\n\n**E04** · Alphabet / Google → 外部:Google Cloud customers\nGoogle Cloud AI services, TPU pods and cloud infrastructure\n\n**E05** · Anthropic → Amazon / AWS\nClaude models including Fable 5.1 available on Amazon Bedrock and Claude Platform on AWS\n\n**E06** · Meta → 外部:Meta users and advertisers\nFacebook, Instagram, WhatsApp, Threads and advertising systems\n\n**E07** · NVIDIA → 外部:SK Group / SK Telecom\nNVIDIA AI infrastructure for AI factories and SK Telecom AI infrastructure\n\n**E08** · SK Hynix → NVIDIA\nHBM and next-generation AI memory ecosystem",
+      "color": "#334155"
+    },
+    {
+      "id": "dd52617dfea274aa",
+      "type": "text",
+      "x": 720,
+      "y": 2940,
+      "width": 580,
+      "height": 650,
+      "text": "## 关系索引\n\n**E09** · Samsung Electronics → 外部:Broadcom\nHBM, 2nm-and-below foundry and 2.3D/2.5D advanced packaging\n\n**E10** · Tesla → 外部:EV and energy storage customers\nElectric vehicles, energy storage systems and energy services\n\n**E11** · TSMC → NVIDIA\nAdvanced-node foundry and advanced packaging for AI GPUs\n\n**E12** · TSMC → Apple\nAdvanced-node foundry for Apple A-series and M-series chips\n\n**E13** · NVIDIA → 外部:Safe Superintelligence\nVera Rubin systems, long-term compute access and compute-platform co-development\n\n**E14** · Amazon / AWS → OpenAI\nTrainium-based multi-year, multi-gigawatt AI compute commitment\n\n**E15** · Amazon / AWS → Anthropic\nTrainium-based multi-year, multi-gigawatt AI compute commitment\n\n**E16** · Microsoft → 外部:Azure and Copilot customers\nAzure cloud and AI services plus Microsoft 365 Copilot",
+      "color": "#334155"
+    },
+    {
+      "id": "5fdd99799035720c",
+      "type": "text",
+      "x": 1360,
+      "y": 2940,
+      "width": 580,
+      "height": 650,
+      "text": "## 关系索引\n\n**E17** · Samsung Electronics → 外部:Five unnamed global data-center customers\nLong-term server-memory and AI-infrastructure chip supply contracts\n\n**E18** · SK Hynix → 外部:Around ten unnamed key memory customers\nHBM4, AI server DRAM, eSSD and long-term supply agreements\n\n**E19** · SK Hynix → 外部:Sandisk\nFirst open High Bandwidth Flash standard specification for AI inference memory tiers\n\n**E20** · OpenAI → Amazon / AWS\nGPT-6 Astra在Amazon Bedrock正式可用\n\n**E21** · 外部:Cerebras → OpenAI\nCerebras-powered GPT-5.6 Sol Ultrafast inference at up to 750 output tokens per second\n\n**E22** · NVIDIA → OpenAI\nNVIDIA DSX full-stack AI compute for approximately 8 IT-GW at PORTS-Pike\n\n**E23** · 外部:SB Energy → OpenAI\nLand, power and shell capacity for approximately 8 IT-GW under a 20-year lease\n\n**E24** · NVIDIA → Amazon / AWS\nTwo million additional Blackwell Ultra, Rubin and Rubin Ultra GPUs for AWS global infrastructure in 2027-2028",
+      "color": "#334155"
+    },
+    {
+      "id": "551b6723f0e35e60",
+      "type": "text",
+      "x": 2000,
+      "y": 2940,
+      "width": 580,
+      "height": 650,
+      "text": "## 关系索引\n\n**E25** · OpenAI → 外部:Cursor\nOpenAI model access in Cursor, with a proposed service shutoff on 2026-11-12\n\n**E26** · Anthropic → Microsoft\nClaude Fable 5.1 in Copilot Cowork, Copilot Studio and GitHub Copilot\n\n**E27** · OpenAI → Microsoft\nGPT-6 Astra phased distribution through Microsoft Azure\n\n**E28** · Anthropic → Alphabet / Google\nClaude Fable 5.1 distribution through Google Cloud Agent Platform\n\n**E29** · Amazon / AWS → Microsoft\nAWS / Azure 双向云互联公开预览，非已确认采购\n\n**E30** · NVIDIA → 外部:MediaTek\nNVLink Fusion 计划采用及多代平台合作，尚非量产交付\n\n**E31** · 外部:MN8 Energy → Alphabet / Google\n西弗吉尼亚太阳能及储能的未来能源/容量供应安排\n\n**E32** · 外部:Fortum → Alphabet / Google\n22年Loviisa核电购电协议，2028年起供",
+      "color": "#334155"
+    },
+    {
+      "id": "f6fa85b7eb0f8952",
+      "type": "text",
+      "x": 2640,
+      "y": 2940,
+      "width": 580,
+      "height": 440,
+      "text": "## 关系索引\n\n**E33** · NVIDIA → 外部:d-Matrix\nNVLink Fusion与MGX接入Raptor XPU的计划\n\n**E34** · NVIDIA → 外部:澳大利亚数据中心合作生态\nDSX架构部署合作，最高2GW基础设施目标\n\n**E35** · 外部:Mistral → Samsung Electronics\n本地定制Mistral Large用于半导体流程\n\n**E36** · 外部:ASML → Samsung Electronics\nHigh-NA EUV与12英寸光掩模合作\n\n**E37** · 外部:Generac → Amazon / AWS\nAmazon数据中心后备发电机供货协议；初始交付预计2027—2028年",
+      "color": "#334155"
+    }
+  ],
+  "edges": [
+    {
+      "id": "cac85e59baa4477f",
+      "fromNode": "565a2cad388409d5",
+      "fromSide": "bottom",
+      "toNode": "782446735549c6e9",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "#64748b",
+      "label": "E01"
+    },
+    {
+      "id": "95fa82850d457a83",
+      "fromNode": "10285f0ca2678c93",
+      "fromSide": "right",
+      "toNode": "9a048740dcfd3080",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "#64748b",
+      "label": "E02"
+    },
+    {
+      "id": "c433cc673f8a46f8",
+      "fromNode": "ae7ca305bc52e867",
+      "fromSide": "top",
+      "toNode": "9a048740dcfd3080",
+      "toSide": "bottom",
+      "toEnd": "arrow",
+      "color": "#64748b",
+      "label": "E03"
+    },
+    {
+      "id": "f7c1bda2f5b9c4d7",
+      "fromNode": "a08efa0068f26a39",
+      "fromSide": "bottom",
+      "toNode": "b644258c87ddeeaf",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "#64748b",
+      "label": "E04"
+    },
+    {
+      "id": "14f0fd7c391a2e44",
+      "fromNode": "160d6265b49fe163",
+      "fromSide": "left",
+      "toNode": "54d0e17345a68a0e",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "#64748b",
+      "label": "E05"
+    },
+    {
+      "id": "eff4e82549837ac6",
+      "fromNode": "82c38c350aa5ddb5",
+      "fromSide": "bottom",
+      "toNode": "db3b6d738e4b4ad0",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "#64748b",
+      "label": "E06"
+    },
+    {
+      "id": "52d3ce8e0ae0623d",
+      "fromNode": "493ffe44f4aac644",
+      "fromSide": "bottom",
+      "toNode": "c4c96dfb591d9379",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "#64748b",
+      "label": "E07"
+    },
+    {
+      "id": "ae23c292117f253c",
+      "fromNode": "3436d83bc4c101c8",
+      "fromSide": "right",
+      "toNode": "493ffe44f4aac644",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "#64748b",
+      "label": "E08"
+    },
+    {
+      "id": "10847cafc496bc65",
+      "fromNode": "30ffe9f2c99a72eb",
+      "fromSide": "top",
+      "toNode": "831648888cd364ef",
+      "toSide": "bottom",
+      "toEnd": "arrow",
+      "color": "#64748b",
+      "label": "E09"
+    },
+    {
+      "id": "d2cf1d45ea865fd5",
+      "fromNode": "80dc7342f88ec56d",
+      "fromSide": "right",
+      "toNode": "16292eba6b94c968",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "#64748b",
+      "label": "E10"
+    },
+    {
+      "id": "2797989f21f805c5",
+      "fromNode": "ef5b4470a16661f5",
+      "fromSide": "right",
+      "toNode": "493ffe44f4aac644",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "#64748b",
+      "label": "E11"
+    },
+    {
+      "id": "f065b03b866cb682",
+      "fromNode": "ef5b4470a16661f5",
+      "fromSide": "right",
+      "toNode": "565a2cad388409d5",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "#64748b",
+      "label": "E12"
+    },
+    {
+      "id": "807e73fa6d748772",
+      "fromNode": "493ffe44f4aac644",
+      "fromSide": "bottom",
+      "toNode": "f3cdf07ee59049ac",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "#64748b",
+      "label": "E13"
+    },
+    {
+      "id": "46fc4367dbd881b2",
+      "fromNode": "54d0e17345a68a0e",
+      "fromSide": "right",
+      "toNode": "4068e8b2f90b6de8",
+      "toSide": "right",
+      "toEnd": "arrow",
+      "color": "#64748b",
+      "label": "E14"
+    },
+    {
+      "id": "b2dbb97f2ba31545",
+      "fromNode": "54d0e17345a68a0e",
+      "fromSide": "right",
+      "toNode": "160d6265b49fe163",
+      "toSide": "right",
+      "toEnd": "arrow",
+      "color": "#64748b",
+      "label": "E15"
+    },
+    {
+      "id": "212cf91703fe157c",
+      "fromNode": "9a048740dcfd3080",
+      "fromSide": "right",
+      "toNode": "672f4844ff62cc2b",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "#64748b",
+      "label": "E16"
+    },
+    {
+      "id": "c4fc36726deadf2a",
+      "fromNode": "30ffe9f2c99a72eb",
+      "fromSide": "right",
+      "toNode": "f974a76cefd3b50b",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "#f59e0b",
+      "label": "E17"
+    },
+    {
+      "id": "e5aed5ee4743e69b",
+      "fromNode": "3436d83bc4c101c8",
+      "fromSide": "right",
+      "toNode": "af10f00f584c55d7",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "#64748b",
+      "label": "E18"
+    },
+    {
+      "id": "13a0b452c8608558",
+      "fromNode": "3436d83bc4c101c8",
+      "fromSide": "bottom",
+      "toNode": "24c8992dabfc40ac",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "#64748b",
+      "label": "E19"
+    },
+    {
+      "id": "104d8b0d9df678ab",
+      "fromNode": "4068e8b2f90b6de8",
+      "fromSide": "left",
+      "toNode": "54d0e17345a68a0e",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "#64748b",
+      "label": "E20"
+    },
+    {
+      "id": "81fcb246dd04b94e",
+      "fromNode": "445810b26b399b56",
+      "fromSide": "right",
+      "toNode": "4068e8b2f90b6de8",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "#64748b",
+      "label": "E21"
+    },
+    {
+      "id": "4b2d3e513cc6285c",
+      "fromNode": "493ffe44f4aac644",
+      "fromSide": "right",
+      "toNode": "4068e8b2f90b6de8",
+      "toSide": "right",
+      "toEnd": "arrow",
+      "color": "#64748b",
+      "label": "E22"
+    },
+    {
+      "id": "3d2c87ec768343a3",
+      "fromNode": "5f107e5ce3d57e3a",
+      "fromSide": "top",
+      "toNode": "4068e8b2f90b6de8",
+      "toSide": "bottom",
+      "toEnd": "arrow",
+      "color": "#64748b",
+      "label": "E23"
+    },
+    {
+      "id": "e13de3c633744a24",
+      "fromNode": "493ffe44f4aac644",
+      "fromSide": "left",
+      "toNode": "54d0e17345a68a0e",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "#64748b",
+      "label": "E24"
+    },
+    {
+      "id": "2d18a830fd2d62b5",
+      "fromNode": "4068e8b2f90b6de8",
+      "fromSide": "right",
+      "toNode": "89b0a7071293b05f",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "#f59e0b",
+      "label": "E25"
+    },
+    {
+      "id": "34382b78120b9878",
+      "fromNode": "160d6265b49fe163",
+      "fromSide": "left",
+      "toNode": "9a048740dcfd3080",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "#64748b",
+      "label": "E26"
+    },
+    {
+      "id": "7a58da5f793f7030",
+      "fromNode": "4068e8b2f90b6de8",
+      "fromSide": "left",
+      "toNode": "9a048740dcfd3080",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "#64748b",
+      "label": "E27"
+    },
+    {
+      "id": "80ce45004099a2d2",
+      "fromNode": "160d6265b49fe163",
+      "fromSide": "left",
+      "toNode": "a08efa0068f26a39",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "#64748b",
+      "label": "E28"
+    },
+    {
+      "id": "b0e33042cf0e7204",
+      "fromNode": "54d0e17345a68a0e",
+      "fromSide": "left",
+      "toNode": "9a048740dcfd3080",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "#64748b",
+      "label": "E29",
+      "fromEnd": "arrow"
+    },
+    {
+      "id": "91980ffd93dd632a",
+      "fromNode": "493ffe44f4aac644",
+      "fromSide": "bottom",
+      "toNode": "f597e502388de25b",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "#64748b",
+      "label": "E30"
+    },
+    {
+      "id": "e6e36c3a5228ed8e",
+      "fromNode": "d15fc2ec49e9f248",
+      "fromSide": "top",
+      "toNode": "a08efa0068f26a39",
+      "toSide": "bottom",
+      "toEnd": "arrow",
+      "color": "#64748b",
+      "label": "E31"
+    },
+    {
+      "id": "419770ceeabf8b21",
+      "fromNode": "caed57dbd142ed18",
+      "fromSide": "top",
+      "toNode": "a08efa0068f26a39",
+      "toSide": "bottom",
+      "toEnd": "arrow",
+      "color": "#64748b",
+      "label": "E32"
+    },
+    {
+      "id": "784febc64064a9d1",
+      "fromNode": "493ffe44f4aac644",
+      "fromSide": "right",
+      "toNode": "d1128788bea80567",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "#64748b",
+      "label": "E33"
+    },
+    {
+      "id": "e327daae3a764eca",
+      "fromNode": "493ffe44f4aac644",
+      "fromSide": "bottom",
+      "toNode": "88c65925c44eba07",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "#64748b",
+      "label": "E34"
+    },
+    {
+      "id": "bcfe5e515fddebe8",
+      "fromNode": "ae7ca305bc52e867",
+      "fromSide": "right",
+      "toNode": "30ffe9f2c99a72eb",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "#64748b",
+      "label": "E35"
+    },
+    {
+      "id": "a1828eb2ff1394d9",
+      "fromNode": "4cb2efee11ad543a",
+      "fromSide": "right",
+      "toNode": "30ffe9f2c99a72eb",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "#64748b",
+      "label": "E36"
+    },
+    {
+      "id": "d1b7ffcef34b132f",
+      "fromNode": "8990ce6368c63fb6",
+      "fromSide": "top",
+      "toNode": "54d0e17345a68a0e",
+      "toSide": "bottom",
+      "toEnd": "arrow",
+      "color": "#22c55e",
+      "label": "E37"
+    }
+  ]
+}

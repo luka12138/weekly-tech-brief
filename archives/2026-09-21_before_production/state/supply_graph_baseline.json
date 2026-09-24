@@ -1,8 +1,8 @@
 {
-  "generation_date": "2026-09-21",
+  "generation_date": "2026-09-14",
   "coverage_period": {
-    "start": "2026-09-14",
-    "end": "2026-09-20",
+    "start": "2026-09-07",
+    "end": "2026-09-13",
     "timezone": "Asia/Shanghai"
   },
   "companies": [
@@ -473,7 +473,7 @@
       "evidence_date": "2026-09-08",
       "source_type": "official_company_release",
       "last_seen": "2026-09-14",
-      "changed_this_week": "no_new_weekly_evidence",
+      "changed_this_week": "strengthened",
       "status": "generally_available",
       "confidence": "high",
       "confidence_reason": "官方确认公告或合同阶段，不认证未来投运/收益。",
@@ -486,7 +486,7 @@
         "September 8"
       ],
       "min_keyword_matches": 2,
-      "notes": "9月8日GA是本周增量；旧AWS算力协议不是新事件。不外推全区域、客户数或收入。 上期变化，现仅作历史基线；本期未重复认证新交付。",
+      "notes": "9月8日GA是本周增量；旧AWS算力协议不是新事件。不外推全区域、客户数或收入。",
       "claim_ids": [
         "AWS-ASTRA-1",
         "AWS-ASTRA-2"
@@ -789,7 +789,7 @@
       "product_or_service": "22年Loviisa核电购电协议，2028年起供",
       "relationship_type": "planned_power_purchase",
       "evidence_date": "2026-09-09",
-      "changed_this_week": "no_new_weekly_evidence",
+      "changed_this_week": "new",
       "status": "announced_future_adoption_or_supply",
       "sources": [
         "https://www.fortum.com/en/media/2026/09/inside-information-fortum-and-google-partner-drive-sustainable-growth-finland-sign-nuclear-power-purchase-agreement"
@@ -799,7 +799,7 @@
         "2030"
       ],
       "min_keyword_matches": 2,
-      "notes": "2028年较小容量起步，2030-2049年50%容量；Fortum仍拥有电站，非已交付。 上期变化，现仅作历史基线；本期未重复认证新交付。",
+      "notes": "2028年较小容量起步，2030-2049年50%容量；Fortum仍拥有电站，非已交付。",
       "source_type": "official_company_release",
       "last_seen": "2026-09-14",
       "confidence": "high",
@@ -817,7 +817,7 @@
       "product_or_service": "NVLink Fusion与MGX接入Raptor XPU的计划",
       "relationship_type": "planned_interconnect_platform_adoption",
       "evidence_date": "2026-09-10",
-      "changed_this_week": "no_new_weekly_evidence",
+      "changed_this_week": "new",
       "status": "announced_future_adoption_or_supply",
       "sources": [
         "https://www.d-matrix.ai/announcements/d-matrix-rackscale-nvidia/",
@@ -828,7 +828,7 @@
         "2027"
       ],
       "min_keyword_matches": 2,
-      "notes": "多年产品合作；Raptor流片目标2026年末，集成机架初步供货目标2027Q4，非已交付。 上期变化，现仅作历史基线；本期未重复认证新交付。",
+      "notes": "多年产品合作；Raptor流片目标2026年末，集成机架初步供货目标2027Q4，非已交付。",
       "source_type": "official_company_release",
       "last_seen": "2026-09-14",
       "confidence": "high",
@@ -846,7 +846,7 @@
       "product_or_service": "DSX架构部署合作，最高2GW基础设施目标",
       "relationship_type": "planned_platform_adoption",
       "evidence_date": "2026-09-09",
-      "changed_this_week": "no_new_weekly_evidence",
+      "changed_this_week": "new",
       "status": "announced_future_adoption_or_supply",
       "sources": [
         "https://nvidianews.nvidia.com/news/nvidia-expands-ai-infrastructure-capacity-in-partnership-with-australias-data-center-ecosystem"
@@ -856,7 +856,7 @@
         "2027"
       ],
       "min_keyword_matches": 2,
-      "notes": "伙伴建设运营土地、电力及建筑，目标2027年；不是NVIDIA已拥有算力或确定GPU采购。 上期变化，现仅作历史基线；本期未重复认证新交付。",
+      "notes": "伙伴建设运营土地、电力及建筑，目标2027年；不是NVIDIA已拥有算力或确定GPU采购。",
       "source_type": "official_company_release",
       "last_seen": "2026-09-14",
       "confidence": "high",
@@ -874,7 +874,7 @@
       "product_or_service": "本地定制Mistral Large用于半导体流程",
       "relationship_type": "planned_model_deployment",
       "evidence_date": "2026-09-09",
-      "changed_this_week": "no_new_weekly_evidence",
+      "changed_this_week": "new",
       "status": "announced_future_adoption_or_supply",
       "sources": [
         "https://news.samsung.com/global/samsung-and-mistral-ai-announce-strategic-partnership-for-intelligence-driven-semiconductor-infrastructure"
@@ -884,7 +884,7 @@
         "semiconductor"
       ],
       "min_keyword_matches": 2,
-      "notes": "Mistral即Mistral AI，复用既有公司节点。战略合作及部署计划；Samsung另称领投Series D但金额未知，箭头不表示融资流向或已实现良率改善。 上期变化，现仅作历史基线；本期未重复认证新交付。",
+      "notes": "Mistral即Mistral AI，复用既有公司节点。战略合作及部署计划；Samsung另称领投Series D但金额未知，箭头不表示融资流向或已实现良率改善。",
       "source_type": "official_company_release",
       "last_seen": "2026-09-14",
       "confidence": "high",
@@ -902,7 +902,7 @@
       "product_or_service": "High-NA EUV与12英寸光掩模合作",
       "relationship_type": "planned_manufacturing_technology_adoption",
       "evidence_date": "2026-09-08",
-      "changed_this_week": "no_new_weekly_evidence",
+      "changed_this_week": "new",
       "status": "announced_future_adoption_or_supply",
       "sources": [
         "https://news.samsung.com/global/samsung-electronics-and-asml-expand-strategic-collaboration-for-next-generation-semiconductor-manufacturing"
@@ -912,7 +912,7 @@
         "2028"
       ],
       "min_keyword_matches": 2,
-      "notes": "DRAM大批量制造目标2028年；12英寸为光掩模，不是已量产结果或确定采购数量。 上期变化，现仅作历史基线；本期未重复认证新交付。",
+      "notes": "DRAM大批量制造目标2028年；12英寸为光掩模，不是已量产结果或确定采购数量。",
       "source_type": "official_company_release",
       "last_seen": "2026-09-14",
       "confidence": "high",
@@ -921,33 +921,6 @@
       "claim_ids": [
         "SS-ASML-1",
         "SS-ASML-2"
-      ]
-    },
-    {
-      "edge_id": "E37",
-      "supplier": "Generac",
-      "customer": "Amazon / AWS",
-      "product_or_service": "Amazon数据中心后备发电机供货协议；初始交付预计2027—2028年",
-      "relationship_type": "contracted_future_backup_generator_supply",
-      "evidence_date": "2026-09-16",
-      "source_type": "sec_filing",
-      "last_seen": "2026-09-21",
-      "changed_this_week": "new",
-      "status": "contracted_future_delivery_not_fulfilled",
-      "confidence": "high",
-      "confidence_reason": "Generac SEC 8-K确认协议；未来交付和附条件认股权证尚非实现收入。",
-      "markdown_section_ref": "6.2 E37",
-      "sources": [
-        "https://www.sec.gov/Archives/edgar/data/1474735/000143774926030550/gnrc20260915_8k.htm"
-      ],
-      "claim_keywords": [
-        "Generac",
-        "Amazon"
-      ],
-      "min_keyword_matches": 2,
-      "notes": "初始约24亿美元后备发电机交付预计2027—2028年；Amazon认股权证含付款门槛，不代表已交付或已归属。",
-      "claim_ids": [
-        "AWS-GEN-1"
       ]
     }
   ],
@@ -993,19 +966,18 @@
     "https://blogs.nvidia.com/blog/d-matrix-nvlink-fusion/",
     "https://nvidianews.nvidia.com/news/nvidia-expands-ai-infrastructure-capacity-in-partnership-with-australias-data-center-ecosystem",
     "https://news.samsung.com/global/samsung-and-mistral-ai-announce-strategic-partnership-for-intelligence-driven-semiconductor-infrastructure",
-    "https://news.samsung.com/global/samsung-electronics-and-asml-expand-strategic-collaboration-for-next-generation-semiconductor-manufacturing",
-    "https://www.sec.gov/Archives/edgar/data/1474735/000143774926030550/gnrc20260915_8k.htm"
+    "https://news.samsung.com/global/samsung-electronics-and-asml-expand-strategic-collaboration-for-next-generation-semiconductor-manufacturing"
   ],
   "confidence": "mixed_high",
-  "notes": "本周只更新入选且已核关系。其余沿用9月14日冻结基线，原evidence_date、风险和弱证据等级不变；沿用不是本周重新确证。新计划箭头表示公告关系，不表示完成交付。 2026-09-21仅E37为本周新增关系；旧边证据日期和限制保留。",
+  "notes": "本周只更新入选且已核关系。其余沿用9月7日冻结基线，原evidence_date、风险和弱证据等级不变；沿用不是本周重新确证。新计划箭头表示公告关系，不表示完成交付。",
   "comparison_snapshots": {
     "supply": {
-      "path": "archives/2026-09-21_before_production/state/supply_graph_baseline.json",
-      "sha256": "68fbf8e426bcfb1133b98883342ca9496e0d59b34ae9c7a501ce2089fb3c8137"
+      "path": "archives/2026-09-14_before_production/state/supply_graph_baseline.json",
+      "sha256": "f0b72672eb7dcc8573ea3f0f68e733eb2fc1a7b398873ed334595a5529f6a674"
     },
     "product": {
-      "path": "archives/2026-09-21_before_production/state/product_relationships_2026.json",
-      "sha256": "9cab5511530a248a814852befcbd02402645c23370fe2747e54f069089041396"
+      "path": "archives/2026-09-14_before_production/state/product_relationships_2026.json",
+      "sha256": "2608cf80d6adef906d6fc4c2c2d3415b9b5e5911fff0e10865d9082a4ebe4690"
     }
   }
 }

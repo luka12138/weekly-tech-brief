@@ -1,0 +1,213 @@
+{
+  "schema_version": 1,
+  "records": [
+    {
+      "id": "APL-O0",
+      "checked_at": "2026-09-21T04:14:35Z",
+      "url": "https://www.apple.com/newsroom/",
+      "note": "入口仅返回导航；随后通过官方归档及具体公告恢复。",
+      "capture_sha256": "954b56e814a314df5983b0f6f2e74c7a5c43f151ce9fd710d12f240e7f27c2b5",
+      "raw_local_only": true
+    },
+    {
+      "id": "APL-O",
+      "checked_at": "2026-09-21T04:14:48Z",
+      "url": "https://www.apple.com/newsroom/archive/",
+      "note": "核读9月归档；Siri AI、软硬件上市及儿童保护列候选，旧9/9发布不重复。",
+      "capture_sha256": "e8cf04fe07f29c8ca839fd5ba06257bc72939b296e75ad7b2b6fe3ae09bb4075",
+      "raw_local_only": true
+    },
+    {
+      "id": "APL-I",
+      "checked_at": "2026-09-21T04:15:05Z",
+      "url": "https://www.investing.com/news/stock-market-news/musks-x-corp-and-spacexairesolve-antitrust-lawsuit-against-apple-4899830",
+      "note": "独立校准发现X/SpaceXAI诉讼解决；旧Siri集体诉讼不混同。",
+      "capture_sha256": "29f885baedc863e775e40ecc21c2a87bed8ec2fcb50aa062f2c9dbf4b8079ff3",
+      "raw_local_only": true
+    },
+    {
+      "id": "MS-O",
+      "checked_at": "2026-09-21T04:12:51Z",
+      "url": "https://news.microsoft.com/source/view-all/",
+      "note": "9/15股息及政府套件，9/17芯片设计及转型文章；按重要性选资本回报和政府产品。",
+      "capture_sha256": "4dae5eebaff84d5025f677a53398a84f8a4a863d3ded0d0cb5b5b4a318c9342d",
+      "raw_local_only": true
+    },
+    {
+      "id": "MS-I",
+      "checked_at": "2026-09-21T04:15:05Z",
+      "url": "https://www.marketscreener.com/news/microsoft-drafts-code-of-conduct-to-keep-its-ai-under-human-control-ce785bdcdc8bf025",
+      "note": "独立轮次发现AI行为准则草案，不是成文法或能力安全认证。",
+      "capture_sha256": "29f885baedc863e775e40ecc21c2a87bed8ec2fcb50aa062f2c9dbf4b8079ff3",
+      "raw_local_only": true
+    },
+    {
+      "id": "GOO-O",
+      "checked_at": "2026-09-21T04:14:35Z",
+      "url": "https://blog.google/",
+      "note": "官方首页识别Live模型、Windows应用；后续d11/d14定位9/15和9/17版本。",
+      "capture_sha256": "954b56e814a314df5983b0f6f2e74c7a5c43f151ce9fd710d12f240e7f27c2b5",
+      "raw_local_only": true
+    },
+    {
+      "id": "GOO-I",
+      "checked_at": "2026-09-21T04:15:05Z",
+      "url": "https://ae.marketscreener.com/news/google-should-relax-ad-tech-rules-appoint-antitrust-monitor-us-judge-finds-ce785bd2d08ff121",
+      "note": "识别广告技术案本周救济细节；9/2不拆分初裁及搜索案须分别处理。",
+      "capture_sha256": "29f885baedc863e775e40ecc21c2a87bed8ec2fcb50aa062f2c9dbf4b8079ff3",
+      "raw_local_only": true
+    },
+    {
+      "id": "AWS-O",
+      "checked_at": "2026-09-21T04:12:51Z",
+      "url": "https://www.aboutamazon.com/news/company-news",
+      "note": "公司入口读到9/16公司近况及9/13货运事故更新；旧融资/芯片合同不重发。",
+      "capture_sha256": "4dae5eebaff84d5025f677a53398a84f8a4a863d3ded0d0cb5b5b4a318c9342d",
+      "raw_local_only": true
+    },
+    {
+      "id": "AWS-I",
+      "checked_at": "2026-09-21T04:15:38Z",
+      "url": "https://www.marketscreener.com/news/amazon-enters-ai-safety-fray-calls-for-rigorous-testing-safeguards-ce785bd3df89ff22",
+      "note": "独立轮次兼看21 Air事故、Prime退款程序及安全立场，发现Generac具日期申报；选择资本供应承诺及安全立场。",
+      "capture_sha256": "50791da06de1138c399ef4ee21ea0ca9fbb8b0c13f546164114f94c0c9ea58ca",
+      "raw_local_only": true
+    },
+    {
+      "id": "META-O",
+      "checked_at": "2026-09-21T04:14:35Z",
+      "url": "https://about.fb.com/news/",
+      "note": "9/15 Meta One与9/16 Threads工具；优先跨应用订阅，9/8 Muse不重新算发布。",
+      "capture_sha256": "954b56e814a314df5983b0f6f2e74c7a5c43f151ce9fd710d12f240e7f27c2b5",
+      "raw_local_only": true
+    },
+    {
+      "id": "META-I",
+      "checked_at": "2026-09-21T04:16:37Z",
+      "url": "https://www.marketscreener.com/news/meta-s-zuckerberg-says-ai-labs-have-enough-incentive-to-build-safely-ce785bd2d88bf521",
+      "note": "独立核验安全治理立场与法律责任语境，不把早前和解重计本周。",
+      "capture_sha256": "ff26b965118a0f33c094451b5200189723cc9d6720f5d9b428f8ed25a98bba55",
+      "raw_local_only": true
+    },
+    {
+      "id": "NV-O",
+      "checked_at": "2026-09-21T04:14:48Z",
+      "url": "https://nvidianews.nvidia.com/",
+      "note": "9/14 CUDA-Q、9/15能效、9/16 MLPerf及电网联盟；优先平台实测阶段，其余留资料池。",
+      "capture_sha256": "e8cf04fe07f29c8ca839fd5ba06257bc72939b296e75ad7b2b6fe3ae09bb4075",
+      "raw_local_only": true
+    },
+    {
+      "id": "NV-I",
+      "checked_at": "2026-09-21T04:16:37Z",
+      "url": "https://finance.yahoo.com/technology/ai/articles/palantir-nvidia-curb-ai-model-151108619.html",
+      "note": "独立轮次发现模型使用与IP保护争议，须区分报道中的可能限制与已全面停用。",
+      "capture_sha256": "ff26b965118a0f33c094451b5200189723cc9d6720f5d9b428f8ed25a98bba55",
+      "raw_local_only": true
+    },
+    {
+      "id": "TSLA-O",
+      "checked_at": "2026-09-21T04:15:22Z",
+      "url": "https://ir.tesla.com/",
+      "note": "官方IR当前财报止于Q2；不声称全部产品页或经营没有变化。",
+      "capture_sha256": "0b5bdfaa2cf87077749ebdda01dcceaa547e3f36059ff45ced8ee13cae080e8e",
+      "raw_local_only": true
+    },
+    {
+      "id": "TSLA-I",
+      "checked_at": "2026-09-21T04:15:38Z",
+      "url": "https://www.marketscreener.com/news/us-agency-orders-tesla-to-answer-questions-on-cybercab-certification-ce785bddde80f524",
+      "note": "独立发现9/15认证答复要求，是旧调查程序增量；Roadster日期旧披露不重发。",
+      "capture_sha256": "50791da06de1138c399ef4ee21ea0ca9fbb8b0c13f546164114f94c0c9ea58ca",
+      "raw_local_only": true
+    },
+    {
+      "id": "OA-O",
+      "checked_at": "2026-09-21T04:15:22Z",
+      "url": "https://openai.com/news/",
+      "note": "9/16失配披露、广告、价值度量，9/17法律产品及9/18澳洲蓝图；优先研究与核心产品使用条件。",
+      "capture_sha256": "0b5bdfaa2cf87077749ebdda01dcceaa547e3f36059ff45ced8ee13cae080e8e",
+      "raw_local_only": true
+    },
+    {
+      "id": "OA-I",
+      "checked_at": "2026-09-21T04:16:37Z",
+      "url": "https://apnews.com/article/089e75b95bc935af092da7b79d92706d",
+      "note": "独立安全报道校准：六份披露不是六起本周事故；关注治理及潜在第三方影响。",
+      "capture_sha256": "ff26b965118a0f33c094451b5200189723cc9d6720f5d9b428f8ed25a98bba55",
+      "raw_local_only": true
+    },
+    {
+      "id": "AN-O",
+      "checked_at": "2026-09-21T04:15:22Z",
+      "url": "https://www.anthropic.com/news",
+      "note": "官方9/17前沿研发可观察指标；9/1模型和9/10威胁报告为旧闻。",
+      "capture_sha256": "0b5bdfaa2cf87077749ebdda01dcceaa547e3f36059ff45ced8ee13cae080e8e",
+      "raw_local_only": true
+    },
+    {
+      "id": "AN-I",
+      "checked_at": "2026-09-21T04:16:37Z",
+      "url": "https://currently.att.yahoo.com/att/anthropic-accenture-invest-2-billion-210242461.html",
+      "note": "独立发现与Accenture评估承诺及未定模型发布；优先确认合作和研发透明度，不以IPO传闻填满五条。",
+      "capture_sha256": "ff26b965118a0f33c094451b5200189723cc9d6720f5d9b428f8ed25a98bba55",
+      "raw_local_only": true
+    },
+    {
+      "id": "SS-O",
+      "checked_at": "2026-09-21T04:16:12Z",
+      "url": "https://news.samsung.com/global/category/press-release",
+      "note": "官方本周One UI 9、ISAC试验；优先用户AI软件扩面，设计展和区域营销不凑数。",
+      "capture_sha256": "f42c023eb0950ec07baa16dfb09f759601c6100444b21c82831331585402e087",
+      "raw_local_only": true
+    },
+    {
+      "id": "SS-I",
+      "checked_at": "2026-09-21T04:17:23Z",
+      "url": "https://ca.marketscreener.com/news/samsung-sk-hynix-reject-kepco-s-19-billion-power-prepayment-proposal-document-shows-ce785bdcd88bf72d",
+      "note": "独立发现电力预付提案遭拒；涉及资本安排而非确认停电或已支付款项。",
+      "capture_sha256": "dbccb4ca65e7bb0efe7a40de5f52ca59bd574e34b786e56b844f0f3744989922",
+      "raw_local_only": true
+    },
+    {
+      "id": "SK-O",
+      "checked_at": "2026-09-21T04:18:56Z",
+      "url": "https://news.skhynix.com/en/fact-10/",
+      "note": "官网9/16回应Intel报道尚无确认计划；入口9/21论坛超截止不纳入。",
+      "capture_sha256": "5da2b960dc5f0c5276767e95ca8d89d86c65f52ca336ed5c77548974fe140229",
+      "raw_local_only": true
+    },
+    {
+      "id": "SK-I",
+      "checked_at": "2026-09-21T04:17:01Z",
+      "url": "https://ca.marketscreener.com/news/sk-hynix-in-talks-with-intel-about-deal-to-make-memory-chips-in-the-us-for-the-first-time-sources-s-ce785bd2d881f52c",
+      "note": "独立发现Intel洽谈、Solidigm NAND选址、工资协议，后续与官方回应及技术转移审查条件并读。",
+      "capture_sha256": "700f799243f531b40ebae9ac8fd519337bd46c68371a4b35be5e4fa5549814b1",
+      "raw_local_only": true
+    },
+    {
+      "id": "TSM-O0",
+      "checked_at": "2026-09-21T04:15:38Z",
+      "url": "https://pr.tsmc.com/english/news",
+      "note": "新闻入口Internal Error，已转官方IR及具日期单篇核读。",
+      "capture_sha256": "50791da06de1138c399ef4ee21ea0ca9fbb8b0c13f546164114f94c0c9ea58ca",
+      "raw_local_only": true
+    },
+    {
+      "id": "TSM-O",
+      "checked_at": "2026-09-21T04:18:02Z",
+      "url": "https://investor.tsmc.com/english",
+      "note": "IR最近财务公告是8月营收，9/8 ASML原公告不重计；客户新品需定向核验。",
+      "capture_sha256": "c6941055ddea312118e1c1be6ad9dec121144f53d530b7411d159c322162b690",
+      "raw_local_only": true
+    },
+    {
+      "id": "TSM-I",
+      "checked_at": "2026-09-21T04:18:27Z",
+      "url": "https://kuwaittimes.com/article/49813/technology/mediatek-launches-new-mobile-chip-using-tsmc-tech/",
+      "note": "独立发现9/15 MediaTek客户2nm新品，选核实际产品发布，不以论坛传言推算产能。",
+      "capture_sha256": "bb9baac02484ab2b618353434ce10edb013737841a3a1fa47ce3110bd3680b19",
+      "raw_local_only": true
+    }
+  ]
+}
