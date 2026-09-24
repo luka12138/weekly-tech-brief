@@ -1,0 +1,823 @@
+{
+  "generation_date": "2026-09-07",
+  "coverage_period": {
+    "start": "2026-08-31",
+    "end": "2026-09-06",
+    "timezone": "Asia/Shanghai"
+  },
+  "companies": [
+    "Apple",
+    "Microsoft",
+    "Alphabet / Google",
+    "Amazon / AWS",
+    "Meta",
+    "NVIDIA",
+    "Tesla",
+    "OpenAI",
+    "Anthropic",
+    "Samsung Electronics",
+    "SK Hynix",
+    "TSMC"
+  ],
+  "edges": [
+    {
+      "edge_id": "E01",
+      "supplier": "Apple",
+      "customer": "Ford",
+      "product_or_service": "Apple Maps EV routing and in-vehicle navigation for Ford Universal EV Platform",
+      "relationship_type": "automotive_software_service",
+      "evidence_date": "2026-07-21",
+      "source_type": "official_company_release",
+      "last_seen": "2026-08-17",
+      "changed_this_week": "no_new_weekly_evidence",
+      "status": "baseline_no_new_weekly_evidence",
+      "confidence": "high",
+      "confidence_reason": "Apple's July release remains the official baseline; no current-week deployment update was found.",
+      "markdown_section_ref": "6.2 E01",
+      "sources": [
+        "https://www.apple.com/newsroom/2026/07/apple-maps-to-power-navigation-experience-for-ford-uev-platform/"
+      ],
+      "claim_keywords": [
+        "Ford",
+        "Apple Maps"
+      ],
+      "min_keyword_matches": 2,
+      "notes": "Baseline software relationship; not a new hardware supply award."
+    },
+    {
+      "edge_id": "E02",
+      "supplier": "AMD",
+      "customer": "Microsoft",
+      "product_or_service": "AMD Helios, ND MI455X v7 and EPYC for Azure AI and HPC infrastructure",
+      "relationship_type": "ai_hpc_accelerator_infrastructure_supply",
+      "evidence_date": "2026-07-20",
+      "source_type": "official_company_release",
+      "last_seen": "2026-08-17",
+      "changed_this_week": "no_new_weekly_evidence",
+      "status": "baseline_no_new_weekly_evidence",
+      "confidence": "high",
+      "confidence_reason": "Microsoft's July release remains the official baseline; no current-week order or deployment update was found.",
+      "markdown_section_ref": "6.2 E02",
+      "sources": [
+        "https://news.microsoft.com/source/2026/07/20/microsoft-expands-azure-ai-and-hpc-infrastructure-with-amd/"
+      ],
+      "claim_keywords": [
+        "MI455X",
+        "EPYC"
+      ],
+      "min_keyword_matches": 2,
+      "notes": "Procurement amount, sites and delivery cadence remain undisclosed."
+    },
+    {
+      "edge_id": "E03",
+      "supplier": "Mistral",
+      "customer": "Microsoft",
+      "product_or_service": "Frontier AI model services for enterprises and regulated industries",
+      "relationship_type": "model_platform_partnership",
+      "evidence_date": "2026-07-21",
+      "source_type": "official_company_release",
+      "last_seen": "2026-08-17",
+      "changed_this_week": "no_new_weekly_evidence",
+      "status": "baseline_no_new_weekly_evidence",
+      "confidence": "high",
+      "confidence_reason": "Microsoft's July release remains the official baseline; no current-week material update was found.",
+      "markdown_section_ref": "6.2 E03",
+      "sources": [
+        "https://news.microsoft.com/source/2026/07/21/microsoft-and-mistral-expand-strategic-partnership-to-give-enterprises-and-regulated-industries-frontier-ai-they-can-control/"
+      ],
+      "claim_keywords": [
+        "Mistral",
+        "regulated industries"
+      ],
+      "min_keyword_matches": 2,
+      "notes": "Non-exclusive model-platform baseline."
+    },
+    {
+      "edge_id": "E04",
+      "supplier": "Alphabet / Google",
+      "customer": "Google Cloud customers",
+      "product_or_service": "Google Cloud AI services, TPU pods and cloud infrastructure",
+      "relationship_type": "cloud_ai_infrastructure_service",
+      "evidence_date": "2026-07-23",
+      "source_type": "official_financial_release",
+      "last_seen": "2026-08-17",
+      "changed_this_week": "no_new_weekly_evidence",
+      "status": "baseline_no_new_weekly_evidence",
+      "confidence": "high",
+      "confidence_reason": "Alphabet Q2 remains the demand baseline; no current-week customer order was disclosed.",
+      "markdown_section_ref": "6.2 E04",
+      "sources": [
+        "https://abc.xyz/assets/5d/f4/15f364a84a6c9b70a59f9f38d3a1/2026q2-alphabet-earnings-release.pdf"
+      ],
+      "notes": "Financial demand baseline, not a single new customer order."
+    },
+    {
+      "edge_id": "E05",
+      "supplier": "Anthropic",
+      "customer": "Amazon / AWS",
+      "product_or_service": "Claude models including Fable 5.1 available on Amazon Bedrock and Claude Platform on AWS",
+      "relationship_type": "third_party_model_hosting",
+      "evidence_date": "2026-09-01",
+      "source_type": "official_cross_company_releases",
+      "last_seen": "2026-09-07",
+      "changed_this_week": "strengthened",
+      "status": "strengthened_current_week_model_availability_and_enterprise_controls",
+      "confidence": "high",
+      "confidence_reason": "AWS and Anthropic confirm Fable 5.1 availability and enterprise data-retention controls; this is an existing model-distribution partnership.",
+      "markdown_section_ref": "6.2 E05",
+      "sources": [
+        "https://aws.amazon.com/blogs/machine-learning/introducing-claude-fable-5-1-on-aws/",
+        "https://www.anthropic.com/claude-fable-and-mythos-5-1"
+      ],
+      "claim_keywords": [
+        "Fable 5.1",
+        "Amazon Bedrock",
+        "data retention"
+      ],
+      "min_keyword_matches": 3,
+      "notes": "Model catalog and enterprise access terms expanded. Default AWS safety review can retain data for up to 30 days; eligible internal-use customers can obtain interim ZDR through December 31, 2026. EFS rollout and revenue remain unconfirmed."
+    },
+    {
+      "edge_id": "E06",
+      "supplier": "Meta",
+      "customer": "Meta users and advertisers",
+      "product_or_service": "Facebook, Instagram, WhatsApp, Threads and advertising systems",
+      "relationship_type": "digital_services",
+      "evidence_date": "2026-07-29",
+      "source_type": "official_financial_release",
+      "last_seen": "2026-08-17",
+      "changed_this_week": "no_new_weekly_evidence",
+      "status": "baseline_no_new_weekly_evidence",
+      "confidence": "high",
+      "confidence_reason": "Meta Q2 remains the service-demand baseline; no current-week customer or advertiser relationship change was found.",
+      "markdown_section_ref": "6.2 E06",
+      "sources": [
+        "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/"
+      ],
+      "claim_keywords": [
+        "Advertising",
+        "Family daily active people"
+      ],
+      "min_keyword_matches": 2,
+      "notes": "Digital-service relationship, not a hardware supply award."
+    },
+    {
+      "edge_id": "E07",
+      "supplier": "NVIDIA",
+      "customer": "SK Group / SK Telecom",
+      "product_or_service": "NVIDIA AI infrastructure for AI factories and SK Telecom AI infrastructure",
+      "relationship_type": "ai_compute_platform_supply",
+      "evidence_date": "2026-07-24",
+      "source_type": "official_supplier_release",
+      "last_seen": "2026-08-17",
+      "changed_this_week": "no_new_weekly_evidence",
+      "status": "baseline_no_new_weekly_evidence",
+      "confidence": "high",
+      "confidence_reason": "NVIDIA's July release remains the official baseline; no current-week order or deployment amount was disclosed.",
+      "markdown_section_ref": "6.2 E07",
+      "sources": [
+        "https://nvidianews.nvidia.com/news/sk-group-and-nvidia-expand-strategic-partnership-across-ai-factories-and-next-generation-memory"
+      ],
+      "claim_keywords": [
+        "SK Telecom",
+        "AI factories"
+      ],
+      "min_keyword_matches": 2,
+      "notes": "Delivery timing and procurement amount remain undisclosed."
+    },
+    {
+      "edge_id": "E08",
+      "supplier": "SK Hynix",
+      "customer": "NVIDIA",
+      "product_or_service": "HBM and next-generation AI memory ecosystem",
+      "relationship_type": "memory_supply_ecosystem",
+      "evidence_date": "2026-07-24/2026-07-29",
+      "source_type": "official_company_releases",
+      "last_seen": "2026-08-17",
+      "changed_this_week": "no_new_weekly_evidence",
+      "status": "baseline_no_new_weekly_evidence",
+      "confidence": "high",
+      "confidence_reason": "NVIDIA and SK Hynix previously confirmed the memory relationship; no current-week NVIDIA-specific order evidence was found.",
+      "markdown_section_ref": "6.2 E08",
+      "sources": [
+        "https://nvidianews.nvidia.com/news/sk-group-and-nvidia-expand-strategic-partnership-across-ai-factories-and-next-generation-memory",
+        "https://news.skhynix.com/en/q2-2026-business-results/"
+      ],
+      "claim_keywords": [
+        "SK hynix",
+        "next-generation memory"
+      ],
+      "min_keyword_matches": 2,
+      "notes": "Do not attribute unconfirmed HBM yield or capacity reports to a named NVIDIA order."
+    },
+    {
+      "edge_id": "E09",
+      "supplier": "Samsung Electronics",
+      "customer": "Broadcom",
+      "product_or_service": "HBM, 2nm-and-below foundry and 2.3D/2.5D advanced packaging",
+      "relationship_type": "memory_foundry_packaging_supply",
+      "evidence_date": "2026-07-25",
+      "source_type": "official_company_release",
+      "last_seen": "2026-08-17",
+      "changed_this_week": "no_new_weekly_evidence",
+      "status": "baseline_no_new_weekly_evidence",
+      "confidence": "high",
+      "confidence_reason": "Samsung's July release remains the official baseline; no current-week contract detail was disclosed.",
+      "markdown_section_ref": "6.2 E09",
+      "sources": [
+        "https://news.samsung.com/global/samsung-electronics-and-broadcom-expand-strategic-collaboration-across-memory-and-foundry-technologies"
+      ],
+      "claim_keywords": [
+        "Broadcom",
+        "High Bandwidth Memory"
+      ],
+      "min_keyword_matches": 2,
+      "notes": "Process, shipment and annual revenue-recognition details remain undisclosed."
+    },
+    {
+      "edge_id": "E10",
+      "supplier": "Tesla",
+      "customer": "EV and energy storage customers",
+      "product_or_service": "Electric vehicles, energy storage systems and energy services",
+      "relationship_type": "end_product_delivery_baseline",
+      "evidence_date": "2026-07-23",
+      "source_type": "official_financial_release",
+      "last_seen": "2026-08-17",
+      "changed_this_week": "no_new_weekly_evidence",
+      "status": "baseline_no_new_weekly_evidence",
+      "confidence": "high",
+      "confidence_reason": "Tesla Q2 remains the operating baseline; no current-week major customer or supply award was found.",
+      "markdown_section_ref": "6.2 E10",
+      "sources": [
+        "https://ir.tesla.com/press-release/tesla-releases-second-quarter-2026-financial-results"
+      ],
+      "notes": "Business baseline only; not a new customer relationship."
+    },
+    {
+      "edge_id": "E11",
+      "supplier": "TSMC",
+      "customer": "NVIDIA",
+      "product_or_service": "Advanced-node foundry and advanced packaging for AI GPUs",
+      "relationship_type": "foundry_baseline",
+      "evidence_date": "long_term_baseline",
+      "source_type": "official_ir_baseline",
+      "last_seen": "2026-08-17",
+      "changed_this_week": "no_new_weekly_evidence",
+      "status": "baseline_no_new_weekly_evidence",
+      "confidence": "medium",
+      "confidence_reason": "Critical long-term market baseline; no customer-level order, price or capacity change was officially disclosed this week.",
+      "markdown_section_ref": "6.2 E11",
+      "sources": [
+        "https://investor.tsmc.com/english/annual-reports"
+      ],
+      "notes": "Baseline relationship with insufficient current-week direct customer evidence; not new or strengthened."
+    },
+    {
+      "edge_id": "E12",
+      "supplier": "TSMC",
+      "customer": "Apple",
+      "product_or_service": "Advanced-node foundry for Apple A-series and M-series chips",
+      "relationship_type": "foundry_baseline",
+      "evidence_date": "long_term_baseline",
+      "source_type": "official_ir_baseline",
+      "last_seen": "2026-08-17",
+      "changed_this_week": "no_new_weekly_evidence",
+      "status": "baseline_no_new_weekly_evidence",
+      "confidence": "medium",
+      "confidence_reason": "Critical long-term market baseline; no customer-level order, price or capacity change was officially disclosed this week.",
+      "markdown_section_ref": "6.2 E12",
+      "sources": [
+        "https://investor.tsmc.com/english/annual-reports",
+        "https://investor.apple.com/sec-filings/default.aspx"
+      ],
+      "notes": "Baseline relationship with insufficient current-week direct customer evidence; not new or strengthened."
+    },
+    {
+      "edge_id": "E13",
+      "supplier": "NVIDIA",
+      "customer": "Safe Superintelligence",
+      "product_or_service": "Vera Rubin systems, long-term compute access and compute-platform co-development",
+      "relationship_type": "ai_compute_and_investment_partnership",
+      "evidence_date": "2026-07-27",
+      "source_type": "official_joint_release",
+      "last_seen": "2026-08-17",
+      "changed_this_week": "no_new_weekly_evidence",
+      "status": "baseline_no_new_weekly_evidence",
+      "confidence": "high",
+      "confidence_reason": "NVIDIA and SSI previously announced the relationship; no current-week deployment update was found.",
+      "markdown_section_ref": "6.2 E13",
+      "sources": [
+        "https://nvidianews.nvidia.com/news/ilya-sutskevers-safe-superintelligence-inc-and-nvidia-announce-long-term-strategic-partnership"
+      ],
+      "claim_keywords": [
+        "Safe Superintelligence",
+        "Vera Rubin",
+        "order of magnitude"
+      ],
+      "min_keyword_matches": 2,
+      "notes": "Investment amount, system count and deployment location remain undisclosed."
+    },
+    {
+      "edge_id": "E14",
+      "supplier": "Amazon / AWS",
+      "customer": "OpenAI",
+      "product_or_service": "Trainium-based multi-year, multi-gigawatt AI compute commitment",
+      "relationship_type": "custom_ai_chip_cloud_infrastructure",
+      "evidence_date": "2026-07-30",
+      "source_type": "official_financial_release",
+      "last_seen": "2026-08-17",
+      "changed_this_week": "no_new_weekly_evidence",
+      "status": "baseline_no_new_weekly_evidence",
+      "confidence": "high",
+      "confidence_reason": "Amazon Q2 established the Trainium commitment; this week's reverse-direction Daybreak distribution is tracked separately as E20.",
+      "markdown_section_ref": "6.2 E14",
+      "sources": [
+        "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Second-Quarter-Results/default.aspx"
+      ],
+      "claim_keywords": [
+        "OpenAI",
+        "Trainium",
+        "multi-gigawatt"
+      ],
+      "min_keyword_matches": 2,
+      "notes": "Compute execution, power and delivery cadence remain undisclosed."
+    },
+    {
+      "edge_id": "E15",
+      "supplier": "Amazon / AWS",
+      "customer": "Anthropic",
+      "product_or_service": "Trainium-based multi-year, multi-gigawatt AI compute commitment",
+      "relationship_type": "custom_ai_chip_cloud_infrastructure",
+      "evidence_date": "2026-07-30",
+      "source_type": "official_financial_release",
+      "last_seen": "2026-08-17",
+      "changed_this_week": "no_new_weekly_evidence",
+      "status": "baseline_no_new_weekly_evidence",
+      "confidence": "high",
+      "confidence_reason": "Amazon and Anthropic's official materials remain the compute baseline; no current-week execution update was found.",
+      "markdown_section_ref": "6.2 E15",
+      "sources": [
+        "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Second-Quarter-Results/default.aspx"
+      ],
+      "claim_keywords": [
+        "Anthropic",
+        "Trainium",
+        "multi-gigawatt"
+      ],
+      "min_keyword_matches": 2,
+      "notes": "Long-term strategic baseline; execution cadence remains undisclosed."
+    },
+    {
+      "edge_id": "E16",
+      "supplier": "Microsoft",
+      "customer": "Azure and Copilot customers",
+      "product_or_service": "Azure cloud and AI services plus Microsoft 365 Copilot",
+      "relationship_type": "cloud_ai_service",
+      "evidence_date": "2026-07-29",
+      "source_type": "official_financial_release",
+      "last_seen": "2026-08-17",
+      "changed_this_week": "no_new_weekly_evidence",
+      "status": "baseline_no_new_weekly_evidence",
+      "confidence": "high",
+      "confidence_reason": "Microsoft FY2026 Q4 remains the demand baseline; no current-week material update was found.",
+      "markdown_section_ref": "6.2 E16",
+      "sources": [
+        "https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q4/press-release-webcast"
+      ],
+      "claim_keywords": [
+        "Azure",
+        "43%",
+        "Copilot"
+      ],
+      "min_keyword_matches": 2,
+      "notes": "Financial demand signal rather than one new customer order."
+    },
+    {
+      "edge_id": "E17",
+      "supplier": "Samsung Electronics",
+      "customer": "Five unnamed global data-center customers",
+      "product_or_service": "Long-term server-memory and AI-infrastructure chip supply contracts",
+      "relationship_type": "long_term_memory_supply",
+      "evidence_date": "2026-07-30",
+      "source_type": "official_management_statement_and_authoritative_media",
+      "last_seen": "2026-08-17",
+      "changed_this_week": "no_new_weekly_evidence",
+      "status": "baseline_no_new_weekly_evidence_customer_identity_undisclosed",
+      "confidence": "medium",
+      "confidence_reason": "Management previously disclosed the contracts, but customers remain unnamed and no current-week detail was found.",
+      "markdown_section_ref": "6.2 E17",
+      "sources": [
+        "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2026_2Q_conference_eng.pdf",
+        "https://apnews.com/article/samsung-ai-profit-memory-chips-10c2c548a392988862d8c7bd3f6fae05"
+      ],
+      "notes": "Customer names, product mix, amount and term are undisclosed; no named-customer edge is inferred."
+    },
+    {
+      "edge_id": "E18",
+      "supplier": "SK Hynix",
+      "customer": "Around ten unnamed key memory customers",
+      "product_or_service": "HBM4, AI server DRAM, eSSD and long-term supply agreements",
+      "relationship_type": "hbm_memory_long_term_supply",
+      "evidence_date": "2026-07-29",
+      "source_type": "official_company_release",
+      "last_seen": "2026-08-17",
+      "changed_this_week": "no_new_weekly_evidence",
+      "status": "baseline_no_new_weekly_evidence_customers_unnamed",
+      "confidence": "high",
+      "confidence_reason": "SK Hynix previously confirmed the LTAs and HBM4 shipments; no current-week customer identity or allocation update was found.",
+      "markdown_section_ref": "6.2 E18",
+      "sources": [
+        "https://news.skhynix.com/en/q2-2026-business-results/"
+      ],
+      "claim_keywords": [
+        "Long-Term Agreements",
+        "around 10",
+        "HBM4"
+      ],
+      "min_keyword_matches": 2,
+      "notes": "Customer names, allocation volumes, pricing and contract terms remain undisclosed."
+    },
+    {
+      "edge_id": "E19",
+      "supplier": "SK Hynix",
+      "customer": "Sandisk",
+      "product_or_service": "First open High Bandwidth Flash standard specification for AI inference memory tiers",
+      "relationship_type": "memory_standard_co_development",
+      "evidence_date": "2026-08-04",
+      "source_type": "official_joint_development_release",
+      "last_seen": "2026-08-17",
+      "changed_this_week": "no_new_weekly_evidence",
+      "status": "baseline_no_new_weekly_evidence",
+      "confidence": "high",
+      "confidence_reason": "The first HBF specification was released in the prior week; no current-week procurement or implementation milestone was found.",
+      "markdown_section_ref": "6.2 E19",
+      "sources": [
+        "https://news.skhynix.com/en/hbf-at-fms-2026/",
+        "https://news.skhynix.com/sk-hynix-and-sandisk-begin-global-standardization-ofnext-generation-memory-hbf/"
+      ],
+      "claim_keywords": [
+        "Sandisk",
+        "HBF",
+        "512GB",
+        "OCP"
+      ],
+      "min_keyword_matches": 3,
+      "notes": "Joint-standard baseline only; no purchase order or mass-production timetable has been disclosed."
+    },
+    {
+      "edge_id": "E20",
+      "supplier": "OpenAI",
+      "customer": "Amazon / AWS",
+      "product_or_service": "Daybreak models and phased GPT-6 Astra distribution through Amazon Bedrock",
+      "relationship_type": "third_party_model_hosting_and_distribution",
+      "evidence_date": "2026-09-03",
+      "source_type": "official_company_release",
+      "last_seen": "2026-09-07",
+      "changed_this_week": "strengthened",
+      "status": "strengthened_current_week_announced_phased_model_distribution",
+      "confidence": "high",
+      "confidence_reason": "OpenAI's Astra launch explicitly includes Amazon Bedrock in the staged rollout, broadening the prior Daybreak-specific distribution baseline.",
+      "markdown_section_ref": "6.2 E20",
+      "sources": [
+        "https://openai.com/index/gpt-6-astra/",
+        "https://openai.com/index/daybreak-models-are-now-available-on-aws/"
+      ],
+      "claim_keywords": [
+        "GPT",
+        "Astra",
+        "Amazon Bedrock"
+      ],
+      "min_keyword_matches": 3,
+      "notes": "Astra starts with limited organizations and expands over the coming days. OpenAI's announcement does not establish completed Bedrock-wide availability, regional rollout, customer count or AWS revenue; Daybreak remains a separate access-controlled offering."
+    },
+    {
+      "edge_id": "E21",
+      "supplier": "Cerebras",
+      "customer": "OpenAI",
+      "product_or_service": "Cerebras-powered GPT-5.6 Sol Ultrafast inference at up to 750 output tokens per second",
+      "relationship_type": "low_latency_inference_infrastructure",
+      "evidence_date": "2026-08-13",
+      "source_type": "official_company_release",
+      "last_seen": "2026-08-17",
+      "changed_this_week": "no_new_weekly_evidence",
+      "status": "baseline_limited_preview_no_new_weekly_evidence",
+      "confidence": "high",
+      "confidence_reason": "OpenAI officially identified Cerebras as the infrastructure powering the Ultrafast preview.",
+      "markdown_section_ref": "6.2 E21",
+      "sources": [
+        "https://openai.com/index/previewing-ultrafast/",
+        "https://openai.com/index/cerebras-partnership/"
+      ],
+      "claim_keywords": [
+        "Ultrafast",
+        "Cerebras",
+        "750"
+      ],
+      "min_keyword_matches": 2,
+      "notes": "Limited preview for an initial customer group; pricing, allocated capacity and general-availability timing were not disclosed."
+    },
+    {
+      "edge_id": "E22",
+      "supplier": "NVIDIA",
+      "customer": "OpenAI",
+      "product_or_service": "NVIDIA DSX full-stack AI compute for approximately 8 IT-GW at PORTS-Pike",
+      "relationship_type": "ai_compute_infrastructure_supply",
+      "evidence_date": "2026-08-17",
+      "source_type": "official_cross_company_release",
+      "last_seen": "2026-08-24",
+      "changed_this_week": "no_new_weekly_evidence",
+      "status": "baseline_no_new_weekly_evidence_phased_deployment",
+      "confidence": "high",
+      "confidence_reason": "NVIDIA and OpenAI official materials identify OpenAI as the approximately 8 IT-GW customer and NVIDIA DSX as the compute stack.",
+      "markdown_section_ref": "6.2 E22",
+      "sources": [
+        "https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute",
+        "https://openai.com/index/openai-joins-ports-pike-project/"
+      ],
+      "claim_keywords": [
+        "PORTS-Pike",
+        "OpenAI",
+        "DSX"
+      ],
+      "min_keyword_matches": 3,
+      "notes": "The initial 4.25 IT-GW is planned in phases from 2028; the remaining 3.75 IT-GW is subject to an option, and construction, permitting, financing and delivery risks remain."
+    },
+    {
+      "edge_id": "E23",
+      "supplier": "SB Energy",
+      "customer": "OpenAI",
+      "product_or_service": "Land, power and shell capacity for approximately 8 IT-GW under a 20-year lease",
+      "relationship_type": "data_center_land_power_shell_lease",
+      "evidence_date": "2026-08-17",
+      "source_type": "official_cross_company_release",
+      "last_seen": "2026-08-24",
+      "changed_this_week": "no_new_weekly_evidence",
+      "status": "baseline_no_new_weekly_evidence_long_term_lease",
+      "confidence": "high",
+      "confidence_reason": "NVIDIA's official release states that SB Energy will build, own and operate the campus under a 20-year lease to OpenAI; OpenAI confirms the approximately 8 IT-GW agreement.",
+      "markdown_section_ref": "6.2 E23",
+      "sources": [
+        "https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute",
+        "https://openai.com/index/openai-joins-ports-pike-project/"
+      ],
+      "claim_keywords": [
+        "SB Energy",
+        "20-year lease",
+        "OpenAI"
+      ],
+      "min_keyword_matches": 3,
+      "notes": "This is a long-dated infrastructure commitment rather than delivered capacity; project-specific energy, permitting, financing and construction milestones remain execution conditions."
+    },
+    {
+      "edge_id": "E24",
+      "supplier": "NVIDIA",
+      "customer": "Amazon / AWS",
+      "product_or_service": "Two million additional Blackwell Ultra, Rubin and Rubin Ultra GPUs for AWS global infrastructure in 2027-2028",
+      "relationship_type": "ai_gpu_cloud_infrastructure_supply",
+      "evidence_date": "2026-08-26",
+      "source_type": "official_joint_release",
+      "last_seen": "2026-08-31",
+      "changed_this_week": "no_new_weekly_evidence",
+      "status": "baseline_future_phased_deployment_no_new_weekly_evidence",
+      "confidence": "high",
+      "confidence_reason": "AWS and NVIDIA jointly quantified the incremental deployment at two million GPUs across AWS global infrastructure in 2027-2028.",
+      "markdown_section_ref": "6.2 E24",
+      "sources": [
+        "https://press.aboutamazon.com/aws/2026/8/aws-and-nvidia-to-deliver-2-million-additional-gpus-and-next-generation-infrastructure-for-agentic-and-physical-ai"
+      ],
+      "claim_keywords": [
+        "2 million",
+        "AWS",
+        "2027",
+        "2028"
+      ],
+      "min_keyword_matches": 3,
+      "notes": "This strengthens a 16-year relationship rather than creating a new supplier. The GPUs are planned, not delivered; exact model mix, quarterly cadence, sites, purchase economics and utilization remain undisclosed."
+    },
+    {
+      "edge_id": "E25",
+      "supplier": "OpenAI",
+      "customer": "Cursor",
+      "product_or_service": "OpenAI model access in Cursor, with a proposed service shutoff on 2026-11-12",
+      "relationship_type": "third_party_model_distribution",
+      "evidence_date": "2026-08-28",
+      "source_type": "official_supplier_release",
+      "last_seen": "2026-08-31",
+      "changed_this_week": "no_new_weekly_evidence",
+      "status": "baseline_planned_contract_wind_down_risk_continues",
+      "confidence": "high",
+      "confidence_reason": "OpenAI officially notified SpaceX that it intends to wind down the Cursor model contract and proposed November 12, 2026 as the shutoff date.",
+      "markdown_section_ref": "6.2 E25",
+      "sources": [
+        "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/"
+      ],
+      "claim_keywords": [
+        "Cursor",
+        "wind down",
+        "November 12, 2026"
+      ],
+      "min_keyword_matches": 2,
+      "notes": "The shutoff date is proposed and access continues during the notice period. Historical usage, revenue exposure and migration destinations were not disclosed; the prior relationship was absent from last week's graph baseline."
+    },
+    {
+      "edge_id": "E26",
+      "supplier": "Anthropic",
+      "customer": "Microsoft",
+      "product_or_service": "Claude Fable 5.1 in Copilot Cowork, Copilot Studio and GitHub Copilot",
+      "relationship_type": "third_party_model_distribution",
+      "evidence_date": "2026-09-01",
+      "source_type": "official_cross_company_releases",
+      "last_seen": "2026-09-07",
+      "changed_this_week": "strengthened",
+      "status": "strengthened_existing_partnership_newly_recorded",
+      "confidence": "high",
+      "confidence_reason": "Official current-week release names the model and distribution surface; commercial scale is not disclosed.",
+      "markdown_section_ref": "6.2 E26",
+      "sources": [
+        "https://techcommunity.microsoft.com/blog/microsoft365copilotblog/available-today-anthropic-claude-fable-5-1-in-microsoft-copilot/4551974",
+        "https://github.blog/changelog/2026-09-01-claude-fable-5-1-generally-available-in-github-copilot/",
+        "https://www.anthropic.com/claude-fable-and-mythos-5-1"
+      ],
+      "claim_keywords": [
+        "Fable 5.1",
+        "Copilot"
+      ],
+      "min_keyword_matches": 2,
+      "notes": "Existing model partnership strengthened by this week's product rollout; newly recorded in this baseline, not a newly signed partner. Availability is phased and region/admin dependent; default data retention and eligible-enterprise exceptions apply."
+    },
+    {
+      "edge_id": "E27",
+      "supplier": "OpenAI",
+      "customer": "Microsoft",
+      "product_or_service": "GPT-6 Astra phased distribution through Microsoft Azure",
+      "relationship_type": "third_party_model_distribution",
+      "evidence_date": "2026-09-03",
+      "source_type": "official_supplier_release",
+      "last_seen": "2026-09-07",
+      "changed_this_week": "strengthened",
+      "status": "strengthened_existing_partnership_newly_recorded",
+      "confidence": "high",
+      "confidence_reason": "Official current-week release names the model and distribution surface; commercial scale is not disclosed.",
+      "markdown_section_ref": "6.2 E27",
+      "sources": [
+        "https://openai.com/index/gpt-6-astra/"
+      ],
+      "claim_keywords": [
+        "Astra",
+        "Microsoft Azure"
+      ],
+      "min_keyword_matches": 2,
+      "notes": "Existing partnership, newly represented in the graph. OpenAI announces a phased rollout rather than Azure-wide completed availability; specific regions, paid usage and Microsoft revenue are undisclosed."
+    },
+    {
+      "edge_id": "E28",
+      "supplier": "Anthropic",
+      "customer": "Alphabet / Google",
+      "product_or_service": "Claude Fable 5.1 distribution through Google Cloud Agent Platform",
+      "relationship_type": "third_party_model_distribution",
+      "evidence_date": "2026-09-01",
+      "source_type": "official_cross_company_releases",
+      "last_seen": "2026-09-07",
+      "changed_this_week": "strengthened",
+      "status": "strengthened_existing_partnership_newly_recorded",
+      "confidence": "high",
+      "confidence_reason": "Official current-week release names the model and distribution surface; commercial scale is not disclosed.",
+      "markdown_section_ref": "6.2 E28",
+      "sources": [
+        "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+        "https://platform.claude.com/docs/en/models/fable-5-1/overview"
+      ],
+      "claim_keywords": [
+        "Fable 5.1",
+        "Google Cloud"
+      ],
+      "min_keyword_matches": 2,
+      "notes": "Existing cloud partnership strengthened by Fable 5.1 availability. Newly recorded in the baseline, not a new partner, compute purchase or TPU capacity commitment. EFS is planned to roll out later this fall."
+    },
+    {
+      "edge_id": "E29",
+      "supplier": "Amazon / AWS",
+      "customer": "Microsoft",
+      "direction": "bidirectional",
+      "product_or_service": "AWS / Azure 双向云互联公开预览，非已确认采购",
+      "relationship_type": "multicloud_interconnect",
+      "evidence_date": "2026-08-31",
+      "changed_this_week": "new",
+      "status": "announced_joint_public_preview_not_ga_or_procurement",
+      "sources": [
+        "https://aws.amazon.com/blogs/networking-and-content-delivery/aws-and-microsoft-azure-collaborate-to-expand-multicloud-networking/"
+      ],
+      "claim_keywords": [
+        "Azure",
+        "preview"
+      ],
+      "min_keyword_matches": 2,
+      "notes": "两方均提供互联能力，用双向箭头；不表示AWS购买Azure或相反，不把公开预览写成全区域GA。",
+      "claim_ids": [
+        "C51-1"
+      ],
+      "source_type": "official_company_release",
+      "last_seen": "2026-09-07",
+      "confidence": "high",
+      "confidence_reason": "具日期原文确认的是公告、预览或计划；未升级成正式商用/投产。",
+      "markdown_section_ref": "6.2 E29"
+    },
+    {
+      "edge_id": "E30",
+      "supplier": "NVIDIA",
+      "customer": "MediaTek",
+      "product_or_service": "NVLink Fusion 计划采用及多代平台合作，尚非量产交付",
+      "relationship_type": "planned_interconnect_platform_adoption",
+      "evidence_date": "2026-08-31",
+      "changed_this_week": "strengthened",
+      "status": "existing_partnership_newly_recorded_adoption_plan",
+      "sources": [
+        "https://www.nasdaq.com/press-release/nvidia-and-mediatek-deepen-long-standing-partnership-build-ai-edge-cloud-computing",
+        "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-MediaTek-Deepen-Long-Standing-Partnership-to-Build-AI-Edge-to-Cloud-Computing-Platforms/default.aspx"
+      ],
+      "claim_keywords": [
+        "MediaTek",
+        "NVLink Fusion"
+      ],
+      "min_keyword_matches": 2,
+      "notes": "MediaTek计划采用NVLink Fusion；既有伙伴合作强化，本次补入图而非首次合作。35亿美元是已投入可转债，不是采购订单，不画成已交付芯片。",
+      "claim_ids": [
+        "C61-1"
+      ],
+      "source_type": "official_company_release",
+      "last_seen": "2026-09-07",
+      "confidence": "high",
+      "confidence_reason": "具日期原文确认的是公告、预览或计划；未升级成正式商用/投产。",
+      "markdown_section_ref": "6.2 E30"
+    },
+    {
+      "edge_id": "E31",
+      "supplier": "MN8 Energy",
+      "customer": "Alphabet / Google",
+      "product_or_service": "西弗吉尼亚太阳能及储能的未来能源/容量供应安排",
+      "relationship_type": "planned_energy_and_capacity_offtake",
+      "evidence_date": "2026-09-02",
+      "changed_this_week": "new",
+      "status": "announced_future_project_not_operational",
+      "sources": [
+        "https://mn8.com/mn8-energy-google-and-eos-energy-enterprises-bring-advanced-clean-energy-solutions-to-west-virginia/",
+        "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/west-virginia-long-duration-energy-storage/"
+      ],
+      "claim_keywords": [
+        "MN8",
+        "2028",
+        "2030"
+      ],
+      "min_keyword_matches": 2,
+      "notes": "MN8持有并运营项目，Google购买能源与容量；太阳能、锂电、锌基储能分别计划2028/2029/2030年运行。不是Google已建成项目或Google资本支出，不额外推断Eos已交付。",
+      "claim_ids": [
+        "C71-a",
+        "C71-b"
+      ],
+      "source_type": "official_company_release",
+      "last_seen": "2026-09-07",
+      "confidence": "high",
+      "confidence_reason": "具日期原文确认的是公告、预览或计划；未升级成正式商用/投产。",
+      "markdown_section_ref": "6.2 E31"
+    }
+  ],
+  "sources": [
+    "https://www.apple.com/newsroom/2026/07/apple-maps-to-power-navigation-experience-for-ford-uev-platform/",
+    "https://news.microsoft.com/source/2026/07/20/microsoft-expands-azure-ai-and-hpc-infrastructure-with-amd/",
+    "https://news.microsoft.com/source/2026/07/21/microsoft-and-mistral-expand-strategic-partnership-to-give-enterprises-and-regulated-industries-frontier-ai-they-can-control/",
+    "https://abc.xyz/assets/5d/f4/15f364a84a6c9b70a59f9f38d3a1/2026q2-alphabet-earnings-release.pdf",
+    "https://aws.amazon.com/blogs/machine-learning/introducing-claude-fable-5-1-on-aws/",
+    "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+    "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/",
+    "https://nvidianews.nvidia.com/news/sk-group-and-nvidia-expand-strategic-partnership-across-ai-factories-and-next-generation-memory",
+    "https://news.skhynix.com/en/q2-2026-business-results/",
+    "https://news.samsung.com/global/samsung-electronics-and-broadcom-expand-strategic-collaboration-across-memory-and-foundry-technologies",
+    "https://ir.tesla.com/press-release/tesla-releases-second-quarter-2026-financial-results",
+    "https://investor.tsmc.com/english/annual-reports",
+    "https://investor.apple.com/sec-filings/default.aspx",
+    "https://nvidianews.nvidia.com/news/ilya-sutskevers-safe-superintelligence-inc-and-nvidia-announce-long-term-strategic-partnership",
+    "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Second-Quarter-Results/default.aspx",
+    "https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q4/press-release-webcast",
+    "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2026_2Q_conference_eng.pdf",
+    "https://apnews.com/article/samsung-ai-profit-memory-chips-10c2c548a392988862d8c7bd3f6fae05",
+    "https://news.skhynix.com/en/hbf-at-fms-2026/",
+    "https://news.skhynix.com/sk-hynix-and-sandisk-begin-global-standardization-ofnext-generation-memory-hbf/",
+    "https://openai.com/index/gpt-6-astra/",
+    "https://openai.com/index/daybreak-models-are-now-available-on-aws/",
+    "https://openai.com/index/previewing-ultrafast/",
+    "https://openai.com/index/cerebras-partnership/",
+    "https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute",
+    "https://openai.com/index/openai-joins-ports-pike-project/",
+    "https://press.aboutamazon.com/aws/2026/8/aws-and-nvidia-to-deliver-2-million-additional-gpus-and-next-generation-infrastructure-for-agentic-and-physical-ai",
+    "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/",
+    "https://techcommunity.microsoft.com/blog/microsoft365copilotblog/available-today-anthropic-claude-fable-5-1-in-microsoft-copilot/4551974",
+    "https://github.blog/changelog/2026-09-01-claude-fable-5-1-generally-available-in-github-copilot/",
+    "https://platform.claude.com/docs/en/models/fable-5-1/overview",
+    "https://aws.amazon.com/blogs/networking-and-content-delivery/aws-and-microsoft-azure-collaborate-to-expand-multicloud-networking/",
+    "https://www.nasdaq.com/press-release/nvidia-and-mediatek-deepen-long-standing-partnership-build-ai-edge-cloud-computing",
+    "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-MediaTek-Deepen-Long-Standing-Partnership-to-Build-AI-Edge-to-Cloud-Computing-Platforms/default.aspx",
+    "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/west-virginia-long-duration-energy-storage/"
+  ],
+  "confidence": "mixed_high",
+  "notes": "本基线覆盖 2026-08-31 至 2026-09-06（Asia/Shanghai），固定 12 家公司，完整关系 E01-E28。本周变化为 E05、E20、E26-E28，均属既有模型分发合作强化；E26-E28 首次入图源于上期基线遗漏，不是新签伙伴。Astra 的云渠道为官方宣布分批推出，不代表全区域已上线。E24 的远期 GPU 计划与 E25 的拟终止风险继续存在但无本周新增证据。NVIDIA/Hugging Face 签约并购未作为已交割供应关系；Lambda/Nscale 媒体报道未升级为已确认算力订单。未从 TSMC 设备需求、韩美谈判推断具名客户订单。 本期纳入E29-E31，分别保留预览、计划采用和未来投运限制；沿用关系不重新认证历史可得性。"
+}

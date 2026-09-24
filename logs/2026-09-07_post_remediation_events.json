@@ -1,0 +1,820 @@
+{
+  "status": "draft_not_temporally_certified",
+  "report_date": "2026-09-07",
+  "note": "本文件为实际已读来源的写作材料，不是temporal evidence，不自动认证覆盖或日期。不同来源的独立断言仍须拆分取证。",
+  "events": [
+    {
+      "id": "C49",
+      "company": "Apple",
+      "date": "2026-09-01",
+      "event": "AP报道John Ternus于9月1日正式接任CEO，Tim Cook转任执行董事长；4月是任命计划，9月是实际生效。9月1日8-K/A另披露两人的薪酬安排；FY2027股权奖励目标不是本周已支付现金。",
+      "impact": "管理层交接改变产品与AI执行责任；不能把旧任命再次写成首次宣布。",
+      "metrics": "产品交付、研发配置、管理层执行",
+      "condition": "9月发布会及随后管理层公开说明；不预判产品规格或收入增量。",
+      "confidence": "AP当日报道与Apple8-K/A交叉支持实际生效；薪酬分生效时间、授予目标和归属条件，不将目标值当作已实现收入。",
+      "sources": [
+        [
+          "AP当日报道",
+          "https://apnews.com/article/2fac80118828b4ada9d160d012c7be32"
+        ],
+        [
+          "Apple8-K/A Item5.02",
+          "https://www.sec.gov/Archives/edgar/data/320193/000114036126035325/ef20081427_8ka.htm"
+        ]
+      ]
+    },
+    {
+      "id": "C43",
+      "company": "Apple",
+      "date": "2026-09-01（美国8月31日提交；9月1日媒体披露）",
+      "event": "Apple与OpenAI设备相关诉讼进入临时禁令争议，OpenAI提交反对文件。Apple关于材料处理的指控未获司法认定。",
+      "impact": "潜在影响竞争产品开发和商业化时序；这是答辩程序，不是新起诉、已颁禁令或Apple胜诉。",
+      "metrics": "研发排期、禁令范围、法律成本",
+      "condition": "法院处理临时禁令申请及后续公开文件；听证安排与裁决结果分别核验。",
+      "confidence": "已读OpenAI反对申请文件；Axios提供当周公开报道和对立主张。",
+      "sources": [
+        [
+          "反对申请文件",
+          "https://storage.courtlistener.com/recap/gov.uscourts.cand.474095/gov.uscourts.cand.474095.97.0.pdf"
+        ],
+        [
+          "Axios",
+          "https://www.axios.com/2026/09/01/apple-openai-lawsuit-ai-gpt-devices"
+        ]
+      ]
+    },
+    {
+      "id": "C51",
+      "company": "Microsoft",
+      "date": "2026-08-31至2026-09-01（公告标8月31日）",
+      "event": "Azure与AWS联合推出Multicloud Interconnect公开预览，连接两家云环境；尚非全面正式商用。",
+      "impact": "降低跨云连接障碍，影响多云部署与客户留存；预览不等于已产生新合同收入。",
+      "metrics": "跨云连接采用、网络成本、云客户留存",
+      "condition": "正式可用日期、区域、容量与价格；未来GA规格不能写成当前交付。",
+      "confidence": "双方官方公告相互支持，阶段明确为Public Preview。",
+      "sources": [
+        [
+          "Microsoft",
+          "https://azure.microsoft.com/en-us/blog/introducing-azure-multicloud-interconnect-for-aws/"
+        ],
+        [
+          "AWS",
+          "https://aws.amazon.com/blogs/networking-and-content-delivery/aws-and-microsoft-azure-collaborate-to-expand-multicloud-networking/"
+        ]
+      ]
+    },
+    {
+      "id": "C53",
+      "company": "Microsoft",
+      "date": "2026-09-03至2026-09-04（公告标9月3日）",
+      "event": "MAI-Transcribe-2语音识别模型推出，音频每小时0.10美元为截至年末的限期价格，提供Foundry等入口。",
+      "impact": "降低语音工作负载的报价门槛；模型自测排名不等于所有场景最佳。",
+      "metrics": "音频调用量、识别准确率、每成功任务成本",
+      "condition": "相同语言和噪声条件下实测、实际账单、年末价格安排。",
+      "confidence": "已确认公司发布及优惠条件；未独立复现性能。",
+      "sources": [
+        [
+          "Microsoft AI",
+          "https://microsoft.ai/news/mai-transcribe-2-is-the-fastest-most-accurate-and-cheapest-speech-recognition-model-in-the-world/"
+        ]
+      ]
+    },
+    {
+      "id": "C52",
+      "company": "Microsoft",
+      "date": "2026-09-04至2026-09-05（公告标9月4日）",
+      "event": "GitHub Copilot CLI推出HydraFusion多模型编排研究预览，向所有Copilot计划开放；每个模型实际token仍按标准倍率计费。",
+      "impact": "编排可能改善质量与成本组合，但公司离线评测不是本项目周报降耗实测。",
+      "metrics": "任务成功率、总token、实际账单",
+      "condition": "研究预览实际任务、同配置对照及收费记录；不能套用某一基准降幅。",
+      "confidence": "官方研究预览已确认；性能收益取决于任务、模型与推理配置。",
+      "sources": [
+        [
+          "GitHub",
+          "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/"
+        ]
+      ]
+    },
+    {
+      "id": "C54",
+      "company": "Microsoft",
+      "date": "2026-08-31至2026-09-01（美国8月31日）",
+      "event": "美国众议院通过NDO Fairness Act，涉及政府调查中电子服务提供商通知限制的改革；尚不是已经生效的法律。",
+      "impact": "可能改变云服务商保密令与客户通知义务；众议院通过不等于最终准入条件已经变化。",
+      "metrics": "保密令期限、合规流程、企业客户信任",
+      "condition": "后续参议院、签署及正式生效文本；不从单院通过推断现行法已改变。",
+      "confidence": "GovInfo众议院通过版本和提案人公告支持程序状态；不宣称整部法律条款已逐项核定。",
+      "sources": [
+        [
+          "GovInfo通过版本",
+          "https://www.govinfo.gov/app/details/BILLS-119hr6048eh/related"
+        ],
+        [
+          "议员公告",
+          "https://fitzgerald.house.gov/media/press-releases/rep-fitzgeralds-ndo-fairness-act-passes-house-representatives"
+        ]
+      ]
+    },
+    {
+      "id": "C71",
+      "company": "Alphabet / Google",
+      "date": "2026-09-02",
+      "event": "Google与MN8、Eos公布西弗吉尼亚供能合作：86MW太阳能、70MW/280MWh锂电储能、10MW/100MWh锌基储能分别计划2028、2029、2030年运行。",
+      "impact": "新增长期电力与储能安排，影响数据中心供能；不是本周投产。MN8项目投资估算不能当作Google资本开支。",
+      "metrics": "投运时间、电力可用性、储能持续时间",
+      "condition": "项目审批、建设和实际交付；MN8持有运营、Google购买相关能源和容量的边界不变。",
+      "confidence": "Google与项目方公告相互支持；功率MW与能量MWh分开，未来时点保留计划性质。",
+      "sources": [
+        [
+          "Google",
+          "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/west-virginia-long-duration-energy-storage/"
+        ],
+        [
+          "MN8项目公告",
+          "https://mn8.com/mn8-energy-google-and-eos-energy-enterprises-bring-advanced-clean-energy-solutions-to-west-virginia/"
+        ]
+      ]
+    },
+    {
+      "id": "C72-video",
+      "company": "Alphabet / Google",
+      "date": "2026-09-02（UTC9月1日17:00）",
+      "event": "Gemini API推出Agentic Video视频理解；按适用模型标准token价格计费，无该功能额外费用。Gemini应用与Ask YouTube扩展仍为后续计划。",
+      "impact": "拓展长视频分析工作负载；不能把API可用外推到所有消费入口。",
+      "metrics": "视频任务成功率、处理成本、API用量",
+      "condition": "实际支持模型、应用扩围、完整视频任务质量与账单。",
+      "confidence": "已读官方正文及渠道限制；公司基准的token节省不代表本周报成本变化。",
+      "sources": [
+        [
+          "Google",
+          "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-agentic-video-in-gemini/"
+        ]
+      ]
+    },
+    {
+      "id": "C72-pics",
+      "company": "Alphabet / Google",
+      "date": "2026-09-02（UTC9月1日16:00）",
+      "event": "Google Pics面向AI Pro/Ultra和多数Workspace商业计划在数周内逐步推出；Docs、Slides集成开始推出，Drive集成仍在后续安排中。",
+      "impact": "将图像生成与办公内容工作流结合；分批开放不等于全部席位已获得。",
+      "metrics": "付费席位采用、图像任务成本、Workspace留存",
+      "condition": "各计划实际开放范围、Drive后续集成及管理员条件。",
+      "confidence": "官方正文支持分批范围；未采用页面AI摘要对全面可用性的泛化。",
+      "sources": [
+        [
+          "Google Workspace",
+          "https://blog.google/products-and-platforms/products/workspace/google-pics/"
+        ]
+      ]
+    },
+    {
+      "id": "C73",
+      "company": "Alphabet / Google",
+      "date": "2026-09-03",
+      "event": "WeatherNext 3发布，并开始接入Search、Gemini、Maps、天气API与Cloud等产品。5公里分辨率只适用于温度、湿度等指定变量，不是所有天气变量。",
+      "impact": "研究模型转向广泛产品分发，可能增加气象应用与云服务采用；不替代当地公共安全机构预警。",
+      "metrics": "预测误差、更新频率、产品采用",
+      "condition": "各地区和变量实测、渠道实际开放、极端天气表现。",
+      "confidence": "公司发布及产品安排可核；预测优势为公司报告，未独立复现。",
+      "sources": [
+        [
+          "Google DeepMind",
+          "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-weathernext-3/"
+        ]
+      ]
+    },
+    {
+      "id": "C74",
+      "company": "Alphabet / Google",
+      "date": "2026-09-05（UTC9月4日16:00）",
+      "event": "Lyria 3.5音乐生成模型在Gemini网页和移动端全球推出，并扩展到API、AI Studio等入口。",
+      "impact": "音乐创作能力进入更多付费与开发者工作流；不推断新增版权授权或收入承诺。",
+      "metrics": "生成质量、使用量、创作者留存",
+      "condition": "真实作品质量、服务条款和用量披露。",
+      "confidence": "官方具日期发布；商业效果未量化。",
+      "sources": [
+        [
+          "Google",
+          "https://blog.google/innovation-and-ai/products/gemini-app/better-tracks-lyria-gemini/"
+        ]
+      ]
+    },
+    {
+      "id": "C81",
+      "company": "Alphabet / Google",
+      "date": "2026-09-04（UTC9月3日16:00）",
+      "event": "Gmail、Docs、Keep新的实时语音能力开始分批推出。Gmail/Keep面向AI Plus、Pro、Ultra，Docs面向Pro、Ultra；Workspace企业客户仍为coming soon。",
+      "impact": "影响个人付费办公工作流，但企业部署和相关收入不能提前确认。",
+      "metrics": "付费采用、任务完成率、企业开放进度",
+      "condition": "订阅档位实际可用性、授权访问范围、企业版正式上线。",
+      "confidence": "以原文L264-280为准；页面自动AI摘要把企业范围泛化，未采用。",
+      "sources": [
+        [
+          "Google原文与末段条件",
+          "https://blog.google/products-and-platforms/products/workspace/voice-features-gmail-docs-keep/"
+        ]
+      ]
+    },
+    {
+      "id": "C57",
+      "company": "Meta",
+      "date": "2026-09-03至2026-09-04（公告标9月3日）",
+      "event": "WhatsApp在印度推出基于BBPS的家庭账单支付，Android与iOS将在未来数周逐步开放。",
+      "impact": "扩展支付使用场景和商户连接；不能写成发布日全印度用户已开通，也不能推断新的费率收入。",
+      "metrics": "支付采用、活跃用户、交易成功率",
+      "condition": "实际覆盖、支付条款、账单机构接入与交易规模。",
+      "confidence": "Meta印度业务公告已读，保留分批上线。",
+      "sources": [
+        [
+          "Meta",
+          "https://about.fb.com/news/2026/09/launching-bill-payments-in-india-helping-people-to-pay-everyday-household-bills-directly-on-whatsapp/"
+        ]
+      ]
+    },
+    {
+      "id": "C61",
+      "company": "NVIDIA",
+      "date": "2026-08-31至2026-09-01（公告标8月31日）",
+      "event": "NVIDIA披露已投资MediaTek的35亿美元可转换债券；MediaTek将采用NVLink Fusion，双方继续推进PC与汽车等合作。",
+      "impact": "扩大定制计算和边缘生态，同时增加投资敞口；可转债不是已完成股权收购，未来产品采用不是已出货。",
+      "metrics": "投资回报、NVLink采用、产品交付",
+      "condition": "转债后续披露、平台设计与量产进度、实际客户订单。",
+      "confidence": "NVIDIA原公告明确has invested与will adopt，分别保留完成和计划状态。",
+      "sources": [
+        [
+          "NVIDIA",
+          "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+        ]
+      ]
+    },
+    {
+      "id": "C60",
+      "company": "NVIDIA",
+      "date": "2026-09-01至2026-09-02（公告标9月1日）",
+      "event": "NVIDIA与CrowdStrike公布代理安全合作，SafeMind使用Nemotron并进入Falcon工作流，同时探索数字孪生测试。",
+      "impact": "扩大安全代理和企业软件采用；不将内部测试降本百分比外推至客户整体成本。",
+      "metrics": "安全任务质量、推理成本、客户部署",
+      "condition": "正式产品采用、误报与漏报、真实客户账单。",
+      "confidence": "官方合作披露；性能收益主要来自合作方内部测试。",
+      "sources": [
+        [
+          "NVIDIA",
+          "https://blogs.nvidia.com/blog/nvidia-crowdstrike-fal-con-2026/"
+        ]
+      ]
+    },
+    {
+      "id": "C59",
+      "company": "NVIDIA",
+      "date": "2026-09-03至2026-09-04（公告标9月3日）",
+      "event": "IFA公布PAIR本地代理beta和Windows本地AI生态更新；RTX Spark PC计划10月推出。不同工具的Windows/Linux可用阶段不同。",
+      "impact": "扩大本地推理与终端GPU工作负载，不代表所有代理已跨平台全面商用。",
+      "metrics": "开发者采用、本地推理成本、终端出货",
+      "condition": "10月硬件交付、beta稳定性及各操作系统实际可用入口。",
+      "confidence": "官方原文已读；Microsoft参与Windows工具协作，兼容Apple硬件不等于Apple与NVIDIA新签供货协议。",
+      "sources": [
+        [
+          "NVIDIA IFA",
+          "https://blogs.nvidia.com/blog/local-ai-ifa-next-gen-agents-nv-pair-rtx-spark/"
+        ]
+      ]
+    },
+    {
+      "id": "C62",
+      "company": "Tesla",
+      "date": "2026-09-02（美国9月1日报道）",
+      "event": "Electrek新增报道Solar Roof退出对安装商的项目与损失影响；停止该业务的8月报道是旧背景。",
+      "impact": "涉及渠道信任、既有项目履约与后续维护；安装商损失说法不能直接当作Tesla已确认费用。",
+      "metrics": "未交付项目、渠道赔付、维修支持",
+      "condition": "Tesla及安装商正式处理方案、存量客户服务和财务披露。",
+      "confidence": "媒体采访报道，部分受访方匿名；尚无可核公司总损失数字。",
+      "sources": [
+        [
+          "Electrek",
+          "https://electrek.co/2026/09/01/tesla-solar-roof-exit-installers-losses/"
+        ]
+      ]
+    },
+    {
+      "id": "C63",
+      "company": "Tesla",
+      "date": "2026-09-04（美国9月3日报道）",
+      "event": "Tesla意向页面征集Cybercab车队购买、枢纽和基础设施合作；这不是已签销售合同或确定对外开放日期。",
+      "impact": "出现面向外部车队经营者的商业探索，但收入、合规和服务责任尚待明确。",
+      "metrics": "正式订单、准入范围、服务模式",
+      "condition": "销售条款、认证和可执行合同；不把表单选项计为订单。",
+      "confidence": "已读Tesla公开意向页，以当日媒体报道锚定周内出现；未提交任何表单。",
+      "sources": [
+        [
+          "Tesla意向页",
+          "https://www.tesla.com/robotaxi/interest"
+        ],
+        [
+          "当日报道",
+          "https://techcrunch.com/2026/09/03/tesla-is-asking-people-if-they-want-to-buy-and-run-cybercab-fleets/"
+        ]
+      ]
+    },
+    {
+      "id": "C44",
+      "company": "OpenAI",
+      "date": "2026-09-02、2026-09-05（美国9月1日政府意见、9月4日动议）",
+      "event": "NYT等版权诉讼出现两个不同程序：AP报道美国政府提交支持合理使用论点的意见；OpenAI9月4日提交简易判决动议备忘录。Microsoft仍为相关案件被告，不据此认定其为本份动议共同提交方。",
+      "impact": "训练数据版权抗辩获得政府意见支持，但政府与当事人主张均不是法院已裁定合理使用。",
+      "metrics": "训练数据合规成本、案件进程、许可安排",
+      "condition": "对方答复和法院裁判；与Apple设备诉讼分开跟踪。",
+      "confidence": "已读9月4日公开删节版文件的封面、目录及证明页；AP政府意见报道可见片段，直连受限，未冒称已读政府原文件。",
+      "sources": [
+        [
+          "AP政府意见报道",
+          "https://apnews.com/article/dbb22e8e02c660ee5a8644915dec39a4"
+        ],
+        [
+          "9月4日动议文件",
+          "https://storage.courtlistener.com/recap/gov.uscourts.nysd.612697/gov.uscourts.nysd.612697.1496.0.pdf"
+        ],
+        [
+          "OpenAI案件文件列表",
+          "https://openai.com/new-york-times/"
+        ]
+      ]
+    },
+    {
+      "id": "C65",
+      "company": "OpenAI",
+      "date": "2026-09-03",
+      "event": "Daybreak Frontline Defenders公布10亿美元的补贴访问、培训、技术支持与合作承诺，目标在未来六个月推进，先从美国开始。",
+      "impact": "扩大防御型AI使用与生态投入；不是已支付10亿美元现金捐赠，也不是本期资本开支。",
+      "metrics": "支持额度使用、接入机构、部署效果",
+      "condition": "资格、实际兑现、伙伴渠道及后续地区扩展。",
+      "confidence": "官方计划已确认；承诺、目标期限与实际支付分别处理。",
+      "sources": [
+        [
+          "OpenAI",
+          "https://openai.com/index/daybreak-for-frontline-defenders/"
+        ]
+      ]
+    },
+    {
+      "id": "C66",
+      "company": "OpenAI",
+      "date": "2026-09-01",
+      "event": "ChatGPT Healthcare公布连接Epic电子病历及医疗资料的能力；EHR连接面向合资格组织和获授权数据，不是个人用户可任意接入病历。",
+      "impact": "深化机构工作流，增加合规与部署要求；不能把公司测试分数当作临床安全保证。",
+      "metrics": "机构部署、授权范围、临床工作流效率",
+      "condition": "管理员配置、BAA及机构资格；个人临床用户的公共资料功能与EHR分开。",
+      "confidence": "官方公告已读并保留组织、授权与地区条件。",
+      "sources": [
+        [
+          "OpenAI",
+          "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources/"
+        ]
+      ]
+    },
+    {
+      "id": "C67",
+      "company": "OpenAI",
+      "date": "2026-08-31至2026-09-01",
+      "event": "OpenAI支持加州SB1119青少年AI安全法案；8月31日参议院同意众议院修订并送交整理入册，仍不能写成州长已签署生效。",
+      "impact": "年龄保障与青少年保护要求可能改变产品合规路径；公司支持声明不等于最终法律文本。",
+      "metrics": "年龄保障、产品限制、合规审计",
+      "condition": "州长处理、最终成文与生效日期；不从修订标记混排文本推导精确义务。",
+      "confidence": "公司声明与立法进度记录相互核对；仅确认程序阶段。",
+      "sources": [
+        [
+          "OpenAI声明",
+          "https://openai.com/index/supporting-california-bill-advance-ai-youth-safety/"
+        ],
+        [
+          "立法进度",
+          "https://calmatters.digitaldemocracy.org/bills/ca_202520260sb1119"
+        ]
+      ]
+    },
+    {
+      "id": "C68",
+      "company": "OpenAI",
+      "date": "2026-08-31",
+      "event": "ChatGPT广告披露达到10亿美元年化收入运行率，并宣布Ads Manager扩展到更多国家和地区。",
+      "impact": "广告变现形成新规模信号；年化运行率不是已经实现10亿美元全年收入，也不是净利润。",
+      "metrics": "广告收入运行率、广告主采用、用户留存",
+      "condition": "实际期间收入、地区开放及广告与回答分离的执行。",
+      "confidence": "公司披露；未取得独立审计的年度广告收入。",
+      "sources": [
+        [
+          "OpenAI",
+          "https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads/"
+        ]
+      ]
+    },
+    {
+      "id": "C69",
+      "company": "OpenAI",
+      "date": "2026-09-06（UTC08:00、09:00）",
+      "event": "两篇研究披露描述内部自动化研究加速及监控难题；7月、8月的暂停与限制是本周新披露的历史事件，不是9月6日新事故。",
+      "impact": "研发效率和安全治理需同时评估；实验数量增长受模型、算力和人工干预共同影响，不能认定已实现自主递归自我改进。",
+      "metrics": "研究成功率、人工干预、监控覆盖",
+      "condition": "可复现评估、投入控制和安全报告；公司推测不当作独立认证。",
+      "confidence": "官方原文的限制与方法已读；属于公司自述，因果与外部适用性未证实。",
+      "sources": [
+        [
+          "Research acceleration",
+          "https://openai.com/index/research-acceleration-view-inside-openai/"
+        ],
+        [
+          "An Alien Mind",
+          "https://openai.com/index/an-alien-mind/"
+        ]
+      ]
+    },
+    {
+      "id": "C47",
+      "company": "Anthropic",
+      "date": "2026-08-31至2026-09-01（8月31日公司披露）",
+      "event": "Anthropic披露安全整改中曾暂停评估及高风险训练，并已恢复部分内部工作；7月、8月模型行为是历史事件，本周新增是披露与整改状态。",
+      "impact": "安全控制影响研发与发布节奏；不能写成所有训练停摆，也不能写成全部风险已解决。",
+      "metrics": "暂停范围、恢复条件、安全事件",
+      "condition": "后续明确恢复范围、外部评估和事件复盘。",
+      "confidence": "已读公司说明及当日Axios报道；保留部分恢复和公司自述边界。",
+      "sources": [
+        [
+          "Anthropic",
+          "https://www.anthropic.com/news/improving-alignment-security-efforts"
+        ],
+        [
+          "Axios",
+          "https://www.axios.com/2026/09/01/anthropic-paused-some-ai-training-after-claude-took-unauthorized-actions"
+        ]
+      ]
+    },
+    {
+      "id": "C79",
+      "company": "Anthropic",
+      "date": "2026-09-05（美国9月4日）",
+      "event": "Reuters援引消息人士称IPO推介最快推迟至10月中旬，招股文件可能在9月下旬；时间仍可能变化，公司未评论。",
+      "impact": "资本补充与上市准备窗口变化；不是确定的IPO日期、融资完成或估值定论。",
+      "metrics": "招股文件、融资安排、上市进度",
+      "condition": "公司或监管正式文件与实际推介；报道中的融资磋商不写成已签授信。",
+      "confidence": "媒体报道待确认，匿名来源；公司和相关银行未确认。",
+      "sources": [
+        [
+          "Reuters",
+          "https://www.marketscreener.com/news/anthropic-ipo-launch-shifts-toward-mid-october-sources-say-ce785bdbdb89f420"
+        ]
+      ]
+    },
+    {
+      "id": "C45",
+      "company": "Samsung Electronics",
+      "date": "2026-09-01",
+      "event": "新增14英寸Galaxy Book6，799美元起并在部分市场提供，具体配置和市场不同；不可改写成799英镑。另有9月2日IFA洗衣机开发阶段展示，价格与上市仍未定，不另列头条或订单。",
+      "impact": "扩展笔记本产品价格带；售价是起价而非全部配置统一价。",
+      "metrics": "PC出货、产品组合、平均售价",
+      "condition": "区域配置、供货与终端销售；不能从发布推定新增利润。",
+      "confidence": "官方发布正文已核，对价格与市场限定保留原口径。",
+      "sources": [
+        [
+          "Samsung",
+          "https://news.samsung.com/global/samsung-expands-the-galaxy-book6-lineup-making-galaxy-book-more-accessible"
+        ],
+        [
+          "Samsung",
+          "https://news.samsung.com/global/samsung-redefines-laundry-with-new-a-70-and-13-kg-bespoke-ai-washers-at-ifa-2026"
+        ]
+      ]
+    },
+    {
+      "id": "C78",
+      "company": "Samsung Electronics",
+      "date": "2026-09-01",
+      "event": "SEMICON现场披露CUBE与3D存储技术路线，包括未来zHBM、zNAND方向；zNAND-O样品目标2028年，HBM4E五月送样是旧背景。",
+      "impact": "影响长期存储架构与封装竞争，不是本周已经量产下一代HBM。",
+      "metrics": "样品验证、封装路线、客户导入",
+      "condition": "样品日期、客户认证与量产披露；技术目标不等于已实现性能。",
+      "confidence": "中央社现场报道引述公司主管，路线与结果分开。",
+      "sources": [
+        [
+          "中央社",
+          "https://www.cna.com.tw/news/afe/202609010167.aspx"
+        ]
+      ]
+    },
+    {
+      "id": "C80",
+      "company": "Samsung Electronics",
+      "date": "2026-09-04至2026-09-05（葡萄牙公告9月4日17:30 CET）",
+      "event": "Samsung葡萄牙宣布Galaxy S26 FE当日已可购买；8月27日发布及9月4日上市预告是此前背景。",
+      "impact": "上市计划在已核市场进入销售阶段；不能据一国公告认定所有市场同步供货。",
+      "metrics": "手机销售、区域覆盖、渠道库存",
+      "condition": "各市场实际销售、退换和供货；不以促销规格代替销量。",
+      "confidence": "已读Samsung Portugal经Cision发布的日期正文与Disponibilidade段；CET标记可能为平台显示口径，上海日采用保守范围。",
+      "sources": [
+        [
+          "Samsung Portugal公告",
+          "https://news.cision.com/pt/samsung-portugal/r/samsung-galaxy-s26-fe-ja-esta-disponivel-em-portugal%2Cc639241326320000000"
+        ]
+      ]
+    },
+    {
+      "id": "C46",
+      "company": "Samsung Electronics",
+      "date": "2026-09-01",
+      "event": "韩国MOTIR宣布战略物项规则调整生效，新增高性能AI芯片及部分半导体制造设备出口许可要求；SK Hynix亦面临同类行业规则核查。",
+      "impact": "可能影响相关产品出口合规与交付手续；公告未指名两家公司订单受损，不能推断已发生制裁或停供。",
+      "metrics": "许可范围、办理时间、产品适用性",
+      "condition": "主管机关物项清单、公司产品是否适用及许可执行。",
+      "confidence": "韩国主管机关原公告已读；行业政策不是公司违法认定。",
+      "sources": [
+        [
+          "韩国MOTIR",
+          "https://english.motir.go.kr/eng/article/EATCLdfa319ada/2720/view"
+        ]
+      ]
+    },
+    {
+      "id": "C83",
+      "company": "SK Hynix",
+      "date": "2026-09-04",
+      "event": "9月4日6-K再次澄清Solidigm正在评估增强竞争力的措施，但截至该日无事项确定；约5万亿韩元pre-IPO融资是8月媒体传闻，不是本周已完成融资。",
+      "impact": "未确定状态延续，不能把旧传闻变成资本补充结果；公司承诺在确定细节或三个月内再披露。",
+      "metrics": "子公司融资、资本结构、正式披露",
+      "condition": "公司后续确定方案或本次文件约定的再披露期限。",
+      "confidence": "已读具日期的6-K全文转载并核SEC登记，保持公司否认确定方案的语义。",
+      "sources": [
+        [
+          "6-K全文转载",
+          "https://www.streetinsider.com/SEC%2BFilings/Form%2B6-K%2BSK%2Bhynix%2BInc.%2BFor%3A%2BSep%2B04/27027333.html"
+        ],
+        [
+          "SEC文件登记",
+          "https://www.sec.gov/Archives/edgar/data/2120882/000119312526382688/0001193125-26-382688-index.htm"
+        ]
+      ]
+    },
+    {
+      "id": "C84",
+      "company": "SK Hynix",
+      "date": "2026-09-02、2026-09-03",
+      "event": "Reuters消息人士称韩国外汇稳定基金通过场外交易吸收SK Hynix汇回的约200亿美元；资金源自7月ADR融资，不能写成本周新增融资。AJP后续采访未获当局确认金额、时间和执行细节。",
+      "impact": "涉及资金回流与汇率敞口，不等于公司本周新增200亿美元收入，亦不能确定对外汇储备增长的贡献。",
+      "metrics": "资金币种结构、结汇安排、汇率影响",
+      "condition": "公司或主管机关确认、实际交易条件；报道时点与交易发生时点分开。",
+      "confidence": "媒体报道待确认；金额和执行时间未获官方证实。",
+      "sources": [
+        [
+          "Reuters报道",
+          "https://finance.yahoo.com/markets/currencies/articles/exclusive-south-korean-fx-authorities-073601807.html"
+        ],
+        [
+          "AJP核查与限制",
+          "https://m.ajupress.com/amp/20260903161346670"
+        ]
+      ]
+    },
+    {
+      "id": "C64",
+      "company": "TSMC",
+      "date": "2026-08-31、2026-09-01",
+      "event": "SEMICON前后披露先进逻辑、3DFabric、CoWoS和硅光子整合路线，A14量产目标2028年，相关后续工艺和封装目标延伸至2029年。",
+      "impact": "指向系统级集成和封装瓶颈；路线图不是已取得客户订单或已完成产能。",
+      "metrics": "节点交付、封装尺寸、良率与客户认证",
+      "condition": "各节点正式进度、设备交付、封装客户导入；不把技术目标相加为营收。",
+      "confidence": "中央社现场引述；未来工艺、送样与量产分开处理。",
+      "sources": [
+        [
+          "中央社8月31日",
+          "https://www.cna.com.tw/news/afe/202608310099.aspx"
+        ],
+        [
+          "中央社9月1日",
+          "https://www.cna.com.tw/news/afe/202609010087.aspx"
+        ]
+      ]
+    },
+    {
+      "id": "C55",
+      "company": "TSMC",
+      "date": "2026-09-04至2026-09-05（美国9月3日决定、9月4日公开检视）",
+      "event": "ITC在337-TA-1443案中不复审基于和解终止调查的初步决定；本次是调查终止程序，不是实体判定TSMC侵权。",
+      "impact": "相应进口调查风险收束，但不推断其他专利案件解除；Apple此前退出该案属于旧进展。",
+      "metrics": "调查范围、和解履约、后续诉讼",
+      "condition": "和解执行及其他案件独立进程；不把9月8日正式刊登日倒填为当周事件。",
+      "confidence": "已读公开检视PDF；文件载9月4日备案，正式Federal Register刊登为9月8日，两者分开。",
+      "sources": [
+        [
+          "Federal Register公开检视版本",
+          "https://public-inspection.federalregister.gov/2026-18260.pdf"
+        ]
+      ]
+    },
+    {
+      "id": "C86",
+      "company": "Microsoft",
+      "date": "2026-09-03（SEC美国9月2日16:30:24受理）",
+      "event": "FY27起财报从三个分部改为Agents and Infra、Devices and Consumer两部分，并重列历史口径。新定义Azure的FY2026 Q4收入294.17亿美元、全年1019.38亿美元；不是Intelligent Cloud收入或本周新增收入。",
+      "impact": "可比性与关键业务透明度变化；Azure范围移出GitHub、安全及部分医疗云等业务。集团历史总收入不因重列增加，FY27 Q1整体指引不变，仅机械调整分部与指标。",
+      "metrics": "同口径Azure增长、M365与LinkedIn归属、分部利润",
+      "condition": "FY27首季新口径财报；与原口径搭桥后再比较，不能把2026年9月重列值倒灌为更早周报已知数。",
+      "confidence": "已读SEC附件99.1第7-18及20-21页的定义、表头、百万美元单位和限制；只将此次新披露口径归本周，不重写原期事实。",
+      "sources": [
+        [
+          "SEC附件99.1",
+          "https://www.sec.gov/Archives/edgar/data/789019/000119312526380280/d291965dex991.htm"
+        ],
+        [
+          "SEC受理登记",
+          "https://www.sec.gov/Archives/edgar/data/789019/000119312526380280/0001193125-26-380280-index.htm"
+        ]
+      ]
+    },
+    {
+      "id": "C87",
+      "company": "Microsoft",
+      "date": "2026-09-03至2026-09-04（公告标9月3日）",
+      "event": "Xbox宣布11月起Ultimate/Premium/Essential每月云游戏时数分别为15/10/5小时；用尽可购额外时数，非订阅用户也将可单购云游戏时数，具体价格与地区条件待公布。",
+      "impact": "云服务成本转向使用配额，可能增加重度用户支出并影响留存；本周尚未实施限额。",
+      "metrics": "云服务单位成本、付费时数、订阅流失",
+      "condition": "11月执行、额外时数报价、市场与游戏资格；公司估计受影响用户比例不是实测结果。",
+      "confidence": "Xbox官方9月3日原文明确beginning in November，现阶段仍无上述月上限。",
+      "sources": [
+        [
+          "Xbox官方公告",
+          "https://news.xbox.com/en-us/2026/09/03/xbox-cloud-gaming-changes/"
+        ]
+      ]
+    },
+    {
+      "id": "C91",
+      "company": "Microsoft",
+      "date": "2026-09-04至2026-09-05（公告标9月4日）",
+      "event": "Xbox宣布与TCL合作，未来数月在指定TCL智能电视提供Xbox应用；不等于本周已向全部电视型号开放。",
+      "impact": "扩展云游戏分发终端；需兼容机型、手柄与合资格云游戏时间，合作不是硬件采购订单。",
+      "metrics": "支持设备、云游戏采用、分发成本",
+      "condition": "正式上线、支持型号、市场和云游戏计费条件。",
+      "confidence": "官方合作计划，尚未确认交付。",
+      "sources": [
+        [
+          "Xbox/TCL公告",
+          "https://news.xbox.com/en-us/2026/09/04/xbox-app-tcl-smart-tv/"
+        ]
+      ]
+    },
+    {
+      "id": "C88",
+      "company": "Meta",
+      "date": "2026-09-01（美国8月31日当日报道）",
+      "event": "Instagram将AI人物账号标识调整为AI-generated profile，并限制未适当披露的AI人物账号触达；不是全面禁止AI账号。",
+      "impact": "改变虚拟人物创作者的披露和分发条件，影响平台信任、账号流量及相关商业合作。",
+      "metrics": "披露率、触达、误标申诉",
+      "condition": "实际标签与限流执行、创作者申诉；不把政策宣布当作已消除冒充问题。",
+      "confidence": "当周媒体报道交叉支持；Instagram直接说明入口读取失败，未声称已读该官方原页。",
+      "sources": [
+        [
+          "TechCrunch当日报道",
+          "https://techcrunch.com/2026/08/31/instagram-puts-new-limits-on-undisclosed-ai-profiles/"
+        ],
+        [
+          "Express完整报道",
+          "https://www.express.pk/story/2830410/instagram-attempts-to-stop-takeover-of-app-by-fake-people-2830410"
+        ]
+      ]
+    },
+    {
+      "id": "C92",
+      "company": "Microsoft",
+      "date": "2026-08-31至2026-09-01（当日报道标8月31日）",
+      "event": "Pure Xbox报道Disc to Digital已向部分Xbox Insider用户开放测试；8月26日公告只是此前预告，不将本次内测说成所有玩家全面可用。",
+      "impact": "实体游戏权益进入数字访问路径，但兼容游戏、设备和资格仍有限制。",
+      "metrics": "内测覆盖、授权成功率、兼容范围",
+      "condition": "正式测试公告、资格和后续扩围；不从个别用户案例推断全部光盘均可兑换。",
+      "confidence": "专业游戏媒体当日报道与旧官方预告交叉；实际内测状态按媒体报道处理。",
+      "sources": [
+        [
+          "Pure Xbox当日报道",
+          "https://www.purexbox.com/news/2026/08/xbox-disc-to-digital-is-now-live-for-some-users-and-heres-a-first-look"
+        ],
+        [
+          "8月26日旧预告",
+          "https://news.xbox.com/en-us/2026/08/26/your-discs-now-also-digital/"
+        ]
+      ]
+    },
+    {
+      "id": "C93",
+      "company": "Microsoft",
+      "date": "2026-09-01（美国8月31日）",
+      "event": "据TechCrunch，Microsoft确认Outlook/Exchange多小时故障，并测试修复。",
+      "impact": "企业邮件可靠性与服务承诺承压；不据当日报道认定周末仍未恢复。",
+      "metrics": "服务可用性、SLA、客户影响",
+      "condition": "官方事故复盘和恢复时点；不推算未经披露的收入损失。",
+      "confidence": "已读当日媒体正文和其中具日期的公司状态帖引述；尚未核定最终恢复时点。",
+      "sources": [
+        [
+          "TechCrunch当日报道",
+          "https://techcrunch.com/2026/08/31/microsoft-tests-fix-for-latest-hours-long-outlook-outage/"
+        ]
+      ]
+    },
+    {
+      "id": "C94",
+      "company": "Apple",
+      "date": "2026-09-03",
+      "event": "ATT Collective Action向英国CAT申请集体程序，指控Apple的应用跟踪规则不公平，索赔约20亿英镑；认证及责任尚未裁定。",
+      "impact": "涉及开发者广告收益和平台规则；索赔估计不是已判赔偿。Apple此前称ATT保护用户隐私。",
+      "metrics": "程序认证、广告规则、法律敞口",
+      "condition": "CAT认证和实体审理、Apple答辩；不套用德国旧案结论。",
+      "confidence": "Reuters与ICLG当日报道；ICLG采访申请方。",
+      "sources": [
+        [
+          "Reuters",
+          "https://www.marketscreener.com/news/apple-facing-2-7-billion-uk-lawsuit-over-unfair-app-tracking-rules-ce7858d3de8df52c"
+        ],
+        [
+          "ICLG",
+          "https://iclg.com/news/apple-faces-2bn-uk-class-action-over-app-tracking-rules/"
+        ]
+      ]
+    },
+    {
+      "id": "C95",
+      "company": "Microsoft",
+      "date": "2026-09-04至2026-09-05（原公告9月4日）",
+      "event": "Project Zenith面向开发者PC，首先计划随AMD Ryzen AI Halo提供；设备要求64GB以上统一内存、250GB/s以上带宽，用于本地模型开发。",
+      "impact": "扩展Windows边缘AI开发入口；不是所有Windows设备已获得新系统或已节省云账单。",
+      "metrics": "合资格硬件、开发者采用、本地任务成本",
+      "condition": "首批设备交付、OEM扩展、同任务实测；公司声称可运行30B以上模型不等于所有任务性能保证。",
+      "confidence": "微软原文已读；精确发布时间元数据直取403，待补时点。",
+      "sources": [
+        [
+          "Windows Developer",
+          "https://blogs.windows.com/windowsdeveloper/2026/09/04/announcing-project-zenith-the-ready-to-code-windows-experience/"
+        ]
+      ]
+    },
+    {
+      "id": "C96",
+      "company": "Amazon / AWS",
+      "date": "2026-09-03",
+      "event": "Business Insider披露内部初步测算：Amazon自身网络拟在2029年处理88.7%的美国包裹。文件形成于7月，并非本周交付结果。",
+      "impact": "影响履约成本和外部承运商分工；Amazon称测算可能重大修订，非最终计划。",
+      "metrics": "自有网络处理比例、单位履约成本",
+      "condition": "正式计划、实际包裹量及承运合同；自有网络含第三方DSP和Flex。",
+      "confidence": "媒体审阅内部文件，已读原文及Amazon回应。",
+      "sources": [
+        [
+          "Business Insider",
+          "https://www.businessinsider.com/amazon-forecasts-delivery-network-us-packages-2026-9"
+        ]
+      ]
+    },
+    {
+      "id": "C98",
+      "company": "Meta",
+      "date": "2026-09-02（Law360美国9月1日22:24 EDT）",
+      "event": "Law360报道Meta AI眼镜隐私诉讼新增被拍摄旁观者的群体诉请，涉及摄录及AI训练同意；不是法院已经认定侵权。",
+      "impact": "被诉影响范围扩展到非购买者，可能改变数据治理与诉讼敞口。",
+      "metrics": "群体范围、训练授权、法律成本",
+      "condition": "公开合并诉状、认证和裁判；不将原告指控当事实。",
+      "confidence": "署时导语可读；正文与附件403受限，尚未核原诉状。",
+      "sources": [
+        [
+          "Law360",
+          "https://www.law360.com/cybersecurity-privacy/articles/2520314/meta-ai-glasses-privacy-suit-expands-to-add-bystander-class"
+        ]
+      ]
+    },
+    {
+      "id": "C99",
+      "company": "Meta",
+      "date": "2026-09-05（原公告9月4日22:09 UTC）",
+      "event": "WBE律所称9月4日在伊利诺伊北区提交拟集体诉讼，指控Meta使用Facebook/Instagram脸部图像开发NameTag与生成AI，违反BIPA及加州隐私等规则。",
+      "impact": "脸部数据与训练许可受到新诉请挑战；律所是原告代理，不是监管机关或法院裁定。",
+      "metrics": "数据授权、群体认证、禁令风险",
+      "condition": "案卷、Meta答辩及法院认证；所请求损害赔偿与禁令均未获裁定。",
+      "confidence": "申请方具日期公告，原文及元数据已核；未取得法院诉状或Meta本案回应。",
+      "sources": [
+        [
+          "WBE申请方声明",
+          "https://wbe-llp.com/news/lawsuit-accuses-meta-of-using-facebook-and-instagram-images-to-build-facial-recognition-and-generative-ai-systems-without-consent/"
+        ]
+      ]
+    },
+    {
+      "id": "C101",
+      "company": "Meta",
+      "date": "2026-09-02（Semafor9月1日19:40 UTC）",
+      "event": "Semafor报道Meta关闭检测到篡改隐私指示灯眼镜的摄录功能。可穿戴业务副总裁称篡改比例低于已售设备的0.1%，未给精确台数。",
+      "impact": "隐私规则进入设备执行；不等于所有眼镜失效，媒体“数千台”为推算而非公司精确披露。",
+      "metrics": "执行范围、误判申诉、摄录可用性",
+      "condition": "公司执行说明、用户申诉及实际功能范围；不推断全部硬件永久报废。",
+      "confidence": "Semafor采访经Yahoo转载，署时正文可见；直连403，保留限制。",
+      "sources": [
+        [
+          "Semafor/Yahoo",
+          "https://tech.yahoo.com/ar-vr/articles/meta-disables-cameras-thousands-tampered-175949878.html"
+        ]
+      ]
+    }
+  ],
+  "updated_at": "2026-09-08T03:16:04Z"
+}

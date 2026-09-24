@@ -1005,8 +1005,8 @@
       "x": 1800,
       "y": 2420,
       "width": 800,
-      "height": 440,
-      "text": "## 跨公司关系索引\n\n**PX77** · Anthropic → Microsoft\nClaude Fable 5.1 接入 Copilot Cowork 与 Copilot Studio\n\n**PX78** · Anthropic → Microsoft\nClaude Fable 5.1 接入 GitHub Copilot\n\n**PX79** · OpenAI → Microsoft\nGPT-6 Astra 通过 Microsoft Azure 分批推出\n\n**PX80** · Anthropic → Alphabet / Google\nClaude Fable 5.1 通过 Google Cloud 分发\n\n**PX81** · Amazon / AWS → Microsoft\nAWS与Azure双向Multicloud Interconnect公开预览",
+      "height": 370,
+      "text": "## 跨公司关系索引\n\n**PX77** · Anthropic → Microsoft\nClaude Fable 5.1 接入 Copilot Cowork 与 Copilot Studio\n\n**PX78** · Anthropic → Microsoft\nClaude Fable 5.1 接入 GitHub Copilot\n\n**PX79** · OpenAI → Microsoft\nGPT-6 Astra 通过 Microsoft Azure 分批推出\n\n**PX80** · Anthropic → Alphabet / Google\nClaude Fable 5.1 通过 Google Cloud 分发",
       "color": "#334155"
     }
   ],
@@ -1750,17 +1750,6 @@
       "toEnd": "arrow",
       "color": "#22c55e",
       "label": "PX80"
-    },
-    {
-      "id": "8524ef1dfb85d24f",
-      "fromNode": "5ab1990f010c0429",
-      "fromSide": "left",
-      "toNode": "bc481558d63f00a9",
-      "toSide": "right",
-      "toEnd": "arrow",
-      "color": "#22c55e",
-      "label": "PX81",
-      "fromEnd": "arrow"
     }
   ]
 }

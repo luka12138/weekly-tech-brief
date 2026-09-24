@@ -1,0 +1,2912 @@
+{
+  "schema_version": 1,
+  "report_date": "2026-09-07",
+  "cutoff_exclusive": "2026-09-07T00:00:00+08:00",
+  "status": "draft",
+  "report_sha256": "70effa78024cf952fcda2d5cee073130defcb001588756d8eeeb60c4ffb55d70",
+  "product_graph_sha256": "80ea2dab6d6d3636d988c8aa7a75a37bb693fd5ba22d1b3260ffd9a8ed9507da",
+  "skill_sha256": "7c910f8c0d73530813c10aa7e0cdd5ca25b90b87e5abbcb8e5c807451aa37e88",
+  "note": "9/8研究中途转整改。此处哈希绑定尚未替换的旧展示稿，不是新稿认证。先保存已观察候选，checks/conclusions/watchlist尚未按新契约完成，禁止补造ready。本期原42条claim也未全部迁入候选账。实际查询见discovery_receipts，精确阅读时间须从工具记录恢复。 续跑新增检查的checked_at为本次证据记录复核时刻，不冒充最初网页抓取时刻。仍有首轮映射缺失、历史检查时刻精度、全范围监管/反查/活跃事项不全，保持draft。 续跑曾将shasum的locale告警首行误当哈希，现已用结构化hashlib输出修正；相关失败不从成本中扣除。",
+  "receipts_path": "logs/2026-09-08_discovery_receipts.json",
+  "checks": [
+    {
+      "id": "D-Apple-1",
+      "company": "Apple",
+      "stage": "discovery",
+      "businesses": [
+        "iPhone",
+        "Mac",
+        "iPad",
+        "可穿戴设备",
+        "服务",
+        "Apple silicon"
+      ],
+      "categories": [
+        "product",
+        "governance",
+        "legal"
+      ],
+      "query_or_url": "Apple iPhone Mac iPad Watch services CEO lawsuit news after:2026-08-30 before:2026-09-07",
+      "entrypoint": "N01 Apple window search",
+      "source_family": "search",
+      "result_ref": "turn106news12;turn106news13;turn106search17",
+      "checked_at": "2026-09-08T02:03:35.559Z",
+      "status": "blocked",
+      "note": "已看到本周CEO接班报道、OpenAI答辩及8/31上诉文件线索；泛搜并未足够返回各产品和财务/资本/经营窗口，需原列表补查。businesses仅为本条待核范围，未计完成。",
+      "candidate_ids": [
+        "C43",
+        "C49",
+        "C50"
+      ]
+    },
+    {
+      "id": "D-SamsungElectronics-list",
+      "company": "Samsung Electronics",
+      "stage": "discovery",
+      "businesses": [
+        "存储",
+        "晶圆代工",
+        "OLED",
+        "移动设备",
+        "电视/显示",
+        "家电"
+      ],
+      "categories": [
+        "financial",
+        "product",
+        "capital",
+        "operations",
+        "governance"
+      ],
+      "query_or_url": "https://news.samsung.com/global/",
+      "entrypoint": "https://news.samsung.com/global/",
+      "source_family": "company",
+      "result_ref": "N13 turn118search0/1",
+      "checked_at": "2026-09-08T02:17:15Z",
+      "status": "blocked",
+      "note": "完整周内公司/产品新闻列表覆盖手机、PC、显示、家电、半导体及财务治理类别入口，Book6/洗衣机入候选；S26FE8/27、SSD8/26、返还8/21旧公告不当本周新增。仍待独立监管与反查。 继续复核撤回原完整覆盖验收：总页未逐一证明各业务与财务/资本/治理入口覆盖，原checked_at为估计值待会话核对；保留原记录，不据此填写ready。",
+      "candidate_ids": [
+        "C45",
+        "C46"
+      ],
+      "reassessed_at": "2026-09-08T03:35:19Z"
+    },
+    {
+      "id": "D-SKHynix-list",
+      "company": "SK Hynix",
+      "stage": "discovery",
+      "businesses": [
+        "DRAM",
+        "NAND",
+        "HBM",
+        "CXL 存储",
+        "企业级 SSD",
+        "先进封装"
+      ],
+      "categories": [
+        "financial",
+        "product",
+        "capital",
+        "operations",
+        "governance"
+      ],
+      "query_or_url": "https://news.skhynix.com/en/all/",
+      "entrypoint": "https://news.skhynix.com/en/all/",
+      "source_family": "company",
+      "result_ref": "N15 turn120view1 L23-120",
+      "checked_at": "2026-09-08T02:17:15Z",
+      "status": "blocked",
+      "note": "完整列表回扫至8/14：9/3与8/31技术解释，8/28Indiana旧；8/19回购旧。主营DRAM/HBM/NAND/SSD/封装及企业入口已查看，技术解释非新订单，监管许可另查。 继续复核撤回原完整覆盖验收：总页未逐一证明各业务与财务/资本/治理入口覆盖，原checked_at为估计值待会话核对；保留原记录，不据此填写ready。",
+      "candidate_ids": [
+        "C46"
+      ],
+      "reassessed_at": "2026-09-08T03:35:19Z"
+    },
+    {
+      "id": "D-Anthropic-list",
+      "company": "Anthropic",
+      "stage": "discovery",
+      "businesses": [
+        "Claude 模型",
+        "Claude",
+        "Claude API",
+        "Claude Code",
+        "Claude Cowork",
+        "AI 安全研究"
+      ],
+      "categories": [
+        "financial",
+        "product",
+        "capital",
+        "operations",
+        "governance"
+      ],
+      "query_or_url": "https://www.anthropic.com/news",
+      "entrypoint": "https://www.anthropic.com/news",
+      "source_family": "company",
+      "result_ref": "N15 turn120view0",
+      "checked_at": "2026-09-08T02:17:15Z",
+      "status": "blocked",
+      "note": "完整新闻列表/置顶和新闻表：9/1FableMythos与EFS、8/31安全，8/27MHS和科学计划旧；融资Lambda补媒体、独立监管待核。 继续复核撤回原完整覆盖验收：总页未逐一证明各业务与财务/资本/治理入口覆盖，原checked_at为估计值待会话核对；保留原记录，不据此填写ready。",
+      "candidate_ids": [
+        "C47"
+      ],
+      "reassessed_at": "2026-09-08T03:35:19Z"
+    },
+    {
+      "id": "D-Microsoft-list",
+      "company": "Microsoft",
+      "stage": "discovery",
+      "businesses": [
+        "Azure",
+        "Microsoft 365",
+        "Windows",
+        "GitHub",
+        "LinkedIn",
+        "Xbox"
+      ],
+      "categories": [
+        "financial",
+        "product",
+        "capital",
+        "operations",
+        "governance"
+      ],
+      "query_or_url": "https://news.microsoft.com/source/view-all/",
+      "entrypoint": "https://news.microsoft.com/source/view-all/",
+      "source_family": "company",
+      "result_ref": "N02 turn107view0",
+      "checked_at": "2026-09-08T02:17:15Z",
+      "status": "blocked",
+      "note": "完整8/31–9/4各产品/公司新闻入口：Azure/AWS、MAI语音、HydraFusion、Astra，Xbox为普通内容，医疗/负责任AI指南与国会进展另查；未将HUMAIN8/26重复计入。 继续复核撤回原完整覆盖验收：总页未逐一证明各业务与财务/资本/治理入口覆盖，原checked_at为估计值待会话核对；保留原记录，不据此填写ready。",
+      "candidate_ids": [
+        "C51",
+        "C52",
+        "C53",
+        "C54"
+      ],
+      "reassessed_at": "2026-09-08T03:35:19Z"
+    },
+    {
+      "id": "resume-focused-1",
+      "company": "Apple",
+      "stage": "discovery",
+      "businesses": [
+        "iPhone",
+        "服务"
+      ],
+      "categories": [
+        "legal",
+        "governance"
+      ],
+      "query_or_url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126035325/ef20081427_8ka.htm",
+      "entrypoint": "https://www.sec.gov/Archives/edgar/data/320193/000114036126035325/ef20081427_8ka.htm",
+      "source_family": "authority",
+      "result_ref": "N01；Z17/Z18 turn155view1",
+      "checked_at": "2026-09-08T03:19:59Z",
+      "status": "reviewed",
+      "note": "反对临时禁令文件及9/1薪酬修订已读，未覆盖Apple其他所有法律事项。",
+      "candidate_ids": [
+        "C43",
+        "C49",
+        "C85"
+      ]
+    },
+    {
+      "id": "resume-focused-2",
+      "company": "Microsoft",
+      "stage": "discovery",
+      "businesses": [
+        "Azure",
+        "Microsoft 365",
+        "Windows",
+        "GitHub",
+        "LinkedIn",
+        "Xbox"
+      ],
+      "categories": [
+        "financial",
+        "capital",
+        "governance"
+      ],
+      "query_or_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526380280/d291965dex991.htm",
+      "entrypoint": "https://www.sec.gov/Archives/edgar/data/789019/000119312526380280/d291965dex991.htm",
+      "source_family": "authority",
+      "result_ref": "Z17-Z20 turn154view0、turn155view0、turn157view1",
+      "checked_at": "2026-09-08T03:19:59Z",
+      "status": "reviewed",
+      "note": "逐读FY27定义、FY25/26原口径和重列表及机械调整指引；仅验收各业务财务披露，不代表其他类别完成。",
+      "candidate_ids": [
+        "C86"
+      ]
+    },
+    {
+      "id": "resume-focused-3",
+      "company": "Microsoft",
+      "stage": "discovery",
+      "businesses": [
+        "Xbox"
+      ],
+      "categories": [
+        "product",
+        "operations",
+        "capital"
+      ],
+      "query_or_url": "https://news.xbox.com/en-us/",
+      "entrypoint": "https://news.xbox.com/en-us/",
+      "source_family": "company",
+      "result_ref": "Z13-Z15；Z21-Z22 turn152view0-2、turn159view0",
+      "checked_at": "2026-09-08T03:19:59Z",
+      "status": "reviewed",
+      "note": "专属入口补出配额/TCL，区分8/26旧预告与8/31专业媒体开测报道；总新闻页未充分覆盖本业务。",
+      "candidate_ids": [
+        "C87",
+        "C91",
+        "C92"
+      ]
+    },
+    {
+      "id": "resume-focused-4",
+      "company": "Microsoft",
+      "stage": "discovery",
+      "businesses": [
+        "Microsoft 365"
+      ],
+      "categories": [
+        "operations"
+      ],
+      "query_or_url": "https://techcrunch.com/2026/08/31/microsoft-tests-fix-for-latest-hours-long-outlook-outage/",
+      "entrypoint": "https://techcrunch.com/2026/08/31/microsoft-tests-fix-for-latest-hours-long-outlook-outage/",
+      "source_family": "media",
+      "result_ref": "Z21-Z22 turn159view1 L105-135",
+      "checked_at": "2026-09-08T03:19:59Z",
+      "status": "reviewed",
+      "note": "已读当周署时正文和日期状态帖引述；恢复时间未核，不判断周末仍故障。",
+      "candidate_ids": [
+        "C93"
+      ]
+    },
+    {
+      "id": "resume-focused-5",
+      "company": "Meta",
+      "stage": "discovery",
+      "businesses": [
+        "Instagram"
+      ],
+      "categories": [
+        "product",
+        "operations"
+      ],
+      "query_or_url": "https://techcrunch.com/2026/08/31/instagram-puts-new-limits-on-undisclosed-ai-profiles/",
+      "entrypoint": "https://techcrunch.com/2026/08/31/instagram-puts-new-limits-on-undisclosed-ai-profiles/",
+      "source_family": "media",
+      "result_ref": "Z12、Z17 turn154view1 L108-123",
+      "checked_at": "2026-09-08T03:19:59Z",
+      "status": "reviewed",
+      "note": "当周TechCrunch及Express正文支持标签与降流量，官方创作者入口受阻；不是全部禁AI。",
+      "candidate_ids": [
+        "C88"
+      ]
+    },
+    {
+      "id": "resume-focused-6",
+      "company": "SK Hynix",
+      "stage": "discovery",
+      "businesses": [
+        "NAND",
+        "企业级 SSD"
+      ],
+      "categories": [
+        "capital",
+        "governance"
+      ],
+      "query_or_url": "https://www.sec.gov/Archives/edgar/data/2120882/000119312526382688/0001193125-26-382688-index.htm",
+      "entrypoint": "https://www.sec.gov/Archives/edgar/data/2120882/000119312526382688/0001193125-26-382688-index.htm",
+      "source_family": "authority",
+      "result_ref": "Z03-Z08 turn144view0、turn140view0 L234-254",
+      "checked_at": "2026-09-08T03:19:59Z",
+      "status": "reviewed",
+      "note": "SEC受理及完整转载支持Solidigm未定澄清，不把5万亿韩元旧传闻写成完成。",
+      "candidate_ids": [
+        "C83"
+      ]
+    },
+    {
+      "id": "resume-focused-7",
+      "company": "SK Hynix",
+      "stage": "discovery",
+      "businesses": [
+        "DRAM",
+        "NAND",
+        "HBM",
+        "CXL 存储",
+        "企业级 SSD",
+        "先进封装"
+      ],
+      "categories": [
+        "capital"
+      ],
+      "query_or_url": "https://m.ajupress.com/amp/20260903161346670",
+      "entrypoint": "https://m.ajupress.com/amp/20260903161346670",
+      "source_family": "media",
+      "result_ref": "Z04-Z05 turn140view1 L2-26",
+      "checked_at": "2026-09-08T03:19:59Z",
+      "status": "reviewed",
+      "note": "公司整体资金回流报道影响整体资金，不表示六种产品有新事件；金额、时间和储备贡献未获官方确认。",
+      "candidate_ids": [
+        "C84"
+      ]
+    },
+    {
+      "id": "resume-focused-8",
+      "company": "Samsung Electronics",
+      "stage": "discovery",
+      "businesses": [
+        "移动设备"
+      ],
+      "categories": [
+        "product",
+        "operations"
+      ],
+      "query_or_url": "https://news.cision.com/pt/samsung-portugal/r/samsung-galaxy-s26-fe-ja-esta-disponivel-em-portugal%2Cc639241326320000000",
+      "entrypoint": "https://news.cision.com/pt/samsung-portugal/r/samsung-galaxy-s26-fe-ja-esta-disponivel-em-portugal%2Cc639241326320000000",
+      "source_family": "company",
+      "result_ref": "Z07 turn143search0",
+      "checked_at": "2026-09-08T03:19:59Z",
+      "status": "reviewed",
+      "note": "已读9/4葡萄牙实际上市署时官方正文，不外推全部市场。",
+      "candidate_ids": [
+        "C80"
+      ]
+    },
+    {
+      "id": "resume-focused-9",
+      "company": "Alphabet / Google",
+      "stage": "discovery",
+      "businesses": [
+        "Google Cloud",
+        "Gemini"
+      ],
+      "categories": [
+        "product"
+      ],
+      "query_or_url": "https://blog.google/products-and-platforms/products/workspace/voice-features-gmail-docs-keep/",
+      "entrypoint": "https://blog.google/products-and-platforms/products/workspace/voice-features-gmail-docs-keep/",
+      "source_family": "company",
+      "result_ref": "Z02 turn138view0 L214-221、turn138view1 L264-280",
+      "checked_at": "2026-09-08T03:19:59Z",
+      "status": "reviewed",
+      "note": "办公语音企业范围以原文coming soon为准；Translate便利性更新排除重大清单。",
+      "candidate_ids": [
+        "C81",
+        "C82"
+      ]
+    },
+    {
+      "id": "resume-focused-10",
+      "company": "NVIDIA",
+      "stage": "discovery",
+      "businesses": [
+        "游戏 GPU",
+        "AI 软件"
+      ],
+      "categories": [
+        "product"
+      ],
+      "query_or_url": "https://blogs.nvidia.com/blog/geforce-now-thursday-september-2026-games-list/",
+      "entrypoint": "https://blogs.nvidia.com/blog/geforce-now-thursday-september-2026-games-list/",
+      "source_family": "company",
+      "result_ref": "Z13 turn150view0 L5-23、40-91",
+      "checked_at": "2026-09-08T03:19:59Z",
+      "status": "reviewed",
+      "note": "完整核特定游戏DLSS5采用和上架脚注，无普遍价格/区域改变；按范围不重大排除，不是未读即判定。",
+      "candidate_ids": [
+        "C90"
+      ]
+    },
+    {
+      "id": "continued-Apple-legal-discovery",
+      "company": "Apple",
+      "stage": "regulatory",
+      "businesses": [
+        "服务",
+        "iPhone"
+      ],
+      "categories": [
+        "legal"
+      ],
+      "query_or_url": "Apple sued £2bn September 2026 app tracking rules; Apple antitrust lawsuit ruling after:2026-08-30 before:2026-09-07",
+      "entrypoint": "UK ATT collective proceedings via ICLG/Yahoo legal reporting",
+      "source_family": "media",
+      "result_ref": "Y01 turn160reddit28 discovery; Y02 turn161search1/2; Y02 turn161search1全文；Y03 turn162search1 Reuters",
+      "checked_at": "2026-09-08T03:35:19Z",
+      "status": "reviewed",
+      "note": "已读ICLG具日期全文和Reuters当周报道：9/3申请集体程序，约20亿英镑为原告估计，非认证或罚款；Apple此前隐私立场归因保留。",
+      "candidate_ids": [
+        "C94"
+      ]
+    },
+    {
+      "id": "continued-C95",
+      "company": "Microsoft",
+      "stage": "discovery",
+      "businesses": [
+        "Windows"
+      ],
+      "categories": [
+        "product"
+      ],
+      "query_or_url": "https://blogs.windows.com/",
+      "entrypoint": "https://blogs.windows.com/",
+      "source_family": "search",
+      "result_ref": "Y04 turn163search8; Y05 turn164search0全文",
+      "checked_at": "2026-09-08T03:35:19Z",
+      "status": "reviewed",
+      "note": "已读微软9/4开发者原文：Zenith首先拟随AMD Ryzen AI Halo提供，64GB+/250GB/s+目标设备；不是所有Windows升级或已出货。",
+      "candidate_ids": [
+        "C95"
+      ]
+    },
+    {
+      "id": "continued-C96",
+      "company": "Amazon / AWS",
+      "stage": "discovery",
+      "businesses": [
+        "物流"
+      ],
+      "categories": [
+        "operations"
+      ],
+      "query_or_url": "Amazon delivery network 88.7% 2029 September 2026",
+      "entrypoint": "Amazon delivery network 88.7% 2029 September 2026",
+      "source_family": "search",
+      "result_ref": "Y04 turn163reddit18; Y14 turn173view1 L168-187、212-232",
+      "checked_at": "2026-09-08T03:35:19Z",
+      "status": "reviewed",
+      "note": "已读BI原文2026-09-03T09:00:02.581Z：2029年88.7%为7月内部初步规划本周披露，Amazon回应可能重大修订，不能写成确定目标或交付。",
+      "candidate_ids": [
+        "C96"
+      ]
+    },
+    {
+      "id": "continued-C97",
+      "company": "Amazon / AWS",
+      "stage": "regulatory",
+      "businesses": [
+        "物流"
+      ],
+      "categories": [
+        "legal"
+      ],
+      "query_or_url": "https://www.supremecourt.gov/docket/docketfiles/html/public/26-47.html",
+      "entrypoint": "https://www.supremecourt.gov/docket/docketfiles/html/public/26-47.html",
+      "source_family": "authority",
+      "result_ref": "Y10 turn169view1 L22-25",
+      "checked_at": "2026-09-08T03:35:19Z",
+      "status": "reviewed",
+      "note": "SCOTUS26-47原docket L22-25：8/31申请，9/1批准答复延期至10/16。",
+      "candidate_ids": [
+        "C97"
+      ]
+    },
+    {
+      "id": "continued-C98",
+      "company": "Meta",
+      "stage": "regulatory",
+      "businesses": [
+        "Reality Labs"
+      ],
+      "categories": [
+        "legal"
+      ],
+      "query_or_url": "Meta settlement states lawsuit privacy September 2026; Meta AI glasses amended complaint September 2026",
+      "entrypoint": "Y06 turn165search2",
+      "source_family": "media",
+      "result_ref": "Y06 turn165search2;Y07 turn166search8; Y10 turn169search1；Y12 turn171view0 403",
+      "checked_at": "2026-09-08T03:35:19Z",
+      "status": "reviewed",
+      "note": "Law360署时9/1 22:24EDT的导语支持新增旁观者群体诉请，正文/附件受403限制；只按媒体披露表述，待补原申请。",
+      "candidate_ids": [
+        "C98"
+      ]
+    },
+    {
+      "id": "continued-C99",
+      "company": "Meta",
+      "stage": "discovery",
+      "businesses": [
+        "Facebook"
+      ],
+      "categories": [
+        "legal"
+      ],
+      "query_or_url": "Meta settlement states lawsuit privacy September 2026; Meta AI glasses amended complaint September 2026",
+      "entrypoint": "Y06 turn165search3",
+      "source_family": "company",
+      "result_ref": "Y06 turn165search3;Y07 turn166search10; Y11 turn170view0 L25-36",
+      "checked_at": "2026-09-08T03:35:19Z",
+      "status": "reviewed",
+      "note": "WBE律师事务所9/4公告全文已读；仅为申请方声明，不是法院认定。请求集体认证和救济，BIPA与加州隐私权涉及脸部数据训练。 这是当事人代理律所，不冒称法院或监管机关。",
+      "candidate_ids": [
+        "C99"
+      ]
+    },
+    {
+      "id": "continued-C100",
+      "company": "Meta",
+      "stage": "regulatory",
+      "businesses": [
+        "Facebook"
+      ],
+      "categories": [
+        "legal"
+      ],
+      "query_or_url": "Meta settlement states lawsuit privacy September 2026; Meta AI glasses amended complaint September 2026",
+      "entrypoint": "Y06 turn165reddit22",
+      "source_family": "media",
+      "result_ref": "Y06 turn165reddit22;Y07 turn166reddit24",
+      "checked_at": "2026-09-08T03:31:07Z",
+      "status": "blocked",
+      "note": "新增候选须读正文和定位原申请/执行日期，未计覆盖完成。",
+      "candidate_ids": [
+        "C100"
+      ]
+    },
+    {
+      "id": "continued-C101",
+      "company": "Meta",
+      "stage": "discovery",
+      "businesses": [
+        "Reality Labs"
+      ],
+      "categories": [
+        "operations"
+      ],
+      "query_or_url": "Meta settlement states lawsuit privacy September 2026; Meta AI glasses amended complaint September 2026",
+      "entrypoint": "Y07 turn166reddit23",
+      "source_family": "media",
+      "result_ref": "Y07 turn166reddit23; Y10 turn169search2全文可见部分；Y11直连403",
+      "checked_at": "2026-09-08T03:35:19Z",
+      "status": "reviewed",
+      "note": "已读Semafor经Yahoo署时9/1 19:40UTC转载导语及公司VP回应：关闭篡改指示灯设备的摄录；设备总数仅估计，不能外推全部眼镜失效。",
+      "candidate_ids": [
+        "C101"
+      ]
+    },
+    {
+      "id": "continued-Amazon-outside-cutoff",
+      "company": "Amazon / AWS",
+      "stage": "discovery",
+      "businesses": [
+        "物流"
+      ],
+      "categories": [
+        "operations"
+      ],
+      "query_or_url": "https://www.aol.com/articles/amazon-cargo-plane-fire-overshooting-194143000.html",
+      "entrypoint": "AOL / Independent dated incident report",
+      "source_family": "media",
+      "result_ref": "Y14 turn173view0 L34-55",
+      "checked_at": "2026-09-08T03:35:19Z",
+      "status": "reviewed",
+      "note": "事故发生于9/6约14:00迈阿密当地EDT，即18:00UTC、上海9/7 02:00，已经晚于本期16:00UTC截止；当前侧栏不能继承母文章期内日期。",
+      "candidate_ids": [
+        "C102"
+      ]
+    },
+    {
+      "id": "CL-D-Apple-01",
+      "company": "Apple",
+      "stage": "discovery",
+      "businesses": [
+        "iPhone",
+        "Mac",
+        "iPad",
+        "可穿戴设备",
+        "服务",
+        "Apple silicon"
+      ],
+      "categories": [
+        "product"
+      ],
+      "query_or_url": "Apple iPhone Mac iPad Watch services Apple silicon investor September 2026 after:2026-08-30 before:2026-09-07",
+      "entrypoint": "web search CL01 Apple",
+      "source_family": "search",
+      "result_ref": "CL01 turn174news12/13/14;turn174reddit20",
+      "checked_at": "2026-09-08T06:31:12Z",
+      "status": "blocked",
+      "note": "本轮泛搜返回9/1-5发布会预览及产品传闻；尚未读原文，不能证明全部业务或六类事件覆盖。",
+      "candidate_ids": []
+    },
+    {
+      "id": "CL-D-Microsoft-01",
+      "company": "Microsoft",
+      "stage": "discovery",
+      "businesses": [
+        "LinkedIn"
+      ],
+      "categories": [
+        "product",
+        "operations"
+      ],
+      "query_or_url": "Microsoft Azure Microsoft 365 Windows GitHub LinkedIn Xbox news after:2026-08-30 before:2026-09-07",
+      "entrypoint": "web search CL01 Microsoft",
+      "source_family": "search",
+      "result_ref": "CL01 turn174news25; CL02 turn175search2;CL06 turn179search3; CL08 turn181view0",
+      "checked_at": "2026-09-08T06:31:12Z",
+      "status": "reviewed",
+      "note": "原CL01仅LinkedIn线索，现由CL02/06/08核明期外并核官方本周唯一9/2调查；已缩窄到LinkedIn，不作为Microsoft全业务验收。",
+      "candidate_ids": [
+        "C105"
+      ],
+      "reassessed_at": "2026-09-08T06:36:05Z"
+    },
+    {
+      "id": "CL-D-Google-01",
+      "company": "Alphabet / Google",
+      "stage": "discovery",
+      "businesses": [
+        "Android",
+        "Pixel"
+      ],
+      "categories": [
+        "product",
+        "operations"
+      ],
+      "query_or_url": "Google Alphabet Search YouTube Cloud Gemini Android Pixel news after:2026-08-30 before:2026-09-07",
+      "entrypoint": "web search CL01 Alphabet / Google",
+      "source_family": "search",
+      "result_ref": "CL01 turn174reddit17/36;turn174news26",
+      "checked_at": "2026-09-08T06:31:12Z",
+      "status": "blocked",
+      "note": "发现Assistant停用/Pixel Video Boost故障线索；多数搜索和YouTube结果实际5月旧闻，不计本周新事件或全面覆盖。",
+      "candidate_ids": [
+        "C103",
+        "C104"
+      ]
+    },
+    {
+      "id": "CL-D-Microsoft-02",
+      "company": "Microsoft",
+      "stage": "discovery",
+      "businesses": [
+        "LinkedIn"
+      ],
+      "categories": [
+        "product",
+        "operations",
+        "capital",
+        "governance"
+      ],
+      "query_or_url": "https://news.linkedin.com/",
+      "entrypoint": "LinkedIn Pressroom company/product/business-solutions listing",
+      "source_family": "company",
+      "result_ref": "CL08 turn181view0 L26-104; CL02 turn175search2; CL06 turn179search3",
+      "checked_at": "2026-09-08T06:36:05Z",
+      "status": "reviewed",
+      "candidate_ids": [
+        "C105",
+        "C107"
+      ],
+      "note": "实际官方列表回扫9/2至7/23，9/2仅职业关系调查，Hiring Assistant/Collaborative Posts为旧置顶；功能调整由8/18、8/19署时正文证实期外。此记录仅LinkedIn产品/经营/公司新闻范围，不代Microsoft其他业务、IR或监管。"
+    },
+    {
+      "id": "CL-D-Google-02",
+      "company": "Alphabet / Google",
+      "stage": "discovery",
+      "businesses": [
+        "Android",
+        "Pixel"
+      ],
+      "categories": [
+        "operations",
+        "product"
+      ],
+      "query_or_url": "https://www.phonearena.com/news/google-messages-bug-is-sending-old-texts_id182991",
+      "entrypoint": "PhoneArena Google Messages incident; Android Authority original spokesperson interview",
+      "source_family": "media",
+      "result_ref": "CL07 turn180search10;CL08 turn181view1 L17,L33-41;turn181view2 L124,141-153,169-203",
+      "checked_at": "2026-09-08T06:36:05Z",
+      "status": "reviewed",
+      "candidate_ids": [
+        "C104",
+        "C106"
+      ],
+      "note": "核明Pixel为静态噪音而非画面，9/1公司承诺未来Camera修复；另新增Messages跨联系人隐私问题9/2回应。未外推全机型受损或已全量修复；独立监管及其他Google业务不在本条范围。"
+    },
+    {
+      "id": "CL-R-Microsoft-01",
+      "company": "Microsoft",
+      "businesses": [
+        "Windows",
+        "Azure",
+        "Microsoft 365",
+        "LinkedIn"
+      ],
+      "categories": [
+        "legal"
+      ],
+      "entrypoint": "EU General Court/UK CAT/US district-court independent legal scan",
+      "query_or_url": "Microsoft lawsuit regulatory \"September\" \"2026\" after:2026-08-30 before:2026-09-07 -site:reddit.com -site:linkedin.com",
+      "result_ref": "CL09 turn182search2/6/7/16; CL10 turn183search6; CL11 turn184search3/1; CL12 turn185view0/2",
+      "candidate_ids": [
+        "C108",
+        "C109",
+        "C110"
+      ],
+      "note": "独立监管检索补出Edge判决和仲裁服务商变更线索；Rockman仅无争议延期。英国CAT两案为未来CMC，需核排期首次公开再决定催化，未声称所有未决均关闭。",
+      "status": "blocked",
+      "stage": "regulatory",
+      "source_family": "authority",
+      "checked_at": "2026-09-08T06:39:40Z"
+    },
+    {
+      "id": "CL-R-Google-01",
+      "company": "Alphabet / Google",
+      "businesses": [
+        "搜索"
+      ],
+      "categories": [
+        "legal"
+      ],
+      "entrypoint": "DOJ search-case official docket versus AP adtech report",
+      "query_or_url": "https://www.justice.gov/atr/case/us-and-plaintiff-states-v-google-llc",
+      "result_ref": "CL09 turn182news12;CL12 turn185view1 L57-126,412",
+      "candidate_ids": [],
+      "note": "完整DOJ列表本轮回扫：搜索案最新救济8/25、上诉7/28，无本周新增条目；独立AP9/2广告技术案为另一案，不混同。只核该案范围，不替代其他Google监管业务。",
+      "status": "reviewed",
+      "stage": "regulatory",
+      "source_family": "authority",
+      "checked_at": "2026-09-08T06:39:40Z"
+    },
+    {
+      "id": "CL-discovered-C111",
+      "company": "Amazon / AWS",
+      "stage": "discovery",
+      "businesses": [
+        "AWS"
+      ],
+      "categories": [
+        "operations"
+      ],
+      "entrypoint": "https://finance.yahoo.com/technology/articles/amazon-shut-down-mechanical-turk-080616664.html",
+      "query_or_url": "https://finance.yahoo.com/technology/articles/amazon-shut-down-mechanical-turk-080616664.html",
+      "source_family": "media",
+      "result_ref": "CL18 turn191search5",
+      "checked_at": "2026-09-08T06:49:12Z",
+      "status": "reviewed",
+      "note": "仅记录已实际发现的候选，不认证公司完整覆盖。",
+      "candidate_ids": [
+        "C111"
+      ]
+    },
+    {
+      "id": "CL-discovered-C112",
+      "company": "Meta",
+      "stage": "discovery",
+      "businesses": [
+        "Meta AI"
+      ],
+      "categories": [
+        "governance"
+      ],
+      "entrypoint": "https://arstechnica.com/ai/2026/08/metas-scrapped-plans-to-go-ai-native-included-slashing-teams-by-60-percent/",
+      "query_or_url": "https://arstechnica.com/ai/2026/08/metas-scrapped-plans-to-go-ai-native-included-slashing-teams-by-60-percent/",
+      "source_family": "media",
+      "result_ref": "CL19 turn192search0",
+      "checked_at": "2026-09-08T06:49:12Z",
+      "status": "reviewed",
+      "note": "仅记录已实际发现的候选，不认证公司完整覆盖。",
+      "candidate_ids": [
+        "C112"
+      ]
+    },
+    {
+      "id": "CL-discovered-C113",
+      "company": "Amazon / AWS",
+      "stage": "discovery",
+      "businesses": [
+        "AWS"
+      ],
+      "categories": [
+        "capital"
+      ],
+      "entrypoint": "https://ducklabs.com/news/2026/08/26/ducklabs-to-join-aws",
+      "query_or_url": "https://ducklabs.com/news/2026/08/26/ducklabs-to-join-aws",
+      "source_family": "company",
+      "result_ref": "CL20 turn193view2 L15-21",
+      "checked_at": "2026-09-08T06:49:12Z",
+      "status": "reviewed",
+      "note": "仅记录已实际发现的候选，不认证公司完整覆盖。",
+      "candidate_ids": [
+        "C113"
+      ]
+    },
+    {
+      "id": "CL-discovered-C114",
+      "company": "NVIDIA",
+      "stage": "discovery",
+      "businesses": [
+        "AI 软件"
+      ],
+      "categories": [
+        "capital"
+      ],
+      "entrypoint": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000078/nvda-20260902.htm",
+      "query_or_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000078/nvda-20260902.htm",
+      "source_family": "authority",
+      "result_ref": "CL17 turn190view0 L60-75、L99",
+      "checked_at": "2026-09-08T06:49:12Z",
+      "status": "reviewed",
+      "note": "仅记录已实际发现的候选，不认证公司完整覆盖。",
+      "candidate_ids": [
+        "C114"
+      ]
+    },
+    {
+      "id": "CL-discovered-C115",
+      "company": "Amazon / AWS",
+      "stage": "discovery",
+      "businesses": [
+        "AWS"
+      ],
+      "categories": [
+        "product"
+      ],
+      "entrypoint": "https://aws.amazon.com/blogs/aws/",
+      "query_or_url": "https://aws.amazon.com/blogs/aws/",
+      "source_family": "company",
+      "result_ref": "CL15 turn188search5",
+      "checked_at": "2026-09-08T06:49:12Z",
+      "status": "reviewed",
+      "note": "仅记录已实际发现的候选，不认证公司完整覆盖。",
+      "candidate_ids": [
+        "C115"
+      ]
+    },
+    {
+      "id": "CL-discovered-C116",
+      "company": "Meta",
+      "stage": "discovery",
+      "businesses": [
+        "Threads"
+      ],
+      "categories": [
+        "product"
+      ],
+      "entrypoint": "https://about.fb.com/ja/news/2026/07/threads-meta-ai-dm/",
+      "query_or_url": "https://about.fb.com/ja/news/2026/07/threads-meta-ai-dm/",
+      "source_family": "company",
+      "result_ref": "CL13 turn186search0",
+      "checked_at": "2026-09-08T06:49:12Z",
+      "status": "reviewed",
+      "note": "仅记录已实际发现的候选，不认证公司完整覆盖。",
+      "candidate_ids": [
+        "C116"
+      ]
+    },
+    {
+      "id": "CL-D-Apple-02",
+      "company": "Apple",
+      "businesses": [
+        "iPhone",
+        "Mac",
+        "iPad",
+        "可穿戴设备",
+        "服务",
+        "Apple silicon"
+      ],
+      "categories": [
+        "product",
+        "operations",
+        "governance"
+      ],
+      "entrypoint": "https://www.macrumors.com/archive/2026/09/",
+      "query_or_url": "https://www.macrumors.com/archive/2026/09/; https://developer.apple.com/news/releases/; Apple Newsroom Mac/iPad/iPhone/Watch dated topic indexes",
+      "source_family": "media",
+      "result_ref": "CL21 turn194search0/5/7/8; CL22 turn195view0 L126-411; CL23 turn196view0/1 and turn196search2",
+      "candidate_ids": [
+        "C117",
+        "C118",
+        "C119",
+        "C121",
+        "C122",
+        "C123",
+        "C124",
+        "C125",
+        "C126",
+        "C127",
+        "C128"
+      ],
+      "note": "实际9/1-9/5完整日期条目发现，8/31官方6系统beta列表；已读Mac/iPad/Watch/iPhone分类主条目上下跨窗口。资本/财务尚不以此认定。MacRumors正文未读线索逐项待核；8/31新闻档案仍待补。",
+      "stage": "discovery",
+      "checked_at": "2026-09-08T06:52:12Z",
+      "status": "reviewed"
+    },
+    {
+      "id": "CL-D-Anthropic-cross-01",
+      "company": "Anthropic",
+      "businesses": [
+        "Claude"
+      ],
+      "categories": [
+        "product",
+        "operations"
+      ],
+      "entrypoint": "https://www.macrumors.com/archive/2026/09/",
+      "query_or_url": "https://www.macrumors.com/archive/2026/09/",
+      "source_family": "media",
+      "result_ref": "CL22 turn195view0 L152-154、286-288",
+      "candidate_ids": [
+        "C119",
+        "C120"
+      ],
+      "note": "跨公司日期档案仅发现Claude CarPlay/AI访问故障，不代表该公司整体扫描。",
+      "stage": "discovery",
+      "checked_at": "2026-09-08T06:52:12Z",
+      "status": "reviewed"
+    },
+    {
+      "id": "CL-D-OpenAI-cross-01",
+      "company": "OpenAI",
+      "businesses": [
+        "ChatGPT"
+      ],
+      "categories": [
+        "product",
+        "operations"
+      ],
+      "entrypoint": "https://www.macrumors.com/archive/2026/09/",
+      "query_or_url": "https://www.macrumors.com/archive/2026/09/",
+      "source_family": "media",
+      "result_ref": "CL22 turn195view0 L152-154、286-288",
+      "candidate_ids": [
+        "C120"
+      ],
+      "note": "跨公司日期档案仅发现Claude CarPlay/AI访问故障，不代表该公司整体扫描。",
+      "stage": "discovery",
+      "checked_at": "2026-09-08T06:52:12Z",
+      "status": "reviewed"
+    },
+    {
+      "id": "CL-R-Apple-02",
+      "company": "Apple",
+      "stage": "regulatory",
+      "businesses": [
+        "服务",
+        "iPhone",
+        "iPad"
+      ],
+      "categories": [
+        "legal"
+      ],
+      "entrypoint": "https://www.hausfeld.com/fr-fr/news/apple-faces-2-billion-legal-action-over-app-tracking-transparency-att-framework",
+      "query_or_url": "CL32/CL34 Apple独立监管检索；CL35具日期诉方公告及EU监管FAQ",
+      "source_family": "media",
+      "result_ref": "CL34 turn207search2；CL35 turn208view1 L150-212；turn208view2",
+      "checked_at": "2026-09-08T07:00:08Z",
+      "status": "reviewed",
+      "note": "Hausfeld是原告代理律师、不是法院也不是中立媒体；只能证明具日期诉方声明/程序主张。字段source_family取media近似分类且此note明确当事人性质；原continued-Apple-legal-discovery独立媒体交叉核对。EU动态FAQ只作后续监管定位，无可核更新时间不能当当周新规。申报空表/印度噪声缺口不在此认定已闭合。",
+      "candidate_ids": [
+        "C94"
+      ]
+    },
+    {
+      "id": "CL-D-Apple-IR",
+      "company": "Apple",
+      "stage": "discovery",
+      "businesses": [
+        "iPhone",
+        "Mac",
+        "iPad",
+        "可穿戴设备",
+        "服务",
+        "Apple silicon"
+      ],
+      "categories": [
+        "financial",
+        "capital",
+        "governance"
+      ],
+      "entrypoint": "https://investor.apple.com/sec-filings/default.aspx",
+      "query_or_url": "Apple IR SEC list; SEC CIK320193 company endpoint",
+      "source_family": "company",
+      "result_ref": "CL33 turn206view0/1；CL35 turn208view0",
+      "checked_at": "2026-09-08T07:00:08Z",
+      "status": "blocked",
+      "note": "IR只返回空表头，SEC两种官方列表受阻；不能以其他公司CIK命中补齐Apple，也不能重复重试同端点当覆盖。已核9/1薪酬申报不等于申报列表全扫，需可读替代列表。",
+      "candidate_ids": []
+    }
+  ],
+  "company_conclusions": {},
+  "watchlist": [
+    {
+      "id": "W-APPLE-EVENT",
+      "companies": [
+        "Apple"
+      ],
+      "topic": "9月发布会及产品交付安排",
+      "note": "C49已核实际接任；发布会仍是期前已知未来事项，未核后续产品结果。",
+      "check_ids": [
+        "resume-focused-1"
+      ],
+      "status": "active",
+      "review_status": "partially_reviewed"
+    },
+    {
+      "id": "W-APPLE-MAC",
+      "companies": [
+        "Apple"
+      ],
+      "topic": "上期Mac芯片/9月活动计划",
+      "note": "已核8/25Mac Studio/mini公告价格、9/22交付/512GB10月计划，未见当周已交付；新增PCIe6删除线索C128需更正旧规格和核改动时点。",
+      "check_ids": [
+        "CL-D-Apple-02"
+      ],
+      "status": "active",
+      "review_status": "partially_reviewed"
+    },
+    {
+      "id": "W-NVIDIA-HF",
+      "companies": [
+        "NVIDIA"
+      ],
+      "topic": "Hugging Face并购阶段",
+      "note": "本周签约已读公告，但全量活跃事项与最终证据绑定未闭环。",
+      "check_ids": [],
+      "status": "active",
+      "review_status": "pending"
+    },
+    {
+      "id": "W-AWS-NVIDIA-GPU",
+      "companies": [
+        "Amazon / AWS",
+        "NVIDIA"
+      ],
+      "topic": "上期GPU部署长期计划",
+      "note": "原上期2027-28 GPU计划不能当作本周交付，仍待本期续查。",
+      "check_ids": [],
+      "status": "active",
+      "review_status": "pending"
+    },
+    {
+      "id": "W-META-SETTLEMENT",
+      "companies": [
+        "Meta"
+      ],
+      "topic": "上期州级和解与执行",
+      "note": "CL05重读Meta原声明：52名州/地区AG，约180亿美元十年分付、部分付款附条件；8/27 10:30PT具日期更新称法官批准，约100亿美元Q3计提预期。旧背景口径核明；仍需本周独立监管扫描确认无新变更，不能写8/31-9/6新和解。",
+      "check_ids": [],
+      "status": "active",
+      "review_status": "partially_reviewed"
+    },
+    {
+      "id": "W-OPENAI-HF-INCIDENT",
+      "companies": [
+        "OpenAI"
+      ],
+      "topic": "上期Hugging Face安全事件",
+      "note": "本轮安全研究披露与原事件身份尚需关联，不能用一般安全文章当原案已解决。",
+      "check_ids": [],
+      "status": "active",
+      "review_status": "pending"
+    },
+    {
+      "id": "W-OPENAI-CURSOR",
+      "companies": [
+        "OpenAI"
+      ],
+      "topic": "上期Cursor合作/终止计划",
+      "note": "旧风险不可因周度归零解除，仍需本期定向复查。",
+      "check_ids": [],
+      "status": "active",
+      "review_status": "pending"
+    },
+    {
+      "id": "W-OPENAI-JALAPENO",
+      "companies": [
+        "OpenAI"
+      ],
+      "topic": "上期自研芯片计划",
+      "note": "上期年底计划仍待当周状态复查；不当作已交付。",
+      "check_ids": [],
+      "status": "active",
+      "review_status": "pending"
+    },
+    {
+      "id": "W-ANTHROPIC-NSCALE",
+      "companies": [
+        "Anthropic"
+      ],
+      "topic": "上期Nscale合作报道",
+      "note": "报道未确认状态不能跨周缓存，未完成本期交易方核查。",
+      "check_ids": [],
+      "status": "active",
+      "review_status": "pending"
+    },
+    {
+      "id": "W-SAMSUNG-S26FE",
+      "companies": [
+        "Samsung Electronics"
+      ],
+      "topic": "上期S26FE上市预告",
+      "note": "本周已读葡萄牙已销售公告，不能外推所有地区；原全球计划与已核地区分开。",
+      "check_ids": [
+        "resume-focused-8"
+      ],
+      "status": "active",
+      "review_status": "partially_reviewed"
+    },
+    {
+      "id": "W-SKHYNIX-INDIANA",
+      "companies": [
+        "SK Hynix"
+      ],
+      "topic": "上期Indiana项目投产计划",
+      "note": "上期2029下半年计划非本周投产，仍待本期定向复查。",
+      "check_ids": [],
+      "status": "active",
+      "review_status": "pending"
+    },
+    {
+      "id": "W-GOOGLE-SEARCH-2020",
+      "companies": [
+        "Alphabet / Google"
+      ],
+      "topic": "DOJ Google搜索垄断案2020，救济执行与上诉；与2023广告技术案分开",
+      "check_ids": [
+        "CL-R-Google-01"
+      ],
+      "status": "active",
+      "review_status": "reviewed",
+      "note": "本轮官方列表截至8/25更新，无本周新增条目；保留在办跟踪，不声称案结或法院全部文件穷尽。"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "C43",
+      "companies": [
+        "Apple",
+        "OpenAI"
+      ],
+      "summary": "Apple/OpenAI临时禁令程序：已读OpenAI反对申请文件，文件标Filed 08/31/26。不是法院已作禁令或本周新起诉。",
+      "materiality": "material",
+      "materiality_reason": "涉及产品部署及诉讼限制，不能因未最终裁判而排除。",
+      "disposition": "pending",
+      "reason": "正文/文件存在已读，具体公开可得时间、双方归因、原子证据及新稿映射待闭环。",
+      "discovery_refs": [
+        "Q05",
+        "Q06",
+        "turn98view5",
+        "turn99view1"
+      ],
+      "source_url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.474095/gov.uscourts.cand.474095.97.0.pdf",
+      "discovered_by": [
+        "resume-focused-1"
+      ]
+    },
+    {
+      "id": "C44",
+      "companies": [
+        "OpenAI",
+        "Microsoft"
+      ],
+      "summary": "NYT版权案：AP带日期报道政府提交支持合理使用的意见；OpenAI案件页另列9/4简易判决动议备忘录。两种程序必须分别核对，不能写成法院支持。",
+      "materiality": "material",
+      "materiality_reason": "可能影响训练版权风险和经营条件，没有判决或罚款数字不等于不重要。",
+      "disposition": "pending",
+      "reason": "AP直开失败，政府原文件未读；已读OpenAI9/4列表，但Q08所点PDF返回尚未展开完，各文件涉及公司范围及公开时间仍待核。",
+      "discovery_refs": [
+        "Q05",
+        "Q06",
+        "Q08",
+        "turn100view0",
+        "turn102view0"
+      ],
+      "source_urls": [
+        "https://apnews.com/article/dbb22e8e02c660ee5a8644915dec39a4",
+        "https://openai.com/new-york-times/"
+      ]
+    },
+    {
+      "id": "C45",
+      "companies": [
+        "Samsung Electronics"
+      ],
+      "summary": "Samsung9/1公布新增14英寸Galaxy Book6，799美元起，部分市场可用、配置因市场而异；IFA洗衣机仍为开发阶段展示。",
+      "materiality": "material",
+      "materiality_reason": "移动设备/PC产品价格与上市条件变化不能因无新业绩指引被归为只有科普。",
+      "disposition": "pending",
+      "reason": "已读Book6日期、售价、可用范围及表格脚注；洗衣机限制有已检索原文，最终版本时点、claim和新稿映射待完成。",
+      "discovery_refs": [
+        "Q04",
+        "Q07",
+        "turn101view2"
+      ],
+      "source_url": "https://news.samsung.com/global/samsung-expands-the-galaxy-book6-lineup-making-galaxy-book-more-accessible"
+    },
+    {
+      "id": "C46",
+      "companies": [
+        "Samsung Electronics",
+        "SK Hynix"
+      ],
+      "summary": "韩国MOTIR9/1公告战略物项调整生效，新增AI高性能芯片及半导体制造设备出口许可要求。",
+      "materiality": "material",
+      "materiality_reason": "MOTIR9/1官方生效新增战略物项许可；未点名Samsung/SK订单受损，行业规则与具名业绩分开。",
+      "disposition": "pending",
+      "reason": "MOTIR9/1官方生效新增战略物项许可；未点名Samsung/SK订单受损，行业规则与具名业绩分开。",
+      "discovery_refs": [
+        "Q06",
+        "turn101view3"
+      ],
+      "source_url": "https://english.motir.go.kr/eng/article/EATCLdfa319ada/2720/view"
+    },
+    {
+      "id": "C47",
+      "companies": [
+        "Anthropic"
+      ],
+      "summary": "8/31安全整改披露暂停评估/高风险训练与部分恢复；事故本身是7/8月旧事件，不能重写为本周新事故。",
+      "materiality": "material",
+      "materiality_reason": "安全治理与训练/部署节奏影响产品可用性。",
+      "disposition": "pending",
+      "reason": "已读官方暂停/恢复及部分仍暂停的限制；当周具体版本支持范围尚需与带日期报道交叉，未认证所有恢复细节。",
+      "discovery_refs": [
+        "Q03",
+        "turn99view5",
+        "turn100view5"
+      ],
+      "source_url": "https://www.anthropic.com/news/improving-alignment-security-efforts"
+    },
+    {
+      "id": "C48",
+      "companies": [
+        "Microsoft"
+      ],
+      "summary": "Microsoft/HUMAIN8/31合作标题在新闻列表出现，尚未核清。",
+      "materiality": "routine",
+      "materiality_reason": "具体公司合作候选，但本周列表重排不产生新事件",
+      "disposition": "excluded",
+      "reason": "旧公告首次公开日期在覆盖周前；先前按列表顶端Aug31误配日期的线索已纠正",
+      "discovery_refs": [
+        "Q01",
+        "Q07",
+        "Q08",
+        "turn101view0"
+      ],
+      "exclusion_basis": "outside_window",
+      "decision_evidence": "Microsoft Source page2正文明确August26与合作标题相邻；turn106search1；8/31旧稿亦已提及。仍可按活跃事项跟踪，但不标本周新增。"
+    },
+    {
+      "id": "C49",
+      "companies": [
+        "Apple"
+      ],
+      "summary": "9/1接班实际生效的AP报道，区别于4月旧计划",
+      "materiality": "material",
+      "materiality_reason": "公司治理与执行责任变化",
+      "disposition": "pending",
+      "reason": "本轮已读AP完整带时间正文：2026-09-01T10:29:40Z，takes the helm on Tuesday，支持本周生效而非仅4月计划；待绑定新稿claim。",
+      "discovered_by": [
+        "D-Apple-1",
+        "resume-focused-1"
+      ],
+      "source_url": "https://apnews.com/article/2fac80118828b4ada9d160d012c7be32"
+    },
+    {
+      "id": "C50",
+      "companies": [
+        "Apple",
+        "Alphabet / Google"
+      ],
+      "summary": "CAFC 25-1083于8/31出具意见的线索",
+      "materiality": "routine",
+      "materiality_reason": "非先例性的两项GUI专利IPR维持，不是产品禁售/新增许可限制或广泛行业规则；目前不足改变公司级经营判断",
+      "disposition": "excluded",
+      "reason": "保留窄范围专利案件进展，不进入重大事件正文，不是因缺赔偿数字排除。",
+      "discovered_by": [
+        "D-Apple-1"
+      ],
+      "source_url": "https://www.cafc.uscourts.gov/opinions-orders/25-1083.OPINION.8-31-2026_2747756.pdf",
+      "exclusion_basis": "not_material",
+      "decision_evidence": "CAFC 25-1083/1084, 2026-08-31, pp1-2: nonprecedential; Board obviousness upheld"
+    },
+    {
+      "id": "C51",
+      "companies": [
+        "Microsoft",
+        "Amazon / AWS"
+      ],
+      "summary": "Azure/AWS Multicloud Interconnect联合发布",
+      "materiality": "material",
+      "materiality_reason": "AWS 8/31原文明确Azure连接Public Preview；不是GA。N11 turn116view4 L236-240，与Azure原公告双源。",
+      "disposition": "pending",
+      "reason": "AWS 8/31原文明确Azure连接Public Preview；不是GA。N11 turn116view4 L236-240，与Azure原公告双源。",
+      "discovery_refs": [
+        "N02",
+        "N03",
+        "turn108view1"
+      ],
+      "source_url": "https://azure.microsoft.com/en-us/blog/introducing-azure-multicloud-interconnect-for-aws/"
+    },
+    {
+      "id": "C52",
+      "companies": [
+        "Microsoft"
+      ],
+      "summary": "GitHub Copilot HydraFusion多模型编排",
+      "materiality": "material",
+      "materiality_reason": "9/4GitHub原文：全Copilot计划CLI研究预览；各模型token标准价，67%是TerminalBench固定中推理离线估计，另两项质量略降，不把标语作为全面不损精度。",
+      "disposition": "pending",
+      "reason": "9/4GitHub原文：全Copilot计划CLI研究预览；各模型token标准价，67%是TerminalBench固定中推理离线估计，另两项质量略降，不把标语作为全面不损精度。",
+      "discovery_refs": [
+        "N02",
+        "N03",
+        "turn108view3"
+      ],
+      "source_url": "https://www.linkedin.com/feed/update/urn:li:activity:7501674820452069376/"
+    },
+    {
+      "id": "C53",
+      "companies": [
+        "Microsoft"
+      ],
+      "summary": "MAI-Transcribe-2语音识别模型",
+      "materiality": "material",
+      "materiality_reason": "MAI-Transcribe-2 9/3官方：$0.10/音频小时；性能为自测，待读可用范围。",
+      "disposition": "pending",
+      "reason": "MAI-Transcribe-2 9/3官方：$0.10/音频小时；性能为自测，待读可用范围。",
+      "discovery_refs": [
+        "N02",
+        "N03",
+        "turn108view2"
+      ],
+      "source_url": "https://microsoft.ai/news/mai-transcribe-2-is-the-fastest-most-accurate-and-cheapest-speech-recognition-model-in-the-world/"
+    },
+    {
+      "id": "C54",
+      "companies": [
+        "Microsoft"
+      ],
+      "summary": "众议院秘密监控通知改革通过的公司声明",
+      "materiality": "material",
+      "materiality_reason": "8/31 H.R.6048众院通过，GovInfo EH+议员声明交叉；不是已成法律。影响云客户告知与政府索取数据程序。",
+      "disposition": "pending",
+      "reason": "8/31 H.R.6048众院通过，GovInfo EH+议员声明交叉；不是已成法律。影响云客户告知与政府索取数据程序。",
+      "discovery_refs": [
+        "N02",
+        "N03",
+        "turn108view4"
+      ],
+      "source_url": "https://blogs.microsoft.com/on-the-issues/2026/08/31/house-passes-historic-reforms-to-rein-in-secret-surveillance/"
+    },
+    {
+      "id": "C55",
+      "companies": [
+        "TSMC"
+      ],
+      "summary": "ITC 337-TA-1443和解终止调查，9/3决定，9/4公开检视备案",
+      "materiality": "material",
+      "materiality_reason": "9/4 Law360及中国贸易救济网同期报道可锚定已公开终止；9/8FR正式刊登不自动越界，原PDF已读。",
+      "disposition": "pending",
+      "reason": "9/4 Law360及中国贸易救济网同期报道可锚定已公开终止；9/8FR正式刊登不自动越界，原PDF已读。",
+      "discovery_refs": [
+        "N02",
+        "N03",
+        "turn108view0"
+      ],
+      "source_url": "https://public-inspection.federalregister.gov/2026-18260.pdf"
+    },
+    {
+      "id": "C56",
+      "companies": [
+        "Amazon / AWS"
+      ],
+      "summary": "Alexa购物消息真伪验证及Career Choice、内容/节水更新",
+      "materiality": "routine",
+      "materiality_reason": "新增购物防诈便利功能及日常内容/员工项目，所读披露未显示会改变核心经营/履约条件的重大范围变化，不以新闻数量填充正文",
+      "disposition": "excluded",
+      "reason": "新增购物防诈便利功能及日常内容/员工项目，所读披露未显示会改变核心经营/履约条件的重大范围变化，不以新闻数量填充正文",
+      "discovery_refs": [
+        "N05",
+        "turn110search3"
+      ],
+      "exclusion_basis": "not_material",
+      "decision_evidence": "Amazon Sep4 dated compilation full paragraphs, turn110search3"
+    },
+    {
+      "id": "C57",
+      "companies": [
+        "Meta"
+      ],
+      "summary": "WhatsApp在印度上线家庭账单支付",
+      "materiality": "material",
+      "materiality_reason": "9/3官方WhatsApp印度账单支付接入BBPS、30类别逐步推出，全体Android/iOS未来数周而非当日全量。",
+      "disposition": "pending",
+      "reason": "9/3官方WhatsApp印度账单支付接入BBPS、30类别逐步推出，全体Android/iOS未来数周而非当日全量。",
+      "discovery_refs": [
+        "N05",
+        "turn110search2"
+      ]
+    },
+    {
+      "id": "C58",
+      "companies": [
+        "Alphabet / Google"
+      ],
+      "summary": "9月Android Drop功能更新",
+      "materiality": "routine",
+      "materiality_reason": "9/1Android五项便利功能；FindHub/Gemini记忆与Guided vision coming soon且设备/地区限制，Keep聊天协作逐步推送。未改变关键商业/准入条件的日常OS功能，不填充头条；人工正文否定AI摘要声称全已上线。",
+      "disposition": "excluded",
+      "reason": "9/1Android五项便利功能；FindHub/Gemini记忆与Guided vision coming soon且设备/地区限制，Keep聊天协作逐步推送。未改变关键商业/准入条件的日常OS功能，不填充头条；人工正文否定AI摘要声称全已上线。",
+      "discovery_refs": [
+        "N05",
+        "turn110search8"
+      ],
+      "exclusion_basis": "not_material",
+      "decision_evidence": "turn116view6 L263-301 original body including coming-soon and footnote; AI-generated summary not used"
+    },
+    {
+      "id": "C59",
+      "companies": [
+        "NVIDIA",
+        "Microsoft"
+      ],
+      "summary": "NVIDIA9/3宣布PAIR beta和10月RTX Spark计划，支持Windows本地代理及不同已上市硬件；不是所有入口已GA。",
+      "materiality": "material",
+      "materiality_reason": "终端推理软件与硬件分发改变用户部署条件。",
+      "disposition": "pending",
+      "reason": "需区分现有软件可用与10月PC计划，确认Microsoft合作范围",
+      "discovery_refs": [
+        "N07",
+        "turn112search4"
+      ]
+    },
+    {
+      "id": "C60",
+      "companies": [
+        "NVIDIA"
+      ],
+      "summary": "NVIDIA与CrowdStrike 9/1代理安全合作",
+      "materiality": "material",
+      "materiality_reason": "9/1官方CrowdStrike SafeMind基于Nemotron并在Falcon原生提供，非泛泛伙伴口号；99%成本比较为内部特定测试，不推广为平台利润。",
+      "disposition": "pending",
+      "reason": "9/1官方CrowdStrike SafeMind基于Nemotron并在Falcon原生提供，非泛泛伙伴口号；99%成本比较为内部特定测试，不推广为平台利润。",
+      "discovery_refs": [
+        "N07",
+        "turn112search0"
+      ]
+    },
+    {
+      "id": "C61",
+      "companies": [
+        "NVIDIA"
+      ],
+      "summary": "NVIDIA/MediaTek 8/31深化边缘、云、汽车合作",
+      "materiality": "material",
+      "materiality_reason": "8/31 NVIDIA官方明确已投资MediaTek $3.5bn可转债，未来采用NVLink Fusion、继续多代PC/车载合作；不是本周新签全部旧合作。",
+      "disposition": "pending",
+      "reason": "8/31 NVIDIA官方明确已投资MediaTek $3.5bn可转债，未来采用NVLink Fusion、继续多代PC/车载合作；不是本周新签全部旧合作。",
+      "discovery_refs": [
+        "N07",
+        "turn112search2"
+      ]
+    },
+    {
+      "id": "C62",
+      "companies": [
+        "Tesla"
+      ],
+      "summary": "Solar Roof停止及安装商损失报道线索",
+      "materiality": "material",
+      "materiality_reason": "9/1Electrek新采访显示安装商沉没投入、重排项目和维保担忧；8月停产为背景，不使用未披露的Tesla损失金额。",
+      "disposition": "pending",
+      "reason": "9/1Electrek新采访显示安装商沉没投入、重排项目和维保担忧；8月停产为背景，不使用未披露的Tesla损失金额。",
+      "discovery_refs": [
+        "N06",
+        "turn111reddit17"
+      ]
+    },
+    {
+      "id": "C63",
+      "companies": [
+        "Tesla"
+      ],
+      "summary": "Cybercab面向车队买家邀请及太阳能产能目标线索",
+      "materiality": "material",
+      "materiality_reason": "9/3车队兴趣表可核，不等同第三方销售已生效；太阳能100GW为旧目标非本周结果，单独不采。",
+      "disposition": "pending",
+      "reason": "9/3车队兴趣表可核，不等同第三方销售已生效；太阳能100GW为旧目标非本周结果，单独不采。",
+      "discovery_refs": [
+        "N06"
+      ]
+    },
+    {
+      "id": "C64",
+      "companies": [
+        "TSMC"
+      ],
+      "summary": "SEMICON先进硅系统整合、硅光子与CoWoS",
+      "materiality": "material",
+      "materiality_reason": "8/31与9/1CNA现场：3DFabric/SoIC/COUPE/大尺寸CoWoS路线，2028/29未来，非当期产能；按组合技术路线事件纳入，不新增未具名订单。",
+      "disposition": "pending",
+      "reason": "8/31与9/1CNA现场：3DFabric/SoIC/COUPE/大尺寸CoWoS路线，2028/29未来，非当期产能；按组合技术路线事件纳入，不新增未具名订单。",
+      "discovery_refs": [
+        "N08",
+        "turn113search9"
+      ]
+    },
+    {
+      "id": "C65",
+      "companies": [
+        "OpenAI"
+      ],
+      "summary": "Daybreak Frontline Defenders $1B计划",
+      "materiality": "material",
+      "materiality_reason": "Daybreak $1bn subsidized access/training/support/partnership commitment，目标六个月消费，非现金捐赠或已付capex。9/3正文已读。",
+      "disposition": "pending",
+      "reason": "Daybreak $1bn subsidized access/training/support/partnership commitment，目标六个月消费，非现金捐赠或已付capex。9/3正文已读。",
+      "discovery_refs": [
+        "RSS-OpenAI-20260908"
+      ]
+    },
+    {
+      "id": "C66",
+      "companies": [
+        "OpenAI"
+      ],
+      "summary": "ChatGPT连接EHR及医疗行业数据",
+      "materiality": "material",
+      "materiality_reason": "9/1 Epic EHR组织受控接入+Healthcare Public Data；EHR不对个人账户开放，适用BAA与管理员启用。",
+      "disposition": "pending",
+      "reason": "9/1 Epic EHR组织受控接入+Healthcare Public Data；EHR不对个人账户开放，适用BAA与管理员启用。",
+      "discovery_refs": [
+        "RSS-OpenAI-20260908"
+      ]
+    },
+    {
+      "id": "C67",
+      "companies": [
+        "OpenAI"
+      ],
+      "summary": "支持加州青少年AI安全法案",
+      "materiality": "material",
+      "materiality_reason": "8/31OpenAI支持SB1119+CalMatters记录同日参院同意修订送登记；只写立法推进/支持，未核州长签署不写已生效。",
+      "disposition": "pending",
+      "reason": "8/31OpenAI支持SB1119+CalMatters记录同日参院同意修订送登记；只写立法推进/支持，未核州长签署不写已生效。",
+      "discovery_refs": [
+        "RSS-OpenAI-20260908"
+      ]
+    },
+    {
+      "id": "C68",
+      "companies": [
+        "OpenAI"
+      ],
+      "summary": "ChatGPT广告扩展",
+      "materiality": "material",
+      "materiality_reason": "8/31公司披露ChatGPT Ads $1bn annualized revenue run rate，非完整年度实际收入；自助广告当日扩展印度/欧洲/MENA。",
+      "disposition": "pending",
+      "reason": "8/31公司披露ChatGPT Ads $1bn annualized revenue run rate，非完整年度实际收入；自助广告当日扩展印度/欧洲/MENA。",
+      "discovery_refs": [
+        "RSS-OpenAI-20260908"
+      ]
+    },
+    {
+      "id": "C69",
+      "companies": [
+        "OpenAI"
+      ],
+      "summary": "An Alien Mind及Research acceleration 9/6披露",
+      "materiality": "material",
+      "materiality_reason": "9/6公司首次公开内部研究加速与监控能力衰退风险评估，回顾7/8月训练限制；非9/6新事故/独立证明递归自改进。",
+      "disposition": "pending",
+      "reason": "9/6公司首次公开内部研究加速与监控能力衰退风险评估，回顾7/8月训练限制；非9/6新事故/独立证明递归自改进。",
+      "discovery_refs": [
+        "RSS-OpenAI-20260908"
+      ]
+    },
+    {
+      "id": "C70",
+      "companies": [
+        "Apple"
+      ],
+      "summary": "9/1 Rosetta兼容迁移提醒",
+      "materiality": "routine",
+      "materiality_reason": "9/1为去年WWDC已公告Rosetta路线提醒，保留旧游戏例外；未核新的停用或本周禁用，不单列新重大产品事件。",
+      "disposition": "excluded",
+      "reason": "9/1为去年WWDC已公告Rosetta路线提醒，保留旧游戏例外；未核新的停用或本周禁用，不单列新重大产品事件。",
+      "discovery_refs": [
+        "N15",
+        "turn120view3"
+      ],
+      "exclusion_basis": "outside_window",
+      "decision_evidence": "turn120view3 L134-154 explicitly As announced at WWDC last year"
+    },
+    {
+      "id": "C71",
+      "companies": [
+        "Alphabet / Google"
+      ],
+      "summary": "9/2西弗吉尼亚长时储能合作",
+      "materiality": "material",
+      "materiality_reason": "9/2 Google/MN8/Eos合作；86MW太阳能+10MW/100MWh锌储能+70MW/280MWh锂储能，拟2028/2030/2029投运；MN8拥有运营、Google购买电量容量清洁属性，3.5亿美元为MN8项目估计非Google已付capex。",
+      "disposition": "pending",
+      "reason": "9/2 Google/MN8/Eos合作；86MW太阳能+10MW/100MWh锌储能+70MW/280MWh锂储能，拟2028/2030/2029投运；MN8拥有运营、Google购买电量容量清洁属性，3.5亿美元为MN8项目估计非Google已付capex。",
+      "discovery_refs": [
+        "RSS-Google-20260908"
+      ]
+    },
+    {
+      "id": "C72",
+      "companies": [
+        "Alphabet / Google"
+      ],
+      "summary": "9/1 Gemini代理视频理解与Workspace Google Pics",
+      "materiality": "material",
+      "materiality_reason": "Gemini代理视频API已可用，App soon/AskYouTube未来数月；Pics分批与Docs/Slides当日开始集成、Drive未来数周。不把AI摘要替代正文。",
+      "disposition": "pending",
+      "reason": "Gemini代理视频API已可用，App soon/AskYouTube未来数月；Pics分批与Docs/Slides当日开始集成、Drive未来数周。不把AI摘要替代正文。",
+      "discovery_refs": [
+        "RSS-Google-20260908"
+      ]
+    },
+    {
+      "id": "C73",
+      "companies": [
+        "Alphabet / Google"
+      ],
+      "summary": "9/3 WeatherNext3模型发布",
+      "materiality": "material",
+      "materiality_reason": "WeatherNext3 9/3开始集成搜索/Gemini/Maps/Cloud等；5km只部分变量，1hour刷新，保留官方灾害预警仍看气象机关。",
+      "disposition": "pending",
+      "reason": "WeatherNext3 9/3开始集成搜索/Gemini/Maps/Cloud等；5km只部分变量，1hour刷新，保留官方灾害预警仍看气象机关。",
+      "discovery_refs": [
+        "RSS-Google-20260908"
+      ]
+    },
+    {
+      "id": "C74",
+      "companies": [
+        "Alphabet / Google"
+      ],
+      "summary": "9/4 Lyria3.5发布与全球Gemini可用；Translate、Workspace语音拆为独立候选。",
+      "materiality": "material",
+      "materiality_reason": "模型及产品使用条件改变；不将三个不同事件混为一项。",
+      "disposition": "pending",
+      "reason": "RSS已见新功能，读正文后判重大，不先排除",
+      "discovery_refs": [
+        "RSS-Google-20260908"
+      ]
+    },
+    {
+      "id": "C75",
+      "companies": [
+        "Meta"
+      ],
+      "summary": "Meta/Instagram对Leascend的执行争议，9/4非先例性裁定维持对Leascend的藐视法庭制裁。",
+      "materiality": "routine",
+      "materiality_reason": "读完三页PDF，Meta为原告被上诉人，不是被罚方；窄范围执行争议，未改变Meta核心业务规则。",
+      "disposition": "excluded",
+      "reason": "读完三页PDF，Meta为原告被上诉人，不是被罚方；窄范围执行争议，未改变Meta核心业务规则。",
+      "discovery_refs": [
+        "R02",
+        "turn122search18"
+      ],
+      "exclusion_basis": "not_material",
+      "decision_evidence": "https://cdn.ca9.uscourts.gov/datastore/memoranda/2026/09/04/25-4855.pdf 全3页；原件读取2026-09-08T02:24:20.262946+00:00，非先例、被制裁方Leascend。"
+    },
+    {
+      "id": "C76",
+      "companies": [
+        "Anthropic"
+      ],
+      "summary": "Bartz版权和解9月通知/批准线索",
+      "materiality": "routine",
+      "materiality_reason": "2025年和解与2026年7/20最终批准均旧；本周索赔份额通知是既有和解分配程序，无新被告义务/金额/裁定证据。",
+      "disposition": "excluded",
+      "reason": "2025年和解与2026年7/20最终批准均旧；本周索赔份额通知是既有和解分配程序，无新被告义务/金额/裁定证据。",
+      "discovery_refs": [
+        "R02",
+        "turn122reddit21",
+        "turn122reddit22"
+      ],
+      "exclusion_basis": "not_material",
+      "decision_evidence": "Authors Guild July21 dated final approval; September Reddit claim-summary notifications not new settlement"
+    },
+    {
+      "id": "C77",
+      "companies": [
+        "OpenAI"
+      ],
+      "summary": "OpenAI员工70亿美元股份回购报道实际8/10发布，非本周。",
+      "materiality": "material",
+      "materiality_reason": "OpenAI$7bn员工回购实际8/10旧闻应排除；Anthropic9/4Reuters称IPO推迟最早10月中旬营销、9月底披露招股书，拒绝评论；需拆开两候选。",
+      "disposition": "excluded",
+      "reason": "剥离汇总页混入的Anthropic IPO事项，OpenAI回购为期外报道。",
+      "discovery_refs": [
+        "N14",
+        "turn119search7"
+      ],
+      "exclusion_basis": "outside_window",
+      "decision_evidence": "https://techcrunch.com/2026/08/10/openai-reportedly-completed-a-7-billion-employee-tender-offer/ 发布Aug10 17:03PDT；已读署时正文。"
+    },
+    {
+      "id": "C78",
+      "companies": [
+        "Samsung Electronics"
+      ],
+      "summary": "Samsung9/1在SEMICON披露CUBE路线图，zNAND-O样品计划2028；HBM4E五月样品是旧背景。",
+      "materiality": "material",
+      "disposition": "pending",
+      "reason": "全球新闻室未覆盖的半导体业务会议披露，需正文、技术阶段",
+      "materiality_reason": "长期存储架构与先进封装竞争路线改变验证条件，不是当周量产。",
+      "discovery_refs": [
+        "N25",
+        "turn134view1 link201"
+      ]
+    },
+    {
+      "id": "C79",
+      "companies": [
+        "Anthropic"
+      ],
+      "summary": "Reuters9/4消息人士称IPO推介最快推迟至10月中旬；未获公司确认。",
+      "materiality": "material",
+      "materiality_reason": "资本市场时间表变化，非正式确定上市日。",
+      "disposition": "pending",
+      "reason": "候选刚发现，待绑定原子证据/完成核验。",
+      "discovered_by": [],
+      "discovery_ref": "N25 turn134view0 L795-809"
+    },
+    {
+      "id": "C80",
+      "companies": [
+        "Samsung Electronics"
+      ],
+      "summary": "9/4 Samsung Portugal当日宣布S26 FE已可购买；不是仅用8/27旧预告推断。",
+      "materiality": "material",
+      "materiality_reason": "新产品在具名市场从计划进入实际销售，已读Cision署时官方正文。",
+      "disposition": "pending",
+      "reason": "已进入草稿，待最终原子证据绑定；不伪报发布闭环。",
+      "discovered_by": [
+        "resume-focused-8"
+      ],
+      "discovery_ref": "Z01 turn137search5；Z03末条打开内部错误",
+      "draft_event_ids": [
+        "C80"
+      ]
+    },
+    {
+      "id": "C81",
+      "companies": [
+        "Alphabet / Google"
+      ],
+      "summary": "9/3 Workspace语音正式推出，消费订阅分批；企业版coming soon。",
+      "materiality": "material",
+      "materiality_reason": "Gmail/Docs/Keep可用范围变化，不能照抄AI摘要中的企业已上线。",
+      "disposition": "pending",
+      "reason": "候选刚发现，待绑定原子证据/完成核验。",
+      "discovered_by": [
+        "resume-focused-9"
+      ],
+      "discovery_ref": "Z02 turn138view1 L264-280"
+    },
+    {
+      "id": "C82",
+      "companies": [
+        "Alphabet / Google"
+      ],
+      "summary": "9/4 Translate后台翻译与iOS听筒两项便利性更新。",
+      "materiality": "routine",
+      "materiality_reason": "原文是交互便利改进，未见定价/业务准入/关键新模型变化。",
+      "disposition": "excluded",
+      "reason": "原文是交互便利改进，未见定价/业务准入/关键新模型变化。",
+      "discovered_by": [
+        "resume-focused-9"
+      ],
+      "discovery_ref": "Z02 turn138view0 L214-221",
+      "exclusion_basis": "not_material",
+      "decision_evidence": "Z02 turn138view0 L214-221"
+    },
+    {
+      "id": "C83",
+      "companies": [
+        "SK Hynix"
+      ],
+      "summary": "9/4 6-K澄清Solidigm措施仍未确定，5万亿韩元pre-IPO为8月旧报道。",
+      "materiality": "material",
+      "materiality_reason": "公司再次澄清资本事项未定并承诺后续披露，不是新融资完成。",
+      "disposition": "pending",
+      "reason": "已进入草稿，待最终原子证据绑定；不伪报发布闭环。",
+      "discovered_by": [
+        "resume-focused-6"
+      ],
+      "discovery_ref": "Z03 turn139search6",
+      "draft_event_ids": [
+        "C83"
+      ]
+    },
+    {
+      "id": "C84",
+      "companies": [
+        "SK Hynix"
+      ],
+      "summary": "Reuters9/2匿名来源称韩国场外吸收SK汇回约200亿美元；AJP9/3未获当局确认。",
+      "materiality": "material",
+      "materiality_reason": "本周新披露资金回流安排，交易时间未知、7月ADR是旧背景，保留归因。",
+      "disposition": "pending",
+      "reason": "已进入草稿，待最终原子证据绑定；不伪报发布闭环。",
+      "discovered_by": [
+        "resume-focused-7"
+      ],
+      "discovery_ref": "Z03 turn139search12",
+      "draft_event_ids": [
+        "C84"
+      ]
+    },
+    {
+      "id": "C85",
+      "companies": [
+        "Apple"
+      ],
+      "summary": "9/1 8-K/A管理层薪酬安排，原文件正文尚未取得。",
+      "discovered_by": [
+        "resume-focused-1"
+      ],
+      "discovery_ref": "turn140view2 SEC登记，正文直连空白",
+      "materiality": "material",
+      "materiality_reason": "已读Apple8-K/A Item5.02全部薪酬与生效条款，9/1SEC受理。将并入C49交接事项，不拆分凑数。",
+      "disposition": "pending",
+      "reason": "事实正文已核，待落入草稿并绑定最终时点证据。"
+    },
+    {
+      "id": "C86",
+      "companies": [
+        "Microsoft"
+      ],
+      "summary": "Azure单独收入财报展示变更报道线索。",
+      "discovered_by": [
+        "resume-focused-2"
+      ],
+      "discovery_ref": "Z09 turn145search20",
+      "materiality": "material",
+      "materiality_reason": "已读Microsoft8-K附件99.1的FY27分部结构、FY2025/26重列原表及定义，9/2受理；不是公司收入被上修。",
+      "disposition": "pending",
+      "reason": "事实正文已核，待落入草稿并绑定最终时点证据。"
+    },
+    {
+      "id": "C87",
+      "companies": [
+        "Microsoft"
+      ],
+      "summary": "Xbox Cloud Gaming每月时数上限调整线索。",
+      "discovered_by": [
+        "resume-focused-3"
+      ],
+      "discovery_ref": "Z09 turn145reddit25",
+      "materiality": "material",
+      "materiality_reason": "已读Xbox9/3原公告，11月开始15/10/5小时/月，新收费价格尚未披露。",
+      "disposition": "pending",
+      "reason": "事实正文已核，待落入草稿并绑定最终时点证据。"
+    },
+    {
+      "id": "C88",
+      "companies": [
+        "Meta"
+      ],
+      "summary": "Instagram应对AI生成账号/假人政策线索。",
+      "discovered_by": [
+        "resume-focused-5"
+      ],
+      "discovery_ref": "Z09 turn145search13",
+      "materiality": "material",
+      "materiality_reason": "TechCrunch8/31当日报道链接Instagram官方说明受阻；另读Express9/2完整报道支持标签与降流量，不是全面禁AI账号。",
+      "disposition": "pending",
+      "reason": "事实正文已核，待落入草稿并绑定最终时点证据。"
+    },
+    {
+      "id": "C89",
+      "companies": [
+        "Microsoft"
+      ],
+      "summary": "4800裁员报道，是否本周首次披露与团队范围待核。",
+      "discovered_by": [],
+      "discovery_ref": "N01 turn106news12之外的Windows Central报道",
+      "materiality": "material",
+      "materiality_reason": "重大历史事件，但本次报道重读不构成周内进展。",
+      "disposition": "excluded",
+      "reason": "4800裁员实际7月6日，不是本周新增。",
+      "exclusion_basis": "outside_window",
+      "decision_evidence": "AP https://apnews.com/article/5a8f712c531911089dee008b3bbb33c4；Z11 turn148news32 2026-07-06T14:49Z正文；Reuters同期视频描述一致。"
+    },
+    {
+      "id": "C90",
+      "companies": [
+        "NVIDIA"
+      ],
+      "summary": "GeForce NOW 9月游戏与DLSS5可用安排，不能未读正文就全归为常规游戏名单。",
+      "discovered_by": [
+        "resume-focused-10"
+      ],
+      "discovery_ref": "N07 turn112search3",
+      "materiality": "routine",
+      "materiality_reason": "新增范围限于特定游戏内容和效果采用，商业模式与普遍使用条件未变。",
+      "disposition": "excluded",
+      "reason": "读完9/3公告：某游戏在既有Ultimate/RTX5080云实例采用DLSS5，另列游戏上架。未宣布全平台新代模型、会员价格或可用区域变化；不为补满游戏业务另立重大新闻。",
+      "exclusion_basis": "not_material",
+      "decision_evidence": "https://blogs.nvidia.com/blog/geforce-now-thursday-september-2026-games-list/ L5-23、40-91；保留区域、实例、游戏上架时间可能不同的脚注。"
+    },
+    {
+      "id": "C91",
+      "companies": [
+        "Microsoft"
+      ],
+      "summary": "Xbox9/4宣布TCL电视应用合作，未来数月、指定机型与市场，非本周已上线。",
+      "materiality": "material",
+      "materiality_reason": "新增设备分发渠道与伙伴安排，影响服务采用。",
+      "disposition": "pending",
+      "reason": "已读官方正文，待入稿及证据绑定。",
+      "decision_evidence": "https://news.xbox.com/en-us/2026/09/04/xbox-app-tcl-smart-tv/ L32-43",
+      "discovered_by": [
+        "resume-focused-3"
+      ]
+    },
+    {
+      "id": "C92",
+      "companies": [
+        "Microsoft"
+      ],
+      "summary": "Your Discs. Now Also Digital公告为8/26，计划8/31内测。",
+      "materiality": "material",
+      "materiality_reason": "实体权益转数字内测改变访问条件，8/31媒体报道部分开测，不是全部正式上线。",
+      "disposition": "pending",
+      "reason": "已读当周正文并写入草稿，最终时点和覆盖绑定未完成。",
+      "decision_evidence": "https://news.xbox.com/en-us/2026/08/26/your-discs-now-also-digital/ L30-41",
+      "discovered_by": [
+        "resume-focused-3"
+      ]
+    },
+    {
+      "id": "C93",
+      "companies": [
+        "Microsoft"
+      ],
+      "summary": "8/31 Outlook/Exchange大范围故障线索。",
+      "materiality": "material",
+      "materiality_reason": "多小时企业邮件故障影响服务可用性；最终恢复时点未核，不判断周末仍故障。",
+      "disposition": "pending",
+      "reason": "已读当周正文并写入草稿，最终时点和覆盖绑定未完成。",
+      "decision_evidence": "Z19 turn156search5 https://monitoringcompetitor.com/",
+      "discovered_by": [
+        "resume-focused-4"
+      ]
+    },
+    {
+      "id": "C94",
+      "companies": [
+        "Apple"
+      ],
+      "summary": "英国ATT Collective Action对Apple约20亿英镑应用跟踪规则集体索赔线索",
+      "materiality": "material",
+      "materiality_reason": "已读ICLG具日期全文和Reuters当周报道：9/3申请集体程序，约20亿英镑为原告估计，非认证或罚款；Apple此前隐私立场归因保留。",
+      "disposition": "pending",
+      "reason": "正文事实范围已核，最终时点/目标绑定待完成；已读ICLG具日期全文和Reuters当周报道：9/3申请集体程序，约20亿英镑为原告估计，非认证或罚款；Apple此前隐私立场归因保留。",
+      "discovered_by": [
+        "continued-Apple-legal-discovery",
+        "CL-R-Apple-02"
+      ],
+      "discovery_refs": [
+        "Y01 turn160reddit28",
+        "Y02 turn161search1",
+        "Y02 turn161search2",
+        "Y02 turn161search1全文；Y03 turn162search1 Reuters"
+      ],
+      "draft_event_ids": [
+        "C94"
+      ],
+      "draft_targets": [
+        "event:3",
+        "company:Apple",
+        "headline:9"
+      ]
+    },
+    {
+      "id": "C95",
+      "companies": [
+        "Microsoft"
+      ],
+      "summary": "Windows Project Zenith于9/4发布线索",
+      "materiality": "material",
+      "materiality_reason": "已读微软9/4开发者原文：Zenith首先拟随AMD Ryzen AI Halo提供，64GB+/250GB/s+目标设备；不是所有Windows升级或已出货。",
+      "disposition": "pending",
+      "reason": "正文事实范围已核，最终时点/目标绑定待完成；已读微软9/4开发者原文：Zenith首先拟随AMD Ryzen AI Halo提供，64GB+/250GB/s+目标设备；不是所有Windows升级或已出货。",
+      "discovered_by": [
+        "continued-C95"
+      ],
+      "discovery_refs": [
+        "Y04 turn163search8",
+        "Y05 turn164search0全文"
+      ],
+      "draft_event_ids": [
+        "C95"
+      ],
+      "draft_targets": [
+        "event:14",
+        "company:Microsoft"
+      ]
+    },
+    {
+      "id": "C96",
+      "companies": [
+        "Amazon / AWS"
+      ],
+      "summary": "Amazon物流网络计划2029年处理88.7%美国包裹的报道线索",
+      "materiality": "material",
+      "materiality_reason": "已读BI原文2026-09-03T09:00:02.581Z：2029年88.7%为7月内部初步规划本周披露，Amazon回应可能重大修订，不能写成确定目标或交付。",
+      "disposition": "pending",
+      "reason": "正文事实范围已核，最终时点/目标绑定待完成；已读BI原文2026-09-03T09:00:02.581Z：2029年88.7%为7月内部初步规划本周披露，Amazon回应可能重大修订，不能写成确定目标或交付。",
+      "discovered_by": [
+        "continued-C96"
+      ],
+      "discovery_refs": [
+        "Y04 turn163reddit18",
+        "Y14 turn173view1 L168-187、212-232"
+      ],
+      "draft_event_ids": [
+        "C96"
+      ],
+      "draft_targets": [
+        "event:24",
+        "company:Amazon / AWS"
+      ]
+    },
+    {
+      "id": "C97",
+      "companies": [
+        "Amazon / AWS"
+      ],
+      "summary": "最高法院26-47 Amazon Logistics申请延长答复期限",
+      "materiality": "routine",
+      "materiality_reason": "本周仅批准答复延期，不改变实体裁判、审理许可或现行经营义务。",
+      "disposition": "excluded",
+      "reason": "保留程序记录，不单列重大新闻；并非因未量化赔偿排除。",
+      "discovered_by": [
+        "continued-C97"
+      ],
+      "discovery_refs": [
+        "Y04 turn163search2"
+      ],
+      "exclusion_basis": "not_material",
+      "decision_evidence": "SCOTUS26-47原docket L22-25：8/31申请，9/1批准答复延期至10/16。"
+    },
+    {
+      "id": "C98",
+      "companies": [
+        "Meta"
+      ],
+      "summary": "Meta眼镜诉讼修订，可能新增被拍摄旁观者群体",
+      "materiality": "material",
+      "materiality_reason": "Law360署时9/1 22:24EDT的导语支持新增旁观者群体诉请，正文/附件受403限制；只按媒体披露表述，待补原申请。",
+      "disposition": "pending",
+      "reason": "正文事实范围已核，最终时点/目标绑定待完成；Law360署时9/1 22:24EDT的导语支持新增旁观者群体诉请，正文/附件受403限制；只按媒体披露表述，待补原申请。",
+      "discovered_by": [
+        "continued-C98"
+      ],
+      "discovery_refs": [
+        "Y06 turn165search2",
+        "Y07 turn166search8",
+        "Y10 turn169search1；Y12 turn171view0 403"
+      ],
+      "draft_event_ids": [
+        "C98"
+      ],
+      "draft_targets": [
+        "event:28",
+        "company:Meta"
+      ]
+    },
+    {
+      "id": "C99",
+      "companies": [
+        "Meta"
+      ],
+      "summary": "9/4 Meta脸部识别与生成AI BIPA集体诉讼",
+      "materiality": "material",
+      "materiality_reason": "WBE律师事务所9/4公告全文已读；仅为申请方声明，不是法院认定。请求集体认证和救济，BIPA与加州隐私权涉及脸部数据训练。",
+      "disposition": "pending",
+      "reason": "正文事实范围已核，最终时点/目标绑定待完成；WBE律师事务所9/4公告全文已读；仅为申请方声明，不是法院认定。请求集体认证和救济，BIPA与加州隐私权涉及脸部数据训练。",
+      "discovered_by": [
+        "continued-C99"
+      ],
+      "discovery_refs": [
+        "Y06 turn165search3",
+        "Y07 turn166search10",
+        "Y11 turn170view0 L25-36"
+      ],
+      "draft_event_ids": [
+        "C99"
+      ],
+      "draft_targets": [
+        "event:29",
+        "company:Meta"
+      ]
+    },
+    {
+      "id": "C100",
+      "companies": [
+        "Meta"
+      ],
+      "summary": "新墨西哥州Facebook数据隐私诉讼报道，需核是否期内及是否旧案",
+      "materiality": "material",
+      "materiality_reason": "可能涉及训练数据、摄录隐私、被诉范围或产品可用条件，不能凭标题排除。",
+      "disposition": "pending",
+      "reason": "已核是D-101-CV-2021-00132隐私案，而非2023儿童安全案；9/8-10/2排期来自8/20旧审前令，只能作已公布催化，原PDF公开版本仍需核。",
+      "discovered_by": [
+        "continued-C100"
+      ],
+      "discovery_refs": [
+        "Y06 turn165reddit22",
+        "Y07 turn166reddit24",
+        "Y11 turn170view2 L34-68",
+        "Y13 turn172view3 L160-166",
+        "Y14 turn173view2"
+      ],
+      "draft_targets": [
+        "catalyst:5",
+        "company:Meta"
+      ]
+    },
+    {
+      "id": "C101",
+      "companies": [
+        "Meta"
+      ],
+      "summary": "Meta眼镜相机被关闭的报道，可能涉及隐私防滥用执行",
+      "materiality": "material",
+      "materiality_reason": "已读Semafor经Yahoo署时9/1 19:40UTC转载导语及公司VP回应：关闭篡改指示灯设备的摄录；设备总数仅估计，不能外推全部眼镜失效。",
+      "disposition": "pending",
+      "reason": "正文事实范围已核，最终时点/目标绑定待完成；已读Semafor经Yahoo署时9/1 19:40UTC转载导语及公司VP回应：关闭篡改指示灯设备的摄录；设备总数仅估计，不能外推全部眼镜失效。",
+      "discovered_by": [
+        "continued-C101"
+      ],
+      "discovery_refs": [
+        "Y07 turn166reddit23",
+        "Y10 turn169search2全文可见部分；Y11直连403"
+      ],
+      "draft_event_ids": [
+        "C101"
+      ],
+      "draft_targets": [
+        "event:30",
+        "company:Meta"
+      ]
+    },
+    {
+      "id": "C102",
+      "companies": [
+        "Amazon / AWS"
+      ],
+      "summary": "迈阿密Amazon货机事故出现在期内文章的动态推荐栏",
+      "materiality": "material",
+      "materiality_reason": "重大运营事故但超出本期截止。",
+      "disposition": "excluded",
+      "reason": "9/6当地14:00即上海9/7 02:00，事故本身已越界，不进入9/7周报；不是以篇幅或成本排除。",
+      "exclusion_basis": "outside_window",
+      "decision_evidence": "Y14 turn173view0 L34-55：9/7 00:05UTC更新，9/6 14:00迈阿密事故；比16:00UTC截止晚2小时。",
+      "discovered_by": [
+        "continued-Amazon-outside-cutoff"
+      ]
+    },
+    {
+      "id": "C103",
+      "companies": [
+        "Alphabet / Google"
+      ],
+      "summary": "8月已宣布的Google Assistant手机端9/4起逐步替换计划；未据计划推断全量停用完成。",
+      "materiality": "material",
+      "materiality_reason": "默认助手迁移影响Android/Wear OS功能与Gemini入口，旧计划须与实际推送区分。",
+      "disposition": "pending",
+      "reason": "CL02已读8/5两家带UTC署时媒体、CL04当周非主流报道及社区提示；需核当周实际状态，否则只作为已有计划/背景，不能写为9/4全面停用。",
+      "discovered_by": [
+        "CL-D-Google-01"
+      ],
+      "source_urls": [
+        "https://www.reddit.com/r/GooglePixel/comments/1vfvwbz/google_assistant_on_mobile_eol_september_4th/"
+      ]
+    },
+    {
+      "id": "C104",
+      "companies": [
+        "Alphabet / Google"
+      ],
+      "summary": "Google于9/1回应Pixel 11 Video Boost静态噪音问题，已开发修复、拟未来数周推送；不是静态画面或已完成修复。",
+      "materiality": "material",
+      "materiality_reason": "旗舰手机核心摄录功能故障及公司确认的软件修复计划改变可靠性验证条件；不外推召回或所有设备。",
+      "disposition": "pending",
+      "reason": "CL08已读Android Authority署时9/1 13:03ET原报道及公司直接回应；需加入详情并绑定原子证据。",
+      "discovered_by": [
+        "CL-D-Google-01",
+        "CL-D-Google-02"
+      ],
+      "source_urls": [
+        "https://www.androidauthority.com/pixel-11-static-noise-fix-coming-3705634/"
+      ],
+      "evidence_review": {
+        "first_public_at": "2026-09-01T13:03:00-04:00",
+        "retrieved_at": "2026-09-08T06:36:05Z",
+        "basis": "dated_media",
+        "locator": "CL08 turn181view1 L17,L33-41",
+        "support": "公司回应已开发修复，将在未来数周经Camera app发布；额外性能优化在未来Android月度更新。"
+      }
+    },
+    {
+      "id": "C105",
+      "companies": [
+        "Microsoft"
+      ],
+      "summary": "LinkedIn删除AI增强发帖并新增AI垃圾内容举报功能线索",
+      "materiality": "routine",
+      "materiality_reason": "所述功能变动在8/18署时正文已被记载，不是本周新增平台条件。",
+      "disposition": "excluded",
+      "reason": "本周评论重述旧功能调整，不能重新列作当周事件。",
+      "discovered_by": [
+        "CL-D-Microsoft-01",
+        "CL-D-Microsoft-02"
+      ],
+      "source_urls": [
+        "https://www.windowscentral.com/artificial-intelligence/microsoft-executive-vice-president-bemoans-employees-sending-him-ai-slop-saying-this-is-a-doom-loop-maybe-take-some-responsibility"
+      ],
+      "exclusion_basis": "outside_window",
+      "decision_evidence": "CL02 turn175search2署时2026-08-19与CL06 turn179search3署时2026-08-18正文均已记载。https://www.linkedin.com/pulse/linkedin-built-ai-writing-tools-seems-like-slop-button-wayne-hewitt-ozuoe"
+    },
+    {
+      "id": "C106",
+      "companies": [
+        "Alphabet / Google"
+      ],
+      "summary": "Google Messages误把历史短信片段附到新信息发给错误对象的隐私故障；9/2公司回应正分批修复。",
+      "materiality": "material",
+      "materiality_reason": "跨联系人信息泄漏风险改变消息服务可靠性和隐私验证条件，非普通主题更新。",
+      "disposition": "pending",
+      "reason": "CL08已读PhoneArena9/1原报道与9/2明确更新，公司回应和用户个案区分；需补直接采访源及具体版本时间后绑定新稿。",
+      "discovered_by": [
+        "CL-D-Google-02"
+      ],
+      "source_urls": [
+        "https://www.phonearena.com/news/google-messages-bug-is-sending-old-texts_id182991"
+      ]
+    },
+    {
+      "id": "C107",
+      "companies": [
+        "Microsoft"
+      ],
+      "summary": "LinkedIn9/2发布Gen Z职业联系与商业决策人调查。",
+      "materiality": "routine",
+      "materiality_reason": "面向品牌的调查研究发布，未改变LinkedIn收费、产品功能、业务准入或自身经营指引。",
+      "disposition": "excluded",
+      "exclusion_basis": "not_material",
+      "reason": "所读官方列表及研究概要仅调查观察，不以凑满主营业务新闻作为纳入理由。",
+      "decision_evidence": "CL08 turn181view0 L63-68，官方Pressroom署时Sep2并说明调查于July2026开展。https://news.linkedin.com/",
+      "discovered_by": [
+        "CL-D-Microsoft-02"
+      ]
+    },
+    {
+      "id": "C108",
+      "companies": [
+        "Microsoft"
+      ],
+      "summary": "9/2欧盟普通法院T-357/24驳回Opera对Edge未被指定DMA守门人的挑战；仅Edge，不是微软整体豁免。",
+      "materiality": "material",
+      "materiality_reason": "维持浏览器特定DMA监管范围，影响Windows/Edge竞争规则，属于实质判决，不是普通排期。",
+      "disposition": "pending",
+      "reason": "CL17已读官方两页含上诉限制，待入稿和原子证据绑定。",
+      "discovered_by": [
+        "CL-R-Microsoft-01"
+      ],
+      "source_urls": [
+        "https://curia.europa.eu/site/upload/docs/application/pdf/2026-09/cp260113en.pdf",
+        "https://www.aol.com/articles/eu-court-rejects-opera-challenge-075334000.html"
+      ],
+      "evidence_review": {
+        "first_public_at": "2026-09-02T12:11:39+02:00",
+        "retrieved_at": "2026-09-08T06:49:12Z",
+        "basis": "dated_release",
+        "locator": "CL11 turn184search1 RSS具名113/2026项目；CL12 turn185view0 p1；Reuters turn185view2 L17-42；CL17 turn190view1 L0-51",
+        "support": "RSS为官方该新闻稿条目时点，晚于Reuters08:12UTC更新但都在窗口内；不宣称RSS就是最早市场披露。"
+      }
+    },
+    {
+      "id": "C109",
+      "companies": [
+        "Microsoft"
+      ],
+      "summary": "Microsoft7/30公布9/30生效的服务协议，仲裁机构从AAA改为JAMS。",
+      "materiality": "material",
+      "materiality_reason": "消费者争议条款重要，但公布在本周之前。",
+      "disposition": "excluded",
+      "reason": "官方明确7/30公布，不把9/30生效当首次公开。",
+      "discovered_by": [
+        "CL-R-Microsoft-01"
+      ],
+      "source_urls": [
+        "https://www.microsoft.com/en-us/legal/arbitration"
+      ],
+      "exclusion_basis": "outside_window",
+      "decision_evidence": "CL20 turn193view0 L4-6及turn193view1 L8、L17-18；https://www.microsoft.com/en-us/servicesagreement/upcoming/；https://www.microsoft.com/en-us/servicesagreement/upcoming-updates/"
+    },
+    {
+      "id": "C110",
+      "companies": [
+        "Microsoft"
+      ],
+      "summary": "Rockman v Microsoft 2:26-cv-01876-JNW，9/1无争议答复延期至9/11。",
+      "materiality": "routine",
+      "materiality_reason": "已读命令仅延期及重新排定动议日期，不改实体义务、诉请范围或关键业务条件。",
+      "disposition": "excluded",
+      "exclusion_basis": "not_material",
+      "reason": "记录程序但不列重大事件；不是由于无量化赔偿排除。",
+      "decision_evidence": "CL11 turn184view2 L45的完整9/1命令。https://docs.justia.com/cases/federal/district-courts/washington/wawdce/2:2026cv01876/363549/27",
+      "discovered_by": [
+        "CL-R-Microsoft-01"
+      ]
+    },
+    {
+      "id": "C111",
+      "companies": [
+        "Amazon / AWS"
+      ],
+      "summary": "MTurk8/26报道指8/25已通知9/30关闭，待核原文日期。",
+      "materiality": "unresolved",
+      "materiality_reason": "可能影响经营、控制权或使用条件，须先核事实与时点。",
+      "disposition": "pending",
+      "reason": "待补明确时点/正文核验或入稿绑定，不以证据不足判不重大。",
+      "discovered_by": [
+        "CL-discovered-C111"
+      ],
+      "source_urls": [
+        "https://finance.yahoo.com/technology/articles/amazon-shut-down-mechanical-turk-080616664.html"
+      ],
+      "discovery_refs": [
+        "CL18 turn191search5"
+      ]
+    },
+    {
+      "id": "C112",
+      "companies": [
+        "Meta"
+      ],
+      "summary": "Project OT部分团队裁撤60%方案后撤销，8/26旧文8/31再报道，待核主体。",
+      "materiality": "unresolved",
+      "materiality_reason": "可能影响经营、控制权或使用条件，须先核事实与时点。",
+      "disposition": "pending",
+      "reason": "待补明确时点/正文核验或入稿绑定，不以证据不足判不重大。",
+      "discovered_by": [
+        "CL-discovered-C112"
+      ],
+      "source_urls": [
+        "https://arstechnica.com/ai/2026/08/metas-scrapped-plans-to-go-ai-native-included-slashing-teams-by-60-percent/"
+      ],
+      "discovery_refs": [
+        "CL19 turn192search0"
+      ]
+    },
+    {
+      "id": "C113",
+      "companies": [
+        "Amazon / AWS"
+      ],
+      "summary": "DuckLabs8/26公告现有8/31完成更新，新增段首次公开时间未知。",
+      "materiality": "unresolved",
+      "materiality_reason": "可能影响经营、控制权或使用条件，须先核事实与时点。",
+      "disposition": "pending",
+      "reason": "待补明确时点/正文核验或入稿绑定，不以证据不足判不重大。",
+      "discovered_by": [
+        "CL-discovered-C113"
+      ],
+      "source_urls": [
+        "https://ducklabs.com/news/2026/08/26/ducklabs-to-join-aws"
+      ],
+      "discovery_refs": [
+        "CL20 turn193view2 L15-21"
+      ]
+    },
+    {
+      "id": "C114",
+      "companies": [
+        "NVIDIA"
+      ],
+      "summary": "Hugging Face8-K约119亿美元股东对价加最高10亿美元留任权益，预计2027上半年完成。",
+      "materiality": "material",
+      "materiality_reason": "交易资金组成及交割预期影响资金与审批验证，旧稿缺此细节。",
+      "disposition": "pending",
+      "reason": "待补明确时点/正文核验或入稿绑定，不以证据不足判不重大。",
+      "discovered_by": [
+        "CL-discovered-C114"
+      ],
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000078/nvda-20260902.htm"
+      ],
+      "discovery_refs": [
+        "CL17 turn190view0 L60-75、L99"
+      ]
+    },
+    {
+      "id": "C115",
+      "companies": [
+        "Amazon / AWS"
+      ],
+      "summary": "Amazon Linux 2027预览被9/7周报提及，需核原公告日期及范围。",
+      "materiality": "unresolved",
+      "materiality_reason": "可能影响经营、控制权或使用条件，须先核事实与时点。",
+      "disposition": "pending",
+      "reason": "待补明确时点/正文核验或入稿绑定，不以证据不足判不重大。",
+      "discovered_by": [
+        "CL-discovered-C115"
+      ],
+      "source_urls": [
+        "https://aws.amazon.com/blogs/aws/"
+      ],
+      "discovery_refs": [
+        "CL15 turn188search5"
+      ]
+    },
+    {
+      "id": "C116",
+      "companies": [
+        "Meta"
+      ],
+      "summary": "Threads日文7月公告9/4更新，需核地区增量或旧文刷新。",
+      "materiality": "unresolved",
+      "materiality_reason": "可能影响经营、控制权或使用条件，须先核事实与时点。",
+      "disposition": "pending",
+      "reason": "待补明确时点/正文核验或入稿绑定，不以证据不足判不重大。",
+      "discovered_by": [
+        "CL-discovered-C116"
+      ],
+      "source_urls": [
+        "https://about.fb.com/ja/news/2026/07/threads-meta-ai-dm/"
+      ],
+      "discovery_refs": [
+        "CL13 turn186search0"
+      ]
+    },
+    {
+      "id": "C117",
+      "companies": [
+        "Apple"
+      ],
+      "summary": "Nikkei9/4供应链报道折叠iPhone8月下旬日产仅数百，额外良率验证拖延量产。",
+      "materiality": "material",
+      "materiality_reason": "首款折叠产品量产良率和目标风险直接影响供货验证。",
+      "disposition": "pending",
+      "reason": "已读9/4 03:08PDT报道全部正文，明确转述Nikkei供应链人士；须保留匿名来源、未发布/未确认及历史订单比较边界。",
+      "discovered_by": [
+        "CL-D-Apple-02"
+      ],
+      "source_urls": [
+        "https://www.macrumors.com/2026/09/04/iphone-ultra-production-extremely-limited/"
+      ],
+      "evidence_review": {
+        "first_public_at": "2026-09-04T03:08:00-07:00",
+        "basis": "dated_media",
+        "locator": "CL23 turn196search0全部正文",
+        "support": "9月4日报道8月下旬状况，是披露时间，不把八月生产当九月实际产量。",
+        "retrieved_at": "2026-09-08T06:57:16Z"
+      }
+    },
+    {
+      "id": "C118",
+      "companies": [
+        "Apple"
+      ],
+      "summary": "Bloomberg产品路线图转述含2027家庭安防摄像头/服务及Mac产品规划，须合并同源不拆凑数。",
+      "materiality": "material",
+      "materiality_reason": "新的安防硬件与服务路线影响下一产品周期验证，仍是媒体报道未确认计划。",
+      "disposition": "pending",
+      "reason": "CL24读MacRumors全文，转述9/4Bloomberg，原文受限；需只归因媒体计划并合并同源路线图，不把2027预测写成定案。",
+      "discovered_by": [
+        "CL-D-Apple-02"
+      ],
+      "source_urls": [
+        "https://www.macrumors.com/archive/2026/09/"
+      ]
+    },
+    {
+      "id": "C119",
+      "companies": [
+        "Apple",
+        "Anthropic"
+      ],
+      "summary": "9/4 Claude接入CarPlay，待核正式支持范围和首次公开。",
+      "materiality": "material",
+      "materiality_reason": "新增车载分发入口及免手语音交互，适用边界有实质用户条件。",
+      "disposition": "pending",
+      "reason": "已读完整正文：需手动打开，无第三方唤醒词，不能控制车或手机。页面更新称已上线但更新时间待核，不能直接以文章原始日期绑定后加live段。",
+      "discovered_by": [
+        "CL-D-Apple-02",
+        "CL-D-Anthropic-cross-01"
+      ],
+      "source_urls": [
+        "https://www.macrumors.com/archive/2026/09/"
+      ]
+    },
+    {
+      "id": "C120",
+      "companies": [
+        "OpenAI",
+        "Anthropic"
+      ],
+      "summary": "9/3 Claude/ChatGPT访问故障线索，须分别查官方状态范围与恢复，不混作Apple事故。",
+      "materiality": "material",
+      "materiality_reason": "核心订阅/开发工具当周服务可用性异常，须查影响范围及恢复；不是普通UI更新。",
+      "disposition": "pending",
+      "reason": "CL31读9/3报道明确ChatGPT和Codex、Claude升高错误；原文晚更新称恢复中但未署时；下一步分别读官方事故历史。",
+      "discovered_by": [
+        "CL-D-OpenAI-cross-01",
+        "CL-D-Anthropic-cross-01"
+      ],
+      "source_urls": [
+        "https://www.macrumors.com/archive/2026/09/"
+      ]
+    },
+    {
+      "id": "C121",
+      "companies": [
+        "Apple"
+      ],
+      "summary": "9/1 Mac App Store应用可取消Intel支持，与旧Rosetta兼容规划不同，待核新开发者规则。",
+      "materiality": "material",
+      "materiality_reason": "Intel兼容准入重要，但直接版本记录在6/18已公布。",
+      "disposition": "excluded",
+      "reason": "9/1媒体描述为现在可用不能推翻官方6/18已列同能力；不与Rosetta解释器退役混同。",
+      "discovered_by": [
+        "CL-D-Apple-02"
+      ],
+      "source_urls": [
+        "https://www.macrumors.com/archive/2026/09/"
+      ],
+      "exclusion_basis": "outside_window",
+      "decision_evidence": "CL28 turn201search1完整June18块；CL30 turn203view2 L495-502；https://developer.apple.com/help/app-store-connect/release-notes/"
+    },
+    {
+      "id": "C122",
+      "companies": [
+        "Apple"
+      ],
+      "summary": "9/1前CFO Luca Maestri减少剩余职责报道，待核治理增量与旧交接区别。",
+      "materiality": "material",
+      "materiality_reason": "企业IT/信息安全/地产发展职责向现任CFO交接，属新CEO期间治理结构。",
+      "disposition": "pending",
+      "reason": "9/1 11:17PDTMacRumors全文转述同日Bloomberg；Maestri仍留任、不是本周首次辞CFO。可合并到CEO治理事件，原Bloomberg受限。",
+      "discovered_by": [
+        "CL-D-Apple-02"
+      ],
+      "source_urls": [
+        "https://www.macrumors.com/archive/2026/09/"
+      ]
+    },
+    {
+      "id": "C123",
+      "companies": [
+        "Apple"
+      ],
+      "summary": "9/1 Vision Pro裁员范围比先前报道更广，待核当周新事实与旧报道。",
+      "materiality": "unresolved",
+      "materiality_reason": "需阅读正文判断使用条件、经营或治理是否有重大当周变化；不能仅凭标题排除。",
+      "disposition": "pending",
+      "reason": "9/1媒体全文实际指向8/30Bloomberg，不能凭二次日期写本周新裁员。原文受限，需核原公开时间相对8/30 16UTC窗口起点及更广裁员细节是否在原版；保留待核。",
+      "discovered_by": [
+        "CL-D-Apple-02"
+      ],
+      "source_urls": [
+        "https://www.macrumors.com/archive/2026/09/"
+      ]
+    },
+    {
+      "id": "C124",
+      "companies": [
+        "Apple"
+      ],
+      "summary": "9/2 Oklahoma Wallet驾照上线，待核可用范围与重要性。",
+      "materiality": "routine",
+      "materiality_reason": "既有Wallet ID扩展至第16个州，只在少量商户/应用/TSA接受，不替代实体驾照，未见新的平台规则或重大合同承诺。",
+      "disposition": "excluded",
+      "reason": "记录该州可用性扩展但不凑成全公司重大新闻；不声称全美普遍合法替代证件。",
+      "discovered_by": [
+        "CL-D-Apple-02"
+      ],
+      "source_urls": [
+        "https://www.macrumors.com/archive/2026/09/"
+      ],
+      "exclusion_basis": "not_material",
+      "decision_evidence": "CL26 turn199view3 L89-100完整范围和限制；https://www.macrumors.com/2026/09/02/apple-wallet-id-feature-16th-us-state/"
+    },
+    {
+      "id": "C125",
+      "companies": [
+        "Apple"
+      ],
+      "summary": "9/1 Maps将Lake Ontario更名Lake America报道，待核区域/政策及实际增量。",
+      "materiality": "routine",
+      "materiality_reason": "所读事实为Maps按用户所在地区显示不同湖名，未改变地图服务准入、收费、覆盖或公司法律责任。",
+      "disposition": "excluded",
+      "reason": "地域地名显示不单列投资重大事件；与广义关税政策分开，不把新闻政治争议自动当Apple业务实质变化。",
+      "discovered_by": [
+        "CL-D-Apple-02"
+      ],
+      "source_urls": [
+        "https://www.macrumors.com/archive/2026/09/"
+      ],
+      "exclusion_basis": "not_material",
+      "decision_evidence": "CL26 turn199view4 L89-97完整正文；https://www.macrumors.com/2026/09/01/apple-maps-lake-america/"
+    },
+    {
+      "id": "C126",
+      "companies": [
+        "Apple"
+      ],
+      "summary": "9/4 TestFlight修复报道，待核是否8/25旧更新。",
+      "materiality": "routine",
+      "materiality_reason": "TestFlight4.3.1只把测试App默认排序恢复为最近beta，保留搜索；未改变发布审核、权限或正式App可用性。",
+      "disposition": "excluded",
+      "reason": "属于测试列表显示调整，非重大服务中断或安全恢复。",
+      "discovered_by": [
+        "CL-D-Apple-02"
+      ],
+      "source_urls": [
+        "https://www.macrumors.com/archive/2026/09/"
+      ],
+      "exclusion_basis": "not_material",
+      "decision_evidence": "CL27 turn200view4 L87-93完整正文；https://www.macrumors.com/2026/09/04/apple-just-fixed-testflight/"
+    },
+    {
+      "id": "C127",
+      "companies": [
+        "Apple"
+      ],
+      "summary": "8/31 Phil Schiller不再主管App Store/发布活动，Eddy Cue接管、Carson Oliver日常运营、Nola Weinstein负责活动；仍留Apple Fellow。",
+      "materiality": "material",
+      "materiality_reason": "重要收入平台和监管执行职责改变，可与CEO治理合并但不可遗漏。",
+      "disposition": "pending",
+      "reason": "CL31全文已读，待版本时间归因与正文/旧报告影响定位。",
+      "discovered_by": [
+        "CL-D-Apple-02"
+      ],
+      "source_urls": [
+        "https://www.macrumors.com/2026/08/31/phil-schiller-stepping-down-app-store/"
+      ]
+    },
+    {
+      "id": "C128",
+      "companies": [
+        "Apple"
+      ],
+      "summary": "8/31报道Apple已删除Mac Studio公告PCIe6表述，仍称存储最高2倍，PCIe5仅媒体推断。",
+      "materiality": "material",
+      "materiality_reason": "上期硬件规格可能需纠错；变更发生时间与本周公开认知须分开。",
+      "disposition": "pending",
+      "reason": "CL31全文已读，待版本时间归因与正文/旧报告影响定位。",
+      "discovered_by": [
+        "CL-D-Apple-02"
+      ],
+      "source_urls": [
+        "https://www.macrumors.com/2026/08/31/apple-edits-mac-studio-press-release/"
+      ]
+    }
+  ],
+  "gaps": [
+    "逐家完整发现、独立监管与异源反查没有全部闭环；15个检查记录不是全业务认证。",
+    "上期活跃事项已补建待核清单，但多数本周状态尚未复核完毕。",
+    "新增最终temporal原子证据、图谱关系、来源审查与版本替换尚未完成。",
+    "Google完整救济意见未取得，NYT政府意见原件未取得；Outlook最终恢复时点未核。来源限制不能据此扩展确定断言。",
+    "首轮部分check时间曾以估计时刻记录，须从原回执纠正；若无精确依据保持未核，不倒填。",
+    "原旧42条claim尚未与新稿目标映射重新绑定，不能复用旧哈希通过。",
+    "用户已取消字符上限，草稿预检通过；当前重点关闭实际覆盖、在办事项与原子证据，CL01新增C103-C105待核。"
+  ],
+  "run_id": "2026-09-08-post-remediation",
+  "run_started_at": "2026-09-08T02:01:31.267Z",
+  "prior_report": {
+    "path": "reports/2026-08-31_weekly_morning_brief.md",
+    "sha256": "6299889a3343b340fff8bf4b245592dee6c52e02e36c68c216f2c156089b8a08",
+    "note": "已完整读取（初次截断的头条已补读）；提取Meta和解、NVIDIA并购/AWS计划、Anthropic Nscale、OpenAI安全/芯片/Cursor、Apple及Samsung上市、SK美国工厂，旧稿不是事实证据。 本次从此前已读正文补建11项active清单，不声称已完整复核各项；check_ids空或partially_reviewed均须继续处理，draft不得发布。"
+  },
+  "queries": [
+    {
+      "id": "N01",
+      "queries": [
+        {
+          "q": "Apple iPhone Mac iPad Watch services CEO lawsuit news after:2026-08-30 before:2026-09-07"
+        },
+        {
+          "q": "Microsoft Azure Windows Office LinkedIn Xbox HUMAIN news after:2026-08-30 before:2026-09-07"
+        }
+      ]
+    },
+    {
+      "id": "N04",
+      "queries": [
+        {
+          "q": "site:apple.com/newsroom/2026/09/ September 2026 Apple"
+        },
+        {
+          "q": "Google Alphabet Search YouTube Cloud Gemini Android Pixel news after:2026-08-30 before:2026-09-07"
+        },
+        {
+          "q": "Amazon AWS retail Prime advertising logistics devices news after:2026-08-30 before:2026-09-07"
+        }
+      ]
+    },
+    {
+      "id": "N05",
+      "queries": [
+        {
+          "q": "site:aboutamazon.com/news/ \"September\" \"2026\" Amazon"
+        },
+        {
+          "q": "site:blog.google \"Sep\" \"2026\" \"Android\" \"September\""
+        },
+        {
+          "q": "site:about.fb.com/news/2026/09/ Meta"
+        }
+      ]
+    },
+    {
+      "id": "N06",
+      "queries": [
+        {
+          "q": "site:nvidianews.nvidia.com \"September\" \"2026\""
+        },
+        {
+          "q": "Tesla \"September\" \"2026\" energy storage solar Optimus factory news"
+        },
+        {
+          "q": "site:news.skhynix.com/en/ \"September\" \"2026\""
+        }
+      ]
+    },
+    {
+      "id": "N07",
+      "queries": [
+        {
+          "q": "site:nvidianews.nvidia.com OR site:blogs.nvidia.com \"September\" \"2026\""
+        }
+      ]
+    },
+    {
+      "id": "N08",
+      "queries": [
+        {
+          "q": "台積電 2026 9月 1日 2日 3日 4日 營收 產能 封裝 主管"
+        }
+      ]
+    },
+    {
+      "id": "N09",
+      "queries": [
+        {
+          "q": "site:openai.com \"September\" \"2026\""
+        }
+      ]
+    },
+    {
+      "id": "N13",
+      "queries": [
+        {
+          "q": "site:apple.com/newsroom/ \"2026\" \"September\""
+        },
+        {
+          "q": "site:anthropic.com/news \"September\" \"2026\""
+        },
+        {
+          "q": "site:news.samsung.com/global \"September\" \"2026\""
+        },
+        {
+          "q": "Tesla Solar Roof discontinued September 2026"
+        }
+      ]
+    },
+    {
+      "id": "R01",
+      "queries": [
+        {
+          "q": "Apple lawsuit court regulator September 1 2 3 4 2026"
+        },
+        {
+          "q": "Microsoft lawsuit DOJ court regulator September 2026 New York Times NDO"
+        },
+        {
+          "q": "Google antitrust search adtech court ruling September 2026 September 2"
+        },
+        {
+          "q": "Amazon FTC lawsuit September 2026 22 states"
+        }
+      ]
+    },
+    {
+      "id": "R02",
+      "queries": [
+        {
+          "q": "Meta regulatory lawsuit privacy teen settlement September 2026 after:2026-08-30 before:2026-09-07"
+        },
+        {
+          "q": "Nvidia regulatory export antitrust China September 2026 after:2026-08-30 before:2026-09-07"
+        },
+        {
+          "q": "Tesla NHTSA Cybercab recall regulator September 2026 after:2026-08-30 before:2026-09-07"
+        },
+        {
+          "q": "Anthropic lawsuit copyright safety regulator September 2026 after:2026-08-30 before:2026-09-07"
+        }
+      ]
+    },
+    {
+      "id": "N16",
+      "queries": [
+        {
+          "q": "NVIDIA MediaTek partnership August 31 2026"
+        },
+        {
+          "q": "HydraFusion GitHub Copilot September 4 2026"
+        },
+        {
+          "q": "site:english.motir.go.kr \"September 1, 2026\" \"strategic\""
+        },
+        {
+          "q": "\"SB 1119\" \"2026\" \"08/31\""
+        }
+      ]
+    }
+  ],
+  "discovery_metadata": [
+    {
+      "id": "RSS-OpenAI-20260908",
+      "url": "https://openai.com/news/rss.xml",
+      "retrieved_at": "2026-09-08T02:07:20.013813+00:00",
+      "method": "urllib + ElementTree item pubDate parsed timezone-aware; 1173 total items, 15 within week",
+      "note": "RSS dates and titles are discovery metadata, not body verification. Includes 5 ordinary customer stories/workflow essay and Astra launch/safety/path, all candidate scope retained."
+    }
+  ],
+  "skill_versions": [
+    {
+      "sha256": "83c316ac59bbdf645c0b2370ff8516ce09577ae4f299846927b4edd220943fe4",
+      "from": "2026-09-08T02:01:31.267Z",
+      "to": "2026-09-08T02:11:50Z",
+      "note": "coverage remediation skill; subsequent permanent format authorization, no research reduction"
+    },
+    {
+      "sha256": "49a73174aa73dc9d8e7f4ba4c66706365d3e44751d70b34ae58eba2e3ea158bc",
+      "from": "2026-09-08T02:15:02Z",
+      "note": "permanent 12-headline and fact-driven length; 02:11:50–02:15:02 maintenance, precise boundaries subject to ledger"
+    },
+    {
+      "sha256": "f4441734e4e246fe59d35df9e251dc8a863e862244361e30b98dc03d53137f68",
+      "recorded_at": "2026-09-08T03:19:59Z",
+      "note": "专属业务/IR/状态入口与官方AI摘要边界补充。"
+    }
+  ],
+  "last_checkpoint_at": "2026-09-08T07:00:08Z",
+  "raw_results_path": "logs/2026-09-08_post_remediation_raw_results.json",
+  "draft_report_sha256": "ca8e0903f360fe1af5c6292f0b4df380c637229ffc4f8565a0d5971c0fecc92e",
+  "draft_report_path": "reports/2026-09-07_post_remediation_draft.md",
+  "corrections": [
+    {
+      "recorded_at": "2026-09-08T03:22:47Z",
+      "field": "gaps",
+      "old": "曾写旧稿未说明来源的具体行为救济条款；曾写尚未生成正文。",
+      "correction": "旧稿R07和正文已经说明具体条款未知，不存在本次所称的具体条款错误。本轮新增AP密封14天解释；现有草稿，尚未完成的是取证/图谱/发布。保留此更正以避免抹去诊断错误。"
+    },
+    {
+      "at": "2026-09-08T03:35:19Z",
+      "note": "撤回4项总新闻页完整覆盖判定；WBE明确为当事人代理律所，不能分类为司法机关；新增事故候选因时区越界排除。"
+    },
+    {
+      "at": "2026-09-08T06:31:12Z",
+      "note": "取消字符硬上限已完成；移除过期字符阻断描述，保留原失败在历史日志。CL01全业务泛搜未得到全范围有效结果，新增候选不能算覆盖完成。首次调用输出适配器漏id报错，原结果已存储并恢复，没有重复发起该检索。"
+    }
+  ],
+  "reviewed_at": "2026-09-08T03:44:04Z"
+}

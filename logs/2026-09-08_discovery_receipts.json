@@ -1,0 +1,243 @@
+{
+  "run_id": "2026-09-08-rerun-interrupted",
+  "note": "Actual discovery queries and returned source locators, not coverage completion or source certification. Raw responses remain in the task tool history; Q08 has unexpanded content.",
+  "queries": [
+    {
+      "id": "Q01",
+      "queries": [
+        {
+          "q": "Apple company news products services earnings antitrust August 31 September 6 2026"
+        },
+        {
+          "q": "Microsoft company news Azure Copilot earnings antitrust August 31 September 6 2026"
+        },
+        {
+          "q": "Google Alphabet news ads Gemini Cloud September 1 2 3 4 5 6 2026"
+        }
+      ],
+      "returned_source_refs": [
+        "turn89search0",
+        "turn89search1",
+        "turn89search2",
+        "turn89search3",
+        "turn89search4",
+        "turn89search5",
+        "turn89search6",
+        "turn89search7",
+        "turn89search8",
+        "turn89search9",
+        "turn89search10",
+        "turn89search11",
+        "turn89search14"
+      ]
+    },
+    {
+      "id": "Q02",
+      "queries": [
+        {
+          "q": "Amazon AWS retail advertising company news after:2026-08-30 before:2026-09-07"
+        },
+        {
+          "q": "Meta company news Muse Instagram WhatsApp advertising after:2026-08-30 before:2026-09-07"
+        },
+        {
+          "q": "NVIDIA company news Hugging Face earnings chips after:2026-08-30 before:2026-09-07"
+        }
+      ],
+      "returned_source_refs": [
+        "turn90search0",
+        "turn90search1",
+        "turn90search2",
+        "turn90search3",
+        "turn90search4",
+        "turn90search5",
+        "turn90search6",
+        "turn90search7",
+        "turn90search8",
+        "turn90search9",
+        "turn90search10",
+        "turn90search11",
+        "turn90search19",
+        "turn90search20",
+        "turn90search21",
+        "turn90search22"
+      ]
+    },
+    {
+      "id": "Q03",
+      "queries": [
+        {
+          "q": "Tesla Cybercab energy sales September 2026 week September 4"
+        },
+        {
+          "q": "OpenAI news September 2026 Astra August 31 September 6 safety partnership"
+        },
+        {
+          "q": "Anthropic news September 2026 Fable Mythos Lambda security August 31"
+        }
+      ],
+      "returned_source_refs": [
+        "turn91search0",
+        "turn91search1",
+        "turn91search2",
+        "turn91search3",
+        "turn91search4",
+        "turn91search5",
+        "turn91search6",
+        "turn91search7",
+        "turn91search8",
+        "turn91search9",
+        "turn91search10",
+        "turn91search11"
+      ]
+    },
+    {
+      "id": "Q04",
+      "queries": [
+        {
+          "q": "Samsung Electronics September 2026 September 1 2 3 4 IFA memory foundry smartphones news"
+        },
+        {
+          "q": "SK hynix September 2026 September 1 2 3 4 HBM NAND production investment news"
+        },
+        {
+          "q": "台积电 台積電 2026 9月 1日 2日 3日 4日 设备 产能 营收"
+        }
+      ],
+      "returned_source_refs": [
+        "turn92search0",
+        "turn92search1",
+        "turn92search2",
+        "turn92search3",
+        "turn92search4",
+        "turn92search5",
+        "turn92search6",
+        "turn92search7",
+        "turn92search8",
+        "turn92search9",
+        "turn92search10",
+        "turn92search11",
+        "turn92search14",
+        "turn92search15"
+      ]
+    },
+    {
+      "id": "Q05",
+      "queries": [
+        {
+          "q": "Apple Microsoft Google antitrust court FTC DOJ European Commission September 2026 September 1 2 3 4"
+        },
+        {
+          "q": "Amazon Meta NVIDIA antitrust lawsuit export licence September 2026 September 1 2 3 4"
+        },
+        {
+          "q": "Tesla OpenAI Anthropic regulator investigation safety lawsuit September 2026 September 1 2 3 4"
+        }
+      ],
+      "returned_source_refs": [
+        "turn93search0",
+        "turn93search1",
+        "turn93search2",
+        "turn93search3",
+        "turn93search4",
+        "turn93search5",
+        "turn93search6",
+        "turn93search7",
+        "turn93search8",
+        "turn93search9",
+        "turn93search10",
+        "turn93search11",
+        "turn93search18",
+        "turn93search19"
+      ]
+    },
+    {
+      "id": "Q06",
+      "queries": [
+        {
+          "q": "Samsung SK hynix TSMC export controls permits China Korea antitrust August 31 September 6 2026"
+        },
+        {
+          "q": "三星 海力士 台积电 出口 许可 监管 2026年9月 1日 4日"
+        },
+        {
+          "q": "Apple OpenAI preliminary injunction August 31 2026 DOJ New York Times September 1 2026 filing"
+        }
+      ],
+      "returned_source_refs": [
+        "turn94search0",
+        "turn94search1",
+        "turn94search2",
+        "turn94search3",
+        "turn94search4",
+        "turn94search5",
+        "turn94search6",
+        "turn94search7",
+        "turn94search8",
+        "turn94search9",
+        "turn94search10",
+        "turn94search11"
+      ]
+    },
+    {
+      "id": "Q07",
+      "queries": [
+        {
+          "q": "site:justice.gov \"2026\" \"September\" \"OpenAI\" \"Times\""
+        },
+        {
+          "q": "site:news.microsoft.com \"HUMAIN\" \"August 31, 2026\""
+        },
+        {
+          "q": "site:news.samsung.com \"Galaxy Book6\" \"September\" \"2026\""
+        }
+      ],
+      "returned_source_refs": [
+        "turn96search0",
+        "turn96search1",
+        "turn96search2",
+        "turn96search3",
+        "turn96search4",
+        "turn96search5",
+        "turn96search6",
+        "turn96search7",
+        "turn96search8",
+        "turn96search9",
+        "turn96search10",
+        "turn96search11",
+        "turn96view0",
+        "turn95view2"
+      ]
+    },
+    {
+      "id": "Q08",
+      "queries": [
+        {
+          "q": "\"OpenAI\" \"Department of Justice\" \"September 1, 2026\" filing"
+        },
+        {
+          "q": "\"Microsoft\" \"HUMAIN\" \"August 31\" \"2026\""
+        },
+        {
+          "q": "\"Google\" \"September 2, 2026\" \"remedies\" court AdX"
+        }
+      ],
+      "returned_source_refs": [
+        "turn103search0",
+        "turn103search1",
+        "turn103search2",
+        "turn103search3",
+        "turn103search4",
+        "turn103search5",
+        "turn103search6",
+        "turn103search7",
+        "turn103search8",
+        "turn103search9",
+        "turn103search10",
+        "turn103search11",
+        "turn103view0",
+        "turn102view0"
+      ]
+    }
+  ]
+}

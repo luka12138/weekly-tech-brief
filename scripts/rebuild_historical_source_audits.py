@@ -18,6 +18,7 @@ from audit_sources import (
     sha256_file,
 )
 from rebuild_historical_obsidian_graphs import ROOT, load_snapshot, report_snapshots
+from historical_snapshot_overrides import snapshot_path_for_date
 from validate_historical_briefs import write_snapshot
 
 
@@ -30,6 +31,13 @@ def claim_key(claim: dict[str, Any]) -> str:
         "required": claim.get("required", True),
     }
     return json.dumps(payload, ensure_ascii=False, sort_keys=True)
+
+
+def snapshot_source_label(report_date: str, commit: str, source_path: str) -> str:
+    frozen = snapshot_path_for_date(report_date, source_path)
+    if frozen is not None:
+        return str(frozen.relative_to(ROOT))
+    return f"git:{commit}:{source_path}"
 
 
 def load_audit_cache(log_dir: Path) -> tuple[dict[str, dict[str, Any]], dict[str, dict[str, Any]]]:
@@ -170,11 +178,15 @@ def main() -> None:
             payload = {
                 "generated_at": datetime.now(timezone.utc).isoformat(),
                 "report": str(period["report"].relative_to(ROOT)),
-                "baseline": f"git:{period['commit']}:state/supply_graph_baseline.json",
+                "baseline": snapshot_source_label(
+                    period["date"], period["commit"], "state/supply_graph_baseline.json"
+                ),
                 "snapshot_corrections": "state/historical_snapshot_overrides.json",
                 "snapshot_corrections_sha256": sha256_file(ROOT / "state/historical_snapshot_overrides.json"),
-                "scope_note": "引用 Git 原快照并应用登记更正；输入哈希绑定更正后数据。仅检查当前链接及配置关键词，不认证历史首次公开或报告可用时点。",
-                "product_graph": f"git:{period['commit']}:state/product_relationships_{period['date'][:4]}.json",
+                "scope_note": "引用登记的冻结状态或 Git 原快照并应用登记更正；输入哈希绑定实际校验数据。仅检查当前链接及配置关键词，不认证历史首次公开或报告可用时点。",
+                "product_graph": snapshot_source_label(
+                    period["date"], period["commit"], f"state/product_relationships_{period['date'][:4]}.json"
+                ),
                 "report_sha256": sha256_file(period["report"]),
                 "baseline_sha256": sha256_file(period["baseline"]),
                 "product_graph_sha256": sha256_file(period["product"]),

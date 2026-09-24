@@ -292,13 +292,16 @@
       },
       "supply": {
         "action": "generate",
-        "reason": "存在实质变化关系：E05, E20, E26, E27, E28",
+        "reason": "存在实质变化关系：E05, E20, E26, E27, E28, E29, E30, E31",
         "changed_edge_ids": [
           "E05",
           "E20",
           "E26",
           "E27",
-          "E28"
+          "E28",
+          "E29",
+          "E30",
+          "E31"
         ],
         "asset_date": "2026-09-07",
         "svg": "assets/2026-09-07_supply_relationships.svg",
@@ -318,12 +321,9 @@
       },
       "supply": {
         "action": "generate",
-        "reason": "存在实质变化关系：E20, E29, E30, E31, E32, E33, E34, E35, E36",
+        "reason": "存在实质变化关系：E20, E32, E33, E34, E35, E36",
         "changed_edge_ids": [
           "E20",
-          "E29",
-          "E30",
-          "E31",
           "E32",
           "E33",
           "E34",

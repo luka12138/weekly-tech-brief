@@ -14,6 +14,21 @@ ROOT = Path(__file__).resolve().parents[1]
 OVERRIDES_PATH = ROOT / "state" / "historical_snapshot_overrides.json"
 
 
+def snapshot_path_for_date(report_date: str, source_path: str) -> Path | None:
+    """Return a registered frozen state file for a retrospective revision."""
+    if not OVERRIDES_PATH.exists():
+        return None
+    payload = json.loads(OVERRIDES_PATH.read_text(encoding="utf-8"))
+    relative = payload.get("reports", {}).get(report_date, {}).get("snapshot_paths", {}).get(source_path)
+    if relative is None:
+        return None
+    candidate = (ROOT / str(relative)).resolve()
+    historical_root = (ROOT / "state" / "historical").resolve()
+    if not candidate.is_relative_to(historical_root) or not candidate.is_file():
+        raise ValueError(f"Invalid historical snapshot override: {relative}")
+    return candidate
+
+
 def replacements_for_date(report_date: str) -> dict[str, str]:
     if not OVERRIDES_PATH.exists():
         return {}

@@ -112,7 +112,6 @@
 <path d="M 2110.0 1940.0 C 1790.0 1940.0, 1570.0 1380.0, 1250.0 1380.0" fill="none" stroke="#22c55e" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-06bcfa879942a99a)"/>
 <path d="M 1545.0 1900.0 C 1545.0 1583.1, 885.0 1596.9, 885.0 1280.0" fill="none" stroke="#22c55e" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-06bcfa879942a99a)"/>
 <path d="M 2110.0 1940.0 C 1854.1 1940.0, 1895.9 1380.0, 1640.0 1380.0" fill="none" stroke="#22c55e" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-06bcfa879942a99a)"/>
-<path d="M 2110.0 1240.0 C 1790.0 1240.0, 1300.0 1240.0, 980.0 1240.0" fill="none" stroke="#22c55e" stroke-width="2" stroke-opacity="0.68" marker-end="url(#arrow-06bcfa879942a99a)" marker-start="url(#arrow-06bcfa879942a99a)"/>
 <g><title>2026 年度十二家公司主营产品上下游关系图 · 2026-09-07 快照</title>
 <rect x="80" y="20" width="2460" height="90" rx="8" fill="#0b0f14" fill-opacity="0" stroke="#64748b" stroke-opacity="0" stroke-width="1.5"/>
 <text x="96" y="62" font-size="34" font-weight="750" fill="#f8fafc">2026 年度十二家公司主营产品上下游关系图 · 2026-09-07 快照</text>
@@ -510,8 +509,8 @@
 <text x="956" y="2882" font-size="13" font-weight="500" fill="#cbd5e1">PX76 · NVIDIA → OpenAI</text>
 <text x="956" y="2903" font-size="13" font-weight="500" fill="#cbd5e1">PORTS-Pike 使用 NVIDIA DSX 平台承载 OpenAI 约 8 IT-GW 计算容量</text>
 </g>
-<g><title>跨公司关系索引 ·  · PX77 · Anthropic → Microsoft · Claude Fable 5.1 接入 Copilot Cowork 与 Copilot Studio ·  · PX78 · Anthropic → Microsoft · Claude Fable 5.1 接入 GitHub Copilot ·  · PX79 · OpenAI → Microsoft · GPT-6 Astra 通过 Microsoft Azure 分批推出 ·  · PX80 · Anthropic → Alphabet / Google · Claude Fable 5.1 通过 Google Cloud 分发 ·  · PX81 · Amazon / AWS → Microsoft · AWS与Azure双向Multicloud Interconnect公开预览</title>
-<rect x="1800" y="2420" width="800" height="440" rx="8" fill="#111827" fill-opacity="0.97" stroke="#334155" stroke-opacity="0.78" stroke-width="1.5"/>
+<g><title>跨公司关系索引 ·  · PX77 · Anthropic → Microsoft · Claude Fable 5.1 接入 Copilot Cowork 与 Copilot Studio ·  · PX78 · Anthropic → Microsoft · Claude Fable 5.1 接入 GitHub Copilot ·  · PX79 · OpenAI → Microsoft · GPT-6 Astra 通过 Microsoft Azure 分批推出 ·  · PX80 · Anthropic → Alphabet / Google · Claude Fable 5.1 通过 Google Cloud 分发</title>
+<rect x="1800" y="2420" width="800" height="370" rx="8" fill="#111827" fill-opacity="0.97" stroke="#334155" stroke-opacity="0.78" stroke-width="1.5"/>
 <text x="1816" y="2448" font-size="20" font-weight="750" fill="#f8fafc">跨公司关系索引</text>
 <text x="1816" y="2490" font-size="13" font-weight="500" fill="#cbd5e1">PX77 · Anthropic → Microsoft</text>
 <text x="1816" y="2511" font-size="13" font-weight="500" fill="#cbd5e1">Claude Fable 5.1 接入 Copilot Cowork 与 Copilot Studio</text>
@@ -521,8 +520,6 @@
 <text x="1816" y="2623" font-size="13" font-weight="500" fill="#cbd5e1">GPT-6 Astra 通过 Microsoft Azure 分批推出</text>
 <text x="1816" y="2658" font-size="13" font-weight="500" fill="#cbd5e1">PX80 · Anthropic → Alphabet / Google</text>
 <text x="1816" y="2679" font-size="13" font-weight="500" fill="#cbd5e1">Claude Fable 5.1 通过 Google Cloud 分发</text>
-<text x="1816" y="2714" font-size="13" font-weight="500" fill="#cbd5e1">PX81 · Amazon / AWS → Microsoft</text>
-<text x="1816" y="2735" font-size="13" font-weight="500" fill="#cbd5e1">AWS与Azure双向Multicloud Interconnect公开预览</text>
 </g>
 <rect x="321.9" y="1146.5" width="60" height="24" rx="5" fill="#0b0f14" stroke="#f59e0b" stroke-width="1.2"/>
 <text x="351.9" y="1163.0" text-anchor="middle" font-size="12" font-weight="750" fill="#f59e0b">PX51</text>
@@ -564,7 +561,5 @@
 <text x="1331.5" y="1650.2" text-anchor="middle" font-size="12" font-weight="750" fill="#22c55e">PX79</text>
 <rect x="1861.1" y="1689.9" width="60" height="24" rx="5" fill="#0b0f14" stroke="#22c55e" stroke-width="1.2"/>
 <text x="1891.1" y="1706.4" text-anchor="middle" font-size="12" font-weight="750" fill="#22c55e">PX80</text>
-<rect x="1648.2" y="1228.0" width="60" height="24" rx="5" fill="#0b0f14" stroke="#22c55e" stroke-width="1.2"/>
-<text x="1678.2" y="1244.5" text-anchor="middle" font-size="12" font-weight="750" fill="#22c55e">PX81</text>
 </g>
 </svg>

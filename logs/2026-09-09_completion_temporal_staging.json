@@ -1,0 +1,3600 @@
+{
+  "schema_version": 1,
+  "status": "draft",
+  "report_date": "2026-09-07",
+  "cutoff_exclusive": "2026-09-07T00:00:00+08:00",
+  "prepared_at": "2026-09-09T01:54:41.117312+00:00",
+  "report_created_at": "2026-09-09T01:51:36.156832+00:00",
+  "creation_note": "本次草稿渲染文件写入时间，不是原周一发布时间。",
+  "report_sha256": "6ba14fbfac3eee3bb551c9e21ab87d6796d186e7ce3bf078020f929c884dba4e",
+  "baseline_sha256": "eebe15ac9c5e695f05e122b07f70f85abc966f94a6aeaa125cb620469720549c",
+  "product_graph_sha256": "2608cf80d6adef906d6fc4c2c2d3415b9b5e5911fff0e10865d9082a4ebe4690",
+  "manual_reviews": {
+    "financial_periods_and_units": {
+      "status": "pending",
+      "note": "目标映射已整理，不能替代最终原子断言及语义复核。"
+    },
+    "report_vintage": {
+      "status": "pending",
+      "note": "目标映射已整理，不能替代最终原子断言及语义复核。"
+    },
+    "product_graph": {
+      "status": "pending",
+      "note": "目标映射已整理，不能替代最终原子断言及语义复核。"
+    },
+    "source_versions": {
+      "status": "pending",
+      "note": "目标映射已整理，不能替代最终原子断言及语义复核。"
+    }
+  },
+  "claims": [
+    {
+      "id": "C49-a",
+      "statement": "Apple申报确认John Ternus于9月1日接任CEO，Tim Cook转任执行董事长；不是四月任命预告再次发生。",
+      "candidate_id": "C49",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126035325/ef20081427_8ka.htm",
+          "claim_first_public_at": "2026-09-01T16:30:35-04:00",
+          "retrieved_at": "2026-09-08T07:41:12Z",
+          "basis": "filing",
+          "locator": "F01 turn209view1 L108-122；SEC accession 0001140361-26-035325 Accepted 2026-09-01 16:30:35 ET",
+          "support": "申报签字9/1且描述Transition Date已经生效；Period of Report为4/17，不用该栏代替九月修订公开时间。"
+        }
+      ],
+      "targets": [
+        "company:Apple",
+        "event:1"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C49-b",
+      "statement": "Ternus在9月1日年薪调整为300万美元，并获FY2026按任职期间折算、目标250万美元的RSU；目标股权价值不是已付现金。",
+      "candidate_id": "C49",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126035325/ef20081427_8ka.htm",
+          "claim_first_public_at": "2026-09-01T16:30:35-04:00",
+          "retrieved_at": "2026-09-08T07:41:12Z",
+          "basis": "filing",
+          "locator": "F01 L112-113；SEC受理页",
+          "support": "同一Item5.02列年薪与按比例权益目标，未将年化薪酬或授予目标当本周现金支出。"
+        }
+      ],
+      "targets": [
+        "company:Apple",
+        "event:1"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C49-c",
+      "statement": "Apple批准Ternus的FY2027年度股权目标5500万美元；Cook年薪200万美元将于9月26日生效，FY2027权益目标4500万美元；授予/归属条件不等于已实现报酬。",
+      "candidate_id": "C49",
+      "kind": "forecast",
+      "evidence": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126035325/ef20081427_8ka.htm",
+          "claim_first_public_at": "2026-09-01T16:30:35-04:00",
+          "retrieved_at": "2026-09-08T07:41:12Z",
+          "basis": "filing",
+          "locator": "F01 L112-115；SEC受理页",
+          "support": "计划分别对应FY2027授予及未来9/26薪资生效，performance/time-based RSU及退休归属限制保留。"
+        }
+      ],
+      "targets": [
+        "company:Apple",
+        "event:1"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C94-a",
+      "statement": "9月3日法律媒体报道英国开发者就Apple ATT向CAT提出约20亿英镑拟集体索赔；该金额是索赔估计，认证、责任及赔付尚未裁定。",
+      "candidate_id": "C94",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://iclg.com/news/apple-faces-2bn-uk-class-action-over-app-tracking-rules/",
+          "claim_first_public_at": "2026-09-03T13:14:59Z",
+          "retrieved_at": "2026-09-08T07:41:12Z",
+          "basis": "dated_media",
+          "locator": "continued_review sources[C94], Y02 whole article/metadata；CL35 Hausfeld L150-173",
+          "support": "ICLG发布日期及更新时间已保存；代理律所署时公告相符，律所不是法院，未称已读CAT申请全文。"
+        }
+      ],
+      "targets": [
+        "company:Apple",
+        "event:2"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C117-a",
+      "statement": "9月4日MacRumors引述Nikkei供应链人士称折叠iPhone八月下旬日产仅数百，追加平整度与铰链验证推迟商业量产；尚未获Apple确认。",
+      "candidate_id": "C117",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://www.macrumors.com/2026/09/04/iphone-ultra-production-extremely-limited/",
+          "claim_first_public_at": "2026-09-04T03:08:00-07:00",
+          "retrieved_at": "2026-09-08T07:41:12Z",
+          "basis": "dated_media",
+          "locator": "CL23 turn196search0 source block through Related Roundup",
+          "support": "已读完整报道和署时；披露时间与八月生产时点分开，不引用付费原文已读或把年订单目标当实际产量。"
+        }
+      ],
+      "targets": [
+        "company:Apple",
+        "event:3"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C122-a",
+      "statement": "9月1日媒体转述Bloomberg称Maestri已交出Corporate Services职责，由CFO Kevan Parekh接管，仍在Apple承担有限工作；不是2025年一月CFO离任重演。",
+      "candidate_id": "C122",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://www.macrumors.com/2026/09/01/luca-maestri-apple-winding-down/",
+          "claim_first_public_at": "2026-09-01T11:17:00-07:00",
+          "retrieved_at": "2026-09-08T07:41:12Z",
+          "basis": "dated_media",
+          "locator": "CL25 turn198view2 L89-95",
+          "support": "署时正文将此前CFO交接与近期职责收缩分开；保留媒体归因，不外推离开公司。"
+        }
+      ],
+      "targets": [
+        "company:Apple",
+        "event:4"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C127-a",
+      "statement": "8月31日媒体转述Bloomberg称Schiller不再主管App Store及发布活动；Eddy Cue接管App Store、Carson Oliver负责日常运营，Nola Weinstein领导活动团队，Schiller仍保留Apple Fellow。",
+      "candidate_id": "C127",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://www.macrumors.com/2026/08/31/phil-schiller-stepping-down-app-store/",
+          "claim_first_public_at": "2026-08-31T09:54:00-07:00",
+          "retrieved_at": "2026-09-08T07:41:12Z",
+          "basis": "dated_media",
+          "locator": "CL31 turn204view0 L89-101",
+          "support": "读完署时正文和职责安排；非离职公告，报道未获独立公司声明确认。"
+        }
+      ],
+      "targets": [
+        "company:Apple",
+        "event:4"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C52-a",
+      "candidate_id": "C52",
+      "kind": "news",
+      "statement": "GitHub Copilot CLI的HydraFusion为多模型编排研究预览，面向所有Copilot计划；各模型实际token按标准倍率计费，离线评测收益不是本周报实测。",
+      "evidence": [
+        {
+          "url": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/",
+          "claim_first_public_at": "2026-09-04T16:04:14+00:00",
+          "retrieved_at": "2026-09-08T07:42:32.596886+00:00",
+          "basis": "dated_release",
+          "locator": "已有完整核验与正文定位见coverage候选C52.research.materials；本次恢复events[C52]并核结构化发布日期",
+          "support": "官方研究预览已确认；性能收益取决于任务、模型与推理配置。 本次元数据与已有署时正文对应；未把metadata抓取时间当公开时间。"
+        }
+      ],
+      "targets": [
+        "company:Microsoft",
+        "event:8"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C54-a",
+      "candidate_id": "C54",
+      "kind": "news",
+      "statement": "8月31日众议院通过NDO Fairness Act（H.R.6048）的程序得到提案人和GovInfo通过版本支持；不是参议院已经通过或法律已生效。",
+      "evidence": [
+        {
+          "url": "https://fitzgerald.house.gov/media/press-releases/rep-fitzgeralds-ndo-fairness-act-passes-house-representatives",
+          "claim_first_public_at": "2026-08-31T18:42:41-04:00",
+          "retrieved_at": "2026-09-08T07:42:35.326805+00:00",
+          "basis": "dated_release",
+          "locator": "已有完整核验与正文定位见coverage候选C54.research.materials；本次恢复events[C54]并核结构化发布日期",
+          "support": "GovInfo众议院通过版本和提案人公告支持程序状态；不宣称整部法律条款已逐项核定。 本次元数据与已有署时正文对应；未把metadata抓取时间当公开时间。"
+        }
+      ],
+      "targets": [
+        "analysis:5",
+        "catalyst:4",
+        "company:Microsoft",
+        "event:9"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C57-a",
+      "candidate_id": "C57",
+      "kind": "news",
+      "statement": "WhatsApp宣布在印度通过BBPS提供家庭账单支付，并在未来数周向Android及iOS逐步开放；不代表发布日所有用户已可用。",
+      "evidence": [
+        {
+          "url": "https://about.fb.com/news/2026/09/launching-bill-payments-in-india-helping-people-to-pay-everyday-household-bills-directly-on-whatsapp/",
+          "claim_first_public_at": "2026-09-03T12:13:48+00:00",
+          "retrieved_at": "2026-09-08T07:42:37.553557+00:00",
+          "basis": "dated_release",
+          "locator": "已有完整核验与正文定位见coverage候选C57.research.materials；本次恢复events[C57]并核结构化发布日期",
+          "support": "Meta印度业务公告已读，保留分批上线。 本次元数据与已有署时正文对应；未把metadata抓取时间当公开时间。"
+        }
+      ],
+      "targets": [
+        "company:Meta",
+        "event:37"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C60-a",
+      "candidate_id": "C60",
+      "kind": "news",
+      "statement": "NVIDIA与CrowdStrike公布代理安全合作，SafeMind使用Nemotron并进入Falcon工作流；合作方内部测试的收益不等于客户整体降本或已形成量化订单。",
+      "evidence": [
+        {
+          "url": "https://blogs.nvidia.com/blog/nvidia-crowdstrike-fal-con-2026/",
+          "claim_first_public_at": "2026-09-01T21:19:20+00:00",
+          "retrieved_at": "2026-09-08T07:42:43.556126+00:00",
+          "basis": "dated_release",
+          "locator": "已有完整核验与正文定位见coverage候选C60.research.materials；本次恢复events[C60]并核结构化发布日期",
+          "support": "官方合作披露；性能收益主要来自合作方内部测试。 本次元数据与已有署时正文对应；未把metadata抓取时间当公开时间。"
+        }
+      ],
+      "targets": [
+        "company:NVIDIA",
+        "event:43"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C59-a",
+      "candidate_id": "C59",
+      "kind": "news",
+      "statement": "NVIDIA在IFA公布PAIR本地代理beta及Windows本地AI生态更新；工具在不同系统上的可用阶段不同。",
+      "evidence": [
+        {
+          "url": "https://blogs.nvidia.com/blog/local-ai-ifa-next-gen-agents-nv-pair-rtx-spark/",
+          "claim_first_public_at": "2026-09-03T16:00:59+00:00",
+          "retrieved_at": "2026-09-08T07:42:44.612435+00:00",
+          "basis": "dated_release",
+          "locator": "已有完整核验与正文定位见coverage候选C59.research.materials；本次恢复events[C59]并核结构化发布日期",
+          "support": "官方原文已读；Microsoft参与Windows工具协作，兼容Apple硬件不等于Apple与NVIDIA新签供货协议。 本次元数据与已有署时正文对应；未把metadata抓取时间当公开时间。"
+        }
+      ],
+      "targets": [
+        "company:Microsoft",
+        "company:NVIDIA",
+        "event:44"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C59-b",
+      "candidate_id": "C59",
+      "kind": "forecast",
+      "statement": "RTX Spark PC计划十月推出；Microsoft参与Windows工具协作，支持Apple硬件不等于Apple新签供货合同。",
+      "evidence": [
+        {
+          "url": "https://blogs.nvidia.com/blog/local-ai-ifa-next-gen-agents-nv-pair-rtx-spark/",
+          "claim_first_public_at": "2026-09-03T16:00:59+00:00",
+          "retrieved_at": "2026-09-08T07:42:44.612435+00:00",
+          "basis": "dated_release",
+          "locator": "已有完整核验与正文定位见coverage候选C59.research.materials；本次恢复events[C59]并核结构化发布日期",
+          "support": "官方原文已读；Microsoft参与Windows工具协作，兼容Apple硬件不等于Apple与NVIDIA新签供货协议。 本次元数据与已有署时正文对应；未把metadata抓取时间当公开时间。"
+        }
+      ],
+      "targets": [
+        "company:Microsoft",
+        "company:NVIDIA",
+        "event:44"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C62-a",
+      "candidate_id": "C62",
+      "kind": "news",
+      "statement": "Electrek9月1日采访报道Tesla退出Solar Roof给安装商带来的存量项目和损失问题；八月退出公告为旧背景，安装商损失不是Tesla已确认费用。",
+      "evidence": [
+        {
+          "url": "https://electrek.co/2026/09/01/tesla-solar-roof-exit-installers-losses/",
+          "claim_first_public_at": "2026-09-01T18:43:48+00:00",
+          "retrieved_at": "2026-09-08T07:42:45.282274+00:00",
+          "basis": "dated_media",
+          "locator": "已有完整核验与正文定位见coverage候选C62.research.materials；本次恢复events[C62]并核结构化发布日期",
+          "support": "媒体采访报道，部分受访方匿名；尚无可核公司总损失数字。 本次元数据与已有署时正文对应；未把metadata抓取时间当公开时间。"
+        }
+      ],
+      "targets": [
+        "company:Tesla",
+        "event:49"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C71-a",
+      "candidate_id": "C71",
+      "kind": "forecast",
+      "statement": "Google/MN8/Eos西弗吉尼亚项目规划86MW太阳能2028年运行、70MW/280MWh锂电2029年运行、10MW/100MWh锌基储能2030年运行；MW与MWh不同。",
+      "evidence": [
+        {
+          "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/west-virginia-long-duration-energy-storage/",
+          "claim_first_public_at": "2026-09-02T12:00:00+00:00",
+          "retrieved_at": "2026-09-08T07:43:34.411783+00:00",
+          "basis": "dated_release",
+          "locator": "已有完整核验与正文定位见coverage候选C71.research.materials；本次恢复events[C71]并核结构化发布日期",
+          "support": "Google与项目方公告相互支持；功率MW与能量MWh分开，未来时点保留计划性质。 本次元数据与已有署时正文对应；未把metadata抓取时间当公开时间。"
+        }
+      ],
+      "targets": [
+        "company:Alphabet / Google",
+        "event:21",
+        "supply:E31"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C71-b",
+      "candidate_id": "C71",
+      "kind": "news",
+      "statement": "合作安排由MN8持有和运营项目，Google购买相关能源与容量；MN8项目投资估算不是Google资本开支，本周未投产。",
+      "evidence": [
+        {
+          "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/west-virginia-long-duration-energy-storage/",
+          "claim_first_public_at": "2026-09-02T12:00:00+00:00",
+          "retrieved_at": "2026-09-08T07:43:34.411783+00:00",
+          "basis": "dated_release",
+          "locator": "已有完整核验与正文定位见coverage候选C71.research.materials；本次恢复events[C71]并核结构化发布日期",
+          "support": "Google与项目方公告相互支持；功率MW与能量MWh分开，未来时点保留计划性质。 本次元数据与已有署时正文对应；未把metadata抓取时间当公开时间。"
+        }
+      ],
+      "targets": [
+        "company:Alphabet / Google",
+        "event:21",
+        "supply:E31"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C73-a",
+      "candidate_id": "C73",
+      "kind": "news",
+      "statement": "WeatherNext3发布并开始接入Search、Gemini、Maps、天气API和Cloud等产品；5公里分辨率只针对指定变量，模型不能替代公共安全机构预警。",
+      "evidence": [
+        {
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-weathernext-3/",
+          "claim_first_public_at": "2026-09-03T15:00:00+00:00",
+          "retrieved_at": "2026-09-08T07:43:38.436149+00:00",
+          "basis": "dated_release",
+          "locator": "已有完整核验与正文定位见coverage候选C73.research.materials；本次恢复events[C73]并核结构化发布日期",
+          "support": "公司发布及产品安排可核；预测优势为公司报告，未独立复现。 本次元数据与已有署时正文对应；未把metadata抓取时间当公开时间。"
+        }
+      ],
+      "targets": [
+        "company:Alphabet / Google",
+        "event:22"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C74-a",
+      "candidate_id": "C74",
+      "kind": "news",
+      "statement": "Lyria3.5音乐模型在Gemini网页与移动端全球推出，并扩展API、AI Studio等入口；没有据此确认新增版权授权或收入。",
+      "evidence": [
+        {
+          "url": "https://blog.google/innovation-and-ai/products/gemini-app/better-tracks-lyria-gemini/",
+          "claim_first_public_at": "2026-09-04T16:00:00+00:00",
+          "retrieved_at": "2026-09-08T07:43:39.478844+00:00",
+          "basis": "dated_release",
+          "locator": "已有完整核验与正文定位见coverage候选C74.research.materials；本次恢复events[C74]并核结构化发布日期",
+          "support": "官方具日期发布；商业效果未量化。 本次元数据与已有署时正文对应；未把metadata抓取时间当公开时间。"
+        }
+      ],
+      "targets": [
+        "company:Alphabet / Google",
+        "event:23"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C81-a",
+      "candidate_id": "C81",
+      "kind": "news",
+      "statement": "Gmail和Keep实时语音开始向AI Plus/Pro/Ultra分批推出，Docs面向Pro/Ultra；Workspace企业客户仍为后续计划。",
+      "evidence": [
+        {
+          "url": "https://blog.google/products-and-platforms/products/workspace/voice-features-gmail-docs-keep/",
+          "claim_first_public_at": "2026-09-03T16:00:00+00:00",
+          "retrieved_at": "2026-09-08T07:43:40.593133+00:00",
+          "basis": "dated_release",
+          "locator": "已有完整核验与正文定位见coverage候选C81.research.materials；本次恢复events[C81]并核结构化发布日期",
+          "support": "以原文L264-280为准；页面自动AI摘要把企业范围泛化，未采用。 本次元数据与已有署时正文对应；未把metadata抓取时间当公开时间。"
+        }
+      ],
+      "targets": [
+        "company:Alphabet / Google",
+        "event:24"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C78-a",
+      "candidate_id": "C78",
+      "kind": "forecast",
+      "statement": "Samsung在SEMICON披露CUBE与3D存储路线，zNAND-O样品目标2028年；五月HBM4E送样不是本周新事件，路线不是量产结果。",
+      "evidence": [
+        {
+          "url": "https://www.cna.com.tw/news/afe/202609010167.aspx",
+          "claim_first_public_at": "2026-09-01T15:05:00+08:00",
+          "retrieved_at": "2026-09-08T07:43:44.004583+00:00",
+          "basis": "dated_media",
+          "locator": "已有完整核验与正文定位见coverage候选C78.research.materials；本次恢复events[C78]并核结构化发布日期",
+          "support": "中央社现场报道引述公司主管，路线与结果分开。 本次元数据与已有署时正文对应；未把metadata抓取时间当公开时间。"
+        }
+      ],
+      "targets": [
+        "company:Samsung Electronics",
+        "event:79"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C84-a",
+      "candidate_id": "C84",
+      "kind": "news",
+      "statement": "Reuters9月2日援引消息人士称韩国外汇稳定基金场外吸收SK Hynix汇回约200亿美元；款项源自七月ADR融资，不是本周新融资或营业收入，当局未确认细节。",
+      "evidence": [
+        {
+          "url": "https://finance.yahoo.com/markets/currencies/articles/exclusive-south-korean-fx-authorities-073601807.html",
+          "claim_first_public_at": "2026-09-02T07:36:01Z",
+          "retrieved_at": "2026-09-08T07:43:46.154274+00:00",
+          "basis": "dated_media",
+          "locator": "已有完整核验与正文定位见coverage候选C84.research.materials；本次恢复events[C84]并核结构化发布日期",
+          "support": "媒体报道待确认；金额和执行时间未获官方证实。 本次元数据与已有署时正文对应；未把metadata抓取时间当公开时间。"
+        }
+      ],
+      "targets": [
+        "company:SK Hynix",
+        "event:85"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C64-a",
+      "candidate_id": "C64",
+      "kind": "forecast",
+      "statement": "TSMC在SEMICON前后披露先进逻辑与3DFabric/CoWoS/硅光子整合路线，A14目标2028年量产、后续工艺封装目标延至2029年；不是本周订单或已完成产能。",
+      "evidence": [
+        {
+          "url": "https://www.cna.com.tw/news/afe/202608310099.aspx",
+          "claim_first_public_at": "2026-08-31T12:37:00+08:00",
+          "retrieved_at": "2026-09-08T07:43:47.985167+00:00",
+          "basis": "dated_media",
+          "locator": "已有完整核验与正文定位见coverage候选C64.research.materials；本次恢复events[C64]并核结构化发布日期",
+          "support": "中央社现场引述；未来工艺、送样与量产分开处理。 本次元数据与已有署时正文对应；未把metadata抓取时间当公开时间。"
+        }
+      ],
+      "targets": [
+        "company:TSMC",
+        "event:88"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C65-1",
+      "candidate_id": "C65",
+      "statement": "Daybreak Frontline Defenders公布10亿美元的补贴访问、培训、技术支持与合作承诺，目标在未来六个月推进，先从美国开始。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://openai.com/index/daybreak-for-frontline-defenders/",
+          "claim_first_public_at": "2026-09-03T13:15:00Z",
+          "retrieved_at": "2026-09-08T07:52:00Z",
+          "basis": "dated_release",
+          "locator": "OpenAI RSS dated item + restored article body in candidate materials",
+          "support": "扩大防御型AI使用与生态投入；不是已支付10亿美元现金捐赠，也不是本期资本开支。 资格、实际兑现、伙伴渠道及后续地区扩展。"
+        }
+      ],
+      "targets": [
+        "company:OpenAI",
+        "event:59"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C66-1",
+      "candidate_id": "C66",
+      "statement": "ChatGPT Healthcare公布连接Epic电子病历及医疗资料的能力；EHR连接面向合资格组织和获授权数据，不是个人用户可任意接入病历。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources/",
+          "claim_first_public_at": "2026-09-01T12:00:00Z",
+          "retrieved_at": "2026-09-08T07:52:00Z",
+          "basis": "dated_release",
+          "locator": "OpenAI RSS dated item + restored article body in candidate materials",
+          "support": "深化机构工作流，增加合规与部署要求；不能把公司测试分数当作临床安全保证。 管理员配置、BAA及机构资格；个人临床用户的公共资料功能与EHR分开。"
+        }
+      ],
+      "targets": [
+        "company:OpenAI",
+        "event:60"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C68-1",
+      "candidate_id": "C68",
+      "statement": "ChatGPT广告披露达到10亿美元年化收入运行率，并宣布Ads Manager扩展到更多国家和地区。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads/",
+          "claim_first_public_at": "2026-08-31T04:00:00Z",
+          "retrieved_at": "2026-09-08T07:52:00Z",
+          "basis": "dated_release",
+          "locator": "OpenAI RSS dated item + restored article body in candidate materials",
+          "support": "广告变现形成新规模信号；年化运行率不是已经实现10亿美元全年收入，也不是净利润。 实际期间收入、地区开放及广告与回答分离的执行。"
+        }
+      ],
+      "targets": [
+        "company:OpenAI",
+        "event:61"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C69-1",
+      "candidate_id": "C69",
+      "statement": "OpenAI于9月6日披露内部研究自动化加速；结果受算力、模型和人工干预共同影响，不等于已实现自主递归改进。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://openai.com/index/research-acceleration-view-inside-openai/",
+          "claim_first_public_at": "2026-09-06T08:00:00Z",
+          "retrieved_at": "2026-09-08T07:52:00Z",
+          "basis": "dated_release",
+          "locator": "RSS item + article methodology/limitations",
+          "support": "7月与8月的历史事件按本次披露归周，研发效率为公司自述。"
+        }
+      ],
+      "targets": [
+        "company:OpenAI",
+        "event:62"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C69-ALIEN-1",
+      "candidate_id": "C69-ALIEN",
+      "statement": "OpenAI在An Alien Mind中披露模型监控和行为理解限制；提及7、8月内部限制不代表9月6日发生新事故。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://openai.com/index/an-alien-mind/",
+          "claim_first_public_at": "2026-09-06T09:00:00Z",
+          "retrieved_at": "2026-09-08T07:52:00Z",
+          "basis": "dated_release",
+          "locator": "RSS item + article intervention/monitoring sections",
+          "support": "不能推断此前Hugging Face安全事件已经解决或监控已充分可靠。"
+        }
+      ],
+      "targets": [
+        "company:OpenAI",
+        "event:63"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C45-1",
+      "candidate_id": "C45",
+      "statement": "Samsung新增14英寸Galaxy Book6，799美元起，部分市场提供；配置与供货因地区而异。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://news.samsung.com/global/samsung-expands-the-galaxy-book6-lineup-making-galaxy-book-more-accessible",
+          "claim_first_public_at": "2026-09-01T08:00:00+09:00",
+          "retrieved_at": "2026-09-08T07:52:00Z",
+          "basis": "dated_release",
+          "locator": "官方正文 + JSON-LD datePublished",
+          "support": "上海同为9月1日07:00，不能把美元改英镑；dateModified早于datePublished不作为提前公开证明。"
+        }
+      ],
+      "targets": [
+        "company:Samsung Electronics",
+        "event:80"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C45-WASHER-1",
+      "candidate_id": "C45-WASHER",
+      "statement": "Samsung于IFA展示A-70%能耗开发机型和13kg Bespoke AI洗衣机，开发展示不等于已量产或已接受订单。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://news.samsung.com/global/samsung-redefines-laundry-with-new-a-70-and-13-kg-bespoke-ai-washers-at-ifa-2026",
+          "claim_first_public_at": "2026-09-02T15:30:00+09:00",
+          "retrieved_at": "2026-09-08T07:52:00Z",
+          "basis": "dated_release",
+          "locator": "官方正文及脚注 + JSON-LD datePublished",
+          "support": "价格和实际上市时间未定；节能基准是欧盟A级最低要求，不能写成较现售机型统一省70%。"
+        }
+      ],
+      "targets": [
+        "company:Samsung Electronics",
+        "event:81"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C120-CLAUDE-1",
+      "candidate_id": "C120-CLAUDE",
+      "statement": "Claude官方状态9月3日报告多个模型错误率升高，16:23UTC的已解决通报称影响于16:16UTC结束。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://status.claude.com/api/v2/incidents.json",
+          "claim_first_public_at": "2026-09-03T16:23:12.052Z",
+          "retrieved_at": "2026-09-08T07:52:00Z",
+          "basis": "dated_section",
+          "locator": "incident 461yvfrzpwtt all seven timestamped updates",
+          "support": "不同模型分阶段恢复；不能与OpenAI故障共用恢复结论。"
+        }
+      ],
+      "targets": [
+        "company:Anthropic",
+        "event:73"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C130-1",
+      "candidate_id": "C130",
+      "statement": "Claude官方称零余额用户新购额度到账延迟，部分API请求误报余额不足；影响9月1日12:10至21:35UTC购买，9月2日01:24UTC宣布解决。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://status.claude.com/api/v2/incidents.json",
+          "claim_first_public_at": "2026-09-02T01:24:22.251Z",
+          "retrieved_at": "2026-09-08T07:52:00Z",
+          "basis": "dated_section",
+          "locator": "incident 620swtqyn24k complete updates",
+          "support": "发生区间不冒充公告时间；无金额损失估计。"
+        }
+      ],
+      "targets": [
+        "company:Anthropic",
+        "event:73"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C131-1",
+      "candidate_id": "C131",
+      "statement": "Claude官方8月31日通报Slack、Code网页版和Code Review降级，20:36UTC公告已解决，Code影响时段16:55至19:16UTC。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://status.claude.com/api/v2/incidents.json",
+          "claim_first_public_at": "2026-08-31T20:36:00.297Z",
+          "retrieved_at": "2026-09-08T07:52:00Z",
+          "basis": "dated_section",
+          "locator": "incident r82kdk0m7vqh complete updates",
+          "support": "发生区间不冒充公告时间；无金额损失估计。"
+        }
+      ],
+      "targets": [
+        "company:Anthropic",
+        "event:73"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C86-1",
+      "candidate_id": "C86",
+      "statement": "FY27起财报从三个分部改为Agents and Infra、Devices and Consumer两部分，并重列历史口径。新定义Azure的FY2026 Q4收入294.17亿美元、全年1019.38亿美元；不是Intelligent Cloud收入或本周新增收入。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526380280/d291965dex991.htm",
+          "claim_first_public_at": "2026-09-02T16:30:24-04:00",
+          "retrieved_at": "2026-09-08T07:52:00Z",
+          "basis": "filing",
+          "locator": "SEC Accepted + Exhibit99.1 pages7-18/20-21",
+          "support": "可比性与关键业务透明度变化；Azure范围移出GitHub、安全及部分医疗云等业务。集团历史总收入不因重列增加，FY27 Q1整体指引不变，仅机械调整分部与指标。 FY27首季新口径财报；与原口径搭桥后再比较，不能把2026年9月重列值倒灌为更早周报已知数。 已读SEC附件99.1第7-18及20-21页的定义、表头、百万美元单位和限制；只将此次新披露口径归本周，不重写原期事实。"
+        }
+      ],
+      "targets": [
+        "company:Microsoft",
+        "event:10",
+        "headline:8"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C96-1",
+      "candidate_id": "C96",
+      "statement": "Business Insider披露内部初步测算：Amazon自身网络拟在2029年处理88.7%的美国包裹。文件形成于7月，并非本周交付结果。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://www.businessinsider.com/amazon-forecasts-delivery-network-us-packages-2026-9",
+          "claim_first_public_at": "2026-09-03T09:00:02.581Z",
+          "retrieved_at": "2026-09-08T07:52:00Z",
+          "basis": "dated_media",
+          "locator": "continued_review Y14 turn173view1 L168-187,212-232",
+          "support": "影响履约成本和外部承运商分工；Amazon称测算可能重大修订，非最终计划。 正式计划、实际包裹量及承运合同；自有网络含第三方DSP和Flex。 媒体审阅内部文件，已读原文及Amazon回应。"
+        }
+      ],
+      "targets": [
+        "company:Amazon / AWS",
+        "event:33"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C98-1",
+      "candidate_id": "C98",
+      "statement": "Law360报道Meta AI眼镜隐私诉讼新增被拍摄旁观者的群体诉请，涉及摄录及AI训练同意；不是法院已经认定侵权。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://www.law360.com/cybersecurity-privacy/articles/2520314/meta-ai-glasses-privacy-suit-expands-to-add-bystander-class",
+          "claim_first_public_at": "2026-09-01T22:24:00-04:00",
+          "retrieved_at": "2026-09-08T07:52:00Z",
+          "basis": "dated_media",
+          "locator": "continued_review Y10 turn169search1 dated visible lead only",
+          "support": "被诉影响范围扩展到非购买者，可能改变数据治理与诉讼敞口。 公开合并诉状、认证和裁判；不将原告指控当事实。 署时导语可读；正文与附件403受限，尚未核原诉状。"
+        }
+      ],
+      "targets": [
+        "company:Meta",
+        "event:38"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C99-1",
+      "candidate_id": "C99",
+      "statement": "WBE律所称9月4日在伊利诺伊北区提交拟集体诉讼，指控Meta使用Facebook/Instagram脸部图像开发NameTag与生成AI，违反BIPA及加州隐私等规则。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://wbe-llp.com/news/lawsuit-accuses-meta-of-using-facebook-and-instagram-images-to-build-facial-recognition-and-generative-ai-systems-without-consent/",
+          "claim_first_public_at": "2026-09-04T22:09:31Z",
+          "retrieved_at": "2026-09-08T07:52:00Z",
+          "basis": "dated_release",
+          "locator": "continued_review Y11 turn170view0 L25-36 + metadata",
+          "support": "脸部数据与训练许可受到新诉请挑战；律所是原告代理，不是监管机关或法院裁定。 案卷、Meta答辩及法院认证；所请求损害赔偿与禁令均未获裁定。 申请方具日期公告，原文及元数据已核；未取得法院诉状或Meta本案回应。"
+        }
+      ],
+      "targets": [
+        "company:Meta",
+        "event:39"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C101-1",
+      "candidate_id": "C101",
+      "statement": "Semafor报道Meta关闭检测到篡改隐私指示灯眼镜的摄录功能。可穿戴业务副总裁称篡改比例低于已售设备的0.1%，未给精确台数。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://tech.yahoo.com/ar-vr/articles/meta-disables-cameras-thousands-tampered-175949878.html",
+          "claim_first_public_at": "2026-09-01T19:40:00Z",
+          "retrieved_at": "2026-09-08T07:52:00Z",
+          "basis": "dated_media",
+          "locator": "continued_review Y10 turn169search2 dated body",
+          "support": "隐私规则进入设备执行；不等于所有眼镜失效，媒体“数千台”为推算而非公司精确披露。 公司执行说明、用户申诉及实际功能范围；不推断全部硬件永久报废。 Semafor采访经Yahoo转载，署时正文可见；直连403，保留限制。"
+        }
+      ],
+      "targets": [
+        "company:Meta",
+        "event:40"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C88-1",
+      "candidate_id": "C88",
+      "statement": "Instagram将AI人物账号标识调整为AI-generated profile，并限制未适当披露的AI人物账号触达；不是全面禁止AI账号。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://techcrunch.com/2026/08/31/instagram-puts-new-limits-on-undisclosed-ai-profiles/",
+          "claim_first_public_at": "2026-08-31T19:16:59Z",
+          "retrieved_at": "2026-09-08T07:52:00Z",
+          "basis": "dated_media",
+          "locator": "restored article + F metadata3 article:published_time",
+          "support": "改变虚拟人物创作者的披露和分发条件，影响平台信任、账号流量及相关商业合作。 实际标签与限流执行、创作者申诉；不把政策宣布当作已消除冒充问题。 当周媒体报道交叉支持；Instagram直接说明入口读取失败，未声称已读该官方原页。"
+        }
+      ],
+      "targets": [
+        "company:Meta",
+        "event:41"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C104-1",
+      "candidate_id": "C104",
+      "statement": "Google回应Pixel11 Video Boost录像静态噪音问题，已开发修复并计划未来数周推送；不是画面静止，也不是已全量修复。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://www.androidauthority.com/pixel-11-static-noise-fix-coming-3705634/",
+          "claim_first_public_at": "2026-09-01T13:03:00-04:00",
+          "retrieved_at": "2026-09-08T07:52:00Z",
+          "basis": "dated_media",
+          "locator": "CL08 turn181view1 9/1 13:03 ET dated response",
+          "support": "公司承认音频问题，实际修复通过Pixel Camera更新。"
+        }
+      ],
+      "targets": [
+        "company:Alphabet / Google",
+        "event:25"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C108-1",
+      "candidate_id": "C108",
+      "statement": "欧盟普通法院9月2日驳回Opera对委员会未将Edge指定为DMA核心平台服务决定的挑战；仅涉及Edge指定，不是Microsoft整体豁免。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-09/cp260113en.pdf",
+          "claim_first_public_at": "2026-09-02T12:11:39+02:00",
+          "retrieved_at": "2026-09-08T07:52:00Z",
+          "basis": "dated_release",
+          "locator": "CL17 judgment press release T-357/24; CL11 official RSS timestamp",
+          "support": "保留上诉可能，不认定其他Microsoft服务免于DMA。"
+        }
+      ],
+      "targets": [
+        "company:Microsoft",
+        "event:11"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C72-1",
+      "candidate_id": "C72",
+      "statement": "Gemini API推出Agentic Video视频理解；按适用模型标准token价格计费，无该功能额外费用。Gemini应用与Ask YouTube扩展仍为后续计划。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-agentic-video-in-gemini/",
+          "claim_first_public_at": "2026-09-01T17:00:00Z",
+          "retrieved_at": "2026-09-08T07:52:00Z",
+          "basis": "dated_release",
+          "locator": "官方完整正文 + F metadata2",
+          "support": "拓展长视频分析工作负载；不能把API可用外推到所有消费入口。 实际支持模型、应用扩围、完整视频任务质量与账单。"
+        }
+      ],
+      "targets": [
+        "company:Alphabet / Google",
+        "event:26"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C72-PICS-1",
+      "candidate_id": "C72-PICS",
+      "statement": "Google Pics面向AI Pro/Ultra和多数Workspace商业计划在数周内逐步推出；Docs、Slides集成开始推出，Drive集成仍在后续安排中。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://blog.google/products-and-platforms/products/workspace/google-pics/",
+          "claim_first_public_at": "2026-09-01T16:00:00Z",
+          "retrieved_at": "2026-09-08T07:52:00Z",
+          "basis": "dated_release",
+          "locator": "官方完整正文 + F metadata2",
+          "support": "将图像生成与办公内容工作流结合；分批开放不等于全部席位已获得。 各计划实际开放范围、Drive后续集成及管理员条件。"
+        }
+      ],
+      "targets": [
+        "company:Alphabet / Google",
+        "event:27"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C114-1",
+      "candidate_id": "C114",
+      "statement": "NVIDIA9月3日8-K披露9月2日签约收购Hugging Face：股东对价约119亿美元，另有最高约10亿美元股权留任计划；预计2027上半年完成，仍须审批。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000078/nvda-20260902.htm",
+          "claim_first_public_at": "2026-09-03T08:03:56-04:00",
+          "retrieved_at": "2026-09-08T07:52:00Z",
+          "basis": "filing",
+          "locator": "CL17 Item8.01全段 + F11 turn219view1 Accepted",
+          "support": "119亿美元对价与最高10亿美元留任权益分开，不能说129亿美元现金已付或并购已完成。"
+        }
+      ],
+      "targets": [
+        "company:NVIDIA",
+        "event:45",
+        "headline:4"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C83-1",
+      "candidate_id": "C83",
+      "statement": "SK Hynix9月4日6-K称Solidigm正在评估提升竞争力措施但未确定方案；约5万亿韩元pre-IPO融资仍是8月旧传闻。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/2120882/000119312526382688/d111778d6k.htm",
+          "claim_first_public_at": "2026-09-04T06:02:34-04:00",
+          "retrieved_at": "2026-09-08T07:52:00Z",
+          "basis": "filing",
+          "locator": "F11 turn219view2 Accepted + previously read entire6K StreetInsider mirror",
+          "support": "公司承诺细节确定时或三个月内再披露，不能写成新增融资落地。"
+        }
+      ],
+      "targets": [
+        "analysis:5",
+        "catalyst:4",
+        "company:SK Hynix",
+        "event:86"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C106-1",
+      "candidate_id": "C106",
+      "statement": "Google Messages部分用户报告旧短信被附到新消息并发给错误对象；9月2日公司向Android Authority确认正在逐步修复，并非全量修复完成。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://www.androidauthority.com/google-messages-old-texts-bug-3704732/",
+          "claim_first_public_at": "2026-09-02T03:32:00-04:00",
+          "retrieved_at": "2026-09-08T07:52:00Z",
+          "basis": "dated_section",
+          "locator": "F11 turn219view3 L17,38-54 dated9/2 update and8/31 original",
+          "support": "跨Pixel/Samsung个案，不等于所有手机受影响；不采用未核视频或社区重置方法作为官方修复。"
+        }
+      ],
+      "targets": [
+        "company:Alphabet / Google",
+        "event:25"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C120-1",
+      "candidate_id": "C120",
+      "statement": "OpenAI9月3日ChatGPT和Codex错误率升高，16:55UTC通报解决；部分Remote Control用户需重新配对移动设备。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://status.openai.com/incidents/01M1KWEDH417T2CF44YYHZDFCR",
+          "claim_first_public_at": "2026-09-03T16:55:49Z",
+          "retrieved_at": "2026-09-08T07:52:00Z",
+          "basis": "dated_section",
+          "locator": "official API allthree updates; public created14:58 differs displayed14:43",
+          "support": "只使用各条更新自己的created_at/display_at及正文；事故发生与披露时间分开。"
+        }
+      ],
+      "targets": [
+        "company:OpenAI",
+        "event:64"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C129-1",
+      "candidate_id": "C129",
+      "statement": "OpenAI9月4日APAC多服务故障涉及ChatGPT、Work、图像、上传、Voice及Codex Cloud，07:00UTC开始通报、10:46UTC宣布恢复。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://status.openai.com/incidents/01M1NKFZH5EEYEREC54HNAHY35",
+          "claim_first_public_at": "2026-09-04T10:46:54Z",
+          "retrieved_at": "2026-09-08T07:52:00Z",
+          "basis": "dated_section",
+          "locator": "official API allthree updates",
+          "support": "只使用各条更新自己的created_at/display_at及正文；事故发生与披露时间分开。"
+        }
+      ],
+      "targets": [
+        "company:OpenAI",
+        "event:64"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C46-1",
+      "candidate_id": "C46",
+      "statement": "韩国MOTIR宣布战略物项规则调整生效，新增高性能AI芯片及部分半导体制造设备出口许可要求；SK Hynix亦面临同类行业规则核查。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://english.motir.go.kr/eng/article/EATCLdfa319ada/2720/view",
+          "retrieved_at": "2026-09-08T08:25:26Z",
+          "basis": "dated_release",
+          "locator": "MOTIR 9/1 dated body: export-control revision in effect; source in prior candidate receipts",
+          "support": "可能影响相关产品出口合规与交付手续；公告未指名两家公司订单受损，不能推断已发生制裁或停供。 主管机关物项清单、公司产品是否适用及许可执行。 韩国主管机关原公告已读；行业政策不是公司违法认定。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-01",
+            "earliest": "2026-08-31T10:00:00.000Z",
+            "latest_exclusive": "2026-09-02T12:00:00.000Z",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "MOTIR 9/1 dated body: export-control revision in effect; source in prior candidate receipts",
+            "note": "来源明确公开日期、未载时区；保留50小时完整可能区间，端点不是实际公开时间。"
+          }
+        }
+      ],
+      "targets": [
+        "analysis:5",
+        "company:SK Hynix",
+        "company:Samsung Electronics",
+        "event:82"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C53-1",
+      "candidate_id": "C53",
+      "statement": "MAI-Transcribe-2语音识别模型推出，音频每小时0.10美元为截至年末的限期价格，提供Foundry等入口。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://microsoft.ai/news/mai-transcribe-2-is-the-fastest-most-accurate-and-cheapest-speech-recognition-model-in-the-world/",
+          "retrieved_at": "2026-09-08T08:25:26Z",
+          "basis": "dated_release",
+          "locator": "F07 Microsoft AI完整9/3正文、Foundry渠道及year-end price限定",
+          "support": "降低语音工作负载的报价门槛；模型自测排名不等于所有场景最佳。 相同语言和噪声条件下实测、实际账单、年末价格安排。 已确认公司发布及优惠条件；未独立复现性能。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-03",
+            "earliest": "2026-09-02T10:00:00.000Z",
+            "latest_exclusive": "2026-09-04T12:00:00.000Z",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "F07 Microsoft AI完整9/3正文、Foundry渠道及year-end price限定",
+            "note": "来源明确公开日期、未载时区；保留50小时完整可能区间，端点不是实际公开时间。"
+          }
+        }
+      ],
+      "targets": [
+        "company:Microsoft",
+        "event:12"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C55-1",
+      "candidate_id": "C55",
+      "statement": "ITC在337-TA-1443案中不复审基于和解终止调查的初步决定；本次是调查终止程序，不是实体判定TSMC侵权。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://public-inspection.federalregister.gov/2026-18260.pdf",
+          "retrieved_at": "2026-09-08T08:25:26Z",
+          "basis": "filing",
+          "locator": "Federal Register2026-18260 public-inspection PDF filing stamp9/4; issue date9/8不是本周依据",
+          "support": "相应进口调查风险收束，但不推断其他专利案件解除；Apple此前退出该案属于旧进展。 和解执行及其他案件独立进程；不把9月8日正式刊登日倒填为当周事件。 已读公开检视PDF；文件载9月4日备案，正式Federal Register刊登为9月8日，两者分开。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-04",
+            "earliest": "2026-09-03T10:00:00.000Z",
+            "latest_exclusive": "2026-09-05T12:00:00.000Z",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "Federal Register2026-18260 public-inspection PDF filing stamp9/4; issue date9/8不是本周依据",
+            "note": "来源明确公开日期、未载时区；保留50小时完整可能区间，端点不是实际公开时间。"
+          }
+        }
+      ],
+      "targets": [
+        "company:TSMC",
+        "event:89"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C79-1",
+      "candidate_id": "C79",
+      "statement": "Reuters援引消息人士称IPO推介最快推迟至10月中旬，招股文件可能在9月下旬；时间仍可能变化，公司未评论。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://www.marketscreener.com/news/anthropic-ipo-launch-shifts-toward-mid-october-sources-say-ce785bdbdb89f420",
+          "retrieved_at": "2026-09-08T08:25:26Z",
+          "basis": "dated_media",
+          "locator": "N24/N25 Reuters完整9/4正文、sources/company no comment",
+          "support": "资本补充与上市准备窗口变化；不是确定的IPO日期、融资完成或估值定论。 公司或监管正式文件与实际推介；报道中的融资磋商不写成已签授信。 媒体报道待确认，匿名来源；公司和相关银行未确认。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-04",
+            "earliest": "2026-09-03T10:00:00.000Z",
+            "latest_exclusive": "2026-09-05T12:00:00.000Z",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "N24/N25 Reuters完整9/4正文、sources/company no comment",
+            "note": "来源明确公开日期、未载时区；保留50小时完整可能区间，端点不是实际公开时间。"
+          }
+        }
+      ],
+      "targets": [
+        "catalyst:4",
+        "company:Anthropic",
+        "event:74"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C87-1",
+      "candidate_id": "C87",
+      "statement": "Xbox宣布11月起Ultimate/Premium/Essential每月云游戏时数分别为15/10/5小时；用尽可购额外时数，非订阅用户也将可单购云游戏时数，具体价格与地区条件待公布。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://news.xbox.com/en-us/2026/09/03/xbox-cloud-gaming-changes/",
+          "retrieved_at": "2026-09-08T08:25:26Z",
+          "basis": "dated_release",
+          "locator": "Z21/Z22 Xbox9/3 dated body, beginning November及extra-hour限制",
+          "support": "云服务成本转向使用配额，可能增加重度用户支出并影响留存；本周尚未实施限额。 11月执行、额外时数报价、市场与游戏资格；公司估计受影响用户比例不是实测结果。 Xbox官方9月3日原文明确beginning in November，现阶段仍无上述月上限。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-03",
+            "earliest": "2026-09-02T10:00:00.000Z",
+            "latest_exclusive": "2026-09-04T12:00:00.000Z",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "Z21/Z22 Xbox9/3 dated body, beginning November及extra-hour限制",
+            "note": "来源明确公开日期、未载时区；保留50小时完整可能区间，端点不是实际公开时间。"
+          }
+        }
+      ],
+      "targets": [
+        "company:Microsoft",
+        "event:13"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C91-1",
+      "candidate_id": "C91",
+      "statement": "Xbox宣布与TCL合作，未来数月在指定TCL智能电视提供Xbox应用；不等于本周已向全部电视型号开放。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://news.xbox.com/en-us/2026/09/04/xbox-app-tcl-smart-tv/",
+          "retrieved_at": "2026-09-08T08:25:26Z",
+          "basis": "dated_release",
+          "locator": "Z21/Z22 Xbox9/4 dated body, coming months/TCL/models/regions",
+          "support": "扩展云游戏分发终端；需兼容机型、手柄与合资格云游戏时间，合作不是硬件采购订单。 正式上线、支持型号、市场和云游戏计费条件。 官方合作计划，尚未确认交付。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-04",
+            "earliest": "2026-09-03T10:00:00.000Z",
+            "latest_exclusive": "2026-09-05T12:00:00.000Z",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "Z21/Z22 Xbox9/4 dated body, coming months/TCL/models/regions",
+            "note": "来源明确公开日期、未载时区；保留50小时完整可能区间，端点不是实际公开时间。"
+          }
+        }
+      ],
+      "targets": [
+        "company:Microsoft",
+        "event:14"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C95-1",
+      "candidate_id": "C95",
+      "statement": "Project Zenith面向开发者PC，首先计划随AMD Ryzen AI Halo提供；设备要求64GB以上统一内存、250GB/s以上带宽，用于本地模型开发。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://blogs.windows.com/windowsdeveloper/2026/09/04/announcing-project-zenith-the-ready-to-code-windows-experience/",
+          "retrieved_at": "2026-09-08T08:25:26Z",
+          "basis": "dated_release",
+          "locator": "Y05 turn164search0完整9/4官方正文、hardware requirements及future first device",
+          "support": "扩展Windows边缘AI开发入口；不是所有Windows设备已获得新系统或已节省云账单。 首批设备交付、OEM扩展、同任务实测；公司声称可运行30B以上模型不等于所有任务性能保证。 微软原文已读；精确发布时间元数据直取403，待补时点。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-04",
+            "earliest": "2026-09-03T10:00:00.000Z",
+            "latest_exclusive": "2026-09-05T12:00:00.000Z",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "Y05 turn164search0完整9/4官方正文、hardware requirements及future first device",
+            "note": "来源明确公开日期、未载时区；保留50小时完整可能区间，端点不是实际公开时间。"
+          }
+        }
+      ],
+      "targets": [
+        "company:Microsoft",
+        "event:15"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C115-1",
+      "candidate_id": "C115",
+      "statement": "AWS于9月3日发布Amazon Linux2027公开预览，覆盖商业区域的x86-64和ARM AMI及ECR公共容器镜像，尚非GA。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/announcing-amazon-linux-2027/",
+          "retrieved_at": "2026-09-08T08:25:26Z",
+          "basis": "dated_release",
+          "locator": "F13 turn221view0 L226-230完整dated announcement",
+          "support": "用于非生产验证；AWS Support不覆盖预览，生产应用继续AL2023，来自F08 product FAQ明确限制。内核7.1+和SELinux默认enforcing不等于正式版保证。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-03",
+            "earliest": "2026-09-02T10:00:00.000Z",
+            "latest_exclusive": "2026-09-04T12:00:00.000Z",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "F13 turn221view0 L226-230完整dated announcement",
+            "note": "来源明确公开日期、未载时区；保留50小时完整可能区间，端点不是实际公开时间。"
+          }
+        }
+      ],
+      "targets": [
+        "company:Amazon / AWS",
+        "event:34"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C80-1",
+      "candidate_id": "C80",
+      "statement": "Samsung葡萄牙宣布Galaxy S26 FE当日已可购买；8月27日发布及9月4日上市预告是此前背景。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://news.cision.com/pt/samsung-portugal/r/samsung-galaxy-s26-fe-ja-esta-disponivel-em-portugal%2Cc639241326320000000",
+          "claim_first_public_at": "2026-09-04T17:30:00+01:00",
+          "retrieved_at": "2026-09-08T07:52:00Z",
+          "basis": "dated_release",
+          "locator": "Z07 officialSamsungPortugal/Cision dateline17:30CET + Disponibilidade",
+          "support": "上市计划在已核市场进入销售阶段；不能据一国公告认定所有市场同步供货。 原平台明确CET，按其字面+01:00保留；不自行改成CEST。"
+        }
+      ],
+      "targets": [
+        "company:Samsung Electronics",
+        "event:83"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C67-1",
+      "candidate_id": "C67",
+      "statement": "OpenAI8月31日公开支持加州SB1119青少年AI安全法案；公司支持不等于法案已经签署生效。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://openai.com/index/supporting-california-bill-advance-ai-youth-safety/",
+          "claim_first_public_at": "2026-08-31T07:00:00Z",
+          "retrieved_at": "2026-09-08T07:52:00Z",
+          "basis": "dated_release",
+          "locator": "OpenAI officialRSS8/31 item + previously read company statement",
+          "support": "阶段仅确认公司立场；立法进度另设claim，不从草案推导已经生效的义务。"
+        }
+      ],
+      "targets": [
+        "catalyst:4",
+        "company:OpenAI",
+        "event:65"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C44-1",
+      "candidate_id": "C44",
+      "statement": "AP9月1日报道美国政府在OpenAI相关版权诉讼中提交支持合理使用论点的意见；这是政府立场，不是法院裁判。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://apnews.com/article/dbb22e8e02c660ee5a8644915dec39a4",
+          "retrieved_at": "2026-09-08T08:25:26Z",
+          "basis": "dated_media",
+          "locator": "N02/N21 AP具日期可见报道片段",
+          "support": "直连受限且政府原文未取得；只确认媒体披露的程序和立场，不认证全部论据。Microsoft为相关案件被告，不推断共同提交本动议。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-01",
+            "earliest": "2026-08-31T10:00:00.000Z",
+            "latest_exclusive": "2026-09-02T12:00:00.000Z",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "N02/N21 AP具日期可见报道片段",
+            "note": "来源明确公开日期、未载时区；保留50小时完整可能区间，端点不是实际公开时间。"
+          }
+        }
+      ],
+      "targets": [
+        "analysis:5",
+        "catalyst:4",
+        "company:Microsoft",
+        "company:OpenAI",
+        "event:66"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C44-MOTION-1",
+      "candidate_id": "C44-MOTION",
+      "statement": "OpenAI9月4日在NYT等版权诉讼中提交简易判决动议备忘录；申请合理使用判断不等于已经获准。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://storage.courtlistener.com/recap/gov.uscourts.nysd.612697/gov.uscourts.nysd.612697.1496.0.pdf",
+          "retrieved_at": "2026-09-08T08:25:26Z",
+          "basis": "filing",
+          "locator": "N21公示删节版封面、目录及证明页；OpenAI案件列表9/4条目",
+          "support": "与政府9/1意见分开；不将Microsoft认定为本份动议共同提交方。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-04",
+            "earliest": "2026-09-03T10:00:00.000Z",
+            "latest_exclusive": "2026-09-05T12:00:00.000Z",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "N21公示删节版封面、目录及证明页；OpenAI案件列表9/4条目",
+            "note": "来源明确公开日期、未载时区；保留50小时完整可能区间，端点不是实际公开时间。"
+          }
+        }
+      ],
+      "targets": [
+        "company:OpenAI",
+        "event:66"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C93-1",
+      "candidate_id": "C93",
+      "statement": "8月31日Microsoft365认证故障影响Exchange/Outlook及部分Teams、Copilot等服务；第三方状态档案转录的9月3日通报称影响已恢复。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://isdown.app/status/microsoft365/incidents/646730-users-may-experience-issues-when-utilizing-multiple-microsoft-365-services",
+          "retrieved_at": "2026-09-08T08:25:26Z",
+          "basis": "dated_section",
+          "locator": "F09 turn217view0 L123-167完整9/3最新更新块，排除L99-101 AI摘要",
+          "support": "不能写成全部服务持续瘫痪77小时；分阶段恢复，Purview积压处理预计另需24-48小时。未读取需登录的Microsoft租户后台，来源为状态转录。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-03",
+            "earliest": "2026-09-02T10:00:00.000Z",
+            "latest_exclusive": "2026-09-04T12:00:00.000Z",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "F09 turn217view0 L123-167完整9/3最新更新块，排除L99-101 AI摘要",
+            "note": "来源明确公开日期、未载时区；保留50小时完整可能区间，端点不是实际公开时间。"
+          }
+        }
+      ],
+      "targets": [
+        "company:Microsoft",
+        "event:16"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C103-1",
+      "candidate_id": "C103",
+      "statement": "背景：Google8月告知移动端Assistant计划从9月4日起逐步移除，预计数周覆盖；本次没有把计划认证成截止前全量停用。",
+      "kind": "background",
+      "evidence": [
+        {
+          "url": "https://www.techradar.com/ai-platforms-assistants/gemini/google-assistant-will-shut-down-for-good-on-android-and-wear-os-in-september-heres-what-you-need-to-do-next",
+          "claim_first_public_at": "2026-08-05T11:57:36Z",
+          "retrieved_at": "2026-09-08T07:52:00Z",
+          "basis": "dated_media",
+          "locator": "CL02 turn175news25具UTC时点完整正文；原邮件quoted expected gradual rollout",
+          "support": "只作既知迁移计划背景；不认证全部Android或WearOS用户已停用。"
+        }
+      ],
+      "targets": [
+        "company:Alphabet / Google",
+        "event:28"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C118-1",
+      "candidate_id": "C118",
+      "statement": "MacRumors9月4日转述Bloomberg产品路线图，预计晚2026至早2027有新Mac、iPad和家庭设备；报道混合其他传闻，未获Apple确认。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://www.macrumors.com/2026/09/04/apple-14-more-products-by-early-next-year/",
+          "claim_first_public_at": "2026-09-04T06:55:00-07:00",
+          "retrieved_at": "2026-09-08T07:52:00Z",
+          "basis": "dated_media",
+          "locator": "F12 turn220search0完整14产品列表和mixes in some other rumors限定",
+          "support": "仅保留跨产品路线图方向，不把传闻参数、订单或供应关系当正式发布。"
+        }
+      ],
+      "targets": [
+        "company:Apple",
+        "event:3"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C118-2",
+      "candidate_id": "C118",
+      "statement": "同日MacRumors转述Bloomberg称Apple家庭安防摄像头可能2027推出；家庭服务商业化仍为报道的可能计划。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://www.macrumors.com/2026/09/04/apple-home-security-camera-2027/",
+          "claim_first_public_at": "2026-09-04T14:05:00-07:00",
+          "retrieved_at": "2026-09-08T07:52:00Z",
+          "basis": "dated_media",
+          "locator": "CL24完整9/4 14:05PDT摄像头文章",
+          "support": "不可把iCloud绑定猜测或未来服务收入当已确定事实。"
+        }
+      ],
+      "targets": [
+        "company:Apple",
+        "event:3"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C119-1",
+      "candidate_id": "C119",
+      "statement": "MacRumors9月4日报道Claude接入CarPlay；原文后加的live提示缺独立更新时间，本期仅确认接入披露，不认证截止前已全量开放。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://www.macrumors.com/2026/09/04/anthropics-claude-is-coming-to-carplay/",
+          "claim_first_public_at": "2026-09-04T13:43:31-07:00",
+          "retrieved_at": "2026-09-08T07:52:00Z",
+          "basis": "dated_section",
+          "locator": "CL24原始9/4署时文章与显式未署时Update分开；F13AppStore版本历史均为通用bugfix未能证明上线时间",
+          "support": "CarPlay接入为媒体披露；本期不采用未署时更新断言，iOS版本号本身也不是特性上线日期。"
+        }
+      ],
+      "targets": [
+        "company:Anthropic",
+        "company:Apple",
+        "event:75"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C63-1",
+      "candidate_id": "C63",
+      "statement": "Tesla公开意向页面征集Cybercab车队购买、枢纽及基础设施合作，9月3日媒体报道；不是已签订单或正式对外销售时间。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://techcrunch.com/2026/09/03/tesla-is-asking-people-if-they-want-to-buy-and-run-cybercab-fleets/",
+          "claim_first_public_at": "2026-09-03T22:18:30Z",
+          "retrieved_at": "2026-09-08T07:52:00Z",
+          "basis": "dated_media",
+          "locator": "F metadata1 + 原已读Tesla robotaxi/interest页面及当日TechCrunch完整正文",
+          "support": "没有提交表单，不将兴趣计为收入；准入与服务责任待正式条款。"
+        }
+      ],
+      "targets": [
+        "company:Tesla",
+        "event:50"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C51-1",
+      "candidate_id": "C51",
+      "statement": "AWS和Microsoft于8月31日联合推出Multicloud Interconnect公开预览；连接两家云环境，尚非全面正式商用。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://aws.amazon.com/blogs/networking-and-content-delivery/aws-and-microsoft-azure-collaborate-to-expand-multicloud-networking/",
+          "claim_first_public_at": "2026-08-31T11:34:11-07:00",
+          "retrieved_at": "2026-09-08T08:28:00Z",
+          "basis": "dated_release",
+          "locator": "F metadata4 article timestamps + 已读双方公告完整预览/region/GA限制",
+          "support": "预览不等于新合同收入或未来GA规格已交付；不额外据此推断新采购关系。"
+        }
+      ],
+      "targets": [
+        "company:Amazon / AWS",
+        "company:Microsoft",
+        "event:17",
+        "supply:E29"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C47-1",
+      "candidate_id": "C47",
+      "statement": "Anthropic披露此前安全问题导致部分评估和高风险训练暂停，并已恢复部分内部工作；不是全部训练停摆或全部风险解决。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://www.axios.com/2026/09/01/anthropic-paused-some-ai-training-after-claude-took-unauthorized-actions",
+          "claim_first_public_at": "2026-09-01T01:57:14Z",
+          "retrieved_at": "2026-09-08T07:52:00Z",
+          "basis": "dated_media",
+          "locator": "F16 turn224search0具UTC时点报道 + 8/31 Anthropic正文已读",
+          "support": "媒体为期内具时区交叉证明；7、8月事件属于本周新披露。Axios只用于确认部分暂停/恢复，不复制全文；详细公司说明见Anthropic原文。"
+        }
+      ],
+      "targets": [
+        "company:Anthropic",
+        "event:76"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C43-1",
+      "candidate_id": "C43",
+      "statement": "Axios9月1日报道，在Apple诉OpenAI商业秘密案中，OpenAI于8月31日提交反对Apple临时禁令申请的文件；Apple另指控OpenAI毁灭证据。双方主张不是法院认定，也不是双方共同反对禁令。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://www.axios.com/2026/09/01/apple-openai-lawsuit-ai-gpt-devices",
+          "claim_first_public_at": "2026-09-01T11:18:45Z",
+          "retrieved_at": "2026-09-08T09:51:22.270Z",
+          "retrieval_note": "本次恢复已保存N01的具时区Axios正文；不是该文件原始联网时间。",
+          "basis": "dated_media",
+          "locator": "N01 turn106news13 9/1 11:18:45 UTC，Driving the news / The other side；F81 Yahoo同稿署时",
+          "support": "披露版本时间有据；明确OpenAI是禁令反对方，Apple提出毁证指控，不能写双方共同反对。8/31文件事件日期与9/1媒体披露分列。"
+        }
+      ],
+      "targets": [
+        "analysis:5",
+        "catalyst:4",
+        "company:Apple",
+        "company:OpenAI",
+        "event:5"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C100-1",
+      "candidate_id": "C100",
+      "statement": "已知未来排期：新墨西哥州Facebook数据隐私案D-101-CV-2021-00132按8月20日排期计划9月8日至10月2日审理；截至本期未开庭。",
+      "kind": "forecast",
+      "evidence": [
+        {
+          "url": "https://www.aol.com/articles/mexico-takes-facebook-back-court-155539000.html",
+          "claim_first_public_at": "2026-09-06T15:55:00Z",
+          "retrieved_at": "2026-09-08T07:52:00Z",
+          "basis": "dated_section",
+          "locator": "F16 turn224search2具UTC Updated9/6 15:55正文；F14法院高关注案件列表核案号/8月20日排期",
+          "support": "此时间是所用媒体版本的最迟已公开证明，不是8/20排期首次发布日；只作forecast、不认作本周新命令。与2023年儿童安全案分别处理。"
+        }
+      ],
+      "targets": [
+        "catalyst:5",
+        "company:Meta"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C61-1",
+      "candidate_id": "C61",
+      "statement": "NVIDIA8月31日公告称已向MediaTek可转换债券投资35亿美元；MediaTek计划采用NVLink Fusion，合作涉及数据中心、PC与汽车。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://www.nasdaq.com/press-release/nvidia-and-mediatek-deepen-long-standing-partnership-build-ai-edge-cloud-computing",
+          "claim_first_public_at": "2026-08-31T08:30:00-04:00",
+          "retrieved_at": "2026-09-08T09:51:22.270Z",
+          "basis": "dated_release",
+          "locator": "F81 turn289search1 Published Aug31 2026 8:30am EDT；同篇GLOBE NEWSWIRE正文与F80公司IR全文对读",
+          "support": "发行方新闻稿同一版本，35亿美元has invested与NVLink计划采用分开；Nasdaq标明原始发行时间，不是独立第二报道。"
+        },
+        {
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-MediaTek-Deepen-Long-Standing-Partnership-to-Build-AI-Edge-to-Cloud-Computing-Platforms/default.aspx",
+          "claim_first_public_at": "2026-08-31T08:30:00-04:00",
+          "retrieved_at": "2026-09-08T09:51:22.270Z",
+          "basis": "dated_release",
+          "locator": "F80 turn288view1 L98-L164同一公司公告；发布时间由Nasdaq同一发行稿明示",
+          "support": "正文、措辞及交易金额与同一发行稿相符；来源血缘相同，不算异源双证。"
+        }
+      ],
+      "targets": [
+        "company:NVIDIA",
+        "event:46",
+        "headline:10",
+        "supply:E30"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C92-1",
+      "candidate_id": "C92",
+      "statement": "9月1日VGC确认Xbox Disc-to-Digital已从周一开始向Insider逐步开放测试；兼容光盘可取得数字许可，但不是全部游戏或全部玩家开放。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://www.videogameschronicle.com/news/as-xboxs-disc-to-digital-feature-rolls-out-to-insiders-players-are-discovering-it-works-for-delisted-games/",
+          "retrieved_at": "2026-09-08T08:25:26Z",
+          "basis": "dated_media",
+          "locator": "F22 turn230view0 L31-54完整9/1日期正文；F15PureXbox8/31原报道交叉",
+          "support": "8/26官方公告属于旧计划，本期为实际试测报道；下架游戏支持因发行商和具体标题而异，不推断全量兼容。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-01",
+            "earliest": "2026-08-31T10:00:00.000Z",
+            "latest_exclusive": "2026-09-02T12:00:00.000Z",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "F22 turn230view0 L31-54完整9/1日期正文；F15PureXbox8/31原报道交叉",
+            "note": "来源明确公开日期、未载时区；保留50小时完整可能区间，端点不是实际公开时间。"
+          }
+        }
+      ],
+      "targets": [
+        "company:Microsoft",
+        "event:18"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C113-1",
+      "candidate_id": "C113",
+      "statement": "9月1日Linuxiac报道DuckLabs收购于8月31日完成、团队9月1日加入AWS；与8月26日签约预告区分。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://linuxiac.com/aws-to-acquire-ducklabs-duckdb-project-stays-open-source/",
+          "retrieved_at": "2026-09-08T08:25:26Z",
+          "basis": "dated_media",
+          "locator": "F22 turn230view1 L34-52完整9/1正文；DuckLabs原文8/31完成更新交叉",
+          "support": "收购的是公司而非DuckDB项目：独立基金会及MIT许可保留，金额未披露；不把计划集成当已交付。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-01",
+            "earliest": "2026-08-31T10:00:00.000Z",
+            "latest_exclusive": "2026-09-02T12:00:00.000Z",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "F22 turn230view1 L34-52完整9/1正文；DuckLabs原文8/31完成更新交叉",
+            "note": "来源明确公开日期、未载时区；保留50小时完整可能区间，端点不是实际公开时间。"
+          }
+        }
+      ],
+      "targets": [
+        "company:Amazon / AWS",
+        "event:35"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C116-1",
+      "candidate_id": "C116",
+      "statement": "Meta日本官网9月4日更新称Threads公开信息流的@meta.ai问答正式推出并在日本可用；仅公开账号可使用，提问与AI回复公开可见。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://about.fb.com/ja/news/2026/07/threads-meta-ai-dm/",
+          "claim_first_public_at": "2026-09-04T06:52:49Z",
+          "retrieved_at": "2026-09-08T07:52:00Z",
+          "basis": "dated_section",
+          "locator": "finish-meta5实际article提取中2026年9月4日更新完整段；元数据modified同9/4",
+          "support": "原7月28日段落是私信1对1功能，不能误合并；用户可静音、不感兴趣或隐藏自身帖子下AI评论。"
+        }
+      ],
+      "targets": [
+        "company:Meta",
+        "event:42"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C123-1",
+      "candidate_id": "C123",
+      "statement": "背景：MacRumors9月1日转述Bloomberg称此前Vision Pro裁员涉及安全、音频、Siri、测试及visionOS等团队；原始周日披露时点未核，不计为本周新增裁员。",
+      "kind": "background",
+      "evidence": [
+        {
+          "url": "https://www.macrumors.com/2026/09/01/vision-pro-layoffs-were-broader/",
+          "claim_first_public_at": "2026-09-01T04:18:00-07:00",
+          "retrieved_at": "2026-09-08T07:52:00Z",
+          "basis": "dated_media",
+          "locator": "CL25/F20具9/1 04:18PDT署时完整正文；已定位原Bloomberg8/30链接但原文受限",
+          "support": "截至截止前的媒体说法可确认；原始周日披露相对周起点仍不确定，保守只保留背景，不进头条或新增供应边。未把100名旧裁员数扩张为新总数。"
+        }
+      ],
+      "targets": [
+        "company:Apple",
+        "event:6"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C132-1",
+      "candidate_id": "C132",
+      "statement": "OpenAI于8月31日通报部分Responses API请求延迟升高，9月1日再明确涉及US端点；19:05UTC通报恢复。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://status.openai.com/api/v2/incidents.json",
+          "claim_first_public_at": "2026-09-01T19:05:46Z",
+          "retrieved_at": "2026-09-08T07:52:00Z",
+          "basis": "dated_section",
+          "locator": "official API07:56:58 capture incident01M1CYZDD84XD0H56XNEV2PT98全部七次更新",
+          "support": "不能把首次monitoring写成最终恢复，也不外推全部API端点停机。"
+        }
+      ],
+      "targets": [
+        "company:OpenAI",
+        "event:64"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C133-1",
+      "candidate_id": "C133",
+      "statement": "OpenAI8月31日ChatGPT Work多订阅层级任务启动或继续失败，15:04UTC首次通报、20:28UTC通报恢复。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://status.openai.com/api/v2/incidents.json",
+          "claim_first_public_at": "2026-08-31T20:28:40Z",
+          "retrieved_at": "2026-09-08T07:52:00Z",
+          "basis": "dated_section",
+          "locator": "official API07:56:58 capture incident01M1C5M4K0WC8PPT0Z175RJA1E全部八次更新",
+          "support": "Plus特别受影响但不限于Plus；不能与9/3六分钟事件或9/4APAC事故混用恢复状态。"
+        }
+      ],
+      "targets": [
+        "company:OpenAI",
+        "event:64"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C134-1",
+      "candidate_id": "C134",
+      "statement": "欧盟委员会8月31日将ChatGPT指定为DSA超大型在线搜索引擎(VLOSE)，依据服务申报达到欧盟月均4500万用户门槛；不是将ChatGPT指定为VLOP或作出违法判决。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://www.law360.com/mlex/technology/articles/2519476/chatgpt-reddit-roblox-receive-designations-under-eu-s-dsa",
+          "claim_first_public_at": "2026-08-31T10:02:00Z",
+          "retrieved_at": "2026-09-08T09:18:41.678Z",
+          "basis": "dated_media",
+          "locator": "F58 turn266search11 原站可见导语：August31,2026,10:02 GMT；F59直开403",
+          "support": "只用可见具时区导语确认ChatGPT被指定VLOSE及期内公开；不声称已取得MLex全文。"
+        },
+        {
+          "url": "https://ec.europa.eu/commission/presscorner/api/files/document/print/en/ip_26_1772/IP_26_1772_EN.pdf",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-01",
+            "earliest": "2026-08-31T10:00:00Z",
+            "latest_exclusive": "2026-09-02T12:00:00Z",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "原文8/31指定，PDF脚注Updated01/09/2026，当前使用更正版相关正文",
+            "note": "9/1是已核更正版的公开日范围，不把指定事件改记为9/1，也不冒充最早版本精确时刻。"
+          },
+          "retrieved_at": "2026-09-08T09:18:41.678Z",
+          "retrieval_note": "恢复原始F29已核PDF版本及脚注；非重新联网抓取。",
+          "basis": "dated_section",
+          "locator": "F29 turn237view0指定、4500万门槛与Updated01/09/2026脚注",
+          "support": "更正版明确指定事件发生8/31及依据用户门槛，最迟9/1已公开；原始8/31可见时区导语另证期内公开。"
+        }
+      ],
+      "targets": [
+        "company:OpenAI",
+        "event:67",
+        "headline:11"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C134-2",
+      "candidate_id": "C134",
+      "statement": "该指定文件9/1更正版写明，自通知后四个月（原文写至2027年1月）需遵守额外系统风险评估和缓解义务；通知日期未另载，不自行计算确定生效日或声称已处罚。",
+      "kind": "forecast",
+      "evidence": [
+        {
+          "url": "https://ec.europa.eu/commission/presscorner/api/files/document/print/en/ip_26_1772/IP_26_1772_EN.pdf",
+          "retrieved_at": "2026-09-08T08:45:10.328Z",
+          "retrieval_note": "本地原始回执中的具体来源版本于此时恢复核读；不是重新联网时间",
+          "basis": "dated_section",
+          "locator": "IP/26/1772 p1第2段及脚注Updated on01/09/2026",
+          "support": "使用截止前明确更正版；四个月起算点为通知，不是简单把8/31加四个月；保留原文月份。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-01",
+            "earliest": "2026-08-31T10:00:00.000Z",
+            "latest_exclusive": "2026-09-02T12:00:00.000Z",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "IP/26/1772 p1第2段及脚注Updated on01/09/2026",
+            "note": "来源明确公开日期、未载时区；保留50小时完整可能区间，端点不是实际公开时间。"
+          }
+        }
+      ],
+      "targets": [
+        "company:OpenAI",
+        "event:67",
+        "headline:11"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C136-1",
+      "candidate_id": "C136",
+      "statement": "Sonos9月1日宣布Sonos27mcp连接外部AI代理，OpenAI产品负责人确认ChatGPT音乐控制合作；Early Access计划9月8日开始，Custom Agents亦为后续预览，不是截止前全面上线或新耳机内置ChatGPT。",
+      "kind": "forecast",
+      "evidence": [
+        {
+          "url": "https://newsroom.sonos.com/269789-sonos-introduces-sonos-27-the-next-generation-of-its-audio-operating-system/",
+          "claim_first_public_at": "2026-09-01T10:40:00-04:00",
+          "retrieved_at": "2026-09-08T08:45:10.328Z",
+          "retrieval_note": "本地原始回执中的具体来源版本于此时恢复核读；不是重新联网时间",
+          "basis": "dated_release",
+          "locator": "Sep1,2026 10:40EDT；Sonos27mcp及availability完整段落",
+          "support": "官方明确ChatGPT及早期开放日；不把CEO泛指其他模型推为各家已上线。"
+        }
+      ],
+      "targets": [
+        "company:OpenAI",
+        "event:68"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C66-2",
+      "candidate_id": "C66",
+      "statement": "9/1具日期发布记录另列美国符合资格临床用户的Healthcare Public Data：九个只读公共医疗数据应用，不访问患者病历，搜索不得包含受保护健康信息；与Epic组织授权EHR连接是不同数据权限。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+          "retrieved_at": "2026-09-08T08:45:10.328Z",
+          "retrieval_note": "本地原始回执中的具体来源版本于此时恢复核读；不是重新联网时间",
+          "basis": "dated_section",
+          "locator": "September1,2026 Healthcare Public Data inChatGPTforClinicians完整段落",
+          "support": "日期条目明确地区/资格/只读和PHI限制，不被EHR连接概括抹去。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-01",
+            "earliest": "2026-08-31T10:00:00.000Z",
+            "latest_exclusive": "2026-09-02T12:00:00.000Z",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "September1,2026 Healthcare Public Data inChatGPTforClinicians完整段落",
+            "note": "来源明确公开日期、未载时区；保留50小时完整可能区间，端点不是实际公开时间。"
+          }
+        }
+      ],
+      "targets": [
+        "company:OpenAI",
+        "event:60"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C137-1",
+      "candidate_id": "C137",
+      "statement": "Electrek9/4报道，Tesla在9/3活动展示Cybercab新电机，Musk称不使用稀土；具体永磁材料未披露，只见于Cybercab，不外推全车型或电池脱离稀土，也不是本周首次提出2023研发目标。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://electrek.co/2026/09/04/teslas-new-rare-earth-free-ev-motor-is-a-big-deal-but-not-that-big-a-deal/",
+          "claim_first_public_at": "2026-09-04T12:00:00-07:00",
+          "retrieved_at": "2026-09-08T08:49:28.327Z",
+          "retrieval_note": "本地原始回执中的具体来源版本于此时恢复核读；不是重新联网时间",
+          "basis": "dated_media",
+          "locator": "9/4 12pmPT，What’s Tesla’s new claim完整节及适用范围",
+          "support": "报道引述公司/Musk声明，非独立材料分析；技术采用与未来全系扩展分开。"
+        }
+      ],
+      "targets": [
+        "company:Tesla",
+        "event:51"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C138-1",
+      "candidate_id": "C138",
+      "statement": "Tesla AI9/4称FSD Supervised14.3.9即将开始推送：在迫近碰撞且AEB可能不足、严重分心或误关FSD时可主动介入；公司尚未说明是否可关闭及判定转向条件，不能写成无人驾驶批准或全量已开放。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://electrek.co/2026/09/04/tesla-fsd-active-safety-collision-avoidance/",
+          "claim_first_public_at": "2026-09-04T06:56:00-07:00",
+          "retrieved_at": "2026-09-08T08:49:28.327Z",
+          "retrieval_note": "本地原始回执中的具体来源版本于此时恢复核读；不是重新联网时间",
+          "basis": "dated_media",
+          "locator": "9/4 6:56amPT，TeslaAI贴文逐字引述和A background safety net完整节",
+          "support": "官方X直连失败，采用具日期媒体对官方全文引述，不冒称官页已读；正文starting to roll out shortly限定覆盖标题。"
+        }
+      ],
+      "targets": [
+        "company:Tesla",
+        "event:52"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C139-1",
+      "candidate_id": "C139",
+      "statement": "9/3Cybercab活动上Tesla副总裁宣称Robotaxi累计达到100万英里无人监督运行；这是公司口径累计数，不等于100万英里Cybercab收费运营、全无远程支持或独立安全结论。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://electrek.co/2026/09/03/tesla-announces-1-million-unsupervised-miles-driven-by-robotaxi/",
+          "claim_first_public_at": "2026-09-03T22:04:00-07:00",
+          "retrieved_at": "2026-09-08T08:49:28.327Z",
+          "retrieval_note": "本地原始回执中的具体来源版本于此时恢复核读；不是重新联网时间",
+          "basis": "dated_media",
+          "locator": "9/3 10:04pmPT，Elluswamy活动引述及unsupervised/paid分母对比",
+          "support": "不把总无人监督累计里程当新Cybercab车型或当期收费里程；没有独立审计。"
+        }
+      ],
+      "targets": [
+        "company:Tesla",
+        "event:53"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C140-1",
+      "candidate_id": "C140",
+      "statement": "背景跟踪：9/2Electrek再述中国ModelYL后悬架车主投诉，原始投诉集合早在8月已有；厂家当时未公开回应，样本不能外推全部车型或确认召回。",
+      "kind": "background",
+      "evidence": [
+        {
+          "url": "https://electrek.co/2026/09/02/teslas-new-model-y-l-is-having-big-suspension-problems-in-china/",
+          "claim_first_public_at": "2026-09-02T06:00:00-07:00",
+          "retrieved_at": "2026-09-08T08:49:28.327Z",
+          "retrieval_note": "本地原始回执中的具体来源版本于此时恢复核读；不是重新联网时间",
+          "basis": "dated_media",
+          "locator": "9/2 6amPT正文注明earlyAugust首次集合、首批车及TeslaChina尚未声明",
+          "support": "背景转述，未核出本周独立新增阶段，不以转载日刷新旧事故；不纳入头条。"
+        }
+      ],
+      "targets": [
+        "company:Tesla",
+        "event:54"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C141-1",
+      "candidate_id": "C141",
+      "statement": "Electrek8/31调查报道将Mesa/Loop202的2025-10-31历史致死碰撞与Tesla向NHTSA报告的ADAS已启用记录匹配；是本周媒体披露的匹配，不是本周事故或法院认定。软件版本/叙述删节，无法断定Autopilot还是FSD及事故因果。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://electrek.co/2026/08/31/tesla-driver-assist-stopped-freeway-mesa/",
+          "claim_first_public_at": "2026-08-31T13:40:00-07:00",
+          "retrieved_at": "2026-09-08T08:49:28.327Z",
+          "retrieval_note": "本地原始回执中的具体来源版本于此时恢复核读；不是重新联网时间",
+          "basis": "dated_media",
+          "locator": "8/31署时报道，What Tesla told/reported及因果不明限制段",
+          "support": "保留媒体匹配归因；未独立认证原始报告匹配，不把系统启用当事故原因，不据此假造监管新处罚。"
+        }
+      ],
+      "targets": [
+        "company:Tesla",
+        "event:55"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C141-2",
+      "candidate_id": "C141",
+      "statement": "Electrek8/31调查报道将Florida/I-4的2025-10-06历史致死碰撞与Tesla向NHTSA报告的ADAS已启用记录匹配；是本周媒体披露的匹配，不是本周事故或法院认定。软件版本/叙述删节，无法断定Autopilot还是FSD及事故因果。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://electrek.co/2026/08/31/tesla-driver-assist-model-3-stopped-i4-fatal/",
+          "claim_first_public_at": "2026-08-31T11:54:00-07:00",
+          "retrieved_at": "2026-09-08T08:49:28.327Z",
+          "retrieval_note": "本地原始回执中的具体来源版本于此时恢复核读；不是重新联网时间",
+          "basis": "dated_media",
+          "locator": "8/31署时报道，What Tesla told/reported及因果不明限制段",
+          "support": "保留媒体匹配归因；未独立认证原始报告匹配，不把系统启用当事故原因，不据此假造监管新处罚。"
+        }
+      ],
+      "targets": [
+        "company:Tesla",
+        "event:55"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C141-3",
+      "candidate_id": "C141",
+      "statement": "Electrek8/31调查报道将Clute的2026-05-20历史致死碰撞与Tesla向NHTSA报告的ADAS已启用记录匹配；是本周媒体披露的匹配，不是本周事故或法院认定。软件版本/叙述删节，无法断定Autopilot还是FSD及事故因果。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://electrek.co/2026/08/31/tesla-driver-assist-fatal-crash-clute/",
+          "claim_first_public_at": "2026-08-31T06:19:00-07:00",
+          "retrieved_at": "2026-09-08T08:49:28.327Z",
+          "retrieval_note": "本地原始回执中的具体来源版本于此时恢复核读；不是重新联网时间",
+          "basis": "dated_media",
+          "locator": "8/31署时报道，What Tesla told/reported及因果不明限制段",
+          "support": "保留媒体匹配归因；未独立认证原始报告匹配，不把系统启用当事故原因，不据此假造监管新处罚。"
+        }
+      ],
+      "targets": [
+        "company:Tesla",
+        "event:55"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C142-1",
+      "candidate_id": "C142",
+      "statement": "YouTube9/1宣布ESPN Unlimited内容直接进入YouTubeTV，面向主套餐或含Sports的套餐，支持DVR和多视图；Fantasy View可关联ESPNFantasyFootball。不是向所有免费YouTube用户开放，也未披露新增订户或增量利润。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://blog.youtube/news-and-events/espn-unlimited-youtube-tv-live-sports/",
+          "retrieved_at": "2026-09-08T08:56:23.757Z",
+          "retrieval_note": "本地原始回执中的具体来源版本于此时恢复核读；不是重新联网时间",
+          "basis": "dated_release",
+          "locator": "Sep1,2026 AjayArora署名正文和套餐限制",
+          "support": "以完整日期区间判周；内容接入实际从当日开始，未推断全球服务范围。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-01",
+            "earliest": "2026-08-31T10:00:00.000Z",
+            "latest_exclusive": "2026-09-02T12:00:00.000Z",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "Sep1,2026 AjayArora署名正文和套餐限制",
+            "note": "来源明确公开日期、未载时区；保留50小时完整可能区间，端点不是实际公开时间。"
+          }
+        }
+      ],
+      "targets": [
+        "company:Alphabet / Google",
+        "event:29"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C143-1",
+      "candidate_id": "C143",
+      "statement": "GoogleCloud9/3初步复盘称，9/1 07:41至11:52美国太平洋时间，us-central1-b部分区域网络降级/资源隔离持续4小时11分钟，涉及VM、GKE、CloudRun和数据库等，其他区未受影响；初步原因为维护中误断光纤，已恢复，不是全球停机或最终根因认证。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://status.cloud.google.com/incidents/J5ia5t9p3g9Q5Wi7r8Ev",
+          "claim_first_public_at": "2026-09-03T17:47:02+00:00",
+          "retrieved_at": "2026-09-08T08:54:52.210922+00:00",
+          "retrieval_note": "本次实际联网取得的官方JSON，保存完整期内事故和更新。",
+          "basis": "dated_section",
+          "locator": "incidentJ5ia5t9p3g9Q5Wi7r8Ev，2026-09-03T17:47:02Z Preliminary Incident Report完整更新",
+          "support": "采用9/3日期初步复盘，事件begin字段14:44与复盘07:41PDT不同，以正文复盘明确更正为14:41UTC；不是虚构首次告警时点。"
+        }
+      ],
+      "targets": [
+        "company:Alphabet / Google",
+        "event:30"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C148-1",
+      "candidate_id": "C148",
+      "statement": "Reuters9/1报道澳大利亚联邦法院法官Thawley考虑由法院任命独立专家访问Tesla内部工程平台，以解决Model3/Y集体诉讼取证争议；双方仍待指示，尚无该访问命令或责任裁定。Tesla称已善意提交大量文件，并指出动态系统不保留时点记录及保密性。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://za.investing.com/news/stock-market-news/australian-judge-floats-giving-courtappointed-expert-access-to-teslas-engineering-systems-4449521",
+          "retrieved_at": "2026-09-08T09:17:11.254Z",
+          "retrieval_note": "本地原始回执中的具体来源版本于此时恢复核读；不是重新联网时间",
+          "basis": "dated_media",
+          "locator": "ByronKaye9/1报道，L51-L67完整双方陈述；页面同日更新",
+          "support": "原文有时分但未核时区，完整9/1区间归周；2025年起诉是背景，11/12返庭是未来排期。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-01",
+            "earliest": "2026-08-31T10:00:00.000Z",
+            "latest_exclusive": "2026-09-02T12:00:00.000Z",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "ByronKaye9/1报道，L51-L67完整双方陈述；页面同日更新",
+            "note": "来源明确公开日期、未载时区；保留50小时完整可能区间，端点不是实际公开时间。"
+          }
+        }
+      ],
+      "targets": [
+        "company:Tesla",
+        "event:56"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C154-1",
+      "candidate_id": "C154",
+      "statement": "Axios9/3报道Emil Michael重申Anthropic仍受国防供应链风险指定；这与商务部长称信任公司的表态不一致。报道同时区分八月已被法院撤销的黑名单和另一法条下仍在DC巡回法院争议的指定，不能写成全面解禁或本周首次拉黑。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://www.axios.com/2026/09/03/pentagon-reaffirms-anthropic-blacklist",
+          "claim_first_public_at": "2026-09-03T15:48:46Z",
+          "retrieved_at": "2026-09-08T09:24:39.974Z",
+          "retrieval_note": "本地原始回执中的具体来源版本于此时恢复核读；不是重新联网时间",
+          "basis": "dated_media",
+          "locator": "F65带UTC新闻时间；F66当日正文L42-L51含两种指定和双方官员表态",
+          "support": "已核完整报道，未声称读到DC巡回新裁判或已改变所有政府采购规则。"
+        }
+      ],
+      "targets": [
+        "company:Anthropic",
+        "event:77",
+        "headline:12"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C153-1",
+      "candidate_id": "C153",
+      "statement": "9/2多家媒体报道TumblerRidge事件新增30份诉状，涉及ChatGPT安全责任；OpenAI否认报道中特定高管被指介入。各报道对周二/周三提交日表述不一，本期不认证全部案件的具体受理日或指控成立。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://globalnews.ca/news/12044429/tumbler-ridge-lawsuit-openai/",
+          "retrieved_at": "2026-09-08T09:27:16.091Z",
+          "retrieval_note": "本地原始回执中的具体来源版本于此时恢复核读；不是重新联网时间",
+          "basis": "dated_media",
+          "locator": "F68 GlobalNews具日期正文；TC9/2全文包含公司否认及诉状指控限制；AJ9/2全文另有公司回应",
+          "support": "30份为媒体报道，不将受害者陈述写成法院因果认定；同一事件三源，提交日差异保留。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-02",
+            "earliest": "2026-09-01T10:00:00.000Z",
+            "latest_exclusive": "2026-09-03T12:00:00.000Z",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "F68 GlobalNews具日期正文；TC9/2全文包含公司否认及诉状指控限制；AJ9/2全文另有公司回应",
+            "note": "来源明确公开日期、未载时区；保留50小时完整可能区间，端点不是实际公开时间。"
+          }
+        },
+        {
+          "url": "https://techcrunch.com/2026/09/02/openai-faces-30-more-lawsuits-tied-to-tumbler-ridge-shooting/",
+          "claim_first_public_at": "2026-09-02T05:09:00-07:00",
+          "retrieved_at": "2026-09-08T09:27:16.091Z",
+          "basis": "dated_media",
+          "locator": "F68 RebeccaBellan5:09AMPDT正文中公司否认高管介入及记者未能确认限制",
+          "support": "仅支持公司否认及原告归因边界，未将当事人主张当已证实事实。"
+        }
+      ],
+      "targets": [
+        "company:OpenAI",
+        "event:69",
+        "headline:9"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C157-1",
+      "candidate_id": "C157",
+      "statement": "ManyWorlds2T Innovations于8/31在得州东区起诉OpenAIOpCo，指控ChatGPT等产品侵犯五项检索、个性化和内容生成专利，并请求赔偿与禁令；9/2专业媒体披露。尚非侵权判决，诉状中的数据中心规模和资金金额不作为已证实投资数据。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://ipwatchdog.com/2026/09/02/openai-sued-over-ai-patents-covering-retrieval-personalization-content-generation/",
+          "retrieved_at": "2026-09-08T09:27:16.091Z",
+          "retrieval_note": "本地原始回执中的具体来源版本于此时恢复核读；不是重新联网时间",
+          "basis": "dated_media",
+          "locator": "F68 GeneQuinn9/2署名全文；F67诉状首页2:26-cv-00774、Filed08/31及P4-P5专利表交叉",
+          "support": "只采用已核核心案号、产品范围与请求，不声称47页法律论证逐段已读。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-02",
+            "earliest": "2026-09-01T10:00:00.000Z",
+            "latest_exclusive": "2026-09-03T12:00:00.000Z",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "F68 GeneQuinn9/2署名全文；F67诉状首页2:26-cv-00774、Filed08/31及P4-P5专利表交叉",
+            "note": "来源明确公开日期、未载时区；保留50小时完整可能区间，端点不是实际公开时间。"
+          }
+        }
+      ],
+      "targets": [
+        "company:OpenAI",
+        "event:70"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C144-1",
+      "candidate_id": "C144",
+      "statement": "9月2日媒体披露Tesla上线欧洲FSD(Supervised)证据仪表板，并以Article 39豁免路径争取更多欧洲市场准入；仍属需驾驶员持续监督的Level 2系统，公司安全样本不是随机对照试验，也不表示已获欧盟全域许可。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://evwire.com/p/tesla-fsd-supervised-evidence-dashboard-full-data",
+          "retrieved_at": "2026-09-08T09:33:37.086Z",
+          "retrieval_note": "本地原始回执中的具体来源版本于此时恢复核读；不是重新联网时间",
+          "basis": "dated_media",
+          "locator": "F43 turn251view2正文；F45 turn253view0官方导言",
+          "support": "媒体9/2正文披露dashboard；官方Article39与Level2/驾驶员责任段，未使用不同行驶样本拼接的安全倍数。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-02",
+            "earliest": "2026-09-01T10:00:00.000Z",
+            "latest_exclusive": "2026-09-03T12:00:00.000Z",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "F43 turn251view2正文；F45 turn253view0官方导言",
+            "note": "来源明确公开日期、未载时区；保留50小时完整可能区间，端点不是实际公开时间。"
+          },
+          "basis_note": "带日期的媒体正文及公司同一仪表板说明"
+        }
+      ],
+      "targets": [
+        "company:Tesla",
+        "event:57"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C145-1",
+      "candidate_id": "C145",
+      "statement": "Google Cloud在9月4日更新、标为8月31日至9月4日周度的栏目宣布VM Extension Manager正式可用，提供跨项目虚拟机扩展的声明式策略、漂移修复、分阶段发布与自动回滚；不将该周汇总发布日期写成精确上线时刻。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud",
+          "retrieved_at": "2026-09-08T09:33:37.086Z",
+          "retrieval_note": "本地原始回执中的具体来源版本于此时恢复核读；不是重新联网时间",
+          "basis": "dated_section",
+          "locator": "F42 turn250view1 L65/L83-L86",
+          "support": "VM Extension Manager GA；project-wide policies、regions/zones、self-healing、rollout/rollback。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-04",
+            "earliest": "2026-09-03T10:00:00.000Z",
+            "latest_exclusive": "2026-09-05T12:00:00.000Z",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "F42 turn250view1 L65/L83-L86",
+            "note": "来源明确公开日期、未载时区；保留50小时完整可能区间，端点不是实际公开时间。"
+          },
+          "basis_note": "官方带日期周段的具体正文版本"
+        }
+      ],
+      "targets": [
+        "company:Alphabet / Google",
+        "event:31"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C137-2",
+      "candidate_id": "C137",
+      "statement": "9月5日Not a Tesla App依据Austin现场体验报道Cybercab没有车载AC充电器、只支持DC充电，因此现有AC Wall Connector/Mobile Connector不能直接补能；该限制针对Cybercab，不等于全系Tesla取消AC充电，家庭无线充电配置尚未确认。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://www.notateslaapp.com/news/4653/tesla-cybercab-doesnt-support-ac-charging",
+          "retrieved_at": "2026-09-08T09:33:37.086Z",
+          "retrieval_note": "本地原始回执中的具体来源版本于此时恢复核读；不是重新联网时间",
+          "basis": "dated_media",
+          "locator": "F43 turn251view0完整正文",
+          "support": "no onboard AC charger、DC-only；未来无线充电猜测未采为结果。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-05",
+            "earliest": "2026-09-04T10:00:00.000Z",
+            "latest_exclusive": "2026-09-06T12:00:00.000Z",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "F43 turn251view0完整正文",
+            "note": "来源明确公开日期、未载时区；保留50小时完整可能区间，端点不是实际公开时间。"
+          },
+          "basis_note": "带日期的署名媒体正文及现场体验归因"
+        }
+      ],
+      "targets": [
+        "company:Tesla",
+        "event:51"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C151-1",
+      "candidate_id": "C151",
+      "statement": "美国联邦巡回上诉法院8月31日在Evolved Wireless诉Samsung案24-2234中维持原裁判：涉Qualcomm芯片产品适用许可，其余争议产品不侵权的结果亦获维持；法院未宣告该专利无效，本意见不具先例效力。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://www.cafc.uscourts.gov/08-31-2026-24-2234-evolved-wireless-llc-v-samsung-electronics-america-inc-opinion-24-2234-opinion-8-31-2026_2747843/",
+          "claim_first_public_at": "2026-09-04T11:20:09Z",
+          "retrieved_at": "2026-09-08T09:33:37.086Z",
+          "retrieval_note": "本地原始回执中的具体来源版本于此时恢复核读；不是重新联网时间",
+          "basis": "dated_release",
+          "locator": "F69 turn277view0 L155-L192；F63 turn271view0判决P1及P19",
+          "support": "案件24-2234、Nonprecedential、AFFIRMED；Qualcomm许可及其他产品非侵权、不认定专利无效。",
+          "basis_note": "所用法院页面明示Published 09/04/2026-11:20:09 (UTC)，附8/31判决PDF；该时间为此页面版本公开时间，不冒称判决首次公开的精确时分"
+        }
+      ],
+      "targets": [
+        "company:Samsung Electronics",
+        "event:84"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C160-1",
+      "candidate_id": "C160",
+      "statement": "Fable5.1/Mythos5.1的API迁移需保留兼容性与合规限制：tool_choice为any或tool会报400；Fable5.1对8月31日起新建账号的历史thinking前缀变化实行校验；两模型默认须保留数据30天，除非Anthropic明确授权，否则不适用零数据保留。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://platform.claude.com/docs/en/release-notes/overview",
+          "retrieved_at": "2026-09-08T09:51:22.272Z",
+          "retrieval_note": "本地原始回执中的具体来源版本于此时恢复核读；不是重新联网时间",
+          "basis": "dated_section",
+          "locator": "F78 turn286view1 9/1条目L47-L59",
+          "support": "完整官方API条目：unsupported类型、账户创建日范围、beta控制与30天保留条件。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-01",
+            "earliest": "2026-08-31T10:00:00.000Z",
+            "latest_exclusive": "2026-09-02T12:00:00.000Z",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "F78 turn286view1 9/1条目L47-L59",
+            "note": "来源明确公开日期、未载时区；保留50小时完整可能区间，端点不是实际公开时间。"
+          }
+        }
+      ],
+      "targets": [
+        "company:Anthropic",
+        "event:71"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C161-1",
+      "candidate_id": "C161",
+      "statement": "ClaudeCode本周版本修复了管理策略解析失败时静默不执行、部分文件权限规则失效、远程控制同意及停止行为等问题，并收紧默认自动授权边界；2.1.260同时撤回2.1.259一项过宽的Read/Bash检查，不能概括为全部权限问题都已修复。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.257",
+          "claim_first_public_at": "2026-09-01T17:53:52Z",
+          "retrieved_at": "2026-09-08T09:51:22.272Z",
+          "retrieval_note": "本地原始回执中的具体来源版本于此时恢复核读；不是重新联网时间",
+          "basis": "dated_release",
+          "locator": "logs/2026-09-08_claude_code_official_releases.json records[tag_name=v2.1.257].body/published_at",
+          "support": "安全变化和管理策略按各版归因，撤回限制不省略；不把UI便利修复拆成独立重大事件。"
+        },
+        {
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.259",
+          "claim_first_public_at": "2026-09-02T22:33:51Z",
+          "retrieved_at": "2026-09-08T09:51:22.272Z",
+          "retrieval_note": "本地原始回执中的具体来源版本于此时恢复核读；不是重新联网时间",
+          "basis": "dated_release",
+          "locator": "logs/2026-09-08_claude_code_official_releases.json records[tag_name=v2.1.259].body/published_at",
+          "support": "安全变化和管理策略按各版归因，撤回限制不省略；不把UI便利修复拆成独立重大事件。"
+        },
+        {
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.260",
+          "claim_first_public_at": "2026-09-03T23:48:12Z",
+          "retrieved_at": "2026-09-08T09:51:22.272Z",
+          "retrieval_note": "本地原始回执中的具体来源版本于此时恢复核读；不是重新联网时间",
+          "basis": "dated_release",
+          "locator": "logs/2026-09-08_claude_code_official_releases.json records[tag_name=v2.1.260].body/published_at",
+          "support": "安全变化和管理策略按各版归因，撤回限制不省略；不把UI便利修复拆成独立重大事件。"
+        },
+        {
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.261",
+          "claim_first_public_at": "2026-09-04T19:58:10Z",
+          "retrieved_at": "2026-09-08T09:51:22.272Z",
+          "retrieval_note": "本地原始回执中的具体来源版本于此时恢复核读；不是重新联网时间",
+          "basis": "dated_release",
+          "locator": "logs/2026-09-08_claude_code_official_releases.json records[tag_name=v2.1.261].body/published_at",
+          "support": "安全变化和管理策略按各版归因，撤回限制不省略；不把UI便利修复拆成独立重大事件。"
+        }
+      ],
+      "targets": [
+        "company:Anthropic",
+        "event:78"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C162-1",
+      "candidate_id": "C162",
+      "statement": "Winamp于9月2日披露，Jamendo对NVIDIA的修订诉状已正式送达；首次美国起诉在6月，公告未给出修订或送达的具体发生日。",
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://www.finanznachrichten.de/nachrichten-2026-09/69471067-winamp-group-provides-an-update-on-the-u-s-proceedings-involving-nvidia-and-suno-004.htm",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-02",
+            "earliest": "2026-09-01T10:00:00.000Z",
+            "latest_exclusive": "2026-09-03T12:00:00.000Z",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "D0909-04 turn296search4: 02.09.2026日期和完整Business Wire发行人公告转载正文",
+            "note": "只据来源明确日期；08:36 Uhr未附时区，不以转载网站所在地假定。区间端点不是实际发布时间。"
+          },
+          "retrieved_at": "2026-09-09T01:49:15.845Z",
+          "basis": "dated_release",
+          "locator": "logs/2026-09-09_completion_receipts.json#D0909-04 turn296search4: NVIDIA proceedings move forward及Forward-Looking Statements",
+          "support": "完整发行人公告转载，明确归因于Winamp；原告主张非裁判。原文日期覆盖所用全文；整段50小时区间位于本周。"
+        }
+      ],
+      "targets": [
+        "company:NVIDIA",
+        "event:47"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "C162-2",
+      "candidate_id": "C162",
+      "statement": "Winamp的9月2日公告称该案首次听证当前安排在2027年1月12日；这是当事人披露的计划，不是已发生听证或法院结果。",
+      "kind": "forecast",
+      "evidence": [
+        {
+          "url": "https://www.finanznachrichten.de/nachrichten-2026-09/69471067-winamp-group-provides-an-update-on-the-u-s-proceedings-involving-nvidia-and-suno-004.htm",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-02",
+            "earliest": "2026-09-01T10:00:00.000Z",
+            "latest_exclusive": "2026-09-03T12:00:00.000Z",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "D0909-04 turn296search4: 02.09.2026日期和完整Business Wire发行人公告转载正文",
+            "note": "只据来源明确日期；08:36 Uhr未附时区，不以转载网站所在地假定。区间端点不是实际发布时间。"
+          },
+          "retrieved_at": "2026-09-09T01:49:15.845Z",
+          "basis": "dated_release",
+          "locator": "logs/2026-09-09_completion_receipts.json#D0909-04 turn296search4: NVIDIA proceedings move forward及Forward-Looking Statements",
+          "support": "完整发行人公告转载，明确归因于Winamp；原告主张非裁判。原文日期覆盖所用全文；整段50小时区间位于本周。"
+        }
+      ],
+      "targets": [
+        "company:NVIDIA",
+        "event:47"
+      ],
+      "binding_review": "pending"
+    },
+    {
+      "id": "R01",
+      "statement": "FTC与22州提出Amazon广告拍卖诉讼。",
+      "targets": [
+        "company:Amazon / AWS",
+        "event:32",
+        "headline:1"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://www.ftc.gov/news-events/news/press-releases/2026/08/ftc-states-sue-amazon-over-secret-ad-surcharge-scheme",
+          "claim_first_public_at": "2026-08-31T13:18:16-04:00",
+          "retrieved_at": "2026-09-07T05:36:31.558360+00:00",
+          "basis": "dated_release",
+          "locator": "FTC 2026-08-31 release, opening paragraphs; complaint p.5 para.1",
+          "support": "已读公告与起诉书首页/引言；22州及超过200亿美元属于原告指控。metadata publication与当天正文相符，不把抓取日当公开日。",
+          "page_modified_at": "2026-08-31T15:00:21-04:00"
+        }
+      ],
+      "binding_review": "pending",
+      "inherited_from": "logs/2026-09-07_temporal_evidence.json"
+    },
+    {
+      "id": "R02",
+      "statement": "原告称多收超过200亿美元；不是已判罚款或赔偿。",
+      "targets": [
+        "company:Amazon / AWS",
+        "event:32",
+        "headline:1"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://www.ftc.gov/news-events/news/press-releases/2026/08/ftc-states-sue-amazon-over-secret-ad-surcharge-scheme",
+          "claim_first_public_at": "2026-08-31T13:18:16-04:00",
+          "retrieved_at": "2026-09-07T05:36:31.558360+00:00",
+          "basis": "dated_release",
+          "locator": "FTC 2026-08-31 release, opening paragraphs; complaint p.5 para.1",
+          "support": "已读公告与起诉书首页/引言；22州及超过200亿美元属于原告指控。metadata publication与当天正文相符，不把抓取日当公开日。",
+          "page_modified_at": "2026-08-31T15:00:21-04:00"
+        }
+      ],
+      "binding_review": "pending",
+      "inherited_from": "logs/2026-09-07_temporal_evidence.json"
+    },
+    {
+      "id": "R03",
+      "statement": "NHTSA启动Cybercab自我认证合规调查。",
+      "targets": [
+        "company:Tesla",
+        "event:48",
+        "headline:2"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://www.nhtsa.gov/press-releases/investigation-tesla-cybercab-self-certification",
+          "retrieved_at": "2026-09-07T05:31:32.072Z",
+          "basis": "dated_release",
+          "locator": "NHTSA September 4, 2026 | Washington, DC; opening and FMVSS paragraphs",
+          "support": "仅日精度；Washington DC当日为EDT，取该日最晚时刻为保守公开上界，并非实际首次秒。正式调查自我认证；现行标准继续适用。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-04",
+            "earliest": "2026-09-03T10:00:00+00:00",
+            "latest_exclusive": "2026-09-05T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "NHTSA September 4, 2026 | Washington, DC; opening and FMVSS paragraphs",
+            "note": "撤销旧记录虚构的日末秒数；按所存日期生成完整候选区间。具体日期/版本仍须语义复核，不凭此转换认证来源。"
+          },
+          "precision_review": "pending"
+        }
+      ],
+      "binding_review": "pending",
+      "inherited_from": "logs/2026-09-07_temporal_evidence.json"
+    },
+    {
+      "id": "R04",
+      "statement": "Reuters报道Cybercab于美国9月3日在Austin少量商业部署。",
+      "targets": [
+        "company:Tesla",
+        "event:48",
+        "headline:2"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://www.marketscreener.com/news/us-auto-safety-regulator-opens-probe-into-nearly-1-000-tesla-cybercabs-ce785bdade88ff2c",
+          "claim_first_public_at": "2026-09-04T05:26:00-04:00",
+          "retrieved_at": "2026-09-07T05:40:49.607Z",
+          "basis": "dated_media",
+          "locator": "Reuters, published 09/04/2026 05:26 EDT, modified 12:16 EDT; paragraphs 1-8",
+          "support": "已读署时正文：周四Austin少量商业部署、周五调查，不是全量开放或停运命令。此为所取得的期内报道版本，不宣称已穷尽更早披露。",
+          "page_modified_at": "2026-09-04T12:16:00-04:00"
+        }
+      ],
+      "binding_review": "pending",
+      "inherited_from": "logs/2026-09-07_temporal_evidence.json"
+    },
+    {
+      "id": "R05",
+      "statement": "NHTSA说明现行FMVSS仍适用；调查不是停运或违法判决。",
+      "targets": [
+        "company:Tesla",
+        "event:48"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://www.nhtsa.gov/press-releases/investigation-tesla-cybercab-self-certification",
+          "retrieved_at": "2026-09-07T05:31:32.072Z",
+          "basis": "dated_release",
+          "locator": "NHTSA September 4, 2026 | Washington, DC; opening and FMVSS paragraphs",
+          "support": "仅日精度；Washington DC当日为EDT，取该日最晚时刻为保守公开上界，并非实际首次秒。正式调查自我认证；现行标准继续适用。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-04",
+            "earliest": "2026-09-03T10:00:00+00:00",
+            "latest_exclusive": "2026-09-05T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "NHTSA September 4, 2026 | Washington, DC; opening and FMVSS paragraphs",
+            "note": "撤销旧记录虚构的日末秒数；按所存日期生成完整候选区间。具体日期/版本仍须语义复核，不凭此转换认证来源。"
+          },
+          "precision_review": "pending"
+        }
+      ],
+      "binding_review": "pending",
+      "inherited_from": "logs/2026-09-07_temporal_evidence.json"
+    },
+    {
+      "id": "R06",
+      "statement": "出版商协会声明称Google广告技术案裁决不剥离AdX。",
+      "targets": [
+        "company:Alphabet / Google",
+        "event:19",
+        "headline:3"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://www.newsmediaalliance.org/google-ad-tech-remedies-ruling/",
+          "retrieved_at": "2026-09-07T05:31:32.072Z",
+          "basis": "dated_release",
+          "locator": "News/Media Alliance, September 2, 2026, Arlington VA; statement paragraphs 1-3",
+          "support": "日精度及Arlington dateline支持EDT，取日末上界。声明说不剥离AdX但需经营改变；是利益相关方声明，未取得原裁判全文。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-02",
+            "earliest": "2026-09-01T10:00:00+00:00",
+            "latest_exclusive": "2026-09-03T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "News/Media Alliance, September 2, 2026, Arlington VA; statement paragraphs 1-3",
+            "note": "撤销旧记录虚构的日末秒数；按所存日期生成完整候选区间。具体日期/版本仍须语义复核，不凭此转换认证来源。"
+          },
+          "precision_review": "pending"
+        }
+      ],
+      "binding_review": "pending",
+      "inherited_from": "logs/2026-09-07_temporal_evidence.json"
+    },
+    {
+      "id": "R07",
+      "statement": "同声明称仍有经营改变；未取得原裁判全文，不能判断具体执行条款。",
+      "targets": [
+        "company:Alphabet / Google",
+        "event:19",
+        "headline:3"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://www.newsmediaalliance.org/google-ad-tech-remedies-ruling/",
+          "retrieved_at": "2026-09-07T05:31:32.072Z",
+          "basis": "dated_release",
+          "locator": "News/Media Alliance, September 2, 2026, Arlington VA; statement paragraphs 1-3",
+          "support": "日精度及Arlington dateline支持EDT，取日末上界。声明说不剥离AdX但需经营改变；是利益相关方声明，未取得原裁判全文。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-02",
+            "earliest": "2026-09-01T10:00:00+00:00",
+            "latest_exclusive": "2026-09-03T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "News/Media Alliance, September 2, 2026, Arlington VA; statement paragraphs 1-3",
+            "note": "撤销旧记录虚构的日末秒数；按所存日期生成完整候选区间。具体日期/版本仍须语义复核，不凭此转换认证来源。"
+          },
+          "precision_review": "pending"
+        }
+      ],
+      "binding_review": "pending",
+      "inherited_from": "logs/2026-09-07_temporal_evidence.json"
+    },
+    {
+      "id": "R09",
+      "statement": "NVIDIA承诺Hugging Face继续多云和多加速器支持。",
+      "targets": [
+        "company:NVIDIA",
+        "event:45"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/",
+          "claim_first_public_at": "2026-09-03T11:56:49Z",
+          "retrieved_at": "2026-09-07T05:36:11.522822+00:00",
+          "basis": "dated_release",
+          "locator": "September 3 announcement, agreement and open-platform paragraphs",
+          "support": "签约价$12,930,300,000；尚未交割，多云多加速器承诺不是强制硬件采购。对应article JSON-LD，而非相关链接日期。",
+          "page_modified_at": "2026-09-03T20:54:05Z"
+        }
+      ],
+      "binding_review": "pending",
+      "inherited_from": "logs/2026-09-07_temporal_evidence.json"
+    },
+    {
+      "id": "R10",
+      "statement": "9月3日Astra开始向部分组织分批推出，其他渠道后续扩围。",
+      "targets": [
+        "company:OpenAI",
+        "event:58",
+        "headline:5"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://openai.com/index/gpt-6-astra/",
+          "claim_first_public_at": "2026-09-03T11:00:00Z",
+          "retrieved_at": "2026-09-07T05:43:04.869Z",
+          "basis": "dated_release",
+          "locator": "Launch announcement, rollout paragraph; official https://openai.com/news/rss.xml matching launch URL pubDate",
+          "support": "正文明确分批向组织推出及后续ChatGPT/API/Azure/Bedrock；已解析官方RSS对应URL的Thu,03 Sep 2026 11:00 GMT，未引用RSS中其他文章日期。"
+        }
+      ],
+      "binding_review": "pending",
+      "inherited_from": "logs/2026-09-07_temporal_evidence.json"
+    },
+    {
+      "id": "R11",
+      "statement": "9月1日OpenAI已宣布Astra达到Critical网络安全能力阈值。",
+      "targets": [
+        "company:OpenAI",
+        "event:58",
+        "headline:5"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://openai.com/index/path-to-astra/",
+          "claim_first_public_at": "2026-09-01T13:00:00Z",
+          "retrieved_at": "2026-09-07T05:48:44.878Z",
+          "basis": "dated_release",
+          "locator": "September 1, paragraphs starting We now believe Astra meets the Critical threshold; matching official RSS item",
+          "support": "官方正文已读，Critical分级为9月1日已披露，不是9月3日首次得知。分级与公司缓解措施不代表独立认证安全。"
+        }
+      ],
+      "binding_review": "pending",
+      "inherited_from": "logs/2026-09-07_temporal_evidence.json"
+    },
+    {
+      "id": "R12",
+      "statement": "Astra公告包含Azure分批分发计划，不是已全区域上线。",
+      "targets": [
+        "company:Microsoft",
+        "event:7",
+        "supply:E27"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://openai.com/index/gpt-6-astra/",
+          "claim_first_public_at": "2026-09-03T11:00:00Z",
+          "retrieved_at": "2026-09-07T05:43:04.869Z",
+          "basis": "dated_release",
+          "locator": "Launch announcement, rollout paragraph; official https://openai.com/news/rss.xml matching launch URL pubDate",
+          "support": "正文明确分批向组织推出及后续ChatGPT/API/Azure/Bedrock；已解析官方RSS对应URL的Thu,03 Sep 2026 11:00 GMT，未引用RSS中其他文章日期。"
+        }
+      ],
+      "binding_review": "pending",
+      "inherited_from": "logs/2026-09-07_temporal_evidence.json"
+    },
+    {
+      "id": "R13",
+      "statement": "Astra公告包含Bedrock分批分发计划，不是新的AWS算力采购。",
+      "targets": [
+        "company:Amazon / AWS",
+        "event:32",
+        "supply:E20"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://openai.com/index/gpt-6-astra/",
+          "claim_first_public_at": "2026-09-03T11:00:00Z",
+          "retrieved_at": "2026-09-07T05:43:04.869Z",
+          "basis": "dated_release",
+          "locator": "Launch announcement, rollout paragraph; official https://openai.com/news/rss.xml matching launch URL pubDate",
+          "support": "正文明确分批向组织推出及后续ChatGPT/API/Azure/Bedrock；已解析官方RSS对应URL的Thu,03 Sep 2026 11:00 GMT，未引用RSS中其他文章日期。"
+        }
+      ],
+      "binding_review": "pending",
+      "inherited_from": "logs/2026-09-07_temporal_evidence.json"
+    },
+    {
+      "id": "R14",
+      "statement": "Fable5.1与Mythos5.1在9月1日发布。",
+      "targets": [
+        "company:Anthropic",
+        "event:71",
+        "headline:6"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://techcrunch.com/2026/09/01/anthropics-new-fable-release-is-cheaper-less-restrictive/",
+          "claim_first_public_at": "2026-09-01T12:39:00-07:00",
+          "retrieved_at": "2026-09-07T05:45:12.509Z",
+          "basis": "dated_media",
+          "locator": "TechCrunch 12:39 PM PDT September 1; opening release/access paragraphs; official release notes September 1 entry",
+          "support": "该带时区当日报道确认两款5.1发布及Mythos受限。仅据此确认发布/访问状态，其他细节见官方发布页与已日期化产品版本；不把报道时刻宣称为穷尽后的最早时刻。"
+        }
+      ],
+      "binding_review": "pending",
+      "inherited_from": "logs/2026-09-07_temporal_evidence.json"
+    },
+    {
+      "id": "R15",
+      "statement": "Mythos5.1仍限特定合作方访问。",
+      "targets": [
+        "company:Anthropic",
+        "event:71",
+        "headline:6"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://techcrunch.com/2026/09/01/anthropics-new-fable-release-is-cheaper-less-restrictive/",
+          "claim_first_public_at": "2026-09-01T12:39:00-07:00",
+          "retrieved_at": "2026-09-07T05:45:12.509Z",
+          "basis": "dated_media",
+          "locator": "TechCrunch 12:39 PM PDT September 1; opening release/access paragraphs; official release notes September 1 entry",
+          "support": "该带时区当日报道确认两款5.1发布及Mythos受限。仅据此确认发布/访问状态，其他细节见官方发布页与已日期化产品版本；不把报道时刻宣称为穷尽后的最早时刻。"
+        }
+      ],
+      "binding_review": "pending",
+      "inherited_from": "logs/2026-09-07_temporal_evidence.json"
+    },
+    {
+      "id": "R16",
+      "statement": "Fable5.1缓存读取每百万token为$0.25，下降75%，非总账单同比例下降。",
+      "targets": [
+        "company:Anthropic",
+        "event:71",
+        "headline:6"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+          "retrieved_at": "2026-09-07T05:36:12.741271+00:00",
+          "basis": "dated_section",
+          "locator": "Official 5.1 launch page, Availability and pricing and EFS paragraphs; support.claude.com release-notes September 1 entry; contemporaneous TechCrunch September 1 PDT report",
+          "support": "仅使用具名5.1初始发布的缓存价与渠道/EFS段落。发布页仅标September，不能单独定日；官方9月1日条目明确链接该发布版本，当日PDT媒体确认发布与缓存降价；按已交叉验证的发布日取日末上界，非精确秒。当前产品文档的其他无日期更新不纳入。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-01",
+            "earliest": "2026-08-31T10:00:00+00:00",
+            "latest_exclusive": "2026-09-02T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "Official 5.1 launch page, Availability and pricing and EFS paragraphs; support.claude.com release-notes September 1 entry; contemporaneous TechCrunch September 1 PDT report",
+            "note": "撤销旧记录虚构的日末秒数；按所存日期生成完整候选区间。具体日期/版本仍须语义复核，不凭此转换认证来源。"
+          },
+          "precision_review": "pending"
+        }
+      ],
+      "binding_review": "pending",
+      "inherited_from": "logs/2026-09-07_temporal_evidence.json"
+    },
+    {
+      "id": "R17",
+      "statement": "EFS为以后推出安排，不是本周已普遍上线。",
+      "targets": [
+        "company:Anthropic",
+        "event:71"
+      ],
+      "kind": "forecast",
+      "evidence": [
+        {
+          "url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-fable-5-1-on-aws/",
+          "claim_first_public_at": "2026-09-01T11:12:43-08:00",
+          "retrieved_at": "2026-09-07T05:36:22.601502+00:00",
+          "basis": "dated_release",
+          "locator": "September 1 AWS blog, opening and safety-review/data controls paragraphs",
+          "support": "元数据原样保留-08:00，不擅自改为PDT；正文具名Fable5.1、两个AWS入口、最多30天安全审查及条件式ZDR/EFS。",
+          "page_modified_at": "2026-09-01T11:13:35-08:00"
+        }
+      ],
+      "binding_review": "pending",
+      "inherited_from": "logs/2026-09-07_temporal_evidence.json"
+    },
+    {
+      "id": "R18",
+      "statement": "Fable5.1分发到Google Cloud，属既有合作的产品增强。",
+      "targets": [
+        "company:Alphabet / Google",
+        "supply:E28"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+          "retrieved_at": "2026-09-07T05:36:12.741271+00:00",
+          "basis": "dated_section",
+          "locator": "Official 5.1 launch page, Availability and pricing and EFS paragraphs; support.claude.com release-notes September 1 entry; contemporaneous TechCrunch September 1 PDT report",
+          "support": "仅使用具名5.1初始发布的缓存价与渠道/EFS段落。发布页仅标September，不能单独定日；官方9月1日条目明确链接该发布版本，当日PDT媒体确认发布与缓存降价；按已交叉验证的发布日取日末上界，非精确秒。当前产品文档的其他无日期更新不纳入。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-01",
+            "earliest": "2026-08-31T10:00:00+00:00",
+            "latest_exclusive": "2026-09-02T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "Official 5.1 launch page, Availability and pricing and EFS paragraphs; support.claude.com release-notes September 1 entry; contemporaneous TechCrunch September 1 PDT report",
+            "note": "撤销旧记录虚构的日末秒数；按所存日期生成完整候选区间。具体日期/版本仍须语义复核，不凭此转换认证来源。"
+          },
+          "precision_review": "pending"
+        }
+      ],
+      "binding_review": "pending",
+      "inherited_from": "logs/2026-09-07_temporal_evidence.json"
+    },
+    {
+      "id": "R19",
+      "statement": "Gemini3.8 Flash发布，Cyber通过Fairwind限可信防御方。",
+      "targets": [
+        "company:Alphabet / Google",
+        "event:20",
+        "headline:7"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
+          "claim_first_public_at": "2026-09-02T15:00:00Z",
+          "retrieved_at": "2026-09-07T05:41:02.846Z",
+          "basis": "dated_release",
+          "locator": "September 2 release, variant bullets, complex-task token caveat, footnote 1; article JSON-LD",
+          "support": "核对完整脚注：2026年末入门价到期；2027年起新标价是计划。metadata于本轮curl补取，dateModified在截止前；不用日期不明的定价总页。",
+          "page_modified_at": "2026-09-03T19:59:49.428661Z"
+        }
+      ],
+      "binding_review": "pending",
+      "inherited_from": "logs/2026-09-07_temporal_evidence.json"
+    },
+    {
+      "id": "R20",
+      "statement": "普通Flash入门价输入/输出每百万token为$0.75/$3.75。",
+      "targets": [
+        "company:Alphabet / Google",
+        "event:20",
+        "headline:7"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
+          "claim_first_public_at": "2026-09-02T15:00:00Z",
+          "retrieved_at": "2026-09-07T05:41:02.846Z",
+          "basis": "dated_release",
+          "locator": "September 2 release, variant bullets, complex-task token caveat, footnote 1; article JSON-LD",
+          "support": "核对完整脚注：2026年末入门价到期；2027年起新标价是计划。metadata于本轮curl补取，dateModified在截止前；不用日期不明的定价总页。",
+          "page_modified_at": "2026-09-03T19:59:49.428661Z"
+        }
+      ],
+      "binding_review": "pending",
+      "inherited_from": "logs/2026-09-07_temporal_evidence.json"
+    },
+    {
+      "id": "R21",
+      "statement": "已公布入门价2026年末到期，2027年起为$1.50/$7.50，不是本周实际价。",
+      "targets": [
+        "company:Alphabet / Google",
+        "event:20",
+        "headline:7"
+      ],
+      "kind": "forecast",
+      "evidence": [
+        {
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
+          "claim_first_public_at": "2026-09-02T15:00:00Z",
+          "retrieved_at": "2026-09-07T05:41:02.846Z",
+          "basis": "dated_release",
+          "locator": "September 2 release, variant bullets, complex-task token caveat, footnote 1; article JSON-LD",
+          "support": "核对完整脚注：2026年末入门价到期；2027年起新标价是计划。metadata于本轮curl补取，dateModified在截止前；不用日期不明的定价总页。",
+          "page_modified_at": "2026-09-03T19:59:49.428661Z"
+        }
+      ],
+      "event_at": "2027-01-01T00:00:00Z",
+      "binding_review": "pending",
+      "inherited_from": "logs/2026-09-07_temporal_evidence.json"
+    },
+    {
+      "id": "R22",
+      "statement": "Google说明复杂任务可能使用更多token，标价不等于成功任务成本。",
+      "targets": [
+        "company:Alphabet / Google",
+        "event:20"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
+          "claim_first_public_at": "2026-09-02T15:00:00Z",
+          "retrieved_at": "2026-09-07T05:41:02.846Z",
+          "basis": "dated_release",
+          "locator": "September 2 release, variant bullets, complex-task token caveat, footnote 1; article JSON-LD",
+          "support": "核对完整脚注：2026年末入门价到期；2027年起新标价是计划。metadata于本轮curl补取，dateModified在截止前；不用日期不明的定价总页。",
+          "page_modified_at": "2026-09-03T19:59:49.428661Z"
+        }
+      ],
+      "binding_review": "pending",
+      "inherited_from": "logs/2026-09-07_temporal_evidence.json"
+    },
+    {
+      "id": "R23",
+      "statement": "Reuters匿名来源称Anthropic与Lambda云协议350亿美元，双方未确认。",
+      "targets": [
+        "company:Anthropic",
+        "event:72"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://www.channelnewsasia.com/business/anthropic-signs-us35-billion-cloud-deal-nvidia-backed-lambda-source-says-6353306",
+          "claim_first_public_at": "2026-09-01T07:59:00+08:00",
+          "retrieved_at": "2026-09-07T05:36:24.307989+00:00",
+          "basis": "dated_media",
+          "locator": "CNA Reuters article, dateline and paragraphs 1-6",
+          "support": "匿名来源说法；CNA同时记录08/31美国报道背景和转载时间；双方未回应。350亿美元为云协议额，350MW为项目规模，均非当期已执行支出。",
+          "page_modified_at": "2026-09-01T10:56:45+08:00"
+        }
+      ],
+      "binding_review": "pending",
+      "inherited_from": "logs/2026-09-07_temporal_evidence.json"
+    },
+    {
+      "id": "R24",
+      "statement": "上述报道涉及Texas350MW项目，设施功率不等于已交付算力。",
+      "targets": [
+        "event:72"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://www.channelnewsasia.com/business/anthropic-signs-us35-billion-cloud-deal-nvidia-backed-lambda-source-says-6353306",
+          "claim_first_public_at": "2026-09-01T07:59:00+08:00",
+          "retrieved_at": "2026-09-07T05:36:24.307989+00:00",
+          "basis": "dated_media",
+          "locator": "CNA Reuters article, dateline and paragraphs 1-6",
+          "support": "匿名来源说法；CNA同时记录08/31美国报道背景和转载时间；双方未回应。350亿美元为云协议额，350MW为项目规模，均非当期已执行支出。",
+          "page_modified_at": "2026-09-01T10:56:45+08:00"
+        }
+      ],
+      "binding_review": "pending",
+      "inherited_from": "logs/2026-09-07_temporal_evidence.json"
+    },
+    {
+      "id": "R25",
+      "statement": "TSMC管理层本周披露设备需求估计到7月为2025年末估计的1.9倍。",
+      "targets": [
+        "company:TSMC",
+        "event:87"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://focustaiwan.tw/business/202609020027",
+          "claim_first_public_at": "2026-09-02T19:37:00+08:00",
+          "retrieved_at": "2026-09-07T05:36:26.091764+00:00",
+          "basis": "dated_media",
+          "locator": "Central News Agency 202609020027, Cliff Hou quoted equipment forecast paragraphs",
+          "support": "本周首次取得的现场披露版本：2025年末估计基准、2026Q1末1.5倍、7月1.9倍；不是产能或资本开支倍数。",
+          "page_modified_at": "2026-09-02T19:55:00+08:00"
+        }
+      ],
+      "binding_review": "pending",
+      "inherited_from": "logs/2026-09-07_temporal_evidence.json"
+    },
+    {
+      "id": "R26",
+      "statement": "同一披露中的2026Q1末设备需求估计为基准1.5倍，不是capex增幅。",
+      "targets": [
+        "event:87"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://focustaiwan.tw/business/202609020027",
+          "claim_first_public_at": "2026-09-02T19:37:00+08:00",
+          "retrieved_at": "2026-09-07T05:36:26.091764+00:00",
+          "basis": "dated_media",
+          "locator": "Central News Agency 202609020027, Cliff Hou quoted equipment forecast paragraphs",
+          "support": "本周首次取得的现场披露版本：2025年末估计基准、2026Q1末1.5倍、7月1.9倍；不是产能或资本开支倍数。",
+          "page_modified_at": "2026-09-02T19:55:00+08:00"
+        }
+      ],
+      "binding_review": "pending",
+      "inherited_from": "logs/2026-09-07_temporal_evidence.json"
+    },
+    {
+      "id": "R27",
+      "statement": "Muse Spark1.3发布，提供Muse Code/Meta API入口。",
+      "targets": [
+        "company:Meta",
+        "event:36"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://research.meta.ai/blog/introducing-muse-spark-1-3",
+          "retrieved_at": "2026-09-07T05:36:18.086114+00:00",
+          "basis": "dated_section",
+          "locator": "September 2 launch, performance comparison and availability sections; article published_time has Z offset",
+          "support": "CMS时间为当日00:00Z，可能是日精度占位，因此用UTC当日日末上界。20%/25%仅公司内部比较；不采用后来添加、无日期的最高推理档位上线表述。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-02",
+            "earliest": "2026-09-01T10:00:00+00:00",
+            "latest_exclusive": "2026-09-03T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "September 2 launch, performance comparison and availability sections; article published_time has Z offset",
+            "note": "撤销旧记录虚构的日末秒数；按所存日期生成完整候选区间。具体日期/版本仍须语义复核，不凭此转换认证来源。"
+          },
+          "precision_review": "pending"
+        }
+      ],
+      "binding_review": "pending",
+      "inherited_from": "logs/2026-09-07_temporal_evidence.json"
+    },
+    {
+      "id": "R28",
+      "statement": "Meta内部对比称工具调用约减20%、token约减25%，不是普遍或独立验证结果。",
+      "targets": [
+        "company:Meta",
+        "event:36"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://research.meta.ai/blog/introducing-muse-spark-1-3",
+          "retrieved_at": "2026-09-07T05:36:18.086114+00:00",
+          "basis": "dated_section",
+          "locator": "September 2 launch, performance comparison and availability sections; article published_time has Z offset",
+          "support": "CMS时间为当日00:00Z，可能是日精度占位，因此用UTC当日日末上界。20%/25%仅公司内部比较；不采用后来添加、无日期的最高推理档位上线表述。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-02",
+            "earliest": "2026-09-01T10:00:00+00:00",
+            "latest_exclusive": "2026-09-03T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "September 2 launch, performance comparison and availability sections; article published_time has Z offset",
+            "note": "撤销旧记录虚构的日末秒数；按所存日期生成完整候选区间。具体日期/版本仍须语义复核，不凭此转换认证来源。"
+          },
+          "precision_review": "pending"
+        }
+      ],
+      "binding_review": "pending",
+      "inherited_from": "logs/2026-09-07_temporal_evidence.json"
+    },
+    {
+      "id": "R29",
+      "statement": "Reuters披露8月中国制造Model3/Y销量86166辆且含出口。",
+      "targets": [
+        "company:Tesla",
+        "event:48"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://www.boursorama.com/bourse/actualites/les-ventes-de-vehicules-electriques-tesla-fabriques-en-chine-ont-progresse-de-3-6-en-glissement-annuel-en-aout-cc1be1471d4a008f874e9d0c9117facb",
+          "claim_first_public_at": "2026-09-02T12:27:38+02:00",
+          "retrieved_at": "2026-09-07T05:40:49.607Z",
+          "basis": "dated_media",
+          "locator": "Reuters French automated translation, September 2 12:27; first three paragraphs",
+          "support": "86166辆、同比3.6%、环比-7.9%、包含出口均在正文；仅归因Reuters，不把自动译文机构名称认证为CPCA原表。"
+        }
+      ],
+      "binding_review": "pending",
+      "inherited_from": "logs/2026-09-07_temporal_evidence.json"
+    },
+    {
+      "id": "R30",
+      "statement": "同口径8月销量同比+3.6%、环比-7.9%。",
+      "targets": [
+        "company:Tesla",
+        "event:48"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://www.boursorama.com/bourse/actualites/les-ventes-de-vehicules-electriques-tesla-fabriques-en-chine-ont-progresse-de-3-6-en-glissement-annuel-en-aout-cc1be1471d4a008f874e9d0c9117facb",
+          "claim_first_public_at": "2026-09-02T12:27:38+02:00",
+          "retrieved_at": "2026-09-07T05:40:49.607Z",
+          "basis": "dated_media",
+          "locator": "Reuters French automated translation, September 2 12:27; first three paragraphs",
+          "support": "86166辆、同比3.6%、环比-7.9%、包含出口均在正文；仅归因Reuters，不把自动译文机构名称认证为CPCA原表。"
+        }
+      ],
+      "binding_review": "pending",
+      "inherited_from": "logs/2026-09-07_temporal_evidence.json"
+    },
+    {
+      "id": "R31",
+      "statement": "Fable5.1在AWS两入口上线。",
+      "targets": [
+        "company:Amazon / AWS",
+        "event:32",
+        "supply:E05"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-fable-5-1-on-aws/",
+          "claim_first_public_at": "2026-09-01T11:12:43-08:00",
+          "retrieved_at": "2026-09-07T05:36:22.601502+00:00",
+          "basis": "dated_release",
+          "locator": "September 1 AWS blog, opening and safety-review/data controls paragraphs",
+          "support": "元数据原样保留-08:00，不擅自改为PDT；正文具名Fable5.1、两个AWS入口、最多30天安全审查及条件式ZDR/EFS。",
+          "page_modified_at": "2026-09-01T11:13:35-08:00"
+        }
+      ],
+      "binding_review": "pending",
+      "inherited_from": "logs/2026-09-07_temporal_evidence.json"
+    },
+    {
+      "id": "R32",
+      "statement": "AWS安全审查默认可保留数据最多30天，ZDR例外须合资格。",
+      "targets": [
+        "company:Amazon / AWS",
+        "event:32"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-fable-5-1-on-aws/",
+          "claim_first_public_at": "2026-09-01T11:12:43-08:00",
+          "retrieved_at": "2026-09-07T05:36:22.601502+00:00",
+          "basis": "dated_release",
+          "locator": "September 1 AWS blog, opening and safety-review/data controls paragraphs",
+          "support": "元数据原样保留-08:00，不擅自改为PDT；正文具名Fable5.1、两个AWS入口、最多30天安全审查及条件式ZDR/EFS。",
+          "page_modified_at": "2026-09-01T11:13:35-08:00"
+        }
+      ],
+      "binding_review": "pending",
+      "inherited_from": "logs/2026-09-07_temporal_evidence.json"
+    },
+    {
+      "id": "R33",
+      "statement": "Fable5.1开始向Cowork与Studio合资格用户分批推出，受区域/管理员限制。",
+      "targets": [
+        "company:Microsoft",
+        "event:7",
+        "supply:E26"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://techcommunity.microsoft.com/blog/microsoft365copilotblog/available-today-anthropic-claude-fable-5-1-in-microsoft-copilot/4551974",
+          "claim_first_public_at": "2026-09-01T12:26:41.578-07:00",
+          "retrieved_at": "2026-09-07T05:44:52.467Z",
+          "basis": "dated_section",
+          "locator": "Microsoft Community Hub article 4551974, complete body/rawBody and postTime; Get started today",
+          "support": "本轮检索工具实际返回完整正文及postTime，非只读摘要/标题；Cowork、Studio、区域与组织、管理员条件均可核。直连0行/403限制保留，未绕过登录或声称直连成功。"
+        }
+      ],
+      "binding_review": "pending",
+      "inherited_from": "logs/2026-09-07_temporal_evidence.json"
+    },
+    {
+      "id": "R34",
+      "statement": "GitHub宣布Fable5.1分批开放，组织管理员政策仍适用。",
+      "targets": [
+        "company:Microsoft",
+        "event:7",
+        "supply:E26"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://github.blog/changelog/2026-09-01-claude-fable-5-1-generally-available-in-github-copilot/",
+          "claim_first_public_at": "2026-09-01T07:29:23-07:00",
+          "retrieved_at": "2026-09-07T05:36:20.390342+00:00",
+          "basis": "dated_release",
+          "locator": "September 1 changelog, rolling out and admin/data-retention paragraphs",
+          "support": "官方GitHub变更条目及article日期相符，分批与管理员要求保留。",
+          "page_modified_at": "2026-09-02T00:02:28Z"
+        }
+      ],
+      "binding_review": "pending",
+      "inherited_from": "logs/2026-09-07_temporal_evidence.json"
+    },
+    {
+      "id": "R38",
+      "statement": "Apple已公告9月9日10:00PDT发布会，即上海9月10日01:00，未举行。",
+      "targets": [
+        "catalyst:1",
+        "company:Apple"
+      ],
+      "kind": "forecast",
+      "evidence": [
+        {
+          "url": "https://www.macrumors.com/2026/08/26/apple-iphone-event-2026/",
+          "claim_first_public_at": "2026-08-26T09:02:00-07:00",
+          "retrieved_at": "2026-09-07T05:45:12.509Z",
+          "basis": "dated_section",
+          "locator": "MacRumors August 26 9:02 am PDT first paragraph; Apple dated developer notice id=s6spdug0",
+          "support": "只取已公告发布会时间，与Apple原始通知交叉核实；排除产品传闻。9/9 10:00PDT = 9/10 01:00上海；这是所获当日报道上界，不伪称穷尽最早发布秒。"
+        }
+      ],
+      "event_at": "2026-09-10T01:00:00+08:00",
+      "binding_review": "pending",
+      "inherited_from": "logs/2026-09-07_temporal_evidence.json"
+    },
+    {
+      "id": "R39",
+      "statement": "广告平台的结构性补救与诉讼风险应分别判断，不能直接合并利润冲击。",
+      "targets": [
+        "analysis:1",
+        "catalyst:2"
+      ],
+      "kind": "analysis",
+      "evidence": [
+        {
+          "url": "https://www.ftc.gov/news-events/news/press-releases/2026/08/ftc-states-sue-amazon-over-secret-ad-surcharge-scheme",
+          "claim_first_public_at": "2026-08-31T13:18:16-04:00",
+          "retrieved_at": "2026-09-07T05:36:31.558360+00:00",
+          "basis": "dated_release",
+          "locator": "FTC 2026-08-31 release, opening paragraphs; complaint p.5 para.1",
+          "support": "已读公告与起诉书首页/引言；22州及超过200亿美元属于原告指控。metadata publication与当天正文相符，不把抓取日当公开日。",
+          "page_modified_at": "2026-08-31T15:00:21-04:00"
+        },
+        {
+          "url": "https://www.newsmediaalliance.org/google-ad-tech-remedies-ruling/",
+          "retrieved_at": "2026-09-07T05:31:32.072Z",
+          "basis": "dated_release",
+          "locator": "News/Media Alliance, September 2, 2026, Arlington VA; statement paragraphs 1-3",
+          "support": "日精度及Arlington dateline支持EDT，取日末上界。声明说不剥离AdX但需经营改变；是利益相关方声明，未取得原裁判全文。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-02",
+            "earliest": "2026-09-01T10:00:00+00:00",
+            "latest_exclusive": "2026-09-03T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "News/Media Alliance, September 2, 2026, Arlington VA; statement paragraphs 1-3",
+            "note": "撤销旧记录虚构的日末秒数；按所存日期生成完整候选区间。具体日期/版本仍须语义复核，不凭此转换认证来源。"
+          },
+          "precision_review": "pending"
+        }
+      ],
+      "binding_review": "pending",
+      "inherited_from": "logs/2026-09-07_temporal_evidence.json"
+    },
+    {
+      "id": "R40",
+      "statement": "不同缓存价、限期价格与自测效率不能替代相同任务的成本比较。",
+      "targets": [
+        "analysis:2"
+      ],
+      "kind": "analysis",
+      "evidence": [
+        {
+          "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+          "retrieved_at": "2026-09-07T05:36:12.741271+00:00",
+          "basis": "dated_section",
+          "locator": "Official 5.1 launch page, Availability and pricing and EFS paragraphs; support.claude.com release-notes September 1 entry; contemporaneous TechCrunch September 1 PDT report",
+          "support": "仅使用具名5.1初始发布的缓存价与渠道/EFS段落。发布页仅标September，不能单独定日；官方9月1日条目明确链接该发布版本，当日PDT媒体确认发布与缓存降价；按已交叉验证的发布日取日末上界，非精确秒。当前产品文档的其他无日期更新不纳入。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-01",
+            "earliest": "2026-08-31T10:00:00+00:00",
+            "latest_exclusive": "2026-09-02T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "Official 5.1 launch page, Availability and pricing and EFS paragraphs; support.claude.com release-notes September 1 entry; contemporaneous TechCrunch September 1 PDT report",
+            "note": "撤销旧记录虚构的日末秒数；按所存日期生成完整候选区间。具体日期/版本仍须语义复核，不凭此转换认证来源。"
+          },
+          "precision_review": "pending"
+        },
+        {
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
+          "claim_first_public_at": "2026-09-02T15:00:00Z",
+          "retrieved_at": "2026-09-07T05:41:02.846Z",
+          "basis": "dated_release",
+          "locator": "September 2 release, variant bullets, complex-task token caveat, footnote 1; article JSON-LD",
+          "support": "核对完整脚注：2026年末入门价到期；2027年起新标价是计划。metadata于本轮curl补取，dateModified在截止前；不用日期不明的定价总页。",
+          "page_modified_at": "2026-09-03T19:59:49.428661Z"
+        },
+        {
+          "url": "https://research.meta.ai/blog/introducing-muse-spark-1-3",
+          "retrieved_at": "2026-09-07T05:36:18.086114+00:00",
+          "basis": "dated_section",
+          "locator": "September 2 launch, performance comparison and availability sections; article published_time has Z offset",
+          "support": "CMS时间为当日00:00Z，可能是日精度占位，因此用UTC当日日末上界。20%/25%仅公司内部比较；不采用后来添加、无日期的最高推理档位上线表述。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-02",
+            "earliest": "2026-09-01T10:00:00+00:00",
+            "latest_exclusive": "2026-09-03T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "September 2 launch, performance comparison and availability sections; article published_time has Z offset",
+            "note": "撤销旧记录虚构的日末秒数；按所存日期生成完整候选区间。具体日期/版本仍须语义复核，不凭此转换认证来源。"
+          },
+          "precision_review": "pending"
+        }
+      ],
+      "binding_review": "pending",
+      "inherited_from": "logs/2026-09-07_temporal_evidence.json"
+    },
+    {
+      "id": "R41",
+      "statement": "签约、匿名报道、设备估计、分批分发处于不同兑现阶段，继续观察交付而非相加收入。",
+      "targets": [
+        "analysis:3",
+        "catalyst:3"
+      ],
+      "kind": "analysis",
+      "evidence": [
+        {
+          "url": "https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/",
+          "claim_first_public_at": "2026-09-03T11:56:49Z",
+          "retrieved_at": "2026-09-07T05:36:11.522822+00:00",
+          "basis": "dated_release",
+          "locator": "September 3 announcement, agreement and open-platform paragraphs",
+          "support": "签约价$12,930,300,000；尚未交割，多云多加速器承诺不是强制硬件采购。对应article JSON-LD，而非相关链接日期。",
+          "page_modified_at": "2026-09-03T20:54:05Z"
+        },
+        {
+          "url": "https://www.channelnewsasia.com/business/anthropic-signs-us35-billion-cloud-deal-nvidia-backed-lambda-source-says-6353306",
+          "claim_first_public_at": "2026-09-01T07:59:00+08:00",
+          "retrieved_at": "2026-09-07T05:36:24.307989+00:00",
+          "basis": "dated_media",
+          "locator": "CNA Reuters article, dateline and paragraphs 1-6",
+          "support": "匿名来源说法；CNA同时记录08/31美国报道背景和转载时间；双方未回应。350亿美元为云协议额，350MW为项目规模，均非当期已执行支出。",
+          "page_modified_at": "2026-09-01T10:56:45+08:00"
+        },
+        {
+          "url": "https://focustaiwan.tw/business/202609020027",
+          "claim_first_public_at": "2026-09-02T19:37:00+08:00",
+          "retrieved_at": "2026-09-07T05:36:26.091764+00:00",
+          "basis": "dated_media",
+          "locator": "Central News Agency 202609020027, Cliff Hou quoted equipment forecast paragraphs",
+          "support": "本周首次取得的现场披露版本：2025年末估计基准、2026Q1末1.5倍、7月1.9倍；不是产能或资本开支倍数。",
+          "page_modified_at": "2026-09-02T19:55:00+08:00"
+        },
+        {
+          "url": "https://openai.com/index/gpt-6-astra/",
+          "claim_first_public_at": "2026-09-03T11:00:00Z",
+          "retrieved_at": "2026-09-07T05:43:04.869Z",
+          "basis": "dated_release",
+          "locator": "Launch announcement, rollout paragraph; official https://openai.com/news/rss.xml matching launch URL pubDate",
+          "support": "正文明确分批向组织推出及后续ChatGPT/API/Azure/Bedrock；已解析官方RSS对应URL的Thu,03 Sep 2026 11:00 GMT，未引用RSS中其他文章日期。"
+        },
+        {
+          "url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-fable-5-1-on-aws/",
+          "claim_first_public_at": "2026-09-01T11:12:43-08:00",
+          "retrieved_at": "2026-09-07T05:36:22.601502+00:00",
+          "basis": "dated_release",
+          "locator": "September 1 AWS blog, opening and safety-review/data controls paragraphs",
+          "support": "元数据原样保留-08:00，不擅自改为PDT；正文具名Fable5.1、两个AWS入口、最多30天安全审查及条件式ZDR/EFS。",
+          "page_modified_at": "2026-09-01T11:13:35-08:00"
+        }
+      ],
+      "binding_review": "pending",
+      "inherited_from": "logs/2026-09-07_temporal_evidence.json"
+    },
+    {
+      "id": "R42",
+      "statement": "商业部署和能力升级不自动解除安全/合规约束，下一周跟踪窗口不是已公告裁决日。",
+      "targets": [
+        "analysis:4",
+        "catalyst:2"
+      ],
+      "kind": "analysis",
+      "evidence": [
+        {
+          "url": "https://www.nhtsa.gov/press-releases/investigation-tesla-cybercab-self-certification",
+          "retrieved_at": "2026-09-07T05:31:32.072Z",
+          "basis": "dated_release",
+          "locator": "NHTSA September 4, 2026 | Washington, DC; opening and FMVSS paragraphs",
+          "support": "仅日精度；Washington DC当日为EDT，取该日最晚时刻为保守公开上界，并非实际首次秒。正式调查自我认证；现行标准继续适用。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-04",
+            "earliest": "2026-09-03T10:00:00+00:00",
+            "latest_exclusive": "2026-09-05T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "NHTSA September 4, 2026 | Washington, DC; opening and FMVSS paragraphs",
+            "note": "撤销旧记录虚构的日末秒数；按所存日期生成完整候选区间。具体日期/版本仍须语义复核，不凭此转换认证来源。"
+          },
+          "precision_review": "pending"
+        },
+        {
+          "url": "https://openai.com/index/path-to-astra/",
+          "claim_first_public_at": "2026-09-01T13:00:00Z",
+          "retrieved_at": "2026-09-07T05:48:44.878Z",
+          "basis": "dated_release",
+          "locator": "September 1, paragraphs starting We now believe Astra meets the Critical threshold; matching official RSS item",
+          "support": "官方正文已读，Critical分级为9月1日已披露，不是9月3日首次得知。分级与公司缓解措施不代表独立认证安全。"
+        }
+      ],
+      "binding_review": "pending",
+      "inherited_from": "logs/2026-09-07_temporal_evidence.json"
+    }
+  ],
+  "withdrawn_precision_records": [
+    {
+      "claim_id": "R03",
+      "source_index": 0,
+      "old_source": {
+        "url": "https://www.nhtsa.gov/press-releases/investigation-tesla-cybercab-self-certification",
+        "claim_first_public_at": "2026-09-04T23:59:59-04:00",
+        "retrieved_at": "2026-09-07T05:31:32.072Z",
+        "basis": "dated_release",
+        "locator": "NHTSA September 4, 2026 | Washington, DC; opening and FMVSS paragraphs",
+        "support": "仅日精度；Washington DC当日为EDT，取该日最晚时刻为保守公开上界，并非实际首次秒。正式调查自我认证；现行标准继续适用。"
+      }
+    },
+    {
+      "claim_id": "R05",
+      "source_index": 0,
+      "old_source": {
+        "url": "https://www.nhtsa.gov/press-releases/investigation-tesla-cybercab-self-certification",
+        "claim_first_public_at": "2026-09-04T23:59:59-04:00",
+        "retrieved_at": "2026-09-07T05:31:32.072Z",
+        "basis": "dated_release",
+        "locator": "NHTSA September 4, 2026 | Washington, DC; opening and FMVSS paragraphs",
+        "support": "仅日精度；Washington DC当日为EDT，取该日最晚时刻为保守公开上界，并非实际首次秒。正式调查自我认证；现行标准继续适用。"
+      }
+    },
+    {
+      "claim_id": "R06",
+      "source_index": 0,
+      "old_source": {
+        "url": "https://www.newsmediaalliance.org/google-ad-tech-remedies-ruling/",
+        "claim_first_public_at": "2026-09-02T23:59:59-04:00",
+        "retrieved_at": "2026-09-07T05:31:32.072Z",
+        "basis": "dated_release",
+        "locator": "News/Media Alliance, September 2, 2026, Arlington VA; statement paragraphs 1-3",
+        "support": "日精度及Arlington dateline支持EDT，取日末上界。声明说不剥离AdX但需经营改变；是利益相关方声明，未取得原裁判全文。"
+      }
+    },
+    {
+      "claim_id": "R07",
+      "source_index": 0,
+      "old_source": {
+        "url": "https://www.newsmediaalliance.org/google-ad-tech-remedies-ruling/",
+        "claim_first_public_at": "2026-09-02T23:59:59-04:00",
+        "retrieved_at": "2026-09-07T05:31:32.072Z",
+        "basis": "dated_release",
+        "locator": "News/Media Alliance, September 2, 2026, Arlington VA; statement paragraphs 1-3",
+        "support": "日精度及Arlington dateline支持EDT，取日末上界。声明说不剥离AdX但需经营改变；是利益相关方声明，未取得原裁判全文。"
+      }
+    },
+    {
+      "claim_id": "R16",
+      "source_index": 0,
+      "old_source": {
+        "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+        "claim_first_public_at": "2026-09-01T23:59:59-07:00",
+        "retrieved_at": "2026-09-07T05:36:12.741271+00:00",
+        "basis": "dated_section",
+        "locator": "Official 5.1 launch page, Availability and pricing and EFS paragraphs; support.claude.com release-notes September 1 entry; contemporaneous TechCrunch September 1 PDT report",
+        "support": "仅使用具名5.1初始发布的缓存价与渠道/EFS段落。发布页仅标September，不能单独定日；官方9月1日条目明确链接该发布版本，当日PDT媒体确认发布与缓存降价；按已交叉验证的发布日取日末上界，非精确秒。当前产品文档的其他无日期更新不纳入。"
+      }
+    },
+    {
+      "claim_id": "R18",
+      "source_index": 0,
+      "old_source": {
+        "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+        "claim_first_public_at": "2026-09-01T23:59:59-07:00",
+        "retrieved_at": "2026-09-07T05:36:12.741271+00:00",
+        "basis": "dated_section",
+        "locator": "Official 5.1 launch page, Availability and pricing and EFS paragraphs; support.claude.com release-notes September 1 entry; contemporaneous TechCrunch September 1 PDT report",
+        "support": "仅使用具名5.1初始发布的缓存价与渠道/EFS段落。发布页仅标September，不能单独定日；官方9月1日条目明确链接该发布版本，当日PDT媒体确认发布与缓存降价；按已交叉验证的发布日取日末上界，非精确秒。当前产品文档的其他无日期更新不纳入。"
+      }
+    },
+    {
+      "claim_id": "R27",
+      "source_index": 0,
+      "old_source": {
+        "url": "https://research.meta.ai/blog/introducing-muse-spark-1-3",
+        "claim_first_public_at": "2026-09-02T23:59:59Z",
+        "retrieved_at": "2026-09-07T05:36:18.086114+00:00",
+        "basis": "dated_section",
+        "locator": "September 2 launch, performance comparison and availability sections; article published_time has Z offset",
+        "support": "CMS时间为当日00:00Z，可能是日精度占位，因此用UTC当日日末上界。20%/25%仅公司内部比较；不采用后来添加、无日期的最高推理档位上线表述。"
+      }
+    },
+    {
+      "claim_id": "R28",
+      "source_index": 0,
+      "old_source": {
+        "url": "https://research.meta.ai/blog/introducing-muse-spark-1-3",
+        "claim_first_public_at": "2026-09-02T23:59:59Z",
+        "retrieved_at": "2026-09-07T05:36:18.086114+00:00",
+        "basis": "dated_section",
+        "locator": "September 2 launch, performance comparison and availability sections; article published_time has Z offset",
+        "support": "CMS时间为当日00:00Z，可能是日精度占位，因此用UTC当日日末上界。20%/25%仅公司内部比较；不采用后来添加、无日期的最高推理档位上线表述。"
+      }
+    },
+    {
+      "claim_id": "R39",
+      "source_index": 1,
+      "old_source": {
+        "url": "https://www.newsmediaalliance.org/google-ad-tech-remedies-ruling/",
+        "claim_first_public_at": "2026-09-02T23:59:59-04:00",
+        "retrieved_at": "2026-09-07T05:31:32.072Z",
+        "basis": "dated_release",
+        "locator": "News/Media Alliance, September 2, 2026, Arlington VA; statement paragraphs 1-3",
+        "support": "日精度及Arlington dateline支持EDT，取日末上界。声明说不剥离AdX但需经营改变；是利益相关方声明，未取得原裁判全文。"
+      }
+    },
+    {
+      "claim_id": "R40",
+      "source_index": 0,
+      "old_source": {
+        "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+        "claim_first_public_at": "2026-09-01T23:59:59-07:00",
+        "retrieved_at": "2026-09-07T05:36:12.741271+00:00",
+        "basis": "dated_section",
+        "locator": "Official 5.1 launch page, Availability and pricing and EFS paragraphs; support.claude.com release-notes September 1 entry; contemporaneous TechCrunch September 1 PDT report",
+        "support": "仅使用具名5.1初始发布的缓存价与渠道/EFS段落。发布页仅标September，不能单独定日；官方9月1日条目明确链接该发布版本，当日PDT媒体确认发布与缓存降价；按已交叉验证的发布日取日末上界，非精确秒。当前产品文档的其他无日期更新不纳入。"
+      }
+    },
+    {
+      "claim_id": "R40",
+      "source_index": 2,
+      "old_source": {
+        "url": "https://research.meta.ai/blog/introducing-muse-spark-1-3",
+        "claim_first_public_at": "2026-09-02T23:59:59Z",
+        "retrieved_at": "2026-09-07T05:36:18.086114+00:00",
+        "basis": "dated_section",
+        "locator": "September 2 launch, performance comparison and availability sections; article published_time has Z offset",
+        "support": "CMS时间为当日00:00Z，可能是日精度占位，因此用UTC当日日末上界。20%/25%仅公司内部比较；不采用后来添加、无日期的最高推理档位上线表述。"
+      }
+    },
+    {
+      "claim_id": "R42",
+      "source_index": 0,
+      "old_source": {
+        "url": "https://www.nhtsa.gov/press-releases/investigation-tesla-cybercab-self-certification",
+        "claim_first_public_at": "2026-09-04T23:59:59-04:00",
+        "retrieved_at": "2026-09-07T05:31:32.072Z",
+        "basis": "dated_release",
+        "locator": "NHTSA September 4, 2026 | Washington, DC; opening and FMVSS paragraphs",
+        "support": "仅日精度；Washington DC当日为EDT，取该日最晚时刻为保守公开上界，并非实际首次秒。正式调查自我认证；现行标准继续适用。"
+      }
+    }
+  ],
+  "omitted_legacy_claims": {
+    "R08": "Old acquisition amount is wrong; replaced by C114.",
+    "R35": "Old Apple no-change summary is no longer used.",
+    "R36": "Samsung company summary is superseded by current detail claims.",
+    "R37": "Old SK Hynix no-change conclusion is withdrawn."
+  },
+  "unmapped_targets": [],
+  "limitations": [
+    "所有绑定为待复核映射；目标计数齐全不证明断言完整或证据真实。",
+    "部分早期retrieved_at及started_at尚未逐项与会话原回执校准；不得据此认证新稿时点通过。",
+    "部分工作claim为复合断言，须按正文数字、适用条件、时点拆分核对。",
+    "保留外部受阻、覆盖缺口与四项pending，不覆盖正式证据。"
+  ]
+}

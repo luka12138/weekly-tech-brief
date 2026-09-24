@@ -11,7 +11,7 @@ from pathlib import Path
 from typing import Any
 
 from graph_update_policy import build_graph_plan_from_data
-from historical_snapshot_overrides import apply_data_overrides, apply_plan_overrides
+from historical_snapshot_overrides import apply_data_overrides, apply_plan_overrides, snapshot_path_for_date
 from json_canvas_graphs import build_product_canvas, build_supply_canvas, write_canvas_and_svg
 
 
@@ -48,13 +48,17 @@ def report_snapshots(selected_dates: set[str] | None = None) -> list[tuple[str, 
 
 
 def load_snapshot(commit: str, path: str) -> dict[str, Any]:
-    try:
-        raw = git_output(["show", f"{commit}:{path}"])
-    except subprocess.CalledProcessError as exc:
-        raise SystemExit(f"错误：快照 {commit[:10]} 中缺少 {path}") from exc
-    data = json.loads(raw)
     mapping = json.loads(SNAPSHOT_MAP_PATH.read_text(encoding="utf-8")).get("reports", {})
     report_date = next((str(date) for date, snapshot in mapping.items() if snapshot == commit), "")
+    frozen = snapshot_path_for_date(report_date, path) if report_date else None
+    if frozen is not None:
+        data = json.loads(frozen.read_text(encoding="utf-8"))
+    else:
+        try:
+            raw = git_output(["show", f"{commit}:{path}"])
+        except subprocess.CalledProcessError as exc:
+            raise SystemExit(f"错误：快照 {commit[:10]} 中缺少 {path}") from exc
+        data = json.loads(raw)
     return apply_data_overrides(report_date, data) if report_date else data
 
 

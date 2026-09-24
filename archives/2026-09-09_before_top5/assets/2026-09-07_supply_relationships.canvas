@@ -25,7 +25,7 @@
       "x": 80,
       "y": 320,
       "width": 580,
-      "height": 1720,
+      "height": 1560,
       "label": "供应方 / 能力提供方",
       "color": "#22c55e"
     },
@@ -110,20 +110,10 @@
       "color": "#64748b"
     },
     {
-      "id": "d15fc2ec49e9f248",
-      "type": "text",
-      "x": 120,
-      "y": 1680,
-      "width": 500,
-      "height": 100,
-      "text": "**外部:MN8 Energy**\n外部节点 · 输出 1",
-      "color": "#64748b"
-    },
-    {
       "id": "5f107e5ce3d57e3a",
       "type": "text",
       "x": 120,
-      "y": 1840,
+      "y": 1680,
       "width": 500,
       "height": 100,
       "text": "**外部:SB Energy**\n外部节点 · 输出 1",
@@ -156,7 +146,7 @@
       "y": 560,
       "width": 500,
       "height": 100,
-      "text": "**Microsoft**\n覆盖公司 · 输出 1 · 输入 5",
+      "text": "**Microsoft**\n覆盖公司 · 输出 1 · 输入 4",
       "color": "#8b5cf6"
     },
     {
@@ -166,7 +156,7 @@
       "y": 720,
       "width": 500,
       "height": 100,
-      "text": "**Alphabet / Google**\n覆盖公司 · 输出 1 · 输入 2",
+      "text": "**Alphabet / Google**\n覆盖公司 · 输出 1 · 输入 1",
       "color": "#8b5cf6"
     },
     {
@@ -176,7 +166,7 @@
       "y": 880,
       "width": 500,
       "height": 100,
-      "text": "**Amazon / AWS**\n覆盖公司 · 输出 3 · 输入 3",
+      "text": "**Amazon / AWS**\n覆盖公司 · 输出 2 · 输入 3",
       "color": "#8b5cf6"
     },
     {
@@ -186,7 +176,7 @@
       "y": 1040,
       "width": 500,
       "height": 100,
-      "text": "**NVIDIA**\n覆盖公司 · 输出 5 · 输入 2",
+      "text": "**NVIDIA**\n覆盖公司 · 输出 4 · 输入 2",
       "color": "#8b5cf6"
     },
     {
@@ -215,7 +205,7 @@
       "x": 1360,
       "y": 320,
       "width": 580,
-      "height": 2200,
+      "height": 2040,
       "label": "客户 / 使用方",
       "color": "#38bdf8"
     },
@@ -300,20 +290,10 @@
       "color": "#64748b"
     },
     {
-      "id": "f597e502388de25b",
-      "type": "text",
-      "x": 1400,
-      "y": 1680,
-      "width": 500,
-      "height": 100,
-      "text": "**外部:MediaTek**\n外部节点 · 输入 1",
-      "color": "#64748b"
-    },
-    {
       "id": "db3b6d738e4b4ad0",
       "type": "text",
       "x": 1400,
-      "y": 1840,
+      "y": 1680,
       "width": 500,
       "height": 100,
       "text": "**外部:Meta users and advertisers**\n外部节点 · 输入 1",
@@ -323,7 +303,7 @@
       "id": "f3cdf07ee59049ac",
       "type": "text",
       "x": 1400,
-      "y": 2000,
+      "y": 1840,
       "width": 500,
       "height": 100,
       "text": "**外部:Safe Superintelligence**\n外部节点 · 输入 1",
@@ -333,7 +313,7 @@
       "id": "24c8992dabfc40ac",
       "type": "text",
       "x": 1400,
-      "y": 2160,
+      "y": 2000,
       "width": 500,
       "height": 100,
       "text": "**外部:Sandisk**\n外部节点 · 输入 1",
@@ -343,7 +323,7 @@
       "id": "c4c96dfb591d9379",
       "type": "text",
       "x": 1400,
-      "y": 2320,
+      "y": 2160,
       "width": 500,
       "height": 100,
       "text": "**外部:SK Group / SK Telecom**\n外部节点 · 输入 1",
@@ -353,7 +333,7 @@
       "id": "bf268c9648f626e3",
       "type": "text",
       "x": 80,
-      "y": 2620,
+      "y": 2460,
       "width": 580,
       "height": 650,
       "text": "## 关系索引\n\n**E01** · Apple → 外部:Ford\nApple Maps EV routing and in-vehicle navigation for Ford Universal EV Platform\n\n**E02** · 外部:AMD → Microsoft\nAMD Helios, ND MI455X v7 and EPYC for Azure AI and HPC infrastructure\n\n**E03** · 外部:Mistral → Microsoft\nFrontier AI model services for enterprises and regulated industries\n\n**E04** · Alphabet / Google → 外部:Google Cloud customers\nGoogle Cloud AI services, TPU pods and cloud infrastructure\n\n**E05** · Anthropic → Amazon / AWS\nClaude models including Fable 5.1 available on Amazon Bedrock and Claude Platform on AWS\n\n**E06** · Meta → 外部:Meta users and advertisers\nFacebook, Instagram, WhatsApp, Threads and advertising systems\n\n**E07** · NVIDIA → 外部:SK Group / SK Telecom\nNVIDIA AI infrastructure for AI factories and SK Telecom AI infrastructure\n\n**E08** · SK Hynix → NVIDIA\nHBM and next-generation AI memory ecosystem",
@@ -363,7 +343,7 @@
       "id": "dd52617dfea274aa",
       "type": "text",
       "x": 720,
-      "y": 2620,
+      "y": 2460,
       "width": 580,
       "height": 650,
       "text": "## 关系索引\n\n**E09** · Samsung Electronics → 外部:Broadcom\nHBM, 2nm-and-below foundry and 2.3D/2.5D advanced packaging\n\n**E10** · Tesla → 外部:EV and energy storage customers\nElectric vehicles, energy storage systems and energy services\n\n**E11** · TSMC → NVIDIA\nAdvanced-node foundry and advanced packaging for AI GPUs\n\n**E12** · TSMC → Apple\nAdvanced-node foundry for Apple A-series and M-series chips\n\n**E13** · NVIDIA → 外部:Safe Superintelligence\nVera Rubin systems, long-term compute access and compute-platform co-development\n\n**E14** · Amazon / AWS → OpenAI\nTrainium-based multi-year, multi-gigawatt AI compute commitment\n\n**E15** · Amazon / AWS → Anthropic\nTrainium-based multi-year, multi-gigawatt AI compute commitment\n\n**E16** · Microsoft → 外部:Azure and Copilot customers\nAzure cloud and AI services plus Microsoft 365 Copilot",
@@ -373,7 +353,7 @@
       "id": "5fdd99799035720c",
       "type": "text",
       "x": 1360,
-      "y": 2620,
+      "y": 2460,
       "width": 580,
       "height": 650,
       "text": "## 关系索引\n\n**E17** · Samsung Electronics → 外部:Five unnamed global data-center customers\nLong-term server-memory and AI-infrastructure chip supply contracts\n\n**E18** · SK Hynix → 外部:Around ten unnamed key memory customers\nHBM4, AI server DRAM, eSSD and long-term supply agreements\n\n**E19** · SK Hynix → 外部:Sandisk\nFirst open High Bandwidth Flash standard specification for AI inference memory tiers\n\n**E20** · OpenAI → Amazon / AWS\nDaybreak models and phased GPT-6 Astra distribution through Amazon Bedrock\n\n**E21** · 外部:Cerebras → OpenAI\nCerebras-powered GPT-5.6 Sol Ultrafast inference at up to 750 output tokens per second\n\n**E22** · NVIDIA → OpenAI\nNVIDIA DSX full-stack AI compute for approximately 8 IT-GW at PORTS-Pike\n\n**E23** · 外部:SB Energy → OpenAI\nLand, power and shell capacity for approximately 8 IT-GW under a 20-year lease\n\n**E24** · NVIDIA → Amazon / AWS\nTwo million additional Blackwell Ultra, Rubin and Rubin Ultra GPUs for AWS global infrastructure in 2027-2028",
@@ -383,10 +363,10 @@
       "id": "551b6723f0e35e60",
       "type": "text",
       "x": 2000,
-      "y": 2620,
+      "y": 2460,
       "width": 580,
-      "height": 580,
-      "text": "## 关系索引\n\n**E25** · OpenAI → 外部:Cursor\nOpenAI model access in Cursor, with a proposed service shutoff on 2026-11-12\n\n**E26** · Anthropic → Microsoft\nClaude Fable 5.1 in Copilot Cowork, Copilot Studio and GitHub Copilot\n\n**E27** · OpenAI → Microsoft\nGPT-6 Astra phased distribution through Microsoft Azure\n\n**E28** · Anthropic → Alphabet / Google\nClaude Fable 5.1 distribution through Google Cloud Agent Platform\n\n**E29** · Amazon / AWS → Microsoft\nAWS / Azure 双向云互联公开预览，非已确认采购\n\n**E30** · NVIDIA → 外部:MediaTek\nNVLink Fusion 计划采用及多代平台合作，尚非量产交付\n\n**E31** · 外部:MN8 Energy → Alphabet / Google\n西弗吉尼亚太阳能及储能的未来能源/容量供应安排",
+      "height": 370,
+      "text": "## 关系索引\n\n**E25** · OpenAI → 外部:Cursor\nOpenAI model access in Cursor, with a proposed service shutoff on 2026-11-12\n\n**E26** · Anthropic → Microsoft\nClaude Fable 5.1 in Copilot Cowork, Copilot Studio and GitHub Copilot\n\n**E27** · OpenAI → Microsoft\nGPT-6 Astra phased distribution through Microsoft Azure\n\n**E28** · Anthropic → Alphabet / Google\nClaude Fable 5.1 distribution through Google Cloud Agent Platform",
       "color": "#334155"
     }
   ],
@@ -444,9 +424,9 @@
     {
       "id": "eff4e82549837ac6",
       "fromNode": "82c38c350aa5ddb5",
-      "fromSide": "bottom",
+      "fromSide": "right",
       "toNode": "db3b6d738e4b4ad0",
-      "toSide": "top",
+      "toSide": "left",
       "toEnd": "arrow",
       "color": "#64748b",
       "label": "E06"
@@ -670,37 +650,6 @@
       "toEnd": "arrow",
       "color": "#38bdf8",
       "label": "E28"
-    },
-    {
-      "id": "b0e33042cf0e7204",
-      "fromNode": "54d0e17345a68a0e",
-      "fromSide": "left",
-      "toNode": "9a048740dcfd3080",
-      "toSide": "left",
-      "toEnd": "arrow",
-      "color": "#22c55e",
-      "label": "E29",
-      "fromEnd": "arrow"
-    },
-    {
-      "id": "91980ffd93dd632a",
-      "fromNode": "493ffe44f4aac644",
-      "fromSide": "right",
-      "toNode": "f597e502388de25b",
-      "toSide": "left",
-      "toEnd": "arrow",
-      "color": "#38bdf8",
-      "label": "E30"
-    },
-    {
-      "id": "e6e36c3a5228ed8e",
-      "fromNode": "d15fc2ec49e9f248",
-      "fromSide": "top",
-      "toNode": "a08efa0068f26a39",
-      "toSide": "bottom",
-      "toEnd": "arrow",
-      "color": "#22c55e",
-      "label": "E31"
     }
   ]
 }

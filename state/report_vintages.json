@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-07T05:57:27.205Z",
+  "updated_at": "2026-09-24T09:35:00+08:00",
   "notes": "事后展示版登记，不认证原始发布时点。Git 留痕不是远端可用回执。",
   "reports": {
     "2026-07-06": {
@@ -36,6 +36,42 @@
       "archive_path": "archives/2026-09-07_before_correction.tar.gz",
       "archive_sha256": "5e49167d545d9603768b1bb21404f2ead323961e34598575fa591796877b1eef",
       "original_release_time_verified": false
+    },
+    "2026-09-07": {
+      "path": "reports/2026-09-07_weekly_morning_brief.md",
+      "version_type": "retrospective_revision",
+      "revision_scope": "company_top5有限选题重跑；旧时间精度/抓取时间、数字与直接来源绑定更正，保留来源和事后修订限制。",
+      "revised_at": "2026-09-09T03:28:02.557Z",
+      "published_at": null,
+      "backtest_eligible_for_original_report_time": false,
+      "original_snapshot_commit": "0d6033a12ad001e5fbda8d584cf31712021735f6",
+      "pre_correction_commit": null,
+      "pre_correction_sha256": "70effa78024cf952fcda2d5cee073130defcb001588756d8eeeb60c4ffb55d70",
+      "current_sha256": "b4c1ae749c6b85aeb300eb65274448e9485a1dcee494474ebb2d2857add14e92",
+      "archive_path": "archives/2026-09-09_before_top5.tar.gz",
+      "archive_sha256": "f9ab892e0f5fb5fe2b3ca90140879dff7a6bb0675bebf323bd12ff041f610802",
+      "original_release_time_verified": false,
+      "previous_revision": {
+        "path": "reports/2026-09-07_weekly_morning_brief.md",
+        "version_type": "retrospective_revision",
+        "revision_scope": "固定缓存优化版skill重跑；补监管遗漏、价格脚注与时点取证，保留未解决限制",
+        "revised_at": "2026-09-07T05:57:27.141Z",
+        "published_at": null,
+        "backtest_eligible_for_original_report_time": false,
+        "original_snapshot_commit": "0d6033a12ad001e5fbda8d584cf31712021735f6",
+        "pre_correction_commit": "0d6033a12ad001e5fbda8d584cf31712021735f6",
+        "pre_correction_sha256": "305c12a889e86c2bfe6176bf6c916e0cd106c4dc6d05a257820b1907df13c74f",
+        "current_sha256": "70effa78024cf952fcda2d5cee073130defcb001588756d8eeeb60c4ffb55d70",
+        "archive_path": "archives/2026-09-07_before_skill_rerun.tar.gz",
+        "archive_sha256": "5e49167d545d9603768b1bb21404f2ead323961e34598575fa591796877b1eef",
+        "original_release_time_verified": false
+      },
+      "note": "已完成本地正式替换；原文件和归档包均保留，未提交推送。",
+      "prior_single_file_archive": {
+        "path": "archives/2026-09-09_before_top5/reports/2026-09-07_weekly_morning_brief.md",
+        "sha256": "70effa78024cf952fcda2d5cee073130defcb001588756d8eeeb60c4ffb55d70"
+      },
+      "pre_correction_note": "替换前是未提交的本地修订，不冒充原提交；previous_revision与original_snapshot_commit保留原链。"
     }
   }
 }

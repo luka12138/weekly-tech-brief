@@ -1,0 +1,132 @@
+{
+  "promoted_at": "2026-09-09T03:33:53.051Z",
+  "status": "local_replacement_validated",
+  "archive": "archives/2026-09-09_before_top5",
+  "files": [
+    {
+      "path": "reports/2026-09-07_weekly_morning_brief.md",
+      "sha256": "b4c1ae749c6b85aeb300eb65274448e9485a1dcee494474ebb2d2857add14e92"
+    },
+    {
+      "path": "reports/latest.md",
+      "sha256": "135ff048b64ad1b00bbaa51f3631e0102fc4e7c0015db747485d4b0b6a4c6955"
+    },
+    {
+      "path": "state/supply_graph_baseline.json",
+      "sha256": "f0b72672eb7dcc8573ea3f0f68e733eb2fc1a7b398873ed334595a5529f6a674"
+    },
+    {
+      "path": "state/product_relationships_2026.json",
+      "sha256": "2608cf80d6adef906d6fc4c2c2d3415b9b5e5911fff0e10865d9082a4ebe4690"
+    },
+    {
+      "path": "state/report_vintages.json",
+      "sha256": "623e1695f5f034c5fae1646d0e9f3224250a5174a30faa29fe84b9ab787e54e7"
+    },
+    {
+      "path": "logs/2026-09-07_temporal_evidence.json",
+      "sha256": "475dd0e67beb5569be7abb4d722124d028ae6b6cf6a430cc1c45c74bb6537310"
+    },
+    {
+      "path": "logs/2026-09-07_research_coverage.json",
+      "sha256": "b2e08121d42cf3fa5358535821d32beef6ef07f3aa6f918378e35897fa350b41"
+    },
+    {
+      "path": "logs/2026-09-07_source_audit.json",
+      "sha256": "619c6702cb4ac37b70ed3c41622b3bd20a531d0bd35cac9b42723a3d235f4e93"
+    },
+    {
+      "path": "assets/2026-09-07_product_relationships.svg",
+      "sha256": "4e3d17a6481e74b853591d0db8692b88b641880719f722c3046a0aa569cae94b"
+    },
+    {
+      "path": "assets/2026-09-07_product_relationships.canvas",
+      "sha256": "575df6eda15d2a657e30dd9f38311cd2fb77f68d2e9c89253ee5ca6c282540cc"
+    },
+    {
+      "path": "assets/2026-09-07_supply_relationships.svg",
+      "sha256": "a757fa9677251ab0c835ec1ae246e9f70fc5bbb15ecc76ccae384be1bd188015"
+    },
+    {
+      "path": "assets/2026-09-07_supply_relationships.canvas",
+      "sha256": "63bb95aa5908fdb805159dfa645ad24c2aa0e7ee1a7dc463215fc322b9204071"
+    },
+    {
+      "path": "logs/2026-09-09_top5_selection.json",
+      "sha256": "be988b2a879f510605126d63a138dd169552463f008fc36a21fed1561f48fbd2"
+    }
+  ],
+  "source_audit": {
+    "total": 99,
+    "reachable": 99,
+    "access_limited": 12,
+    "unclassified": 0,
+    "errors": 0,
+    "claim_total": 26,
+    "claim_matched": 26,
+    "claim_manual": 0,
+    "claim_failed": 0
+  },
+  "visual_review": "本次实际查看由最终同源SVG渲染的产品/供应PNG：节点非空、不重叠，文字与索引可读；PX81/E29双向箭头，E30/E31计划限制保留。未改变既有布局。",
+  "scope": {
+    "unique_events": 40,
+    "company_blocks": 43,
+    "claims": 72,
+    "maximum_per_company": 5
+  },
+  "limitations": [
+    "事后修订，禁止当原周一已可用回测输入。",
+    "未入选问题仍保留，不认证全部旧候选或全历史问题解决。",
+    "来源403/429及已限定的媒体/当事方表述不等于取得全部原件。",
+    "本地替换，未提交或推送。"
+  ],
+  "validator_args": [
+    "scripts/validate_weekly_brief.py",
+    "--report",
+    "reports/2026-09-07_weekly_morning_brief.md",
+    "--baseline",
+    "state/supply_graph_baseline.json",
+    "--latest",
+    "reports/latest.md",
+    "--source-audit",
+    "logs/2026-09-07_source_audit.json",
+    "--product-graph",
+    "state/product_relationships_2026.json",
+    "--product-image",
+    "assets/2026-09-07_product_relationships.svg",
+    "--product-canvas",
+    "assets/2026-09-07_product_relationships.canvas",
+    "--supply-image",
+    "assets/2026-09-07_supply_relationships.svg",
+    "--supply-canvas",
+    "assets/2026-09-07_supply_relationships.canvas",
+    "--expected-changed-edge-ids",
+    "E05",
+    "E20",
+    "E26",
+    "E27",
+    "E28",
+    "E29",
+    "E30",
+    "E31"
+  ],
+  "archive_container": "archives/2026-09-09_before_top5.tar.gz",
+  "post_promotion_fix": {
+    "at": "2026-09-09T03:34:33.389Z",
+    "reason": "完整回归发现登记要求tar归档包；修正实际归档及哈希，未改测试。"
+  },
+  "final_validation": {
+    "at": "2026-09-09T03:35:23.420Z",
+    "root_quality_gate": "passed",
+    "python_tests": {
+      "passed": 175,
+      "failed": 0
+    },
+    "adapter_tests": {
+      "passed": 11,
+      "failed": 0
+    },
+    "source_audit_resume": "Same-input, recent successful checks reused; failed probe retried; raw failures retained.",
+    "historical_backtest_eligible": false
+  }
+}

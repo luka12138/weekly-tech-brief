@@ -1,53 +1,39 @@
 {
-  "generated_at": "2026-09-24T01:34:18.290147+00:00",
+  "generated_at": "2026-09-07T05:59:45.806662+00:00",
   "report": "reports/2026-09-07_weekly_morning_brief.md",
-  "baseline": "state/historical/2026-09-07_supply.json",
-  "snapshot_corrections": "state/historical_snapshot_overrides.json",
-  "snapshot_corrections_sha256": "01fe4754a213d2f1bc7fc1e0cc776e6a5fde3dc98a68bbebbe19393d08cba27b",
-  "scope_note": "引用登记的冻结状态或 Git 原快照并应用登记更正；输入哈希绑定实际校验数据。仅检查当前链接及配置关键词，不认证历史首次公开或报告可用时点。",
-  "product_graph": "state/historical/2026-09-07_product.json",
-  "report_sha256": "b4c1ae749c6b85aeb300eb65274448e9485a1dcee494474ebb2d2857add14e92",
-  "baseline_sha256": "f0b72672eb7dcc8573ea3f0f68e733eb2fc1a7b398873ed334595a5529f6a674",
-  "product_graph_sha256": "2608cf80d6adef906d6fc4c2c2d3415b9b5e5911fff0e10865d9082a4ebe4690",
+  "baseline": "state/supply_graph_baseline.json",
+  "product_graph": "state/product_relationships_2026.json",
+  "report_sha256": "70effa78024cf952fcda2d5cee073130defcb001588756d8eeeb60c4ffb55d70",
+  "baseline_sha256": "036de13c246e8e44c6a668f80a5ca2f6dd81db4c37409312fc933c48b595b7d9",
+  "product_graph_sha256": "80ea2dab6d6d3636d988c8aa7a75a37bb693fd5ba22d1b3260ffd9a8ed9507da",
   "audited_urls": [
     "https://abc.xyz/assets/5d/f4/15f364a84a6c9b70a59f9f38d3a1/2026q2-alphabet-earnings-release.pdf",
     "https://abc.xyz/investor/",
-    "https://apnews.com/article/dbb22e8e02c660ee5a8644915dec39a4",
     "https://apnews.com/article/samsung-ai-profit-memory-chips-10c2c548a392988862d8c7bd3f6fae05",
     "https://aws.amazon.com/blogs/machine-learning/introducing-claude-fable-5-1-on-aws/",
-    "https://aws.amazon.com/blogs/networking-and-content-delivery/aws-and-microsoft-azure-collaborate-to-expand-multicloud-networking/",
-    "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/west-virginia-long-duration-energy-storage/",
     "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
     "https://blogs.nvidia.com/blog/nvidia-aws-ai-production-scale/",
-    "https://curia.europa.eu/site/upload/docs/application/pdf/2026-09/cp260113en.pdf",
-    "https://ec.europa.eu/commission/presscorner/api/files/document/print/en/ip_26_1772/IP_26_1772_EN.pdf",
-    "https://electrek.co/2026/09/01/tesla-solar-roof-exit-installers-losses/",
-    "https://electrek.co/2026/09/03/tesla-announces-1-million-unsupervised-miles-driven-by-robotaxi/",
-    "https://electrek.co/2026/09/04/tesla-fsd-active-safety-collision-avoidance/",
-    "https://english.motir.go.kr/eng/article/EATCLdfa319ada/2720/view",
-    "https://finance.yahoo.com/markets/currencies/articles/exclusive-south-korean-fx-authorities-073601807.html",
+    "https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/",
+    "https://developer.apple.com/news/?id=s6spdug0",
     "https://focustaiwan.tw/business/202609020027",
     "https://github.blog/changelog/2026-09-01-claude-fable-5-1-generally-available-in-github-copilot/",
-    "https://globalnews.ca/news/12044429/tumbler-ridge-lawsuit-openai/",
-    "https://iclg.com/news/apple-faces-2bn-uk-class-action-over-app-tracking-rules/",
     "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2026_2Q_conference_eng.pdf",
     "https://investor.apple.com/sec-filings/default.aspx",
     "https://investor.atmeta.com/financials/",
     "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/",
     "https://investor.nvidia.com/financial-info/annual-reports-and-proxies/default.aspx",
-    "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-MediaTek-Deepen-Long-Standing-Partnership-to-Build-AI-Edge-to-Cloud-Computing-Platforms/default.aspx",
     "https://investor.tsmc.com/english/annual-reports",
     "https://ir.aboutamazon.com/annual-reports-proxies-and-shareholder-letters/default.aspx",
     "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Second-Quarter-Results/default.aspx",
     "https://ir.tesla.com/",
     "https://ir.tesla.com/press-release/tesla-releases-second-quarter-2026-financial-results",
-    "https://mn8.com/mn8-energy-google-and-eos-energy-enterprises-bring-advanced-clean-energy-solutions-to-west-virginia/",
-    "https://news.cision.com/pt/samsung-portugal/r/samsung-galaxy-s26-fe-ja-esta-disponivel-em-portugal%2Cc639241326320000000",
     "https://news.microsoft.com/source/2026/07/20/microsoft-expands-azure-ai-and-hpc-infrastructure-with-amd/",
     "https://news.microsoft.com/source/2026/07/21/microsoft-and-mistral-expand-strategic-partnership-to-give-enterprises-and-regulated-industries-frontier-ai-they-can-control/",
     "https://news.samsung.com/global/samsung-electronics-and-broadcom-expand-strategic-collaboration-across-memory-and-foundry-technologies",
     "https://news.samsung.com/global/samsung-electronics-releases-2026-sustainability-report-expanding-water-replenishment-efforts",
+    "https://news.samsung.com/global/samsung-redefines-laundry-with-new-a-70-and-13-kg-bespoke-ai-washers-at-ifa-2026",
     "https://news.skhynix.com/en/12-layer-hbm4e-sample-1/",
+    "https://news.skhynix.com/en/ai-ecosystem-series-ep2/",
     "https://news.skhynix.com/en/hbf-at-fms-2026/",
     "https://news.skhynix.com/en/q2-2026-business-results/",
     "https://news.skhynix.com/sk-hynix-and-sandisk-begin-global-standardization-ofnext-generation-memory-hbf/",
@@ -58,24 +44,20 @@
     "https://openai.com/api/",
     "https://openai.com/codex/",
     "https://openai.com/index/cerebras-partnership/",
-    "https://openai.com/index/daybreak-for-frontline-defenders/",
     "https://openai.com/index/daybreak-models-are-now-available-on-aws/",
     "https://openai.com/index/gpt-6-astra/",
     "https://openai.com/index/openai-joins-ports-pike-project/",
     "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/",
     "https://openai.com/index/path-to-astra/",
     "https://openai.com/index/previewing-ultrafast/",
+    "https://openai.com/index/safety-overview-gpt-6-astra/",
     "https://openai.com/news/",
     "https://openai.com/safety/",
     "https://platform.claude.com/docs/en/models/fable-5-1/overview",
-    "https://platform.claude.com/docs/en/release-notes/overview",
     "https://press.aboutamazon.com/aws/2026/8/aws-and-nvidia-to-deliver-2-million-additional-gpus-and-next-generation-infrastructure-for-agentic-and-physical-ai",
     "https://research.meta.ai/blog/introducing-muse-spark-1-3",
-    "https://status.cloud.google.com/incidents/J5ia5t9p3g9Q5Wi7r8Ev",
-    "https://tech.yahoo.com/ar-vr/articles/meta-disables-cameras-thousands-tampered-175949878.html",
+    "https://support.claude.com/en/articles/12138966-release-notes",
     "https://techcommunity.microsoft.com/blog/microsoft365copilotblog/available-today-anthropic-claude-fable-5-1-in-microsoft-copilot/4551974",
-    "https://techcrunch.com/2026/08/31/instagram-puts-new-limits-on-undisclosed-ai-profiles/",
-    "https://techcrunch.com/2026/09/02/openai-faces-30-more-lawsuits-tied-to-tumbler-ridge-shooting/",
     "https://www.anthropic.com/api",
     "https://www.anthropic.com/claude",
     "https://www.anthropic.com/claude-fable-and-mythos-5-1",
@@ -84,44 +66,32 @@
     "https://www.anthropic.com/news/microsoft-nvidia-anthropic-announce-strategic-partnerships",
     "https://www.anthropic.com/product/claude-code",
     "https://www.anthropic.com/research",
+    "https://www.apple.com/newsroom/2026/04/tim-cook-to-become-apple-executive-chairman-john-ternus-to-become-apple-ceo/",
     "https://www.apple.com/newsroom/2026/07/apple-maps-to-power-navigation-experience-for-ford-uev-platform/",
-    "https://www.axios.com/2026/09/01/anthropic-paused-some-ai-training-after-claude-took-unauthorized-actions",
-    "https://www.axios.com/2026/09/03/pentagon-reaffirms-anthropic-blacklist",
+    "https://www.axios.com/2026/09/02/google-ad-tech-antitrust-remedies",
     "https://www.boursorama.com/bourse/actualites/les-ventes-de-vehicules-electriques-tesla-fabriques-en-chine-ont-progresse-de-3-6-en-glissement-annuel-en-aout-cc1be1471d4a008f874e9d0c9117facb",
-    "https://www.businessinsider.com/amazon-forecasts-delivery-network-us-packages-2026-9",
     "https://www.channelnewsasia.com/business/anthropic-signs-us35-billion-cloud-deal-nvidia-backed-lambda-source-says-6353306",
-    "https://www.cna.com.tw/news/afe/202608310099.aspx",
-    "https://www.cna.com.tw/news/afe/202609010167.aspx",
     "https://www.ftc.gov/news-events/news/press-releases/2026/08/ftc-states-sue-amazon-over-secret-ad-surcharge-scheme",
-    "https://www.law360.com/mlex/technology/articles/2519476/chatgpt-reddit-roblox-receive-designations-under-eu-s-dsa",
-    "https://www.macrumors.com/2026/08/31/phil-schiller-stepping-down-app-store/",
-    "https://www.macrumors.com/2026/09/04/iphone-ultra-production-extremely-limited/",
-    "https://www.marketscreener.com/news/anthropic-ipo-launch-shifts-toward-mid-october-sources-say-ce785bdbdb89f420",
+    "https://www.ftc.gov/system/files/ftc_gov/pdf/AmazonAds-Complaint.pdf",
+    "https://www.macrumors.com/2026/08/26/apple-iphone-event-2026/",
     "https://www.marketscreener.com/news/us-auto-safety-regulator-opens-probe-into-nearly-1-000-tesla-cybercabs-ce785bdade88ff2c",
     "https://www.microsoft.com/en-us/Investor/annual-reports.aspx",
     "https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q4/press-release-webcast",
-    "https://www.nasdaq.com/press-release/nvidia-and-mediatek-deepen-long-standing-partnership-build-ai-edge-cloud-computing",
     "https://www.newsmediaalliance.org/google-ad-tech-remedies-ruling/",
     "https://www.nhtsa.gov/press-releases/investigation-tesla-cybercab-self-certification",
     "https://www.samsung.com/global/ir/reports-disclosures/business-report/",
-    "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000078/nvda-20260902.htm",
-    "https://www.sec.gov/Archives/edgar/data/2120882/000119312526382688/d111778d6k.htm",
-    "https://www.sec.gov/Archives/edgar/data/320193/000114036126035325/ef20081427_8ka.htm",
-    "https://www.sec.gov/Archives/edgar/data/789019/000119312526380280/d291965dex991.htm",
     "https://www.skhynix.com/ir/UI-FR-IR02"
   ],
   "summary": {
-    "total": 99,
-    "reachable": 99,
-    "access_limited": 29,
+    "total": 74,
+    "reachable": 74,
+    "access_limited": 12,
     "unclassified": 0,
     "errors": 0,
-    "claim_total": 26,
-    "claim_matched": 22,
-    "claim_manual": 4,
-    "claim_failed": 0,
-    "source_cache_reused": 0,
-    "claim_cache_reused": 0
+    "claim_total": 23,
+    "claim_matched": 23,
+    "claim_manual": 0,
+    "claim_failed": 0
   },
   "sources": [
     {
@@ -141,23 +111,11 @@
       "scheme": "https",
       "host": "abc.xyz",
       "source_class": "official_or_regulatory",
-      "status": 206,
+      "status": 200,
       "reachable": true,
       "access_limited": false,
       "content_verified": true,
       "requires_manual_verification": false,
-      "error": null
-    },
-    {
-      "url": "https://apnews.com/article/dbb22e8e02c660ee5a8644915dec39a4",
-      "scheme": "https",
-      "host": "apnews.com",
-      "source_class": "tier1_media",
-      "status": 403,
-      "reachable": true,
-      "access_limited": true,
-      "content_verified": false,
-      "requires_manual_verification": true,
       "error": null
     },
     {
@@ -165,41 +123,17 @@
       "scheme": "https",
       "host": "apnews.com",
       "source_class": "tier1_media",
-      "status": 403,
+      "status": 200,
       "reachable": true,
-      "access_limited": true,
-      "content_verified": false,
-      "requires_manual_verification": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
       "error": null
     },
     {
       "url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-fable-5-1-on-aws/",
       "scheme": "https",
       "host": "aws.amazon.com",
-      "source_class": "official_or_regulatory",
-      "status": 200,
-      "reachable": true,
-      "access_limited": false,
-      "content_verified": true,
-      "requires_manual_verification": false,
-      "error": null
-    },
-    {
-      "url": "https://aws.amazon.com/blogs/networking-and-content-delivery/aws-and-microsoft-azure-collaborate-to-expand-multicloud-networking/",
-      "scheme": "https",
-      "host": "aws.amazon.com",
-      "source_class": "official_or_regulatory",
-      "status": 200,
-      "reachable": true,
-      "access_limited": false,
-      "content_verified": true,
-      "requires_manual_verification": false,
-      "error": null
-    },
-    {
-      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/west-virginia-long-duration-energy-storage/",
-      "scheme": "https",
-      "host": "blog.google",
       "source_class": "official_or_regulatory",
       "status": 200,
       "reachable": true,
@@ -233,9 +167,9 @@
       "error": null
     },
     {
-      "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-09/cp260113en.pdf",
+      "url": "https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/",
       "scheme": "https",
-      "host": "curia.europa.eu",
+      "host": "blogs.nvidia.com",
       "source_class": "official_or_regulatory",
       "status": 200,
       "reachable": true,
@@ -245,70 +179,10 @@
       "error": null
     },
     {
-      "url": "https://ec.europa.eu/commission/presscorner/api/files/document/print/en/ip_26_1772/IP_26_1772_EN.pdf",
+      "url": "https://developer.apple.com/news/?id=s6spdug0",
       "scheme": "https",
-      "host": "ec.europa.eu",
+      "host": "developer.apple.com",
       "source_class": "official_or_regulatory",
-      "status": 200,
-      "reachable": true,
-      "access_limited": false,
-      "content_verified": true,
-      "requires_manual_verification": false,
-      "error": null
-    },
-    {
-      "url": "https://electrek.co/2026/09/01/tesla-solar-roof-exit-installers-losses/",
-      "scheme": "https",
-      "host": "electrek.co",
-      "source_class": "trade_or_press_media",
-      "status": 200,
-      "reachable": true,
-      "access_limited": false,
-      "content_verified": true,
-      "requires_manual_verification": false,
-      "error": null
-    },
-    {
-      "url": "https://electrek.co/2026/09/03/tesla-announces-1-million-unsupervised-miles-driven-by-robotaxi/",
-      "scheme": "https",
-      "host": "electrek.co",
-      "source_class": "trade_or_press_media",
-      "status": 200,
-      "reachable": true,
-      "access_limited": false,
-      "content_verified": true,
-      "requires_manual_verification": false,
-      "error": null
-    },
-    {
-      "url": "https://electrek.co/2026/09/04/tesla-fsd-active-safety-collision-avoidance/",
-      "scheme": "https",
-      "host": "electrek.co",
-      "source_class": "trade_or_press_media",
-      "status": 200,
-      "reachable": true,
-      "access_limited": false,
-      "content_verified": true,
-      "requires_manual_verification": false,
-      "error": null
-    },
-    {
-      "url": "https://english.motir.go.kr/eng/article/EATCLdfa319ada/2720/view",
-      "scheme": "https",
-      "host": "english.motir.go.kr",
-      "source_class": "official_or_regulatory",
-      "status": 200,
-      "reachable": true,
-      "access_limited": false,
-      "content_verified": true,
-      "requires_manual_verification": false,
-      "error": null
-    },
-    {
-      "url": "https://finance.yahoo.com/markets/currencies/articles/exclusive-south-korean-fx-authorities-073601807.html",
-      "scheme": "https",
-      "host": "finance.yahoo.com",
-      "source_class": "trade_or_press_media",
       "status": 200,
       "reachable": true,
       "access_limited": false,
@@ -333,30 +207,6 @@
       "scheme": "https",
       "host": "github.blog",
       "source_class": "official_or_regulatory",
-      "status": 200,
-      "reachable": true,
-      "access_limited": false,
-      "content_verified": true,
-      "requires_manual_verification": false,
-      "error": null
-    },
-    {
-      "url": "https://globalnews.ca/news/12044429/tumbler-ridge-lawsuit-openai/",
-      "scheme": "https",
-      "host": "globalnews.ca",
-      "source_class": "trade_or_press_media",
-      "status": 200,
-      "reachable": true,
-      "access_limited": false,
-      "content_verified": true,
-      "requires_manual_verification": false,
-      "error": null
-    },
-    {
-      "url": "https://iclg.com/news/apple-faces-2bn-uk-class-action-over-app-tracking-rules/",
-      "scheme": "https",
-      "host": "iclg.com",
-      "source_class": "trade_or_press_media",
       "status": 200,
       "reachable": true,
       "access_limited": false,
@@ -425,18 +275,6 @@
       "error": null
     },
     {
-      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-MediaTek-Deepen-Long-Standing-Partnership-to-Build-AI-Edge-to-Cloud-Computing-Platforms/default.aspx",
-      "scheme": "https",
-      "host": "investor.nvidia.com",
-      "source_class": "official_or_regulatory",
-      "status": 200,
-      "reachable": true,
-      "access_limited": false,
-      "content_verified": true,
-      "requires_manual_verification": false,
-      "error": null
-    },
-    {
       "url": "https://investor.tsmc.com/english/annual-reports",
       "scheme": "https",
       "host": "investor.tsmc.com",
@@ -489,30 +327,6 @@
       "scheme": "https",
       "host": "ir.tesla.com",
       "source_class": "official_or_regulatory",
-      "status": 403,
-      "reachable": true,
-      "access_limited": true,
-      "content_verified": false,
-      "requires_manual_verification": true,
-      "error": null
-    },
-    {
-      "url": "https://mn8.com/mn8-energy-google-and-eos-energy-enterprises-bring-advanced-clean-energy-solutions-to-west-virginia/",
-      "scheme": "https",
-      "host": "mn8.com",
-      "source_class": "official_or_regulatory",
-      "status": 200,
-      "reachable": true,
-      "access_limited": false,
-      "content_verified": true,
-      "requires_manual_verification": false,
-      "error": null
-    },
-    {
-      "url": "https://news.cision.com/pt/samsung-portugal/r/samsung-galaxy-s26-fe-ja-esta-disponivel-em-portugal%2Cc639241326320000000",
-      "scheme": "https",
-      "host": "news.cision.com",
-      "source_class": "trade_or_press_media",
       "status": 200,
       "reachable": true,
       "access_limited": false,
@@ -569,7 +383,31 @@
       "error": null
     },
     {
+      "url": "https://news.samsung.com/global/samsung-redefines-laundry-with-new-a-70-and-13-kg-bespoke-ai-washers-at-ifa-2026",
+      "scheme": "https",
+      "host": "news.samsung.com",
+      "source_class": "official_or_regulatory",
+      "status": 403,
+      "reachable": true,
+      "access_limited": true,
+      "content_verified": false,
+      "requires_manual_verification": true,
+      "error": null
+    },
+    {
       "url": "https://news.skhynix.com/en/12-layer-hbm4e-sample-1/",
+      "scheme": "https",
+      "host": "news.skhynix.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://news.skhynix.com/en/ai-ecosystem-series-ep2/",
       "scheme": "https",
       "host": "news.skhynix.com",
       "source_class": "official_or_regulatory",
@@ -621,7 +459,7 @@
       "scheme": "https",
       "host": "nvidianews.nvidia.com",
       "source_class": "official_or_regulatory",
-      "status": 206,
+      "status": 200,
       "reachable": true,
       "access_limited": false,
       "content_verified": true,
@@ -657,11 +495,11 @@
       "scheme": "https",
       "host": "openai.com",
       "source_class": "official_or_regulatory",
-      "status": 403,
+      "status": 200,
       "reachable": true,
-      "access_limited": true,
-      "content_verified": false,
-      "requires_manual_verification": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
       "error": null
     },
     {
@@ -681,11 +519,11 @@
       "scheme": "https",
       "host": "openai.com",
       "source_class": "official_or_regulatory",
-      "status": 403,
+      "status": 200,
       "reachable": true,
-      "access_limited": true,
-      "content_verified": false,
-      "requires_manual_verification": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
       "error": null
     },
     {
@@ -693,23 +531,11 @@
       "scheme": "https",
       "host": "openai.com",
       "source_class": "official_or_regulatory",
-      "status": 403,
+      "status": 200,
       "reachable": true,
-      "access_limited": true,
-      "content_verified": false,
-      "requires_manual_verification": true,
-      "error": null
-    },
-    {
-      "url": "https://openai.com/index/daybreak-for-frontline-defenders/",
-      "scheme": "https",
-      "host": "openai.com",
-      "source_class": "official_or_regulatory",
-      "status": 403,
-      "reachable": true,
-      "access_limited": true,
-      "content_verified": false,
-      "requires_manual_verification": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
       "error": null
     },
     {
@@ -729,11 +555,11 @@
       "scheme": "https",
       "host": "openai.com",
       "source_class": "official_or_regulatory",
-      "status": 403,
+      "status": 200,
       "reachable": true,
-      "access_limited": true,
-      "content_verified": false,
-      "requires_manual_verification": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
       "error": null
     },
     {
@@ -753,11 +579,11 @@
       "scheme": "https",
       "host": "openai.com",
       "source_class": "official_or_regulatory",
-      "status": 403,
+      "status": 200,
       "reachable": true,
-      "access_limited": true,
-      "content_verified": false,
-      "requires_manual_verification": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
       "error": null
     },
     {
@@ -765,15 +591,27 @@
       "scheme": "https",
       "host": "openai.com",
       "source_class": "official_or_regulatory",
-      "status": 403,
+      "status": 200,
       "reachable": true,
-      "access_limited": true,
-      "content_verified": false,
-      "requires_manual_verification": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
       "error": null
     },
     {
       "url": "https://openai.com/index/previewing-ultrafast/",
+      "scheme": "https",
+      "host": "openai.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
+      "url": "https://openai.com/index/safety-overview-gpt-6-astra/",
       "scheme": "https",
       "host": "openai.com",
       "source_class": "official_or_regulatory",
@@ -801,18 +639,6 @@
       "scheme": "https",
       "host": "openai.com",
       "source_class": "official_or_regulatory",
-      "status": 403,
-      "reachable": true,
-      "access_limited": true,
-      "content_verified": false,
-      "requires_manual_verification": true,
-      "error": null
-    },
-    {
-      "url": "https://platform.claude.com/docs/en/models/fable-5-1/overview",
-      "scheme": "https",
-      "host": "platform.claude.com",
-      "source_class": "official_or_regulatory",
       "status": 200,
       "reachable": true,
       "access_limited": false,
@@ -821,7 +647,7 @@
       "error": null
     },
     {
-      "url": "https://platform.claude.com/docs/en/release-notes/overview",
+      "url": "https://platform.claude.com/docs/en/models/fable-5-1/overview",
       "scheme": "https",
       "host": "platform.claude.com",
       "source_class": "official_or_regulatory",
@@ -857,22 +683,10 @@
       "error": null
     },
     {
-      "url": "https://status.cloud.google.com/incidents/J5ia5t9p3g9Q5Wi7r8Ev",
+      "url": "https://support.claude.com/en/articles/12138966-release-notes",
       "scheme": "https",
-      "host": "status.cloud.google.com",
+      "host": "support.claude.com",
       "source_class": "official_or_regulatory",
-      "status": 200,
-      "reachable": true,
-      "access_limited": false,
-      "content_verified": true,
-      "requires_manual_verification": false,
-      "error": null
-    },
-    {
-      "url": "https://tech.yahoo.com/ar-vr/articles/meta-disables-cameras-thousands-tampered-175949878.html",
-      "scheme": "https",
-      "host": "tech.yahoo.com",
-      "source_class": "trade_or_press_media",
       "status": 200,
       "reachable": true,
       "access_limited": false,
@@ -890,30 +704,6 @@
       "access_limited": true,
       "content_verified": false,
       "requires_manual_verification": true,
-      "error": null
-    },
-    {
-      "url": "https://techcrunch.com/2026/08/31/instagram-puts-new-limits-on-undisclosed-ai-profiles/",
-      "scheme": "https",
-      "host": "techcrunch.com",
-      "source_class": "trade_or_press_media",
-      "status": 200,
-      "reachable": true,
-      "access_limited": false,
-      "content_verified": true,
-      "requires_manual_verification": false,
-      "error": null
-    },
-    {
-      "url": "https://techcrunch.com/2026/09/02/openai-faces-30-more-lawsuits-tied-to-tumbler-ridge-shooting/",
-      "scheme": "https",
-      "host": "techcrunch.com",
-      "source_class": "trade_or_press_media",
-      "status": 200,
-      "reachable": true,
-      "access_limited": false,
-      "content_verified": true,
-      "requires_manual_verification": false,
       "error": null
     },
     {
@@ -1013,6 +803,18 @@
       "error": null
     },
     {
+      "url": "https://www.apple.com/newsroom/2026/04/tim-cook-to-become-apple-executive-chairman-john-ternus-to-become-apple-ceo/",
+      "scheme": "https",
+      "host": "www.apple.com",
+      "source_class": "official_or_regulatory",
+      "status": 200,
+      "reachable": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
+      "error": null
+    },
+    {
       "url": "https://www.apple.com/newsroom/2026/07/apple-maps-to-power-navigation-experience-for-ford-uev-platform/",
       "scheme": "https",
       "host": "www.apple.com",
@@ -1025,27 +827,15 @@
       "error": null
     },
     {
-      "url": "https://www.axios.com/2026/09/01/anthropic-paused-some-ai-training-after-claude-took-unauthorized-actions",
+      "url": "https://www.axios.com/2026/09/02/google-ad-tech-antitrust-remedies",
       "scheme": "https",
       "host": "www.axios.com",
       "source_class": "tier1_media",
-      "status": 403,
+      "status": 200,
       "reachable": true,
-      "access_limited": true,
-      "content_verified": false,
-      "requires_manual_verification": true,
-      "error": null
-    },
-    {
-      "url": "https://www.axios.com/2026/09/03/pentagon-reaffirms-anthropic-blacklist",
-      "scheme": "https",
-      "host": "www.axios.com",
-      "source_class": "tier1_media",
-      "status": 403,
-      "reachable": true,
-      "access_limited": true,
-      "content_verified": false,
-      "requires_manual_verification": true,
+      "access_limited": false,
+      "content_verified": true,
+      "requires_manual_verification": false,
       "error": null
     },
     {
@@ -1061,45 +851,9 @@
       "error": null
     },
     {
-      "url": "https://www.businessinsider.com/amazon-forecasts-delivery-network-us-packages-2026-9",
-      "scheme": "https",
-      "host": "www.businessinsider.com",
-      "source_class": "trade_or_press_media",
-      "status": 206,
-      "reachable": true,
-      "access_limited": false,
-      "content_verified": true,
-      "requires_manual_verification": false,
-      "error": null
-    },
-    {
       "url": "https://www.channelnewsasia.com/business/anthropic-signs-us35-billion-cloud-deal-nvidia-backed-lambda-source-says-6353306",
       "scheme": "https",
       "host": "www.channelnewsasia.com",
-      "source_class": "tier1_media",
-      "status": 200,
-      "reachable": true,
-      "access_limited": false,
-      "content_verified": true,
-      "requires_manual_verification": false,
-      "error": null
-    },
-    {
-      "url": "https://www.cna.com.tw/news/afe/202608310099.aspx",
-      "scheme": "https",
-      "host": "www.cna.com.tw",
-      "source_class": "tier1_media",
-      "status": 200,
-      "reachable": true,
-      "access_limited": false,
-      "content_verified": true,
-      "requires_manual_verification": false,
-      "error": null
-    },
-    {
-      "url": "https://www.cna.com.tw/news/afe/202609010167.aspx",
-      "scheme": "https",
-      "host": "www.cna.com.tw",
       "source_class": "tier1_media",
       "status": 200,
       "reachable": true,
@@ -1121,11 +875,11 @@
       "error": null
     },
     {
-      "url": "https://www.law360.com/mlex/technology/articles/2519476/chatgpt-reddit-roblox-receive-designations-under-eu-s-dsa",
+      "url": "https://www.ftc.gov/system/files/ftc_gov/pdf/AmazonAds-Complaint.pdf",
       "scheme": "https",
-      "host": "www.law360.com",
-      "source_class": "trade_or_press_media",
-      "status": 200,
+      "host": "www.ftc.gov",
+      "source_class": "official_or_regulatory",
+      "status": 206,
       "reachable": true,
       "access_limited": false,
       "content_verified": true,
@@ -1133,7 +887,7 @@
       "error": null
     },
     {
-      "url": "https://www.macrumors.com/2026/08/31/phil-schiller-stepping-down-app-store/",
+      "url": "https://www.macrumors.com/2026/08/26/apple-iphone-event-2026/",
       "scheme": "https",
       "host": "www.macrumors.com",
       "source_class": "trade_or_press_media",
@@ -1142,30 +896,6 @@
       "access_limited": false,
       "content_verified": true,
       "requires_manual_verification": false,
-      "error": null
-    },
-    {
-      "url": "https://www.macrumors.com/2026/09/04/iphone-ultra-production-extremely-limited/",
-      "scheme": "https",
-      "host": "www.macrumors.com",
-      "source_class": "trade_or_press_media",
-      "status": 200,
-      "reachable": true,
-      "access_limited": false,
-      "content_verified": true,
-      "requires_manual_verification": false,
-      "error": null
-    },
-    {
-      "url": "https://www.marketscreener.com/news/anthropic-ipo-launch-shifts-toward-mid-october-sources-say-ce785bdbdb89f420",
-      "scheme": "https",
-      "host": "www.marketscreener.com",
-      "source_class": "trade_or_press_media",
-      "status": 403,
-      "reachable": true,
-      "access_limited": true,
-      "content_verified": false,
-      "requires_manual_verification": true,
       "error": null
     },
     {
@@ -1205,18 +935,6 @@
       "error": null
     },
     {
-      "url": "https://www.nasdaq.com/press-release/nvidia-and-mediatek-deepen-long-standing-partnership-build-ai-edge-cloud-computing",
-      "scheme": "https",
-      "host": "www.nasdaq.com",
-      "source_class": "trade_or_press_media",
-      "status": 200,
-      "reachable": true,
-      "access_limited": false,
-      "content_verified": true,
-      "requires_manual_verification": false,
-      "error": null
-    },
-    {
       "url": "https://www.newsmediaalliance.org/google-ad-tech-remedies-ruling/",
       "scheme": "https",
       "host": "www.newsmediaalliance.org",
@@ -1244,54 +962,6 @@
       "url": "https://www.samsung.com/global/ir/reports-disclosures/business-report/",
       "scheme": "https",
       "host": "www.samsung.com",
-      "source_class": "official_or_regulatory",
-      "status": 403,
-      "reachable": true,
-      "access_limited": true,
-      "content_verified": false,
-      "requires_manual_verification": true,
-      "error": null
-    },
-    {
-      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000078/nvda-20260902.htm",
-      "scheme": "https",
-      "host": "www.sec.gov",
-      "source_class": "official_or_regulatory",
-      "status": 403,
-      "reachable": true,
-      "access_limited": true,
-      "content_verified": false,
-      "requires_manual_verification": true,
-      "error": null
-    },
-    {
-      "url": "https://www.sec.gov/Archives/edgar/data/2120882/000119312526382688/d111778d6k.htm",
-      "scheme": "https",
-      "host": "www.sec.gov",
-      "source_class": "official_or_regulatory",
-      "status": 403,
-      "reachable": true,
-      "access_limited": true,
-      "content_verified": false,
-      "requires_manual_verification": true,
-      "error": null
-    },
-    {
-      "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126035325/ef20081427_8ka.htm",
-      "scheme": "https",
-      "host": "www.sec.gov",
-      "source_class": "official_or_regulatory",
-      "status": 403,
-      "reachable": true,
-      "access_limited": true,
-      "content_verified": false,
-      "requires_manual_verification": true,
-      "error": null
-    },
-    {
-      "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526380280/d291965dex991.htm",
-      "scheme": "https",
-      "host": "www.sec.gov",
       "source_class": "official_or_regulatory",
       "status": 403,
       "reachable": true,
@@ -1346,7 +1016,7 @@
           ],
           "text_fetch_retried": false,
           "text_fetch_failed": false,
-          "text_length": 9104
+          "text_length": 9086
         }
       ]
     },
@@ -1418,7 +1088,7 @@
           ],
           "text_fetch_retried": false,
           "text_fetch_failed": false,
-          "text_length": 13931
+          "text_length": 13919
         }
       ]
     },
@@ -1471,7 +1141,7 @@
           ],
           "text_fetch_retried": false,
           "text_fetch_failed": false,
-          "text_length": 37470
+          "text_length": 37476
         }
       ]
     },
@@ -1543,7 +1213,7 @@
           ],
           "text_fetch_retried": false,
           "text_fetch_failed": false,
-          "text_length": 16828
+          "text_length": 16836
         }
       ]
     },
@@ -1580,7 +1250,7 @@
           ],
           "text_fetch_retried": false,
           "text_fetch_failed": false,
-          "text_length": 16828
+          "text_length": 16836
         },
         {
           "url": "https://news.skhynix.com/en/q2-2026-business-results/",
@@ -1627,7 +1297,7 @@
           ],
           "text_fetch_retried": false,
           "text_fetch_failed": false,
-          "text_length": 5126
+          "text_length": 5127
         }
       ]
     },
@@ -1657,7 +1327,7 @@
       "url_results": [
         {
           "url": "https://nvidianews.nvidia.com/news/ilya-sutskevers-safe-superintelligence-inc-and-nvidia-announce-long-term-strategic-partnership",
-          "status": 206,
+          "status": 200,
           "access_limited": false,
           "matched_keywords": [
             "safe superintelligence",
@@ -1666,7 +1336,7 @@
           ],
           "text_fetch_retried": false,
           "text_fetch_failed": false,
-          "text_length": 11269
+          "text_length": 11277
         }
       ]
     },
@@ -1865,7 +1535,7 @@
           ],
           "text_fetch_retried": false,
           "text_fetch_failed": false,
-          "text_length": 10724
+          "text_length": 10504
         },
         {
           "url": "https://news.skhynix.com/sk-hynix-and-sandisk-begin-global-standardization-ofnext-generation-memory-hbf/",
@@ -1878,7 +1548,7 @@
           ],
           "text_fetch_retried": false,
           "text_fetch_failed": false,
-          "text_length": 5727
+          "text_length": 5715
         }
       ]
     },
@@ -1897,29 +1567,41 @@
       ],
       "min_keyword_matches": 3,
       "required": true,
-      "matched": false,
-      "requires_manual_verification": true,
+      "matched": true,
+      "requires_manual_verification": false,
       "failed": false,
-      "best_match_count": 0,
-      "best_matched_keywords": [],
+      "best_match_count": 3,
+      "best_matched_keywords": [
+        "gpt",
+        "astra",
+        "amazon bedrock"
+      ],
       "url_results": [
         {
           "url": "https://openai.com/index/gpt-6-astra/",
-          "status": 403,
-          "access_limited": true,
-          "matched_keywords": [],
+          "status": 200,
+          "access_limited": false,
+          "matched_keywords": [
+            "gpt",
+            "astra",
+            "amazon bedrock"
+          ],
           "text_fetch_retried": false,
-          "text_fetch_failed": true,
-          "text_length": 0
+          "text_fetch_failed": false,
+          "text_length": 58614
         },
         {
           "url": "https://openai.com/index/daybreak-models-are-now-available-on-aws/",
           "status": 403,
           "access_limited": true,
-          "matched_keywords": [],
+          "matched_keywords": [
+            "gpt",
+            "astra",
+            "amazon bedrock"
+          ],
           "text_fetch_retried": false,
-          "text_fetch_failed": true,
-          "text_length": 0
+          "text_fetch_failed": false,
+          "text_length": 62026
         }
       ]
     },
@@ -1938,29 +1620,40 @@
       ],
       "min_keyword_matches": 2,
       "required": true,
-      "matched": false,
-      "requires_manual_verification": true,
+      "matched": true,
+      "requires_manual_verification": false,
       "failed": false,
-      "best_match_count": 0,
-      "best_matched_keywords": [],
+      "best_match_count": 3,
+      "best_matched_keywords": [
+        "ultrafast",
+        "cerebras",
+        "750"
+      ],
       "url_results": [
         {
           "url": "https://openai.com/index/previewing-ultrafast/",
-          "status": 403,
-          "access_limited": true,
-          "matched_keywords": [],
+          "status": 200,
+          "access_limited": false,
+          "matched_keywords": [
+            "ultrafast",
+            "cerebras",
+            "750"
+          ],
           "text_fetch_retried": false,
-          "text_fetch_failed": true,
-          "text_length": 0
+          "text_fetch_failed": false,
+          "text_length": 10601
         },
         {
           "url": "https://openai.com/index/cerebras-partnership/",
-          "status": 403,
-          "access_limited": true,
-          "matched_keywords": [],
+          "status": 200,
+          "access_limited": false,
+          "matched_keywords": [
+            "cerebras",
+            "750"
+          ],
           "text_fetch_retried": false,
-          "text_fetch_failed": true,
-          "text_length": 0
+          "text_fetch_failed": false,
+          "text_length": 16126
         }
       ]
     },
@@ -2000,16 +1693,19 @@
           ],
           "text_fetch_retried": false,
           "text_fetch_failed": false,
-          "text_length": 16372
+          "text_length": 16380
         },
         {
           "url": "https://openai.com/index/openai-joins-ports-pike-project/",
           "status": 403,
           "access_limited": true,
-          "matched_keywords": [],
+          "matched_keywords": [
+            "ports-pike",
+            "openai"
+          ],
           "text_fetch_retried": false,
-          "text_fetch_failed": true,
-          "text_length": 0
+          "text_fetch_failed": false,
+          "text_length": 28947
         }
       ]
     },
@@ -2049,16 +1745,20 @@
           ],
           "text_fetch_retried": false,
           "text_fetch_failed": false,
-          "text_length": 16372
+          "text_length": 16380
         },
         {
           "url": "https://openai.com/index/openai-joins-ports-pike-project/",
           "status": 403,
           "access_limited": true,
-          "matched_keywords": [],
+          "matched_keywords": [
+            "sb energy",
+            "20-year lease",
+            "openai"
+          ],
           "text_fetch_retried": false,
-          "text_fetch_failed": true,
-          "text_length": 0
+          "text_fetch_failed": false,
+          "text_length": 28947
         }
       ]
     },
@@ -2118,20 +1818,28 @@
       ],
       "min_keyword_matches": 2,
       "required": true,
-      "matched": false,
-      "requires_manual_verification": true,
+      "matched": true,
+      "requires_manual_verification": false,
       "failed": false,
-      "best_match_count": 0,
-      "best_matched_keywords": [],
+      "best_match_count": 3,
+      "best_matched_keywords": [
+        "cursor",
+        "wind down",
+        "november 12, 2026"
+      ],
       "url_results": [
         {
           "url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/",
-          "status": 403,
-          "access_limited": true,
-          "matched_keywords": [],
+          "status": 200,
+          "access_limited": false,
+          "matched_keywords": [
+            "cursor",
+            "wind down",
+            "november 12, 2026"
+          ],
           "text_fetch_retried": false,
-          "text_fetch_failed": true,
-          "text_length": 0
+          "text_fetch_failed": false,
+          "text_length": 39357
         }
       ]
     },
@@ -2178,7 +1886,7 @@
           ],
           "text_fetch_retried": false,
           "text_fetch_failed": false,
-          "text_length": 6052
+          "text_length": 6190
         },
         {
           "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
@@ -2189,7 +1897,7 @@
           ],
           "text_fetch_retried": true,
           "text_fetch_failed": false,
-          "text_length": 37470
+          "text_length": 37476
         }
       ]
     },
@@ -2206,20 +1914,26 @@
       ],
       "min_keyword_matches": 2,
       "required": true,
-      "matched": false,
-      "requires_manual_verification": true,
+      "matched": true,
+      "requires_manual_verification": false,
       "failed": false,
-      "best_match_count": 0,
-      "best_matched_keywords": [],
+      "best_match_count": 2,
+      "best_matched_keywords": [
+        "astra",
+        "microsoft azure"
+      ],
       "url_results": [
         {
           "url": "https://openai.com/index/gpt-6-astra/",
-          "status": 403,
-          "access_limited": true,
-          "matched_keywords": [],
+          "status": 200,
+          "access_limited": false,
+          "matched_keywords": [
+            "astra",
+            "microsoft azure"
+          ],
           "text_fetch_retried": false,
-          "text_fetch_failed": true,
-          "text_length": 0
+          "text_fetch_failed": false,
+          "text_length": 58614
         }
       ]
     },
@@ -2256,7 +1970,7 @@
           ],
           "text_fetch_retried": false,
           "text_fetch_failed": false,
-          "text_length": 37470
+          "text_length": 37476
         },
         {
           "url": "https://platform.claude.com/docs/en/models/fable-5-1/overview",
@@ -2268,143 +1982,7 @@
           ],
           "text_fetch_retried": false,
           "text_fetch_failed": false,
-          "text_length": 5423
-        }
-      ]
-    },
-    {
-      "claim_id": "E29",
-      "scope": "weekly_supply_edge",
-      "description": "AWS / Azure 双向云互联公开预览，非已确认采购",
-      "source_urls": [
-        "https://aws.amazon.com/blogs/networking-and-content-delivery/aws-and-microsoft-azure-collaborate-to-expand-multicloud-networking/"
-      ],
-      "keywords": [
-        "Azure",
-        "preview"
-      ],
-      "min_keyword_matches": 2,
-      "required": true,
-      "matched": true,
-      "requires_manual_verification": false,
-      "failed": false,
-      "best_match_count": 2,
-      "best_matched_keywords": [
-        "azure",
-        "preview"
-      ],
-      "url_results": [
-        {
-          "url": "https://aws.amazon.com/blogs/networking-and-content-delivery/aws-and-microsoft-azure-collaborate-to-expand-multicloud-networking/",
-          "status": 200,
-          "access_limited": false,
-          "matched_keywords": [
-            "azure",
-            "preview"
-          ],
-          "text_fetch_retried": false,
-          "text_fetch_failed": false,
-          "text_length": 102599
-        }
-      ]
-    },
-    {
-      "claim_id": "E30",
-      "scope": "weekly_supply_edge",
-      "description": "NVLink Fusion 计划采用及多代平台合作，尚非量产交付",
-      "source_urls": [
-        "https://www.nasdaq.com/press-release/nvidia-and-mediatek-deepen-long-standing-partnership-build-ai-edge-cloud-computing",
-        "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-MediaTek-Deepen-Long-Standing-Partnership-to-Build-AI-Edge-to-Cloud-Computing-Platforms/default.aspx"
-      ],
-      "keywords": [
-        "MediaTek",
-        "NVLink Fusion"
-      ],
-      "min_keyword_matches": 2,
-      "required": true,
-      "matched": true,
-      "requires_manual_verification": false,
-      "failed": false,
-      "best_match_count": 2,
-      "best_matched_keywords": [
-        "mediatek",
-        "nvlink fusion"
-      ],
-      "url_results": [
-        {
-          "url": "https://www.nasdaq.com/press-release/nvidia-and-mediatek-deepen-long-standing-partnership-build-ai-edge-cloud-computing",
-          "status": 200,
-          "access_limited": false,
-          "matched_keywords": [
-            "mediatek",
-            "nvlink fusion"
-          ],
-          "text_fetch_retried": false,
-          "text_fetch_failed": false,
-          "text_length": 16544
-        },
-        {
-          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-MediaTek-Deepen-Long-Standing-Partnership-to-Build-AI-Edge-to-Cloud-Computing-Platforms/default.aspx",
-          "status": 200,
-          "access_limited": false,
-          "matched_keywords": [
-            "mediatek",
-            "nvlink fusion"
-          ],
-          "text_fetch_retried": false,
-          "text_fetch_failed": false,
-          "text_length": 16358
-        }
-      ]
-    },
-    {
-      "claim_id": "E31",
-      "scope": "weekly_supply_edge",
-      "description": "西弗吉尼亚太阳能及储能的未来能源/容量供应安排",
-      "source_urls": [
-        "https://mn8.com/mn8-energy-google-and-eos-energy-enterprises-bring-advanced-clean-energy-solutions-to-west-virginia/",
-        "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/west-virginia-long-duration-energy-storage/"
-      ],
-      "keywords": [
-        "MN8",
-        "2028",
-        "2030"
-      ],
-      "min_keyword_matches": 2,
-      "required": true,
-      "matched": true,
-      "requires_manual_verification": false,
-      "failed": false,
-      "best_match_count": 3,
-      "best_matched_keywords": [
-        "mn8",
-        "2028",
-        "2030"
-      ],
-      "url_results": [
-        {
-          "url": "https://mn8.com/mn8-energy-google-and-eos-energy-enterprises-bring-advanced-clean-energy-solutions-to-west-virginia/",
-          "status": 200,
-          "access_limited": false,
-          "matched_keywords": [
-            "mn8",
-            "2028",
-            "2030"
-          ],
-          "text_fetch_retried": false,
-          "text_fetch_failed": false,
-          "text_length": 8949
-        },
-        {
-          "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/west-virginia-long-duration-energy-storage/",
-          "status": 200,
-          "access_limited": false,
-          "matched_keywords": [
-            "mn8"
-          ],
-          "text_fetch_retried": true,
-          "text_fetch_failed": false,
-          "text_length": 5029
+          "text_length": 5404
         }
       ]
     }

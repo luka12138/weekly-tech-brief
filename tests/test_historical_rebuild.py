@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 import sys
+import json
+import tempfile
 import unittest
 from pathlib import Path
 from unittest.mock import patch
@@ -8,16 +10,47 @@ from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 
-from historical_snapshot_overrides import apply_data_overrides, apply_text_overrides  # noqa: E402
+from historical_snapshot_overrides import apply_data_overrides, apply_text_overrides, snapshot_path_for_date  # noqa: E402
 from audit_sources import check_claims, classify_host  # noqa: E402
 from migrate_historical_briefs_v2 import build_headlines, expectation_gap, impact_metric, validation_condition  # noqa: E402
 from rebuild_historical_source_audits import (  # noqa: E402
     can_reuse_claim_cache,
     can_reuse_source_cache,
+    snapshot_source_label,
 )
 
 
 class HistoricalRebuildTests(unittest.TestCase):
+    def test_snapshot_override_is_confined_to_historical_state(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            historical = root / "state/historical"
+            historical.mkdir(parents=True)
+            snapshot = historical / "2026-09-07_supply.json"
+            snapshot.write_text("{}", encoding="utf-8")
+            overrides = root / "state/historical_snapshot_overrides.json"
+            overrides.write_text(json.dumps({"reports": {"2026-09-07": {"snapshot_paths": {
+                "state/supply_graph_baseline.json": "state/historical/2026-09-07_supply.json"
+            }}}}), encoding="utf-8")
+            with patch("historical_snapshot_overrides.ROOT", root), patch(
+                "historical_snapshot_overrides.OVERRIDES_PATH", overrides
+            ):
+                self.assertEqual(
+                    snapshot_path_for_date("2026-09-07", "state/supply_graph_baseline.json"),
+                    snapshot.resolve(),
+                )
+                self.assertIsNone(snapshot_path_for_date("2026-09-07", "state/product_relationships_2026.json"))
+
+    def test_source_audit_names_the_actual_frozen_snapshot(self) -> None:
+        frozen = Path("/tmp/state/historical/2026-09-07_supply.json")
+        with patch("rebuild_historical_source_audits.snapshot_path_for_date", return_value=frozen), patch(
+            "rebuild_historical_source_audits.ROOT", Path("/tmp")
+        ):
+            self.assertEqual(
+                snapshot_source_label("2026-09-07", "abc123", "state/supply_graph_baseline.json"),
+                "state/historical/2026-09-07_supply.json",
+            )
+
     def test_migration_never_pads_headlines_from_background(self) -> None:
         item = "**Apple：公告。** 重要性：订单变化。[来源](https://example.com/apple)"
         self.assertEqual(build_headlines([item]), [item])

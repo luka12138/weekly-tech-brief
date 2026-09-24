@@ -1,0 +1,976 @@
+{
+  "schema_version": 1,
+  "report_date": "2026-09-07",
+  "cutoff_exclusive": "2026-09-07T00:00:00+08:00",
+  "report_sha256": "70effa78024cf952fcda2d5cee073130defcb001588756d8eeeb60c4ffb55d70",
+  "baseline_sha256": "036de13c246e8e44c6a668f80a5ca2f6dd81db4c37409312fc933c48b595b7d9",
+  "product_graph_sha256": "80ea2dab6d6d3636d988c8aa7a75a37bb693fd5ba22d1b3260ffd9a8ed9507da",
+  "report_created_at": "2026-09-07T05:57:27.141Z",
+  "reviewed_at": "2026-09-07T05:57:27.205Z",
+  "benchmark_skill_sha256": "6eac7070e5f99561f9856e6592207309f96a903e99740f62a26f404e1a08f113",
+  "manual_reviews": {
+    "financial_periods_and_units": {
+      "status": "reviewed",
+      "note": "逐核并购美元协议额、诉讼指控额、匿名云合同额与MW、Tesla2026年8月制造端含出口销量、TSMC2025年末基准/2026Q1与7月设备估计，以及模型每百万token输入/输出/缓存价。无新财报数值；Google促销脚注不作当期已实现价格。"
+    },
+    "source_versions": {
+      "status": "reviewed",
+      "note": "逐读发行正文、FTC起诉书引言/NHTSA、利益相关方裁决声明与媒体，区分计划/指控/自测；OpenAI与SK用精确URL的RSS辅助定位。Fable页仅月精度，交叉官方9/1条目与当日PDT报道、具名5.1版本；未采用无日期动态价格表。Microsoft读取工具实际返回完整body/postTime而非摘要；直连失败保留。Google裁判全文未取得。未认证Anthropic8/31整改细节或Meta后加推理档位。检索不证明穷尽最早时间。"
+    },
+    "product_graph": {
+      "status": "reviewed",
+      "note": "全索引、12公司产品清单、72节点及P/PX关系已分批展开相关/弱/新增记录。沿用HEAD0d6033a的9/7冻结JSON，哈希80ea2d...507da；本次无事实源变更。P13/PX75、P15-P17/PX77-PX80与E05/E20/E26-E28逐核本周具名分发，非首次伙伴。旧P01/P02/P04/P06-P08及PX51/52/54/55/57/59/60继续弱证据，未重新认证订单或历史可得时间；E11/E12 long_term_baseline不是日期证明。未从后续数据回填旧图。"
+    },
+    "report_vintage": {
+      "status": "reviewed",
+      "note": "原HEAD0d6033a与完整reports/assets/state/logs归档已保存，原报告不被删除或改写Git历史。展示版标事后修订、登记当前哈希与实际编辑时间；无远端发布回执，禁止作为原周一实时输入。本次不提交推送。"
+    }
+  },
+  "claims": [
+    {
+      "id": "R01",
+      "statement": "FTC与22州提出Amazon广告拍卖诉讼。",
+      "targets": [
+        "headline:1",
+        "company:Amazon / AWS",
+        "event:1"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://www.ftc.gov/news-events/news/press-releases/2026/08/ftc-states-sue-amazon-over-secret-ad-surcharge-scheme",
+          "claim_first_public_at": "2026-08-31T13:18:16-04:00",
+          "retrieved_at": "2026-09-07T05:36:31.558360+00:00",
+          "basis": "dated_release",
+          "locator": "FTC 2026-08-31 release, opening paragraphs; complaint p.5 para.1",
+          "support": "已读公告与起诉书首页/引言；22州及超过200亿美元属于原告指控。metadata publication与当天正文相符，不把抓取日当公开日。",
+          "page_modified_at": "2026-08-31T15:00:21-04:00"
+        }
+      ]
+    },
+    {
+      "id": "R02",
+      "statement": "原告称多收超过200亿美元；不是已判罚款或赔偿。",
+      "targets": [
+        "headline:1",
+        "company:Amazon / AWS",
+        "event:1"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://www.ftc.gov/news-events/news/press-releases/2026/08/ftc-states-sue-amazon-over-secret-ad-surcharge-scheme",
+          "claim_first_public_at": "2026-08-31T13:18:16-04:00",
+          "retrieved_at": "2026-09-07T05:36:31.558360+00:00",
+          "basis": "dated_release",
+          "locator": "FTC 2026-08-31 release, opening paragraphs; complaint p.5 para.1",
+          "support": "已读公告与起诉书首页/引言；22州及超过200亿美元属于原告指控。metadata publication与当天正文相符，不把抓取日当公开日。",
+          "page_modified_at": "2026-08-31T15:00:21-04:00"
+        }
+      ]
+    },
+    {
+      "id": "R03",
+      "statement": "NHTSA启动Cybercab自我认证合规调查。",
+      "targets": [
+        "headline:2",
+        "company:Tesla",
+        "event:2"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://www.nhtsa.gov/press-releases/investigation-tesla-cybercab-self-certification",
+          "claim_first_public_at": "2026-09-04T23:59:59-04:00",
+          "retrieved_at": "2026-09-07T05:31:32.072Z",
+          "basis": "dated_release",
+          "locator": "NHTSA September 4, 2026 | Washington, DC; opening and FMVSS paragraphs",
+          "support": "仅日精度；Washington DC当日为EDT，取该日最晚时刻为保守公开上界，并非实际首次秒。正式调查自我认证；现行标准继续适用。"
+        }
+      ]
+    },
+    {
+      "id": "R04",
+      "statement": "Reuters报道Cybercab于美国9月3日在Austin少量商业部署。",
+      "targets": [
+        "headline:2",
+        "company:Tesla",
+        "event:2"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://www.marketscreener.com/news/us-auto-safety-regulator-opens-probe-into-nearly-1-000-tesla-cybercabs-ce785bdade88ff2c",
+          "claim_first_public_at": "2026-09-04T05:26:00-04:00",
+          "retrieved_at": "2026-09-07T05:40:49.607Z",
+          "basis": "dated_media",
+          "locator": "Reuters, published 09/04/2026 05:26 EDT, modified 12:16 EDT; paragraphs 1-8",
+          "support": "已读署时正文：周四Austin少量商业部署、周五调查，不是全量开放或停运命令。此为所取得的期内报道版本，不宣称已穷尽更早披露。",
+          "page_modified_at": "2026-09-04T12:16:00-04:00"
+        }
+      ]
+    },
+    {
+      "id": "R05",
+      "statement": "NHTSA说明现行FMVSS仍适用；调查不是停运或违法判决。",
+      "targets": [
+        "event:2",
+        "company:Tesla"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://www.nhtsa.gov/press-releases/investigation-tesla-cybercab-self-certification",
+          "claim_first_public_at": "2026-09-04T23:59:59-04:00",
+          "retrieved_at": "2026-09-07T05:31:32.072Z",
+          "basis": "dated_release",
+          "locator": "NHTSA September 4, 2026 | Washington, DC; opening and FMVSS paragraphs",
+          "support": "仅日精度；Washington DC当日为EDT，取该日最晚时刻为保守公开上界，并非实际首次秒。正式调查自我认证；现行标准继续适用。"
+        }
+      ]
+    },
+    {
+      "id": "R06",
+      "statement": "出版商协会声明称Google广告技术案裁决不剥离AdX。",
+      "targets": [
+        "headline:3",
+        "company:Alphabet / Google",
+        "event:3"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://www.newsmediaalliance.org/google-ad-tech-remedies-ruling/",
+          "claim_first_public_at": "2026-09-02T23:59:59-04:00",
+          "retrieved_at": "2026-09-07T05:31:32.072Z",
+          "basis": "dated_release",
+          "locator": "News/Media Alliance, September 2, 2026, Arlington VA; statement paragraphs 1-3",
+          "support": "日精度及Arlington dateline支持EDT，取日末上界。声明说不剥离AdX但需经营改变；是利益相关方声明，未取得原裁判全文。"
+        }
+      ]
+    },
+    {
+      "id": "R07",
+      "statement": "同声明称仍有经营改变；未取得原裁判全文，不能判断具体执行条款。",
+      "targets": [
+        "headline:3",
+        "company:Alphabet / Google",
+        "event:3"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://www.newsmediaalliance.org/google-ad-tech-remedies-ruling/",
+          "claim_first_public_at": "2026-09-02T23:59:59-04:00",
+          "retrieved_at": "2026-09-07T05:31:32.072Z",
+          "basis": "dated_release",
+          "locator": "News/Media Alliance, September 2, 2026, Arlington VA; statement paragraphs 1-3",
+          "support": "日精度及Arlington dateline支持EDT，取日末上界。声明说不剥离AdX但需经营改变；是利益相关方声明，未取得原裁判全文。"
+        }
+      ]
+    },
+    {
+      "id": "R08",
+      "statement": "NVIDIA签署Hugging Face收购协议，金额$12,930,300,000，未交割。",
+      "targets": [
+        "headline:4",
+        "company:NVIDIA",
+        "event:5"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/",
+          "claim_first_public_at": "2026-09-03T11:56:49Z",
+          "retrieved_at": "2026-09-07T05:36:11.522822+00:00",
+          "basis": "dated_release",
+          "locator": "September 3 announcement, agreement and open-platform paragraphs",
+          "support": "签约价$12,930,300,000；尚未交割，多云多加速器承诺不是强制硬件采购。对应article JSON-LD，而非相关链接日期。",
+          "page_modified_at": "2026-09-03T20:54:05Z"
+        }
+      ]
+    },
+    {
+      "id": "R09",
+      "statement": "NVIDIA承诺Hugging Face继续多云和多加速器支持。",
+      "targets": [
+        "headline:4",
+        "company:NVIDIA",
+        "event:5"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/",
+          "claim_first_public_at": "2026-09-03T11:56:49Z",
+          "retrieved_at": "2026-09-07T05:36:11.522822+00:00",
+          "basis": "dated_release",
+          "locator": "September 3 announcement, agreement and open-platform paragraphs",
+          "support": "签约价$12,930,300,000；尚未交割，多云多加速器承诺不是强制硬件采购。对应article JSON-LD，而非相关链接日期。",
+          "page_modified_at": "2026-09-03T20:54:05Z"
+        }
+      ]
+    },
+    {
+      "id": "R10",
+      "statement": "9月3日Astra开始向部分组织分批推出，其他渠道后续扩围。",
+      "targets": [
+        "headline:5",
+        "company:OpenAI",
+        "event:6"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://openai.com/index/gpt-6-astra/",
+          "claim_first_public_at": "2026-09-03T11:00:00Z",
+          "retrieved_at": "2026-09-07T05:43:04.869Z",
+          "basis": "dated_release",
+          "locator": "Launch announcement, rollout paragraph; official https://openai.com/news/rss.xml matching launch URL pubDate",
+          "support": "正文明确分批向组织推出及后续ChatGPT/API/Azure/Bedrock；已解析官方RSS对应URL的Thu,03 Sep 2026 11:00 GMT，未引用RSS中其他文章日期。"
+        }
+      ]
+    },
+    {
+      "id": "R11",
+      "statement": "9月1日OpenAI已宣布Astra达到Critical网络安全能力阈值。",
+      "targets": [
+        "headline:5",
+        "company:OpenAI",
+        "event:6"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://openai.com/index/path-to-astra/",
+          "claim_first_public_at": "2026-09-01T13:00:00Z",
+          "retrieved_at": "2026-09-07T05:48:44.878Z",
+          "basis": "dated_release",
+          "locator": "September 1, paragraphs starting We now believe Astra meets the Critical threshold; matching official RSS item",
+          "support": "官方正文已读，Critical分级为9月1日已披露，不是9月3日首次得知。分级与公司缓解措施不代表独立认证安全。"
+        }
+      ]
+    },
+    {
+      "id": "R12",
+      "statement": "Astra公告包含Azure分批分发计划，不是已全区域上线。",
+      "targets": [
+        "company:Microsoft",
+        "event:9",
+        "supply:E27"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://openai.com/index/gpt-6-astra/",
+          "claim_first_public_at": "2026-09-03T11:00:00Z",
+          "retrieved_at": "2026-09-07T05:43:04.869Z",
+          "basis": "dated_release",
+          "locator": "Launch announcement, rollout paragraph; official https://openai.com/news/rss.xml matching launch URL pubDate",
+          "support": "正文明确分批向组织推出及后续ChatGPT/API/Azure/Bedrock；已解析官方RSS对应URL的Thu,03 Sep 2026 11:00 GMT，未引用RSS中其他文章日期。"
+        }
+      ]
+    },
+    {
+      "id": "R13",
+      "statement": "Astra公告包含Bedrock分批分发计划，不是新的AWS算力采购。",
+      "targets": [
+        "company:Amazon / AWS",
+        "event:1",
+        "supply:E20"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://openai.com/index/gpt-6-astra/",
+          "claim_first_public_at": "2026-09-03T11:00:00Z",
+          "retrieved_at": "2026-09-07T05:43:04.869Z",
+          "basis": "dated_release",
+          "locator": "Launch announcement, rollout paragraph; official https://openai.com/news/rss.xml matching launch URL pubDate",
+          "support": "正文明确分批向组织推出及后续ChatGPT/API/Azure/Bedrock；已解析官方RSS对应URL的Thu,03 Sep 2026 11:00 GMT，未引用RSS中其他文章日期。"
+        }
+      ]
+    },
+    {
+      "id": "R14",
+      "statement": "Fable5.1与Mythos5.1在9月1日发布。",
+      "targets": [
+        "headline:6",
+        "company:Anthropic",
+        "event:7"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://techcrunch.com/2026/09/01/anthropics-new-fable-release-is-cheaper-less-restrictive/",
+          "claim_first_public_at": "2026-09-01T12:39:00-07:00",
+          "retrieved_at": "2026-09-07T05:45:12.509Z",
+          "basis": "dated_media",
+          "locator": "TechCrunch 12:39 PM PDT September 1; opening release/access paragraphs; official release notes September 1 entry",
+          "support": "该带时区当日报道确认两款5.1发布及Mythos受限。仅据此确认发布/访问状态，其他细节见官方发布页与已日期化产品版本；不把报道时刻宣称为穷尽后的最早时刻。"
+        }
+      ]
+    },
+    {
+      "id": "R15",
+      "statement": "Mythos5.1仍限特定合作方访问。",
+      "targets": [
+        "headline:6",
+        "company:Anthropic",
+        "event:7"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://techcrunch.com/2026/09/01/anthropics-new-fable-release-is-cheaper-less-restrictive/",
+          "claim_first_public_at": "2026-09-01T12:39:00-07:00",
+          "retrieved_at": "2026-09-07T05:45:12.509Z",
+          "basis": "dated_media",
+          "locator": "TechCrunch 12:39 PM PDT September 1; opening release/access paragraphs; official release notes September 1 entry",
+          "support": "该带时区当日报道确认两款5.1发布及Mythos受限。仅据此确认发布/访问状态，其他细节见官方发布页与已日期化产品版本；不把报道时刻宣称为穷尽后的最早时刻。"
+        }
+      ]
+    },
+    {
+      "id": "R16",
+      "statement": "Fable5.1缓存读取每百万token为$0.25，下降75%，非总账单同比例下降。",
+      "targets": [
+        "headline:6",
+        "company:Anthropic",
+        "event:7"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+          "claim_first_public_at": "2026-09-01T23:59:59-07:00",
+          "retrieved_at": "2026-09-07T05:36:12.741271+00:00",
+          "basis": "dated_section",
+          "locator": "Official 5.1 launch page, Availability and pricing and EFS paragraphs; support.claude.com release-notes September 1 entry; contemporaneous TechCrunch September 1 PDT report",
+          "support": "仅使用具名5.1初始发布的缓存价与渠道/EFS段落。发布页仅标September，不能单独定日；官方9月1日条目明确链接该发布版本，当日PDT媒体确认发布与缓存降价；按已交叉验证的发布日取日末上界，非精确秒。当前产品文档的其他无日期更新不纳入。"
+        }
+      ]
+    },
+    {
+      "id": "R17",
+      "statement": "EFS为以后推出安排，不是本周已普遍上线。",
+      "targets": [
+        "event:7",
+        "company:Anthropic"
+      ],
+      "kind": "forecast",
+      "evidence": [
+        {
+          "url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-fable-5-1-on-aws/",
+          "claim_first_public_at": "2026-09-01T11:12:43-08:00",
+          "retrieved_at": "2026-09-07T05:36:22.601502+00:00",
+          "basis": "dated_release",
+          "locator": "September 1 AWS blog, opening and safety-review/data controls paragraphs",
+          "support": "元数据原样保留-08:00，不擅自改为PDT；正文具名Fable5.1、两个AWS入口、最多30天安全审查及条件式ZDR/EFS。",
+          "page_modified_at": "2026-09-01T11:13:35-08:00"
+        }
+      ]
+    },
+    {
+      "id": "R18",
+      "statement": "Fable5.1分发到Google Cloud，属既有合作的产品增强。",
+      "targets": [
+        "company:Alphabet / Google",
+        "supply:E28"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+          "claim_first_public_at": "2026-09-01T23:59:59-07:00",
+          "retrieved_at": "2026-09-07T05:36:12.741271+00:00",
+          "basis": "dated_section",
+          "locator": "Official 5.1 launch page, Availability and pricing and EFS paragraphs; support.claude.com release-notes September 1 entry; contemporaneous TechCrunch September 1 PDT report",
+          "support": "仅使用具名5.1初始发布的缓存价与渠道/EFS段落。发布页仅标September，不能单独定日；官方9月1日条目明确链接该发布版本，当日PDT媒体确认发布与缓存降价；按已交叉验证的发布日取日末上界，非精确秒。当前产品文档的其他无日期更新不纳入。"
+        }
+      ]
+    },
+    {
+      "id": "R19",
+      "statement": "Gemini3.8 Flash发布，Cyber通过Fairwind限可信防御方。",
+      "targets": [
+        "headline:7",
+        "company:Alphabet / Google",
+        "event:4"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
+          "claim_first_public_at": "2026-09-02T15:00:00Z",
+          "retrieved_at": "2026-09-07T05:41:02.846Z",
+          "basis": "dated_release",
+          "locator": "September 2 release, variant bullets, complex-task token caveat, footnote 1; article JSON-LD",
+          "support": "核对完整脚注：2026年末入门价到期；2027年起新标价是计划。metadata于本轮curl补取，dateModified在截止前；不用日期不明的定价总页。",
+          "page_modified_at": "2026-09-03T19:59:49.428661Z"
+        }
+      ]
+    },
+    {
+      "id": "R20",
+      "statement": "普通Flash入门价输入/输出每百万token为$0.75/$3.75。",
+      "targets": [
+        "headline:7",
+        "company:Alphabet / Google",
+        "event:4"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
+          "claim_first_public_at": "2026-09-02T15:00:00Z",
+          "retrieved_at": "2026-09-07T05:41:02.846Z",
+          "basis": "dated_release",
+          "locator": "September 2 release, variant bullets, complex-task token caveat, footnote 1; article JSON-LD",
+          "support": "核对完整脚注：2026年末入门价到期；2027年起新标价是计划。metadata于本轮curl补取，dateModified在截止前；不用日期不明的定价总页。",
+          "page_modified_at": "2026-09-03T19:59:49.428661Z"
+        }
+      ]
+    },
+    {
+      "id": "R21",
+      "statement": "已公布入门价2026年末到期，2027年起为$1.50/$7.50，不是本周实际价。",
+      "targets": [
+        "headline:7",
+        "company:Alphabet / Google",
+        "event:4"
+      ],
+      "kind": "forecast",
+      "evidence": [
+        {
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
+          "claim_first_public_at": "2026-09-02T15:00:00Z",
+          "retrieved_at": "2026-09-07T05:41:02.846Z",
+          "basis": "dated_release",
+          "locator": "September 2 release, variant bullets, complex-task token caveat, footnote 1; article JSON-LD",
+          "support": "核对完整脚注：2026年末入门价到期；2027年起新标价是计划。metadata于本轮curl补取，dateModified在截止前；不用日期不明的定价总页。",
+          "page_modified_at": "2026-09-03T19:59:49.428661Z"
+        }
+      ],
+      "event_at": "2027-01-01T00:00:00Z"
+    },
+    {
+      "id": "R22",
+      "statement": "Google说明复杂任务可能使用更多token，标价不等于成功任务成本。",
+      "targets": [
+        "event:4",
+        "company:Alphabet / Google"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
+          "claim_first_public_at": "2026-09-02T15:00:00Z",
+          "retrieved_at": "2026-09-07T05:41:02.846Z",
+          "basis": "dated_release",
+          "locator": "September 2 release, variant bullets, complex-task token caveat, footnote 1; article JSON-LD",
+          "support": "核对完整脚注：2026年末入门价到期；2027年起新标价是计划。metadata于本轮curl补取，dateModified在截止前；不用日期不明的定价总页。",
+          "page_modified_at": "2026-09-03T19:59:49.428661Z"
+        }
+      ]
+    },
+    {
+      "id": "R23",
+      "statement": "Reuters匿名来源称Anthropic与Lambda云协议350亿美元，双方未确认。",
+      "targets": [
+        "headline:8",
+        "company:Anthropic",
+        "event:8"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://www.channelnewsasia.com/business/anthropic-signs-us35-billion-cloud-deal-nvidia-backed-lambda-source-says-6353306",
+          "claim_first_public_at": "2026-09-01T07:59:00+08:00",
+          "retrieved_at": "2026-09-07T05:36:24.307989+00:00",
+          "basis": "dated_media",
+          "locator": "CNA Reuters article, dateline and paragraphs 1-6",
+          "support": "匿名来源说法；CNA同时记录08/31美国报道背景和转载时间；双方未回应。350亿美元为云协议额，350MW为项目规模，均非当期已执行支出。",
+          "page_modified_at": "2026-09-01T10:56:45+08:00"
+        }
+      ]
+    },
+    {
+      "id": "R24",
+      "statement": "上述报道涉及Texas350MW项目，设施功率不等于已交付算力。",
+      "targets": [
+        "event:8"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://www.channelnewsasia.com/business/anthropic-signs-us35-billion-cloud-deal-nvidia-backed-lambda-source-says-6353306",
+          "claim_first_public_at": "2026-09-01T07:59:00+08:00",
+          "retrieved_at": "2026-09-07T05:36:24.307989+00:00",
+          "basis": "dated_media",
+          "locator": "CNA Reuters article, dateline and paragraphs 1-6",
+          "support": "匿名来源说法；CNA同时记录08/31美国报道背景和转载时间；双方未回应。350亿美元为云协议额，350MW为项目规模，均非当期已执行支出。",
+          "page_modified_at": "2026-09-01T10:56:45+08:00"
+        }
+      ]
+    },
+    {
+      "id": "R25",
+      "statement": "TSMC管理层本周披露设备需求估计到7月为2025年末估计的1.9倍。",
+      "targets": [
+        "headline:9",
+        "company:TSMC",
+        "event:11"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://focustaiwan.tw/business/202609020027",
+          "claim_first_public_at": "2026-09-02T19:37:00+08:00",
+          "retrieved_at": "2026-09-07T05:36:26.091764+00:00",
+          "basis": "dated_media",
+          "locator": "Central News Agency 202609020027, Cliff Hou quoted equipment forecast paragraphs",
+          "support": "本周首次取得的现场披露版本：2025年末估计基准、2026Q1末1.5倍、7月1.9倍；不是产能或资本开支倍数。",
+          "page_modified_at": "2026-09-02T19:55:00+08:00"
+        }
+      ]
+    },
+    {
+      "id": "R26",
+      "statement": "同一披露中的2026Q1末设备需求估计为基准1.5倍，不是capex增幅。",
+      "targets": [
+        "event:11"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://focustaiwan.tw/business/202609020027",
+          "claim_first_public_at": "2026-09-02T19:37:00+08:00",
+          "retrieved_at": "2026-09-07T05:36:26.091764+00:00",
+          "basis": "dated_media",
+          "locator": "Central News Agency 202609020027, Cliff Hou quoted equipment forecast paragraphs",
+          "support": "本周首次取得的现场披露版本：2025年末估计基准、2026Q1末1.5倍、7月1.9倍；不是产能或资本开支倍数。",
+          "page_modified_at": "2026-09-02T19:55:00+08:00"
+        }
+      ]
+    },
+    {
+      "id": "R27",
+      "statement": "Muse Spark1.3发布，提供Muse Code/Meta API入口。",
+      "targets": [
+        "headline:10",
+        "company:Meta",
+        "event:10"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://research.meta.ai/blog/introducing-muse-spark-1-3",
+          "claim_first_public_at": "2026-09-02T23:59:59Z",
+          "retrieved_at": "2026-09-07T05:36:18.086114+00:00",
+          "basis": "dated_section",
+          "locator": "September 2 launch, performance comparison and availability sections; article published_time has Z offset",
+          "support": "CMS时间为当日00:00Z，可能是日精度占位，因此用UTC当日日末上界。20%/25%仅公司内部比较；不采用后来添加、无日期的最高推理档位上线表述。"
+        }
+      ]
+    },
+    {
+      "id": "R28",
+      "statement": "Meta内部对比称工具调用约减20%、token约减25%，不是普遍或独立验证结果。",
+      "targets": [
+        "headline:10",
+        "company:Meta",
+        "event:10"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://research.meta.ai/blog/introducing-muse-spark-1-3",
+          "claim_first_public_at": "2026-09-02T23:59:59Z",
+          "retrieved_at": "2026-09-07T05:36:18.086114+00:00",
+          "basis": "dated_section",
+          "locator": "September 2 launch, performance comparison and availability sections; article published_time has Z offset",
+          "support": "CMS时间为当日00:00Z，可能是日精度占位，因此用UTC当日日末上界。20%/25%仅公司内部比较；不采用后来添加、无日期的最高推理档位上线表述。"
+        }
+      ]
+    },
+    {
+      "id": "R29",
+      "statement": "Reuters披露8月中国制造Model3/Y销量86166辆且含出口。",
+      "targets": [
+        "company:Tesla",
+        "event:2"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://www.boursorama.com/bourse/actualites/les-ventes-de-vehicules-electriques-tesla-fabriques-en-chine-ont-progresse-de-3-6-en-glissement-annuel-en-aout-cc1be1471d4a008f874e9d0c9117facb",
+          "claim_first_public_at": "2026-09-02T12:27:38+02:00",
+          "retrieved_at": "2026-09-07T05:40:49.607Z",
+          "basis": "dated_media",
+          "locator": "Reuters French automated translation, September 2 12:27; first three paragraphs",
+          "support": "86166辆、同比3.6%、环比-7.9%、包含出口均在正文；仅归因Reuters，不把自动译文机构名称认证为CPCA原表。"
+        }
+      ]
+    },
+    {
+      "id": "R30",
+      "statement": "同口径8月销量同比+3.6%、环比-7.9%。",
+      "targets": [
+        "company:Tesla",
+        "event:2"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://www.boursorama.com/bourse/actualites/les-ventes-de-vehicules-electriques-tesla-fabriques-en-chine-ont-progresse-de-3-6-en-glissement-annuel-en-aout-cc1be1471d4a008f874e9d0c9117facb",
+          "claim_first_public_at": "2026-09-02T12:27:38+02:00",
+          "retrieved_at": "2026-09-07T05:40:49.607Z",
+          "basis": "dated_media",
+          "locator": "Reuters French automated translation, September 2 12:27; first three paragraphs",
+          "support": "86166辆、同比3.6%、环比-7.9%、包含出口均在正文；仅归因Reuters，不把自动译文机构名称认证为CPCA原表。"
+        }
+      ]
+    },
+    {
+      "id": "R31",
+      "statement": "Fable5.1在AWS两入口上线。",
+      "targets": [
+        "company:Amazon / AWS",
+        "event:1",
+        "supply:E05"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-fable-5-1-on-aws/",
+          "claim_first_public_at": "2026-09-01T11:12:43-08:00",
+          "retrieved_at": "2026-09-07T05:36:22.601502+00:00",
+          "basis": "dated_release",
+          "locator": "September 1 AWS blog, opening and safety-review/data controls paragraphs",
+          "support": "元数据原样保留-08:00，不擅自改为PDT；正文具名Fable5.1、两个AWS入口、最多30天安全审查及条件式ZDR/EFS。",
+          "page_modified_at": "2026-09-01T11:13:35-08:00"
+        }
+      ]
+    },
+    {
+      "id": "R32",
+      "statement": "AWS安全审查默认可保留数据最多30天，ZDR例外须合资格。",
+      "targets": [
+        "company:Amazon / AWS",
+        "event:1"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-fable-5-1-on-aws/",
+          "claim_first_public_at": "2026-09-01T11:12:43-08:00",
+          "retrieved_at": "2026-09-07T05:36:22.601502+00:00",
+          "basis": "dated_release",
+          "locator": "September 1 AWS blog, opening and safety-review/data controls paragraphs",
+          "support": "元数据原样保留-08:00，不擅自改为PDT；正文具名Fable5.1、两个AWS入口、最多30天安全审查及条件式ZDR/EFS。",
+          "page_modified_at": "2026-09-01T11:13:35-08:00"
+        }
+      ]
+    },
+    {
+      "id": "R33",
+      "statement": "Fable5.1开始向Cowork与Studio合资格用户分批推出，受区域/管理员限制。",
+      "targets": [
+        "company:Microsoft",
+        "event:9",
+        "supply:E26"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://techcommunity.microsoft.com/blog/microsoft365copilotblog/available-today-anthropic-claude-fable-5-1-in-microsoft-copilot/4551974",
+          "claim_first_public_at": "2026-09-01T12:26:41.578-07:00",
+          "retrieved_at": "2026-09-07T05:44:52.467Z",
+          "basis": "dated_section",
+          "locator": "Microsoft Community Hub article 4551974, complete body/rawBody and postTime; Get started today",
+          "support": "本轮检索工具实际返回完整正文及postTime，非只读摘要/标题；Cowork、Studio、区域与组织、管理员条件均可核。直连0行/403限制保留，未绕过登录或声称直连成功。"
+        }
+      ]
+    },
+    {
+      "id": "R34",
+      "statement": "GitHub宣布Fable5.1分批开放，组织管理员政策仍适用。",
+      "targets": [
+        "company:Microsoft",
+        "event:9",
+        "supply:E26"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://github.blog/changelog/2026-09-01-claude-fable-5-1-generally-available-in-github-copilot/",
+          "claim_first_public_at": "2026-09-01T07:29:23-07:00",
+          "retrieved_at": "2026-09-07T05:36:20.390342+00:00",
+          "basis": "dated_release",
+          "locator": "September 1 changelog, rolling out and admin/data-retention paragraphs",
+          "support": "官方GitHub变更条目及article日期相符，分批与管理员要求保留。",
+          "page_modified_at": "2026-09-02T00:02:28Z"
+        }
+      ]
+    },
+    {
+      "id": "R35",
+      "statement": "Apple4月20日宣布9月1日接班安排；这里只保留旧计划背景。",
+      "targets": [
+        "company:Apple"
+      ],
+      "kind": "background",
+      "evidence": [
+        {
+          "url": "https://www.apple.com/newsroom/2026/04/tim-cook-to-become-apple-executive-chairman-john-ternus-to-become-apple-ceo/",
+          "claim_first_public_at": "2026-04-20T23:59:59-07:00",
+          "retrieved_at": "2026-09-07T05:36:37.122719+00:00",
+          "basis": "dated_release",
+          "locator": "April 20 release, Cupertino California dateline and first paragraph",
+          "support": "仅旧背景：宣布9月1日接班安排，不将现任领导动态页当作本周新披露。California当日PDT，原文日精度按日末保守上界。",
+          "page_modified_at": "2026-08-19T18:05:44Z"
+        }
+      ]
+    },
+    {
+      "id": "R36",
+      "statement": "Samsung9月2日宣布两款IFA洗衣机展示预告，不是仅有技术科普。",
+      "targets": [
+        "company:Samsung Electronics"
+      ],
+      "kind": "news",
+      "evidence": [
+        {
+          "url": "https://news.samsung.com/global/samsung-redefines-laundry-with-new-a-70-and-13-kg-bespoke-ai-washers-at-ifa-2026",
+          "claim_first_public_at": "2026-09-02T15:30:00+09:00",
+          "retrieved_at": "2026-09-07T05:36:34.118640+00:00",
+          "basis": "dated_release",
+          "locator": "Korea September 2; first announcement and showcase paragraphs",
+          "support": "两款Bespoke AI洗衣机展示预告，不是订单/利润指引；本稿未引用未核脚注的节能百分比。",
+          "page_modified_at": "2026-09-02T15:31:23+09:00"
+        }
+      ]
+    },
+    {
+      "id": "R37",
+      "statement": "本次SK Hynix官方新闻及公司/权威媒体定期窗口检索未确认公司级重大新事件；所读文章是技术评论。",
+      "targets": [
+        "company:SK Hynix"
+      ],
+      "kind": "analysis",
+      "evidence": [
+        {
+          "url": "https://news.skhynix.com/en/ai-ecosystem-series-ep2/",
+          "claim_first_public_at": "2026-09-02T23:59:52Z",
+          "retrieved_at": "2026-09-07T05:50:02.170Z",
+          "basis": "dated_release",
+          "locator": "September 3 article and author disclaimer; exact URL entry in https://news.skhynix.com/en/feed",
+          "support": "官方RSS对应无后缀URL pubDate为Wed,02 Sep 2026 23:59:52 +0000。排除9月4日翻译后缀条目；文章是技术评论且声明非公司立场。检索判断不证明不存在其他新闻。"
+        }
+      ]
+    },
+    {
+      "id": "R38",
+      "statement": "Apple已公告9月9日10:00PDT发布会，即上海9月10日01:00，未举行。",
+      "targets": [
+        "company:Apple",
+        "catalyst:1"
+      ],
+      "kind": "forecast",
+      "evidence": [
+        {
+          "url": "https://www.macrumors.com/2026/08/26/apple-iphone-event-2026/",
+          "claim_first_public_at": "2026-08-26T09:02:00-07:00",
+          "retrieved_at": "2026-09-07T05:45:12.509Z",
+          "basis": "dated_section",
+          "locator": "MacRumors August 26 9:02 am PDT first paragraph; Apple dated developer notice id=s6spdug0",
+          "support": "只取已公告发布会时间，与Apple原始通知交叉核实；排除产品传闻。9/9 10:00PDT = 9/10 01:00上海；这是所获当日报道上界，不伪称穷尽最早发布秒。"
+        }
+      ],
+      "event_at": "2026-09-10T01:00:00+08:00"
+    },
+    {
+      "id": "R39",
+      "statement": "广告平台的结构性补救与诉讼风险应分别判断，不能直接合并利润冲击。",
+      "targets": [
+        "analysis:1",
+        "catalyst:2"
+      ],
+      "kind": "analysis",
+      "evidence": [
+        {
+          "url": "https://www.ftc.gov/news-events/news/press-releases/2026/08/ftc-states-sue-amazon-over-secret-ad-surcharge-scheme",
+          "claim_first_public_at": "2026-08-31T13:18:16-04:00",
+          "retrieved_at": "2026-09-07T05:36:31.558360+00:00",
+          "basis": "dated_release",
+          "locator": "FTC 2026-08-31 release, opening paragraphs; complaint p.5 para.1",
+          "support": "已读公告与起诉书首页/引言；22州及超过200亿美元属于原告指控。metadata publication与当天正文相符，不把抓取日当公开日。",
+          "page_modified_at": "2026-08-31T15:00:21-04:00"
+        },
+        {
+          "url": "https://www.newsmediaalliance.org/google-ad-tech-remedies-ruling/",
+          "claim_first_public_at": "2026-09-02T23:59:59-04:00",
+          "retrieved_at": "2026-09-07T05:31:32.072Z",
+          "basis": "dated_release",
+          "locator": "News/Media Alliance, September 2, 2026, Arlington VA; statement paragraphs 1-3",
+          "support": "日精度及Arlington dateline支持EDT，取日末上界。声明说不剥离AdX但需经营改变；是利益相关方声明，未取得原裁判全文。"
+        }
+      ]
+    },
+    {
+      "id": "R40",
+      "statement": "不同缓存价、限期价格与自测效率不能替代相同任务的成本比较。",
+      "targets": [
+        "analysis:2"
+      ],
+      "kind": "analysis",
+      "evidence": [
+        {
+          "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+          "claim_first_public_at": "2026-09-01T23:59:59-07:00",
+          "retrieved_at": "2026-09-07T05:36:12.741271+00:00",
+          "basis": "dated_section",
+          "locator": "Official 5.1 launch page, Availability and pricing and EFS paragraphs; support.claude.com release-notes September 1 entry; contemporaneous TechCrunch September 1 PDT report",
+          "support": "仅使用具名5.1初始发布的缓存价与渠道/EFS段落。发布页仅标September，不能单独定日；官方9月1日条目明确链接该发布版本，当日PDT媒体确认发布与缓存降价；按已交叉验证的发布日取日末上界，非精确秒。当前产品文档的其他无日期更新不纳入。"
+        },
+        {
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
+          "claim_first_public_at": "2026-09-02T15:00:00Z",
+          "retrieved_at": "2026-09-07T05:41:02.846Z",
+          "basis": "dated_release",
+          "locator": "September 2 release, variant bullets, complex-task token caveat, footnote 1; article JSON-LD",
+          "support": "核对完整脚注：2026年末入门价到期；2027年起新标价是计划。metadata于本轮curl补取，dateModified在截止前；不用日期不明的定价总页。",
+          "page_modified_at": "2026-09-03T19:59:49.428661Z"
+        },
+        {
+          "url": "https://research.meta.ai/blog/introducing-muse-spark-1-3",
+          "claim_first_public_at": "2026-09-02T23:59:59Z",
+          "retrieved_at": "2026-09-07T05:36:18.086114+00:00",
+          "basis": "dated_section",
+          "locator": "September 2 launch, performance comparison and availability sections; article published_time has Z offset",
+          "support": "CMS时间为当日00:00Z，可能是日精度占位，因此用UTC当日日末上界。20%/25%仅公司内部比较；不采用后来添加、无日期的最高推理档位上线表述。"
+        }
+      ]
+    },
+    {
+      "id": "R41",
+      "statement": "签约、匿名报道、设备估计、分批分发处于不同兑现阶段，继续观察交付而非相加收入。",
+      "targets": [
+        "analysis:3",
+        "catalyst:3"
+      ],
+      "kind": "analysis",
+      "evidence": [
+        {
+          "url": "https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/",
+          "claim_first_public_at": "2026-09-03T11:56:49Z",
+          "retrieved_at": "2026-09-07T05:36:11.522822+00:00",
+          "basis": "dated_release",
+          "locator": "September 3 announcement, agreement and open-platform paragraphs",
+          "support": "签约价$12,930,300,000；尚未交割，多云多加速器承诺不是强制硬件采购。对应article JSON-LD，而非相关链接日期。",
+          "page_modified_at": "2026-09-03T20:54:05Z"
+        },
+        {
+          "url": "https://www.channelnewsasia.com/business/anthropic-signs-us35-billion-cloud-deal-nvidia-backed-lambda-source-says-6353306",
+          "claim_first_public_at": "2026-09-01T07:59:00+08:00",
+          "retrieved_at": "2026-09-07T05:36:24.307989+00:00",
+          "basis": "dated_media",
+          "locator": "CNA Reuters article, dateline and paragraphs 1-6",
+          "support": "匿名来源说法；CNA同时记录08/31美国报道背景和转载时间；双方未回应。350亿美元为云协议额，350MW为项目规模，均非当期已执行支出。",
+          "page_modified_at": "2026-09-01T10:56:45+08:00"
+        },
+        {
+          "url": "https://focustaiwan.tw/business/202609020027",
+          "claim_first_public_at": "2026-09-02T19:37:00+08:00",
+          "retrieved_at": "2026-09-07T05:36:26.091764+00:00",
+          "basis": "dated_media",
+          "locator": "Central News Agency 202609020027, Cliff Hou quoted equipment forecast paragraphs",
+          "support": "本周首次取得的现场披露版本：2025年末估计基准、2026Q1末1.5倍、7月1.9倍；不是产能或资本开支倍数。",
+          "page_modified_at": "2026-09-02T19:55:00+08:00"
+        },
+        {
+          "url": "https://openai.com/index/gpt-6-astra/",
+          "claim_first_public_at": "2026-09-03T11:00:00Z",
+          "retrieved_at": "2026-09-07T05:43:04.869Z",
+          "basis": "dated_release",
+          "locator": "Launch announcement, rollout paragraph; official https://openai.com/news/rss.xml matching launch URL pubDate",
+          "support": "正文明确分批向组织推出及后续ChatGPT/API/Azure/Bedrock；已解析官方RSS对应URL的Thu,03 Sep 2026 11:00 GMT，未引用RSS中其他文章日期。"
+        },
+        {
+          "url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-fable-5-1-on-aws/",
+          "claim_first_public_at": "2026-09-01T11:12:43-08:00",
+          "retrieved_at": "2026-09-07T05:36:22.601502+00:00",
+          "basis": "dated_release",
+          "locator": "September 1 AWS blog, opening and safety-review/data controls paragraphs",
+          "support": "元数据原样保留-08:00，不擅自改为PDT；正文具名Fable5.1、两个AWS入口、最多30天安全审查及条件式ZDR/EFS。",
+          "page_modified_at": "2026-09-01T11:13:35-08:00"
+        }
+      ]
+    },
+    {
+      "id": "R42",
+      "statement": "商业部署和能力升级不自动解除安全/合规约束，下一周跟踪窗口不是已公告裁决日。",
+      "targets": [
+        "analysis:4",
+        "catalyst:2"
+      ],
+      "kind": "analysis",
+      "evidence": [
+        {
+          "url": "https://www.nhtsa.gov/press-releases/investigation-tesla-cybercab-self-certification",
+          "claim_first_public_at": "2026-09-04T23:59:59-04:00",
+          "retrieved_at": "2026-09-07T05:31:32.072Z",
+          "basis": "dated_release",
+          "locator": "NHTSA September 4, 2026 | Washington, DC; opening and FMVSS paragraphs",
+          "support": "仅日精度；Washington DC当日为EDT，取该日最晚时刻为保守公开上界，并非实际首次秒。正式调查自我认证；现行标准继续适用。"
+        },
+        {
+          "url": "https://openai.com/index/path-to-astra/",
+          "claim_first_public_at": "2026-09-01T13:00:00Z",
+          "retrieved_at": "2026-09-07T05:48:44.878Z",
+          "basis": "dated_release",
+          "locator": "September 1, paragraphs starting We now believe Astra meets the Critical threshold; matching official RSS item",
+          "support": "官方正文已读，Critical分级为9月1日已披露，不是9月3日首次得知。分级与公司缓解措施不代表独立认证安全。"
+        }
+      ]
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "statement": "把8月26日DuckLabs/AWS并购公告作为本周新签约或认定9月已交割",
+      "url": "https://ducklabs.com/news/2026/08/26/ducklabs-to-join-aws",
+      "reason": "旧公告；预计生效时间不是已完成结果。"
+    },
+    {
+      "statement": "Apple本周突然宣布CEO更替或用当前领导页认证当时生效",
+      "url": "https://www.apple.com/newsroom/2026/04/tim-cook-to-become-apple-executive-chairman-john-ternus-to-become-apple-ceo/",
+      "reason": "4月旧公告。当前动态页不能单独证明当时版本；降为背景。"
+    },
+    {
+      "statement": "Google广告技术案等同2025年搜索/Chrome案、完全免责或条款已最终确定",
+      "url": "https://www.newsmediaalliance.org/google-ad-tech-remedies-ruling/",
+      "reason": "不同案件；本次未取得裁判全文，不能补造条款。"
+    },
+    {
+      "statement": "Meta最高推理档位在初始发布时已全面可用",
+      "url": "https://research.meta.ai/blog/introducing-muse-spark-1-3",
+      "reason": "页面后加表述缺单独日期，未采用。"
+    },
+    {
+      "statement": "Anthropic8月31日安全整改中所有暂停/恢复细节都可精确归周",
+      "url": "https://www.anthropic.com/news/improving-alignment-security-efforts",
+      "reason": "正文已读，缺具体版本/时区锚点；本次只保留待核风险指引，不把新核验限制隐藏成无风险。"
+    },
+    {
+      "statement": "TSMC本周capex翻倍或设备需求1.9倍就是产能1.9倍",
+      "url": "https://focustaiwan.tw/business/202609020027",
+      "reason": "管理层设备需求估计不是财务支出或已实现产能。"
+    },
+    {
+      "statement": "Samsung本周仅有科普，或展示产品等于已获得订单",
+      "url": "https://news.samsung.com/global/samsung-redefines-laundry-with-new-a-70-and-13-kg-bespoke-ai-washers-at-ifa-2026",
+      "reason": "存在新品展示预告，已补公司表；不强行升为公司级重大财务催化。"
+    }
+  ]
+}

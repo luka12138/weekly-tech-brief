@@ -1,0 +1,296 @@
+{
+  "schema_version": 1,
+  "status": "partial_not_published",
+  "reviewed_at": "2026-09-08T03:44:04Z",
+  "report_date": "2026-09-07",
+  "cutoff_exclusive": "2026-09-07T00:00:00+08:00",
+  "draft_report_sha256": "ca8e0903f360fe1af5c6292f0b4df380c637229ffc4f8565a0d5971c0fecc92e",
+  "skill_sha256": "7c910f8c0d73530813c10aa7e0cdd5ca25b90b87e5abbcb8e5c807451aa37e88",
+  "inventory": {
+    "targets": 96,
+    "events": 57,
+    "headlines": 12,
+    "catalysts": 5
+  },
+  "sources": [
+    {
+      "id": "C94",
+      "url": "https://iclg.com/news/apple-faces-2bn-uk-class-action-over-app-tracking-rules/",
+      "first_public_at": "2026-09-03T13:14:59Z",
+      "modified_at": "2026-09-03T13:15:00Z",
+      "basis": "dated_media",
+      "locator": "Y02 turn161search1 whole article; Y-metadata C94",
+      "support": "9/3向CAT申请集体程序，原告估计20亿英镑；认证尚待，不是罚款。Reuters当日另报，Apple此前称保护隐私。",
+      "limitations": "未取得CAT申请原文件；不能将德国旧和解认作本案判决。"
+    },
+    {
+      "id": "C95",
+      "url": "https://blogs.windows.com/windowsdeveloper/2026/09/04/announcing-project-zenith-the-ready-to-code-windows-experience/",
+      "first_public_at": null,
+      "basis": "dated_release",
+      "locator": "Y05 turn164search0 full dated body",
+      "support": "9/4官方宣布Zenith，首先计划AMD Ryzen AI Halo；64GB+、250GB/s+设备面向本地模型。",
+      "limitations": "元数据HTTP403，原文仅日精度，未知具体时区，未认证final temporal。"
+    },
+    {
+      "id": "C96",
+      "url": "https://www.businessinsider.com/amazon-forecasts-delivery-network-us-packages-2026-9",
+      "first_public_at": "2026-09-03T09:00:02.581Z",
+      "basis": "dated_media",
+      "locator": "Y14 turn173view1 L168-187, L212-232",
+      "support": "7月内部初步规划本周披露，2029年自有网络88.7%；公司明确可能重大修订，DSP/Flex仍是第三方。",
+      "limitations": "仅媒体审阅文件，未独立取得内部规划，不当最终目标。"
+    },
+    {
+      "id": "C98",
+      "url": "https://www.law360.com/cybersecurity-privacy/articles/2520314/meta-ai-glasses-privacy-suit-expands-to-add-bystander-class",
+      "first_public_at": "2026-09-01T22:24:00-04:00",
+      "basis": "dated_media",
+      "locator": "Y10 turn169search1 dated lead; Y12 turn171view0 403",
+      "support": "导语明确眼镜诉讼新增旁观者群体诉请，不代表集体认证或胜诉。",
+      "limitations": "只读付费墙前导语；合并诉状与正文未取得，未认证全文。"
+    },
+    {
+      "id": "C99",
+      "url": "https://wbe-llp.com/news/lawsuit-accuses-meta-of-using-facebook-and-instagram-images-to-build-facial-recognition-and-generative-ai-systems-without-consent/",
+      "first_public_at": "2026-09-04T22:09:31Z",
+      "modified_at": "2026-09-04T22:09:31Z",
+      "basis": "dated_release",
+      "locator": "Y11 turn170view0 L25-36; Y-metadata C99",
+      "support": "原告代理律所声称9/4提拟集体诉讼，涉及脸部图像、NameTag、生成AI和BIPA/加州法律；请求认证和救济。",
+      "limitations": "当事人来源，非司法机关；法院原诉状及Meta本案回应未取得。"
+    },
+    {
+      "id": "C100",
+      "url": "https://www.aol.com/articles/mexico-takes-facebook-back-court-155539000.html",
+      "first_public_at": null,
+      "modified_at": "2026-09-06T15:55:00Z",
+      "basis": "dated_media",
+      "locator": "Y11 turn170view2 L34-68; Y13 turn172view3 L160-166; Y14 turn173view2 PDF",
+      "support": "隐私案D-101-CV-2021-00132计划9/8-10/2审理，来自8/20旧排期；与D-101-CV-2023-02838儿童安全案分开。",
+      "limitations": "AOL可见时间仅15:55 UTC，秒39来自URL，不作时间证据；精确首次公布/原PDF阅读待补。只拟作既知未来催化，不认证已开庭。"
+    },
+    {
+      "id": "C101",
+      "url": "https://tech.yahoo.com/ar-vr/articles/meta-disables-cameras-thousands-tampered-175949878.html",
+      "first_public_at": "2026-09-01T19:40:00Z",
+      "basis": "dated_media",
+      "locator": "Y10 turn169search2 dated visible body; Y11 direct fetch403",
+      "support": "Semafor采访Meta可穿戴副总裁：对检测到篡改隐私LED的设备关闭摄录，低于0.1%为公司估计；精确台数未披露。",
+      "limitations": "Yahoo可见转载但直连403；不主张所有功能损坏或整机永久报废。"
+    },
+    {
+      "id": "C102",
+      "url": "https://www.aol.com/articles/amazon-cargo-plane-fire-overshooting-194143000.html",
+      "first_public_at": null,
+      "modified_at": "2026-09-07T00:05:00Z",
+      "basis": "dated_media",
+      "locator": "Y14 turn173view0 L34-55",
+      "support": "事故发生于9/6迈阿密约14:00EDT，即18:00UTC，晚于本期16:00UTC截止。",
+      "limitations": "排除候选，不进入本期新闻或新供应边。"
+    }
+  ],
+  "metadata_capture": [
+    {
+      "id": "C94",
+      "url": "https://iclg.com/news/apple-faces-2bn-uk-class-action-over-app-tracking-rules/",
+      "retrieved_at": "2026-09-08T03:35:34.858500+00:00",
+      "status": 200,
+      "sha256": "fcfc4c4a643c8f636036bee758919ee2b13d1095a5bd635525fc42124f88cc50",
+      "final_url": "https://iclg.com/news/apple-faces-2bn-uk-class-action-over-app-tracking-rules/",
+      "metadata": [
+        {
+          "field": "article:published_time",
+          "value": "2026-09-03T13:14:59+00:00"
+        },
+        {
+          "field": "article:modified_time",
+          "value": "2026-09-03T13:15:00+00:00"
+        },
+        {
+          "field": "datePublished",
+          "value": "2026-09-03T13:14:59+00:00",
+          "headline": "Apple faces £2bn UK class action over app-tracking rules",
+          "url": "https://iclg.com/news/apple-faces-2bn-uk-class-action-over-app-tracking-rules/#article"
+        },
+        {
+          "field": "dateModified",
+          "value": "2026-09-03T13:15:00+00:00",
+          "headline": "Apple faces £2bn UK class action over app-tracking rules",
+          "url": "https://iclg.com/news/apple-faces-2bn-uk-class-action-over-app-tracking-rules/#article"
+        },
+        {
+          "field": "datePublished",
+          "value": "2026-09-03T13:14:59+00:00",
+          "headline": "Apple faces £2bn UK class action over app-tracking rules | ICLG",
+          "url": "https://iclg.com/news/apple-faces-2bn-uk-class-action-over-app-tracking-rules/"
+        },
+        {
+          "field": "dateModified",
+          "value": "2026-09-03T13:15:00+00:00",
+          "headline": "Apple faces £2bn UK class action over app-tracking rules | ICLG",
+          "url": "https://iclg.com/news/apple-faces-2bn-uk-class-action-over-app-tracking-rules/"
+        }
+      ]
+    },
+    {
+      "id": "C95",
+      "url": "https://blogs.windows.com/windowsdeveloper/2026/09/04/announcing-project-zenith-the-ready-to-code-windows-experience/",
+      "retrieved_at": "2026-09-08T03:35:38.032262+00:00",
+      "error": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "C99",
+      "url": "https://wbe-llp.com/news/lawsuit-accuses-meta-of-using-facebook-and-instagram-images-to-build-facial-recognition-and-generative-ai-systems-without-consent/",
+      "retrieved_at": "2026-09-08T03:35:38.703156+00:00",
+      "status": 200,
+      "sha256": "5c19591a82b6ae19f7326051fa99ddfc5e7226cae7ae38f9eb71bcd15d53571b",
+      "final_url": "https://wbe-llp.com/news/lawsuit-accuses-meta-of-using-facebook-and-instagram-images-to-build-facial-recognition-and-generative-ai-systems-without-consent/",
+      "metadata": [
+        {
+          "field": "article:published_time",
+          "value": "2026-09-04T22:09:31+00:00"
+        },
+        {
+          "field": "article:modified_time",
+          "value": "2026-09-04T22:09:31+00:00"
+        },
+        {
+          "field": "datePublished",
+          "value": "2026-09-04T18:09:31-04:00",
+          "headline": "Lawsuit Accuses Meta of Using Facebook and Instagram Images to Build Facial Recognition and Generative AI Systems Without Consent | Wexler Boley & Elgersma LLP",
+          "url": "https://wbe-llp.com/news/lawsuit-accuses-meta-of-using-facebook-and-instagram-images-to-build-facial-recognition-and-generative-ai-systems-without-consent/"
+        },
+        {
+          "field": "dateModified",
+          "value": "2026-09-04T18:09:31-04:00",
+          "headline": "Lawsuit Accuses Meta of Using Facebook and Instagram Images to Build Facial Recognition and Generative AI Systems Without Consent | Wexler Boley & Elgersma LLP",
+          "url": "https://wbe-llp.com/news/lawsuit-accuses-meta-of-using-facebook-and-instagram-images-to-build-facial-recognition-and-generative-ai-systems-without-consent/"
+        },
+        {
+          "field": "datePublished",
+          "value": "2026-09-04T22:09:31+00:00",
+          "headline": "Lawsuit Accuses Meta of Using Facebook and Instagram Images to Build Facial Recognition and Generative AI Systems Without Consent - Wexler Boley &amp; Elgersma LLP",
+          "url": "https://wbe-llp.com/news/lawsuit-accuses-meta-of-using-facebook-and-instagram-images-to-build-facial-recognition-and-generative-ai-systems-without-consent/"
+        }
+      ]
+    }
+  ],
+  "tool_attempts": [
+    {
+      "ids": [
+        "Y01"
+      ],
+      "started_at": "2026-09-08T03:27:58.394Z",
+      "returned_at": "2026-09-08T03:28:02.203Z"
+    },
+    {
+      "ids": [
+        "Y02"
+      ],
+      "started_at": "2026-09-08T03:28:17.437Z",
+      "returned_at": "2026-09-08T03:28:21.203Z"
+    },
+    {
+      "ids": [
+        "Y03"
+      ],
+      "started_at": "2026-09-08T03:28:52.436Z",
+      "returned_at": "2026-09-08T03:28:56.453Z"
+    },
+    {
+      "ids": [
+        "Y04"
+      ],
+      "started_at": "2026-09-08T03:29:15.865Z",
+      "returned_at": "2026-09-08T03:29:21.977Z"
+    },
+    {
+      "ids": [
+        "Y05"
+      ],
+      "started_at": "2026-09-08T03:29:53.306Z",
+      "returned_at": "2026-09-08T03:29:56.967Z"
+    },
+    {
+      "ids": [
+        "Y06"
+      ],
+      "started_at": "2026-09-08T03:30:05.079Z",
+      "returned_at": "2026-09-08T03:30:05.113Z",
+      "note": "Two Y06 code invocations exist; the first threw RangeError before dispatch. Only the last successful Y06 return is a source receipt."
+    },
+    {
+      "ids": [
+        "Y06"
+      ],
+      "started_at": "2026-09-08T03:30:15.514Z",
+      "returned_at": "2026-09-08T03:30:19.429Z",
+      "note": "Two Y06 code invocations exist; the first threw RangeError before dispatch. Only the last successful Y06 return is a source receipt."
+    },
+    {
+      "ids": [
+        "Y07"
+      ],
+      "started_at": "2026-09-08T03:30:41.812Z",
+      "returned_at": "2026-09-08T03:30:45.902Z"
+    },
+    {
+      "ids": [
+        "Y08"
+      ],
+      "started_at": "2026-09-08T03:31:16.852Z",
+      "returned_at": "2026-09-08T03:31:20.695Z"
+    },
+    {
+      "ids": [
+        "Y09"
+      ],
+      "started_at": "2026-09-08T03:31:38.071Z",
+      "returned_at": "2026-09-08T03:31:42.437Z"
+    },
+    {
+      "ids": [
+        "Y10"
+      ],
+      "started_at": "2026-09-08T03:32:02.508Z",
+      "returned_at": "2026-09-08T03:32:06.890Z"
+    },
+    {
+      "ids": [
+        "Y11"
+      ],
+      "started_at": "2026-09-08T03:32:29.930Z",
+      "returned_at": "2026-09-08T03:32:33.711Z"
+    },
+    {
+      "ids": [
+        "Y12"
+      ],
+      "started_at": "2026-09-08T03:32:58.209Z",
+      "returned_at": "2026-09-08T03:33:01.654Z"
+    },
+    {
+      "ids": [
+        "Y13"
+      ],
+      "started_at": "2026-09-08T03:33:39.185Z",
+      "returned_at": "2026-09-08T03:33:43.193Z"
+    },
+    {
+      "ids": [
+        "Y14"
+      ],
+      "started_at": "2026-09-08T03:34:07.810Z",
+      "returned_at": "2026-09-08T03:34:11.225Z"
+    }
+  ],
+  "limitations": [
+    "Not temporal certification; first_public_at null remains unresolved, never imputed from URL.",
+    "Raw copyrighted source text is not duplicated here; tool references and short factual support allow targeted reread.",
+    "C97 is routine deadline extension; C102 is outside window.",
+    "An inventory call used max_output_tokens=1000 and truncated; corrected by complete typed capture. Both attempts remain in token ledger.",
+    "First timeline parser assumed function_call; actual envelope is custom_tool_call. Initial empty lookup is not a no-use result.",
+    "Maintenance timestamp heuristic matched its own lookup code; only 03:38:12.763Z was the actual adapter edit."
+  ]
+}

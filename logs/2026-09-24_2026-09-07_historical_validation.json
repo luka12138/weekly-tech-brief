@@ -1,0 +1,54 @@
+{
+  "validated_at": "2026-09-24T09:34:25+08:00",
+  "report_date": "2026-09-07",
+  "status": "ready_for_historical_publication",
+  "scope": "Publish the already completed 2026-09-09 retrospective company_top5 rerun as a historical display revision.",
+  "report": {
+    "path": "reports/2026-09-07_weekly_morning_brief.md",
+    "sha256": "b4c1ae749c6b85aeb300eb65274448e9485a1dcee494474ebb2d2857add14e92"
+  },
+  "frozen_inputs": {
+    "supply": {
+      "path": "state/historical/2026-09-07_supply.json",
+      "sha256": "f0b72672eb7dcc8573ea3f0f68e733eb2fc1a7b398873ed334595a5529f6a674"
+    },
+    "product": {
+      "path": "state/historical/2026-09-07_product.json",
+      "sha256": "2608cf80d6adef906d6fc4c2c2d3415b9b5e5911fff0e10865d9082a4ebe4690"
+    }
+  },
+  "checks": {
+    "point_in_time": "passed",
+    "research_coverage": "passed",
+    "historical_quality_gate": "passed",
+    "python_tests": {
+      "passed": 156,
+      "failed": 0
+    },
+    "source_audit": {
+      "total": 99,
+      "reachable": 99,
+      "access_limited": 29,
+      "unclassified": 0,
+      "errors": 0,
+      "claim_total": 26,
+      "claim_matched": 22,
+      "claim_manual": 4,
+      "claim_failed": 0,
+      "source_cache_reused": 0,
+      "claim_cache_reused": 0
+    },
+    "graph_rebuild": "four asset hashes match the 2026-09-09 final validation receipt"
+  },
+  "preserved_current_state": {
+    "latest_sha256": "6f3c5e2bc07d4ada30339d70fe11c7a0c65550861df980edc12f742c2bac429e",
+    "current_supply_baseline_sha256": "ca90485c04614209139379e8c3edf1abf39fd9d36543d0b491aecbb8dcef60a6",
+    "current_product_graph_sha256": "9cab5511530a248a814852befcbd02402645c23370fe2747e54f069089041396",
+    "verified_2026_09_14_report_sha256": "81902b2228caf5b5dc4126cb57042608e91b9c2d5bfe26d0ad8c7119b44290ab"
+  },
+  "limitations": [
+    "This is a retrospective display revision and is not eligible as an original 2026-09-07 realtime backtest input.",
+    "Access-limited and manually checked sources remain explicitly classified in the source audit.",
+    "The validation certifies recorded bindings and repository invariants, not zero omission or independent truth of every source statement."
+  ]
+}
