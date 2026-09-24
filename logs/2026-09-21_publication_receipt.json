@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "report_date": "2026-09-21",
+  "status": "published",
+  "verified_at": "2026-09-24T01:17:50.931310+00:00",
+  "report_commit": "02653e7a4a4cca2db0ea170142e91b0aaf0e9db7",
+  "remote": "https://github.com/luka12138/weekly-tech-brief.git",
+  "branch": "main",
+  "observed_remote_head": "02653e7a4a4cca2db0ea170142e91b0aaf0e9db7",
+  "confirmation": "git push succeeded; subsequent git ls-remote returned the report commit for refs/heads/main",
+  "files": {
+    "reports/2026-09-21_weekly_morning_brief.md": "f0888f4d34922ebc64ec5393c0efd8d3143fb462989310276efffd6b8ccf5631",
+    "reports/latest.md": "6f3c5e2bc07d4ada30339d70fe11c7a0c65550861df980edc12f742c2bac429e",
+    "state/supply_graph_baseline.json": "ca90485c04614209139379e8c3edf1abf39fd9d36543d0b491aecbb8dcef60a6",
+    "state/product_relationships_2026.json": "9cab5511530a248a814852befcbd02402645c23370fe2747e54f069089041396",
+    "reports/2026-09-14_weekly_morning_brief.md": "81902b2228caf5b5dc4126cb57042608e91b9c2d5bfe26d0ad8c7119b44290ab"
+  },
+  "selection": {
+    "companies": 12,
+    "independent_events": 16,
+    "deferred_candidates": 11,
+    "headlines": 12,
+    "maximum_per_company": 5
+  },
+  "verification": {
+    "canonical_quality_gate": "passed",
+    "clean_commit_quality_gate": "passed",
+    "python_tests": 137,
+    "tool_adapter_tests": 11,
+    "source_urls": 85,
+    "access_limited": 13,
+    "unclassified": 0,
+    "hard_failed": 0,
+    "claim_failed": 0,
+    "temporal_claims": 35,
+    "targets": 48,
+    "svg_visual_review": "completed",
+    "manual_source_check": "E37 SEC filing preserved as HTTP 200 direct receipt and reviewed against filing text"
+  },
+  "limitations": [
+    "Finite official-channel screening plus one independent importance calibration; not an exhaustive news inventory.",
+    "Access-limited automatic checks do not imply every original document was unreadable; direct receipts are recorded separately.",
+    "The verified 2026-09-14 report and annual product graph were not modified or republished.",
+    "This receipt records the report commit; the receipt-only commit may advance main without changing the report.",
+    "Token ledger includes persisted counter deltas through its stated timestamp; later bookkeeping and the final response are not silently counted as zero."
+  ]
+}
