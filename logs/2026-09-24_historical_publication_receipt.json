@@ -1,0 +1,50 @@
+{
+  "confirmed_at": "2026-09-24T09:41:14+08:00",
+  "status": "pushed",
+  "remote": "origin",
+  "branch": "main",
+  "remote_head": "c42078729f434ba02b628e21e7b0187b49fa4173",
+  "report_commits": {
+    "2026-07-06_and_2026-07-27": "95e7c5efc10f0b14e3699882fce91a4d5d71148c",
+    "2026-09-07": "c42078729f434ba02b628e21e7b0187b49fa4173"
+  },
+  "report_hashes": {
+    "2026-07-06": "2bfbef9bdff69f853569f58b8ef0c0508090565eeb22713d5add9ea54eebb588",
+    "2026-07-27": "a9224c5457ab1ddaed0c4ccda6239444d3f91820988a3acc2ce0d9313274c133",
+    "2026-09-07": "b4c1ae749c6b85aeb300eb65274448e9485a1dcee494474ebb2d2857add14e92"
+  },
+  "verification": {
+    "remote_main_confirmed_by_git_ls_remote": true,
+    "2026-09-07_point_in_time": "passed",
+    "2026-09-07_research_coverage": "passed",
+    "2026-09-07_historical_quality_gate": "passed",
+    "python_tests": {
+      "passed": 156,
+      "failed": 0
+    },
+    "2026-09-07_source_audit": {
+      "total": 99,
+      "reachable": 99,
+      "access_limited": 29,
+      "unclassified": 0,
+      "errors": 0,
+      "claim_total": 26,
+      "claim_matched": 22,
+      "claim_manual": 4,
+      "claim_failed": 0,
+      "source_cache_reused": 0,
+      "claim_cache_reused": 0
+    }
+  },
+  "preserved": {
+    "2026-09-14_report_sha256": "81902b2228caf5b5dc4126cb57042608e91b9c2d5bfe26d0ad8c7119b44290ab",
+    "latest_sha256": "6f3c5e2bc07d4ada30339d70fe11c7a0c65550861df980edc12f742c2bac429e",
+    "current_supply_baseline_sha256": "ca90485c04614209139379e8c3edf1abf39fd9d36543d0b491aecbb8dcef60a6",
+    "current_product_graph_sha256": "9cab5511530a248a814852befcbd02402645c23370fe2747e54f069089041396"
+  },
+  "limitations": [
+    "The three files are retrospective display revisions and remain ineligible as original-Monday realtime backtest inputs.",
+    "The 2026-07-06 and 2026-07-27 corrections remain legacy_unverified for full historical availability.",
+    "The 2026-09-07 PIT record validates the retrospective report against the original cutoff; it does not claim the revision was published on 2026-09-07."
+  ]
+}
