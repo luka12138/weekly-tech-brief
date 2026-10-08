@@ -1,0 +1,39 @@
+{
+  "run_id": "2026-09-28_2026-10-05_catchup",
+  "start": "2026-10-08T02:44:42.310Z",
+  "end": "2026-10-08T06:06:07Z",
+  "counter_format": "thread_token_usage",
+  "phase_boundary_basis": "Contemporaneous assistant stage updates; increments crossing boundaries remain unclassified.",
+  "phases": [
+    {
+      "name": "production",
+      "start": "2026-10-08T02:44:42.310Z",
+      "end": "2026-10-08T05:08:13.904Z"
+    },
+    {
+      "name": "evidence",
+      "start": "2026-10-08T05:08:13.904Z",
+      "end": "2026-10-08T05:10:09.855Z"
+    },
+    {
+      "name": "production",
+      "start": "2026-10-08T05:10:09.855Z",
+      "end": "2026-10-08T05:15:24.936Z"
+    },
+    {
+      "name": "evidence",
+      "start": "2026-10-08T05:15:24.936Z",
+      "end": "2026-10-08T05:17:24.477Z"
+    },
+    {
+      "name": "production",
+      "start": "2026-10-08T05:17:24.477Z",
+      "end": "2026-10-08T05:23:11.516Z"
+    },
+    {
+      "name": "maintenance",
+      "start": "2026-10-08T05:23:11.516Z",
+      "end": "2026-10-08T06:06:07Z"
+    }
+  ]
+}
