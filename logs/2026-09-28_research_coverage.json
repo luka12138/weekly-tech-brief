@@ -1,0 +1,1415 @@
+{
+  "schema_version": 1,
+  "workflow_version": 2,
+  "selection_policy": "company_top5",
+  "report_date": "2026-09-28",
+  "cutoff_exclusive": "2026-09-28T00:00:00+08:00",
+  "status": "ready",
+  "run_started_at": "2026-10-08T03:50:39+00:00",
+  "checks": [
+    {
+      "id": "O01",
+      "company": "Apple",
+      "stage": "discovery",
+      "source_family": "company",
+      "status": "reviewed",
+      "query_or_url": "https://www.apple.com/newsroom/",
+      "entrypoint": "https://www.apple.com/newsroom/",
+      "result_ref": "Apple Newsroom 2026-09-22 Mac mini/Mac Studio availability",
+      "note": "核对9/22正文与512GB晚于本周的限制。",
+      "checked_at": "2026-10-08T03:50:39+00:00",
+      "businesses": [
+        "iPhone"
+      ],
+      "categories": [
+        "product"
+      ],
+      "candidate_ids": [
+        "APL-MAC"
+      ]
+    },
+    {
+      "id": "I01",
+      "company": "Apple",
+      "stage": "countercheck",
+      "source_family": "media",
+      "status": "reviewed",
+      "query_or_url": "Apple Sep21-27 2026 Reuters AP major AI legal accident",
+      "entrypoint": "https://apnews.com/",
+      "result_ref": "本期独立重要性搜索与Apple公告对照；未发现推翻上市阶段的材料。",
+      "note": "重点校准产品实际可用阶段；未把现场图或厂商自测作为销量。",
+      "checked_at": "2026-10-08T03:50:39+00:00",
+      "businesses": [],
+      "categories": [
+        "product"
+      ],
+      "candidate_ids": []
+    },
+    {
+      "id": "O02",
+      "company": "Microsoft",
+      "stage": "discovery",
+      "source_family": "company",
+      "status": "reviewed",
+      "query_or_url": "https://news.microsoft.com/",
+      "entrypoint": "https://news.microsoft.com/",
+      "result_ref": "Microsoft Official Blog 2026-09-25 Copilot Home Code Autopilot",
+      "note": "核对Frontier未来数周与Autopilot月底private preview。",
+      "checked_at": "2026-10-08T03:50:39+00:00",
+      "businesses": [
+        "Azure"
+      ],
+      "categories": [
+        "product"
+      ],
+      "candidate_ids": [
+        "MS-COPILOT"
+      ]
+    },
+    {
+      "id": "I02",
+      "company": "Microsoft",
+      "stage": "countercheck",
+      "source_family": "media",
+      "status": "reviewed",
+      "query_or_url": "Microsoft Copilot September 25 2026 Reuters AP regulation incident",
+      "entrypoint": "https://apnews.com/",
+      "result_ref": "独立产品和监管报道有限筛选；无足以把预览改写GA的证据。",
+      "note": "核对官方阶段与外部重要性，避免将计划当GA。",
+      "checked_at": "2026-10-08T03:50:39+00:00",
+      "businesses": [],
+      "categories": [
+        "product"
+      ],
+      "candidate_ids": []
+    },
+    {
+      "id": "O03",
+      "company": "Alphabet / Google",
+      "stage": "discovery",
+      "source_family": "company",
+      "status": "reviewed",
+      "query_or_url": "https://blog.google/",
+      "entrypoint": "https://blog.google/",
+      "result_ref": "Google Blog Sep24 Gemini 3.8 Live Avatar正文",
+      "note": "核对是上周Live模型的新Avatar形态及Gemini Enterprise入口。",
+      "checked_at": "2026-10-08T03:50:39+00:00",
+      "businesses": [
+        "搜索"
+      ],
+      "categories": [
+        "product"
+      ],
+      "candidate_ids": [
+        "GOO-AVATAR"
+      ]
+    },
+    {
+      "id": "I03",
+      "company": "Alphabet / Google",
+      "stage": "countercheck",
+      "source_family": "media",
+      "status": "reviewed",
+      "query_or_url": "Google September 21-27 2026 Reuters AP Gemini antitrust investigation",
+      "entrypoint": "https://apnews.com/",
+      "result_ref": "独立监管/产品有限筛选；Sep30 Argon排除本期。",
+      "note": "未将9/30后发Argon带入9/28期，也未把旧广告案重新作为新事。",
+      "checked_at": "2026-10-08T03:50:39+00:00",
+      "businesses": [],
+      "categories": [
+        "product"
+      ],
+      "candidate_ids": [
+        "D-GOO-ARGON"
+      ]
+    },
+    {
+      "id": "O04",
+      "company": "Amazon / AWS",
+      "stage": "discovery",
+      "source_family": "company",
+      "status": "reviewed",
+      "query_or_url": "https://www.aboutamazon.com/news",
+      "entrypoint": "https://www.aboutamazon.com/news",
+      "result_ref": "AWS News Blog Sep22 CloudWatch Omni",
+      "note": "核对本地可用与云连接可选，不宣称客户部署。",
+      "checked_at": "2026-10-08T03:50:39+00:00",
+      "businesses": [
+        "AWS"
+      ],
+      "categories": [
+        "product"
+      ],
+      "candidate_ids": [
+        "AWS-OMNI"
+      ]
+    },
+    {
+      "id": "I04",
+      "company": "Amazon / AWS",
+      "stage": "countercheck",
+      "source_family": "media",
+      "status": "reviewed",
+      "query_or_url": "Amazon AWS September 21-27 2026 Reuters AP FTC data center",
+      "entrypoint": "https://apnews.com/",
+      "result_ref": "独立重要性校准，未见比Omni更强且具期内版本的AWS增量。",
+      "note": "既有Generac合同是上期，未重复。",
+      "checked_at": "2026-10-08T03:50:39+00:00",
+      "businesses": [],
+      "categories": [
+        "product"
+      ],
+      "candidate_ids": []
+    },
+    {
+      "id": "O05",
+      "company": "Meta",
+      "stage": "discovery",
+      "source_family": "company",
+      "status": "reviewed",
+      "query_or_url": "https://about.fb.com/news/",
+      "entrypoint": "https://about.fb.com/news/",
+      "result_ref": "Meta Newsroom Sep24 Connect回顾",
+      "note": "核对Muse眼镜是未来数月的扩展，非既有Muse本周首发。",
+      "checked_at": "2026-10-08T03:50:39+00:00",
+      "businesses": [
+        "Facebook"
+      ],
+      "categories": [
+        "product"
+      ],
+      "candidate_ids": [
+        "META-CONNECT"
+      ]
+    },
+    {
+      "id": "I05",
+      "company": "Meta",
+      "stage": "countercheck",
+      "source_family": "media",
+      "status": "reviewed",
+      "query_or_url": "Meta Connect Sep23-27 2026 Reuters AP regulatory incident",
+      "entrypoint": "https://apnews.com/",
+      "result_ref": "独立产品及监管有限筛选；以Connect硬件/代理计划为本期增量。",
+      "note": "未把后来9/29 Muse Small Business带入本期。",
+      "checked_at": "2026-10-08T03:50:39+00:00",
+      "businesses": [],
+      "categories": [
+        "product"
+      ],
+      "candidate_ids": []
+    },
+    {
+      "id": "O06",
+      "company": "NVIDIA",
+      "stage": "discovery",
+      "source_family": "company",
+      "status": "reviewed",
+      "query_or_url": "https://nvidianews.nvidia.com/",
+      "entrypoint": "https://nvidianews.nvidia.com/",
+      "result_ref": "NVIDIA Blog Sep22 Isaac ROS 5.0",
+      "note": "核对released today及available now，但伙伴展示不作订单。",
+      "checked_at": "2026-10-08T03:50:39+00:00",
+      "businesses": [
+        "数据中心 GPU"
+      ],
+      "categories": [
+        "product"
+      ],
+      "candidate_ids": [
+        "NV-ROS"
+      ]
+    },
+    {
+      "id": "I06",
+      "company": "NVIDIA",
+      "stage": "countercheck",
+      "source_family": "media",
+      "status": "reviewed",
+      "query_or_url": "NVIDIA September 21-27 2026 Reuters AP export antitrust safety",
+      "entrypoint": "https://apnews.com/",
+      "result_ref": "独立报道有限筛选；9/28回购授权属于下一期。",
+      "note": "限定本期为ROS工具发布，不新增供应订单。",
+      "checked_at": "2026-10-08T03:50:39+00:00",
+      "businesses": [],
+      "categories": [
+        "product"
+      ],
+      "candidate_ids": []
+    },
+    {
+      "id": "O07",
+      "company": "Tesla",
+      "stage": "discovery",
+      "source_family": "company",
+      "status": "reviewed",
+      "query_or_url": "https://ir.tesla.com/press",
+      "entrypoint": "https://ir.tesla.com/press",
+      "result_ref": "Tesla IR press入口截至9/28排他窗口有限检查",
+      "note": "没有选入具版本、区分旧闻的新公司重要增量；既有Cybercab问询未当新事。",
+      "checked_at": "2026-10-08T03:50:39+00:00",
+      "businesses": [
+        "电动车"
+      ],
+      "categories": [
+        "product"
+      ],
+      "candidate_ids": []
+    },
+    {
+      "id": "I07",
+      "company": "Tesla",
+      "stage": "countercheck",
+      "source_family": "media",
+      "status": "reviewed",
+      "query_or_url": "Tesla September 21-27 2026 Reuters AP NHTSA Cybercab deliveries",
+      "entrypoint": "https://apnews.com/",
+      "result_ref": "独立NHTSA/Reuters有限筛选；9/15报道旧、10/2 Q3交付属下一期。",
+      "note": "保留监管旧事项活跃，不把报道日期错记本周。",
+      "checked_at": "2026-10-08T03:50:39+00:00",
+      "businesses": [],
+      "categories": [
+        "product"
+      ],
+      "candidate_ids": []
+    },
+    {
+      "id": "O08",
+      "company": "OpenAI",
+      "stage": "discovery",
+      "source_family": "company",
+      "status": "reviewed",
+      "query_or_url": "https://openai.com/news/",
+      "entrypoint": "https://openai.com/news/",
+      "result_ref": "Help Center Sep22 Sol/Luna独立日期条目及滚动安全时间线",
+      "note": "Sol/Luna Work/Codex与Chat区分；安全滚动页后发内容未被当成9/25原始版本。",
+      "checked_at": "2026-10-08T03:50:39+00:00",
+      "businesses": [
+        "GPT 模型"
+      ],
+      "categories": [
+        "product"
+      ],
+      "candidate_ids": [
+        "OA-SOL-LUNA"
+      ]
+    },
+    {
+      "id": "I08",
+      "company": "OpenAI",
+      "stage": "countercheck",
+      "source_family": "media",
+      "status": "reviewed",
+      "query_or_url": "OpenAI Sep21-27 2026 AP Reuters model agent misbehavior government websites",
+      "entrypoint": "https://apnews.com/",
+      "result_ref": "AP 2026-09-26 03:42:53 UTC研究代理行为新披露报道。",
+      "note": "把过往行为与本周披露分开，归因限于AP报道。",
+      "checked_at": "2026-10-08T03:50:39+00:00",
+      "businesses": [],
+      "categories": [
+        "governance"
+      ],
+      "candidate_ids": [
+        "OA-AGENT-SAFETY"
+      ]
+    },
+    {
+      "id": "O09",
+      "company": "Anthropic",
+      "stage": "discovery",
+      "source_family": "company",
+      "status": "reviewed",
+      "query_or_url": "https://www.anthropic.com/news",
+      "entrypoint": "https://www.anthropic.com/news",
+      "result_ref": "Anthropic Sep22 Claude Opus 5.5模型页",
+      "note": "核对定价、自测和外部评估的归因。",
+      "checked_at": "2026-10-08T03:50:39+00:00",
+      "businesses": [
+        "Claude 模型"
+      ],
+      "categories": [
+        "product"
+      ],
+      "candidate_ids": [
+        "AN-OPUS"
+      ]
+    },
+    {
+      "id": "I09",
+      "company": "Anthropic",
+      "stage": "countercheck",
+      "source_family": "media",
+      "status": "reviewed",
+      "query_or_url": "Anthropic Sep21-27 2026 AP Reuters Pentagon appeal Claude",
+      "entrypoint": "https://apnews.com/",
+      "result_ref": "AP 2026-09-25 16:47:28 UTC DC Circuit 2-1裁决；Reuters同日交叉。",
+      "note": "本周法院节点与加州另一程序分开。",
+      "checked_at": "2026-10-08T03:50:39+00:00",
+      "businesses": [],
+      "categories": [
+        "legal"
+      ],
+      "candidate_ids": [
+        "AN-COURT"
+      ]
+    },
+    {
+      "id": "O10",
+      "company": "Samsung Electronics",
+      "stage": "discovery",
+      "source_family": "company",
+      "status": "reviewed",
+      "query_or_url": "https://news.samsung.com/global/",
+      "entrypoint": "https://news.samsung.com/global/",
+      "result_ref": "Samsung Global Newsroom Sep23 AI-RAN合同公告",
+      "note": "KT与SK Telecom两份合同各建边，10月项目未开工。",
+      "checked_at": "2026-10-08T03:50:39+00:00",
+      "businesses": [
+        "存储"
+      ],
+      "categories": [
+        "operations"
+      ],
+      "candidate_ids": [
+        "SS-AIRAN"
+      ]
+    },
+    {
+      "id": "I10",
+      "company": "Samsung Electronics",
+      "stage": "countercheck",
+      "source_family": "media",
+      "status": "reviewed",
+      "query_or_url": "Samsung Sep21-27 2026 Reuters AP Korea AI RAN regulatory",
+      "entrypoint": "https://apnews.com/",
+      "result_ref": "独立报道重要性校准；以公司具日期签约原文为本期合同事实。",
+      "note": "无已交付、金额或收入事实，图谱限合同阶段。",
+      "checked_at": "2026-10-08T03:50:39+00:00",
+      "businesses": [],
+      "categories": [
+        "product"
+      ],
+      "candidate_ids": []
+    },
+    {
+      "id": "O11",
+      "company": "SK Hynix",
+      "stage": "discovery",
+      "source_family": "company",
+      "status": "reviewed",
+      "query_or_url": "https://news.skhynix.com/",
+      "entrypoint": "https://news.skhynix.com/",
+      "result_ref": "SK hynix Newsroom及IR Sep21-27条目",
+      "note": "9/21论坛仅日级日期处于边界；9/28 OIP进入下一期，均不强行纳入。",
+      "checked_at": "2026-10-08T03:50:39+00:00",
+      "businesses": [
+        "DRAM"
+      ],
+      "categories": [
+        "product"
+      ],
+      "candidate_ids": []
+    },
+    {
+      "id": "I11",
+      "company": "SK Hynix",
+      "stage": "countercheck",
+      "source_family": "media",
+      "status": "reviewed",
+      "query_or_url": "SK hynix September 21-27 2026 Reuters AP memory HBM regulation",
+      "entrypoint": "https://apnews.com/",
+      "result_ref": "独立存储/监管有限筛选；未定位可替代边界时间证据。",
+      "note": "不以Solidigm旧NAND厂讨论填充。",
+      "checked_at": "2026-10-08T03:50:39+00:00",
+      "businesses": [],
+      "categories": [
+        "product"
+      ],
+      "candidate_ids": [
+        "D-SK-FORUM"
+      ]
+    },
+    {
+      "id": "O12",
+      "company": "TSMC",
+      "stage": "discovery",
+      "source_family": "company",
+      "status": "reviewed",
+      "query_or_url": "https://pr.tsmc.com/english/news",
+      "entrypoint": "https://pr.tsmc.com/english/news",
+      "result_ref": "TSMC新闻/IR 9/21-27有限检查",
+      "note": "未发现可核的新公司特定重要发布；旧MediaTek 2nm公告仍未具名TSMC供货。",
+      "checked_at": "2026-10-08T03:50:39+00:00",
+      "businesses": [
+        "先进逻辑代工"
+      ],
+      "categories": [
+        "product"
+      ],
+      "candidate_ids": []
+    },
+    {
+      "id": "I12",
+      "company": "TSMC",
+      "stage": "countercheck",
+      "source_family": "media",
+      "status": "reviewed",
+      "query_or_url": "TSMC September 21-27 2026 Reuters AP 2nm CoWoS export",
+      "entrypoint": "https://apnews.com/",
+      "result_ref": "独立产业报道有限筛选；匿名产能推测无原件支持，不入选。",
+      "note": "不凭客户产品节点推断TSMC新增订单。",
+      "checked_at": "2026-10-08T03:50:39+00:00",
+      "businesses": [],
+      "categories": [
+        "product"
+      ],
+      "candidate_ids": [
+        "D-TSM-2NM"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "id": "APL-MAC",
+      "companies": [
+        "Apple"
+      ],
+      "summary": "新款Mac mini和Mac Studio开始销售",
+      "discovered_by": [
+        "O01"
+      ],
+      "materiality": "material",
+      "materiality_reason": "桌面端本地AI硬件进入销售阶段，销量和毛利尚无披露。",
+      "disposition": "included",
+      "reason": "本期入选且具体日期、版本、事实限制已人工核对。",
+      "claim_ids": [
+        "APL-MAC-1",
+        "APL-MAC-2"
+      ],
+      "targets": [
+        "company:Apple",
+        "event:1"
+      ],
+      "research": {
+        "event_key": "APL-MAC",
+        "canonical_id": "APL-MAC",
+        "member_ids": [
+          "APL-MAC"
+        ],
+        "identity_status": "identified",
+        "materials": [
+          {
+            "role": "source_review",
+            "path": "logs/2026-09-28_verified_events.json",
+            "locator": "9月22日UPDATE正文第31-46、98-103行，机型与512GB晚于本周"
+          },
+          {
+            "role": "source_review",
+            "path": "logs/2026-09-28_source_reviews.json",
+            "locator": "retrieval and four semantic reviews for APL-MAC"
+          }
+        ],
+        "open_questions": [],
+        "next_action": {
+          "kind": "closed",
+          "target": "APL-MAC",
+          "question": "本期入选事实及限制已核对"
+        }
+      }
+    },
+    {
+      "id": "MS-COPILOT",
+      "companies": [
+        "Microsoft"
+      ],
+      "summary": "宣布Copilot Home、Code和Autopilot",
+      "discovered_by": [
+        "O02"
+      ],
+      "materiality": "material",
+      "materiality_reason": "工作流代理入口扩展，但部署和付费转化仍需验证。",
+      "disposition": "included",
+      "reason": "本期入选且具体日期、版本、事实限制已人工核对。",
+      "claim_ids": [
+        "MS-COPILOT-1",
+        "MS-COPILOT-2"
+      ],
+      "targets": [
+        "company:Microsoft",
+        "event:2"
+      ],
+      "research": {
+        "event_key": "MS-COPILOT",
+        "canonical_id": "MS-COPILOT",
+        "member_ids": [
+          "MS-COPILOT"
+        ],
+        "identity_status": "identified",
+        "materials": [
+          {
+            "role": "source_review",
+            "path": "logs/2026-09-28_verified_events.json",
+            "locator": "9月25日官方博客第3、6-9行与Autopilot段"
+          },
+          {
+            "role": "source_review",
+            "path": "logs/2026-09-28_source_reviews.json",
+            "locator": "retrieval and four semantic reviews for MS-COPILOT"
+          }
+        ],
+        "open_questions": [],
+        "next_action": {
+          "kind": "closed",
+          "target": "MS-COPILOT",
+          "question": "本期入选事实及限制已核对"
+        }
+      }
+    },
+    {
+      "id": "GOO-AVATAR",
+      "companies": [
+        "Alphabet / Google"
+      ],
+      "summary": "Gemini 3.8 Live新增Live Avatar企业入口",
+      "discovered_by": [
+        "O03"
+      ],
+      "materiality": "material",
+      "materiality_reason": "企业实时多模态交互有新入口，采用规模未披露。",
+      "disposition": "included",
+      "reason": "本期入选且具体日期、版本、事实限制已人工核对。",
+      "claim_ids": [
+        "GOO-AVATAR-1",
+        "GOO-AVATAR-2"
+      ],
+      "targets": [
+        "company:Alphabet / Google",
+        "event:3"
+      ],
+      "research": {
+        "event_key": "GOO-AVATAR",
+        "canonical_id": "GOO-AVATAR",
+        "member_ids": [
+          "GOO-AVATAR"
+        ],
+        "identity_status": "identified",
+        "materials": [
+          {
+            "role": "source_review",
+            "path": "logs/2026-09-28_verified_events.json",
+            "locator": "9月24日文章正文第214-238行，明确last week's Live launch"
+          },
+          {
+            "role": "source_review",
+            "path": "logs/2026-09-28_source_reviews.json",
+            "locator": "retrieval and four semantic reviews for GOO-AVATAR"
+          }
+        ],
+        "open_questions": [],
+        "next_action": {
+          "kind": "closed",
+          "target": "GOO-AVATAR",
+          "question": "本期入选事实及限制已核对"
+        }
+      }
+    },
+    {
+      "id": "AWS-OMNI",
+      "companies": [
+        "Amazon / AWS"
+      ],
+      "summary": "CloudWatch Omni面向AI代理推出",
+      "discovered_by": [
+        "O04"
+      ],
+      "materiality": "material",
+      "materiality_reason": "代理运营工具扩展，收入与生产采用未知。",
+      "disposition": "included",
+      "reason": "本期入选且具体日期、版本、事实限制已人工核对。",
+      "claim_ids": [
+        "AWS-OMNI-1",
+        "AWS-OMNI-2"
+      ],
+      "targets": [
+        "company:Amazon / AWS",
+        "event:4"
+      ],
+      "research": {
+        "event_key": "AWS-OMNI",
+        "canonical_id": "AWS-OMNI",
+        "member_ids": [
+          "AWS-OMNI"
+        ],
+        "identity_status": "identified",
+        "materials": [
+          {
+            "role": "source_review",
+            "path": "logs/2026-09-28_verified_events.json",
+            "locator": "9月22日AWS News Blog第233-246行与可选云连接说明"
+          },
+          {
+            "role": "source_review",
+            "path": "logs/2026-09-28_source_reviews.json",
+            "locator": "retrieval and four semantic reviews for AWS-OMNI"
+          }
+        ],
+        "open_questions": [],
+        "next_action": {
+          "kind": "closed",
+          "target": "AWS-OMNI",
+          "question": "本期入选事实及限制已核对"
+        }
+      }
+    },
+    {
+      "id": "META-CONNECT",
+      "companies": [
+        "Meta"
+      ],
+      "summary": "Connect公布Muse眼镜计划与VR Glasses",
+      "discovered_by": [
+        "O05"
+      ],
+      "materiality": "material",
+      "materiality_reason": "AI代理与可穿戴设备结合方向明确，出货和留存待看。",
+      "disposition": "included",
+      "reason": "本期入选且具体日期、版本、事实限制已人工核对。",
+      "claim_ids": [
+        "META-CONNECT-1",
+        "META-CONNECT-2"
+      ],
+      "targets": [
+        "company:Meta",
+        "event:5"
+      ],
+      "research": {
+        "event_key": "META-CONNECT",
+        "canonical_id": "META-CONNECT",
+        "member_ids": [
+          "META-CONNECT"
+        ],
+        "identity_status": "identified",
+        "materials": [
+          {
+            "role": "source_review",
+            "path": "logs/2026-09-28_verified_events.json",
+            "locator": "9月24日Connect回顾第239-267行，Muse coming months"
+          },
+          {
+            "role": "source_review",
+            "path": "logs/2026-09-28_source_reviews.json",
+            "locator": "retrieval and four semantic reviews for META-CONNECT"
+          }
+        ],
+        "open_questions": [],
+        "next_action": {
+          "kind": "closed",
+          "target": "META-CONNECT",
+          "question": "本期入选事实及限制已核对"
+        }
+      }
+    },
+    {
+      "id": "NV-ROS",
+      "companies": [
+        "NVIDIA"
+      ],
+      "summary": "Isaac ROS 5.0开源版本发布",
+      "discovered_by": [
+        "O06"
+      ],
+      "materiality": "material",
+      "materiality_reason": "物理AI软件生态扩大，硬件转化未获证实。",
+      "disposition": "included",
+      "reason": "本期入选且具体日期、版本、事实限制已人工核对。",
+      "claim_ids": [
+        "NV-ROS-1",
+        "NV-ROS-2"
+      ],
+      "targets": [
+        "company:NVIDIA",
+        "event:6"
+      ],
+      "research": {
+        "event_key": "NV-ROS",
+        "canonical_id": "NV-ROS",
+        "member_ids": [
+          "NV-ROS"
+        ],
+        "identity_status": "identified",
+        "materials": [
+          {
+            "role": "source_review",
+            "path": "logs/2026-09-28_verified_events.json",
+            "locator": "9月22日博客第1-14、74行，released today与available now"
+          },
+          {
+            "role": "source_review",
+            "path": "logs/2026-09-28_source_reviews.json",
+            "locator": "retrieval and four semantic reviews for NV-ROS"
+          }
+        ],
+        "open_questions": [],
+        "next_action": {
+          "kind": "closed",
+          "target": "NV-ROS",
+          "question": "本期入选事实及限制已核对"
+        }
+      }
+    },
+    {
+      "id": "OA-SOL-LUNA",
+      "companies": [
+        "OpenAI"
+      ],
+      "summary": "GPT-6 Sol和Luna进入Work与Codex",
+      "discovered_by": [
+        "O08"
+      ],
+      "materiality": "material",
+      "materiality_reason": "面向工作与开发任务的模型组合更新，未披露新增收入。",
+      "disposition": "included",
+      "reason": "本期入选且具体日期、版本、事实限制已人工核对。",
+      "claim_ids": [
+        "OA-SOL-LUNA-1",
+        "OA-SOL-LUNA-2"
+      ],
+      "targets": [
+        "company:OpenAI",
+        "event:7"
+      ],
+      "research": {
+        "event_key": "OA-SOL-LUNA",
+        "canonical_id": "OA-SOL-LUNA",
+        "member_ids": [
+          "OA-SOL-LUNA"
+        ],
+        "identity_status": "identified",
+        "materials": [
+          {
+            "role": "source_review",
+            "path": "logs/2026-09-28_verified_events.json",
+            "locator": "September 22, 2026节第159-167行，GPT-6 Sol and Luna in Work and Codex"
+          },
+          {
+            "role": "source_review",
+            "path": "logs/2026-09-28_source_reviews.json",
+            "locator": "retrieval and four semantic reviews for OA-SOL-LUNA"
+          }
+        ],
+        "open_questions": [],
+        "next_action": {
+          "kind": "closed",
+          "target": "OA-SOL-LUNA",
+          "question": "本期入选事实及限制已核对"
+        }
+      }
+    },
+    {
+      "id": "OA-AGENT-SAFETY",
+      "companies": [
+        "OpenAI"
+      ],
+      "summary": "研究代理第三方网站行为披露再有进展",
+      "discovered_by": [
+        "I08"
+      ],
+      "materiality": "material",
+      "materiality_reason": "代理治理和第三方通知风险上升，实际影响与归因待核。",
+      "disposition": "included",
+      "reason": "本期入选且具体日期、版本、事实限制已人工核对。",
+      "claim_ids": [
+        "OA-AGENT-SAFETY-1",
+        "OA-AGENT-SAFETY-2"
+      ],
+      "targets": [
+        "company:OpenAI",
+        "event:8"
+      ],
+      "research": {
+        "event_key": "OA-AGENT-SAFETY",
+        "canonical_id": "OA-AGENT-SAFETY",
+        "member_ids": [
+          "OA-AGENT-SAFETY"
+        ],
+        "identity_status": "identified",
+        "materials": [
+          {
+            "role": "source_review",
+            "path": "logs/2026-09-28_verified_events.json",
+            "locator": "AP 2026-09-26 03:42:53 UTC报道9月25日披露；研究/评估与实际影响区分"
+          },
+          {
+            "role": "source_review",
+            "path": "logs/2026-09-28_source_reviews.json",
+            "locator": "retrieval and four semantic reviews for OA-AGENT-SAFETY"
+          }
+        ],
+        "open_questions": [],
+        "next_action": {
+          "kind": "closed",
+          "target": "OA-AGENT-SAFETY",
+          "question": "本期入选事实及限制已核对"
+        }
+      }
+    },
+    {
+      "id": "AN-OPUS",
+      "companies": [
+        "Anthropic"
+      ],
+      "summary": "Claude Opus 5.5发布",
+      "discovered_by": [
+        "O09"
+      ],
+      "materiality": "material",
+      "materiality_reason": "高端模型价格与性能竞争增强，实际采用待验证。",
+      "disposition": "included",
+      "reason": "本期入选且具体日期、版本、事实限制已人工核对。",
+      "claim_ids": [
+        "AN-OPUS-1",
+        "AN-OPUS-2"
+      ],
+      "targets": [
+        "company:Anthropic",
+        "event:9"
+      ],
+      "research": {
+        "event_key": "AN-OPUS",
+        "canonical_id": "AN-OPUS",
+        "member_ids": [
+          "AN-OPUS"
+        ],
+        "identity_status": "identified",
+        "materials": [
+          {
+            "role": "source_review",
+            "path": "logs/2026-09-28_verified_events.json",
+            "locator": "9月22日模型公告第14-33行，价格与自测范围"
+          },
+          {
+            "role": "source_review",
+            "path": "logs/2026-09-28_source_reviews.json",
+            "locator": "retrieval and four semantic reviews for AN-OPUS"
+          }
+        ],
+        "open_questions": [],
+        "next_action": {
+          "kind": "closed",
+          "target": "AN-OPUS",
+          "question": "本期入选事实及限制已核对"
+        }
+      }
+    },
+    {
+      "id": "AN-COURT",
+      "companies": [
+        "Anthropic"
+      ],
+      "summary": "联邦上诉法院维持国防部供应链风险指定",
+      "discovered_by": [
+        "I09"
+      ],
+      "materiality": "material",
+      "materiality_reason": "国防采购资格仍受法律约束，后续程序与商业影响未定。",
+      "disposition": "included",
+      "reason": "本期入选且具体日期、版本、事实限制已人工核对。",
+      "claim_ids": [
+        "AN-COURT-1",
+        "AN-COURT-2"
+      ],
+      "targets": [
+        "company:Anthropic",
+        "event:10"
+      ],
+      "research": {
+        "event_key": "AN-COURT",
+        "canonical_id": "AN-COURT",
+        "member_ids": [
+          "AN-COURT"
+        ],
+        "identity_status": "identified",
+        "materials": [
+          {
+            "role": "source_review",
+            "path": "logs/2026-09-28_verified_events.json",
+            "locator": "AP 2026-09-25 16:47:28 UTC报道首段与2-1裁决；Reuters同日交叉"
+          },
+          {
+            "role": "source_review",
+            "path": "logs/2026-09-28_source_reviews.json",
+            "locator": "retrieval and four semantic reviews for AN-COURT"
+          }
+        ],
+        "open_questions": [],
+        "next_action": {
+          "kind": "closed",
+          "target": "AN-COURT",
+          "question": "本期入选事实及限制已核对"
+        }
+      }
+    },
+    {
+      "id": "SS-AIRAN",
+      "companies": [
+        "Samsung Electronics"
+      ],
+      "summary": "与KT和SK Telecom签署AI-RAN项目合同",
+      "discovered_by": [
+        "O10"
+      ],
+      "materiality": "material",
+      "materiality_reason": "工业专网项目订单阶段推进，交付及收入节奏未披露。",
+      "disposition": "included",
+      "reason": "本期入选且具体日期、版本、事实限制已人工核对。",
+      "claim_ids": [
+        "SS-AIRAN-1",
+        "SS-AIRAN-2"
+      ],
+      "targets": [
+        "company:Samsung Electronics",
+        "event:11"
+      ],
+      "research": {
+        "event_key": "SS-AIRAN",
+        "canonical_id": "SS-AIRAN",
+        "member_ids": [
+          "SS-AIRAN"
+        ],
+        "identity_status": "identified",
+        "materials": [
+          {
+            "role": "source_review",
+            "path": "logs/2026-09-28_verified_events.json",
+            "locator": "9月23日全球Newsroom第65-76行，合同角色与10月起项目"
+          },
+          {
+            "role": "source_review",
+            "path": "logs/2026-09-28_source_reviews.json",
+            "locator": "retrieval and four semantic reviews for SS-AIRAN"
+          }
+        ],
+        "open_questions": [],
+        "next_action": {
+          "kind": "closed",
+          "target": "SS-AIRAN",
+          "question": "本期入选事实及限制已核对"
+        }
+      }
+    },
+    {
+      "id": "D-GOO-ARGON",
+      "companies": [
+        "Alphabet / Google"
+      ],
+      "summary": "Gemini 4 Argon 9月30日公告",
+      "discovered_by": [
+        "I03"
+      ],
+      "materiality": "material",
+      "materiality_reason": "公开日9月30日，超出9月28日报告排他截止；顺延10月5日期，不得倒填。",
+      "disposition": "deferred",
+      "reason": "公开日9月30日，超出9月28日报告排他截止；顺延10月5日期，不得倒填。",
+      "decision_evidence": "公开日9月30日，超出9月28日报告排他截止；顺延10月5日期，不得倒填。",
+      "research": {
+        "event_key": "D-GOO-ARGON",
+        "canonical_id": "D-GOO-ARGON",
+        "member_ids": [
+          "D-GOO-ARGON"
+        ],
+        "identity_status": "identified",
+        "materials": [
+          {
+            "role": "source_review",
+            "path": "logs/2026-09-28_source_reviews.json",
+            "locator": "Gemini 4 Argon 9月30日公告"
+          }
+        ],
+        "open_questions": [
+          "在10月5日期核对当时具体版本与开放状态。"
+        ],
+        "next_action": {
+          "kind": "fetch_gap",
+          "target": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+          "question": "在10月5日期核对当时具体版本与开放状态。"
+        }
+      }
+    },
+    {
+      "id": "D-SK-FORUM",
+      "companies": [
+        "SK Hynix"
+      ],
+      "summary": "9月21日论坛材料",
+      "discovered_by": [
+        "I11"
+      ],
+      "materiality": "material",
+      "materiality_reason": "仅有9月21日且时区/首次公开时刻未明，全球完整可能区间跨9/28报告周起点；未入选，不以推定时刻补足。",
+      "disposition": "deferred",
+      "reason": "仅有9月21日且时区/首次公开时刻未明，全球完整可能区间跨9/28报告周起点；未入选，不以推定时刻补足。",
+      "decision_evidence": "仅有9月21日且时区/首次公开时刻未明，全球完整可能区间跨9/28报告周起点；未入选，不以推定时刻补足。",
+      "research": {
+        "event_key": "D-SK-FORUM",
+        "canonical_id": "D-SK-FORUM",
+        "member_ids": [
+          "D-SK-FORUM"
+        ],
+        "identity_status": "identified",
+        "materials": [
+          {
+            "role": "source_review",
+            "path": "logs/2026-09-28_source_reviews.json",
+            "locator": "9月21日论坛材料"
+          }
+        ],
+        "open_questions": [
+          "如后续需要引用该旧材料，寻找带时区原始版本。"
+        ],
+        "next_action": {
+          "kind": "fetch_gap",
+          "target": "https://news.skhynix.com/",
+          "question": "如后续需要引用该旧材料，寻找带时区原始版本。"
+        }
+      }
+    },
+    {
+      "id": "D-TSM-2NM",
+      "companies": [
+        "TSMC"
+      ],
+      "summary": "MediaTek 2nm产品与TSMC制造关系传闻",
+      "discovered_by": [
+        "I12"
+      ],
+      "materiality": "material",
+      "materiality_reason": "9月15日MediaTek原公告未具名TSMC，独立猜测不构成新确认供货。",
+      "disposition": "deferred",
+      "reason": "9月15日MediaTek原公告未具名TSMC，独立猜测不构成新确认供货。",
+      "decision_evidence": "9月15日MediaTek原公告未具名TSMC，独立猜测不构成新确认供货。",
+      "research": {
+        "event_key": "D-TSM-2NM",
+        "canonical_id": "D-TSM-2NM",
+        "member_ids": [
+          "D-TSM-2NM"
+        ],
+        "identity_status": "identified",
+        "materials": [
+          {
+            "role": "source_review",
+            "path": "logs/2026-09-28_source_reviews.json",
+            "locator": "MediaTek 2nm产品与TSMC制造关系传闻"
+          }
+        ],
+        "open_questions": [
+          "等待双方具名原始协议或供货披露。"
+        ],
+        "next_action": {
+          "kind": "fetch_gap",
+          "target": "https://pr.tsmc.com/english/news",
+          "question": "等待双方具名原始协议或供货披露。"
+        }
+      }
+    }
+  ],
+  "company_conclusions": {
+    "Apple": {
+      "status": "events",
+      "selected_candidate_ids": [
+        "APL-MAC"
+      ],
+      "check_ids": [
+        "O01",
+        "I01"
+      ],
+      "note": "入选桌面Mac实际销售一项，不重复上期iPhone开售。",
+      "selection_reason": "按业务、财务/资本、产品、监管与治理影响排序；仅入具版本和可得性证据事项。",
+      "legal_review": "监管及事故线索有限校准，未选入可核独立增量；不表示风险解除。"
+    },
+    "Microsoft": {
+      "status": "events",
+      "selected_candidate_ids": [
+        "MS-COPILOT"
+      ],
+      "check_ids": [
+        "O02",
+        "I02"
+      ],
+      "note": "入选Copilot产品方向公告一项。",
+      "selection_reason": "按业务、财务/资本、产品、监管与治理影响排序；仅入具版本和可得性证据事项。",
+      "legal_review": "监管线索未改变本期产品阶段判断；不称全部合规风险消失。"
+    },
+    "Alphabet / Google": {
+      "status": "events",
+      "selected_candidate_ids": [
+        "GOO-AVATAR"
+      ],
+      "check_ids": [
+        "O03",
+        "I03"
+      ],
+      "note": "入选Live Avatar新入口一项。",
+      "selection_reason": "按业务、财务/资本、产品、监管与治理影响排序；仅入具版本和可得性证据事项。",
+      "legal_review": "旧广告技术救济不是本周新裁定；未见改变本期结论的新司法节点。"
+    },
+    "Amazon / AWS": {
+      "status": "events",
+      "selected_candidate_ids": [
+        "AWS-OMNI"
+      ],
+      "check_ids": [
+        "O04",
+        "I04"
+      ],
+      "note": "入选CloudWatch Omni工具发布一项。",
+      "selection_reason": "按业务、财务/资本、产品、监管与治理影响排序；仅入具版本和可得性证据事项。",
+      "legal_review": "监管及事故有限核对，无改变该产品阶段的已证矛盾。"
+    },
+    "Meta": {
+      "status": "events",
+      "selected_candidate_ids": [
+        "META-CONNECT"
+      ],
+      "check_ids": [
+        "O05",
+        "I05"
+      ],
+      "note": "入选Connect的一项设备/代理延伸公告。",
+      "selection_reason": "按业务、财务/资本、产品、监管与治理影响排序；仅入具版本和可得性证据事项。",
+      "legal_review": "独立监管校准未得足以改变本期入选断言的已证事项。"
+    },
+    "NVIDIA": {
+      "status": "events",
+      "selected_candidate_ids": [
+        "NV-ROS"
+      ],
+      "check_ids": [
+        "O06",
+        "I06"
+      ],
+      "note": "入选Isaac ROS 5.0一项。",
+      "selection_reason": "按业务、财务/资本、产品、监管与治理影响排序；仅入具版本和可得性证据事项。",
+      "legal_review": "许可与出口线索无本期具版本可核节点；旧风险不解除。"
+    },
+    "Tesla": {
+      "status": "no_selected_update",
+      "selected_candidate_ids": [],
+      "check_ids": [
+        "O07",
+        "I07"
+      ],
+      "note": "有限范围未选到新的可核重要事项，不表示Tesla全公司无变化。",
+      "selection_reason": "官方及独立有限筛选后没有入选可核重要增量；不宣称没有变化。",
+      "legal_review": "NHTSA旧问询仍未决；本期未见可核新裁决或答复。"
+    },
+    "OpenAI": {
+      "status": "events",
+      "selected_candidate_ids": [
+        "OA-SOL-LUNA",
+        "OA-AGENT-SAFETY"
+      ],
+      "check_ids": [
+        "O08",
+        "I08"
+      ],
+      "note": "入选模型渠道变化及研究代理披露两项。",
+      "selection_reason": "按业务、财务/资本、产品、监管与治理影响排序；仅入具版本和可得性证据事项。",
+      "legal_review": "安全披露并非监管裁决；调查与第三方通知仍在进行。"
+    },
+    "Anthropic": {
+      "status": "events",
+      "selected_candidate_ids": [
+        "AN-OPUS",
+        "AN-COURT"
+      ],
+      "check_ids": [
+        "O09",
+        "I09"
+      ],
+      "note": "入选Opus 5.5发布和国防部指定诉讼进展两项。",
+      "selection_reason": "按业务、财务/资本、产品、监管与治理影响排序；仅入具版本和可得性证据事项。",
+      "legal_review": "DC巡回法院支持国防部指定；不称全部案件终结。"
+    },
+    "Samsung Electronics": {
+      "status": "events",
+      "selected_candidate_ids": [
+        "SS-AIRAN"
+      ],
+      "check_ids": [
+        "O10",
+        "I10"
+      ],
+      "note": "入选AI-RAN签约一项，映射两个不同客户关系。",
+      "selection_reason": "按业务、财务/资本、产品、监管与治理影响排序；仅入具版本和可得性证据事项。",
+      "legal_review": "未把项目政府框架写成监管审批结果。"
+    },
+    "SK Hynix": {
+      "status": "no_selected_update",
+      "selected_candidate_ids": [],
+      "check_ids": [
+        "O11",
+        "I11"
+      ],
+      "note": "有限范围未选到时间安全且具重要性的新事项。",
+      "selection_reason": "官方及独立有限筛选后没有入选可核重要增量；不宣称没有变化。",
+      "legal_review": "本期未入选新监管节点；此前制造讨论仍不等于投资决策。"
+    },
+    "TSMC": {
+      "status": "no_selected_update",
+      "selected_candidate_ids": [],
+      "check_ids": [
+        "O12",
+        "I12"
+      ],
+      "note": "有限范围未选到经核实的重要增量，不表示产能或监管无变化。",
+      "selection_reason": "官方及独立有限筛选后没有入选可核重要增量；不宣称没有变化。",
+      "legal_review": "未得到可核本周监管节点；未解除旧供应链不确定性。"
+    }
+  },
+  "watchlist": [
+    {
+      "id": "W-APPLE-EVENT",
+      "companies": [
+        "Apple"
+      ],
+      "topic": "9月发布会及产品交付安排",
+      "status": "active",
+      "review_scope": "not_selected",
+      "defer_reason": "本期有限筛选未选为前五独立事项；仍保留未决状态。",
+      "note": "前期活跃事项仅在改变本期入选或结论时展开；不宣称风险已解除。"
+    },
+    {
+      "id": "W-APPLE-MAC",
+      "companies": [
+        "Apple"
+      ],
+      "topic": "上期Mac芯片/9月活动计划",
+      "status": "active",
+      "review_scope": "not_selected",
+      "defer_reason": "本期有限筛选未选为前五独立事项；仍保留未决状态。",
+      "note": "前期活跃事项仅在改变本期入选或结论时展开；不宣称风险已解除。"
+    },
+    {
+      "id": "W-NVIDIA-HF",
+      "companies": [
+        "NVIDIA"
+      ],
+      "topic": "Hugging Face并购阶段",
+      "status": "active",
+      "review_scope": "not_selected",
+      "defer_reason": "本期有限筛选未选为前五独立事项；仍保留未决状态。",
+      "note": "前期活跃事项仅在改变本期入选或结论时展开；不宣称风险已解除。"
+    },
+    {
+      "id": "W-AWS-NVIDIA-GPU",
+      "companies": [
+        "Amazon / AWS",
+        "NVIDIA"
+      ],
+      "topic": "上期GPU部署长期计划",
+      "status": "active",
+      "review_scope": "not_selected",
+      "defer_reason": "本期有限筛选未选为前五独立事项；仍保留未决状态。",
+      "note": "前期活跃事项仅在改变本期入选或结论时展开；不宣称风险已解除。"
+    },
+    {
+      "id": "W-META-SETTLEMENT",
+      "companies": [
+        "Meta"
+      ],
+      "topic": "上期州级和解与执行",
+      "status": "active",
+      "review_scope": "not_selected",
+      "defer_reason": "本期有限筛选未选为前五独立事项；仍保留未决状态。",
+      "note": "前期活跃事项仅在改变本期入选或结论时展开；不宣称风险已解除。"
+    },
+    {
+      "id": "W-OPENAI-HF-INCIDENT",
+      "companies": [
+        "OpenAI"
+      ],
+      "topic": "上期Hugging Face安全事件",
+      "status": "active",
+      "review_scope": "not_selected",
+      "defer_reason": "本期有限筛选未选为前五独立事项；仍保留未决状态。",
+      "note": "前期活跃事项仅在改变本期入选或结论时展开；不宣称风险已解除。"
+    },
+    {
+      "id": "W-OPENAI-CURSOR",
+      "companies": [
+        "OpenAI"
+      ],
+      "topic": "上期Cursor合作/终止计划",
+      "status": "active",
+      "review_scope": "not_selected",
+      "defer_reason": "本期有限筛选未选为前五独立事项；仍保留未决状态。",
+      "note": "前期活跃事项仅在改变本期入选或结论时展开；不宣称风险已解除。"
+    },
+    {
+      "id": "W-OPENAI-JALAPENO",
+      "companies": [
+        "OpenAI"
+      ],
+      "topic": "上期自研芯片计划",
+      "status": "active",
+      "review_scope": "not_selected",
+      "defer_reason": "本期有限筛选未选为前五独立事项；仍保留未决状态。",
+      "note": "前期活跃事项仅在改变本期入选或结论时展开；不宣称风险已解除。"
+    },
+    {
+      "id": "W-ANTHROPIC-NSCALE",
+      "companies": [
+        "Anthropic"
+      ],
+      "topic": "上期Nscale合作报道",
+      "status": "active",
+      "review_scope": "not_selected",
+      "defer_reason": "本期有限筛选未选为前五独立事项；仍保留未决状态。",
+      "note": "前期活跃事项仅在改变本期入选或结论时展开；不宣称风险已解除。"
+    },
+    {
+      "id": "W-SAMSUNG-S26FE",
+      "companies": [
+        "Samsung Electronics"
+      ],
+      "topic": "上期S26FE上市预告",
+      "status": "active",
+      "review_scope": "not_selected",
+      "defer_reason": "本期有限筛选未选为前五独立事项；仍保留未决状态。",
+      "note": "前期活跃事项仅在改变本期入选或结论时展开；不宣称风险已解除。"
+    },
+    {
+      "id": "W-SKHYNIX-INDIANA",
+      "companies": [
+        "SK Hynix"
+      ],
+      "topic": "上期Indiana项目投产计划",
+      "status": "active",
+      "review_scope": "not_selected",
+      "defer_reason": "本期有限筛选未选为前五独立事项；仍保留未决状态。",
+      "note": "前期活跃事项仅在改变本期入选或结论时展开；不宣称风险已解除。"
+    },
+    {
+      "id": "W-GOOGLE-SEARCH-2020",
+      "companies": [
+        "Alphabet / Google"
+      ],
+      "topic": "DOJ Google搜索垄断案2020，救济执行与上诉；与2023广告技术案分开",
+      "status": "active",
+      "review_scope": "not_selected",
+      "defer_reason": "本期有限筛选未选为前五独立事项；仍保留未决状态。",
+      "note": "前期活跃事项仅在改变本期入选或结论时展开；不宣称风险已解除。"
+    }
+  ],
+  "prior_report": {
+    "path": "reports/2026-09-21_weekly_morning_brief.md",
+    "sha256": "f0888f4d34922ebc64ec5393c0efd8d3143fb462989310276efffd6b8ccf5631",
+    "note": "只作事件身份和活跃事项对照，不以旧稿替代当期证据。"
+  },
+  "report_sha256": "e4b74cf3f78d34cb3337b5d47f5a488b57232ac1943be9de8d1843fbe2cb03b8",
+  "product_graph_sha256": "9cab5511530a248a814852befcbd02402645c23370fe2747e54f069089041396",
+  "skill_sha256": "abb65eeb71a83c1f9a2e1d816799d8c7489a8e76f482b95717437127b6f6858f",
+  "reviewed_at": "2026-10-08T05:08:23.418714+00:00",
+  "selection_note": "有限官方筛选与独立重要性校准后冻结11项。9月30日Gemini 4 Argon属于下一期；9月21日已发布事项不重复。Tesla、SK Hynix、TSMC本期为0项，不表示全公司无变化。",
+  "gaps": []
+}

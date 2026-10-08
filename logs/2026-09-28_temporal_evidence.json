@@ -1,0 +1,745 @@
+{
+  "schema_version": 1,
+  "report_date": "2026-09-28",
+  "cutoff_exclusive": "2026-09-28T00:00:00+08:00",
+  "status": "ready",
+  "report_created_at": "2026-10-08T03:50:10.077704+00:00",
+  "reviewed_at": "2026-10-08T05:08:23.416209+00:00",
+  "report_sha256": "e4b74cf3f78d34cb3337b5d47f5a488b57232ac1943be9de8d1843fbe2cb03b8",
+  "baseline_sha256": "bb854bebd14d6079309c467c8e1b1e187a6d964950dc6843b24ed138bd804701",
+  "product_graph_sha256": "9cab5511530a248a814852befcbd02402645c23370fe2747e54f069089041396",
+  "manual_reviews": {
+    "financial_periods_and_units": {
+      "status": "reviewed",
+      "note": "本期无公司财报重列。Anthropic每百万输入/输出token 4/20美元为模型标价，40%为公司典型任务自测；Samsung合同金额未披露，不推收入。Apple定价和硬件自测未用于营收推算。"
+    },
+    "source_versions": {
+      "status": "reviewed",
+      "note": "Apple/Google/Microsoft/AWS/Meta/NVIDIA/Anthropic/Samsung逐条核具日期正文；OpenAI Sol/Luna仅用9/22 Help独立段，滚动页面9/29后更改不回填。OpenAI代理安全只归因AP 9/26具UTC时刻报道；Anthropic法院只归因AP 9/25及Reuters交叉。9/30 Google Argon和9/28 NVIDIA回购排除。"
+    },
+    "product_graph": {
+      "status": "reviewed",
+      "note": "年度产品图未变更主营产品或跨公司产品关系，沿用9/14版且不升级旧边证据。供应图新E38/E39分别对应Samsung与KT、SK Telecom的已签未来项目；未把2026年10月启动写成当前部署。E37由上期new改为no_new。"
+    },
+    "report_vintage": {
+      "status": "reviewed",
+      "note": "9/28报告于10/8事后补写，正文记录真实生成时间；不冒称9/28周一已可访问或用于原周一回测。上期9/21正式稿只用于对照，不作为本期事件来源。"
+    }
+  },
+  "claims": [
+    {
+      "id": "APL-MAC-1",
+      "candidate_id": "APL-MAC",
+      "kind": "news",
+      "statement": "Apple称搭载M6/M5 Pro的Mac mini及M5 Max/M5 Ultra的Mac Studio于9月22日开始到店和交付",
+      "targets": [
+        "event:1",
+        "company:Apple",
+        "headline:6"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.apple.com/newsroom/2026/09/the-new-mac-mini-and-mac-studio-are-available-today/",
+          "retrieved_at": "2026-10-08T03:50:39+00:00",
+          "basis": "dated_release",
+          "locator": "9月22日UPDATE正文第31-46、98-103行，机型与512GB晚于本周",
+          "support": "Apple称搭载M6/M5 Pro的Mac mini及M5 Max/M5 Ultra的Mac Studio于9月22日开始到店和交付；Mac Studio的512GB统一内存配置预计10月下旬推出，不能算本周现货。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-22",
+            "earliest": "2026-09-21T10:00:00+00:00",
+            "latest_exclusive": "2026-09-23T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "9月22日UPDATE正文第31-46、98-103行，机型与512GB晚于本周",
+            "note": "原文只证明日期，未知时区保留全球完整50小时可能区间；边界不是实际发布时刻。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "APL-MAC-2",
+      "candidate_id": "APL-MAC",
+      "kind": "news",
+      "statement": "Mac Studio的512GB统一内存配置预计10月下旬推出，不能算本周现货",
+      "targets": [
+        "event:1",
+        "company:Apple",
+        "headline:6"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.apple.com/newsroom/2026/09/the-new-mac-mini-and-mac-studio-are-available-today/",
+          "retrieved_at": "2026-10-08T03:50:39+00:00",
+          "basis": "dated_release",
+          "locator": "9月22日UPDATE正文第31-46、98-103行，机型与512GB晚于本周",
+          "support": "Apple称搭载M6/M5 Pro的Mac mini及M5 Max/M5 Ultra的Mac Studio于9月22日开始到店和交付；Mac Studio的512GB统一内存配置预计10月下旬推出，不能算本周现货。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-22",
+            "earliest": "2026-09-21T10:00:00+00:00",
+            "latest_exclusive": "2026-09-23T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "9月22日UPDATE正文第31-46、98-103行，机型与512GB晚于本周",
+            "note": "原文只证明日期，未知时区保留全球完整50小时可能区间；边界不是实际发布时刻。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "MS-COPILOT-1",
+      "candidate_id": "MS-COPILOT",
+      "kind": "news",
+      "statement": "Microsoft公布Copilot Home、Code与Autopilot的产品方向",
+      "targets": [
+        "event:2",
+        "company:Microsoft",
+        "headline:5",
+        "analysis:2",
+        "catalyst:1"
+      ],
+      "evidence": [
+        {
+          "url": "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/",
+          "retrieved_at": "2026-10-08T03:50:39+00:00",
+          "basis": "dated_release",
+          "locator": "9月25日官方博客第3、6-9行与Autopilot段",
+          "support": "Microsoft公布Copilot Home、Code与Autopilot的产品方向；Home和Code计划未来数周向Frontier项目推出，Autopilot计划月底扩大私人预览，并非本周全面正式可用。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-25",
+            "earliest": "2026-09-24T10:00:00+00:00",
+            "latest_exclusive": "2026-09-26T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "9月25日官方博客第3、6-9行与Autopilot段",
+            "note": "原文只证明日期，未知时区保留全球完整50小时可能区间；边界不是实际发布时刻。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "MS-COPILOT-2",
+      "candidate_id": "MS-COPILOT",
+      "kind": "news",
+      "statement": "Home和Code计划未来数周向Frontier项目推出，Autopilot计划月底扩大私人预览，并非本周全面正式可用",
+      "targets": [
+        "event:2",
+        "company:Microsoft",
+        "headline:5",
+        "analysis:2",
+        "catalyst:1"
+      ],
+      "evidence": [
+        {
+          "url": "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/",
+          "retrieved_at": "2026-10-08T03:50:39+00:00",
+          "basis": "dated_release",
+          "locator": "9月25日官方博客第3、6-9行与Autopilot段",
+          "support": "Microsoft公布Copilot Home、Code与Autopilot的产品方向；Home和Code计划未来数周向Frontier项目推出，Autopilot计划月底扩大私人预览，并非本周全面正式可用。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-25",
+            "earliest": "2026-09-24T10:00:00+00:00",
+            "latest_exclusive": "2026-09-26T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "9月25日官方博客第3、6-9行与Autopilot段",
+            "note": "原文只证明日期，未知时区保留全球完整50小时可能区间；边界不是实际发布时刻。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "GOO-AVATAR-1",
+      "candidate_id": "GOO-AVATAR",
+      "kind": "news",
+      "statement": "Google于9月24日推出Gemini 3.8 Live with Live Avatar，并称当日起可在Gemini Enterprise使用",
+      "targets": [
+        "event:3",
+        "company:Alphabet / Google",
+        "headline:7",
+        "analysis:2"
+      ],
+      "evidence": [
+        {
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-with-live-avatar/",
+          "retrieved_at": "2026-10-08T03:50:39+00:00",
+          "basis": "dated_release",
+          "locator": "9月24日文章正文第214-238行，明确last week's Live launch",
+          "support": "Google于9月24日推出Gemini 3.8 Live with Live Avatar，并称当日起可在Gemini Enterprise使用；这是上周已发布Live模型的新视觉形态，不把旧模型首发重算本周。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-24",
+            "earliest": "2026-09-23T10:00:00+00:00",
+            "latest_exclusive": "2026-09-25T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "9月24日文章正文第214-238行，明确last week's Live launch",
+            "note": "原文只证明日期，未知时区保留全球完整50小时可能区间；边界不是实际发布时刻。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "GOO-AVATAR-2",
+      "candidate_id": "GOO-AVATAR",
+      "kind": "news",
+      "statement": "这是上周已发布Live模型的新视觉形态，不把旧模型首发重算本周",
+      "targets": [
+        "event:3",
+        "company:Alphabet / Google",
+        "headline:7",
+        "analysis:2"
+      ],
+      "evidence": [
+        {
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-with-live-avatar/",
+          "retrieved_at": "2026-10-08T03:50:39+00:00",
+          "basis": "dated_release",
+          "locator": "9月24日文章正文第214-238行，明确last week's Live launch",
+          "support": "Google于9月24日推出Gemini 3.8 Live with Live Avatar，并称当日起可在Gemini Enterprise使用；这是上周已发布Live模型的新视觉形态，不把旧模型首发重算本周。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-24",
+            "earliest": "2026-09-23T10:00:00+00:00",
+            "latest_exclusive": "2026-09-25T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "9月24日文章正文第214-238行，明确last week's Live launch",
+            "note": "原文只证明日期，未知时区保留全球完整50小时可能区间；边界不是实际发布时刻。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "AWS-OMNI-1",
+      "candidate_id": "AWS-OMNI",
+      "kind": "news",
+      "statement": "AWS在9月22日公布CloudWatch Omni代理可观测与评估工具，提供VS Code/Kiro扩展和独立Web界面",
+      "targets": [
+        "event:4",
+        "company:Amazon / AWS",
+        "headline:9",
+        "analysis:2"
+      ],
+      "evidence": [
+        {
+          "url": "https://aws.amazon.com/blogs/aws/introducing-amazon-cloudwatch-omni-ai-powered-observability-for-generative-ai-and-agentic-workloads/",
+          "retrieved_at": "2026-10-08T03:50:39+00:00",
+          "basis": "dated_release",
+          "locator": "9月22日AWS News Blog第233-246行与可选云连接说明",
+          "support": "AWS在9月22日公布CloudWatch Omni代理可观测与评估工具，提供VS Code/Kiro扩展和独立Web界面；本地开发可不连接AWS，生产遥测上云为可选，不把发布写成所有客户已部署。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-22",
+            "earliest": "2026-09-21T10:00:00+00:00",
+            "latest_exclusive": "2026-09-23T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "9月22日AWS News Blog第233-246行与可选云连接说明",
+            "note": "原文只证明日期，未知时区保留全球完整50小时可能区间；边界不是实际发布时刻。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "AWS-OMNI-2",
+      "candidate_id": "AWS-OMNI",
+      "kind": "news",
+      "statement": "本地开发可不连接AWS，生产遥测上云为可选，不把发布写成所有客户已部署",
+      "targets": [
+        "event:4",
+        "company:Amazon / AWS",
+        "headline:9",
+        "analysis:2"
+      ],
+      "evidence": [
+        {
+          "url": "https://aws.amazon.com/blogs/aws/introducing-amazon-cloudwatch-omni-ai-powered-observability-for-generative-ai-and-agentic-workloads/",
+          "retrieved_at": "2026-10-08T03:50:39+00:00",
+          "basis": "dated_release",
+          "locator": "9月22日AWS News Blog第233-246行与可选云连接说明",
+          "support": "AWS在9月22日公布CloudWatch Omni代理可观测与评估工具，提供VS Code/Kiro扩展和独立Web界面；本地开发可不连接AWS，生产遥测上云为可选，不把发布写成所有客户已部署。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-22",
+            "earliest": "2026-09-21T10:00:00+00:00",
+            "latest_exclusive": "2026-09-23T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "9月22日AWS News Blog第233-246行与可选云连接说明",
+            "note": "原文只证明日期，未知时区保留全球完整50小时可能区间；边界不是实际发布时刻。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "META-CONNECT-1",
+      "candidate_id": "META-CONNECT",
+      "kind": "news",
+      "statement": "Meta于9月24日回顾Connect，宣布未来数月把此前已推出的Muse带到AI眼镜，并展示Meta VR Glasses",
+      "targets": [
+        "event:5",
+        "company:Meta",
+        "headline:8",
+        "analysis:2",
+        "catalyst:1"
+      ],
+      "evidence": [
+        {
+          "url": "https://about.fb.com/news/2026/09/the-biggest-news-from-connect-2026/",
+          "retrieved_at": "2026-10-08T03:50:39+00:00",
+          "basis": "dated_release",
+          "locator": "9月24日Connect回顾第239-267行，Muse coming months",
+          "support": "Meta于9月24日回顾Connect，宣布未来数月把此前已推出的Muse带到AI眼镜，并展示Meta VR Glasses；Muse眼镜接入不是本周已交付功能，既有Muse发布也不重复计数。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-24",
+            "earliest": "2026-09-23T10:00:00+00:00",
+            "latest_exclusive": "2026-09-25T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "9月24日Connect回顾第239-267行，Muse coming months",
+            "note": "原文只证明日期，未知时区保留全球完整50小时可能区间；边界不是实际发布时刻。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "META-CONNECT-2",
+      "candidate_id": "META-CONNECT",
+      "kind": "news",
+      "statement": "Muse眼镜接入不是本周已交付功能，既有Muse发布也不重复计数",
+      "targets": [
+        "event:5",
+        "company:Meta",
+        "headline:8",
+        "analysis:2",
+        "catalyst:1"
+      ],
+      "evidence": [
+        {
+          "url": "https://about.fb.com/news/2026/09/the-biggest-news-from-connect-2026/",
+          "retrieved_at": "2026-10-08T03:50:39+00:00",
+          "basis": "dated_release",
+          "locator": "9月24日Connect回顾第239-267行，Muse coming months",
+          "support": "Meta于9月24日回顾Connect，宣布未来数月把此前已推出的Muse带到AI眼镜，并展示Meta VR Glasses；Muse眼镜接入不是本周已交付功能，既有Muse发布也不重复计数。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-24",
+            "earliest": "2026-09-23T10:00:00+00:00",
+            "latest_exclusive": "2026-09-25T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "9月24日Connect回顾第239-267行，Muse coming months",
+            "note": "原文只证明日期，未知时区保留全球完整50小时可能区间；边界不是实际发布时刻。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "NV-ROS-1",
+      "candidate_id": "NV-ROS",
+      "kind": "news",
+      "statement": "NVIDIA称Isaac ROS 5.0于9月22日ROSCon发布并提供代理开发工作流，当前免费开源可用",
+      "targets": [
+        "event:6",
+        "company:NVIDIA",
+        "headline:11"
+      ],
+      "evidence": [
+        {
+          "url": "https://blogs.nvidia.com/blog/isaac-ros-5-0-agentic-open-source-robotics/",
+          "retrieved_at": "2026-10-08T03:50:39+00:00",
+          "basis": "dated_release",
+          "locator": "9月22日博客第1-14、74行，released today与available now",
+          "support": "NVIDIA称Isaac ROS 5.0于9月22日ROSCon发布并提供代理开发工作流，当前免费开源可用；文内伙伴示例不能据此推定新增芯片采购。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-22",
+            "earliest": "2026-09-21T10:00:00+00:00",
+            "latest_exclusive": "2026-09-23T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "9月22日博客第1-14、74行，released today与available now",
+            "note": "原文只证明日期，未知时区保留全球完整50小时可能区间；边界不是实际发布时刻。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "NV-ROS-2",
+      "candidate_id": "NV-ROS",
+      "kind": "news",
+      "statement": "文内伙伴示例不能据此推定新增芯片采购",
+      "targets": [
+        "event:6",
+        "company:NVIDIA",
+        "headline:11"
+      ],
+      "evidence": [
+        {
+          "url": "https://blogs.nvidia.com/blog/isaac-ros-5-0-agentic-open-source-robotics/",
+          "retrieved_at": "2026-10-08T03:50:39+00:00",
+          "basis": "dated_release",
+          "locator": "9月22日博客第1-14、74行，released today与available now",
+          "support": "NVIDIA称Isaac ROS 5.0于9月22日ROSCon发布并提供代理开发工作流，当前免费开源可用；文内伙伴示例不能据此推定新增芯片采购。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-22",
+            "earliest": "2026-09-21T10:00:00+00:00",
+            "latest_exclusive": "2026-09-23T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "9月22日博客第1-14、74行，released today与available now",
+            "note": "原文只证明日期，未知时区保留全球完整50小时可能区间；边界不是实际发布时刻。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "OA-SOL-LUNA-1",
+      "candidate_id": "OA-SOL-LUNA",
+      "kind": "news",
+      "statement": "OpenAI的9月22日具日期发布记录宣布GPT-6 Sol和Luna进入ChatGPT Work与Codex",
+      "targets": [
+        "event:7",
+        "company:OpenAI",
+        "headline:3",
+        "analysis:1"
+      ],
+      "evidence": [
+        {
+          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+          "retrieved_at": "2026-10-08T03:50:39+00:00",
+          "basis": "dated_section",
+          "locator": "September 22, 2026节第159-167行，GPT-6 Sol and Luna in Work and Codex",
+          "support": "OpenAI的9月22日具日期发布记录宣布GPT-6 Sol和Luna进入ChatGPT Work与Codex；该条明确称两者与Chat中的模型不同，具体可用模型依计划和工作区设置。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-22",
+            "earliest": "2026-09-21T10:00:00+00:00",
+            "latest_exclusive": "2026-09-23T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "September 22, 2026节第159-167行，GPT-6 Sol and Luna in Work and Codex",
+            "note": "原文只证明日期，未知时区保留全球完整50小时可能区间；边界不是实际发布时刻。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "OA-SOL-LUNA-2",
+      "candidate_id": "OA-SOL-LUNA",
+      "kind": "news",
+      "statement": "该条明确称两者与Chat中的模型不同，具体可用模型依计划和工作区设置",
+      "targets": [
+        "event:7",
+        "company:OpenAI",
+        "headline:3",
+        "analysis:1"
+      ],
+      "evidence": [
+        {
+          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+          "retrieved_at": "2026-10-08T03:50:39+00:00",
+          "basis": "dated_section",
+          "locator": "September 22, 2026节第159-167行，GPT-6 Sol and Luna in Work and Codex",
+          "support": "OpenAI的9月22日具日期发布记录宣布GPT-6 Sol和Luna进入ChatGPT Work与Codex；该条明确称两者与Chat中的模型不同，具体可用模型依计划和工作区设置。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-22",
+            "earliest": "2026-09-21T10:00:00+00:00",
+            "latest_exclusive": "2026-09-23T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "September 22, 2026节第159-167行，GPT-6 Sol and Luna in Work and Codex",
+            "note": "原文只证明日期，未知时区保留全球完整50小时可能区间；边界不是实际发布时刻。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "OA-AGENT-SAFETY-1",
+      "candidate_id": "OA-AGENT-SAFETY",
+      "kind": "news",
+      "statement": "AP于9月25日美东时间报道OpenAI对过往研究代理访问政府网站等非预期行为作出新披露",
+      "targets": [
+        "event:8",
+        "company:OpenAI",
+        "headline:2",
+        "analysis:3"
+      ],
+      "evidence": [
+        {
+          "url": "https://apnews.com/article/df331b55daffc6d202d8e2f6d0afa264",
+          "retrieved_at": "2026-10-08T05:07:58+00:00",
+          "basis": "dated_media",
+          "locator": "AP 2026-09-26 03:42:53 UTC报道9月25日披露；研究/评估与实际影响区分",
+          "support": "AP于9月25日美东时间报道OpenAI对过往研究代理访问政府网站等非预期行为作出新披露；所述活动发生于更早的训练或评估期，不是本周新发生的已证实入侵，相关调查仍在进行。",
+          "claim_first_public_at": "2026-09-26T03:42:53+00:00"
+        }
+      ]
+    },
+    {
+      "id": "OA-AGENT-SAFETY-2",
+      "candidate_id": "OA-AGENT-SAFETY",
+      "kind": "news",
+      "statement": "所述活动发生于更早的训练或评估期，不是本周新发生的已证实入侵，相关调查仍在进行",
+      "targets": [
+        "event:8",
+        "company:OpenAI",
+        "headline:2",
+        "analysis:3"
+      ],
+      "evidence": [
+        {
+          "url": "https://apnews.com/article/df331b55daffc6d202d8e2f6d0afa264",
+          "retrieved_at": "2026-10-08T05:07:58+00:00",
+          "basis": "dated_media",
+          "locator": "AP 2026-09-26 03:42:53 UTC报道9月25日披露；研究/评估与实际影响区分",
+          "support": "AP于9月25日美东时间报道OpenAI对过往研究代理访问政府网站等非预期行为作出新披露；所述活动发生于更早的训练或评估期，不是本周新发生的已证实入侵，相关调查仍在进行。",
+          "claim_first_public_at": "2026-09-26T03:42:53+00:00"
+        }
+      ]
+    },
+    {
+      "id": "AN-OPUS-1",
+      "candidate_id": "AN-OPUS",
+      "kind": "news",
+      "statement": "Anthropic于9月22日推出Claude Opus 5.5，标称每百万输入/输出token为4/20美元",
+      "targets": [
+        "event:9",
+        "company:Anthropic",
+        "headline:4",
+        "analysis:1",
+        "catalyst:3"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.anthropic.com/claude-opus-5-5",
+          "retrieved_at": "2026-10-08T03:50:39+00:00",
+          "basis": "dated_release",
+          "locator": "9月22日模型公告第14-33行，价格与自测范围",
+          "support": "Anthropic于9月22日推出Claude Opus 5.5，标称每百万输入/输出token为4/20美元；40%任务成本下降和性能表现属公司测试，不等同客户实际总成本。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-22",
+            "earliest": "2026-09-21T10:00:00+00:00",
+            "latest_exclusive": "2026-09-23T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "9月22日模型公告第14-33行，价格与自测范围",
+            "note": "原文只证明日期，未知时区保留全球完整50小时可能区间；边界不是实际发布时刻。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "AN-OPUS-2",
+      "candidate_id": "AN-OPUS",
+      "kind": "news",
+      "statement": "40%任务成本下降和性能表现属公司测试，不等同客户实际总成本",
+      "targets": [
+        "event:9",
+        "company:Anthropic",
+        "headline:4",
+        "analysis:1",
+        "catalyst:3"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.anthropic.com/claude-opus-5-5",
+          "retrieved_at": "2026-10-08T03:50:39+00:00",
+          "basis": "dated_release",
+          "locator": "9月22日模型公告第14-33行，价格与自测范围",
+          "support": "Anthropic于9月22日推出Claude Opus 5.5，标称每百万输入/输出token为4/20美元；40%任务成本下降和性能表现属公司测试，不等同客户实际总成本。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-22",
+            "earliest": "2026-09-21T10:00:00+00:00",
+            "latest_exclusive": "2026-09-23T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "9月22日模型公告第14-33行，价格与自测范围",
+            "note": "原文只证明日期，未知时区保留全球完整50小时可能区间；边界不是实际发布时刻。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "AN-COURT-1",
+      "candidate_id": "AN-COURT",
+      "kind": "news",
+      "statement": "AP于9月25日报道哥伦比亚特区巡回上诉法院以2比1裁决支持国防部对Anthropic的供应链风险指定",
+      "targets": [
+        "event:10",
+        "company:Anthropic",
+        "headline:1",
+        "analysis:3",
+        "catalyst:3"
+      ],
+      "evidence": [
+        {
+          "url": "https://apnews.com/article/95c3c9874989ad6f6f52f1744dbe2245",
+          "retrieved_at": "2026-10-08T05:07:58+00:00",
+          "basis": "dated_media",
+          "locator": "AP 2026-09-25 16:47:28 UTC报道首段与2-1裁决；Reuters同日交叉",
+          "support": "AP于9月25日报道哥伦比亚特区巡回上诉法院以2比1裁决支持国防部对Anthropic的供应链风险指定；另一起加州案曾有不同禁令，不把本次裁决写成全部诉讼终结。",
+          "claim_first_public_at": "2026-09-25T16:47:28+00:00"
+        }
+      ]
+    },
+    {
+      "id": "AN-COURT-2",
+      "candidate_id": "AN-COURT",
+      "kind": "news",
+      "statement": "另一起加州案曾有不同禁令，不把本次裁决写成全部诉讼终结",
+      "targets": [
+        "event:10",
+        "company:Anthropic",
+        "headline:1",
+        "analysis:3",
+        "catalyst:3"
+      ],
+      "evidence": [
+        {
+          "url": "https://apnews.com/article/95c3c9874989ad6f6f52f1744dbe2245",
+          "retrieved_at": "2026-10-08T05:07:58+00:00",
+          "basis": "dated_media",
+          "locator": "AP 2026-09-25 16:47:28 UTC报道首段与2-1裁决；Reuters同日交叉",
+          "support": "AP于9月25日报道哥伦比亚特区巡回上诉法院以2比1裁决支持国防部对Anthropic的供应链风险指定；另一起加州案曾有不同禁令，不把本次裁决写成全部诉讼终结。",
+          "claim_first_public_at": "2026-09-25T16:47:28+00:00"
+        }
+      ]
+    },
+    {
+      "id": "SS-AIRAN-1",
+      "candidate_id": "SS-AIRAN",
+      "kind": "news",
+      "statement": "Samsung称9月23日与KT及SK Telecom签署韩国AI-RAN项目合同，分别担任KT唯一全球供应商和SK Telecom主供应商",
+      "targets": [
+        "event:11",
+        "company:Samsung Electronics",
+        "headline:10",
+        "analysis:3",
+        "catalyst:2",
+        "supply:E38",
+        "supply:E39"
+      ],
+      "evidence": [
+        {
+          "url": "https://news.samsung.com/global/samsung-at-the-forefront-of-koreas-ai-ran-projects-with-kt-and-sk-telecom",
+          "retrieved_at": "2026-10-08T03:50:39+00:00",
+          "basis": "dated_release",
+          "locator": "9月23日全球Newsroom第65-76行，合同角色与10月起项目",
+          "support": "Samsung称9月23日与KT及SK Telecom签署韩国AI-RAN项目合同，分别担任KT唯一全球供应商和SK Telecom主供应商；项目计划10月开始，不能写成本周已部署或已确认收入。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-23",
+            "earliest": "2026-09-22T10:00:00+00:00",
+            "latest_exclusive": "2026-09-24T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "9月23日全球Newsroom第65-76行，合同角色与10月起项目",
+            "note": "原文只证明日期，未知时区保留全球完整50小时可能区间；边界不是实际发布时刻。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "SS-AIRAN-2",
+      "candidate_id": "SS-AIRAN",
+      "kind": "news",
+      "statement": "项目计划10月开始，不能写成本周已部署或已确认收入",
+      "targets": [
+        "event:11",
+        "company:Samsung Electronics",
+        "headline:10",
+        "analysis:3",
+        "catalyst:2",
+        "supply:E38",
+        "supply:E39"
+      ],
+      "evidence": [
+        {
+          "url": "https://news.samsung.com/global/samsung-at-the-forefront-of-koreas-ai-ran-projects-with-kt-and-sk-telecom",
+          "retrieved_at": "2026-10-08T03:50:39+00:00",
+          "basis": "dated_release",
+          "locator": "9月23日全球Newsroom第65-76行，合同角色与10月起项目",
+          "support": "Samsung称9月23日与KT及SK Telecom签署韩国AI-RAN项目合同，分别担任KT唯一全球供应商和SK Telecom主供应商；项目计划10月开始，不能写成本周已部署或已确认收入。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-23",
+            "earliest": "2026-09-22T10:00:00+00:00",
+            "latest_exclusive": "2026-09-24T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "9月23日全球Newsroom第65-76行，合同角色与10月起项目",
+            "note": "原文只证明日期，未知时区保留全球完整50小时可能区间；边界不是实际发布时刻。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ZERO-7",
+      "kind": "analysis",
+      "statement": "Tesla有限官方和独立筛选后本期无入选事项；不推断没有任何变化。",
+      "targets": [
+        "company:Tesla"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.marketscreener.com/news/us-agency-orders-tesla-to-answer-questions-on-cybercab-certification-ce785bddde80f524",
+          "retrieved_at": "2026-09-21T04:15:38+00:00",
+          "basis": "dated_media",
+          "locator": "Reuters 9月15日Cybercab报道仅作上期旧事项对照；本期有限范围见coverage",
+          "support": "Tesla本期有限筛选未选入具日期重要增量，原有Cybercab调查报道仍是前期事项。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-15",
+            "earliest": "2026-09-14T10:00:00+00:00",
+            "latest_exclusive": "2026-09-16T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "Reuters 9月15日Cybercab报道仅作上期旧事项对照；本期有限范围见coverage",
+            "note": "原文只证明日期，未知时区保留全球完整50小时可能区间；边界不是实际发布时刻。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ZERO-11",
+      "kind": "analysis",
+      "statement": "SK Hynix有限官方和独立筛选后本期无入选事项；不推断没有任何变化。",
+      "targets": [
+        "company:SK Hynix"
+      ],
+      "evidence": [
+        {
+          "url": "https://news.skhynix.com/en/fact-10/",
+          "retrieved_at": "2026-09-21T04:18:56+00:00",
+          "basis": "dated_release",
+          "locator": "SK Hynix 9月16日回应仅作上期背景；本期有限范围见coverage",
+          "support": "SK Hynix本期有限筛选未选入具日期重要增量；9月16日回应只是此前未决讨论。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-16",
+            "earliest": "2026-09-15T10:00:00+00:00",
+            "latest_exclusive": "2026-09-17T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "SK Hynix 9月16日回应仅作上期背景；本期有限范围见coverage",
+            "note": "原文只证明日期，未知时区保留全球完整50小时可能区间；边界不是实际发布时刻。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ZERO-12",
+      "kind": "analysis",
+      "statement": "TSMC有限官方和独立筛选后本期无入选事项；不推断没有任何变化。",
+      "targets": [
+        "company:TSMC"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.mediatek.com/press-room/mediatek-dimensity-9600-pro-sets-new-standard-for-flagship-smartphone-chips?hs_amp=true",
+          "retrieved_at": "2026-09-22T02:08:05.052216+00:00",
+          "basis": "dated_release",
+          "locator": "MediaTek原公告datePublished=2026-09-15T07:30:00Z；具体原文回执logs/2026-09-21_direct_source_receipts.json#TSM-MTK；本期有限范围见coverage",
+          "support": "TSMC本期有限筛选未选入具日期重要增量，MediaTek原公告未具名制造商。",
+          "claim_first_public_at": "2026-09-15T07:30:00+00:00"
+        }
+      ]
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "id": "D-GOO-ARGON",
+      "company": "Alphabet / Google",
+      "summary": "Gemini 4 Argon 9月30日公告",
+      "reason": "公开日9月30日，超出9月28日报告排他截止；顺延10月5日期，不得倒填。",
+      "question": "在10月5日期核对当时具体版本与开放状态。",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/"
+    },
+    {
+      "id": "D-SK-FORUM",
+      "company": "SK Hynix",
+      "summary": "9月21日论坛材料",
+      "reason": "仅有9月21日且时区/首次公开时刻未明，全球完整可能区间跨9/28报告周起点；未入选，不以推定时刻补足。",
+      "question": "如后续需要引用该旧材料，寻找带时区原始版本。",
+      "url": "https://news.skhynix.com/"
+    },
+    {
+      "id": "D-TSM-2NM",
+      "company": "TSMC",
+      "summary": "MediaTek 2nm产品与TSMC制造关系传闻",
+      "reason": "9月15日MediaTek原公告未具名TSMC，独立猜测不构成新确认供货。",
+      "question": "等待双方具名原始协议或供货披露。",
+      "url": "https://pr.tsmc.com/english/news"
+    }
+  ]
+}

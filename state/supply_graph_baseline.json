@@ -1,8 +1,8 @@
 {
-  "generation_date": "2026-09-21",
+  "generation_date": "2026-09-28",
   "coverage_period": {
-    "start": "2026-09-14",
-    "end": "2026-09-20",
+    "start": "2026-09-21",
+    "end": "2026-09-27",
     "timezone": "Asia/Shanghai"
   },
   "companies": [
@@ -932,7 +932,7 @@
       "evidence_date": "2026-09-16",
       "source_type": "sec_filing",
       "last_seen": "2026-09-21",
-      "changed_this_week": "new",
+      "changed_this_week": "no_new_weekly_evidence",
       "status": "contracted_future_delivery_not_fulfilled",
       "confidence": "high",
       "confidence_reason": "Generac SEC 8-K确认协议；未来交付和附条件认股权证尚非实现收入。",
@@ -949,6 +949,46 @@
       "claim_ids": [
         "AWS-GEN-1"
       ]
+    },
+    {
+      "edge_id": "E38",
+      "supplier": "Samsung Electronics",
+      "customer": "KT",
+      "product_or_service": "AI-RAN工业专网项目合同，计划2026年10月启动",
+      "relationship_type": "contracted_future_ai_ran_project",
+      "evidence_date": "2026-09-23",
+      "source_type": "official_company_release",
+      "last_seen": "2026-09-28",
+      "changed_this_week": "new",
+      "status": "contracted_future_project_not_deployed",
+      "confidence": "high",
+      "confidence_reason": "Samsung官方具日期公告确认签署KT项目合同；未来项目尚未部署或确认收入。",
+      "markdown_section_ref": "6.2 E38",
+      "sources": ["https://news.samsung.com/global/samsung-at-the-forefront-of-koreas-ai-ran-projects-with-kt-and-sk-telecom"],
+      "claim_keywords": ["Samsung", "KT"],
+      "min_keyword_matches": 2,
+      "notes": "Samsung为KT唯一全球供应商；项目计划10月开始，合同关系不等于已交付。",
+      "claim_ids": ["SS-AIRAN-1"]
+    },
+    {
+      "edge_id": "E39",
+      "supplier": "Samsung Electronics",
+      "customer": "SK Telecom",
+      "product_or_service": "AI-RAN工业专网项目合同，计划2026年10月启动",
+      "relationship_type": "contracted_future_ai_ran_project",
+      "evidence_date": "2026-09-23",
+      "source_type": "official_company_release",
+      "last_seen": "2026-09-28",
+      "changed_this_week": "new",
+      "status": "contracted_future_project_not_deployed",
+      "confidence": "high",
+      "confidence_reason": "Samsung官方具日期公告确认签署SK Telecom项目合同；未来项目尚未部署或确认收入。",
+      "markdown_section_ref": "6.2 E39",
+      "sources": ["https://news.samsung.com/global/samsung-at-the-forefront-of-koreas-ai-ran-projects-with-kt-and-sk-telecom"],
+      "claim_keywords": ["Samsung", "SK Telecom"],
+      "min_keyword_matches": 2,
+      "notes": "Samsung为SK Telecom主供应商；项目计划10月开始，合同关系不等于已交付。",
+      "claim_ids": ["SS-AIRAN-1"]
     }
   ],
   "sources": [
@@ -994,18 +1034,9 @@
     "https://nvidianews.nvidia.com/news/nvidia-expands-ai-infrastructure-capacity-in-partnership-with-australias-data-center-ecosystem",
     "https://news.samsung.com/global/samsung-and-mistral-ai-announce-strategic-partnership-for-intelligence-driven-semiconductor-infrastructure",
     "https://news.samsung.com/global/samsung-electronics-and-asml-expand-strategic-collaboration-for-next-generation-semiconductor-manufacturing",
-    "https://www.sec.gov/Archives/edgar/data/1474735/000143774926030550/gnrc20260915_8k.htm"
+    "https://www.sec.gov/Archives/edgar/data/1474735/000143774926030550/gnrc20260915_8k.htm",
+    "https://news.samsung.com/global/samsung-at-the-forefront-of-koreas-ai-ran-projects-with-kt-and-sk-telecom"
   ],
   "confidence": "mixed_high",
-  "notes": "本周只更新入选且已核关系。其余沿用9月14日冻结基线，原evidence_date、风险和弱证据等级不变；沿用不是本周重新确证。新计划箭头表示公告关系，不表示完成交付。 2026-09-21仅E37为本周新增关系；旧边证据日期和限制保留。",
-  "comparison_snapshots": {
-    "supply": {
-      "path": "archives/2026-09-21_before_production/state/supply_graph_baseline.json",
-      "sha256": "68fbf8e426bcfb1133b98883342ca9496e0d59b34ae9c7a501ce2089fb3c8137"
-    },
-    "product": {
-      "path": "archives/2026-09-21_before_production/state/product_relationships_2026.json",
-      "sha256": "9cab5511530a248a814852befcbd02402645c23370fe2747e54f069089041396"
-    }
-  }
+  "notes": "本期仅E38/E39为新签AI-RAN项目合同关系，计划10月启动；既有边沿用原证据、阶段与弱证据限制，E37不重复记为本周新增。"
 }
