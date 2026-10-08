@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "report_date": "2026-10-05",
+  "status": "published_retrospective",
+  "verified_at": "2026-10-08T06:02:53Z",
+  "report_commit": "9e5521c4fd5eb5bf7ae36b30e173608cdad460d9",
+  "remote": "https://github.com/luka12138/weekly-tech-brief.git",
+  "branch": "main",
+  "observed_remote_head": "884335b26aae23d934539a88a04e970c33dcec6d",
+  "confirmation": "git push origin HEAD:main succeeded; subsequent git ls-remote returned the observed commit for refs/heads/main",
+  "files": {
+    "reports/2026-10-05_weekly_morning_brief.md": "24086f604a79a9a1dc7926255c561ffc146257f4ceb58aad25b5c4b409ad5b57",
+    "reports/latest.md": "54b3a7158f9af5046eea1677ef3e6be97973c5f13eafe1cc5dd4719a08c4e5c8",
+    "state/supply_graph_baseline.json": "035fefe330029fc56a7a85726d311e07c2aac7441741547aa52e574e793c6935",
+    "state/product_relationships_2026.json": "9cab5511530a248a814852befcbd02402645c23370fe2747e54f069089041396"
+  },
+  "selection": {
+    "companies": 12,
+    "independent_events": 12,
+    "headlines": 12,
+    "maximum_per_company": 5
+  },
+  "verification": {
+    "canonical_quality_gate": "passed",
+    "clean_commit_quality_gate": "passed after publication with matching remote head",
+    "historical_snapshot_quality_gate": "passed after publication",
+    "python_tests": 158,
+    "source_urls": 86,
+    "access_limited": 26,
+    "unclassified": 0,
+    "claim_failed": 0,
+    "temporal_claims": 26,
+    "targets": 43,
+    "svg_visual_review": "completed"
+  },
+  "limitations": [
+    "Created on 2026-10-08 after the report cutoff; not an original Monday report or valid original-Monday backtest input.",
+    "Finite company screening does not certify zero omitted news.",
+    "Access-limited automatic checks do not imply that every original document was read directly.",
+    "The later receipt-only commit may advance main without changing the frozen report."
+  ]
+}

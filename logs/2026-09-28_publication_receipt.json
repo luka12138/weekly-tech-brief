@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "report_date": "2026-09-28",
+  "status": "published_retrospective",
+  "verified_at": "2026-10-08T06:02:53Z",
+  "report_commit": "07dbdca4b43a3279efa308db7f19ab2a99928850",
+  "remote": "https://github.com/luka12138/weekly-tech-brief.git",
+  "branch": "main",
+  "observed_remote_head": "884335b26aae23d934539a88a04e970c33dcec6d",
+  "confirmation": "git push origin HEAD:main succeeded; subsequent git ls-remote returned the observed commit for refs/heads/main",
+  "files": {
+    "reports/2026-09-28_weekly_morning_brief.md": "e4b74cf3f78d34cb3337b5d47f5a488b57232ac1943be9de8d1843fbe2cb03b8"
+  },
+  "selection": {
+    "companies": 12,
+    "independent_events": 11,
+    "headlines": 11,
+    "maximum_per_company": 5
+  },
+  "verification": {
+    "canonical_quality_gate": "passed before publication",
+    "historical_snapshot_quality_gate": "passed after publication",
+    "python_tests": 158,
+    "source_urls": 81,
+    "access_limited": 22,
+    "unclassified": 0,
+    "claim_failed": 0,
+    "temporal_claims": 25,
+    "targets": 42,
+    "svg_visual_review": "completed"
+  },
+  "limitations": [
+    "Created on 2026-10-08 after the report cutoff; not an original Monday report or valid original-Monday backtest input.",
+    "Finite company screening does not certify zero omitted news.",
+    "Access-limited automatic checks do not imply that every original document was read directly.",
+    "The later receipt-only commit may advance main without changing the frozen report."
+  ]
+}
