@@ -1,8 +1,8 @@
 {
-  "generation_date": "2026-09-28",
+  "generation_date": "2026-10-05",
   "coverage_period": {
-    "start": "2026-09-21",
-    "end": "2026-09-27",
+    "start": "2026-09-28",
+    "end": "2026-10-04",
     "timezone": "Asia/Shanghai"
   },
   "companies": [
@@ -959,7 +959,7 @@
       "evidence_date": "2026-09-23",
       "source_type": "official_company_release",
       "last_seen": "2026-09-28",
-      "changed_this_week": "new",
+      "changed_this_week": "no_new_weekly_evidence",
       "status": "contracted_future_project_not_deployed",
       "confidence": "high",
       "confidence_reason": "Samsung官方具日期公告确认签署KT项目合同；未来项目尚未部署或确认收入。",
@@ -979,7 +979,7 @@
       "evidence_date": "2026-09-23",
       "source_type": "official_company_release",
       "last_seen": "2026-09-28",
-      "changed_this_week": "new",
+      "changed_this_week": "no_new_weekly_evidence",
       "status": "contracted_future_project_not_deployed",
       "confidence": "high",
       "confidence_reason": "Samsung官方具日期公告确认签署SK Telecom项目合同；未来项目尚未部署或确认收入。",
@@ -1038,5 +1038,5 @@
     "https://news.samsung.com/global/samsung-at-the-forefront-of-koreas-ai-ran-projects-with-kt-and-sk-telecom"
   ],
   "confidence": "mixed_high",
-  "notes": "本期仅E38/E39为新签AI-RAN项目合同关系，计划10月启动；既有边沿用原证据、阶段与弱证据限制，E37不重复记为本周新增。"
+  "notes": "本期无已核新增或变化的供应关系；E38/E39为上期签约且本期不重复计数。Samsung对Helix的投资不是设备采购合同；既有边沿用原证据和阶段限制。"
 }

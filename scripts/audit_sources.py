@@ -29,6 +29,7 @@ from pathlib import Path
 OFFICIAL_HOST_KEYWORDS = [
     "apple.com",
     "microsoft.com",
+    "microsoft.ai",
     "github.blog",
     "xbox.com",
     "abc.xyz",
@@ -83,6 +84,7 @@ TIER1_MEDIA_HOST_KEYWORDS = [
     "axios.com",
     "barrons.com",
     "cna.com.tw",
+    "yna.co.kr",
 ]
 
 TRADE_MEDIA_HOST_KEYWORDS = [
@@ -216,6 +218,8 @@ def probe_url(url: str, timeout: int) -> dict[str, object]:
             break
         except urllib.error.HTTPError as exc:
             result["status"] = exc.code
+            if method == "HEAD" and exc.code == 405:
+                continue
             break
         except Exception as exc:
             last_error = exc

@@ -3,7 +3,7 @@ import unittest
 import ssl
 import subprocess
 import urllib.error
-from unittest.mock import patch
+from unittest.mock import MagicMock, patch
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
@@ -22,7 +22,7 @@ class SourceClassificationTests(unittest.TestCase):
             self.assertEqual(classify_host(host), "unclassified")
 
     def test_current_week_official_channels_and_reuters_republisher(self):
-        for host in ("leginfo.legislature.ca.gov", "www.gov.ca.gov", "www.d-matrix.ai", "www.fortum.com", "www.googlecloudpresscorner.com"):
+        for host in ("leginfo.legislature.ca.gov", "www.gov.ca.gov", "www.d-matrix.ai", "www.fortum.com", "www.googlecloudpresscorner.com", "microsoft.ai"):
             self.assertEqual(classify_host(host), "official_or_regulatory")
             self.assertEqual(classify_host(host + ".example.com"), "unclassified")
         self.assertEqual(classify_host("www.investing.com"), "trade_or_press_media")
@@ -31,6 +31,7 @@ class SourceClassificationTests(unittest.TestCase):
         for host in ('ec.europa.eu', 'curia.europa.eu', 'english.motir.go.kr', 'mn8.com'):
             self.assertEqual(classify_host(host), 'official_or_regulatory')
         self.assertEqual(classify_host('www.cna.com.tw'), 'tier1_media')
+        self.assertEqual(classify_host('en.yna.co.kr'), 'tier1_media')
         for host in ('electrek.co', 'globalnews.ca', 'iclg.com', 'news.cision.com', 'tech.yahoo.com', 'www.law360.com', 'www.nasdaq.com'):
             self.assertEqual(classify_host(host), 'trade_or_press_media')
         self.assertEqual(classify_host('ec.europa.eu.example.com'), 'unclassified')
@@ -50,6 +51,18 @@ class SourceClassificationTests(unittest.TestCase):
     @patch('audit_sources.subprocess.run', return_value=subprocess.CompletedProcess([], 60, '000', 'SSL error'))
     def test_failed_tls_fallback_is_not_reachable(self, run, urlopen, sleep):
         self.assertFalse(probe_url('https://ec.europa.eu/example.pdf', 2)['reachable'])
+
+    @patch('audit_sources.urllib.request.urlopen')
+    def test_head_method_not_allowed_retries_get(self, urlopen):
+        response = MagicMock()
+        response.__enter__.return_value.status = 200
+        urlopen.side_effect = [
+            urllib.error.HTTPError('https://en.yna.co.kr/article', 405, 'Method Not Allowed', {}, None),
+            response,
+        ]
+        result = probe_url('https://en.yna.co.kr/article', 2)
+        self.assertTrue(result['reachable'])
+        self.assertEqual([call.args[0].get_method() for call in urlopen.call_args_list], ['HEAD', 'GET'])
 
     @patch('audit_sources.urllib.request.urlopen', side_effect=urllib.error.HTTPError('https://example.com', 403, 'Forbidden', {}, None))
     @patch('audit_sources.subprocess.run')

@@ -1,0 +1,1347 @@
+{
+  "schema_version": 1,
+  "workflow_version": 2,
+  "selection_policy": "company_top5",
+  "report_date": "2026-10-05",
+  "cutoff_exclusive": "2026-10-05T00:00:00+08:00",
+  "status": "ready",
+  "run_started_at": "2026-10-08T05:16:45+00:00",
+  "checks": [
+    {
+      "id": "O01",
+      "company": "Apple",
+      "stage": "discovery",
+      "source_family": "company",
+      "status": "reviewed",
+      "query_or_url": "https://www.apple.com/newsroom/",
+      "entrypoint": "https://www.apple.com/newsroom/",
+      "result_ref": "Apple Newsroom与9月22日Mac mini/Mac Studio已入上期记录",
+      "note": "有限检查9月28日至10月4日官方新闻及投资者入口；不把9月22日销售重复计数。",
+      "checked_at": "2026-10-08T05:16:45+00:00",
+      "businesses": [
+        "iPhone"
+      ],
+      "categories": [
+        "product"
+      ],
+      "candidate_ids": []
+    },
+    {
+      "id": "I01",
+      "company": "Apple",
+      "stage": "countercheck",
+      "source_family": "media",
+      "status": "reviewed",
+      "query_or_url": "Apple September 28 October 4 2026 Reuters AP AI regulation incident",
+      "entrypoint": "https://apnews.com/",
+      "result_ref": "独立报道及监管有限校准，未选入比上期硬件上市更新更具本周增量的可核事项。",
+      "note": "未把10月5日上海零点以后的材料回填。",
+      "checked_at": "2026-10-08T05:16:45+00:00",
+      "businesses": [],
+      "categories": [
+        "product"
+      ],
+      "candidate_ids": []
+    },
+    {
+      "id": "O02",
+      "company": "Microsoft",
+      "stage": "discovery",
+      "source_family": "company",
+      "status": "reviewed",
+      "query_or_url": "https://news.microsoft.com/",
+      "entrypoint": "https://news.microsoft.com/",
+      "result_ref": "Microsoft AI 10月1日MAI语音模型公告",
+      "note": "核60种语言、0.54美元/小时年内引入价和Voice型号；排行榜为特定评测。",
+      "checked_at": "2026-10-08T05:16:45+00:00",
+      "businesses": [
+        "Azure"
+      ],
+      "categories": [
+        "product"
+      ],
+      "candidate_ids": [
+        "MS-VOICE"
+      ]
+    },
+    {
+      "id": "I02",
+      "company": "Microsoft",
+      "stage": "countercheck",
+      "source_family": "media",
+      "status": "reviewed",
+      "query_or_url": "Microsoft October 1 2026 MAI voice Reuters AP regulation",
+      "entrypoint": "https://apnews.com/",
+      "result_ref": "独立语音代理与监管重要性校准；未把厂商性能写成客户效果。",
+      "note": "没有把10月7日其他MAI后发型号纳入本周。",
+      "checked_at": "2026-10-08T05:16:45+00:00",
+      "businesses": [],
+      "categories": [
+        "product"
+      ],
+      "candidate_ids": []
+    },
+    {
+      "id": "O03",
+      "company": "Alphabet / Google",
+      "stage": "discovery",
+      "source_family": "company",
+      "status": "reviewed",
+      "query_or_url": "https://blog.google/",
+      "entrypoint": "https://blog.google/",
+      "result_ref": "Google Blog 9月30日Gemini 4 Argon具日期正文",
+      "note": "Fairwind可信防御方有限推出；开发者、企业、消费者扩围为未来。",
+      "checked_at": "2026-10-08T05:16:45+00:00",
+      "businesses": [
+        "搜索"
+      ],
+      "categories": [
+        "product"
+      ],
+      "candidate_ids": [
+        "GOO-ARGON"
+      ]
+    },
+    {
+      "id": "I03",
+      "company": "Alphabet / Google",
+      "stage": "countercheck",
+      "source_family": "media",
+      "status": "reviewed",
+      "query_or_url": "Google Gemini 4 Argon September 30 2026 Reuters AP antitrust",
+      "entrypoint": "https://apnews.com/",
+      "result_ref": "独立前沿模型与监管有限校准；不采用Google页面AI生成摘要。",
+      "note": "产品正文与旧广告案分开，未把未来GA倒写本周。",
+      "checked_at": "2026-10-08T05:16:45+00:00",
+      "businesses": [],
+      "categories": [
+        "product"
+      ],
+      "candidate_ids": []
+    },
+    {
+      "id": "O04",
+      "company": "Amazon / AWS",
+      "stage": "discovery",
+      "source_family": "company",
+      "status": "reviewed",
+      "query_or_url": "https://www.aboutamazon.com/news",
+      "entrypoint": "https://www.aboutamazon.com/news",
+      "result_ref": "Amazon Built Together原文五年新增逾10亿美元，美国数据中心社区起步",
+      "note": "先前三年逾10亿美元是历史已投入，本次五年金额是新增未来承诺。",
+      "checked_at": "2026-10-08T05:16:45+00:00",
+      "businesses": [
+        "AWS"
+      ],
+      "categories": [
+        "product"
+      ],
+      "candidate_ids": []
+    },
+    {
+      "id": "I04",
+      "company": "Amazon / AWS",
+      "stage": "countercheck",
+      "source_family": "media",
+      "status": "reviewed",
+      "query_or_url": "Amazon data center community pledge October 2 2026 AP",
+      "entrypoint": "https://apnews.com/",
+      "result_ref": "AP 2026-10-02 13:37:00 UTC报道与公司原文交叉。",
+      "note": "未把承诺当本周已支出或数据中心资本开支。",
+      "checked_at": "2026-10-08T05:16:45+00:00",
+      "businesses": [],
+      "categories": [
+        "capital"
+      ],
+      "candidate_ids": [
+        "AWS-COMMUNITY"
+      ]
+    },
+    {
+      "id": "O05",
+      "company": "Meta",
+      "stage": "discovery",
+      "source_family": "company",
+      "status": "reviewed",
+      "query_or_url": "https://about.fb.com/news/",
+      "entrypoint": "https://about.fb.com/news/",
+      "result_ref": "Meta Newsroom 9月29日Muse for Small Business",
+      "note": "账户及第三方连接器，发布/发送/支出需用户批准。",
+      "checked_at": "2026-10-08T05:16:45+00:00",
+      "businesses": [
+        "Facebook"
+      ],
+      "categories": [
+        "product"
+      ],
+      "candidate_ids": [
+        "META-SMB"
+      ]
+    },
+    {
+      "id": "I05",
+      "company": "Meta",
+      "stage": "countercheck",
+      "source_family": "media",
+      "status": "reviewed",
+      "query_or_url": "Meta Muse Small Business September 29 2026 Reuters AP safety",
+      "entrypoint": "https://apnews.com/",
+      "result_ref": "独立产品与代理风险有限校准，未见可推翻官方批准限制的材料。",
+      "note": "上期Muse眼镜计划不是本周SMB连接器。",
+      "checked_at": "2026-10-08T05:16:45+00:00",
+      "businesses": [],
+      "categories": [
+        "product"
+      ],
+      "candidate_ids": []
+    },
+    {
+      "id": "O06",
+      "company": "NVIDIA",
+      "stage": "discovery",
+      "source_family": "company",
+      "status": "reviewed",
+      "query_or_url": "https://nvidianews.nvidia.com/",
+      "entrypoint": "https://nvidianews.nvidia.com/",
+      "result_ref": "NVIDIA Newsroom 9月28日1500亿美元新增回购授权及2350亿美元剩余额度",
+      "note": "预计执行至2028财年；授权不等于已回购。",
+      "checked_at": "2026-10-08T05:16:45+00:00",
+      "businesses": [
+        "数据中心 GPU"
+      ],
+      "categories": [
+        "product"
+      ],
+      "candidate_ids": []
+    },
+    {
+      "id": "I06",
+      "company": "NVIDIA",
+      "stage": "countercheck",
+      "source_family": "media",
+      "status": "reviewed",
+      "query_or_url": "NVIDIA 150 billion buyback September 28 2026 AP",
+      "entrypoint": "https://apnews.com/",
+      "result_ref": "AP 2026-09-28 16:11:41 UTC报道证明上海周一起点后已可得。",
+      "note": "边界日不靠未知时区的公司日级日期硬判。",
+      "checked_at": "2026-10-08T05:16:45+00:00",
+      "businesses": [],
+      "categories": [
+        "capital"
+      ],
+      "candidate_ids": [
+        "NV-BUYBACK"
+      ]
+    },
+    {
+      "id": "O07",
+      "company": "Tesla",
+      "stage": "discovery",
+      "source_family": "company",
+      "status": "reviewed",
+      "query_or_url": "https://ir.tesla.com/press",
+      "entrypoint": "https://ir.tesla.com/press",
+      "result_ref": "Tesla IR 10月2日Q3 2026生产、交付与储能原表",
+      "note": "464391辆生产、486532辆交付、13.7GWh储能；10月21日财报尚未来。",
+      "checked_at": "2026-10-08T05:16:45+00:00",
+      "businesses": [
+        "电动车"
+      ],
+      "categories": [
+        "financial"
+      ],
+      "candidate_ids": [
+        "TSLA-Q3"
+      ]
+    },
+    {
+      "id": "I07",
+      "company": "Tesla",
+      "stage": "countercheck",
+      "source_family": "media",
+      "status": "reviewed",
+      "query_or_url": "Tesla Q3 2026 deliveries October 2 Reuters AP NHTSA",
+      "entrypoint": "https://apnews.com/",
+      "result_ref": "独立交付与监管报道有限校准；交付不能转利润。",
+      "note": "表格单位分别为辆和GWh；旧Cybercab问询仍是旧事项。",
+      "checked_at": "2026-10-08T05:16:45+00:00",
+      "businesses": [],
+      "categories": [
+        "product"
+      ],
+      "candidate_ids": []
+    },
+    {
+      "id": "O08",
+      "company": "OpenAI",
+      "stage": "discovery",
+      "source_family": "company",
+      "status": "reviewed",
+      "query_or_url": "https://openai.com/news/",
+      "entrypoint": "https://openai.com/news/",
+      "result_ref": "OpenAI新闻索引9月29日GPT-6.1 Sol独立日期条目及产品准入段",
+      "note": "Work/Codex/API可用与Chat尚未开放分开；不引10月7日更新。",
+      "checked_at": "2026-10-08T05:16:45+00:00",
+      "businesses": [
+        "GPT 模型"
+      ],
+      "categories": [
+        "product"
+      ],
+      "candidate_ids": [
+        "OA-SOL61"
+      ]
+    },
+    {
+      "id": "I08",
+      "company": "OpenAI",
+      "stage": "countercheck",
+      "source_family": "media",
+      "status": "reviewed",
+      "query_or_url": "OpenAI FTC investigation September 30 2026 AP",
+      "entrypoint": "https://apnews.com/",
+      "result_ref": "AP 2026-09-30 19:27:51 UTC报道，FTC发言人公开确认既有调查。",
+      "note": "调查此前已进行数月，9月30日不是立案日或违规认定。",
+      "checked_at": "2026-10-08T05:16:45+00:00",
+      "businesses": [],
+      "categories": [
+        "legal"
+      ],
+      "candidate_ids": [
+        "OA-FTC"
+      ]
+    },
+    {
+      "id": "O09",
+      "company": "Anthropic",
+      "stage": "discovery",
+      "source_family": "company",
+      "status": "reviewed",
+      "query_or_url": "https://www.anthropic.com/news",
+      "entrypoint": "https://www.anthropic.com/news",
+      "result_ref": "Anthropic 9月28日Sonnet 5.5具日期原文",
+      "note": "2/10美元每百万输入/输出token；任务成本改善属公司自测。",
+      "checked_at": "2026-10-08T05:16:45+00:00",
+      "businesses": [
+        "Claude 模型"
+      ],
+      "categories": [
+        "product"
+      ],
+      "candidate_ids": []
+    },
+    {
+      "id": "I09",
+      "company": "Anthropic",
+      "stage": "countercheck",
+      "source_family": "media",
+      "status": "reviewed",
+      "query_or_url": "Anthropic Sonnet 5.5 September 28 Reuters FTC September 30 AP",
+      "entrypoint": "https://apnews.com/",
+      "result_ref": "Reuters转载页9月28日14:01 EDT确定周内起点；AP 9月30日19:27:51 UTC确认FTC调查。",
+      "note": "Reuters正文受限，型号由标题与Anthropic原文交叉；FTC与上期国防部诉讼分开。",
+      "checked_at": "2026-10-08T05:16:45+00:00",
+      "businesses": [],
+      "categories": [
+        "legal",
+        "product"
+      ],
+      "candidate_ids": [
+        "AN-SONNET",
+        "AN-FTC"
+      ]
+    },
+    {
+      "id": "O10",
+      "company": "Samsung Electronics",
+      "stage": "discovery",
+      "source_family": "company",
+      "status": "reviewed",
+      "query_or_url": "https://news.samsung.com/global/",
+      "entrypoint": "https://news.samsung.com/global/",
+      "result_ref": "Samsung Newsroom 9月29日Helix六关联企业投资公告",
+      "note": "集团合计10亿美元，其中Samsung Electronics为5亿美元；未核到设备供货合同。",
+      "checked_at": "2026-10-08T05:16:45+00:00",
+      "businesses": [
+        "存储"
+      ],
+      "categories": [
+        "capital"
+      ],
+      "candidate_ids": [
+        "SS-HELIX"
+      ]
+    },
+    {
+      "id": "I10",
+      "company": "Samsung Electronics",
+      "stage": "countercheck",
+      "source_family": "media",
+      "status": "reviewed",
+      "query_or_url": "Samsung Helix investment September 29 2026 Reuters AP",
+      "entrypoint": "https://apnews.com/",
+      "result_ref": "独立资本报道有限校准，投资与潜在采购严格分开。",
+      "note": "上期AI-RAN合同不重复写作本周新关系。",
+      "checked_at": "2026-10-08T05:16:45+00:00",
+      "businesses": [],
+      "categories": [
+        "product"
+      ],
+      "candidate_ids": []
+    },
+    {
+      "id": "O11",
+      "company": "SK Hynix",
+      "stage": "discovery",
+      "source_family": "company",
+      "status": "reviewed",
+      "query_or_url": "https://news.skhynix.com/",
+      "entrypoint": "https://news.skhynix.com/",
+      "result_ref": "SK Hynix 10月1日FACT澄清Solidigm融资和双重上市传闻",
+      "note": "未确定任何具体方案，内部与外部资本均在比较；9月28日OIP文章回顾9月23日展示，不作新合同。",
+      "checked_at": "2026-10-08T05:16:45+00:00",
+      "businesses": [
+        "DRAM"
+      ],
+      "categories": [
+        "capital"
+      ],
+      "candidate_ids": [
+        "SK-SOLIDIGM"
+      ]
+    },
+    {
+      "id": "I11",
+      "company": "SK Hynix",
+      "stage": "countercheck",
+      "source_family": "media",
+      "status": "reviewed",
+      "query_or_url": "SK hynix Solidigm October 1 2026 Yonhap no decision IPO",
+      "entrypoint": "https://en.yna.co.kr/",
+      "result_ref": "Yonhap 10月1日14:55韩国时间同日交叉，确认公司仍未决定。",
+      "note": "不采用可能1500亿美元估值的传闻数字为事实。",
+      "checked_at": "2026-10-08T05:16:45+00:00",
+      "businesses": [],
+      "categories": [
+        "product"
+      ],
+      "candidate_ids": []
+    },
+    {
+      "id": "O12",
+      "company": "TSMC",
+      "stage": "discovery",
+      "source_family": "company",
+      "status": "reviewed",
+      "query_or_url": "https://pr.tsmc.com/english/news",
+      "entrypoint": "https://pr.tsmc.com/english/news",
+      "result_ref": "TSMC新闻及IR 9月28日至10月4日有限检查",
+      "note": "未选入具本周版本的新增客户供货或经营资格事项；不从客户发布推断TSMC订单。",
+      "checked_at": "2026-10-08T05:16:45+00:00",
+      "businesses": [
+        "先进逻辑代工"
+      ],
+      "categories": [
+        "product"
+      ],
+      "candidate_ids": []
+    },
+    {
+      "id": "I12",
+      "company": "TSMC",
+      "stage": "countercheck",
+      "source_family": "media",
+      "status": "reviewed",
+      "query_or_url": "TSMC September 28 October 4 2026 Reuters AP AI 2nm CoWoS export",
+      "entrypoint": "https://apnews.com/",
+      "result_ref": "独立产业及监管有限筛选；未用匿名产能猜测补事实。",
+      "note": "SK Hynix 9月28日OIP回顾未构成TSMC新采购合同。",
+      "checked_at": "2026-10-08T05:16:45+00:00",
+      "businesses": [],
+      "categories": [
+        "product"
+      ],
+      "candidate_ids": []
+    }
+  ],
+  "candidates": [
+    {
+      "id": "MS-VOICE",
+      "companies": [
+        "Microsoft"
+      ],
+      "summary": "发布流式转录与新语音模型",
+      "discovered_by": [
+        "O02"
+      ],
+      "materiality": "material",
+      "materiality_reason": "语音代理基础模型竞争加快，客户付费量未知。",
+      "disposition": "included",
+      "reason": "本期入选且具体日期、版本、事实限制已人工核对。",
+      "claim_ids": [
+        "MS-VOICE-1",
+        "MS-VOICE-2"
+      ],
+      "targets": [
+        "company:Microsoft",
+        "event:1"
+      ],
+      "research": {
+        "event_key": "MS-VOICE",
+        "canonical_id": "MS-VOICE",
+        "member_ids": [
+          "MS-VOICE"
+        ],
+        "identity_status": "identified",
+        "materials": [
+          {
+            "role": "source_review",
+            "path": "logs/2026-10-05_verified_events.json",
+            "locator": "10月1日正文第83-106行，型号、语言与引入价"
+          },
+          {
+            "role": "source_review",
+            "path": "logs/2026-10-05_source_reviews.json",
+            "locator": "retrieval and four semantic reviews for MS-VOICE"
+          }
+        ],
+        "open_questions": [],
+        "next_action": {
+          "kind": "closed",
+          "target": "MS-VOICE",
+          "question": "本期入选事实及限制已核对"
+        }
+      }
+    },
+    {
+      "id": "GOO-ARGON",
+      "companies": [
+        "Alphabet / Google"
+      ],
+      "summary": "公布Gemini 4 Argon有限开放",
+      "discovered_by": [
+        "O03"
+      ],
+      "materiality": "material",
+      "materiality_reason": "前沿模型进入有限安全部署，商业范围和成本待验证。",
+      "disposition": "included",
+      "reason": "本期入选且具体日期、版本、事实限制已人工核对。",
+      "claim_ids": [
+        "GOO-ARGON-1",
+        "GOO-ARGON-2"
+      ],
+      "targets": [
+        "company:Alphabet / Google",
+        "event:2"
+      ],
+      "research": {
+        "event_key": "GOO-ARGON",
+        "canonical_id": "GOO-ARGON",
+        "member_ids": [
+          "GOO-ARGON"
+        ],
+        "identity_status": "identified",
+        "materials": [
+          {
+            "role": "source_review",
+            "path": "logs/2026-10-05_verified_events.json",
+            "locator": "9月30日公告正文第214-216、248-250行，Fairwind及未来扩围"
+          },
+          {
+            "role": "source_review",
+            "path": "logs/2026-10-05_source_reviews.json",
+            "locator": "retrieval and four semantic reviews for GOO-ARGON"
+          }
+        ],
+        "open_questions": [],
+        "next_action": {
+          "kind": "closed",
+          "target": "GOO-ARGON",
+          "question": "本期入选事实及限制已核对"
+        }
+      }
+    },
+    {
+      "id": "AWS-COMMUNITY",
+      "companies": [
+        "Amazon / AWS"
+      ],
+      "summary": "宣布美国数据中心社区五年新增逾10亿美元承诺",
+      "discovered_by": [
+        "I04"
+      ],
+      "materiality": "material",
+      "materiality_reason": "数据中心扩张的社区成本与许可协调更受关注，支出确认待后续。",
+      "disposition": "included",
+      "reason": "本期入选且具体日期、版本、事实限制已人工核对。",
+      "claim_ids": [
+        "AWS-COMMUNITY-1",
+        "AWS-COMMUNITY-2"
+      ],
+      "targets": [
+        "company:Amazon / AWS",
+        "event:3"
+      ],
+      "research": {
+        "event_key": "AWS-COMMUNITY",
+        "canonical_id": "AWS-COMMUNITY",
+        "member_ids": [
+          "AWS-COMMUNITY"
+        ],
+        "identity_status": "identified",
+        "materials": [
+          {
+            "role": "source_review",
+            "path": "logs/2026-10-05_verified_events.json",
+            "locator": "AP 2026-10-02 13:37 UTC报道；Amazon Built Together正文第74-75行"
+          },
+          {
+            "role": "source_review",
+            "path": "logs/2026-10-05_source_reviews.json",
+            "locator": "retrieval and four semantic reviews for AWS-COMMUNITY"
+          }
+        ],
+        "open_questions": [],
+        "next_action": {
+          "kind": "closed",
+          "target": "AWS-COMMUNITY",
+          "question": "本期入选事实及限制已核对"
+        }
+      }
+    },
+    {
+      "id": "META-SMB",
+      "companies": [
+        "Meta"
+      ],
+      "summary": "Muse扩展小企业连接器",
+      "discovered_by": [
+        "O05"
+      ],
+      "materiality": "material",
+      "materiality_reason": "代理切入中小企业工作流，转化与广告增量未知。",
+      "disposition": "included",
+      "reason": "本期入选且具体日期、版本、事实限制已人工核对。",
+      "claim_ids": [
+        "META-SMB-1",
+        "META-SMB-2"
+      ],
+      "targets": [
+        "company:Meta",
+        "event:4"
+      ],
+      "research": {
+        "event_key": "META-SMB",
+        "canonical_id": "META-SMB",
+        "member_ids": [
+          "META-SMB"
+        ],
+        "identity_status": "identified",
+        "materials": [
+          {
+            "role": "source_review",
+            "path": "logs/2026-10-05_verified_events.json",
+            "locator": "9月29日Meta正文第239-261行，连接器与批准控制"
+          },
+          {
+            "role": "source_review",
+            "path": "logs/2026-10-05_source_reviews.json",
+            "locator": "retrieval and four semantic reviews for META-SMB"
+          }
+        ],
+        "open_questions": [],
+        "next_action": {
+          "kind": "closed",
+          "target": "META-SMB",
+          "question": "本期入选事实及限制已核对"
+        }
+      }
+    },
+    {
+      "id": "NV-BUYBACK",
+      "companies": [
+        "NVIDIA"
+      ],
+      "summary": "董事会增加1500亿美元回购授权",
+      "discovered_by": [
+        "I06"
+      ],
+      "materiality": "material",
+      "materiality_reason": "股东回报弹性增加，不应从授权额推算当期现金流出。",
+      "disposition": "included",
+      "reason": "本期入选且具体日期、版本、事实限制已人工核对。",
+      "claim_ids": [
+        "NV-BUYBACK-1",
+        "NV-BUYBACK-2"
+      ],
+      "targets": [
+        "company:NVIDIA",
+        "event:5"
+      ],
+      "research": {
+        "event_key": "NV-BUYBACK",
+        "canonical_id": "NV-BUYBACK",
+        "member_ids": [
+          "NV-BUYBACK"
+        ],
+        "identity_status": "identified",
+        "materials": [
+          {
+            "role": "source_review",
+            "path": "logs/2026-10-05_verified_events.json",
+            "locator": "AP 2026-09-28 16:11:41 UTC专稿；NVIDIA公告第44-56行"
+          },
+          {
+            "role": "source_review",
+            "path": "logs/2026-10-05_source_reviews.json",
+            "locator": "retrieval and four semantic reviews for NV-BUYBACK"
+          }
+        ],
+        "open_questions": [],
+        "next_action": {
+          "kind": "closed",
+          "target": "NV-BUYBACK",
+          "question": "本期入选事实及限制已核对"
+        }
+      }
+    },
+    {
+      "id": "TSLA-Q3",
+      "companies": [
+        "Tesla"
+      ],
+      "summary": "公布2026年第三季度产销和储能部署",
+      "discovered_by": [
+        "O07"
+      ],
+      "materiality": "material",
+      "materiality_reason": "交付规模可核，但财务质量与售价仍未知。",
+      "disposition": "included",
+      "reason": "本期入选且具体日期、版本、事实限制已人工核对。",
+      "claim_ids": [
+        "TSLA-Q3-1",
+        "TSLA-Q3-2"
+      ],
+      "targets": [
+        "company:Tesla",
+        "event:6"
+      ],
+      "research": {
+        "event_key": "TSLA-Q3",
+        "canonical_id": "TSLA-Q3",
+        "member_ids": [
+          "TSLA-Q3"
+        ],
+        "identity_status": "identified",
+        "materials": [
+          {
+            "role": "source_review",
+            "path": "logs/2026-10-05_verified_events.json",
+            "locator": "10月2日Tesla IR表格第7-22行、限制第36-38行"
+          },
+          {
+            "role": "source_review",
+            "path": "logs/2026-10-05_source_reviews.json",
+            "locator": "retrieval and four semantic reviews for TSLA-Q3"
+          }
+        ],
+        "open_questions": [],
+        "next_action": {
+          "kind": "closed",
+          "target": "TSLA-Q3",
+          "question": "本期入选事实及限制已核对"
+        }
+      }
+    },
+    {
+      "id": "OA-SOL61",
+      "companies": [
+        "OpenAI"
+      ],
+      "summary": "GPT-6.1 Sol进入Work、Codex和API",
+      "discovered_by": [
+        "O08"
+      ],
+      "materiality": "material",
+      "materiality_reason": "模型成本与能力竞争加剧，商业使用量仍待披露。",
+      "disposition": "included",
+      "reason": "本期入选且具体日期、版本、事实限制已人工核对。",
+      "claim_ids": [
+        "OA-SOL61-1",
+        "OA-SOL61-2"
+      ],
+      "targets": [
+        "company:OpenAI",
+        "event:7"
+      ],
+      "research": {
+        "event_key": "OA-SOL61",
+        "canonical_id": "OA-SOL61",
+        "member_ids": [
+          "OA-SOL61"
+        ],
+        "identity_status": "identified",
+        "materials": [
+          {
+            "role": "source_review",
+            "path": "logs/2026-10-05_verified_events.json",
+            "locator": "官方新闻索引Sep 29条目及产品正文Pricing and availability段第114行"
+          },
+          {
+            "role": "source_review",
+            "path": "logs/2026-10-05_source_reviews.json",
+            "locator": "retrieval and four semantic reviews for OA-SOL61"
+          }
+        ],
+        "open_questions": [],
+        "next_action": {
+          "kind": "closed",
+          "target": "OA-SOL61",
+          "question": "本期入选事实及限制已核对"
+        }
+      }
+    },
+    {
+      "id": "OA-FTC",
+      "companies": [
+        "OpenAI"
+      ],
+      "summary": "FTC调查在本周获公开确认",
+      "discovered_by": [
+        "I08"
+      ],
+      "materiality": "material",
+      "materiality_reason": "代理安全与消费者保护监管不确定性增加。",
+      "disposition": "included",
+      "reason": "本期入选且具体日期、版本、事实限制已人工核对。",
+      "claim_ids": [
+        "OA-FTC-1",
+        "OA-FTC-2"
+      ],
+      "targets": [
+        "company:OpenAI",
+        "event:8"
+      ],
+      "research": {
+        "event_key": "OA-FTC",
+        "canonical_id": "OA-FTC",
+        "member_ids": [
+          "OA-FTC"
+        ],
+        "identity_status": "identified",
+        "materials": [
+          {
+            "role": "source_review",
+            "path": "logs/2026-10-05_verified_events.json",
+            "locator": "AP 2026-09-30 19:27:51 UTC报道；发言人确认且报道注明调查已进行数月"
+          },
+          {
+            "role": "source_review",
+            "path": "logs/2026-10-05_source_reviews.json",
+            "locator": "retrieval and four semantic reviews for OA-FTC"
+          }
+        ],
+        "open_questions": [],
+        "next_action": {
+          "kind": "closed",
+          "target": "OA-FTC",
+          "question": "本期入选事实及限制已核对"
+        }
+      }
+    },
+    {
+      "id": "AN-SONNET",
+      "companies": [
+        "Anthropic"
+      ],
+      "summary": "Claude Sonnet 5.5发布",
+      "discovered_by": [
+        "I09"
+      ],
+      "materiality": "material",
+      "materiality_reason": "中档模型竞争更激烈，实际任务成本需复测。",
+      "disposition": "included",
+      "reason": "本期入选且具体日期、版本、事实限制已人工核对。",
+      "claim_ids": [
+        "AN-SONNET-1",
+        "AN-SONNET-2"
+      ],
+      "targets": [
+        "company:Anthropic",
+        "event:9"
+      ],
+      "research": {
+        "event_key": "AN-SONNET",
+        "canonical_id": "AN-SONNET",
+        "member_ids": [
+          "AN-SONNET"
+        ],
+        "identity_status": "identified",
+        "materials": [
+          {
+            "role": "source_review",
+            "path": "logs/2026-10-05_verified_events.json",
+            "locator": "Reuters转载 2026-09-28 14:01 EDT报道；Anthropic模型页第15-35行价格与自测"
+          },
+          {
+            "role": "source_review",
+            "path": "logs/2026-10-05_source_reviews.json",
+            "locator": "retrieval and four semantic reviews for AN-SONNET"
+          }
+        ],
+        "open_questions": [],
+        "next_action": {
+          "kind": "closed",
+          "target": "AN-SONNET",
+          "question": "本期入选事实及限制已核对"
+        }
+      }
+    },
+    {
+      "id": "AN-FTC",
+      "companies": [
+        "Anthropic"
+      ],
+      "summary": "FTC调查在本周获公开确认",
+      "discovered_by": [
+        "I09"
+      ],
+      "materiality": "material",
+      "materiality_reason": "消费者保护与国防采购属不同法律风险线，均需后续文件。",
+      "disposition": "included",
+      "reason": "本期入选且具体日期、版本、事实限制已人工核对。",
+      "claim_ids": [
+        "AN-FTC-1",
+        "AN-FTC-2"
+      ],
+      "targets": [
+        "company:Anthropic",
+        "event:10"
+      ],
+      "research": {
+        "event_key": "AN-FTC",
+        "canonical_id": "AN-FTC",
+        "member_ids": [
+          "AN-FTC"
+        ],
+        "identity_status": "identified",
+        "materials": [
+          {
+            "role": "source_review",
+            "path": "logs/2026-10-05_verified_events.json",
+            "locator": "AP 2026-09-30 19:27:51 UTC报道；发言人确认且报道注明调查已进行数月"
+          },
+          {
+            "role": "source_review",
+            "path": "logs/2026-10-05_source_reviews.json",
+            "locator": "retrieval and four semantic reviews for AN-FTC"
+          }
+        ],
+        "open_questions": [],
+        "next_action": {
+          "kind": "closed",
+          "target": "AN-FTC",
+          "question": "本期入选事实及限制已核对"
+        }
+      }
+    },
+    {
+      "id": "SS-HELIX",
+      "companies": [
+        "Samsung Electronics"
+      ],
+      "summary": "Samsung六家关联企业拟合计投资Helix 10亿美元",
+      "discovered_by": [
+        "O10"
+      ],
+      "materiality": "material",
+      "materiality_reason": "AI数据中心资本布局扩大，分部财务影响尚不清晰。",
+      "disposition": "included",
+      "reason": "本期入选且具体日期、版本、事实限制已人工核对。",
+      "claim_ids": [
+        "SS-HELIX-1",
+        "SS-HELIX-2"
+      ],
+      "targets": [
+        "company:Samsung Electronics",
+        "event:11"
+      ],
+      "research": {
+        "event_key": "SS-HELIX",
+        "canonical_id": "SS-HELIX",
+        "member_ids": [
+          "SS-HELIX"
+        ],
+        "identity_status": "identified",
+        "materials": [
+          {
+            "role": "source_review",
+            "path": "logs/2026-10-05_verified_events.json",
+            "locator": "9月29日全球Newsroom第65-76行，Electronics 5亿美元和六家合计10亿美元"
+          },
+          {
+            "role": "source_review",
+            "path": "logs/2026-10-05_source_reviews.json",
+            "locator": "retrieval and four semantic reviews for SS-HELIX"
+          }
+        ],
+        "open_questions": [],
+        "next_action": {
+          "kind": "closed",
+          "target": "SS-HELIX",
+          "question": "本期入选事实及限制已核对"
+        }
+      }
+    },
+    {
+      "id": "SK-SOLIDIGM",
+      "companies": [
+        "SK Hynix"
+      ],
+      "summary": "澄清Solidigm融资和上市传闻尚无决定",
+      "discovered_by": [
+        "O11"
+      ],
+      "materiality": "material",
+      "materiality_reason": "eSSD资本配置与股东摊薄风险成为观察重点，当前无已核交易。",
+      "disposition": "included",
+      "reason": "本期入选且具体日期、版本、事实限制已人工核对。",
+      "claim_ids": [
+        "SK-SOLIDIGM-1",
+        "SK-SOLIDIGM-2"
+      ],
+      "targets": [
+        "company:SK Hynix",
+        "event:12"
+      ],
+      "research": {
+        "event_key": "SK-SOLIDIGM",
+        "canonical_id": "SK-SOLIDIGM",
+        "member_ids": [
+          "SK-SOLIDIGM"
+        ],
+        "identity_status": "identified",
+        "materials": [
+          {
+            "role": "source_review",
+            "path": "logs/2026-10-05_verified_events.json",
+            "locator": "10月1日SK Hynix FACT正文第24-65行，声明尚无决定及股东价值原则"
+          },
+          {
+            "role": "source_review",
+            "path": "logs/2026-10-05_source_reviews.json",
+            "locator": "retrieval and four semantic reviews for SK-SOLIDIGM"
+          }
+        ],
+        "open_questions": [],
+        "next_action": {
+          "kind": "closed",
+          "target": "SK-SOLIDIGM",
+          "question": "本期入选事实及限制已核对"
+        }
+      }
+    }
+  ],
+  "company_conclusions": {
+    "Apple": {
+      "status": "no_selected_update",
+      "selected_candidate_ids": [],
+      "check_ids": [
+        "O01",
+        "I01"
+      ],
+      "note": "本期有限范围0项，不表示Apple无变化。",
+      "selection_reason": "官方及独立有限筛选后没有入选可核重要增量；不宣称没有变化。",
+      "legal_review": "本期有限校准未得到改变入选结论的具版本新监管或事故节点。"
+    },
+    "Microsoft": {
+      "status": "events",
+      "selected_candidate_ids": [
+        "MS-VOICE"
+      ],
+      "check_ids": [
+        "O02",
+        "I02"
+      ],
+      "note": "入选10月1日语音模型公告1项。",
+      "selection_reason": "按业务、财务/资本、产品、监管与治理影响排序；仅入具版本和可得性证据事项。",
+      "legal_review": "本期无已核会推翻语音产品阶段的监管裁决。"
+    },
+    "Alphabet / Google": {
+      "status": "events",
+      "selected_candidate_ids": [
+        "GOO-ARGON"
+      ],
+      "check_ids": [
+        "O03",
+        "I03"
+      ],
+      "note": "入选Argon有限开放1项。",
+      "selection_reason": "按业务、财务/资本、产品、监管与治理影响排序；仅入具版本和可得性证据事项。",
+      "legal_review": "未见会把本期Argon准入状态推翻的监管节点；旧案不当新事。"
+    },
+    "Amazon / AWS": {
+      "status": "events",
+      "selected_candidate_ids": [
+        "AWS-COMMUNITY"
+      ],
+      "check_ids": [
+        "O04",
+        "I04"
+      ],
+      "note": "入选社区计划资本承诺1项。",
+      "selection_reason": "按业务、财务/资本、产品、监管与治理影响排序；仅入具版本和可得性证据事项。",
+      "legal_review": "地方许可和社区反对为后续条件，未宣称获得审批。"
+    },
+    "Meta": {
+      "status": "events",
+      "selected_candidate_ids": [
+        "META-SMB"
+      ],
+      "check_ids": [
+        "O05",
+        "I05"
+      ],
+      "note": "入选中小企业连接器公告1项。",
+      "selection_reason": "按业务、财务/资本、产品、监管与治理影响排序；仅入具版本和可得性证据事项。",
+      "legal_review": "未把自主代理的公司宣传推成无审批的已部署能力。"
+    },
+    "NVIDIA": {
+      "status": "events",
+      "selected_candidate_ids": [
+        "NV-BUYBACK"
+      ],
+      "check_ids": [
+        "O06",
+        "I06"
+      ],
+      "note": "入选回购授权1项；同日安全平台公告不改变本期资本数字。",
+      "selection_reason": "按业务、财务/资本、产品、监管与治理影响排序；仅入具版本和可得性证据事项。",
+      "legal_review": "安全平台发布非安全事故结案；本期不据此解除旧风险。"
+    },
+    "Tesla": {
+      "status": "events",
+      "selected_candidate_ids": [
+        "TSLA-Q3"
+      ],
+      "check_ids": [
+        "O07",
+        "I07"
+      ],
+      "note": "入选Q3产销与储能披露1项。",
+      "selection_reason": "按业务、财务/资本、产品、监管与治理影响排序；仅入具版本和可得性证据事项。",
+      "legal_review": "监管旧问询未被本次产销数据解决。"
+    },
+    "OpenAI": {
+      "status": "events",
+      "selected_candidate_ids": [
+        "OA-SOL61",
+        "OA-FTC"
+      ],
+      "check_ids": [
+        "O08",
+        "I08"
+      ],
+      "note": "入选模型渠道和FTC调查公开确认2项。",
+      "selection_reason": "按业务、财务/资本、产品、监管与治理影响排序；仅入具版本和可得性证据事项。",
+      "legal_review": "FTC消费者风险调查和模型上市是独立事件；无处罚结论。"
+    },
+    "Anthropic": {
+      "status": "events",
+      "selected_candidate_ids": [
+        "AN-SONNET",
+        "AN-FTC"
+      ],
+      "check_ids": [
+        "O09",
+        "I09"
+      ],
+      "note": "入选Sonnet发布与FTC公开确认2项。",
+      "selection_reason": "按业务、财务/资本、产品、监管与治理影响排序；仅入具版本和可得性证据事项。",
+      "legal_review": "旧国防部供应链风险裁判没有因FTC调查而终结。"
+    },
+    "Samsung Electronics": {
+      "status": "events",
+      "selected_candidate_ids": [
+        "SS-HELIX"
+      ],
+      "check_ids": [
+        "O10",
+        "I10"
+      ],
+      "note": "入选Helix投资公告1项。",
+      "selection_reason": "按业务、财务/资本、产品、监管与治理影响排序；仅入具版本和可得性证据事项。",
+      "legal_review": "未把投资写成已审批或已确认的设备收入。"
+    },
+    "SK Hynix": {
+      "status": "events",
+      "selected_candidate_ids": [
+        "SK-SOLIDIGM"
+      ],
+      "check_ids": [
+        "O11",
+        "I11"
+      ],
+      "note": "入选Solidigm融资未决澄清1项。",
+      "selection_reason": "按业务、财务/资本、产品、监管与治理影响排序；仅入具版本和可得性证据事项。",
+      "legal_review": "融资、潜在双重上市和股东摊薄均尚无董事会定案；旧Intel制造讨论不复活。"
+    },
+    "TSMC": {
+      "status": "no_selected_update",
+      "selected_candidate_ids": [],
+      "check_ids": [
+        "O12",
+        "I12"
+      ],
+      "note": "有限范围0项，不表示TSMC没有变化。",
+      "selection_reason": "官方及独立有限筛选后没有入选可核重要增量；不宣称没有变化。",
+      "legal_review": "本期无已核新监管裁定改变旧供应链判断。"
+    }
+  },
+  "watchlist": [
+    {
+      "id": "W-APPLE-EVENT",
+      "companies": [
+        "Apple"
+      ],
+      "topic": "9月发布会及产品交付安排",
+      "status": "active",
+      "review_scope": "not_selected",
+      "defer_reason": "本期有限筛选未选为前五独立事项；仍保留未决状态。",
+      "note": "前期活跃事项仅在改变本期入选或结论时展开；不宣称风险已解除。"
+    },
+    {
+      "id": "W-APPLE-MAC",
+      "companies": [
+        "Apple"
+      ],
+      "topic": "上期Mac芯片/9月活动计划",
+      "status": "active",
+      "review_scope": "not_selected",
+      "defer_reason": "本期有限筛选未选为前五独立事项；仍保留未决状态。",
+      "note": "前期活跃事项仅在改变本期入选或结论时展开；不宣称风险已解除。"
+    },
+    {
+      "id": "W-NVIDIA-HF",
+      "companies": [
+        "NVIDIA"
+      ],
+      "topic": "Hugging Face并购阶段",
+      "status": "active",
+      "review_scope": "not_selected",
+      "defer_reason": "本期有限筛选未选为前五独立事项；仍保留未决状态。",
+      "note": "前期活跃事项仅在改变本期入选或结论时展开；不宣称风险已解除。"
+    },
+    {
+      "id": "W-AWS-NVIDIA-GPU",
+      "companies": [
+        "Amazon / AWS",
+        "NVIDIA"
+      ],
+      "topic": "上期GPU部署长期计划",
+      "status": "active",
+      "review_scope": "not_selected",
+      "defer_reason": "本期有限筛选未选为前五独立事项；仍保留未决状态。",
+      "note": "前期活跃事项仅在改变本期入选或结论时展开；不宣称风险已解除。"
+    },
+    {
+      "id": "W-META-SETTLEMENT",
+      "companies": [
+        "Meta"
+      ],
+      "topic": "上期州级和解与执行",
+      "status": "active",
+      "review_scope": "not_selected",
+      "defer_reason": "本期有限筛选未选为前五独立事项；仍保留未决状态。",
+      "note": "前期活跃事项仅在改变本期入选或结论时展开；不宣称风险已解除。"
+    },
+    {
+      "id": "W-OPENAI-HF-INCIDENT",
+      "companies": [
+        "OpenAI"
+      ],
+      "topic": "上期Hugging Face安全事件",
+      "status": "active",
+      "review_scope": "not_selected",
+      "defer_reason": "本期有限筛选未选为前五独立事项；仍保留未决状态。",
+      "note": "前期活跃事项仅在改变本期入选或结论时展开；不宣称风险已解除。"
+    },
+    {
+      "id": "W-OPENAI-CURSOR",
+      "companies": [
+        "OpenAI"
+      ],
+      "topic": "上期Cursor合作/终止计划",
+      "status": "active",
+      "review_scope": "not_selected",
+      "defer_reason": "本期有限筛选未选为前五独立事项；仍保留未决状态。",
+      "note": "前期活跃事项仅在改变本期入选或结论时展开；不宣称风险已解除。"
+    },
+    {
+      "id": "W-OPENAI-JALAPENO",
+      "companies": [
+        "OpenAI"
+      ],
+      "topic": "上期自研芯片计划",
+      "status": "active",
+      "review_scope": "not_selected",
+      "defer_reason": "本期有限筛选未选为前五独立事项；仍保留未决状态。",
+      "note": "前期活跃事项仅在改变本期入选或结论时展开；不宣称风险已解除。"
+    },
+    {
+      "id": "W-ANTHROPIC-NSCALE",
+      "companies": [
+        "Anthropic"
+      ],
+      "topic": "上期Nscale合作报道",
+      "status": "active",
+      "review_scope": "not_selected",
+      "defer_reason": "本期有限筛选未选为前五独立事项；仍保留未决状态。",
+      "note": "前期活跃事项仅在改变本期入选或结论时展开；不宣称风险已解除。"
+    },
+    {
+      "id": "W-SAMSUNG-S26FE",
+      "companies": [
+        "Samsung Electronics"
+      ],
+      "topic": "上期S26FE上市预告",
+      "status": "active",
+      "review_scope": "not_selected",
+      "defer_reason": "本期有限筛选未选为前五独立事项；仍保留未决状态。",
+      "note": "前期活跃事项仅在改变本期入选或结论时展开；不宣称风险已解除。"
+    },
+    {
+      "id": "W-SKHYNIX-INDIANA",
+      "companies": [
+        "SK Hynix"
+      ],
+      "topic": "上期Indiana项目投产计划",
+      "status": "active",
+      "review_scope": "not_selected",
+      "defer_reason": "本期有限筛选未选为前五独立事项；仍保留未决状态。",
+      "note": "前期活跃事项仅在改变本期入选或结论时展开；不宣称风险已解除。"
+    },
+    {
+      "id": "W-GOOGLE-SEARCH-2020",
+      "companies": [
+        "Alphabet / Google"
+      ],
+      "topic": "DOJ Google搜索垄断案2020，救济执行与上诉；与2023广告技术案分开",
+      "status": "active",
+      "review_scope": "not_selected",
+      "defer_reason": "本期有限筛选未选为前五独立事项；仍保留未决状态。",
+      "note": "前期活跃事项仅在改变本期入选或结论时展开；不宣称风险已解除。"
+    }
+  ],
+  "prior_report": {
+    "path": "reports/2026-09-28_weekly_morning_brief.md",
+    "sha256": "e4b74cf3f78d34cb3337b5d47f5a488b57232ac1943be9de8d1843fbe2cb03b8",
+    "note": "只作事件身份和活跃事项对照，不以旧稿替代当期证据。"
+  },
+  "report_sha256": "24086f604a79a9a1dc7926255c561ffc146257f4ceb58aad25b5c4b409ad5b57",
+  "product_graph_sha256": "9cab5511530a248a814852befcbd02402645c23370fe2747e54f069089041396",
+  "skill_sha256": "abb65eeb71a83c1f9a2e1d816799d8c7489a8e76f482b95717437127b6f6858f",
+  "reviewed_at": "2026-10-08T05:23:29.009454+00:00",
+  "selection_note": "在9月28日已冻结事项基础上仅选本周增量12项。Apple、TSMC有限官方与独立筛选后无入选事项；10月1日SK Hynix对Solidigm融资传闻的澄清是本周新声明，不将未决定的方案写成IPO。10月5日上海零点以后内容及10月7/8日更新不倒填。",
+  "gaps": []
+}

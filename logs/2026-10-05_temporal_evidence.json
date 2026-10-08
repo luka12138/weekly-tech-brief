@@ -1,0 +1,711 @@
+{
+  "schema_version": 1,
+  "report_date": "2026-10-05",
+  "cutoff_exclusive": "2026-10-05T00:00:00+08:00",
+  "status": "ready",
+  "report_created_at": "2026-10-08T05:23:17.928108+00:00",
+  "reviewed_at": "2026-10-08T05:23:29.007596+00:00",
+  "report_sha256": "24086f604a79a9a1dc7926255c561ffc146257f4ceb58aad25b5c4b409ad5b57",
+  "baseline_sha256": "035fefe330029fc56a7a85726d311e07c2aac7441741547aa52e574e793c6935",
+  "product_graph_sha256": "9cab5511530a248a814852befcbd02402645c23370fe2747e54f069089041396",
+  "manual_reviews": {
+    "financial_periods_and_units": {
+      "status": "reviewed",
+      "note": "Tesla 2026年第三季度生产464391辆、交付486532辆和储能13.7GWh是经营量，不是营收/利润；财报计划10月21日。NVIDIA新增1500亿美元回购授权、剩余2350亿美元，预计到2028财年执行，非已回购。Samsung六关联企业合计10亿美元、Electronics单体5亿美元。Amazon未来五年新增逾10亿美元社区承诺，与先前三年已投逾10亿美元分开。Microsoft引入价0.54美元/音频小时至年末，非实际收入。"
+    },
+    "source_versions": {
+      "status": "reviewed",
+      "note": "各入选公司具日期官方正文分别核对；OpenAI 9月29日索引与产品准入段、不用10月7日条目。FTC AP 9月30日19:27:51 UTC全文通过检索索引取得，原URL直开受限；该时间是公开确认非调查启动。NVIDIA AP 9月28日16:11:41 UTC及Sonnet Reuters转载9月28日14:01 EDT处理周一起点；Reuters正文付费限制由Anthropic当日原文补事实。SK Hynix 10月1日声明及Yonhap 14:55 KST交叉，未定IPO不作已发生交易。"
+    },
+    "product_graph": {
+      "status": "reviewed",
+      "note": "10月5日是第四季度首个周一，按规则刷新产品图但不新造产品/供应边；供应图沿用9月28日冻结版本，E38/E39仅上期合同阶段。Helix投资、NVIDIA回购授权、Amazon社区承诺和Solidigm融资讨论均非已完成设备供应。"
+    },
+    "report_vintage": {
+      "status": "reviewed",
+      "note": "10月5日期于10月8日事后补写；只纳入10月5日上海00:00排他截止前已公开具体版本。正文标明事后版本，不能充当10月5日周一当时已可交易的原始报告或回测输入。"
+    }
+  },
+  "claims": [
+    {
+      "id": "MS-VOICE-1",
+      "candidate_id": "MS-VOICE",
+      "kind": "news",
+      "statement": "Microsoft于10月1日推出MAI-Transcribe-2-Streaming，并公布MAI-Voice-2.1和Flash语音模型",
+      "targets": [
+        "event:1",
+        "company:Microsoft",
+        "headline:11"
+      ],
+      "evidence": [
+        {
+          "url": "https://microsoft.ai/news/our-first-streaming-transcription-model/",
+          "retrieved_at": "2026-10-08T05:16:45+00:00",
+          "basis": "dated_release",
+          "locator": "10月1日正文第83-106行，型号、语言与引入价",
+          "support": "Microsoft于10月1日推出MAI-Transcribe-2-Streaming，并公布MAI-Voice-2.1和Flash语音模型；官方给出的流式转录支持60种语言及每小时0.54美元年内引入价，不是已实现收入。",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-01",
+            "earliest": "2026-09-30T10:00:00+00:00",
+            "latest_exclusive": "2026-10-02T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "10月1日正文第83-106行，型号、语言与引入价",
+            "note": "原文只证明日期，未知时区保留全球完整50小时可能区间；边界不是实际发布时刻。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "MS-VOICE-2",
+      "candidate_id": "MS-VOICE",
+      "kind": "news",
+      "statement": "官方给出的流式转录支持60种语言及每小时0.54美元年内引入价，不是已实现收入",
+      "targets": [
+        "event:1",
+        "company:Microsoft",
+        "headline:11"
+      ],
+      "evidence": [
+        {
+          "url": "https://microsoft.ai/news/our-first-streaming-transcription-model/",
+          "retrieved_at": "2026-10-08T05:16:45+00:00",
+          "basis": "dated_release",
+          "locator": "10月1日正文第83-106行，型号、语言与引入价",
+          "support": "Microsoft于10月1日推出MAI-Transcribe-2-Streaming，并公布MAI-Voice-2.1和Flash语音模型；官方给出的流式转录支持60种语言及每小时0.54美元年内引入价，不是已实现收入。",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-01",
+            "earliest": "2026-09-30T10:00:00+00:00",
+            "latest_exclusive": "2026-10-02T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "10月1日正文第83-106行，型号、语言与引入价",
+            "note": "原文只证明日期，未知时区保留全球完整50小时可能区间；边界不是实际发布时刻。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "GOO-ARGON-1",
+      "candidate_id": "GOO-ARGON",
+      "kind": "news",
+      "statement": "Google于9月30日宣布Gemini 4 Argon先向Fairwind计划的可信网络防御方逐步开放",
+      "targets": [
+        "event:2",
+        "company:Alphabet / Google",
+        "headline:5",
+        "analysis:2",
+        "catalyst:3"
+      ],
+      "evidence": [
+        {
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+          "retrieved_at": "2026-10-08T05:16:45+00:00",
+          "basis": "dated_release",
+          "locator": "9月30日公告正文第214-216、248-250行，Fairwind及未来扩围",
+          "support": "Google于9月30日宣布Gemini 4 Argon先向Fairwind计划的可信网络防御方逐步开放；开发者、企业与消费者更广泛开放尚在未来，不能写成全面GA。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-30",
+            "earliest": "2026-09-29T10:00:00+00:00",
+            "latest_exclusive": "2026-10-01T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "9月30日公告正文第214-216、248-250行，Fairwind及未来扩围",
+            "note": "原文只证明日期，未知时区保留全球完整50小时可能区间；边界不是实际发布时刻。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "GOO-ARGON-2",
+      "candidate_id": "GOO-ARGON",
+      "kind": "news",
+      "statement": "开发者、企业与消费者更广泛开放尚在未来，不能写成全面GA",
+      "targets": [
+        "event:2",
+        "company:Alphabet / Google",
+        "headline:5",
+        "analysis:2",
+        "catalyst:3"
+      ],
+      "evidence": [
+        {
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+          "retrieved_at": "2026-10-08T05:16:45+00:00",
+          "basis": "dated_release",
+          "locator": "9月30日公告正文第214-216、248-250行，Fairwind及未来扩围",
+          "support": "Google于9月30日宣布Gemini 4 Argon先向Fairwind计划的可信网络防御方逐步开放；开发者、企业与消费者更广泛开放尚在未来，不能写成全面GA。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-30",
+            "earliest": "2026-09-29T10:00:00+00:00",
+            "latest_exclusive": "2026-10-01T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "9月30日公告正文第214-216、248-250行，Fairwind及未来扩围",
+            "note": "原文只证明日期，未知时区保留全球完整50小时可能区间；边界不是实际发布时刻。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "AWS-COMMUNITY-1",
+      "candidate_id": "AWS-COMMUNITY",
+      "kind": "news",
+      "statement": "AP于10月2日报道Amazon宣布未来五年向美国数据中心社区新增投资逾10亿美元",
+      "targets": [
+        "event:3",
+        "company:Amazon / AWS",
+        "headline:10",
+        "catalyst:4"
+      ],
+      "evidence": [
+        {
+          "url": "https://apnews.com/article/91b65ba1729540c1c0d92e35deef35d8",
+          "retrieved_at": "2026-10-08T05:16:45+00:00",
+          "basis": "dated_media",
+          "locator": "AP 2026-10-02 13:37 UTC报道；Amazon Built Together正文第74-75行",
+          "support": "AP于10月2日报道Amazon宣布未来五年向美国数据中心社区新增投资逾10亿美元；这是未来承诺，不是本周已经支出，也与此前既有投入分开。",
+          "claim_first_public_at": "2026-10-02T13:37:00+00:00"
+        }
+      ]
+    },
+    {
+      "id": "AWS-COMMUNITY-2",
+      "candidate_id": "AWS-COMMUNITY",
+      "kind": "news",
+      "statement": "这是未来承诺，不是本周已经支出，也与此前既有投入分开",
+      "targets": [
+        "event:3",
+        "company:Amazon / AWS",
+        "headline:10",
+        "catalyst:4"
+      ],
+      "evidence": [
+        {
+          "url": "https://apnews.com/article/91b65ba1729540c1c0d92e35deef35d8",
+          "retrieved_at": "2026-10-08T05:16:45+00:00",
+          "basis": "dated_media",
+          "locator": "AP 2026-10-02 13:37 UTC报道；Amazon Built Together正文第74-75行",
+          "support": "AP于10月2日报道Amazon宣布未来五年向美国数据中心社区新增投资逾10亿美元；这是未来承诺，不是本周已经支出，也与此前既有投入分开。",
+          "claim_first_public_at": "2026-10-02T13:37:00+00:00"
+        }
+      ]
+    },
+    {
+      "id": "META-SMB-1",
+      "candidate_id": "META-SMB",
+      "kind": "news",
+      "statement": "Meta于9月29日宣布Muse for Small Business，加入Facebook/Instagram业务账户及第三方工具连接",
+      "targets": [
+        "event:4",
+        "company:Meta",
+        "headline:12"
+      ],
+      "evidence": [
+        {
+          "url": "https://about.fb.com/news/2026/09/introducing-muse-small-business/",
+          "retrieved_at": "2026-10-08T05:16:45+00:00",
+          "basis": "dated_release",
+          "locator": "9月29日Meta正文第239-261行，连接器与批准控制",
+          "support": "Meta于9月29日宣布Muse for Small Business，加入Facebook/Instagram业务账户及第三方工具连接；公司称发布、发送和支出均须用户批准，不能写成无人监督自动投放。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-29",
+            "earliest": "2026-09-28T10:00:00+00:00",
+            "latest_exclusive": "2026-09-30T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "9月29日Meta正文第239-261行，连接器与批准控制",
+            "note": "原文只证明日期，未知时区保留全球完整50小时可能区间；边界不是实际发布时刻。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "META-SMB-2",
+      "candidate_id": "META-SMB",
+      "kind": "news",
+      "statement": "公司称发布、发送和支出均须用户批准，不能写成无人监督自动投放",
+      "targets": [
+        "event:4",
+        "company:Meta",
+        "headline:12"
+      ],
+      "evidence": [
+        {
+          "url": "https://about.fb.com/news/2026/09/introducing-muse-small-business/",
+          "retrieved_at": "2026-10-08T05:16:45+00:00",
+          "basis": "dated_release",
+          "locator": "9月29日Meta正文第239-261行，连接器与批准控制",
+          "support": "Meta于9月29日宣布Muse for Small Business，加入Facebook/Instagram业务账户及第三方工具连接；公司称发布、发送和支出均须用户批准，不能写成无人监督自动投放。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-29",
+            "earliest": "2026-09-28T10:00:00+00:00",
+            "latest_exclusive": "2026-09-30T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "9月29日Meta正文第239-261行，连接器与批准控制",
+            "note": "原文只证明日期，未知时区保留全球完整50小时可能区间；边界不是实际发布时刻。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "NV-BUYBACK-1",
+      "candidate_id": "NV-BUYBACK",
+      "kind": "news",
+      "statement": "AP于9月28日报道NVIDIA董事会追加1500亿美元股票回购授权，使剩余额度达2350亿美元",
+      "targets": [
+        "event:5",
+        "company:NVIDIA",
+        "headline:2",
+        "analysis:1"
+      ],
+      "evidence": [
+        {
+          "url": "https://apnews.com/article/e695d7024ad68b0defd6fb2fc1aa25d7",
+          "retrieved_at": "2026-10-08T05:16:45+00:00",
+          "basis": "dated_media",
+          "locator": "AP 2026-09-28 16:11:41 UTC专稿；NVIDIA公告第44-56行",
+          "support": "AP于9月28日报道NVIDIA董事会追加1500亿美元股票回购授权，使剩余额度达2350亿美元；授权不是已执行回购，公司预计至2028财年执行剩余计划。",
+          "claim_first_public_at": "2026-09-28T16:11:41+00:00"
+        }
+      ]
+    },
+    {
+      "id": "NV-BUYBACK-2",
+      "candidate_id": "NV-BUYBACK",
+      "kind": "news",
+      "statement": "授权不是已执行回购，公司预计至2028财年执行剩余计划",
+      "targets": [
+        "event:5",
+        "company:NVIDIA",
+        "headline:2",
+        "analysis:1"
+      ],
+      "evidence": [
+        {
+          "url": "https://apnews.com/article/e695d7024ad68b0defd6fb2fc1aa25d7",
+          "retrieved_at": "2026-10-08T05:16:45+00:00",
+          "basis": "dated_media",
+          "locator": "AP 2026-09-28 16:11:41 UTC专稿；NVIDIA公告第44-56行",
+          "support": "AP于9月28日报道NVIDIA董事会追加1500亿美元股票回购授权，使剩余额度达2350亿美元；授权不是已执行回购，公司预计至2028财年执行剩余计划。",
+          "claim_first_public_at": "2026-09-28T16:11:41+00:00"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-Q3-1",
+      "candidate_id": "TSLA-Q3",
+      "kind": "news",
+      "statement": "Tesla公布2026年第三季度生产464,391辆、交付486,532辆及储能部署13.7GWh",
+      "targets": [
+        "event:6",
+        "company:Tesla",
+        "headline:1",
+        "analysis:1",
+        "catalyst:1"
+      ],
+      "evidence": [
+        {
+          "url": "https://ir.tesla.com/press-release/tesla-third-quarter-2026-production-deliveries-and-deployments",
+          "retrieved_at": "2026-10-08T05:16:45+00:00",
+          "basis": "dated_release",
+          "locator": "10月2日Tesla IR表格第7-22行、限制第36-38行",
+          "support": "Tesla公布2026年第三季度生产464,391辆、交付486,532辆及储能部署13.7GWh；财务利润和现金流须等10月21日财报，交付不能直接当营收或利润。",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-02",
+            "earliest": "2026-10-01T10:00:00+00:00",
+            "latest_exclusive": "2026-10-03T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "10月2日Tesla IR表格第7-22行、限制第36-38行",
+            "note": "原文只证明日期，未知时区保留全球完整50小时可能区间；边界不是实际发布时刻。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "TSLA-Q3-2",
+      "candidate_id": "TSLA-Q3",
+      "kind": "news",
+      "statement": "财务利润和现金流须等10月21日财报，交付不能直接当营收或利润",
+      "targets": [
+        "event:6",
+        "company:Tesla",
+        "headline:1",
+        "analysis:1",
+        "catalyst:1"
+      ],
+      "evidence": [
+        {
+          "url": "https://ir.tesla.com/press-release/tesla-third-quarter-2026-production-deliveries-and-deployments",
+          "retrieved_at": "2026-10-08T05:16:45+00:00",
+          "basis": "dated_release",
+          "locator": "10月2日Tesla IR表格第7-22行、限制第36-38行",
+          "support": "Tesla公布2026年第三季度生产464,391辆、交付486,532辆及储能部署13.7GWh；财务利润和现金流须等10月21日财报，交付不能直接当营收或利润。",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-02",
+            "earliest": "2026-10-01T10:00:00+00:00",
+            "latest_exclusive": "2026-10-03T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "10月2日Tesla IR表格第7-22行、限制第36-38行",
+            "note": "原文只证明日期，未知时区保留全球完整50小时可能区间；边界不是实际发布时刻。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "OA-SOL61-1",
+      "candidate_id": "OA-SOL61",
+      "kind": "news",
+      "statement": "OpenAI 9月29日产品条目宣布GPT-6.1 Sol，适用于ChatGPT Work、Codex与API",
+      "targets": [
+        "event:7",
+        "company:OpenAI",
+        "headline:6",
+        "analysis:2",
+        "catalyst:3"
+      ],
+      "evidence": [
+        {
+          "url": "https://openai.com/index/introducing-gpt-6-1-sol/",
+          "retrieved_at": "2026-10-08T05:16:45+00:00",
+          "basis": "dated_section",
+          "locator": "官方新闻索引Sep 29条目及产品正文Pricing and availability段第114行",
+          "support": "OpenAI 9月29日产品条目宣布GPT-6.1 Sol，适用于ChatGPT Work、Codex与API；官方原文称尚未在Chat开放，自测性能不是客户工作流结果。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-29",
+            "earliest": "2026-09-28T10:00:00+00:00",
+            "latest_exclusive": "2026-09-30T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "官方新闻索引Sep 29条目及产品正文Pricing and availability段第114行",
+            "note": "原文只证明日期，未知时区保留全球完整50小时可能区间；边界不是实际发布时刻。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "OA-SOL61-2",
+      "candidate_id": "OA-SOL61",
+      "kind": "news",
+      "statement": "官方原文称尚未在Chat开放，自测性能不是客户工作流结果",
+      "targets": [
+        "event:7",
+        "company:OpenAI",
+        "headline:6",
+        "analysis:2",
+        "catalyst:3"
+      ],
+      "evidence": [
+        {
+          "url": "https://openai.com/index/introducing-gpt-6-1-sol/",
+          "retrieved_at": "2026-10-08T05:16:45+00:00",
+          "basis": "dated_section",
+          "locator": "官方新闻索引Sep 29条目及产品正文Pricing and availability段第114行",
+          "support": "OpenAI 9月29日产品条目宣布GPT-6.1 Sol，适用于ChatGPT Work、Codex与API；官方原文称尚未在Chat开放，自测性能不是客户工作流结果。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-29",
+            "earliest": "2026-09-28T10:00:00+00:00",
+            "latest_exclusive": "2026-09-30T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "官方新闻索引Sep 29条目及产品正文Pricing and availability段第114行",
+            "note": "原文只证明日期，未知时区保留全球完整50小时可能区间；边界不是实际发布时刻。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "OA-FTC-1",
+      "candidate_id": "OA-FTC",
+      "kind": "news",
+      "statement": "AP于9月30日报道FTC发言人确认对OpenAI、Anthropic等AI企业的消费者风险调查",
+      "targets": [
+        "event:8",
+        "company:OpenAI",
+        "headline:3",
+        "analysis:3",
+        "catalyst:2"
+      ],
+      "evidence": [
+        {
+          "url": "https://apnews.com/article/89ac416717adbfb1d72f2d85e6ce83d1",
+          "retrieved_at": "2026-10-08T05:16:45+00:00",
+          "basis": "dated_media",
+          "locator": "AP 2026-09-30 19:27:51 UTC报道；发言人确认且报道注明调查已进行数月",
+          "support": "AP于9月30日报道FTC发言人确认对OpenAI、Anthropic等AI企业的消费者风险调查；报道指出调查此前已进行数月，本周增量是公开确认，不是本周立案或已有违规认定。",
+          "claim_first_public_at": "2026-09-30T19:27:51+00:00"
+        }
+      ]
+    },
+    {
+      "id": "OA-FTC-2",
+      "candidate_id": "OA-FTC",
+      "kind": "news",
+      "statement": "报道指出调查此前已进行数月，本周增量是公开确认，不是本周立案或已有违规认定",
+      "targets": [
+        "event:8",
+        "company:OpenAI",
+        "headline:3",
+        "analysis:3",
+        "catalyst:2"
+      ],
+      "evidence": [
+        {
+          "url": "https://apnews.com/article/89ac416717adbfb1d72f2d85e6ce83d1",
+          "retrieved_at": "2026-10-08T05:16:45+00:00",
+          "basis": "dated_media",
+          "locator": "AP 2026-09-30 19:27:51 UTC报道；发言人确认且报道注明调查已进行数月",
+          "support": "AP于9月30日报道FTC发言人确认对OpenAI、Anthropic等AI企业的消费者风险调查；报道指出调查此前已进行数月，本周增量是公开确认，不是本周立案或已有违规认定。",
+          "claim_first_public_at": "2026-09-30T19:27:51+00:00"
+        }
+      ]
+    },
+    {
+      "id": "AN-SONNET-1",
+      "candidate_id": "AN-SONNET",
+      "kind": "news",
+      "statement": "Reuters于9月28日美东14:01报道Anthropic发布Claude Sonnet 5.5",
+      "targets": [
+        "event:9",
+        "company:Anthropic",
+        "headline:7",
+        "analysis:2"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.marketscreener.com/news/anthropic-rolls-out-second-claude-5-5-model-as-it-builds-toward-ipo-ce785adcd18ef02d",
+          "retrieved_at": "2026-10-08T05:16:45+00:00",
+          "basis": "dated_media",
+          "locator": "Reuters转载 2026-09-28 14:01 EDT报道；Anthropic模型页第15-35行价格与自测",
+          "support": "Reuters于9月28日美东14:01报道Anthropic发布Claude Sonnet 5.5；官方价格为每百万输入/输出token 2/10美元，性能及任务成本改善为公司测试，非客户普遍结果。",
+          "claim_first_public_at": "2026-09-28T18:01:00+00:00"
+        }
+      ]
+    },
+    {
+      "id": "AN-SONNET-2",
+      "candidate_id": "AN-SONNET",
+      "kind": "news",
+      "statement": "官方价格为每百万输入/输出token 2/10美元，性能及任务成本改善为公司测试，非客户普遍结果",
+      "targets": [
+        "event:9",
+        "company:Anthropic",
+        "headline:7",
+        "analysis:2"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.marketscreener.com/news/anthropic-rolls-out-second-claude-5-5-model-as-it-builds-toward-ipo-ce785adcd18ef02d",
+          "retrieved_at": "2026-10-08T05:16:45+00:00",
+          "basis": "dated_media",
+          "locator": "Reuters转载 2026-09-28 14:01 EDT报道；Anthropic模型页第15-35行价格与自测",
+          "support": "Reuters于9月28日美东14:01报道Anthropic发布Claude Sonnet 5.5；官方价格为每百万输入/输出token 2/10美元，性能及任务成本改善为公司测试，非客户普遍结果。",
+          "claim_first_public_at": "2026-09-28T18:01:00+00:00"
+        }
+      ]
+    },
+    {
+      "id": "AN-FTC-1",
+      "candidate_id": "AN-FTC",
+      "kind": "news",
+      "statement": "AP于9月30日报道FTC发言人确认对Anthropic、OpenAI等AI企业的消费者风险调查",
+      "targets": [
+        "event:10",
+        "company:Anthropic",
+        "headline:4",
+        "analysis:3",
+        "catalyst:2"
+      ],
+      "evidence": [
+        {
+          "url": "https://apnews.com/article/89ac416717adbfb1d72f2d85e6ce83d1",
+          "retrieved_at": "2026-10-08T05:16:45+00:00",
+          "basis": "dated_media",
+          "locator": "AP 2026-09-30 19:27:51 UTC报道；发言人确认且报道注明调查已进行数月",
+          "support": "AP于9月30日报道FTC发言人确认对Anthropic、OpenAI等AI企业的消费者风险调查；本周公开的是既有调查，不是违规裁决，也不表示9月25日国防部指定争议已解决。",
+          "claim_first_public_at": "2026-09-30T19:27:51+00:00"
+        }
+      ]
+    },
+    {
+      "id": "AN-FTC-2",
+      "candidate_id": "AN-FTC",
+      "kind": "news",
+      "statement": "本周公开的是既有调查，不是违规裁决，也不表示9月25日国防部指定争议已解决",
+      "targets": [
+        "event:10",
+        "company:Anthropic",
+        "headline:4",
+        "analysis:3",
+        "catalyst:2"
+      ],
+      "evidence": [
+        {
+          "url": "https://apnews.com/article/89ac416717adbfb1d72f2d85e6ce83d1",
+          "retrieved_at": "2026-10-08T05:16:45+00:00",
+          "basis": "dated_media",
+          "locator": "AP 2026-09-30 19:27:51 UTC报道；发言人确认且报道注明调查已进行数月",
+          "support": "AP于9月30日报道FTC发言人确认对Anthropic、OpenAI等AI企业的消费者风险调查；本周公开的是既有调查，不是违规裁决，也不表示9月25日国防部指定争议已解决。",
+          "claim_first_public_at": "2026-09-30T19:27:51+00:00"
+        }
+      ]
+    },
+    {
+      "id": "SS-HELIX-1",
+      "candidate_id": "SS-HELIX",
+      "kind": "news",
+      "statement": "Samsung公告六家关联企业合计投资Helix 10亿美元，其中Samsung Electronics为5亿美元，其余由五家关联企业承担",
+      "targets": [
+        "event:11",
+        "company:Samsung Electronics",
+        "headline:8",
+        "analysis:1",
+        "catalyst:4"
+      ],
+      "evidence": [
+        {
+          "url": "https://news.samsung.com/global/samsung-to-invest-usd-1-billion-in-ai-infrastructure-company-helix",
+          "retrieved_at": "2026-10-08T05:16:45+00:00",
+          "basis": "dated_release",
+          "locator": "9月29日全球Newsroom第65-76行，Electronics 5亿美元和六家合计10亿美元",
+          "support": "Samsung公告六家关联企业合计投资Helix 10亿美元，其中Samsung Electronics为5亿美元，其余由五家关联企业承担；这是投资公告，不等于已取得Helix设备供应合同或已实现收入。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-29",
+            "earliest": "2026-09-28T10:00:00+00:00",
+            "latest_exclusive": "2026-09-30T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "9月29日全球Newsroom第65-76行，Electronics 5亿美元和六家合计10亿美元",
+            "note": "原文只证明日期，未知时区保留全球完整50小时可能区间；边界不是实际发布时刻。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "SS-HELIX-2",
+      "candidate_id": "SS-HELIX",
+      "kind": "news",
+      "statement": "这是投资公告，不等于已取得Helix设备供应合同或已实现收入",
+      "targets": [
+        "event:11",
+        "company:Samsung Electronics",
+        "headline:8",
+        "analysis:1",
+        "catalyst:4"
+      ],
+      "evidence": [
+        {
+          "url": "https://news.samsung.com/global/samsung-to-invest-usd-1-billion-in-ai-infrastructure-company-helix",
+          "retrieved_at": "2026-10-08T05:16:45+00:00",
+          "basis": "dated_release",
+          "locator": "9月29日全球Newsroom第65-76行，Electronics 5亿美元和六家合计10亿美元",
+          "support": "Samsung公告六家关联企业合计投资Helix 10亿美元，其中Samsung Electronics为5亿美元，其余由五家关联企业承担；这是投资公告，不等于已取得Helix设备供应合同或已实现收入。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-29",
+            "earliest": "2026-09-28T10:00:00+00:00",
+            "latest_exclusive": "2026-09-30T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "9月29日全球Newsroom第65-76行，Electronics 5亿美元和六家合计10亿美元",
+            "note": "原文只证明日期，未知时区保留全球完整50小时可能区间；边界不是实际发布时刻。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "SK-SOLIDIGM-1",
+      "candidate_id": "SK-SOLIDIGM",
+      "kind": "news",
+      "statement": "SK Hynix于10月1日就Solidigm融资和可能双重上市的市场关切正式澄清：内部或外部融资方案均未确定，未来将比较对现有股东经济价值的影响",
+      "targets": [
+        "event:12",
+        "company:SK Hynix",
+        "headline:9",
+        "analysis:1",
+        "catalyst:4"
+      ],
+      "evidence": [
+        {
+          "url": "https://news.skhynix.com/en/fact-11/",
+          "retrieved_at": "2026-10-08T05:16:45+00:00",
+          "basis": "dated_release",
+          "locator": "10月1日SK Hynix FACT正文第24-65行，声明尚无决定及股东价值原则",
+          "support": "SK Hynix于10月1日就Solidigm融资和可能双重上市的市场关切正式澄清：内部或外部融资方案均未确定，未来将比较对现有股东经济价值的影响；这是对传闻的新澄清，不是已决定IPO、融资或新增产能。",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-01",
+            "earliest": "2026-09-30T10:00:00+00:00",
+            "latest_exclusive": "2026-10-02T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "10月1日SK Hynix FACT正文第24-65行，声明尚无决定及股东价值原则",
+            "note": "原文只证明日期，未知时区保留全球完整50小时可能区间；边界不是实际发布时刻。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "SK-SOLIDIGM-2",
+      "candidate_id": "SK-SOLIDIGM",
+      "kind": "news",
+      "statement": "这是对传闻的新澄清，不是已决定IPO、融资或新增产能",
+      "targets": [
+        "event:12",
+        "company:SK Hynix",
+        "headline:9",
+        "analysis:1",
+        "catalyst:4"
+      ],
+      "evidence": [
+        {
+          "url": "https://news.skhynix.com/en/fact-11/",
+          "retrieved_at": "2026-10-08T05:16:45+00:00",
+          "basis": "dated_release",
+          "locator": "10月1日SK Hynix FACT正文第24-65行，声明尚无决定及股东价值原则",
+          "support": "SK Hynix于10月1日就Solidigm融资和可能双重上市的市场关切正式澄清：内部或外部融资方案均未确定，未来将比较对现有股东经济价值的影响；这是对传闻的新澄清，不是已决定IPO、融资或新增产能。",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-01",
+            "earliest": "2026-09-30T10:00:00+00:00",
+            "latest_exclusive": "2026-10-02T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "10月1日SK Hynix FACT正文第24-65行，声明尚无决定及股东价值原则",
+            "note": "原文只证明日期，未知时区保留全球完整50小时可能区间；边界不是实际发布时刻。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ZERO-1",
+      "kind": "analysis",
+      "statement": "Apple有限官方和独立筛选后本期无入选事项；不推断没有任何变化。",
+      "targets": [
+        "company:Apple"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.apple.com/newsroom/2026/09/the-new-mac-mini-and-mac-studio-are-available-today/",
+          "retrieved_at": "2026-10-08T03:50:39+00:00",
+          "basis": "dated_release",
+          "locator": "9月22日具日期原文仅作上期旧事项对照；本期有限范围见coverage",
+          "support": "Apple本期有限官方和独立筛选未选入重要增量；9月22日Mac销售是上期已计事项。",
+          "claim_first_public_interval": {
+            "published_date": "2026-09-22",
+            "earliest": "2026-09-21T10:00:00+00:00",
+            "latest_exclusive": "2026-09-23T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "9月22日具日期原文仅作上期旧事项对照；本期有限范围见coverage",
+            "note": "原文只证明日期，未知时区保留全球完整50小时可能区间；边界不是实际发布时刻。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ZERO-12",
+      "kind": "analysis",
+      "statement": "TSMC有限官方和独立筛选后本期无入选事项；不推断没有任何变化。",
+      "targets": [
+        "company:TSMC"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.mediatek.com/press-room/mediatek-dimensity-9600-pro-sets-new-standard-for-flagship-smartphone-chips?hs_amp=true",
+          "retrieved_at": "2026-09-22T02:08:05.052216+00:00",
+          "basis": "dated_release",
+          "locator": "MediaTek原公告datePublished=2026-09-15T07:30:00Z，旧原文回执logs/2026-09-21_direct_source_receipts.json#TSM-MTK；本期有限范围见coverage",
+          "support": "TSMC本期有限官方和独立筛选未选入重要增量；旧MediaTek公告并未具名TSMC供货。",
+          "claim_first_public_at": "2026-09-15T07:30:00+00:00"
+        }
+      ]
+    }
+  ],
+  "excluded_candidates": []
+}
