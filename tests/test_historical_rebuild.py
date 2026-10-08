@@ -18,9 +18,23 @@ from rebuild_historical_source_audits import (  # noqa: E402
     can_reuse_source_cache,
     snapshot_source_label,
 )
+from validate_historical_briefs import materialize_snapshot  # noqa: E402
 
 
 class HistoricalRebuildTests(unittest.TestCase):
+    def test_unmodified_commit_snapshot_keeps_exact_bytes_for_pit_hash(self) -> None:
+        raw = b'{"generation_date":"2026-10-05","edges":[]}\n'
+        with tempfile.TemporaryDirectory() as directory, patch(
+            'validate_historical_briefs.subprocess.check_output', return_value=raw
+        ) as git_show:
+            snapshot = Path(directory) / 'supply.json'
+            materialize_snapshot(snapshot, 'abc123', 'state/supply_graph_baseline.json', set())
+            self.assertEqual(snapshot.read_bytes(), raw)
+            git_show.assert_called_once_with(
+                ['git', 'show', 'abc123:state/supply_graph_baseline.json'],
+                cwd=Path(__file__).resolve().parents[1],
+            )
+
     def test_snapshot_override_is_confined_to_historical_state(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

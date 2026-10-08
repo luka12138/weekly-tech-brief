@@ -356,6 +356,46 @@
         "svg": "assets/2026-09-21_supply_relationships.svg",
         "canvas": "assets/2026-09-21_supply_relationships.canvas"
       }
+    },
+    "2026-09-28": {
+      "source_commit": "07dbdca4b43a3279efa308db7f19ab2a99928850",
+      "schema_version": 2,
+      "report_date": "2026-09-28",
+      "product": {
+        "action": "reuse",
+        "reason": "未到季度刷新点且产品关系无实质变化",
+        "asset_date": "2026-09-14",
+        "svg": "assets/2026-09-14_product_relationships.svg",
+        "canvas": "assets/2026-09-14_product_relationships.canvas"
+      },
+      "supply": {
+        "action": "generate",
+        "reason": "存在实质变化关系：E38, E39",
+        "changed_edge_ids": ["E38", "E39"],
+        "asset_date": "2026-09-28",
+        "svg": "assets/2026-09-28_supply_relationships.svg",
+        "canvas": "assets/2026-09-28_supply_relationships.canvas"
+      }
+    },
+    "2026-10-05": {
+      "source_commit": "9e5521c4fd5eb5bf7ae36b30e173608cdad460d9",
+      "schema_version": 2,
+      "report_date": "2026-10-05",
+      "product": {
+        "action": "generate",
+        "reason": "季度首个周一例行刷新",
+        "asset_date": "2026-10-05",
+        "svg": "assets/2026-10-05_product_relationships.svg",
+        "canvas": "assets/2026-10-05_product_relationships.canvas"
+      },
+      "supply": {
+        "action": "reuse",
+        "reason": "本周无新增、强化、弱化或风险关系",
+        "changed_edge_ids": [],
+        "asset_date": "2026-09-28",
+        "svg": "assets/2026-09-28_supply_relationships.svg",
+        "canvas": "assets/2026-09-28_supply_relationships.canvas"
+      }
     }
   }
 }

@@ -5,16 +5,24 @@ from __future__ import annotations
 
 import argparse
 import json
+import subprocess
 import tempfile
 from pathlib import Path
 from typing import Any
 
-from rebuild_historical_obsidian_graphs import ROOT, load_snapshot, report_snapshots
+from rebuild_historical_obsidian_graphs import ROOT, SNAPSHOT_MAP_PATH, load_snapshot, report_snapshots
 from validate_weekly_brief import validate_report
 
 
 def write_snapshot(path: Path, data: dict[str, Any]) -> None:
     path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
+def materialize_snapshot(path: Path, commit: str, source_path: str, frozen_commits: set[str]) -> None:
+    if commit in frozen_commits:
+        write_snapshot(path, load_snapshot(commit, source_path))
+    else:
+        path.write_bytes(subprocess.check_output(["git", "show", f"{commit}:{source_path}"], cwd=ROOT))
 
 
 def main() -> None:
@@ -25,6 +33,7 @@ def main() -> None:
     args = parser.parse_args()
     selected = set(args.dates) if args.dates else None
     plans = json.loads((ROOT / args.graph_plan).read_text(encoding="utf-8")).get("reports", {})
+    frozen_commits = set(json.loads(SNAPSHOT_MAP_PATH.read_text(encoding="utf-8")).get("reports", {}).values()) if SNAPSHOT_MAP_PATH.exists() else set()
     failures: list[str] = []
     checked = 0
 
@@ -38,8 +47,8 @@ def main() -> None:
                 continue
             baseline_path = temp_root / f"{report_date}_supply.json"
             product_path = temp_root / f"{report_date}_product.json"
-            write_snapshot(baseline_path, load_snapshot(commit, "state/supply_graph_baseline.json"))
-            write_snapshot(product_path, load_snapshot(commit, f"state/product_relationships_{report_date[:4]}.json"))
+            materialize_snapshot(baseline_path, commit, "state/supply_graph_baseline.json", frozen_commits)
+            materialize_snapshot(product_path, commit, f"state/product_relationships_{report_date[:4]}.json", frozen_commits)
             audit_path = ROOT / "logs" / f"{report_date}_source_audit.json"
             try:
                 validate_report(
