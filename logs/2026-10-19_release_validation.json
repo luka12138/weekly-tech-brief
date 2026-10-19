@@ -1,0 +1,75 @@
+{
+  "report_date": "2026-10-19",
+  "checked_at": "2026-10-19T08:38:44.066249+00:00",
+  "cutoff_policy": "shanghai_monday_0900_v2",
+  "market_run_purpose": "late_rerun",
+  "actual_market_batch_start": "2026-10-19T10:04:30+08:00",
+  "quality_gate": "passed_with_local_original_evidence",
+  "release_tests": {
+    "run": 289,
+    "passed": 289,
+    "command": "WEEKLY_WITH_PRIVATE_EVIDENCE=1 python3 -m unittest discover -s tests -p test_*.py"
+  },
+  "pdf": {
+    "checked_at": "2026-10-19T08:31:44.270930+00:00",
+    "pdf_sha256": "8e21f8578af37b7102fb23ea8df4a982a2d0655abf67f5741c3281607de51bd8",
+    "pages": 20,
+    "table_cells_checked": 255,
+    "missing_cells": [],
+    "text_cutoff_0900_present": true,
+    "actual_1004_time_present": true,
+    "old_midnight_word_absent": true,
+    "visual_review": "All 20 pages inspected in four rendered contact sheets; no clipped table cells or orphan final page. Desktop reading copy.",
+    "limitations": "Charts are linked SVG/Canvas artifacts, not embedded in PDF."
+  },
+  "wind_diagnostic_requests": {
+    "requested": 22,
+    "error_code_zero_and_nonempty": 22
+  },
+  "supplement": {
+    "provider": "Yahoo Finance",
+    "requested_symbols": 10,
+    "valid_symbols": 9,
+    "failed_symbol": "NVDA",
+    "failed_transports": [
+      "urllib",
+      "curl"
+    ],
+    "NVDA_cash_fallback": "Previously retrieved Nasdaq original response",
+    "known_omission": "Samsung 2026-09-29 ex-date missing from Yahoo events; not zero cash"
+  },
+  "storage": {
+    "measured_at": "2026-10-19T08:36:54.697533+00:00",
+    "project_files": 4031,
+    "logical_mib": 195.4,
+    "unique_mib": 128.68,
+    "current_issue_mib": 73.68,
+    "five_year_high_growth_gib_per_copy": 121.85
+  },
+  "restore": {
+    "checked_at": "2026-10-19T08:36:39.673048+00:00",
+    "artifact_manifest": "state/weekly_data/runs/2026-10-19/a00ecb9f-0c1c-4377-b7c3-c9ae2074c071/artifacts/release_inputs_0900.json",
+    "artifact_files": 971,
+    "first_copy": {
+      "copied": 1014,
+      "verified_existing": 0
+    },
+    "second_copy": {
+      "copied": 0,
+      "verified_existing": 1014
+    },
+    "selected_requests_recovered": 12,
+    "restored_pdf_sha256": "8e21f8578af37b7102fb23ea8df4a982a2d0655abf67f5741c3281607de51bd8",
+    "all_hashes_verified": true,
+    "external_disk_backup_performed": false,
+    "scope": "Local temporary copy and real artifact-path restore; temporary drill destination removed after verification, source and manifests preserved."
+  },
+  "limitations": [
+    "Price observations only, not complete cash-reinvested total returns.",
+    "Full effective-date cash/noncash action coverage is not certified; Samsung 2026-09-29 amount not disclosed by cutoff.",
+    "Current original 09:00 historical quote version was not preserved; actual 10:04 batch remains late_rerun.",
+    "Future scheduled trigger and unattended Wind authentication not yet observed.",
+    "WD 4TB is not mounted; no external backup was performed."
+  ],
+  "publication": "Prepared; actual commit and remote confirmation recorded separately in publication_receipt."
+}

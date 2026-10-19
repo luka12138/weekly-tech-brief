@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import os
 import sys
 import tempfile
 import unittest
@@ -199,6 +200,8 @@ class WeeklyBriefSchemaTests(unittest.TestCase):
         with redirect_stderr(StringIO()), self.assertRaises(SystemExit):
             self._validate_large_baseline(duplicate_id=True)
 
+    @unittest.skipUnless(os.environ.get('WEEKLY_WITH_PRIVATE_EVIDENCE') == '1',
+                         'Current-report integration requires the authorized local evidence archive; run with WEEKLY_WITH_PRIVATE_EVIDENCE=1')
     def test_v2_report_validates_against_current_graph_artifacts(self) -> None:
         import json
 

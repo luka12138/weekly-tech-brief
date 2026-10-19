@@ -391,7 +391,9 @@ def build_product_canvas(data: dict[str, Any]) -> dict[str, list[dict[str, Any]]
     company_headers: dict[str, dict[str, Any]] = {}
     product_cards: dict[str, dict[str, Any]] = {}
     group_width = 560
-    group_height = 600
+    # Keep every product inside its company even when it has more than six nodes.
+    max_product_rows = max(((len(items) + 1) // 2 for items in products_by_company.values()), default=0)
+    group_height = max(600, 180 + max_product_rows * 140)
     group_gap_x = 100
     group_gap_y = 100
     group_left = 80

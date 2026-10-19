@@ -1,0 +1,2043 @@
+{
+  "schema_version": 1,
+  "status": "ready",
+  "report_date": "2026-10-19",
+  "cutoff_exclusive": "2026-10-19T09:00:00+08:00",
+  "report_sha256": "1e4f7fb2fe4da91ec980bf2b2e6b0e899742c6f54cca9824cb6cb96aeeae7f3a",
+  "baseline_sha256": "486714af5a311481e8326e0a83788caf76bdf741d1bd87cf099f8d00c89a5a64",
+  "product_graph_sha256": "95673a1ef436e68a935f048696292903ee6ee242fe994ca7dc1ab94201283107",
+  "report_created_at": "2026-10-19T08:07:54.541554+00:00",
+  "reviewed_at": "2026-10-19T08:28:11.755521+00:00",
+  "manual_reviews": {
+    "financial_periods_and_units": {
+      "status": "reviewed",
+      "note": "TSMC原件L7-23、30-44：2026Q3三个月/TIFRS合并，NT$million表与十亿新台币正文换算一致；保留董事会尚未批准脚注。Q4为美元523-543亿及31.8汇率假设；没有审计/共识认证。Bee设备可购与soon、74.99/99.99美元及11.99美元月订阅分别核。 2026-10-19最新09:00修订：原入选64条断言及53目标的正文语义、来源版本和财务数值未变；过渡窗口从10/12 00:00开始，仅延长截止9小时，原合格来源仍在窗口内。价格仍以已冻结的真实10:04批次计算，未改称09:00原件或完整总回报。旧稿已归档，修订为真实下午生成。"
+    },
+    "source_versions": {
+      "status": "reviewed",
+      "note": "逐条具日期正文及实际回执已读；周一Maia/Meta/OCP使用已保存的带时区发布/更新元数据，均在本周和截止前；Bee另核10/15精确元数据。Anthropic10/16澄清单独记录，新闻推荐栏/旧监管结果/FTC未确认线索不成为已确认事实。 2026-10-19最新09:00修订：原入选64条断言及53目标的正文语义、来源版本和财务数值未变；过渡窗口从10/12 00:00开始，仅延长截止9小时，原合格来源仍在窗口内。价格仍以已冻结的真实10:04批次计算，未改称09:00原件或完整总回报。旧稿已归档，修订为真实下午生成。"
+    },
+    "product_graph": {
+      "status": "reviewed",
+      "note": "完整41条供应边/19条P/74节点/82条PX索引及9条相关弱供应、15条相关弱产品记录已展开。E41仅强化厂商可购公告，不认定Surface具体交付；E42/P20/PX85仅微软披露的N2P设计选择。HomeView、Azure Maia与PX83-84直接对应当周原文；P01/P02/P04/P06/P07/P08及PX51/52/54/55/57/59/60弱证据不升级。 2026-10-19最新09:00修订：原入选64条断言及53目标的正文语义、来源版本和财务数值未变；过渡窗口从10/12 00:00开始，仅延长截止9小时，原合格来源仍在窗口内。价格仍以已冻结的真实10:04批次计算，未改称09:00原件或完整总回报。旧稿已归档，修订为真实下午生成。"
+    },
+    "report_vintage": {
+      "status": "reviewed",
+      "note": "本期为10/19实际生成的09:00截止补跑稿，过渡窗口10/12 00:00至10/19 09:00。价格采用真实10:04批次，不能认证原09:00版本。旧00:00稿已归档，10/12比较仍为本地试验/Wind补跑版本。最后只修正第7节同源页面链接，新闻断言、行情值及图谱语义未变；未预填Git提交或远端交付。"
+    }
+  },
+  "claims": [
+    {
+      "id": "AP-HOME-F01",
+      "candidate_id": "AP-HOME",
+      "statement": "发布HomeView并开放首批市场预售。",
+      "kind": "news",
+      "targets": [
+        "analysis:2",
+        "catalyst:1",
+        "company:Apple",
+        "event:1",
+        "headline:5"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.apple.com/uk/newsroom/2026/10/meet-apple-homeview-a-new-way-to-enjoy-entertainment-and-manage-the-home/",
+          "retrieved_at": "2026-10-19T01:22:41.321Z",
+          "basis": "dated_release",
+          "locator": "L31-46、94-106、161-174；首批市场/英语/EU、个人上下文配对与A18分别核。",
+          "support": "发布HomeView并开放首批市场预售。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v06.json",
+          "receipt_sha256": "8f23d47b467a04569d420244dd685a5f0f9e94cbe4b98ea6fca66de514385275",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-13",
+            "earliest": "2026-10-12T10:00:00+00:00",
+            "latest_exclusive": "2026-10-14T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "L31-46、94-106、161-174；首批市场/英语/EU、个人上下文配对与A18分别核。",
+            "note": "原文公开日明确但时区未明；保留完整50小时区间，端点不是发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "AP-HOME-F02",
+      "candidate_id": "AP-HOME",
+      "statement": "个人上下文能力需配对支持Apple Intelligence的iPhone/iPad；Siri AI首发英语，欧盟不销售。",
+      "kind": "news",
+      "targets": [
+        "analysis:2",
+        "catalyst:1",
+        "company:Apple",
+        "event:1",
+        "headline:5"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.apple.com/uk/newsroom/2026/10/meet-apple-homeview-a-new-way-to-enjoy-entertainment-and-manage-the-home/",
+          "retrieved_at": "2026-10-19T01:22:41.321Z",
+          "basis": "dated_release",
+          "locator": "L31-46、94-106、161-174；首批市场/英语/EU、个人上下文配对与A18分别核。",
+          "support": "个人上下文能力需配对支持Apple Intelligence的iPhone/iPad；Siri AI首发英语，欧盟不销售。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v06.json",
+          "receipt_sha256": "8f23d47b467a04569d420244dd685a5f0f9e94cbe4b98ea6fca66de514385275",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-13",
+            "earliest": "2026-10-12T10:00:00+00:00",
+            "latest_exclusive": "2026-10-14T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "L31-46、94-106、161-174；首批市场/英语/EU、个人上下文配对与A18分别核。",
+            "note": "原文公开日明确但时区未明；保留完整50小时区间，端点不是发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "AP-HOME-F03",
+      "candidate_id": "AP-HOME",
+      "statement": "计划11月13日在公告所列首批市场供应，不是截止时已经交付。",
+      "kind": "forecast",
+      "targets": [
+        "analysis:2",
+        "catalyst:1",
+        "company:Apple",
+        "event:1",
+        "headline:5"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.apple.com/uk/newsroom/2026/10/meet-apple-homeview-a-new-way-to-enjoy-entertainment-and-manage-the-home/",
+          "retrieved_at": "2026-10-19T01:22:41.321Z",
+          "basis": "dated_release",
+          "locator": "L31-46、94-106、161-174；首批市场/英语/EU、个人上下文配对与A18分别核。",
+          "support": "计划11月13日在公告所列首批市场供应，不是截止时已经交付。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v06.json",
+          "receipt_sha256": "8f23d47b467a04569d420244dd685a5f0f9e94cbe4b98ea6fca66de514385275",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-13",
+            "earliest": "2026-10-12T10:00:00+00:00",
+            "latest_exclusive": "2026-10-14T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "L31-46、94-106、161-174；首批市场/英语/EU、个人上下文配对与A18分别核。",
+            "note": "原文公开日明确但时区未明；保留完整50小时区间，端点不是发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "AP-HOME-F04",
+      "candidate_id": "AP-HOME",
+      "statement": "公司正文明确HomeView内A18的设计；本期产品图仅据此连接Apple silicon与HomeView。",
+      "kind": "news",
+      "targets": [
+        "analysis:2",
+        "catalyst:1",
+        "company:Apple",
+        "event:1",
+        "headline:5"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.apple.com/uk/newsroom/2026/10/meet-apple-homeview-a-new-way-to-enjoy-entertainment-and-manage-the-home/",
+          "retrieved_at": "2026-10-19T01:22:41.321Z",
+          "basis": "dated_release",
+          "locator": "L31-46、94-106、161-174；首批市场/英语/EU、个人上下文配对与A18分别核。",
+          "support": "公司正文明确HomeView内A18的设计；本期产品图仅据此连接Apple silicon与HomeView。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v06.json",
+          "receipt_sha256": "8f23d47b467a04569d420244dd685a5f0f9e94cbe4b98ea6fca66de514385275",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-13",
+            "earliest": "2026-10-12T10:00:00+00:00",
+            "latest_exclusive": "2026-10-14T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "L31-46、94-106、161-174；首批市场/英语/EU、个人上下文配对与A18分别核。",
+            "note": "原文公开日明确但时区未明；保留完整50小时区间，端点不是发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "AP-HOME-A01",
+      "candidate_id": "AP-HOME",
+      "statement": "家庭AI入口扩展可能提高设备与服务使用，但销量、订阅转化和实际任务价值尚未披露。 核11月13日实际地区供货、独立任务体验与后续采用数据。 这是基于所引入选事实的业务推断，不确认价格方向、因果关系或已实现财务增量。",
+      "kind": "analysis",
+      "targets": [
+        "analysis:2",
+        "catalyst:1",
+        "company:Apple",
+        "event:1",
+        "headline:5"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.apple.com/uk/newsroom/2026/10/meet-apple-homeview-a-new-way-to-enjoy-entertainment-and-manage-the-home/",
+          "retrieved_at": "2026-10-19T01:22:41.321Z",
+          "basis": "dated_release",
+          "locator": "L31-46、94-106、161-174；首批市场/英语/EU、个人上下文配对与A18分别核。",
+          "support": "家庭AI入口扩展可能提高设备与服务使用，但销量、订阅转化和实际任务价值尚未披露。 核11月13日实际地区供货、独立任务体验与后续采用数据。 这是基于所引入选事实的业务推断，不确认价格方向、因果关系或已实现财务增量。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v06.json",
+          "receipt_sha256": "8f23d47b467a04569d420244dd685a5f0f9e94cbe4b98ea6fca66de514385275",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-13",
+            "earliest": "2026-10-12T10:00:00+00:00",
+            "latest_exclusive": "2026-10-14T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "L31-46、94-106、161-174；首批市场/英语/EU、个人上下文配对与A18分别核。",
+            "note": "原文公开日明确但时区未明；保留完整50小时区间，端点不是发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "AP-OA-CASE-F01",
+      "candidate_id": "AP-OA-CASE",
+      "statement": "Reuters报道OpenAI在既有Apple诉讼中新提出前员工外传100余份产品文件的指控。",
+      "kind": "news",
+      "targets": [
+        "company:Apple",
+        "company:OpenAI",
+        "event:11",
+        "event:2",
+        "headline:7"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.aol.com/articles/openai-employee-left-apple-took-152121000.html",
+          "retrieved_at": "2026-10-19T01:22:12.084Z",
+          "basis": "dated_media",
+          "locator": "Reuters正文L17-48；Apple回应L33、39-42，程序并非实体裁判。",
+          "support": "Reuters报道OpenAI在既有Apple诉讼中新提出前员工外传100余份产品文件的指控。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v05.json",
+          "receipt_sha256": "677cd29561d691418f7483fdc6b760ea64934e9fcecbe53ddae72120364be485",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-14",
+            "earliest": "2026-10-13T10:00:00+00:00",
+            "latest_exclusive": "2026-10-15T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "Reuters正文L17-48；Apple回应L33、39-42，程序并非实体裁判。",
+            "note": "原文公开日明确但时区未明；保留完整50小时区间，端点不是发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "AP-OA-CASE-F02",
+      "candidate_id": "AP-OA-CASE",
+      "statement": "Apple表示未找到支持指控的证据，称调查未发现Apple服务器上的相关文件。",
+      "kind": "news",
+      "targets": [
+        "company:Apple",
+        "company:OpenAI",
+        "event:11",
+        "event:2",
+        "headline:7"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.aol.com/articles/openai-employee-left-apple-took-152121000.html",
+          "retrieved_at": "2026-10-19T01:22:12.084Z",
+          "basis": "dated_media",
+          "locator": "Reuters正文L17-48；Apple回应L33、39-42，程序并非实体裁判。",
+          "support": "Apple表示未找到支持指控的证据，称调查未发现Apple服务器上的相关文件。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v05.json",
+          "receipt_sha256": "677cd29561d691418f7483fdc6b760ea64934e9fcecbe53ddae72120364be485",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-14",
+            "earliest": "2026-10-13T10:00:00+00:00",
+            "latest_exclusive": "2026-10-15T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "Reuters正文L17-48；Apple回应L33、39-42，程序并非实体裁判。",
+            "note": "原文公开日明确但时区未明；保留完整50小时区间，端点不是发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "AP-OA-CASE-F03",
+      "candidate_id": "AP-OA-CASE",
+      "statement": "相关程序进展是有限取证与待决争议，并非实体侵权裁决。",
+      "kind": "news",
+      "targets": [
+        "company:Apple",
+        "company:OpenAI",
+        "event:11",
+        "event:2",
+        "headline:7"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.aol.com/articles/openai-employee-left-apple-took-152121000.html",
+          "retrieved_at": "2026-10-19T01:22:12.084Z",
+          "basis": "dated_media",
+          "locator": "Reuters正文L17-48；Apple回应L33、39-42，程序并非实体裁判。",
+          "support": "相关程序进展是有限取证与待决争议，并非实体侵权裁决。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v05.json",
+          "receipt_sha256": "677cd29561d691418f7483fdc6b760ea64934e9fcecbe53ddae72120364be485",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-14",
+            "earliest": "2026-10-13T10:00:00+00:00",
+            "latest_exclusive": "2026-10-15T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "Reuters正文L17-48；Apple回应L33、39-42，程序并非实体裁判。",
+            "note": "原文公开日明确但时区未明；保留完整50小时区间，端点不是发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "AP-OA-CASE-A01",
+      "candidate_id": "AP-OA-CASE",
+      "statement": "硬件竞争中的知识产权与人才争议可能增加诉讼及产品审查成本；损失金额和上市影响未知。 跟踪可核法院文件及双方后续回应，区分取证许可与实体责任。 这是基于所引入选事实的业务推断，不确认价格方向、因果关系或已实现财务增量。",
+      "kind": "analysis",
+      "targets": [
+        "company:Apple",
+        "company:OpenAI",
+        "event:11",
+        "event:2",
+        "headline:7"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.aol.com/articles/openai-employee-left-apple-took-152121000.html",
+          "retrieved_at": "2026-10-19T01:22:12.084Z",
+          "basis": "dated_media",
+          "locator": "Reuters正文L17-48；Apple回应L33、39-42，程序并非实体裁判。",
+          "support": "硬件竞争中的知识产权与人才争议可能增加诉讼及产品审查成本；损失金额和上市影响未知。 跟踪可核法院文件及双方后续回应，区分取证许可与实体责任。 这是基于所引入选事实的业务推断，不确认价格方向、因果关系或已实现财务增量。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v05.json",
+          "receipt_sha256": "677cd29561d691418f7483fdc6b760ea64934e9fcecbe53ddae72120364be485",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-14",
+            "earliest": "2026-10-13T10:00:00+00:00",
+            "latest_exclusive": "2026-10-15T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "Reuters正文L17-48；Apple回应L33、39-42，程序并非实体裁判。",
+            "note": "原文公开日明确但时区未明；保留完整50小时区间，端点不是发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "MS-MAIA-F01",
+      "candidate_id": "MS-MAIA",
+      "statement": "Microsoft称Maia 200已在生产中支持Copilot等工作负载。",
+      "kind": "news",
+      "targets": [
+        "analysis:1",
+        "catalyst:2",
+        "company:Microsoft",
+        "event:3",
+        "headline:2"
+      ],
+      "evidence": [
+        {
+          "url": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
+          "retrieved_at": "2026-10-19T01:26:03.812Z",
+          "basis": "dated_release",
+          "locator": "L7-18、L30、L35；Maia200现状、300未来部署、N2P设计选择分开。",
+          "support": "Microsoft称Maia 200已在生产中支持Copilot等工作负载。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v13.json",
+          "receipt_sha256": "287d2c66ec2d5351f4dcd8368e6616a4a1c875111d32fbbb53a6a193a7ce972e",
+          "claim_first_public_at": "2026-10-12T13:01:29+00:00",
+          "page_modified_at": "2026-10-12T13:19:15+00:00",
+          "publication_metadata_ref": "logs/2026-10-19_monday_publication_metadata.json"
+        }
+      ]
+    },
+    {
+      "id": "MS-MAIA-F02",
+      "candidate_id": "MS-MAIA",
+      "statement": "Maia 300计划2027年开始生产部署，并从2027年扩大至多吉瓦规模。",
+      "kind": "forecast",
+      "targets": [
+        "analysis:1",
+        "catalyst:2",
+        "company:Microsoft",
+        "company:TSMC",
+        "event:18",
+        "event:3",
+        "headline:2"
+      ],
+      "evidence": [
+        {
+          "url": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
+          "retrieved_at": "2026-10-19T01:26:03.812Z",
+          "basis": "dated_release",
+          "locator": "L7-18、L30、L35；Maia200现状、300未来部署、N2P设计选择分开。",
+          "support": "Maia 300计划2027年开始生产部署，并从2027年扩大至多吉瓦规模。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v13.json",
+          "receipt_sha256": "287d2c66ec2d5351f4dcd8368e6616a4a1c875111d32fbbb53a6a193a7ce972e",
+          "claim_first_public_at": "2026-10-12T13:01:29+00:00",
+          "page_modified_at": "2026-10-12T13:19:15+00:00",
+          "publication_metadata_ref": "logs/2026-10-19_monday_publication_metadata.json"
+        }
+      ]
+    },
+    {
+      "id": "MS-MAIA-F03",
+      "candidate_id": "MS-MAIA",
+      "statement": "Microsoft披露Maia 300计算chiplet采用TSMC N2P；没有披露代工订单金额或本周实现收入。",
+      "kind": "news",
+      "targets": [
+        "analysis:1",
+        "catalyst:2",
+        "company:Microsoft",
+        "company:TSMC",
+        "event:18",
+        "event:3",
+        "headline:2",
+        "supply:E42"
+      ],
+      "evidence": [
+        {
+          "url": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
+          "retrieved_at": "2026-10-19T01:26:03.812Z",
+          "basis": "dated_release",
+          "locator": "L7-18、L30、L35；Maia200现状、300未来部署、N2P设计选择分开。",
+          "support": "Microsoft披露Maia 300计算chiplet采用TSMC N2P；没有披露代工订单金额或本周实现收入。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v13.json",
+          "receipt_sha256": "287d2c66ec2d5351f4dcd8368e6616a4a1c875111d32fbbb53a6a193a7ce972e",
+          "claim_first_public_at": "2026-10-12T13:01:29+00:00",
+          "page_modified_at": "2026-10-12T13:19:15+00:00",
+          "publication_metadata_ref": "logs/2026-10-19_monday_publication_metadata.json"
+        }
+      ]
+    },
+    {
+      "id": "MS-MAIA-A01",
+      "candidate_id": "MS-MAIA",
+      "statement": "自研推理硬件可能改善微软算力成本结构，并增加先进制程机会；兑现仍取决于良率、软件迁移、利用率及实际部署。 跟踪2027实际部署、同任务质量下成本及财报兑现；不将公司性能宣传等同毛利提升。 这是基于所引入选事实的业务推断，不确认价格方向、因果关系或已实现财务增量。",
+      "kind": "analysis",
+      "targets": [
+        "analysis:1",
+        "catalyst:2",
+        "company:Microsoft",
+        "company:TSMC",
+        "event:18",
+        "event:3",
+        "headline:2"
+      ],
+      "evidence": [
+        {
+          "url": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
+          "retrieved_at": "2026-10-19T01:26:03.812Z",
+          "basis": "dated_release",
+          "locator": "L7-18、L30、L35；Maia200现状、300未来部署、N2P设计选择分开。",
+          "support": "自研推理硬件可能改善微软算力成本结构，并增加先进制程机会；兑现仍取决于良率、软件迁移、利用率及实际部署。 跟踪2027实际部署、同任务质量下成本及财报兑现；不将公司性能宣传等同毛利提升。 这是基于所引入选事实的业务推断，不确认价格方向、因果关系或已实现财务增量。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v13.json",
+          "receipt_sha256": "287d2c66ec2d5351f4dcd8368e6616a4a1c875111d32fbbb53a6a193a7ce972e",
+          "claim_first_public_at": "2026-10-12T13:01:29+00:00",
+          "page_modified_at": "2026-10-12T13:19:15+00:00",
+          "publication_metadata_ref": "logs/2026-10-19_monday_publication_metadata.json"
+        }
+      ]
+    },
+    {
+      "id": "NV-RTX-F01",
+      "candidate_id": "NV-RTX",
+      "statement": "NVIDIA于10月16日宣布RTX Spark笔记本开始可购，并列明Microsoft等六家厂商。",
+      "kind": "news",
+      "targets": [
+        "analysis:2",
+        "company:Microsoft",
+        "company:NVIDIA",
+        "event:4",
+        "event:8",
+        "supply:E41"
+      ],
+      "evidence": [
+        {
+          "url": "https://nvidianews.nvidia.com/news/nvidia-rtx-spark-pcs-available-today-a-new-beginning-for-windows-pcs",
+          "retrieved_at": "2026-10-19T01:23:31.565Z",
+          "basis": "dated_release",
+          "locator": "L45-69；10/16可购及Microsoft厂商名单，不确认Surface每个SKU或真实交付。",
+          "support": "NVIDIA于10月16日宣布RTX Spark笔记本开始可购，并列明Microsoft等六家厂商。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v08.json",
+          "receipt_sha256": "e1f1005fcd539e6175c7e9a9651b8ebb51245d31440d7617644ff803be1db802",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-16",
+            "earliest": "2026-10-15T10:00:00+00:00",
+            "latest_exclusive": "2026-10-17T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "L45-69；10/16可购及Microsoft厂商名单，不确认Surface每个SKU或真实交付。",
+            "note": "原文公开日明确但时区未明；保留完整50小时区间，端点不是发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "NV-RTX-F02",
+      "candidate_id": "NV-RTX",
+      "statement": "可购公告不证明各型号、所有地区或客户交付均已完成；没有已核出货量和订单金额。",
+      "kind": "analysis",
+      "targets": [
+        "analysis:2",
+        "company:Microsoft",
+        "company:NVIDIA",
+        "event:4",
+        "event:8"
+      ],
+      "evidence": [
+        {
+          "url": "https://nvidianews.nvidia.com/news/nvidia-rtx-spark-pcs-available-today-a-new-beginning-for-windows-pcs",
+          "retrieved_at": "2026-10-19T01:23:31.565Z",
+          "basis": "dated_release",
+          "locator": "L45-69；10/16可购及Microsoft厂商名单，不确认Surface每个SKU或真实交付。",
+          "support": "可购公告不证明各型号、所有地区或客户交付均已完成；没有已核出货量和订单金额。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v08.json",
+          "receipt_sha256": "e1f1005fcd539e6175c7e9a9651b8ebb51245d31440d7617644ff803be1db802",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-16",
+            "earliest": "2026-10-15T10:00:00+00:00",
+            "latest_exclusive": "2026-10-17T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "L45-69；10/16可购及Microsoft厂商名单，不确认Surface每个SKU或真实交付。",
+            "note": "原文公开日明确但时区未明；保留完整50小时区间，端点不是发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "NV-RTX-A01",
+      "candidate_id": "NV-RTX",
+      "statement": "本地推理进入产品销售验证期；实际出货、任务成本和云端替代程度比理论性能更关键。 核Microsoft具体SKU和地区可购、真实交付及固定质量门槛的任务测试。 这是基于所引入选事实的业务推断，不确认价格方向、因果关系或已实现财务增量。",
+      "kind": "analysis",
+      "targets": [
+        "analysis:2",
+        "company:Microsoft",
+        "company:NVIDIA",
+        "event:4",
+        "event:8"
+      ],
+      "evidence": [
+        {
+          "url": "https://nvidianews.nvidia.com/news/nvidia-rtx-spark-pcs-available-today-a-new-beginning-for-windows-pcs",
+          "retrieved_at": "2026-10-19T01:23:31.565Z",
+          "basis": "dated_release",
+          "locator": "L45-69；10/16可购及Microsoft厂商名单，不确认Surface每个SKU或真实交付。",
+          "support": "本地推理进入产品销售验证期；实际出货、任务成本和云端替代程度比理论性能更关键。 核Microsoft具体SKU和地区可购、真实交付及固定质量门槛的任务测试。 这是基于所引入选事实的业务推断，不确认价格方向、因果关系或已实现财务增量。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v08.json",
+          "receipt_sha256": "e1f1005fcd539e6175c7e9a9651b8ebb51245d31440d7617644ff803be1db802",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-16",
+            "earliest": "2026-10-15T10:00:00+00:00",
+            "latest_exclusive": "2026-10-17T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "L45-69；10/16可购及Microsoft厂商名单，不确认Surface每个SKU或真实交付。",
+            "note": "原文公开日明确但时区未明；保留完整50小时区间，端点不是发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "GOO-ARGON-F01",
+      "candidate_id": "GOO-ARGON",
+      "statement": "Google于10月13日宣布开发者可经付费Gemini API，在AI Studio和Android Studio使用Argon。",
+      "kind": "news",
+      "targets": [
+        "company:Alphabet / Google",
+        "event:5",
+        "headline:3"
+      ],
+      "evidence": [
+        {
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-argon/",
+          "retrieved_at": "2026-10-19T01:26:03.812Z",
+          "basis": "dated_release",
+          "locator": "L210-225；付费API、AI Studio/Android Studio及Ultra/Antigravity范围。",
+          "support": "Google于10月13日宣布开发者可经付费Gemini API，在AI Studio和Android Studio使用Argon。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v13.json",
+          "receipt_sha256": "287d2c66ec2d5351f4dcd8368e6616a4a1c875111d32fbbb53a6a193a7ce972e",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-13",
+            "earliest": "2026-10-12T10:00:00+00:00",
+            "latest_exclusive": "2026-10-14T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "L210-225；付费API、AI Studio/Android Studio及Ultra/Antigravity范围。",
+            "note": "原文公开日明确但时区未明；保留完整50小时区间，端点不是发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "GOO-ARGON-F02",
+      "candidate_id": "GOO-ARGON",
+      "statement": "Google AI Ultra订阅者可在AI Studio与Antigravity试用；不能外推所有账户和工具均免费可用。",
+      "kind": "news",
+      "targets": [
+        "company:Alphabet / Google",
+        "event:5",
+        "headline:3"
+      ],
+      "evidence": [
+        {
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-argon/",
+          "retrieved_at": "2026-10-19T01:26:03.812Z",
+          "basis": "dated_release",
+          "locator": "L210-225；付费API、AI Studio/Android Studio及Ultra/Antigravity范围。",
+          "support": "Google AI Ultra订阅者可在AI Studio与Antigravity试用；不能外推所有账户和工具均免费可用。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v13.json",
+          "receipt_sha256": "287d2c66ec2d5351f4dcd8368e6616a4a1c875111d32fbbb53a6a193a7ce972e",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-13",
+            "earliest": "2026-10-12T10:00:00+00:00",
+            "latest_exclusive": "2026-10-14T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "L210-225；付费API、AI Studio/Android Studio及Ultra/Antigravity范围。",
+            "note": "原文公开日明确但时区未明；保留完整50小时区间，端点不是发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "GOO-ARGON-A01",
+      "candidate_id": "GOO-ARGON",
+      "statement": "新模型增加企业与开发工具竞争压力；收入与成本效果需结合使用量、质量、重试和付费迁移。 在固定任务和质量门槛下检验真实费用、完成率及后续采用；不直接套用公司基准。 这是基于所引入选事实的业务推断，不确认价格方向、因果关系或已实现财务增量。",
+      "kind": "analysis",
+      "targets": [
+        "company:Alphabet / Google",
+        "event:5",
+        "headline:3"
+      ],
+      "evidence": [
+        {
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-argon/",
+          "retrieved_at": "2026-10-19T01:26:03.812Z",
+          "basis": "dated_release",
+          "locator": "L210-225；付费API、AI Studio/Android Studio及Ultra/Antigravity范围。",
+          "support": "新模型增加企业与开发工具竞争压力；收入与成本效果需结合使用量、质量、重试和付费迁移。 在固定任务和质量门槛下检验真实费用、完成率及后续采用；不直接套用公司基准。 这是基于所引入选事实的业务推断，不确认价格方向、因果关系或已实现财务增量。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v13.json",
+          "receipt_sha256": "287d2c66ec2d5351f4dcd8368e6616a4a1c875111d32fbbb53a6a193a7ce972e",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-13",
+            "earliest": "2026-10-12T10:00:00+00:00",
+            "latest_exclusive": "2026-10-14T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "L210-225；付费API、AI Studio/Android Studio及Ultra/Antigravity范围。",
+            "note": "原文公开日明确但时区未明；保留完整50小时区间，端点不是发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "AMZ-BEE-F01",
+      "candidate_id": "AMZ-BEE",
+      "statement": "Bee Frontier为74.99美元并已可购；Bee Eclipse起价99.99美元，尚为即将供应。",
+      "kind": "news",
+      "targets": [
+        "analysis:2",
+        "company:Amazon / AWS",
+        "event:6"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.aboutamazon.com/news/devices/amazon-personal-ai-bee-frontier-bee-eclipse",
+          "retrieved_at": "2026-10-19T01:26:00.781Z",
+          "basis": "dated_release",
+          "locator": "L15-18、L35、L50-60；设备可购与soon、订阅、音频与转录分开；发布时间另核metadata。",
+          "support": "Bee Frontier为74.99美元并已可购；Bee Eclipse起价99.99美元，尚为即将供应。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v12.json",
+          "receipt_sha256": "06f5ce562db73aca2403a76ef9c55c2f2518764c34c86359e43d53a4980c9aba",
+          "claim_first_public_at": "2026-10-15T11:55:24.955+00:00",
+          "page_modified_at": "2026-10-15T11:55:24.955+00:00",
+          "publication_metadata_ref": "logs/2026-10-19_bee_publication_metadata.json"
+        }
+      ]
+    },
+    {
+      "id": "AMZ-BEE-F02",
+      "candidate_id": "AMZ-BEE",
+      "statement": "基础摘要和14天记忆不另收费；完整集成等Bee Pro功能订阅为每月11.99美元。",
+      "kind": "news",
+      "targets": [
+        "analysis:2",
+        "company:Amazon / AWS",
+        "event:6"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.aboutamazon.com/news/devices/amazon-personal-ai-bee-frontier-bee-eclipse",
+          "retrieved_at": "2026-10-19T01:26:00.781Z",
+          "basis": "dated_release",
+          "locator": "L15-18、L35、L50-60；设备可购与soon、订阅、音频与转录分开；发布时间另核metadata。",
+          "support": "基础摘要和14天记忆不另收费；完整集成等Bee Pro功能订阅为每月11.99美元。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v12.json",
+          "receipt_sha256": "06f5ce562db73aca2403a76ef9c55c2f2518764c34c86359e43d53a4980c9aba",
+          "claim_first_public_at": "2026-10-15T11:55:24.955+00:00",
+          "page_modified_at": "2026-10-15T11:55:24.955+00:00",
+          "publication_metadata_ref": "logs/2026-10-19_bee_publication_metadata.json"
+        }
+      ]
+    },
+    {
+      "id": "AMZ-BEE-F03",
+      "candidate_id": "AMZ-BEE",
+      "statement": "公司称原始音频实时处理后删除；转录加密并由用户控制，不能写成不存在转录留存。",
+      "kind": "news",
+      "targets": [
+        "analysis:2",
+        "company:Amazon / AWS",
+        "event:6"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.aboutamazon.com/news/devices/amazon-personal-ai-bee-frontier-bee-eclipse",
+          "retrieved_at": "2026-10-19T01:26:00.781Z",
+          "basis": "dated_release",
+          "locator": "L15-18、L35、L50-60；设备可购与soon、订阅、音频与转录分开；发布时间另核metadata。",
+          "support": "公司称原始音频实时处理后删除；转录加密并由用户控制，不能写成不存在转录留存。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v12.json",
+          "receipt_sha256": "06f5ce562db73aca2403a76ef9c55c2f2518764c34c86359e43d53a4980c9aba",
+          "claim_first_public_at": "2026-10-15T11:55:24.955+00:00",
+          "page_modified_at": "2026-10-15T11:55:24.955+00:00",
+          "publication_metadata_ref": "logs/2026-10-19_bee_publication_metadata.json"
+        }
+      ]
+    },
+    {
+      "id": "AMZ-BEE-A01",
+      "candidate_id": "AMZ-BEE",
+      "statement": "随身AI入口可增加服务与购物分发，但订阅门槛、录音同意和留存信任决定实际采用。 核Eclipse实际供货、订阅转化及转录删除/分享控制，不把硬件价格当全部使用成本。 这是基于所引入选事实的业务推断，不确认价格方向、因果关系或已实现财务增量。",
+      "kind": "analysis",
+      "targets": [
+        "analysis:2",
+        "company:Amazon / AWS",
+        "event:6"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.aboutamazon.com/news/devices/amazon-personal-ai-bee-frontier-bee-eclipse",
+          "retrieved_at": "2026-10-19T01:26:00.781Z",
+          "basis": "dated_release",
+          "locator": "L15-18、L35、L50-60；设备可购与soon、订阅、音频与转录分开；发布时间另核metadata。",
+          "support": "随身AI入口可增加服务与购物分发，但订阅门槛、录音同意和留存信任决定实际采用。 核Eclipse实际供货、订阅转化及转录删除/分享控制，不把硬件价格当全部使用成本。 这是基于所引入选事实的业务推断，不确认价格方向、因果关系或已实现财务增量。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v12.json",
+          "receipt_sha256": "06f5ce562db73aca2403a76ef9c55c2f2518764c34c86359e43d53a4980c9aba",
+          "claim_first_public_at": "2026-10-15T11:55:24.955+00:00",
+          "page_modified_at": "2026-10-15T11:55:24.955+00:00",
+          "publication_metadata_ref": "logs/2026-10-19_bee_publication_metadata.json"
+        }
+      ]
+    },
+    {
+      "id": "META-WONDER-F01",
+      "candidate_id": "META-WONDER",
+      "statement": "Muse Wonder在Meta Model API和Muse Code提供，Wonder Full面向Muse Code订阅者。",
+      "kind": "news",
+      "targets": [
+        "company:Meta",
+        "event:7",
+        "headline:4"
+      ],
+      "evidence": [
+        {
+          "url": "https://about.fb.com/news/2026/10/introducing-muse-wonder-models/",
+          "retrieved_at": "2026-10-19T01:20:11.309Z",
+          "basis": "dated_release",
+          "locator": "L239-263；模型与账号范围、助手后续推出、完整安全报告未出；发布时间与10/13更新元数据。",
+          "support": "Muse Wonder在Meta Model API和Muse Code提供，Wonder Full面向Muse Code订阅者。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_d08.json",
+          "receipt_sha256": "8132d48d8b33053e779151b020fb93666798ea63bd9b34ded3a3dae1c90dd1ac",
+          "claim_first_public_at": "2026-10-12T17:08:05+00:00",
+          "page_modified_at": "2026-10-13T17:27:26+00:00",
+          "publication_metadata_ref": "logs/2026-10-19_monday_publication_metadata.json"
+        }
+      ]
+    },
+    {
+      "id": "META-WONDER-F02",
+      "candidate_id": "META-WONDER",
+      "statement": "Muse助手接入仍是后续计划，先面向订阅者；完整安全评估报告尚待公布。",
+      "kind": "forecast",
+      "targets": [
+        "company:Meta",
+        "event:7",
+        "headline:4"
+      ],
+      "evidence": [
+        {
+          "url": "https://about.fb.com/news/2026/10/introducing-muse-wonder-models/",
+          "retrieved_at": "2026-10-19T01:20:11.309Z",
+          "basis": "dated_release",
+          "locator": "L239-263；模型与账号范围、助手后续推出、完整安全报告未出；发布时间与10/13更新元数据。",
+          "support": "Muse助手接入仍是后续计划，先面向订阅者；完整安全评估报告尚待公布。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_d08.json",
+          "receipt_sha256": "8132d48d8b33053e779151b020fb93666798ea63bd9b34ded3a3dae1c90dd1ac",
+          "claim_first_public_at": "2026-10-12T17:08:05+00:00",
+          "page_modified_at": "2026-10-13T17:27:26+00:00",
+          "publication_metadata_ref": "logs/2026-10-19_monday_publication_metadata.json"
+        }
+      ]
+    },
+    {
+      "id": "META-WONDER-A01",
+      "candidate_id": "META-WONDER",
+      "statement": "代理模型为高额研发投入增加商业化验证点；竞争力需经独立任务质量、付费采用和安全表现检验。 跟踪完整安全报告、独立复测与Muse助手实际推出范围，不把模型发布当收入兑现。 这是基于所引入选事实的业务推断，不确认价格方向、因果关系或已实现财务增量。",
+      "kind": "analysis",
+      "targets": [
+        "company:Meta",
+        "event:7",
+        "headline:4"
+      ],
+      "evidence": [
+        {
+          "url": "https://about.fb.com/news/2026/10/introducing-muse-wonder-models/",
+          "retrieved_at": "2026-10-19T01:20:11.309Z",
+          "basis": "dated_release",
+          "locator": "L239-263；模型与账号范围、助手后续推出、完整安全报告未出；发布时间与10/13更新元数据。",
+          "support": "代理模型为高额研发投入增加商业化验证点；竞争力需经独立任务质量、付费采用和安全表现检验。 跟踪完整安全报告、独立复测与Muse助手实际推出范围，不把模型发布当收入兑现。 这是基于所引入选事实的业务推断，不确认价格方向、因果关系或已实现财务增量。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_d08.json",
+          "receipt_sha256": "8132d48d8b33053e779151b020fb93666798ea63bd9b34ded3a3dae1c90dd1ac",
+          "claim_first_public_at": "2026-10-12T17:08:05+00:00",
+          "page_modified_at": "2026-10-13T17:27:26+00:00",
+          "publication_metadata_ref": "logs/2026-10-19_monday_publication_metadata.json"
+        }
+      ]
+    },
+    {
+      "id": "NV-OCP-F01",
+      "candidate_id": "NV-OCP",
+      "statement": "NVIDIA宣布经MGX向OCP贡献Vera Rubin机架及计算托盘设计。",
+      "kind": "news",
+      "targets": [
+        "analysis:1",
+        "company:NVIDIA",
+        "event:9",
+        "headline:9"
+      ],
+      "evidence": [
+        {
+          "url": "https://blogs.nvidia.com/blog/ocp-global-summit-vera-rubin-scale-ai-factories/",
+          "retrieved_at": "2026-10-19T01:21:19.504Z",
+          "basis": "dated_release",
+          "locator": "L5、12-15、31-40；仅本期选用机架/托盘设计贡献，不将全部合作条目写成订单。",
+          "support": "NVIDIA宣布经MGX向OCP贡献Vera Rubin机架及计算托盘设计。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v01.json",
+          "receipt_sha256": "3114a8a9136edf0be681fa91caca8adf7b849a3d7077c3b8b8b3ca0b5bc73907",
+          "claim_first_public_at": "2026-10-12T15:00:25+00:00",
+          "page_modified_at": "2026-10-14T20:57:54+00:00",
+          "publication_metadata_ref": "logs/2026-10-19_monday_publication_metadata.json"
+        }
+      ]
+    },
+    {
+      "id": "NV-OCP-F02",
+      "candidate_id": "NV-OCP",
+      "statement": "开放设计和标准协作不等于客户采购、部署容量或本周收入；本期不据此新增采购边。",
+      "kind": "analysis",
+      "targets": [
+        "analysis:1",
+        "company:NVIDIA",
+        "event:9",
+        "headline:9"
+      ],
+      "evidence": [
+        {
+          "url": "https://blogs.nvidia.com/blog/ocp-global-summit-vera-rubin-scale-ai-factories/",
+          "retrieved_at": "2026-10-19T01:21:19.504Z",
+          "basis": "dated_release",
+          "locator": "L5、12-15、31-40；仅本期选用机架/托盘设计贡献，不将全部合作条目写成订单。",
+          "support": "开放设计和标准协作不等于客户采购、部署容量或本周收入；本期不据此新增采购边。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v01.json",
+          "receipt_sha256": "3114a8a9136edf0be681fa91caca8adf7b849a3d7077c3b8b8b3ca0b5bc73907",
+          "claim_first_public_at": "2026-10-12T15:00:25+00:00",
+          "page_modified_at": "2026-10-14T20:57:54+00:00",
+          "publication_metadata_ref": "logs/2026-10-19_monday_publication_metadata.json"
+        }
+      ]
+    },
+    {
+      "id": "NV-OCP-A01",
+      "candidate_id": "NV-OCP",
+      "statement": "开放架构可能降低集成摩擦并扩大生态采用；能否转成收入仍取决于建设、供电、交付和客户投资。 跟踪具名部署和交付披露，不将开放标准参与者直接连成采购客户。 这是基于所引入选事实的业务推断，不确认价格方向、因果关系或已实现财务增量。",
+      "kind": "analysis",
+      "targets": [
+        "analysis:1",
+        "company:NVIDIA",
+        "event:9",
+        "headline:9"
+      ],
+      "evidence": [
+        {
+          "url": "https://blogs.nvidia.com/blog/ocp-global-summit-vera-rubin-scale-ai-factories/",
+          "retrieved_at": "2026-10-19T01:21:19.504Z",
+          "basis": "dated_release",
+          "locator": "L5、12-15、31-40；仅本期选用机架/托盘设计贡献，不将全部合作条目写成订单。",
+          "support": "开放架构可能降低集成摩擦并扩大生态采用；能否转成收入仍取决于建设、供电、交付和客户投资。 跟踪具名部署和交付披露，不将开放标准参与者直接连成采购客户。 这是基于所引入选事实的业务推断，不确认价格方向、因果关系或已实现财务增量。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v01.json",
+          "receipt_sha256": "3114a8a9136edf0be681fa91caca8adf7b849a3d7077c3b8b8b3ca0b5bc73907",
+          "claim_first_public_at": "2026-10-12T15:00:25+00:00",
+          "page_modified_at": "2026-10-14T20:57:54+00:00",
+          "publication_metadata_ref": "logs/2026-10-19_monday_publication_metadata.json"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-CLASS-F01",
+      "candidate_id": "TSLA-CLASS",
+      "statement": "Reuters报道第九巡回法院因买家接触宣传的个别问题撤销集体诉讼资格裁定。",
+      "kind": "news",
+      "targets": [
+        "company:Tesla",
+        "event:10",
+        "headline:12"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.marketscreener.com/news/us-appeals-court-blocks-class-actions-over-tesla-s-self-driving-claims-ce785cdadf89f122",
+          "retrieved_at": "2026-10-19T01:25:57.745Z",
+          "basis": "dated_media",
+          "locator": "L778-805；EDT发布时间、集体资格撤销、实体未决及双方回应。",
+          "support": "Reuters报道第九巡回法院因买家接触宣传的个别问题撤销集体诉讼资格裁定。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v11.json",
+          "receipt_sha256": "c31232258e3e55b809f1431bd9b48fcbdc3305f1f8106b845127d76ff65de080",
+          "claim_first_public_at": "2026-10-16T15:06:00-04:00",
+          "page_modified_at": "2026-10-16T15:22:00-04:00"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-CLASS-F02",
+      "candidate_id": "TSLA-CLASS",
+      "statement": "案件仍待决，裁定不涉及虚假宣传指控实体是非，不是FSD安全或监管认证。",
+      "kind": "news",
+      "targets": [
+        "company:Tesla",
+        "event:10",
+        "headline:12"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.marketscreener.com/news/us-appeals-court-blocks-class-actions-over-tesla-s-self-driving-claims-ce785cdadf89f122",
+          "retrieved_at": "2026-10-19T01:25:57.745Z",
+          "basis": "dated_media",
+          "locator": "L778-805；EDT发布时间、集体资格撤销、实体未决及双方回应。",
+          "support": "案件仍待决，裁定不涉及虚假宣传指控实体是非，不是FSD安全或监管认证。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v11.json",
+          "receipt_sha256": "c31232258e3e55b809f1431bd9b48fcbdc3305f1f8106b845127d76ff65de080",
+          "claim_first_public_at": "2026-10-16T15:06:00-04:00",
+          "page_modified_at": "2026-10-16T15:22:00-04:00"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-CLASS-A01",
+      "candidate_id": "TSLA-CLASS",
+      "statement": "集体追索方式受限可能改变短期诉讼压力，但实体责任、个别请求及监管约束并未因此消除。 跟踪可核法院文件及后续程序；不把程序胜利外推为实体免责。 这是基于所引入选事实的业务推断，不确认价格方向、因果关系或已实现财务增量。",
+      "kind": "analysis",
+      "targets": [
+        "company:Tesla",
+        "event:10",
+        "headline:12"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.marketscreener.com/news/us-appeals-court-blocks-class-actions-over-tesla-s-self-driving-claims-ce785cdadf89f122",
+          "retrieved_at": "2026-10-19T01:25:57.745Z",
+          "basis": "dated_media",
+          "locator": "L778-805；EDT发布时间、集体资格撤销、实体未决及双方回应。",
+          "support": "集体追索方式受限可能改变短期诉讼压力，但实体责任、个别请求及监管约束并未因此消除。 跟踪可核法院文件及后续程序；不把程序胜利外推为实体免责。 这是基于所引入选事实的业务推断，不确认价格方向、因果关系或已实现财务增量。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v11.json",
+          "receipt_sha256": "c31232258e3e55b809f1431bd9b48fcbdc3305f1f8106b845127d76ff65de080",
+          "claim_first_public_at": "2026-10-16T15:06:00-04:00",
+          "page_modified_at": "2026-10-16T15:22:00-04:00"
+        }
+      ]
+    },
+    {
+      "id": "OA-STATES-F01",
+      "candidate_id": "OA-STATES",
+      "statement": "Iowa总检察长10月14日宣布起诉OpenAI，并列出其他州分别起诉。",
+      "kind": "news",
+      "targets": [
+        "analysis:3",
+        "catalyst:4",
+        "company:OpenAI",
+        "event:12",
+        "headline:6"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.iowaattorneygeneral.gov/newsroom/attorney-general-brenna-bird-announces-lawsuit-against-openai-for-deceiving-iowa-parents-and-iowans",
+          "retrieved_at": "2026-10-19T01:25:57.745Z",
+          "basis": "dated_release",
+          "locator": "L59-72；机关为起诉方，只确认诉讼宣布与指控，不确认底层伤害或违法。",
+          "support": "Iowa总检察长10月14日宣布起诉OpenAI，并列出其他州分别起诉。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v11.json",
+          "receipt_sha256": "c31232258e3e55b809f1431bd9b48fcbdc3305f1f8106b845127d76ff65de080",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-14",
+            "earliest": "2026-10-13T10:00:00+00:00",
+            "latest_exclusive": "2026-10-15T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "L59-72；机关为起诉方，只确认诉讼宣布与指控，不确认底层伤害或违法。",
+            "note": "原文公开日明确但时区未明；保留完整50小时区间，端点不是发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "OA-STATES-F02",
+      "candidate_id": "OA-STATES",
+      "statement": "有关安全表述与消费者伤害为起诉方指控，不能当作法院实体认定或已确定赔偿。",
+      "kind": "analysis",
+      "targets": [
+        "analysis:3",
+        "catalyst:4",
+        "company:OpenAI",
+        "event:12",
+        "headline:6"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.iowaattorneygeneral.gov/newsroom/attorney-general-brenna-bird-announces-lawsuit-against-openai-for-deceiving-iowa-parents-and-iowans",
+          "retrieved_at": "2026-10-19T01:25:57.745Z",
+          "basis": "dated_release",
+          "locator": "L59-72；机关为起诉方，只确认诉讼宣布与指控，不确认底层伤害或违法。",
+          "support": "有关安全表述与消费者伤害为起诉方指控，不能当作法院实体认定或已确定赔偿。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v11.json",
+          "receipt_sha256": "c31232258e3e55b809f1431bd9b48fcbdc3305f1f8106b845127d76ff65de080",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-14",
+            "earliest": "2026-10-13T10:00:00+00:00",
+            "latest_exclusive": "2026-10-15T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "L59-72；机关为起诉方，只确认诉讼宣布与指控，不确认底层伤害或违法。",
+            "note": "原文公开日明确但时区未明；保留完整50小时区间，端点不是发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "OA-STATES-A01",
+      "candidate_id": "OA-STATES",
+      "statement": "消费者保护诉讼可能增加合规、产品限制与法律成本；责任和经济影响须等待程序与披露。 核起诉状、法院后续裁判与公司回应，区分指控、临时措施及最终责任。 这是基于所引入选事实的业务推断，不确认价格方向、因果关系或已实现财务增量。",
+      "kind": "analysis",
+      "targets": [
+        "analysis:3",
+        "catalyst:4",
+        "company:OpenAI",
+        "event:12",
+        "headline:6"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.iowaattorneygeneral.gov/newsroom/attorney-general-brenna-bird-announces-lawsuit-against-openai-for-deceiving-iowa-parents-and-iowans",
+          "retrieved_at": "2026-10-19T01:25:57.745Z",
+          "basis": "dated_release",
+          "locator": "L59-72；机关为起诉方，只确认诉讼宣布与指控，不确认底层伤害或违法。",
+          "support": "消费者保护诉讼可能增加合规、产品限制与法律成本；责任和经济影响须等待程序与披露。 核起诉状、法院后续裁判与公司回应，区分指控、临时措施及最终责任。 这是基于所引入选事实的业务推断，不确认价格方向、因果关系或已实现财务增量。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v11.json",
+          "receipt_sha256": "c31232258e3e55b809f1431bd9b48fcbdc3305f1f8106b845127d76ff65de080",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-14",
+            "earliest": "2026-10-13T10:00:00+00:00",
+            "latest_exclusive": "2026-10-15T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "L59-72；机关为起诉方，只确认诉讼宣布与指控，不确认底层伤害或违法。",
+            "note": "原文公开日明确但时区未明；保留完整50小时区间，端点不是发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "AN-EVAL-F01",
+      "candidate_id": "AN-EVAL",
+      "statement": "Anthropic称向六名METR人员提供接近员工风险团队的访问。",
+      "kind": "news",
+      "targets": [
+        "analysis:3",
+        "catalyst:4",
+        "company:Anthropic",
+        "event:13",
+        "headline:10"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+          "retrieved_at": "2026-10-19T01:20:11.309Z",
+          "basis": "dated_section",
+          "locator": "L13、16-17、30-43、46-49；六名METR人员、访问例外、删节决定权和10/15-16澄清脚注。",
+          "support": "Anthropic称向六名METR人员提供接近员工风险团队的访问。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_d08.json",
+          "receipt_sha256": "8132d48d8b33053e779151b020fb93666798ea63bd9b34ded3a3dae1c90dd1ac",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-15",
+            "earliest": "2026-10-14T10:00:00+00:00",
+            "latest_exclusive": "2026-10-16T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "L13、16-17、30-43、46-49；六名METR人员、访问例外、删节决定权和10/15-16澄清脚注。",
+            "note": "原文公开日明确但时区未明；保留完整50小时区间，端点不是发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "AN-EVAL-F02",
+      "candidate_id": "AN-EVAL",
+      "statement": "在10月16日澄清的条款版本中，METR可发表评估，但预定敏感类别可被要求删节，类别划分由Anthropic最终决定；其他伙伴权限较有限。",
+      "kind": "news",
+      "targets": [
+        "analysis:3",
+        "catalyst:4",
+        "company:Anthropic",
+        "event:13",
+        "headline:10"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+          "retrieved_at": "2026-10-19T01:20:11.309Z",
+          "basis": "dated_section",
+          "locator": "L13、16-17、30-43、46-49；六名METR人员、访问例外、删节决定权和10/15-16澄清脚注。",
+          "support": "在10月16日澄清的条款版本中，METR可发表评估，但预定敏感类别可被要求删节，类别划分由Anthropic最终决定；其他伙伴权限较有限。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_d08.json",
+          "receipt_sha256": "8132d48d8b33053e779151b020fb93666798ea63bd9b34ded3a3dae1c90dd1ac",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-16",
+            "earliest": "2026-10-15T10:00:00+00:00",
+            "latest_exclusive": "2026-10-17T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "L13、16-17、30-43、46-49；六名METR人员、访问例外、删节决定权和10/15-16澄清脚注。",
+            "note": "原文公开日明确但时区未明；保留完整50小时区间，端点不是发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "AN-EVAL-F03",
+      "candidate_id": "AN-EVAL",
+      "statement": "页面10月16日澄清METR条款；本稿采用截止前该具体版本，不主张无限制独立认证。",
+      "kind": "news",
+      "targets": [
+        "analysis:3",
+        "catalyst:4",
+        "company:Anthropic",
+        "event:13",
+        "headline:10"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+          "retrieved_at": "2026-10-19T01:20:11.309Z",
+          "basis": "dated_section",
+          "locator": "L13、16-17、30-43、46-49；六名METR人员、访问例外、删节决定权和10/15-16澄清脚注。",
+          "support": "页面10月16日澄清METR条款；本稿采用截止前该具体版本，不主张无限制独立认证。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_d08.json",
+          "receipt_sha256": "8132d48d8b33053e779151b020fb93666798ea63bd9b34ded3a3dae1c90dd1ac",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-16",
+            "earliest": "2026-10-15T10:00:00+00:00",
+            "latest_exclusive": "2026-10-17T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "L13、16-17、30-43、46-49；六名METR人员、访问例外、删节决定权和10/15-16澄清脚注。",
+            "note": "原文公开日明确但时区未明；保留完整50小时区间，端点不是发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "AN-EVAL-A01",
+      "candidate_id": "AN-EVAL",
+      "statement": "更深入评估可能提高治理透明度，但有效性取决于实际访问、删节争议及公开结果。 跟踪METR实际报告和对访问/删节的说明；不能仅因设立安排就认定风险下降。 这是基于所引入选事实的业务推断，不确认价格方向、因果关系或已实现财务增量。",
+      "kind": "analysis",
+      "targets": [
+        "analysis:3",
+        "catalyst:4",
+        "company:Anthropic",
+        "event:13",
+        "headline:10"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+          "retrieved_at": "2026-10-19T01:20:11.309Z",
+          "basis": "dated_section",
+          "locator": "L13、16-17、30-43、46-49；六名METR人员、访问例外、删节决定权和10/15-16澄清脚注。",
+          "support": "更深入评估可能提高治理透明度，但有效性取决于实际访问、删节争议及公开结果。 跟踪METR实际报告和对访问/删节的说明；不能仅因设立安排就认定风险下降。 这是基于所引入选事实的业务推断，不确认价格方向、因果关系或已实现财务增量。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_d08.json",
+          "receipt_sha256": "8132d48d8b33053e779151b020fb93666798ea63bd9b34ded3a3dae1c90dd1ac",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-16",
+            "earliest": "2026-10-15T10:00:00+00:00",
+            "latest_exclusive": "2026-10-17T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "L13、16-17、30-43、46-49；六名METR人员、访问例外、删节决定权和10/15-16澄清脚注。",
+            "note": "原文公开日明确但时区未明；保留完整50小时区间，端点不是发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "AN-PENTAGON-F01",
+      "candidate_id": "AN-PENTAGON",
+      "statement": "Reuters报道Anthropic申请重审维持五角大楼供应链风险认定的裁决。",
+      "kind": "news",
+      "targets": [
+        "analysis:3",
+        "catalyst:4",
+        "company:Anthropic",
+        "event:14",
+        "headline:11"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.investing.com/news/world-news/anthropic-seeks-rehearing-of-case-over-pentagons-security-risk-branding-4947806",
+          "retrieved_at": "2026-10-19T01:22:12.084Z",
+          "basis": "dated_media",
+          "locator": "L35-52；重审申请、现有裁决及不同法律依据的另案分开。",
+          "support": "Reuters报道Anthropic申请重审维持五角大楼供应链风险认定的裁决。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v05.json",
+          "receipt_sha256": "677cd29561d691418f7483fdc6b760ea64934e9fcecbe53ddae72120364be485",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-13",
+            "earliest": "2026-10-12T10:00:00+00:00",
+            "latest_exclusive": "2026-10-14T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "L35-52；重审申请、现有裁决及不同法律依据的另案分开。",
+            "note": "原文公开日明确但时区未明；保留完整50小时区间，端点不是发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "AN-PENTAGON-F02",
+      "candidate_id": "AN-PENTAGON",
+      "statement": "重审申请不等于认定已撤销；不同法律依据下的其他案件不与本次程序混同。",
+      "kind": "analysis",
+      "targets": [
+        "analysis:3",
+        "catalyst:4",
+        "company:Anthropic",
+        "event:14",
+        "headline:11"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.investing.com/news/world-news/anthropic-seeks-rehearing-of-case-over-pentagons-security-risk-branding-4947806",
+          "retrieved_at": "2026-10-19T01:22:12.084Z",
+          "basis": "dated_media",
+          "locator": "L35-52；重审申请、现有裁决及不同法律依据的另案分开。",
+          "support": "重审申请不等于认定已撤销；不同法律依据下的其他案件不与本次程序混同。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v05.json",
+          "receipt_sha256": "677cd29561d691418f7483fdc6b760ea64934e9fcecbe53ddae72120364be485",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-13",
+            "earliest": "2026-10-12T10:00:00+00:00",
+            "latest_exclusive": "2026-10-14T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "L35-52；重审申请、现有裁决及不同法律依据的另案分开。",
+            "note": "原文公开日明确但时区未明；保留完整50小时区间，端点不是发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "AN-PENTAGON-A01",
+      "candidate_id": "AN-PENTAGON",
+      "statement": "政府和相关客户准入仍存在法律不确定性；不能以重审申请推断业务已恢复。 核重审是否受理、最终裁判和实际客户资格变化，不提前计算恢复收入。 这是基于所引入选事实的业务推断，不确认价格方向、因果关系或已实现财务增量。",
+      "kind": "analysis",
+      "targets": [
+        "analysis:3",
+        "catalyst:4",
+        "company:Anthropic",
+        "event:14",
+        "headline:11"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.investing.com/news/world-news/anthropic-seeks-rehearing-of-case-over-pentagons-security-risk-branding-4947806",
+          "retrieved_at": "2026-10-19T01:22:12.084Z",
+          "basis": "dated_media",
+          "locator": "L35-52；重审申请、现有裁决及不同法律依据的另案分开。",
+          "support": "政府和相关客户准入仍存在法律不确定性；不能以重审申请推断业务已恢复。 核重审是否受理、最终裁判和实际客户资格变化，不提前计算恢复收入。 这是基于所引入选事实的业务推断，不确认价格方向、因果关系或已实现财务增量。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v05.json",
+          "receipt_sha256": "677cd29561d691418f7483fdc6b760ea64934e9fcecbe53ddae72120364be485",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-13",
+            "earliest": "2026-10-12T10:00:00+00:00",
+            "latest_exclusive": "2026-10-14T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "L35-52；重审申请、现有裁决及不同法律依据的另案分开。",
+            "note": "原文公开日明确但时区未明；保留完整50小时区间，端点不是发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "AN-SG-F01",
+      "candidate_id": "AN-SG",
+      "statement": "Anthropic宣布开设新加坡办公室，并与该国数字发展及新闻部签署MOU。",
+      "kind": "news",
+      "targets": [
+        "company:Anthropic",
+        "event:15"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.anthropic.com/news/singapore-office-opening",
+          "retrieved_at": "2026-10-19T01:20:11.309Z",
+          "basis": "dated_release",
+          "locator": "L13-26；办公室开设、MDDI MOU与未来技术交流，不当采购。",
+          "support": "Anthropic宣布开设新加坡办公室，并与该国数字发展及新闻部签署MOU。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_d08.json",
+          "receipt_sha256": "8132d48d8b33053e779151b020fb93666798ea63bd9b34ded3a3dae1c90dd1ac",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-14",
+            "earliest": "2026-10-13T10:00:00+00:00",
+            "latest_exclusive": "2026-10-15T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "L13-26；办公室开设、MDDI MOU与未来技术交流，不当采购。",
+            "note": "原文公开日明确但时区未明；保留完整50小时区间，端点不是发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "AN-SG-F02",
+      "candidate_id": "AN-SG",
+      "statement": "合作涉及安全评估、采用研究及负责任部署；计划交流不等于采购或已披露收入。",
+      "kind": "forecast",
+      "targets": [
+        "company:Anthropic",
+        "event:15"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.anthropic.com/news/singapore-office-opening",
+          "retrieved_at": "2026-10-19T01:20:11.309Z",
+          "basis": "dated_release",
+          "locator": "L13-26；办公室开设、MDDI MOU与未来技术交流，不当采购。",
+          "support": "合作涉及安全评估、采用研究及负责任部署；计划交流不等于采购或已披露收入。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_d08.json",
+          "receipt_sha256": "8132d48d8b33053e779151b020fb93666798ea63bd9b34ded3a3dae1c90dd1ac",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-14",
+            "earliest": "2026-10-13T10:00:00+00:00",
+            "latest_exclusive": "2026-10-15T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "L13-26；办公室开设、MDDI MOU与未来技术交流，不当采购。",
+            "note": "原文公开日明确但时区未明；保留完整50小时区间，端点不是发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "AN-SG-A01",
+      "candidate_id": "AN-SG",
+      "statement": "本地团队和政策合作可能帮助受监管客户采用；财务量级及新增付费合同未披露。 跟踪MOU实际项目、采购或收入披露；不将合作意向换算订单。 这是基于所引入选事实的业务推断，不确认价格方向、因果关系或已实现财务增量。",
+      "kind": "analysis",
+      "targets": [
+        "company:Anthropic",
+        "event:15"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.anthropic.com/news/singapore-office-opening",
+          "retrieved_at": "2026-10-19T01:20:11.309Z",
+          "basis": "dated_release",
+          "locator": "L13-26；办公室开设、MDDI MOU与未来技术交流，不当采购。",
+          "support": "本地团队和政策合作可能帮助受监管客户采用；财务量级及新增付费合同未披露。 跟踪MOU实际项目、采购或收入披露；不将合作意向换算订单。 这是基于所引入选事实的业务推断，不确认价格方向、因果关系或已实现财务增量。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_d08.json",
+          "receipt_sha256": "8132d48d8b33053e779151b020fb93666798ea63bd9b34ded3a3dae1c90dd1ac",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-14",
+            "earliest": "2026-10-13T10:00:00+00:00",
+            "latest_exclusive": "2026-10-15T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "L13-26；办公室开设、MDDI MOU与未来技术交流，不当采购。",
+            "note": "原文公开日明确但时区未明；保留完整50小时区间，端点不是发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "SK-OCP-F01",
+      "candidate_id": "SK-OCP",
+      "statement": "SK Hynix展示第二代256GB CXL 3.2 CMM-DDR5与MARS、CMM-Ax系统演示。",
+      "kind": "news",
+      "targets": [
+        "company:SK Hynix",
+        "event:16"
+      ],
+      "evidence": [
+        {
+          "url": "https://news.skhynix.com/en/ocp-global-summit-2026/",
+          "retrieved_at": "2026-10-19T01:26:00.781Z",
+          "basis": "dated_release",
+          "locator": "L36、46-70、75-102；CXL3.2、256GB、MARS/CMM-Ax及PoC/内部演示边界。",
+          "support": "SK Hynix展示第二代256GB CXL 3.2 CMM-DDR5与MARS、CMM-Ax系统演示。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v12.json",
+          "receipt_sha256": "06f5ce562db73aca2403a76ef9c55c2f2518764c34c86359e43d53a4980c9aba",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-16",
+            "earliest": "2026-10-15T10:00:00+00:00",
+            "latest_exclusive": "2026-10-17T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "L36、46-70、75-102；CXL3.2、256GB、MARS/CMM-Ax及PoC/内部演示边界。",
+            "note": "原文公开日明确但时区未明；保留完整50小时区间，端点不是发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "SK-OCP-F02",
+      "candidate_id": "SK-OCP",
+      "statement": "部分缓存共享验证为PoC；展示及内部测试不等于新客户量产订单。",
+      "kind": "news",
+      "targets": [
+        "company:SK Hynix",
+        "event:16"
+      ],
+      "evidence": [
+        {
+          "url": "https://news.skhynix.com/en/ocp-global-summit-2026/",
+          "retrieved_at": "2026-10-19T01:26:00.781Z",
+          "basis": "dated_release",
+          "locator": "L36、46-70、75-102；CXL3.2、256GB、MARS/CMM-Ax及PoC/内部演示边界。",
+          "support": "部分缓存共享验证为PoC；展示及内部测试不等于新客户量产订单。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v12.json",
+          "receipt_sha256": "06f5ce562db73aca2403a76ef9c55c2f2518764c34c86359e43d53a4980c9aba",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-16",
+            "earliest": "2026-10-15T10:00:00+00:00",
+            "latest_exclusive": "2026-10-17T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "L36、46-70、75-102；CXL3.2、256GB、MARS/CMM-Ax及PoC/内部演示边界。",
+            "note": "原文公开日明确但时区未明；保留完整50小时区间，端点不是发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "SK-OCP-A01",
+      "candidate_id": "SK-OCP",
+      "statement": "内存池与缓存复用可能改变AI系统成本结构，但商业化取决于客户验证、软件适配和量产。 跟踪独立客户部署及量产披露，区分PoC、展示品与已发货产品。 这是基于所引入选事实的业务推断，不确认价格方向、因果关系或已实现财务增量。",
+      "kind": "analysis",
+      "targets": [
+        "company:SK Hynix",
+        "event:16"
+      ],
+      "evidence": [
+        {
+          "url": "https://news.skhynix.com/en/ocp-global-summit-2026/",
+          "retrieved_at": "2026-10-19T01:26:00.781Z",
+          "basis": "dated_release",
+          "locator": "L36、46-70、75-102；CXL3.2、256GB、MARS/CMM-Ax及PoC/内部演示边界。",
+          "support": "内存池与缓存复用可能改变AI系统成本结构，但商业化取决于客户验证、软件适配和量产。 跟踪独立客户部署及量产披露，区分PoC、展示品与已发货产品。 这是基于所引入选事实的业务推断，不确认价格方向、因果关系或已实现财务增量。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v12.json",
+          "receipt_sha256": "06f5ce562db73aca2403a76ef9c55c2f2518764c34c86359e43d53a4980c9aba",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-16",
+            "earliest": "2026-10-15T10:00:00+00:00",
+            "latest_exclusive": "2026-10-17T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "L36、46-70、75-102；CXL3.2、256GB、MARS/CMM-Ax及PoC/内部演示边界。",
+            "note": "原文公开日明确但时区未明；保留完整50小时区间，端点不是发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "TSM-Q3-F01",
+      "candidate_id": "TSM-Q3",
+      "statement": "2026Q3截至9月30日，TIFRS合并营收1,494.24十亿新台币、净利763.06十亿新台币。",
+      "kind": "news",
+      "targets": [
+        "analysis:4",
+        "catalyst:3",
+        "company:TSMC",
+        "event:19",
+        "headline:1"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm",
+          "retrieved_at": "2026-10-19T01:21:19.504Z",
+          "basis": "filing",
+          "locator": "L7-23及30-44；2026Q3 TIFRS合并、NT$million原表、董事会未批准脚注、Q4美元指引及汇率假设。",
+          "support": "2026Q3截至9月30日，TIFRS合并营收1,494.24十亿新台币、净利763.06十亿新台币。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v01.json",
+          "receipt_sha256": "3114a8a9136edf0be681fa91caca8adf7b849a3d7077c3b8b8b3ca0b5bc73907",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-15",
+            "earliest": "2026-10-14T10:00:00+00:00",
+            "latest_exclusive": "2026-10-16T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "L7-23及30-44；2026Q3 TIFRS合并、NT$million原表、董事会未批准脚注、Q4美元指引及汇率假设。",
+            "note": "原文公开日明确但时区未明；保留完整50小时区间，端点不是发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "TSM-Q3-F02",
+      "candidate_id": "TSM-Q3",
+      "statement": "2026Q3毛利率为66.4%，3Q原表数字尚未经董事会批准。",
+      "kind": "news",
+      "targets": [
+        "analysis:4",
+        "catalyst:3",
+        "company:TSMC",
+        "event:19",
+        "headline:1"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm",
+          "retrieved_at": "2026-10-19T01:21:19.504Z",
+          "basis": "filing",
+          "locator": "L7-23及30-44；2026Q3 TIFRS合并、NT$million原表、董事会未批准脚注、Q4美元指引及汇率假设。",
+          "support": "2026Q3毛利率为66.4%，3Q原表数字尚未经董事会批准。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v01.json",
+          "receipt_sha256": "3114a8a9136edf0be681fa91caca8adf7b849a3d7077c3b8b8b3ca0b5bc73907",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-15",
+            "earliest": "2026-10-14T10:00:00+00:00",
+            "latest_exclusive": "2026-10-16T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "L7-23及30-44；2026Q3 TIFRS合并、NT$million原表、董事会未批准脚注、Q4美元指引及汇率假设。",
+            "note": "原文公开日明确但时区未明；保留完整50小时区间，端点不是发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "TSM-Q3-F03",
+      "candidate_id": "TSM-Q3",
+      "statement": "Q4收入指引523亿至543亿美元，假设1美元兑31.8新台币；属于指引而非实现值。",
+      "kind": "forecast",
+      "targets": [
+        "analysis:4",
+        "catalyst:3",
+        "company:TSMC",
+        "event:19",
+        "headline:1"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm",
+          "retrieved_at": "2026-10-19T01:21:19.504Z",
+          "basis": "filing",
+          "locator": "L7-23及30-44；2026Q3 TIFRS合并、NT$million原表、董事会未批准脚注、Q4美元指引及汇率假设。",
+          "support": "Q4收入指引523亿至543亿美元，假设1美元兑31.8新台币；属于指引而非实现值。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v01.json",
+          "receipt_sha256": "3114a8a9136edf0be681fa91caca8adf7b849a3d7077c3b8b8b3ca0b5bc73907",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-15",
+            "earliest": "2026-10-14T10:00:00+00:00",
+            "latest_exclusive": "2026-10-16T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "L7-23及30-44；2026Q3 TIFRS合并、NT$million原表、董事会未批准脚注、Q4美元指引及汇率假设。",
+            "note": "原文公开日明确但时区未明；保留完整50小时区间，端点不是发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "TSM-Q3-A01",
+      "candidate_id": "TSM-Q3",
+      "statement": "已披露盈利规模与先进制程需求提供观察基准；持续性仍需现金流、节点良率和后续季度兑现。 核董事会后续批准、季度现金流及Q4指引兑现，不混用新台币与美元或当成审计完成结果。 这是基于所引入选事实的业务推断，不确认价格方向、因果关系或已实现财务增量。",
+      "kind": "analysis",
+      "targets": [
+        "analysis:4",
+        "catalyst:3",
+        "company:TSMC",
+        "event:19",
+        "headline:1"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm",
+          "retrieved_at": "2026-10-19T01:21:19.504Z",
+          "basis": "filing",
+          "locator": "L7-23及30-44；2026Q3 TIFRS合并、NT$million原表、董事会未批准脚注、Q4美元指引及汇率假设。",
+          "support": "已披露盈利规模与先进制程需求提供观察基准；持续性仍需现金流、节点良率和后续季度兑现。 核董事会后续批准、季度现金流及Q4指引兑现，不混用新台币与美元或当成审计完成结果。 这是基于所引入选事实的业务推断，不确认价格方向、因果关系或已实现财务增量。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v01.json",
+          "receipt_sha256": "3114a8a9136edf0be681fa91caca8adf7b849a3d7077c3b8b8b3ca0b5bc73907",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-15",
+            "earliest": "2026-10-14T10:00:00+00:00",
+            "latest_exclusive": "2026-10-16T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "L7-23及30-44；2026Q3 TIFRS合并、NT$million原表、董事会未批准脚注、Q4美元指引及汇率假设。",
+            "note": "原文公开日明确但时区未明；保留完整50小时区间，端点不是发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "SK-US-CHINA-F01",
+      "candidate_id": "SK-US-CHINA",
+      "statement": "Investing在10月15日转述Reuters称Solidigm寻求大连设备许可，方案与拟议美国NAND厂筹资有关。",
+      "kind": "news",
+      "targets": [
+        "analysis:4",
+        "company:SK Hynix",
+        "event:17",
+        "headline:8"
+      ],
+      "evidence": [
+        {
+          "url": "https://uk.investing.com/news/stock-market-news/sk-hynix-seeks-us-chip-equipment-exports-to-china-tied-to-new-factory--reuters-4911175",
+          "retrieved_at": "2026-10-19T01:30:34.321Z",
+          "basis": "dated_media",
+          "locator": "L35、48-59；Investing转述Reuters，尤其L55公司否认扩产，未确认新许可证/建厂决议。",
+          "support": "Investing在10月15日转述Reuters称Solidigm寻求大连设备许可，方案与拟议美国NAND厂筹资有关。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v17.json",
+          "receipt_sha256": "e816ddd9e399dc79b62b5088f1e088f7348faebbda46534320e5e1b48337fbd0",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-15",
+            "earliest": "2026-10-14T10:00:00+00:00",
+            "latest_exclusive": "2026-10-16T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "L35、48-59；Investing转述Reuters，尤其L55公司否认扩产，未确认新许可证/建厂决议。",
+            "note": "原文公开日明确但时区未明；保留完整50小时区间，端点不是发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "SK-US-CHINA-F02",
+      "candidate_id": "SK-US-CHINA",
+      "statement": "该文同时引述SK Hynix称安装与美方沟通并获授权、不是寻求扩产；不确认新增许可或最终美国投资决定。",
+      "kind": "news",
+      "targets": [
+        "analysis:4",
+        "company:SK Hynix",
+        "event:17",
+        "headline:8"
+      ],
+      "evidence": [
+        {
+          "url": "https://uk.investing.com/news/stock-market-news/sk-hynix-seeks-us-chip-equipment-exports-to-china-tied-to-new-factory--reuters-4911175",
+          "retrieved_at": "2026-10-19T01:30:34.321Z",
+          "basis": "dated_media",
+          "locator": "L35、48-59；Investing转述Reuters，尤其L55公司否认扩产，未确认新许可证/建厂决议。",
+          "support": "该文同时引述SK Hynix称安装与美方沟通并获授权、不是寻求扩产；不确认新增许可或最终美国投资决定。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v17.json",
+          "receipt_sha256": "e816ddd9e399dc79b62b5088f1e088f7348faebbda46534320e5e1b48337fbd0",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-15",
+            "earliest": "2026-10-14T10:00:00+00:00",
+            "latest_exclusive": "2026-10-16T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "L35、48-59；Investing转述Reuters，尤其L55公司否认扩产，未确认新许可证/建厂决议。",
+            "note": "原文公开日明确但时区未明；保留完整50小时区间，端点不是发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "SK-US-CHINA-A01",
+      "candidate_id": "SK-US-CHINA",
+      "statement": "许可范围与资金安排可能影响海外NAND投资路径；不能据报道推算新增产能或确定资本支出。 核许可证、公司最终投资披露和投产安排；不把媒体方案写成已批准扩产。 这是基于所引入选事实的业务推断，不确认价格方向、因果关系或已实现财务增量。",
+      "kind": "analysis",
+      "targets": [
+        "analysis:4",
+        "company:SK Hynix",
+        "event:17",
+        "headline:8"
+      ],
+      "evidence": [
+        {
+          "url": "https://uk.investing.com/news/stock-market-news/sk-hynix-seeks-us-chip-equipment-exports-to-china-tied-to-new-factory--reuters-4911175",
+          "retrieved_at": "2026-10-19T01:30:34.321Z",
+          "basis": "dated_media",
+          "locator": "L35、48-59；Investing转述Reuters，尤其L55公司否认扩产，未确认新许可证/建厂决议。",
+          "support": "许可范围与资金安排可能影响海外NAND投资路径；不能据报道推算新增产能或确定资本支出。 核许可证、公司最终投资披露和投产安排；不把媒体方案写成已批准扩产。 这是基于所引入选事实的业务推断，不确认价格方向、因果关系或已实现财务增量。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v17.json",
+          "receipt_sha256": "e816ddd9e399dc79b62b5088f1e088f7348faebbda46534320e5e1b48337fbd0",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-15",
+            "earliest": "2026-10-14T10:00:00+00:00",
+            "latest_exclusive": "2026-10-16T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "L35、48-59；Investing转述Reuters，尤其L55公司否认扩产，未确认新许可证/建厂决议。",
+            "note": "原文公开日明确但时区未明；保留完整50小时区间，端点不是发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "SS-NOSELECT-A01",
+      "statement": "对Samsung官方10月14至15日入口与独立线索作有限筛选；本期无合格入选项，不表示无变化或风险解除。上周10月8日指引不重复当本周新增。",
+      "kind": "analysis",
+      "targets": [
+        "company:Samsung Electronics"
+      ],
+      "evidence": [
+        {
+          "url": "https://news.samsung.com/global/",
+          "retrieved_at": "2026-10-19T01:16:00.416Z",
+          "basis": "dated_section",
+          "locator": "当周列表L65-94：10月14-15日语言支持、无线峰会等；10/8业绩指引为旧期。",
+          "support": "仅支持有限筛选范围与日期；未将空结果当零变化。",
+          "receipt_path": "logs/2026-10-19_o03.json",
+          "receipt_sha256": "70ea633d30239155ba81c1fa0dbe3ff2ab63f07d45ec412c8596c1cf5a2e3da4",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-15",
+            "earliest": "2026-10-14T10:00:00+00:00",
+            "latest_exclusive": "2026-10-16T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "官方列表具体10月14-15日条目及未入选范围；非全量无事证明。",
+            "note": "原文公开日明确但时区未明；保留完整50小时区间，端点不是发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ANALYSIS-01",
+      "statement": "自研芯片与开放机架对应不同瓶颈。Maia的2027部署目标与OCP设计贡献，都要经过实际部署和系统成本验证；不能把性能宣传或标准参与直接换算成收入。",
+      "kind": "analysis",
+      "targets": [
+        "analysis:1"
+      ],
+      "evidence": [
+        {
+          "url": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
+          "retrieved_at": "2026-10-19T01:26:03.812Z",
+          "basis": "dated_release",
+          "locator": "L7-18、L30、L35；Maia200现状、300未来部署、N2P设计选择分开。",
+          "support": "该段只提炼本期已入选事项及其限制。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v13.json",
+          "receipt_sha256": "287d2c66ec2d5351f4dcd8368e6616a4a1c875111d32fbbb53a6a193a7ce972e",
+          "claim_first_public_at": "2026-10-12T13:01:29+00:00",
+          "page_modified_at": "2026-10-12T13:19:15+00:00",
+          "publication_metadata_ref": "logs/2026-10-19_monday_publication_metadata.json"
+        },
+        {
+          "url": "https://blogs.nvidia.com/blog/ocp-global-summit-vera-rubin-scale-ai-factories/",
+          "retrieved_at": "2026-10-19T01:21:19.504Z",
+          "basis": "dated_release",
+          "locator": "L5、12-15、31-40；仅本期选用机架/托盘设计贡献，不将全部合作条目写成订单。",
+          "support": "该段只提炼本期已入选事项及其限制。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v01.json",
+          "receipt_sha256": "3114a8a9136edf0be681fa91caca8adf7b849a3d7077c3b8b8b3ca0b5bc73907",
+          "claim_first_public_at": "2026-10-12T15:00:25+00:00",
+          "page_modified_at": "2026-10-14T20:57:54+00:00",
+          "publication_metadata_ref": "logs/2026-10-19_monday_publication_metadata.json"
+        }
+      ]
+    },
+    {
+      "id": "ANALYSIS-02",
+      "statement": "终端AI开始进入采用验证。HomeView仍在预售，Bee两款设备的供应阶段不同，RTX Spark进入可购公告；订阅、地区和真实任务成本决定商业价值。",
+      "kind": "analysis",
+      "targets": [
+        "analysis:2"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.apple.com/uk/newsroom/2026/10/meet-apple-homeview-a-new-way-to-enjoy-entertainment-and-manage-the-home/",
+          "retrieved_at": "2026-10-19T01:22:41.321Z",
+          "basis": "dated_release",
+          "locator": "L31-46、94-106、161-174；首批市场/英语/EU、个人上下文配对与A18分别核。",
+          "support": "该段只提炼本期已入选事项及其限制。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v06.json",
+          "receipt_sha256": "8f23d47b467a04569d420244dd685a5f0f9e94cbe4b98ea6fca66de514385275",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-13",
+            "earliest": "2026-10-12T10:00:00+00:00",
+            "latest_exclusive": "2026-10-14T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "L31-46、94-106、161-174；首批市场/英语/EU、个人上下文配对与A18分别核。",
+            "note": "原文公开日明确但时区未明；保留完整50小时区间，端点不是发布时间。"
+          }
+        },
+        {
+          "url": "https://www.aboutamazon.com/news/devices/amazon-personal-ai-bee-frontier-bee-eclipse",
+          "retrieved_at": "2026-10-19T01:26:00.781Z",
+          "basis": "dated_release",
+          "locator": "L15-18、L35、L50-60；设备可购与soon、订阅、音频与转录分开；发布时间另核metadata。",
+          "support": "该段只提炼本期已入选事项及其限制。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v12.json",
+          "receipt_sha256": "06f5ce562db73aca2403a76ef9c55c2f2518764c34c86359e43d53a4980c9aba",
+          "claim_first_public_at": "2026-10-15T11:55:24.955+00:00",
+          "page_modified_at": "2026-10-15T11:55:24.955+00:00",
+          "publication_metadata_ref": "logs/2026-10-19_bee_publication_metadata.json"
+        },
+        {
+          "url": "https://nvidianews.nvidia.com/news/nvidia-rtx-spark-pcs-available-today-a-new-beginning-for-windows-pcs",
+          "retrieved_at": "2026-10-19T01:23:31.565Z",
+          "basis": "dated_release",
+          "locator": "L45-69；10/16可购及Microsoft厂商名单，不确认Surface每个SKU或真实交付。",
+          "support": "该段只提炼本期已入选事项及其限制。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v08.json",
+          "receipt_sha256": "e1f1005fcd539e6175c7e9a9651b8ebb51245d31440d7617644ff803be1db802",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-16",
+            "earliest": "2026-10-15T10:00:00+00:00",
+            "latest_exclusive": "2026-10-17T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "L45-69；10/16可购及Microsoft厂商名单，不确认Surface每个SKU或真实交付。",
+            "note": "原文公开日明确但时区未明；保留完整50小时区间，端点不是发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ANALYSIS-03",
+      "statement": "治理安排与法律责任分别观察。METR访问有删节和信息例外，州起诉与重审申请也不是实体裁判；不能由合作或程序动作推断风险已经解除。",
+      "kind": "analysis",
+      "targets": [
+        "analysis:3"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+          "retrieved_at": "2026-10-19T01:20:11.309Z",
+          "basis": "dated_section",
+          "locator": "L13、16-17、30-43、46-49；六名METR人员、访问例外、删节决定权和10/15-16澄清脚注。",
+          "support": "该段只提炼本期已入选事项及其限制。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_d08.json",
+          "receipt_sha256": "8132d48d8b33053e779151b020fb93666798ea63bd9b34ded3a3dae1c90dd1ac",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-16",
+            "earliest": "2026-10-15T10:00:00+00:00",
+            "latest_exclusive": "2026-10-17T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "L13、16-17、30-43、46-49；六名METR人员、访问例外、删节决定权和10/15-16澄清脚注。",
+            "note": "原文公开日明确但时区未明；保留完整50小时区间，端点不是发布时间。"
+          }
+        },
+        {
+          "url": "https://www.iowaattorneygeneral.gov/newsroom/attorney-general-brenna-bird-announces-lawsuit-against-openai-for-deceiving-iowa-parents-and-iowans",
+          "retrieved_at": "2026-10-19T01:25:57.745Z",
+          "basis": "dated_release",
+          "locator": "L59-72；机关为起诉方，只确认诉讼宣布与指控，不确认底层伤害或违法。",
+          "support": "该段只提炼本期已入选事项及其限制。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v11.json",
+          "receipt_sha256": "c31232258e3e55b809f1431bd9b48fcbdc3305f1f8106b845127d76ff65de080",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-14",
+            "earliest": "2026-10-13T10:00:00+00:00",
+            "latest_exclusive": "2026-10-15T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "L59-72；机关为起诉方，只确认诉讼宣布与指控，不确认底层伤害或违法。",
+            "note": "原文公开日明确但时区未明；保留完整50小时区间，端点不是发布时间。"
+          }
+        },
+        {
+          "url": "https://www.investing.com/news/world-news/anthropic-seeks-rehearing-of-case-over-pentagons-security-risk-branding-4947806",
+          "retrieved_at": "2026-10-19T01:22:12.084Z",
+          "basis": "dated_media",
+          "locator": "L35-52；重审申请、现有裁决及不同法律依据的另案分开。",
+          "support": "该段只提炼本期已入选事项及其限制。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v05.json",
+          "receipt_sha256": "677cd29561d691418f7483fdc6b760ea64934e9fcecbe53ddae72120364be485",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-13",
+            "earliest": "2026-10-12T10:00:00+00:00",
+            "latest_exclusive": "2026-10-14T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "L35-52；重审申请、现有裁决及不同法律依据的另案分开。",
+            "note": "原文公开日明确但时区未明；保留完整50小时区间，端点不是发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ANALYSIS-04",
+      "statement": "盈利结果与未来扩张分开。TSMC披露Q3结果并保留董事会脚注，Q4仍是指引；SK Hynix许可报道还存在公司否认扩产的边界，不把两者当已兑现新增产能。",
+      "kind": "analysis",
+      "targets": [
+        "analysis:4"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm",
+          "retrieved_at": "2026-10-19T01:21:19.504Z",
+          "basis": "filing",
+          "locator": "L7-23及30-44；2026Q3 TIFRS合并、NT$million原表、董事会未批准脚注、Q4美元指引及汇率假设。",
+          "support": "该段只提炼本期已入选事项及其限制。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v01.json",
+          "receipt_sha256": "3114a8a9136edf0be681fa91caca8adf7b849a3d7077c3b8b8b3ca0b5bc73907",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-15",
+            "earliest": "2026-10-14T10:00:00+00:00",
+            "latest_exclusive": "2026-10-16T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "L7-23及30-44；2026Q3 TIFRS合并、NT$million原表、董事会未批准脚注、Q4美元指引及汇率假设。",
+            "note": "原文公开日明确但时区未明；保留完整50小时区间，端点不是发布时间。"
+          }
+        },
+        {
+          "url": "https://uk.investing.com/news/stock-market-news/sk-hynix-seeks-us-chip-equipment-exports-to-china-tied-to-new-factory--reuters-4911175",
+          "retrieved_at": "2026-10-19T01:30:34.321Z",
+          "basis": "dated_media",
+          "locator": "L35、48-59；Investing转述Reuters，尤其L55公司否认扩产，未确认新许可证/建厂决议。",
+          "support": "该段只提炼本期已入选事项及其限制。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v17.json",
+          "receipt_sha256": "e816ddd9e399dc79b62b5088f1e088f7348faebbda46534320e5e1b48337fbd0",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-15",
+            "earliest": "2026-10-14T10:00:00+00:00",
+            "latest_exclusive": "2026-10-16T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "L35、48-59；Investing转述Reuters，尤其L55公司否认扩产，未确认新许可证/建厂决议。",
+            "note": "原文公开日明确但时区未明；保留完整50小时区间，端点不是发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CATALYST-01",
+      "statement": "HomeView计划11月13日首批供应；触发条件：出现公告所列市场的实际可购和交付证据；可能影响：验证家庭AI入口的采用，而非提前确认销售。",
+      "kind": "forecast",
+      "targets": [
+        "catalyst:1"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.apple.com/uk/newsroom/2026/10/meet-apple-homeview-a-new-way-to-enjoy-entertainment-and-manage-the-home/",
+          "retrieved_at": "2026-10-19T01:22:41.321Z",
+          "basis": "dated_release",
+          "locator": "L31-46、94-106、161-174；首批市场/英语/EU、个人上下文配对与A18分别核。",
+          "support": "未来验证条件只依赖截止前公布的入选计划与限制。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v06.json",
+          "receipt_sha256": "8f23d47b467a04569d420244dd685a5f0f9e94cbe4b98ea6fca66de514385275",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-13",
+            "earliest": "2026-10-12T10:00:00+00:00",
+            "latest_exclusive": "2026-10-14T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "L31-46、94-106、161-174；首批市场/英语/EU、个人上下文配对与A18分别核。",
+            "note": "原文公开日明确但时区未明；保留完整50小时区间，端点不是发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CATALYST-02",
+      "statement": "Maia后续部署披露，时间依公司计划；触发条件：2027实际投片、部署与同任务成本公开；可能影响：检验自研推理成本及N2P设计落地，不能预先计收入。",
+      "kind": "forecast",
+      "targets": [
+        "catalyst:2"
+      ],
+      "evidence": [
+        {
+          "url": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
+          "retrieved_at": "2026-10-19T01:26:03.812Z",
+          "basis": "dated_release",
+          "locator": "L7-18、L30、L35；Maia200现状、300未来部署、N2P设计选择分开。",
+          "support": "未来验证条件只依赖截止前公布的入选计划与限制。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v13.json",
+          "receipt_sha256": "287d2c66ec2d5351f4dcd8368e6616a4a1c875111d32fbbb53a6a193a7ce972e",
+          "claim_first_public_at": "2026-10-12T13:01:29+00:00",
+          "page_modified_at": "2026-10-12T13:19:15+00:00",
+          "publication_metadata_ref": "logs/2026-10-19_monday_publication_metadata.json"
+        }
+      ]
+    },
+    {
+      "id": "CATALYST-03",
+      "statement": "TSMC后续批准与Q4兑现；触发条件：出现董事会批准、季度现金流和下一次业绩披露；可能影响：检验盈利质量与523亿至543亿美元指引，不用后来数字回填本期。",
+      "kind": "forecast",
+      "targets": [
+        "catalyst:3"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm",
+          "retrieved_at": "2026-10-19T01:21:19.504Z",
+          "basis": "filing",
+          "locator": "L7-23及30-44；2026Q3 TIFRS合并、NT$million原表、董事会未批准脚注、Q4美元指引及汇率假设。",
+          "support": "未来验证条件只依赖截止前公布的入选计划与限制。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v01.json",
+          "receipt_sha256": "3114a8a9136edf0be681fa91caca8adf7b849a3d7077c3b8b8b3ca0b5bc73907",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-15",
+            "earliest": "2026-10-14T10:00:00+00:00",
+            "latest_exclusive": "2026-10-16T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "L7-23及30-44；2026Q3 TIFRS合并、NT$million原表、董事会未批准脚注、Q4美元指引及汇率假设。",
+            "note": "原文公开日明确但时区未明；保留完整50小时区间，端点不是发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CATALYST-04",
+      "statement": "法律与评估后续，日期未定；触发条件：州案件/重审出现可核程序文件，或METR发布实际评估；可能影响：分别调整责任范围、经营资格和治理判断，不假定下周一定有结果。",
+      "kind": "forecast",
+      "targets": [
+        "catalyst:4"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.iowaattorneygeneral.gov/newsroom/attorney-general-brenna-bird-announces-lawsuit-against-openai-for-deceiving-iowa-parents-and-iowans",
+          "retrieved_at": "2026-10-19T01:25:57.745Z",
+          "basis": "dated_release",
+          "locator": "L59-72；机关为起诉方，只确认诉讼宣布与指控，不确认底层伤害或违法。",
+          "support": "未来验证条件只依赖截止前公布的入选计划与限制。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v11.json",
+          "receipt_sha256": "c31232258e3e55b809f1431bd9b48fcbdc3305f1f8106b845127d76ff65de080",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-14",
+            "earliest": "2026-10-13T10:00:00+00:00",
+            "latest_exclusive": "2026-10-15T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "L59-72；机关为起诉方，只确认诉讼宣布与指控，不确认底层伤害或违法。",
+            "note": "原文公开日明确但时区未明；保留完整50小时区间，端点不是发布时间。"
+          }
+        },
+        {
+          "url": "https://www.investing.com/news/world-news/anthropic-seeks-rehearing-of-case-over-pentagons-security-risk-branding-4947806",
+          "retrieved_at": "2026-10-19T01:22:12.084Z",
+          "basis": "dated_media",
+          "locator": "L35-52；重审申请、现有裁决及不同法律依据的另案分开。",
+          "support": "未来验证条件只依赖截止前公布的入选计划与限制。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_v05.json",
+          "receipt_sha256": "677cd29561d691418f7483fdc6b760ea64934e9fcecbe53ddae72120364be485",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-13",
+            "earliest": "2026-10-12T10:00:00+00:00",
+            "latest_exclusive": "2026-10-14T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "L35-52；重审申请、现有裁决及不同法律依据的另案分开。",
+            "note": "原文公开日明确但时区未明；保留完整50小时区间，端点不是发布时间。"
+          }
+        },
+        {
+          "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+          "retrieved_at": "2026-10-19T01:20:11.309Z",
+          "basis": "dated_section",
+          "locator": "L13、16-17、30-43、46-49；六名METR人员、访问例外、删节决定权和10/15-16澄清脚注。",
+          "support": "未来验证条件只依赖截止前公布的入选计划与限制。 具体所用正文与限定已核；不将导航、推荐或市场即时栏作为本期事实。",
+          "receipt_path": "logs/2026-10-19_d08.json",
+          "receipt_sha256": "8132d48d8b33053e779151b020fb93666798ea63bd9b34ded3a3dae1c90dd1ac",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-16",
+            "earliest": "2026-10-15T10:00:00+00:00",
+            "latest_exclusive": "2026-10-17T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "L13、16-17、30-43、46-49；六名METR人员、访问例外、删节决定权和10/15-16澄清脚注。",
+            "note": "原文公开日明确但时区未明；保留完整50小时区间，端点不是发布时间。"
+          }
+        }
+      ]
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "id": "JOINT-FTC",
+      "reason": "仅有单源媒体线索，不能确认具体文书及法律后果；隔离披露，不进入事实和判断。",
+      "sources": "logs/2026-10-19_v10.json；logs/2026-10-19_v14.json"
+    },
+    {
+      "id": "SS-HBM-LEAD",
+      "reason": "Single newspaper-origin report without company confirmation; no supply order or graph edge inferred.",
+      "sources": "logs/2026-10-19_v14.json"
+    },
+    {
+      "id": "OA-ACADEMIC",
+      "reason": "Relative to current legal and consumer-protection changes, no additional investment-critical company fact is selected in this finite issue.",
+      "sources": "logs/2026-10-19_v16.json"
+    },
+    {
+      "id": "TSLA-ROADSTER",
+      "reason": "Prioritize current FSD litigation exposure; early product plan is deferred without claiming it was disproven or fully verified.",
+      "sources": "logs/2026-10-19_d11.json"
+    }
+  ],
+  "cutoff_policy": "shanghai_monday_0900_v2"
+}

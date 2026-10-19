@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "registered_at": "2026-10-19T02:02:08.888070+00:00",
+  "authorization": "User 2026-10-19: Nasdaq stocks vs Nasdaq; other markets vs customary local indices. Overrides prior unaccepted SPY/KODEX diagnostic choice. No retroactive pre-registration claim.",
+  "markets": {
+    "US": {
+      "benchmark": "IXIC.GI",
+      "benchmark_name": "纳斯达克综合指数",
+      "currency": "USD",
+      "calendar": "NYSE",
+      "venue": "NASDAQ"
+    },
+    "KR": {
+      "benchmark": "KS11.KS",
+      "benchmark_name": "韩国综合指数KOSPI",
+      "currency": "KRW",
+      "calendar": "KSE",
+      "venue": "KRX"
+    },
+    "TW": {
+      "benchmark": "TWII.TW",
+      "benchmark_name": "台湾加权指数",
+      "currency": "TWD",
+      "calendar": "TWSE",
+      "venue": "TWSE"
+    }
+  },
+  "companies": [
+    {
+      "company": "Apple",
+      "symbol": "AAPL.O",
+      "market": "US"
+    },
+    {
+      "company": "Microsoft",
+      "symbol": "MSFT.O",
+      "market": "US"
+    },
+    {
+      "company": "Alphabet / Google",
+      "symbol": "GOOGL.O",
+      "market": "US"
+    },
+    {
+      "company": "Amazon / AWS",
+      "symbol": "AMZN.O",
+      "market": "US"
+    },
+    {
+      "company": "Meta",
+      "symbol": "META.O",
+      "market": "US"
+    },
+    {
+      "company": "NVIDIA",
+      "symbol": "NVDA.O",
+      "market": "US"
+    },
+    {
+      "company": "Tesla",
+      "symbol": "TSLA.O",
+      "market": "US"
+    },
+    {
+      "company": "OpenAI",
+      "symbol": null,
+      "market": null
+    },
+    {
+      "company": "Anthropic",
+      "symbol": null,
+      "market": null
+    },
+    {
+      "company": "Samsung Electronics",
+      "symbol": "005930.KS",
+      "market": "KR"
+    },
+    {
+      "company": "SK Hynix",
+      "symbol": "000660.KS",
+      "market": "KR"
+    },
+    {
+      "company": "TSMC",
+      "symbol": "2330.TW",
+      "market": "TW"
+    }
+  ],
+  "japan_default_if_added": "TOPIX broad index; actual Wind code/identity must be confirmed before first use. No Japan-listed company in current universe.",
+  "non_mapped_policy": "Do not substitute a partner stock or infer a direct listing.",
+  "calendar_validation": "TWSE actual calendar excludes 2026-10-09 and includes 2026-10-12, matching official TWSE holiday and daily archive. TSE was a wrong earlier calendar and its diagnostic normalization is archived, never used in the report."
+}

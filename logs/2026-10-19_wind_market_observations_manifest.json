@@ -1,0 +1,396 @@
+{
+  "schema_version": 1,
+  "report_date": "2026-10-19",
+  "normalized_at": "2026-10-19T02:05:36.549457+00:00",
+  "download_manifest": {
+    "path": "logs/2026-10-19_wind_download_20261019T020430139493.json",
+    "sha256": "dfb8c45f14d67a1d8fbbfa407685122814f1f45227f19ea8ea40f56e96c6da14"
+  },
+  "observations": {
+    "PRICE_AAPL_O": {
+      "path": "logs/2026-10-19_market_observations/AAPL_O.json",
+      "sha256": "6ecf450a3a471abafe49f9958b103214487498c074c26f409f17ebbe76e147bb",
+      "url": "https://www.wind.com.cn/portal/zh/ClientApi/index.html",
+      "retrieved_at": "2026-10-19T02:05:03.108501+00:00",
+      "version": "实际API回执冻结于2026-10-19T02:05:03.108501+00:00",
+      "locator": "AAPL.O收盘与IXIC.GI价格指数；2026-08-17至2026-10-16，44个真实交易日；具体回执和哈希位于文件provenance。",
+      "limitation": "当前提取版本；历史PIT未认证；价格回报未计现金分红，不作含分红总回报。"
+    },
+    "PRICE_MSFT_O": {
+      "path": "logs/2026-10-19_market_observations/MSFT_O.json",
+      "sha256": "a817d6e931622bbe2d24e66e95613cf70908564c83a3f054ad9ea885f53c6866",
+      "url": "https://www.wind.com.cn/portal/zh/ClientApi/index.html",
+      "retrieved_at": "2026-10-19T02:05:03.108501+00:00",
+      "version": "实际API回执冻结于2026-10-19T02:05:03.108501+00:00",
+      "locator": "MSFT.O收盘与IXIC.GI价格指数；2026-08-17至2026-10-16，44个真实交易日；具体回执和哈希位于文件provenance。",
+      "limitation": "当前提取版本；历史PIT未认证；价格回报未计现金分红，不作含分红总回报。"
+    },
+    "PRICE_GOOGL_O": {
+      "path": "logs/2026-10-19_market_observations/GOOGL_O.json",
+      "sha256": "8c9703a5da3ecfa23b4f4e163164ee9055246dcb997538056baa3b8f8afcb14f",
+      "url": "https://www.wind.com.cn/portal/zh/ClientApi/index.html",
+      "retrieved_at": "2026-10-19T02:05:03.108501+00:00",
+      "version": "实际API回执冻结于2026-10-19T02:05:03.108501+00:00",
+      "locator": "GOOGL.O收盘与IXIC.GI价格指数；2026-08-17至2026-10-16，44个真实交易日；具体回执和哈希位于文件provenance。",
+      "limitation": "当前提取版本；历史PIT未认证；价格回报未计现金分红，不作含分红总回报。"
+    },
+    "PRICE_AMZN_O": {
+      "path": "logs/2026-10-19_market_observations/AMZN_O.json",
+      "sha256": "19d148d41211fa59dc7790eff2f4fdcddcfd3b7e3f62d5f53dd4e2850652af40",
+      "url": "https://www.wind.com.cn/portal/zh/ClientApi/index.html",
+      "retrieved_at": "2026-10-19T02:05:03.108501+00:00",
+      "version": "实际API回执冻结于2026-10-19T02:05:03.108501+00:00",
+      "locator": "AMZN.O收盘与IXIC.GI价格指数；2026-08-17至2026-10-16，44个真实交易日；具体回执和哈希位于文件provenance。",
+      "limitation": "当前提取版本；历史PIT未认证；价格回报未计现金分红，不作含分红总回报。"
+    },
+    "PRICE_META_O": {
+      "path": "logs/2026-10-19_market_observations/META_O.json",
+      "sha256": "110670dc4a5ee5308546863ba6db747ad037e1c038b901d6cec1c1a81be739bf",
+      "url": "https://www.wind.com.cn/portal/zh/ClientApi/index.html",
+      "retrieved_at": "2026-10-19T02:05:03.108501+00:00",
+      "version": "实际API回执冻结于2026-10-19T02:05:03.108501+00:00",
+      "locator": "META.O收盘与IXIC.GI价格指数；2026-08-17至2026-10-16，44个真实交易日；具体回执和哈希位于文件provenance。",
+      "limitation": "当前提取版本；历史PIT未认证；价格回报未计现金分红，不作含分红总回报。"
+    },
+    "PRICE_NVDA_O": {
+      "path": "logs/2026-10-19_market_observations/NVDA_O.json",
+      "sha256": "c0875aab83a1b7e447ab50328b17e2614d5bf67dbe045281a954baeccfc771b2",
+      "url": "https://www.wind.com.cn/portal/zh/ClientApi/index.html",
+      "retrieved_at": "2026-10-19T02:05:03.108501+00:00",
+      "version": "实际API回执冻结于2026-10-19T02:05:03.108501+00:00",
+      "locator": "NVDA.O收盘与IXIC.GI价格指数；2026-08-17至2026-10-16，44个真实交易日；具体回执和哈希位于文件provenance。",
+      "limitation": "当前提取版本；历史PIT未认证；价格回报未计现金分红，不作含分红总回报。"
+    },
+    "PRICE_TSLA_O": {
+      "path": "logs/2026-10-19_market_observations/TSLA_O.json",
+      "sha256": "116c56c3c7e9e93d7c6e00566012576a4fff3b074b4652ef87a65d27b24d2685",
+      "url": "https://www.wind.com.cn/portal/zh/ClientApi/index.html",
+      "retrieved_at": "2026-10-19T02:05:03.108501+00:00",
+      "version": "实际API回执冻结于2026-10-19T02:05:03.108501+00:00",
+      "locator": "TSLA.O收盘与IXIC.GI价格指数；2026-08-17至2026-10-16，44个真实交易日；具体回执和哈希位于文件provenance。",
+      "limitation": "当前提取版本；历史PIT未认证；价格回报未计现金分红，不作含分红总回报。"
+    },
+    "PRICE_005930_KS": {
+      "path": "logs/2026-10-19_market_observations/005930_KS.json",
+      "sha256": "cc5e3d446a0a45761fcfddec6224fa3f981040e7e7f2d5a479962372eedbb1b2",
+      "url": "https://www.wind.com.cn/portal/zh/ClientApi/index.html",
+      "retrieved_at": "2026-10-19T02:05:04.863358+00:00",
+      "version": "实际API回执冻结于2026-10-19T02:05:04.863358+00:00",
+      "locator": "005930.KS收盘与KS11.KS价格指数；2026-08-18至2026-10-16，40个真实交易日；具体回执和哈希位于文件provenance。",
+      "limitation": "当前提取版本；历史PIT未认证；价格回报未计现金分红，不作含分红总回报。"
+    },
+    "PRICE_000660_KS": {
+      "path": "logs/2026-10-19_market_observations/000660_KS.json",
+      "sha256": "e625d4dab78ce273e29eed16257b4eb5eb2027f81a05adeb9504f71dd182f3d0",
+      "url": "https://www.wind.com.cn/portal/zh/ClientApi/index.html",
+      "retrieved_at": "2026-10-19T02:05:04.863358+00:00",
+      "version": "实际API回执冻结于2026-10-19T02:05:04.863358+00:00",
+      "locator": "000660.KS收盘与KS11.KS价格指数；2026-08-18至2026-10-16，40个真实交易日；具体回执和哈希位于文件provenance。",
+      "limitation": "当前提取版本；历史PIT未认证；价格回报未计现金分红，不作含分红总回报。"
+    },
+    "PRICE_2330_TW": {
+      "path": "logs/2026-10-19_market_observations/2330_TW.json",
+      "sha256": "04441e10f9e8c465ade80f3aaba87a5a649b3052ead1fc5a8495e152c27d21f7",
+      "url": "https://www.wind.com.cn/portal/zh/ClientApi/index.html",
+      "retrieved_at": "2026-10-19T02:05:06.638669+00:00",
+      "version": "实际API回执冻结于2026-10-19T02:05:06.638669+00:00",
+      "locator": "2330.TW收盘与TWII.TW价格指数；2026-08-17至2026-10-16，42个真实交易日；具体回执和哈希位于文件provenance。",
+      "limitation": "当前提取版本；历史PIT未认证；价格回报未计现金分红，不作含分红总回报。"
+    }
+  },
+  "companies": {
+    "Apple": {
+      "market_status": "observed",
+      "market_source": "PRICE_AAPL_O",
+      "limitation": "对照纳斯达克综合指数；未复权价格口径、未计现金分红；除权除息可影响波动。当前提取版本，历史PIT未认证。"
+    },
+    "Microsoft": {
+      "market_status": "observed",
+      "market_source": "PRICE_MSFT_O",
+      "limitation": "对照纳斯达克综合指数；未复权价格口径、未计现金分红；除权除息可影响波动。当前提取版本，历史PIT未认证。"
+    },
+    "Alphabet / Google": {
+      "market_status": "observed",
+      "market_source": "PRICE_GOOGL_O",
+      "limitation": "对照纳斯达克综合指数；未复权价格口径、未计现金分红；除权除息可影响波动。当前提取版本，历史PIT未认证。"
+    },
+    "Amazon / AWS": {
+      "market_status": "observed",
+      "market_source": "PRICE_AMZN_O",
+      "limitation": "对照纳斯达克综合指数；未复权价格口径、未计现金分红；除权除息可影响波动。当前提取版本，历史PIT未认证。"
+    },
+    "Meta": {
+      "market_status": "observed",
+      "market_source": "PRICE_META_O",
+      "limitation": "对照纳斯达克综合指数；未复权价格口径、未计现金分红；除权除息可影响波动。当前提取版本，历史PIT未认证。"
+    },
+    "NVIDIA": {
+      "market_status": "observed",
+      "market_source": "PRICE_NVDA_O",
+      "limitation": "对照纳斯达克综合指数；未复权价格口径、未计现金分红；除权除息可影响波动。当前提取版本，历史PIT未认证。"
+    },
+    "Tesla": {
+      "market_status": "observed",
+      "market_source": "PRICE_TSLA_O",
+      "limitation": "对照纳斯达克综合指数；未复权价格口径、未计现金分红；除权除息可影响波动。当前提取版本，历史PIT未认证。"
+    },
+    "OpenAI": {
+      "market_status": "not_mapped",
+      "market_source": null,
+      "limitation": "未建立可核独立证券映射；不以合作方股价代替。"
+    },
+    "Anthropic": {
+      "market_status": "not_mapped",
+      "market_source": null,
+      "limitation": "未建立可核独立证券映射；不以合作方股价代替。"
+    },
+    "Samsung Electronics": {
+      "market_status": "observed",
+      "market_source": "PRICE_005930_KS",
+      "limitation": "对照韩国综合指数KOSPI；未复权价格口径、未计现金分红；除权除息可影响波动。当前提取版本，历史PIT未认证。"
+    },
+    "SK Hynix": {
+      "market_status": "observed",
+      "market_source": "PRICE_000660_KS",
+      "limitation": "对照韩国综合指数KOSPI；未复权价格口径、未计现金分红；除权除息可影响波动。当前提取版本，历史PIT未认证。"
+    },
+    "TSMC": {
+      "market_status": "observed",
+      "market_source": "PRICE_2330_TW",
+      "limitation": "对照台湾加权指数；未复权价格口径、未计现金分红；除权除息可影响波动。当前提取版本，历史PIT未认证。"
+    }
+  },
+  "metrics_audit": {
+    "Apple": {
+      "week_return": 0.020259030418251056,
+      "excess_return": 0.06506398485652276,
+      "rv20": 0.16256085282058017,
+      "rv20_change": -0.001571981201627104,
+      "week_shock": 0.10397941758326085,
+      "sessions": 5,
+      "last_close": "2026-10-16",
+      "last_close_price": 343.46,
+      "instrument": {
+        "symbol": "AAPL.O",
+        "venue": "NASDAQ",
+        "currency": "USD",
+        "benchmark": "IXIC.GI",
+        "calendar": "NYSE",
+        "price_basis": "unadjusted_close_price_return"
+      },
+      "basis": "price_observation",
+      "pit_qualified": false,
+      "quote_count": 44,
+      "return_count": 43,
+      "previous_return_count": 38
+    },
+    "Microsoft": {
+      "week_return": -0.011250864372885916,
+      "excess_return": 0.03355409006538579,
+      "rv20": 0.2222211511448294,
+      "rv20_change": -0.003418041503093938,
+      "week_shock": 0.22078365608890885,
+      "sessions": 5,
+      "last_close": "2026-10-16",
+      "last_close_price": 529.05,
+      "instrument": {
+        "symbol": "MSFT.O",
+        "venue": "NASDAQ",
+        "currency": "USD",
+        "benchmark": "IXIC.GI",
+        "calendar": "NYSE",
+        "price_basis": "unadjusted_close_price_return"
+      },
+      "basis": "price_observation",
+      "pit_qualified": false,
+      "quote_count": 44,
+      "return_count": 43,
+      "previous_return_count": 38
+    },
+    "Alphabet / Google": {
+      "week_return": -0.03147926974918969,
+      "excess_return": 0.013325684689082018,
+      "rv20": 0.22825704633037028,
+      "rv20_change": -0.011298628441739761,
+      "week_shock": 0.2212525252553378,
+      "sessions": 5,
+      "last_close": "2026-10-16",
+      "last_close_price": 340.59,
+      "instrument": {
+        "symbol": "GOOGL.O",
+        "venue": "NASDAQ",
+        "currency": "USD",
+        "benchmark": "IXIC.GI",
+        "calendar": "NYSE",
+        "price_basis": "unadjusted_close_price_return"
+      },
+      "basis": "price_observation",
+      "pit_qualified": false,
+      "quote_count": 44,
+      "return_count": 43,
+      "previous_return_count": 38
+    },
+    "Amazon / AWS": {
+      "week_return": -0.04736501162214701,
+      "excess_return": -0.0025600571838753083,
+      "rv20": 0.2434879581022254,
+      "rv20_change": -0.010608080974832734,
+      "week_shock": 0.2018022580380374,
+      "sessions": 5,
+      "last_close": "2026-10-16",
+      "last_close_price": 250.0,
+      "instrument": {
+        "symbol": "AMZN.O",
+        "venue": "NASDAQ",
+        "currency": "USD",
+        "benchmark": "IXIC.GI",
+        "calendar": "NYSE",
+        "price_basis": "unadjusted_close_price_return"
+      },
+      "basis": "price_observation",
+      "pit_qualified": false,
+      "quote_count": 44,
+      "return_count": 43,
+      "previous_return_count": 38
+    },
+    "Meta": {
+      "week_return": -0.01300318644162124,
+      "excess_return": 0.031801767996650465,
+      "rv20": 0.5599030679488439,
+      "rv20_change": 0.03792059763633615,
+      "week_shock": 0.4668148960700266,
+      "sessions": 5,
+      "last_close": "2026-10-16",
+      "last_close_price": 709.325,
+      "instrument": {
+        "symbol": "META.O",
+        "venue": "NASDAQ",
+        "currency": "USD",
+        "benchmark": "IXIC.GI",
+        "calendar": "NYSE",
+        "price_basis": "unadjusted_close_price_return"
+      },
+      "basis": "price_observation",
+      "pit_qualified": false,
+      "quote_count": 44,
+      "return_count": 43,
+      "previous_return_count": 38
+    },
+    "NVIDIA": {
+      "week_return": -0.0660764131193301,
+      "excess_return": -0.021271458681058397,
+      "rv20": 0.24810221669009783,
+      "rv20_change": -0.004681075669190099,
+      "week_shock": 0.3048805085501531,
+      "sessions": 5,
+      "last_close": "2026-10-16",
+      "last_close_price": 214.13,
+      "instrument": {
+        "symbol": "NVDA.O",
+        "venue": "NASDAQ",
+        "currency": "USD",
+        "benchmark": "IXIC.GI",
+        "calendar": "NYSE",
+        "price_basis": "unadjusted_close_price_return"
+      },
+      "basis": "price_observation",
+      "pit_qualified": false,
+      "quote_count": 44,
+      "return_count": 43,
+      "previous_return_count": 38
+    },
+    "Tesla": {
+      "week_return": -0.07311209824928122,
+      "excess_return": -0.028307143811009516,
+      "rv20": 0.314409134265331,
+      "rv20_change": 0.010048564863117615,
+      "week_shock": 0.25691873329558207,
+      "sessions": 5,
+      "last_close": "2026-10-16",
+      "last_close_price": 354.72,
+      "instrument": {
+        "symbol": "TSLA.O",
+        "venue": "NASDAQ",
+        "currency": "USD",
+        "benchmark": "IXIC.GI",
+        "calendar": "NYSE",
+        "price_basis": "unadjusted_close_price_return"
+      },
+      "basis": "price_observation",
+      "pit_qualified": false,
+      "quote_count": 44,
+      "return_count": 43,
+      "previous_return_count": 38
+    },
+    "Samsung Electronics": {
+      "week_return": -0.1774809160305344,
+      "excess_return": -0.03291554935747887,
+      "rv20": 0.6049807725720945,
+      "rv20_change": 0.1880830774829384,
+      "week_shock": 0.9654889268736515,
+      "sessions": 5,
+      "last_close": "2026-10-16",
+      "last_close_price": 215500.0,
+      "instrument": {
+        "symbol": "005930.KS",
+        "venue": "KRX",
+        "currency": "KRW",
+        "benchmark": "KS11.KS",
+        "calendar": "KSE",
+        "price_basis": "unadjusted_close_price_return"
+      },
+      "basis": "price_observation",
+      "pit_qualified": false,
+      "quote_count": 40,
+      "return_count": 39,
+      "previous_return_count": 34
+    },
+    "SK Hynix": {
+      "week_return": -0.2433075550267697,
+      "excess_return": -0.09874218835371418,
+      "rv20": 0.6904235097168823,
+      "rv20_change": 0.19648607201543478,
+      "week_shock": 1.1784306570593384,
+      "sessions": 5,
+      "last_close": "2026-10-16",
+      "last_close_price": 1272000.0,
+      "instrument": {
+        "symbol": "000660.KS",
+        "venue": "KRX",
+        "currency": "KRW",
+        "benchmark": "KS11.KS",
+        "calendar": "KSE",
+        "price_basis": "unadjusted_close_price_return"
+      },
+      "basis": "price_observation",
+      "pit_qualified": false,
+      "quote_count": 40,
+      "return_count": 39,
+      "previous_return_count": 34
+    },
+    "TSMC": {
+      "week_return": -0.050980392156862675,
+      "excess_return": -0.006323600823708753,
+      "rv20": 0.20509124414465157,
+      "rv20_change": 0.015332642979889038,
+      "week_shock": 0.21178248975665365,
+      "sessions": 5,
+      "last_close": "2026-10-16",
+      "last_close_price": 2420.0,
+      "instrument": {
+        "symbol": "2330.TW",
+        "venue": "TWSE",
+        "currency": "TWD",
+        "benchmark": "TWII.TW",
+        "calendar": "TWSE",
+        "price_basis": "unadjusted_close_price_return"
+      },
+      "basis": "price_observation",
+      "pit_qualified": false,
+      "quote_count": 42,
+      "return_count": 41,
+      "previous_return_count": 36
+    }
+  },
+  "qualification": "Descriptive unadjusted-price observations only; no historical PIT or cash-dividend total-return promotion."
+}

@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "report_date": "2026-10-19",
+  "run_id": "a00ecb9f-0c1c-4377-b7c3-c9ae2074c071",
+  "manifest_sha256": "1d2331ca8750c2e52f7cc6464b6aafcd3d3379677da9e0e7540b8baa34f2032e",
+  "cutoff_exclusive": "2026-10-19T09:00:00+08:00",
+  "purpose": "late_rerun"
+}

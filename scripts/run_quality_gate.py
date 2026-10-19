@@ -14,6 +14,7 @@ from graph_update_policy import build_graph_plan, extract_graph_asset_date, is_s
 from validate_point_in_time import check_report as check_point_in_time
 from validate_weekly_brief import preflight_report
 from validate_research_coverage import check_coverage
+from investment_review import check_report as check_investment_review
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -104,6 +105,10 @@ def main() -> None:
     product_graph = Path(f"state/product_relationships_{year}.json")
     preflight_report(report, ROOT / baseline)
     print("正文格式预检通过；继续完整取证与产物校验")
+    try:
+        print(check_investment_review(report, ROOT))
+    except (ValueError, OSError, TypeError, KeyError, AttributeError) as exc:
+        raise SystemExit(f"错误：投资模块校验失败：{exc}") from exc
     try:
         print(check_coverage(report, ROOT / product_graph, ROOT))
     except (ValueError, OSError, TypeError, KeyError, AttributeError) as exc:

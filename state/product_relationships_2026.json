@@ -1,7 +1,7 @@
 {
   "title": "2026 年度十二家公司主营产品上下游关系图",
   "source_baseline": "基于 2026 年可取得的官方年报、投资者关系页面、公司新闻稿和监管披露；媒体报道或历史基线关系单独标注。",
-  "generated_for_report_date": "2026-09-14",
+  "generated_for_report_date": "2026-10-19",
   "companies": [
     {
       "name": "Apple",
@@ -12,10 +12,12 @@
         "iPad",
         "可穿戴设备",
         "服务",
-        "Apple silicon"
+        "Apple silicon",
+        "HomeView"
       ],
       "official_sources": [
-        "https://investor.apple.com/sec-filings/default.aspx"
+        "https://investor.apple.com/sec-filings/default.aspx",
+        "https://www.apple.com/uk/newsroom/2026/10/meet-apple-homeview-a-new-way-to-enjoy-entertainment-and-manage-the-home/"
       ]
     },
     {
@@ -27,9 +29,12 @@
         "Windows",
         "GitHub",
         "LinkedIn",
-        "Xbox"
+        "Xbox",
+        "Surface",
+        "Azure Maia"
       ],
       "official_sources": [
+        "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
         "https://www.microsoft.com/en-us/Investor/annual-reports.aspx"
       ]
     },
@@ -87,7 +92,8 @@
         "CUDA",
         "AI 软件",
         "游戏 GPU",
-        "汽车业务"
+        "汽车业务",
+        "RTX Spark"
       ],
       "official_sources": [
         "https://investor.nvidia.com/financial-info/annual-reports-and-proxies/default.aspx"
@@ -382,6 +388,30 @@
       ],
       "evidence_date": "2026-08-31",
       "notes": "新增互联能力，不是云采购订单；正式GA和范围另验。"
+    },
+    {
+      "edge_id": "P19",
+      "source": "NVIDIA",
+      "target": "Microsoft",
+      "product_or_service": "RTX Spark笔记本可购公告列Microsoft，Surface具体交付未核",
+      "evidence_level": "本年度官方证据",
+      "official_sources": [
+        "https://nvidianews.nvidia.com/news/nvidia-rtx-spark-pcs-available-today-a-new-beginning-for-windows-pcs"
+      ],
+      "evidence_date": "2026-10-16",
+      "notes": "厂商可购公告不等于所有SKU/地区交付或订单量。"
+    },
+    {
+      "edge_id": "P20",
+      "source": "TSMC",
+      "target": "Microsoft",
+      "product_or_service": "Maia300的N2P设计选择；2027部署计划，非订单",
+      "evidence_level": "本年度官方证据",
+      "official_sources": [
+        "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/"
+      ],
+      "evidence_date": "2026-10-12",
+      "notes": "微软披露的制程设计选择，不是代工量/收入确认。"
     }
   ],
   "product_nodes": [
@@ -1032,6 +1062,46 @@
       "official_sources": [
         "https://investor.tsmc.com/english/annual-reports"
       ]
+    },
+    {
+      "node_id": "Microsoft::Surface",
+      "company": "Microsoft",
+      "product": "Surface",
+      "category": "cloud_ai",
+      "official_sources": [
+        "https://blogs.nvidia.com/blog/local-ai-rtx-spark-microsoft-windows-event/"
+      ]
+    },
+    {
+      "node_id": "NVIDIA::RTX_Spark",
+      "company": "NVIDIA",
+      "product": "RTX Spark",
+      "category": "semiconductor",
+      "official_sources": [
+        "https://blogs.nvidia.com/blog/local-ai-rtx-spark-microsoft-windows-event/"
+      ]
+    },
+    {
+      "node_id": "Apple::HomeView",
+      "company": "Apple",
+      "product": "HomeView",
+      "category": "device",
+      "official_sources": [
+        "https://www.apple.com/uk/newsroom/2026/10/meet-apple-homeview-a-new-way-to-enjoy-entertainment-and-manage-the-home/"
+      ],
+      "evidence_date": "2026-10-13",
+      "notes": "本期直接具日期来源；阶段与具体限制见同源边和正文。"
+    },
+    {
+      "node_id": "Microsoft::Azure_Maia",
+      "company": "Microsoft",
+      "product": "Azure Maia",
+      "category": "cloud_ai",
+      "official_sources": [
+        "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/"
+      ],
+      "evidence_date": "2026-10-12",
+      "notes": "本期直接具日期来源；阶段与具体限制见同源边和正文。"
     }
   ],
   "product_edges": [
@@ -2187,6 +2257,66 @@
       ],
       "evidence_date": "2026-08-31",
       "notes": "双方提供互联能力；双向箭头不表示买卖双方或已全面正式商用。"
+    },
+    {
+      "edge_id": "PX82",
+      "source_node": "NVIDIA::RTX_Spark",
+      "target_node": "Microsoft::Surface",
+      "source_company": "NVIDIA",
+      "target_company": "Microsoft",
+      "product_or_service": "RTX Spark可购公告列Microsoft，Surface具体交付未核",
+      "relationship_type": "cross_company_supply",
+      "evidence_level": "本年度官方证据",
+      "official_sources": [
+        "https://nvidianews.nvidia.com/news/nvidia-rtx-spark-pcs-available-today-a-new-beginning-for-windows-pcs"
+      ],
+      "evidence_date": "2026-10-16",
+      "notes": "保留具体SKU/地区和出货金额缺口。"
+    },
+    {
+      "edge_id": "PX83",
+      "source_node": "Apple::Apple_silicon",
+      "target_node": "Apple::HomeView",
+      "source_company": "Apple",
+      "target_company": "Apple",
+      "product_or_service": "A18支撑HomeView；预售与未来供货分开",
+      "relationship_type": "internal_product_stack",
+      "evidence_level": "本年度官方证据",
+      "official_sources": [
+        "https://www.apple.com/uk/newsroom/2026/10/meet-apple-homeview-a-new-way-to-enjoy-entertainment-and-manage-the-home/"
+      ],
+      "evidence_date": "2026-10-13",
+      "notes": "具体公告阶段，不确认整体部署、订单金额或所有地区交付。"
+    },
+    {
+      "edge_id": "PX84",
+      "source_node": "Microsoft::Azure_Maia",
+      "target_node": "Microsoft::Azure",
+      "source_company": "Microsoft",
+      "target_company": "Microsoft",
+      "product_or_service": "Maia200已运行，Maia300计划2027部署",
+      "relationship_type": "internal_product_stack",
+      "evidence_level": "本年度官方证据",
+      "official_sources": [
+        "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/"
+      ],
+      "evidence_date": "2026-10-12",
+      "notes": "具体公告阶段，不确认整体部署、订单金额或所有地区交付。"
+    },
+    {
+      "edge_id": "PX85",
+      "source_node": "TSMC::N3/N2_节点",
+      "target_node": "Microsoft::Azure_Maia",
+      "source_company": "TSMC",
+      "target_company": "Microsoft",
+      "product_or_service": "Maia300计算chiplet采用N2P的设计选择，非订单",
+      "relationship_type": "cross_company_supply",
+      "evidence_level": "本年度官方证据",
+      "official_sources": [
+        "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/"
+      ],
+      "evidence_date": "2026-10-12",
+      "notes": "具体公告阶段，不确认整体部署、订单金额或所有地区交付。"
     }
   ],
   "changed_this_week": true

@@ -1,0 +1,142 @@
+{
+  "created_at": "2026-10-19T01:26:06.845623+00:00",
+  "status": "nonempty_history_received_normalization_not_accepted",
+  "receipts": [
+    {
+      "id": "aapl_currency",
+      "path": "logs/wind_raw/aapl_currency.json",
+      "sha256": "f181c6a3c60a50b94f0905bed9783819b67f1fd6e4bacc7d23c0770b2b606b0b",
+      "error_code": -40522006,
+      "retrieved_at": "2026-10-19T01:21:01.505384+00:00"
+    },
+    {
+      "id": "aapl_exchange",
+      "path": "logs/wind_raw/aapl_exchange.json",
+      "sha256": "f0c98d1092aaf2f463947b72f7d5825287c66d3ca75db0b4c37595e3f27d556b",
+      "error_code": 0,
+      "retrieved_at": "2026-10-19T01:21:01.591186+00:00"
+    },
+    {
+      "id": "aapl_factors",
+      "path": "logs/wind_raw/aapl_factors.json",
+      "sha256": "94c7c1b4ad3c931a99ad31f080dc9f2a744dddad6634bde6b0d6f120a568d965",
+      "error_code": 0,
+      "retrieved_at": "2026-10-19T01:20:15.520191+00:00"
+    },
+    {
+      "id": "benchmark_identity",
+      "path": "logs/wind_raw/benchmark_identity.json",
+      "sha256": "da218e50b115e46d61473253522e81d1cf1ec99ec293d00d23b9e156db41cc2e",
+      "error_code": 0,
+      "retrieved_at": "2026-10-19T01:20:15.608149+00:00"
+    },
+    {
+      "id": "exchange_identity",
+      "path": "logs/wind_raw/exchange_identity.json",
+      "sha256": "2f4c3c26ab6ace4cef95e03c7ed4ab90351af4a42bfa1c392b50777aa8a37249",
+      "error_code": 0,
+      "retrieved_at": "2026-10-19T01:21:46.571588+00:00"
+    },
+    {
+      "id": "health_close",
+      "path": "logs/wind_raw/health_close.json",
+      "sha256": "97a0cba3de81c3b30a0f0fd7bef4d6efea46eda45c41fd9d8fa45dca810c33d5",
+      "error_code": 0,
+      "retrieved_at": "2026-10-19T01:18:41.740482+00:00"
+    },
+    {
+      "id": "health_identity",
+      "path": "logs/wind_raw/health_identity.json",
+      "sha256": "e234af199679b63670a8efdae707b00a3b4543d67986a9648ddaed82c4160660",
+      "error_code": 0,
+      "retrieved_at": "2026-10-19T01:18:41.667659+00:00"
+    },
+    {
+      "id": "instrument_identity",
+      "path": "logs/wind_raw/instrument_identity.json",
+      "sha256": "793069b7d9fc48ebc4526bc74d99e9b2e62944ea8bc70db9a6617cb900252069",
+      "error_code": 0,
+      "retrieved_at": "2026-10-19T01:19:11.021229+00:00"
+    },
+    {
+      "id": "kr_benchmark",
+      "path": "logs/wind_raw/kr_benchmark.json",
+      "sha256": "c9dd11ee5d0172a68663bf221b78666ddbd44693b83799bd40c073752dbb5c93",
+      "error_code": 0,
+      "retrieved_at": "2026-10-19T01:21:47.563606+00:00"
+    },
+    {
+      "id": "kr_calendar",
+      "path": "logs/wind_raw/kr_calendar.json",
+      "sha256": "6826fef405ba559ba735a70c7f2d53df75b8dd5177346c187c22f85da0151c5c",
+      "error_code": 0,
+      "retrieved_at": "2026-10-19T01:21:03.469312+00:00"
+    },
+    {
+      "id": "kr_raw_closes",
+      "path": "logs/wind_raw/kr_raw_closes.json",
+      "sha256": "f3b12edcededffd428a0fedd2f77b110dff540dce89db8c664943efa6b9091aa",
+      "error_code": 0,
+      "retrieved_at": "2026-10-19T01:21:01.656886+00:00"
+    },
+    {
+      "id": "metadata_probe",
+      "path": "logs/wind_raw/metadata_probe.json",
+      "sha256": "0a6fb364ce64ca5e29aa2a07bc343c433811ccae5c526c119ebdcd0484e7fd1f",
+      "error_code": -40522006,
+      "retrieved_at": "2026-10-19T01:19:11.823438+00:00"
+    },
+    {
+      "id": "spy_factors",
+      "path": "logs/wind_raw/spy_factors.json",
+      "sha256": "91b5d8e0139e3c81b946c19bed2e39eed217bd3b3c3ad069d9f41efaf8ba72c4",
+      "error_code": 0,
+      "retrieved_at": "2026-10-19T01:21:46.671209+00:00"
+    },
+    {
+      "id": "tw_calendar",
+      "path": "logs/wind_raw/tw_calendar.json",
+      "sha256": "9dc718d477fcb89d8162a038e1bf9d7e4a83a4e06b692f6605c10e45339f1d19",
+      "error_code": 0,
+      "retrieved_at": "2026-10-19T01:21:04.332333+00:00"
+    },
+    {
+      "id": "tw_raw_closes",
+      "path": "logs/wind_raw/tw_raw_closes.json",
+      "sha256": "42498d7a6523d37a498dfbb37f1840ab52eb7f45a0d0f99559a8b647c961805d",
+      "error_code": 0,
+      "retrieved_at": "2026-10-19T01:21:02.525830+00:00"
+    },
+    {
+      "id": "us_calendar",
+      "path": "logs/wind_raw/us_calendar.json",
+      "sha256": "63482912359c559b7cb2c52b772e06a8767b4503b4defc4e81dcef9f46f588bd",
+      "error_code": 0,
+      "retrieved_at": "2026-10-19T01:21:02.589742+00:00"
+    },
+    {
+      "id": "us_raw_closes",
+      "path": "logs/wind_raw/us_raw_closes.json",
+      "sha256": "f1493f2d68ef129441ade20004c212a61cb67a9a6541106a6c7a52269b775f5a",
+      "error_code": 0,
+      "retrieved_at": "2026-10-19T01:20:14.645691+00:00"
+    }
+  ],
+  "accepted_for_return_calculation": false,
+  "raw_listed_company_price_series": 10,
+  "health_identity_nonempty": true,
+  "health_close_nonempty": true,
+  "limitations": [
+    "TRADE_CURR and combined metadata probe invalid indicators; failed receipts retained.",
+    "AAPL.OQ, SPTR.SPI, 0050.TW candidate identity empty; KS11.GI identity denotes delisted; no fallback mapping inferred.",
+    "US/KR/TW data and calendars retrieved separately; dividend/split adjustment conventions and historical versions are not yet qualified.",
+    "ADJFACTOR receipts are diagnostics only; not assumed total-return or historical PIT certified."
+  ],
+  "recovery_conditions": [
+    "Confirm vendor adjustment conventions and corporate-action versions before converting to total returns.",
+    "Confirm currency and stable benchmarks with nonempty instrument metadata; register mappings before observing returns.",
+    "Audit original-to-normalized conversion and complete calendars, then regenerate snapshot and rerun gates."
+  ],
+  "authentication_process_finished": true,
+  "credentials_or_auto_login_changed": false
+}

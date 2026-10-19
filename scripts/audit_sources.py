@@ -27,6 +27,9 @@ from pathlib import Path
 
 
 OFFICIAL_HOST_KEYWORDS = [
+    "wind.com.cn",
+    "blogs.windows.com",
+    "iowaattorneygeneral.gov",
     "apple.com",
     "microsoft.com",
     "microsoft.ai",
@@ -88,6 +91,9 @@ TIER1_MEDIA_HOST_KEYWORDS = [
 ]
 
 TRADE_MEDIA_HOST_KEYWORDS = [
+    "geekwire.com",
+    "tomsguide.com",
+    "aol.com",
     "finance.yahoo.com",
     "tomshardware.com",
     "techcrunch.com",

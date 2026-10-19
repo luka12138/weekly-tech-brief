@@ -13,3 +13,10 @@ Thumbs.db
 # Python local cache.
 __pycache__/
 *.pyc
+
+# Private provider payloads and local work areas. Public report summaries are explicit.
+/state/weekly_data/
+/state/market_vault/
+/state/staging/
+/logs/wind_raw/
+/tmp/

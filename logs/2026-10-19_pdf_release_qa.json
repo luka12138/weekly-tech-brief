@@ -1,0 +1,12 @@
+{
+  "checked_at": "2026-10-19T08:31:44.270930+00:00",
+  "pdf_sha256": "8e21f8578af37b7102fb23ea8df4a982a2d0655abf67f5741c3281607de51bd8",
+  "pages": 20,
+  "table_cells_checked": 255,
+  "missing_cells": [],
+  "text_cutoff_0900_present": true,
+  "actual_1004_time_present": true,
+  "old_midnight_word_absent": true,
+  "visual_review": "All 20 pages inspected in four rendered contact sheets; no clipped table cells or orphan final page. Desktop reading copy.",
+  "limitations": "Charts are linked SVG/Canvas artifacts, not embedded in PDF."
+}

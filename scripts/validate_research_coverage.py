@@ -11,6 +11,7 @@ from pathlib import Path
 
 from validate_point_in_time import SHANGHAI, collect_targets, digest, report_day, timestamp
 from validate_weekly_brief import REQUIRED_COMPANIES, validate_v2_company_details
+from reporting_window import validate_declared_window
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -189,7 +190,8 @@ def build_worklist(data: dict, company: str | None = None, candidate_id: str | N
 def validate_coverage(data: dict, report: Path, product: Path, skill: Path,
                       evidence: dict, root: Path) -> None:
     day = report_day(report)
-    cutoff = datetime.combine(day, time.min, SHANGHAI)
+    _, cutoff = validate_declared_window(data)
+    require(data.get('cutoff_policy') == evidence.get('cutoff_policy'), 'coverage/evidence cutoff policies differ')
     require(isinstance(data, dict) and data.get("schema_version") == 1, "coverage schema mismatch")
     require(data.get("report_date") == day.isoformat(), "coverage report date mismatch")
     require(timestamp(data.get("cutoff_exclusive"), "cutoff") == cutoff, "coverage cutoff mismatch")
@@ -203,6 +205,7 @@ def validate_coverage(data: dict, report: Path, product: Path, skill: Path,
         require(selected_scope, "company_top5 selection policy required for new reports")
     for key, path in (("report_sha256", report), ("product_graph_sha256", product), ("skill_sha256", skill)):
         require(data.get(key) == digest(path), f"{key}: stale coverage; review changed inputs")
+    validate_declared_window(data, report.read_text(encoding="utf-8"))
     if "<!-- company-selection: top5 -->" in report.read_text(encoding="utf-8"):
         require(selected_scope, "top5 report cannot use legacy coverage policy")
     reviewed = timestamp(data.get("reviewed_at"), "coverage reviewed_at")

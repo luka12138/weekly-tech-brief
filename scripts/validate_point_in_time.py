@@ -12,6 +12,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 from graph_update_policy import supply_changed_edge_ids
+from reporting_window import validate_declared_window
 
 
 SHANGHAI = ZoneInfo("Asia/Shanghai")
@@ -118,12 +119,9 @@ def validate_evidence(data: dict, report: Path, baseline: Path, product: Path | 
     if data.get("status") not in {None, "ready"}:
         raise ValueError("temporal evidence is draft/unresolved; publication blocked")
     day = report_day(report)
-    cutoff = datetime.combine(day, time.min, SHANGHAI)
-    start = cutoff - timedelta(days=7)
+    start, cutoff = validate_declared_window(data, report.read_text(encoding="utf-8"))
     if data.get("schema_version") != 1 or data.get("report_date") != day.isoformat():
         raise ValueError("temporal evidence schema/report date mismatch")
-    if timestamp(data.get("cutoff_exclusive"), "cutoff_exclusive") != cutoff:
-        raise ValueError("cutoff must be report Monday 00:00 Asia/Shanghai, exclusive")
     for key, path in (("report_sha256", report), ("baseline_sha256", baseline), ("product_graph_sha256", product)):
         if path is not None and data.get(key) != digest(path):
             raise ValueError(f"{key}: stale evidence; re-review the changed file")
@@ -145,7 +143,7 @@ def validate_evidence(data: dict, report: Path, baseline: Path, product: Path | 
     for key, block in targets.items():
         if key.startswith("event:"):
             declared_dates = re.findall(r"\d{4}-\d{2}-\d{2}", block.splitlines()[0])
-            if not declared_dates or any(date.fromisoformat(value) >= day for value in declared_dates):
+            if not declared_dates or any(datetime.combine(date.fromisoformat(value), time.min, SHANGHAI) >= cutoff for value in declared_dates):
                 raise ValueError(f"{key}: declared disclosure date missing or beyond cutoff")
     covered: set[str] = set()
     claim_ids: set[str] = set()
@@ -209,7 +207,7 @@ def validate_evidence(data: dict, report: Path, baseline: Path, product: Path | 
         if any(not re.fullmatch(r"\d{4}-\d{2}-\d{2}", part) for part in parts):
             raise ValueError(f"{identity}: invalid evidence_date")
         dates = [date.fromisoformat(part) for part in parts]
-        if any(value >= day for value in dates):
+        if any(datetime.combine(value, time.min, SHANGHAI) >= cutoff for value in dates):
             raise ValueError(f"{edge.get('edge_id')}: evidence_date exceeds coverage cutoff")
         if identity in changed_ids and (len(dates) != 1 or dates[0] < start.date()):
             raise ValueError(f"{identity}: changed edge requires one current-week evidence_date")

@@ -259,3 +259,11 @@ open reports/latest.md
 - 本地 Codex 配置
 - Cookie 或浏览器凭据
 - 未脱敏的私人资料
+
+## 2026-10-19起的数据与验证
+
+最新周报提供Markdown、HTML和PDF。每周一上海09:00为唯一采集批次与截止；补跑标记真实采集时刻，不冒充原09:00历史版本。代码入口与4TB移动盘归档方案见`docs/wind_api_workflow.md`和`docs/weekly_data_storage_plan.md`。
+
+公开仓库只含报告、图谱、规则、脚本和核验摘要。Wind原始时间序列、新闻原响应和完整诊断保存在获授权的本机`state/weekly_data`及独立备份中；摘要内的原件路径/哈希用于本地追溯，不表示这些原件已公开。读取历史回包和报告计算不能用重新下载的当前版本替代。
+
+离线代码测试：`python3 -m unittest discover -s tests -p 'test_*.py'`。当前报告的完整集成测试另需恢复获授权的证据文件到原相对路径，再运行`WEEKLY_WITH_PRIVATE_EVIDENCE=1 python3 -m unittest discover -s tests -p 'test_*.py'`。生产发布仍必须执行`scripts/run_quality_gate.py`的全部检查；缺少原件会失败，不因公开仓库不附原件而放宽发布闸门。

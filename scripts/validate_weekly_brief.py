@@ -15,6 +15,7 @@ from graph_update_policy import is_schema_v2, supply_changed_edge_ids
 from json_canvas_graphs import validate_canvas_file
 from validate_point_in_time import check_report as check_point_in_time
 from validate_report_vintage import check_vintage
+from investment_review import check_report as check_investment_review, preflight_layout
 
 
 REQUIRED_COMPANIES = [
@@ -573,6 +574,10 @@ def validate_v2_structure(
 def preflight_report(report_path: Path, baseline_path: Path) -> None:
     """Check local prose before evidence binding, graph generation or network IO."""
     report = report_path.read_text(encoding="utf-8")
+    try:
+        preflight_layout(report_path, report)
+    except ValueError as exc:
+        fail(f"投资模块格式错误：{exc}")
     baseline = json.loads(baseline_path.read_text(encoding="utf-8"))
     companies = baseline.get("companies")
     if companies not in ALLOWED_COMPANY_SCOPES:
@@ -603,6 +608,7 @@ def validate_report(
     schema_v2 = is_schema_v2(report)
 
     try:
+        print(check_investment_review(report_path))
         vintage_status = check_vintage(report_path)
         if vintage_status:
             print(vintage_status)
@@ -630,7 +636,14 @@ def validate_report(
     if report_date.weekday() != 0:
         fail(f"周报文件日期必须是周一：{report_date}")
     expected_start = report_date - timedelta(days=7)
-    expected_end = report_date - timedelta(days=1)
+    from reporting_window import MARKER, MORNING, validate_declared_window
+    morning_policy = MARKER in report
+    expected_end = report_date if morning_policy else report_date - timedelta(days=1)
+    if morning_policy:
+        try:
+            validate_declared_window({'report_date':report_date.isoformat(), **period}, report)
+        except (ValueError, KeyError) as exc:
+            fail(f"覆盖时间窗口不匹配：{exc}")
     if start_date != expected_start or end_date != expected_end:
         fail(f"覆盖周期必须是报告周一的上一周：expected={expected_start} 至 {expected_end}")
     expected_period = f"{start} 至 {end}"
