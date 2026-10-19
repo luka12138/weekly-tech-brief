@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "report_date": "2026-10-19",
+  "artifact_commit": "bce94f8bdb5aace0426e5f7fea4d564a48706525",
+  "remote": "https://github.com/luka12138/weekly-tech-brief",
+  "remote_ref": "refs/heads/main",
+  "verified_remote_commit": "bce94f8bdb5aace0426e5f7fea4d564a48706525",
+  "verified_at": "2026-10-19T08:42:32.635477+00:00",
+  "report_sha256": "1e4f7fb2fe4da91ec980bf2b2e6b0e899742c6f54cca9824cb6cb96aeeae7f3a",
+  "pdf_sha256": "8e21f8578af37b7102fb23ea8df4a982a2d0655abf67f5741c3281607de51bd8",
+  "public_file_count": 87,
+  "market_scope": "Price observations, late_rerun. No full cash-reinvested total return or original 09:00 PIT certification.",
+  "raw_provider_payloads_published": false,
+  "unrelated_historical_corrections_published": false,
+  "external_disk_backup_performed": false
+}
