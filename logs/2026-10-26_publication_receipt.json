@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "report_date": "2026-10-26",
+  "artifact_commit": "5174888b760cfc861b6d946dd05fc9eb6ffbeb02",
+  "remote": "https://github.com/luka12138/weekly-tech-brief",
+  "remote_ref": "refs/heads/main",
+  "verified_remote_commit": "5174888b760cfc861b6d946dd05fc9eb6ffbeb02",
+  "verified_at": "2026-10-26T02:32:00.629961+00:00",
+  "report_sha256": "ec5ae505e5cdafede5a5fd9ab8d7500e970149dbc99c48a927b6931d02529dc7",
+  "pdf_sha256": "064d2a8eaf4eb9fefbfc952e03c3e9ecddd7aad1fdbc612a1057ac70c4fee095",
+  "public_file_count": 24,
+  "market_scope": "Price observations from late_rerun; no full cash-reinvested total return or original09:00 PIT certification.",
+  "raw_provider_payloads_published": false,
+  "raw_web_receipts_published": false,
+  "unrelated_historical_corrections_published": false,
+  "normal_checkout_and_index_preserved": true,
+  "external_backup_status": "verified",
+  "external_backup": {
+    "copied": 353,
+    "verified_existing": 1231,
+    "all_hashes_verified": true,
+    "store_integrity_verified": true,
+    "restored_project_files": 383,
+    "restore_investment_coverage_temporal_passed": true,
+    "pdf_identical": true,
+    "financial_PIT_certified": false,
+    "local_receipt": "logs/2026-10-26_external_restore_verification.json"
+  }
+}
