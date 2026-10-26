@@ -1,0 +1,2072 @@
+{
+  "schema_version": 1,
+  "status": "ready",
+  "report_date": "2026-10-26",
+  "cutoff_policy": "shanghai_monday_0900_v2",
+  "cutoff_exclusive": "2026-10-26T09:00:00+08:00",
+  "report_sha256": "ec5ae505e5cdafede5a5fd9ab8d7500e970149dbc99c48a927b6931d02529dc7",
+  "baseline_sha256": "478f22d9efd0c810d90621ee5ee3e23162a9f3a01896b20592f53a973e24d7bd",
+  "product_graph_sha256": "3dd6bc843d178820cd45ecb1179f704e1bcc08725c9220e7a44a375ce1743279",
+  "report_created_at": "2026-10-26T01:47:07.069254+00:00",
+  "reviewed_at": "2026-10-26T01:55:27.357483+00:00",
+  "manual_reviews": {
+    "financial_periods_and_units": {
+      "status": "reviewed",
+      "note": "Meta Q3截至9/30三个月、USD million：64601m=646.01亿美元、12988m=129.88亿美元；9.89b=98.9亿美元费用、135-145b=1350-1450亿美元指引。NM25b=250亿美元与该季度费用分开。Tesla SEC同一accession未审计表：28046m、787m及同比；capex in excess of20b是超过200亿美元的计划。Apple100m为三年上限；KYEC1.1b=11亿美元预订预付款。"
+    },
+    "source_versions": {
+      "status": "reviewed",
+      "note": "实际读取所有入选来源具体正文，回执字节/URL/截取段保存。未知时区日期使用完整50小时区间；Apple活动Reuters更新、Google初步报告、OpenAI代理Reuters更新和FOX5州官员报道使用明确时区；FOX5更新为上海10/26 07:34，早于09:00。Tesla以同accession索引10/22备案日期为边界。OpenAI恢复训练10/1与10/23披露分开。"
+    },
+    "product_graph": {
+      "status": "reviewed",
+      "note": "读取全量42条供应、20条公司关系、76个产品节点和85条产品边索引；完整展开9条相关供应、10条相关/弱公司关系及10条相关/弱产品边。新增E43-47、P21-22、PX86-87，PX58改为具名A5X计划；历史弱边不升级。Samsung Electro-Mechanics与Samsung Electronics不混同；所有未来GA/扩产/量产边均保留阶段。"
+    },
+    "report_vintage": {
+      "status": "reviewed",
+      "note": "窗口上海10/19 09:00至10/26 09:00排他截止；实际任务09:06:59触发、市场09:09:28建批，late_rerun。上期原文与图基线已冻结副本；本次无旧稿覆盖。价格序列、名称恢复、计算与新稿绑定，但不认证09:00原生采集/历史PIT/总回报。实际发布回执待后续成功才记录。"
+    }
+  },
+  "claims": [
+    {
+      "id": "AP-MFG-F01",
+      "candidate_id": "AP-MFG",
+      "statement": "Apple宣布Perryman提供iPhone Duo所用钛材料，并承诺未来三年最多投入1亿美元支持该伙伴。",
+      "kind": "news",
+      "targets": [
+        "company:Apple",
+        "event:1",
+        "supply:E45"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.apple.com/newsroom/2026/10/apple-announces-american-manufacturing-program-partners-for-latest-iphone-lineup/",
+          "retrieved_at": "2026-10-26T01:17:28.253Z",
+          "basis": "dated_release",
+          "locator": "v_apple: L43–L89；完整原始回执保留。",
+          "support": "Apple宣布Perryman提供iPhone Duo所用钛材料，并承诺未来三年最多投入1亿美元支持该伙伴。",
+          "receipt_path": "logs/2026-10-26_run/v_apple.json",
+          "receipt_sha256": "dfbaaa29105b98bfc81d23a6447eebbc8327ebed2f3ec34510898de3f35be4cc",
+          "receipt_excerpt": "L46: “We’re thrilled to expand our work with companies producing advanced materials and components for our newest iPhone lineup right here in America,” said Sabih Khan, Apple’s chief operating officer. “American ingenuity is vital to all our products, from the titanium crafted for iPhone Duo to breakthrough camera innovations in iPhone 18 Pro. We’re proud to work with Perryman and Qnity Electronics to continue expanding our American Manufacturing Program and support U.S. jobs.”",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-20",
+            "earliest": "2026-10-19T10:00:00+00:00",
+            "latest_exclusive": "2026-10-21T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_apple: L43–L89；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "AP-MFG-F02",
+      "candidate_id": "AP-MFG",
+      "statement": "Qnity先进薄膜用于iPhone 18 Pro可变光圈相机；这些合作不等于本周已支出全部承诺金额。",
+      "kind": "news",
+      "targets": [
+        "company:Apple",
+        "event:1",
+        "supply:E46"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.apple.com/newsroom/2026/10/apple-announces-american-manufacturing-program-partners-for-latest-iphone-lineup/",
+          "retrieved_at": "2026-10-26T01:17:28.253Z",
+          "basis": "dated_release",
+          "locator": "v_apple: L43–L89；完整原始回执保留。",
+          "support": "Qnity先进薄膜用于iPhone 18 Pro可变光圈相机；这些合作不等于本周已支出全部承诺金额。",
+          "receipt_path": "logs/2026-10-26_run/v_apple.json",
+          "receipt_sha256": "dfbaaa29105b98bfc81d23a6447eebbc8327ebed2f3ec34510898de3f35be4cc",
+          "receipt_excerpt": "L46: “We’re thrilled to expand our work with companies producing advanced materials and components for our newest iPhone lineup right here in America,” said Sabih Khan, Apple’s chief operating officer. “American ingenuity is vital to all our products, from the titanium crafted for iPhone Duo to breakthrough camera innovations in iPhone 18 Pro. We’re proud to work with Perryman and Qnity Electronics to continue expanding our American Manufacturing Program and support U.S. jobs.”",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-20",
+            "earliest": "2026-10-19T10:00:00+00:00",
+            "latest_exclusive": "2026-10-21T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_apple: L43–L89；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "AP-MFG-A01",
+      "candidate_id": "AP-MFG",
+      "statement": "本土材料和工艺配套扩大；盈利影响取决于采购、良率和真实交付。 核对后续实际交付与投入，不能将上限当支出。 属业务推断和未来验证条件，不确认价格方向、因果关系或财务增量。",
+      "kind": "analysis",
+      "targets": [
+        "company:Apple",
+        "event:1"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.apple.com/newsroom/2026/10/apple-announces-american-manufacturing-program-partners-for-latest-iphone-lineup/",
+          "retrieved_at": "2026-10-26T01:17:28.253Z",
+          "basis": "dated_release",
+          "locator": "v_apple: L43–L89；完整原始回执保留。",
+          "support": "本土材料和工艺配套扩大；盈利影响取决于采购、良率和真实交付。 核对后续实际交付与投入，不能将上限当支出。 属业务推断和未来验证条件，不确认价格方向、因果关系或财务增量。",
+          "receipt_path": "logs/2026-10-26_run/v_apple.json",
+          "receipt_sha256": "dfbaaa29105b98bfc81d23a6447eebbc8327ebed2f3ec34510898de3f35be4cc",
+          "receipt_excerpt": "L46: “We’re thrilled to expand our work with companies producing advanced materials and components for our newest iPhone lineup right here in America,” said Sabih Khan, Apple’s chief operating officer. “American ingenuity is vital to all our products, from the titanium crafted for iPhone Duo to breakthrough camera innovations in iPhone 18 Pro. We’re proud to work with Perryman and Qnity Electronics to continue expanding our American Manufacturing Program and support U.S. jobs.”",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-20",
+            "earliest": "2026-10-19T10:00:00+00:00",
+            "latest_exclusive": "2026-10-21T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_apple: L43–L89；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "AP-EVENT-F01",
+      "candidate_id": "AP-EVENT",
+      "statement": "Reuters报道Apple已宣布10月28日在洛杉矶举行“Pro and Tell”活动；本期不确认传闻中的具体产品。",
+      "kind": "news",
+      "targets": [
+        "catalyst:1",
+        "company:Apple",
+        "event:2"
+      ],
+      "evidence": [
+        {
+          "url": "https://economictimes.indiatimes.com/tech/technology/apple-to-host-pro-and-tell-event-on-october-28-in-la/articleshow/135054883.cms",
+          "retrieved_at": "2026-10-26T01:20:45.756Z",
+          "basis": "dated_media",
+          "locator": "v_apple_invite: L85–L116；完整原始回执保留。",
+          "support": "Reuters报道Apple已宣布10月28日在洛杉矶举行“Pro and Tell”活动；本期不确认传闻中的具体产品。",
+          "receipt_path": "logs/2026-10-26_run/v_apple_invite.json",
+          "receipt_sha256": "1bdfe77b7cc2a340b7de9d3ea46d6432fa508e2f9a3b4022d67dc40a54f3a7d7",
+          "receipt_excerpt": "L106: Apple said on Monday it would host a \"Pro and tell\" event in Los Angeles on October 28, the latest in a series of product launches as the iPhone maker expands its hardware lineup and AI offerings.",
+          "claim_first_public_at": "2026-10-19T23:51:36+05:30"
+        }
+      ]
+    },
+    {
+      "id": "AP-EVENT-A01",
+      "candidate_id": "AP-EVENT",
+      "statement": "增加近期产品披露窗口，收入兑现仍待产品与供应信息。 以活动正式发布和地区供应信息验证。 属业务推断和未来验证条件，不确认价格方向、因果关系或财务增量。",
+      "kind": "analysis",
+      "targets": [
+        "catalyst:1",
+        "company:Apple",
+        "event:2"
+      ],
+      "evidence": [
+        {
+          "url": "https://economictimes.indiatimes.com/tech/technology/apple-to-host-pro-and-tell-event-on-october-28-in-la/articleshow/135054883.cms",
+          "retrieved_at": "2026-10-26T01:20:45.756Z",
+          "basis": "dated_media",
+          "locator": "v_apple_invite: L85–L116；完整原始回执保留。",
+          "support": "增加近期产品披露窗口，收入兑现仍待产品与供应信息。 以活动正式发布和地区供应信息验证。 属业务推断和未来验证条件，不确认价格方向、因果关系或财务增量。",
+          "receipt_path": "logs/2026-10-26_run/v_apple_invite.json",
+          "receipt_sha256": "1bdfe77b7cc2a340b7de9d3ea46d6432fa508e2f9a3b4022d67dc40a54f3a7d7",
+          "receipt_excerpt": "L106: Apple said on Monday it would host a \"Pro and tell\" event in Los Angeles on October 28, the latest in a series of product launches as the iPhone maker expands its hardware lineup and AI offerings.",
+          "claim_first_public_at": "2026-10-19T23:51:36+05:30"
+        }
+      ]
+    },
+    {
+      "id": "MS-SOV-F01",
+      "candidate_id": "MS-SOV",
+      "statement": "Azure Managed HSM外部密钥管理已正式可用；Azure Local机密虚拟机也已正式可用。",
+      "kind": "news",
+      "targets": [
+        "company:Microsoft",
+        "event:3",
+        "headline:8"
+      ],
+      "evidence": [
+        {
+          "url": "https://blogs.microsoft.com/blog/2026/10/20/advancing-digital-sovereignty-with-greater-control-and-choice/",
+          "retrieved_at": "2026-10-26T01:17:29.507Z",
+          "basis": "dated_release",
+          "locator": "v_ms: L21–L41；完整原始回执保留。",
+          "support": "Azure Managed HSM外部密钥管理已正式可用；Azure Local机密虚拟机也已正式可用。",
+          "receipt_path": "logs/2026-10-26_run/v_ms.json",
+          "receipt_sha256": "189992cddceb9758e0bf17dcc1918e312edf7acf9bdbc52d43e3f55a32546965",
+          "receipt_excerpt": "L24: Azure Key Vault Managed Hardware Security Module (HSM) already gives customers dedicated, single-tenant protection and control over the encryption keys used by supported Azure services. Last year, we committed to extending that control beyond Microsoft infrastructure. External key management with Azure Managed HSM is now generally available, allowing customers to keep the root encryption key in hardware they own and operate on-premises or through a trusted third party.",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-20",
+            "earliest": "2026-10-19T10:00:00+00:00",
+            "latest_exclusive": "2026-10-21T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_ms: L21–L41；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "MS-SOV-F02",
+      "candidate_id": "MS-SOV",
+      "statement": "Sovereign Control Panel将在Ignite进入公开预览；Foundry Local与GitHub Enterprise Local计划届时正式可用。",
+      "kind": "forecast",
+      "targets": [
+        "company:Microsoft",
+        "event:3",
+        "headline:8"
+      ],
+      "evidence": [
+        {
+          "url": "https://blogs.microsoft.com/blog/2026/10/20/advancing-digital-sovereignty-with-greater-control-and-choice/",
+          "retrieved_at": "2026-10-26T01:17:29.507Z",
+          "basis": "dated_release",
+          "locator": "v_ms: L21–L41；完整原始回执保留。",
+          "support": "Sovereign Control Panel将在Ignite进入公开预览；Foundry Local与GitHub Enterprise Local计划届时正式可用。",
+          "receipt_path": "logs/2026-10-26_run/v_ms.json",
+          "receipt_sha256": "189992cddceb9758e0bf17dcc1918e312edf7acf9bdbc52d43e3f55a32546965",
+          "receipt_excerpt": "L24: Azure Key Vault Managed Hardware Security Module (HSM) already gives customers dedicated, single-tenant protection and control over the encryption keys used by supported Azure services. Last year, we committed to extending that control beyond Microsoft infrastructure. External key management with Azure Managed HSM is now generally available, allowing customers to keep the root encryption key in hardware they own and operate on-premises or through a trusted third party.",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-20",
+            "earliest": "2026-10-19T10:00:00+00:00",
+            "latest_exclusive": "2026-10-21T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_ms: L21–L41；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "MS-SOV-A01",
+      "candidate_id": "MS-SOV",
+      "statement": "扩大对数据与密钥控制的选择；签约转化和合规成本仍待观察。 逐项核对GA范围与预览限制，不把整个主权云方案统称已GA。 属业务推断和未来验证条件，不确认价格方向、因果关系或财务增量。",
+      "kind": "analysis",
+      "targets": [
+        "company:Microsoft",
+        "event:3",
+        "headline:8"
+      ],
+      "evidence": [
+        {
+          "url": "https://blogs.microsoft.com/blog/2026/10/20/advancing-digital-sovereignty-with-greater-control-and-choice/",
+          "retrieved_at": "2026-10-26T01:17:29.507Z",
+          "basis": "dated_release",
+          "locator": "v_ms: L21–L41；完整原始回执保留。",
+          "support": "扩大对数据与密钥控制的选择；签约转化和合规成本仍待观察。 逐项核对GA范围与预览限制，不把整个主权云方案统称已GA。 属业务推断和未来验证条件，不确认价格方向、因果关系或财务增量。",
+          "receipt_path": "logs/2026-10-26_run/v_ms.json",
+          "receipt_sha256": "189992cddceb9758e0bf17dcc1918e312edf7acf9bdbc52d43e3f55a32546965",
+          "receipt_excerpt": "L24: Azure Key Vault Managed Hardware Security Module (HSM) already gives customers dedicated, single-tenant protection and control over the encryption keys used by supported Azure services. Last year, we committed to extending that control beyond Microsoft infrastructure. External key management with Azure Managed HSM is now generally available, allowing customers to keep the root encryption key in hardware they own and operate on-premises or through a trusted third party.",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-20",
+            "earliest": "2026-10-19T10:00:00+00:00",
+            "latest_exclusive": "2026-10-21T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_ms: L21–L41；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "OA-GCP-F01",
+      "candidate_id": "OA-GCP",
+      "statement": "OpenAI宣布模型与Codex工作流将进入Google Cloud Model Garden，并可经Cloud Marketplace采购、使用既有云承诺。",
+      "kind": "news",
+      "targets": [
+        "analysis:1",
+        "catalyst:2",
+        "company:Alphabet / Google",
+        "company:OpenAI",
+        "event:15",
+        "event:4",
+        "headline:1",
+        "supply:E43"
+      ],
+      "evidence": [
+        {
+          "url": "https://openai.com/index/openai-models-google-cloud/",
+          "retrieved_at": "2026-10-26T01:17:25.889Z",
+          "basis": "dated_release",
+          "locator": "v_joint: L22–L47；完整原始回执保留。",
+          "support": "OpenAI宣布模型与Codex工作流将进入Google Cloud Model Garden，并可经Cloud Marketplace采购、使用既有云承诺。",
+          "receipt_path": "logs/2026-10-26_run/v_joint.json",
+          "receipt_sha256": "91040e6430ff5c17a99c08023d8c275d595ac0bac69b5dd866d0ac0015cda645",
+          "receipt_excerpt": "L23: Google Cloud’s longstanding investment in machine learning and AI has made it a destination for AI workloads and the developers and data scientists building them. Bringing OpenAI models to its model garden gives these teams access to OpenAI’s frontier models within the environment where they already work, enabling enterprises to modernize their software development lifecycle, build agentic workflows, and change how people work.",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-21",
+            "earliest": "2026-10-20T10:00:00+00:00",
+            "latest_exclusive": "2026-10-22T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_joint: L22–L47；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "OA-GCP-F02",
+      "candidate_id": "OA-GCP",
+      "statement": "正式可用计划在未来数周推出；Microsoft仍是OpenAI主要云伙伴。",
+      "kind": "forecast",
+      "targets": [
+        "analysis:1",
+        "catalyst:2",
+        "company:Alphabet / Google",
+        "company:OpenAI",
+        "event:15",
+        "event:4",
+        "headline:1"
+      ],
+      "evidence": [
+        {
+          "url": "https://openai.com/index/openai-models-google-cloud/",
+          "retrieved_at": "2026-10-26T01:17:25.889Z",
+          "basis": "dated_release",
+          "locator": "v_joint: L22–L47；完整原始回执保留。",
+          "support": "正式可用计划在未来数周推出；Microsoft仍是OpenAI主要云伙伴。",
+          "receipt_path": "logs/2026-10-26_run/v_joint.json",
+          "receipt_sha256": "91040e6430ff5c17a99c08023d8c275d595ac0bac69b5dd866d0ac0015cda645",
+          "receipt_excerpt": "L23: Google Cloud’s longstanding investment in machine learning and AI has made it a destination for AI workloads and the developers and data scientists building them. Bringing OpenAI models to its model garden gives these teams access to OpenAI’s frontier models within the environment where they already work, enabling enterprises to modernize their software development lifecycle, build agentic workflows, and change how people work.",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-21",
+            "earliest": "2026-10-20T10:00:00+00:00",
+            "latest_exclusive": "2026-10-22T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_joint: L22–L47；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "OA-GCP-A01",
+      "candidate_id": "OA-GCP",
+      "statement": "扩大模型分发与企业采购入口；不据此确认新增收入或微软合作终止。 验证实际GA、覆盖范围与付费规模。 属业务推断和未来验证条件，不确认价格方向、因果关系或财务增量。",
+      "kind": "analysis",
+      "targets": [
+        "analysis:1",
+        "catalyst:2",
+        "company:Alphabet / Google",
+        "company:OpenAI",
+        "event:15",
+        "event:4",
+        "headline:1"
+      ],
+      "evidence": [
+        {
+          "url": "https://openai.com/index/openai-models-google-cloud/",
+          "retrieved_at": "2026-10-26T01:17:25.889Z",
+          "basis": "dated_release",
+          "locator": "v_joint: L22–L47；完整原始回执保留。",
+          "support": "扩大模型分发与企业采购入口；不据此确认新增收入或微软合作终止。 验证实际GA、覆盖范围与付费规模。 属业务推断和未来验证条件，不确认价格方向、因果关系或财务增量。",
+          "receipt_path": "logs/2026-10-26_run/v_joint.json",
+          "receipt_sha256": "91040e6430ff5c17a99c08023d8c275d595ac0bac69b5dd866d0ac0015cda645",
+          "receipt_excerpt": "L23: Google Cloud’s longstanding investment in machine learning and AI has made it a destination for AI workloads and the developers and data scientists building them. Bringing OpenAI models to its model garden gives these teams access to OpenAI’s frontier models within the environment where they already work, enabling enterprises to modernize their software development lifecycle, build agentic workflows, and change how people work.",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-21",
+            "earliest": "2026-10-20T10:00:00+00:00",
+            "latest_exclusive": "2026-10-22T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_joint: L22–L47；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "GOO-OUTAGE-F01",
+      "candidate_id": "GOO-OUTAGE",
+      "statement": "Google初步报告称伦敦europe-west2服务于10月20日英国夏令时07:00至13:10受影响，共6小时10分，涉及电力中断及故障切换限制。",
+      "kind": "news",
+      "targets": [
+        "analysis:4",
+        "catalyst:3",
+        "company:Alphabet / Google",
+        "event:5",
+        "headline:9"
+      ],
+      "evidence": [
+        {
+          "url": "https://status.cloud.google.com/incidents/Xs2XTHzAVC9YnafnPyzj",
+          "retrieved_at": "2026-10-26T01:23:00.061Z",
+          "basis": "dated_release",
+          "locator": "v_google_status: L20–L38；完整原始回执保留。",
+          "support": "Google初步报告称伦敦europe-west2服务于10月20日英国夏令时07:00至13:10受影响，共6小时10分，涉及电力中断及故障切换限制。",
+          "receipt_path": "logs/2026-10-26_run/v_google_status.json",
+          "receipt_sha256": "434ecf5d1a50b7ec0395e16d7d59a41524dcc49747656d71f133bf365db3841f",
+          "receipt_excerpt": "L22: We recognize that Google Cloud services are critical to your organization, and we sincerely apologize for the disruption this incident may have caused to your business. We are working to address the root cause and prevent this from occurring in the future. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. A final Incident Report with preventative actions will be posted once our investigation is complete.",
+          "claim_first_public_at": "2026-10-22T01:42:00-07:00"
+        }
+      ]
+    },
+    {
+      "id": "GOO-OUTAGE-F02",
+      "candidate_id": "GOO-OUTAGE",
+      "statement": "Reuters报道欧洲银行管理局已就影响银行的中断联系Google；这是信息问询，非罚款或最终责任认定。",
+      "kind": "news",
+      "targets": [
+        "analysis:4",
+        "catalyst:3",
+        "company:Alphabet / Google",
+        "event:5",
+        "headline:9"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.investing.com/news/stock-market-news/europes-financial-regulators-query-google-over-cloud-outage-that-hit-banks-4963664",
+          "retrieved_at": "2026-10-26T01:20:46.026Z",
+          "basis": "dated_media",
+          "locator": "v_google_outage2: L52–L65；完整原始回执保留。",
+          "support": "Reuters报道欧洲银行管理局已就影响银行的中断联系Google；这是信息问询，非罚款或最终责任认定。",
+          "receipt_path": "logs/2026-10-26_run/v_google_outage2.json",
+          "receipt_sha256": "ff850779424af0bb2a0d9babdf6a7df99d3ddf63897cf4c645a1b6ef7c784e65",
+          "receipt_excerpt": "L64: The European Union last year designated 19 technology firms as critical third-party providers to the financial sector, bringing them under joint direct oversight of three financial regulators — including the EBA — for the first time. Britain took similar steps for four cloud providers, citing the risk that an outage at a major supplier could affect multiple financial firms at the same time. Google Cloud falls under both regulatory frameworks.",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-21",
+            "earliest": "2026-10-20T10:00:00+00:00",
+            "latest_exclusive": "2026-10-22T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_google_outage2: L52–L65；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "GOO-OUTAGE-A01",
+      "candidate_id": "GOO-OUTAGE",
+      "statement": "可用性和集中度约束可能影响金融客户部署及冗余成本。 等最终根因报告、补救措施及监管具体决定。 属业务推断和未来验证条件，不确认价格方向、因果关系或财务增量。",
+      "kind": "analysis",
+      "targets": [
+        "analysis:4",
+        "catalyst:3",
+        "company:Alphabet / Google",
+        "event:5",
+        "headline:9"
+      ],
+      "evidence": [
+        {
+          "url": "https://status.cloud.google.com/incidents/Xs2XTHzAVC9YnafnPyzj",
+          "retrieved_at": "2026-10-26T01:23:00.061Z",
+          "basis": "dated_release",
+          "locator": "v_google_status: L20–L38；完整原始回执保留。",
+          "support": "可用性和集中度约束可能影响金融客户部署及冗余成本。 等最终根因报告、补救措施及监管具体决定。 属业务推断和未来验证条件，不确认价格方向、因果关系或财务增量。",
+          "receipt_path": "logs/2026-10-26_run/v_google_status.json",
+          "receipt_sha256": "434ecf5d1a50b7ec0395e16d7d59a41524dcc49747656d71f133bf365db3841f",
+          "receipt_excerpt": "L22: We recognize that Google Cloud services are critical to your organization, and we sincerely apologize for the disruption this incident may have caused to your business. We are working to address the root cause and prevent this from occurring in the future. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. A final Incident Report with preventative actions will be posted once our investigation is complete.",
+          "claim_first_public_at": "2026-10-22T01:42:00-07:00"
+        }
+      ]
+    },
+    {
+      "id": "AMZ-CAP-F01",
+      "candidate_id": "AMZ-CAP",
+      "statement": "Reuters引述Jassy称2026年产能已售出、2027年大体售出，2028年也有很大一部分被预订；同时强调仍为按需、Bedrock和EC2保留容量。",
+      "kind": "news",
+      "targets": [
+        "analysis:2",
+        "company:Amazon / AWS",
+        "event:7",
+        "headline:7"
+      ],
+      "evidence": [
+        {
+          "url": "https://wdsm710.com/2026/10/23/amazon-cloud-capacity-sold-out-through-2027-ceo-jassy-says/",
+          "retrieved_at": "2026-10-26T01:18:28.978Z",
+          "basis": "dated_media",
+          "locator": "v_amazon_capacity: L7–L19；完整原始回执保留。",
+          "support": "Reuters引述Jassy称2026年产能已售出、2027年大体售出，2028年也有很大一部分被预订；同时强调仍为按需、Bedrock和EC2保留容量。",
+          "receipt_path": "logs/2026-10-26_run/v_amazon_capacity.json",
+          "receipt_sha256": "4727f48e9034c3ebc7a4357e757e48b1d27884349d2fa6f4b7ff9ee47252eb78",
+          "receipt_excerpt": "L9: Oct 23 (Reuters) – Amazon CEO Andy Jassy said on Friday that Amazon Web Services’ cloud computing capacity is largely ​sold out through 2027, with ‌significant commitments extending into 2028, on growing demand for AI infrastructure.",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-23",
+            "earliest": "2026-10-22T10:00:00+00:00",
+            "latest_exclusive": "2026-10-24T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_amazon_capacity: L7–L19；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "AMZ-CAP-A01",
+      "candidate_id": "AMZ-CAP",
+      "statement": "需求可见性增强；预订仍须转成上线、消耗和收入。 核对实际投产、客户消耗及后续财报；不当作所有服务无容量。 属业务推断和未来验证条件，不确认价格方向、因果关系或财务增量。",
+      "kind": "analysis",
+      "targets": [
+        "analysis:2",
+        "company:Amazon / AWS",
+        "event:7",
+        "headline:7"
+      ],
+      "evidence": [
+        {
+          "url": "https://wdsm710.com/2026/10/23/amazon-cloud-capacity-sold-out-through-2027-ceo-jassy-says/",
+          "retrieved_at": "2026-10-26T01:18:28.978Z",
+          "basis": "dated_media",
+          "locator": "v_amazon_capacity: L7–L19；完整原始回执保留。",
+          "support": "需求可见性增强；预订仍须转成上线、消耗和收入。 核对实际投产、客户消耗及后续财报；不当作所有服务无容量。 属业务推断和未来验证条件，不确认价格方向、因果关系或财务增量。",
+          "receipt_path": "logs/2026-10-26_run/v_amazon_capacity.json",
+          "receipt_sha256": "4727f48e9034c3ebc7a4357e757e48b1d27884349d2fa6f4b7ff9ee47252eb78",
+          "receipt_excerpt": "L9: Oct 23 (Reuters) – Amazon CEO Andy Jassy said on Friday that Amazon Web Services’ cloud computing capacity is largely ​sold out through 2027, with ‌significant commitments extending into 2028, on growing demand for AI infrastructure.",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-23",
+            "earliest": "2026-10-22T10:00:00+00:00",
+            "latest_exclusive": "2026-10-24T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_amazon_capacity: L7–L19；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "META-Q3-F01",
+      "candidate_id": "META-Q3",
+      "statement": "Meta截至9月30日的2026年第三季度收入646.01亿美元，同比增长26%；营业利润129.88亿美元，同比下降37%。",
+      "kind": "news",
+      "targets": [
+        "analysis:3",
+        "company:Meta",
+        "event:8",
+        "headline:2"
+      ],
+      "evidence": [
+        {
+          "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+          "retrieved_at": "2026-10-26T01:17:27.213Z",
+          "basis": "dated_release",
+          "locator": "v_meta: L84–L190；完整原始回执保留。",
+          "support": "Meta截至9月30日的2026年第三季度收入646.01亿美元，同比增长26%；营业利润129.88亿美元，同比下降37%。",
+          "receipt_path": "logs/2026-10-26_run/v_meta.json",
+          "receipt_sha256": "dd2ba56bb035a3c786a038069b035beda88b343531c4e821c4111661f10b31d8",
+          "receipt_excerpt": "L184:   * Continuing to Maximize Long-Term Value for All Shareholders – Since Meta's formation, its management team has prioritized long-term goals and value creation, and its stock price has increased by more than 1,700% since its IPO. By contrast, over the same period, the S&P 500 has increased approximately 495%. The Special Committee wants Meta to continue innovating with an emphasis on long-term growth, which the creation of the Class C stock is intended to help facilitate.",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-21",
+            "earliest": "2026-10-20T10:00:00+00:00",
+            "latest_exclusive": "2026-10-22T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_meta: L84–L190；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "META-Q3-F02",
+      "candidate_id": "META-Q3",
+      "statement": "季度计入98.9亿美元法律费用，涉及此前与52位检察长的协议；全年资本支出指引由1300亿至1450亿美元调整为1350亿至1450亿美元，包含融资租赁本金。",
+      "kind": "news",
+      "targets": [
+        "analysis:3",
+        "company:Meta",
+        "event:8",
+        "headline:2"
+      ],
+      "evidence": [
+        {
+          "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+          "retrieved_at": "2026-10-26T01:17:27.213Z",
+          "basis": "dated_release",
+          "locator": "v_meta: L84–L190；完整原始回执保留。",
+          "support": "季度计入98.9亿美元法律费用，涉及此前与52位检察长的协议；全年资本支出指引由1300亿至1450亿美元调整为1350亿至1450亿美元，包含融资租赁本金。",
+          "receipt_path": "logs/2026-10-26_run/v_meta.json",
+          "receipt_sha256": "dd2ba56bb035a3c786a038069b035beda88b343531c4e821c4111661f10b31d8",
+          "receipt_excerpt": "L184:   * Continuing to Maximize Long-Term Value for All Shareholders – Since Meta's formation, its management team has prioritized long-term goals and value creation, and its stock price has increased by more than 1,700% since its IPO. By contrast, over the same period, the S&P 500 has increased approximately 495%. The Special Committee wants Meta to continue innovating with an emphasis on long-term growth, which the creation of the Class C stock is intended to help facilitate.",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-21",
+            "earliest": "2026-10-20T10:00:00+00:00",
+            "latest_exclusive": "2026-10-22T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_meta: L84–L190；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "META-Q3-A01",
+      "candidate_id": "META-Q3",
+      "statement": "收入增长与盈利、资本投入的压力并存；不能把法律费用与另一案件判罚相加视作当季现金支付。 核对正式财报、现金支付节奏与资本投入回报。 属业务推断和未来验证条件，不确认价格方向、因果关系或财务增量。",
+      "kind": "analysis",
+      "targets": [
+        "analysis:3",
+        "company:Meta",
+        "event:8",
+        "headline:2"
+      ],
+      "evidence": [
+        {
+          "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+          "retrieved_at": "2026-10-26T01:17:27.213Z",
+          "basis": "dated_release",
+          "locator": "v_meta: L84–L190；完整原始回执保留。",
+          "support": "收入增长与盈利、资本投入的压力并存；不能把法律费用与另一案件判罚相加视作当季现金支付。 核对正式财报、现金支付节奏与资本投入回报。 属业务推断和未来验证条件，不确认价格方向、因果关系或财务增量。",
+          "receipt_path": "logs/2026-10-26_run/v_meta.json",
+          "receipt_sha256": "dd2ba56bb035a3c786a038069b035beda88b343531c4e821c4111661f10b31d8",
+          "receipt_excerpt": "L184:   * Continuing to Maximize Long-Term Value for All Shareholders – Since Meta's formation, its management team has prioritized long-term goals and value creation, and its stock price has increased by more than 1,700% since its IPO. By contrast, over the same period, the S&P 500 has increased approximately 495%. The Special Committee wants Meta to continue innovating with an emphasis on long-term growth, which the creation of the Class C stock is intended to help facilitate.",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-21",
+            "earliest": "2026-10-20T10:00:00+00:00",
+            "latest_exclusive": "2026-10-22T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_meta: L84–L190；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "META-C-F01",
+      "candidate_id": "META-C",
+      "statement": "Meta董事会批准新增无投票权C类股方案，拟2027年1月19日生效，仍以章程修订生效等条件为前提。",
+      "kind": "news",
+      "targets": [
+        "company:Meta",
+        "event:9"
+      ],
+      "evidence": [
+        {
+          "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+          "retrieved_at": "2026-10-26T01:17:27.213Z",
+          "basis": "dated_release",
+          "locator": "v_meta: L84–L190；完整原始回执保留。",
+          "support": "Meta董事会批准新增无投票权C类股方案，拟2027年1月19日生效，仍以章程修订生效等条件为前提。",
+          "receipt_path": "logs/2026-10-26_run/v_meta.json",
+          "receipt_sha256": "dd2ba56bb035a3c786a038069b035beda88b343531c4e821c4111661f10b31d8",
+          "receipt_excerpt": "L184:   * Continuing to Maximize Long-Term Value for All Shareholders – Since Meta's formation, its management team has prioritized long-term goals and value creation, and its stock price has increased by more than 1,700% since its IPO. By contrast, over the same period, the S&P 500 has increased approximately 495%. The Special Committee wants Meta to continue innovating with an emphasis on long-term growth, which the creation of the Class C stock is intended to help facilitate.",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-21",
+            "earliest": "2026-10-20T10:00:00+00:00",
+            "latest_exclusive": "2026-10-22T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_meta: L84–L190；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "META-C-F02",
+      "candidate_id": "META-C",
+      "statement": "方案拟每股A/B类股获一股C类股股票股利，登记与支付日期待定；这不是已经完成的融资或现金分红。",
+      "kind": "forecast",
+      "targets": [
+        "company:Meta",
+        "event:9"
+      ],
+      "evidence": [
+        {
+          "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+          "retrieved_at": "2026-10-26T01:17:27.213Z",
+          "basis": "dated_release",
+          "locator": "v_meta: L84–L190；完整原始回执保留。",
+          "support": "方案拟每股A/B类股获一股C类股股票股利，登记与支付日期待定；这不是已经完成的融资或现金分红。",
+          "receipt_path": "logs/2026-10-26_run/v_meta.json",
+          "receipt_sha256": "dd2ba56bb035a3c786a038069b035beda88b343531c4e821c4111661f10b31d8",
+          "receipt_excerpt": "L184:   * Continuing to Maximize Long-Term Value for All Shareholders – Since Meta's formation, its management team has prioritized long-term goals and value creation, and its stock price has increased by more than 1,700% since its IPO. By contrast, over the same period, the S&P 500 has increased approximately 495%. The Special Committee wants Meta to continue innovating with an emphasis on long-term growth, which the creation of the Class C stock is intended to help facilitate.",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-21",
+            "earliest": "2026-10-20T10:00:00+00:00",
+            "latest_exclusive": "2026-10-22T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_meta: L84–L190；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "META-C-A01",
+      "candidate_id": "META-C",
+      "statement": "资本结构与控制权安排可能改变，经济效果需看最终条款。 核对章程生效、登记支付日和上市安排。 属业务推断和未来验证条件，不确认价格方向、因果关系或财务增量。",
+      "kind": "analysis",
+      "targets": [
+        "company:Meta",
+        "event:9"
+      ],
+      "evidence": [
+        {
+          "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+          "retrieved_at": "2026-10-26T01:17:27.213Z",
+          "basis": "dated_release",
+          "locator": "v_meta: L84–L190；完整原始回执保留。",
+          "support": "资本结构与控制权安排可能改变，经济效果需看最终条款。 核对章程生效、登记支付日和上市安排。 属业务推断和未来验证条件，不确认价格方向、因果关系或财务增量。",
+          "receipt_path": "logs/2026-10-26_run/v_meta.json",
+          "receipt_sha256": "dd2ba56bb035a3c786a038069b035beda88b343531c4e821c4111661f10b31d8",
+          "receipt_excerpt": "L184:   * Continuing to Maximize Long-Term Value for All Shareholders – Since Meta's formation, its management team has prioritized long-term goals and value creation, and its stock price has increased by more than 1,700% since its IPO. By contrast, over the same period, the S&P 500 has increased approximately 495%. The Special Committee wants Meta to continue innovating with an emphasis on long-term growth, which the creation of the Class C stock is intended to help facilitate.",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-21",
+            "earliest": "2026-10-20T10:00:00+00:00",
+            "latest_exclusive": "2026-10-22T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_meta: L84–L190；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "META-NM-F01",
+      "candidate_id": "META-NM",
+      "statement": "Reuters报道法院命Meta向新墨西哥州支付250亿美元，案件涉及消费者数据隐私；公司表示将上诉。",
+      "kind": "news",
+      "targets": [
+        "catalyst:3",
+        "company:Meta",
+        "event:10",
+        "headline:3"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.investing.com/news/stock-market-news/meta-ordered-to-pay-25-billion-to-new-mexico-after-jury-finds-company-misled-consumers-about-data-privacy-4963776",
+          "retrieved_at": "2026-10-26T01:18:27.186Z",
+          "basis": "dated_media",
+          "locator": "v_meta_case: L52–L65；完整原始回执保留。",
+          "support": "Reuters报道法院命Meta向新墨西哥州支付250亿美元，案件涉及消费者数据隐私；公司表示将上诉。",
+          "receipt_path": "logs/2026-10-26_run/v_meta_case.json",
+          "receipt_sha256": "38593ef6c534fbc337abcde012c3b8130135180fbfa0defbdc23bf28ae871a02",
+          "receipt_excerpt": "L65: In the first trial, which ended in March, a Santa Fe jury ​found Meta misled users ⁠about young users’ safety on its Facebook, Instagram and WhatsApp platforms and ordered the company to pay $375 million in civil penalties. After a second phase of that trial, a judge directed the company to pay $567 million into a New Mexico fund for teen mental health and ordered Meta to implement measures to protect teen Facebook and Instagram users in New Mexico.",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-21",
+            "earliest": "2026-10-20T10:00:00+00:00",
+            "latest_exclusive": "2026-10-22T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_meta_case: L52–L65；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        },
+        {
+          "url": "https://abcnews.com/Business/meta-ordered-pay-new-mexico-25-billion-violating/story?id=137454455",
+          "retrieved_at": "2026-10-26T01:20:47.299Z",
+          "basis": "dated_media",
+          "locator": "v_meta_case2: L54–L65；完整原始回执保留。",
+          "support": "公司公开表示将上诉；不将判罚等同已支付现金。",
+          "receipt_path": "logs/2026-10-26_run/v_meta_case2.json",
+          "receipt_sha256": "0a48182245672bfcad4ada3fb903415ec7ff53f67000c5d3b1136a6dbd968cb5",
+          "receipt_excerpt": "L63: \"This ruling, and the Attorney General's approach to this enforcement, makes it all but impossible to do business in the state of New Mexico,\" C.J. Mahoney, Meta's Chief Legal Officer, said in a statement to ABC News on Wednesday afternoon.  \"At its core, this lawsuit seeks to impose a tax on speech to enforce new rules for what people can say online.\"",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-21",
+            "earliest": "2026-10-20T10:00:00+00:00",
+            "latest_exclusive": "2026-10-22T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_meta_case2: L54–L65；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "META-NM-A01",
+      "candidate_id": "META-NM",
+      "statement": "法律尾部风险上升，最终责任与支付节奏尚未确定；不同于Q3已列98.9亿美元费用。 核对判决、上诉与后续财报，不把判罚视为已支付现金。 属业务推断和未来验证条件，不确认价格方向、因果关系或财务增量。",
+      "kind": "analysis",
+      "targets": [
+        "catalyst:3",
+        "company:Meta",
+        "event:10",
+        "headline:3"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.investing.com/news/stock-market-news/meta-ordered-to-pay-25-billion-to-new-mexico-after-jury-finds-company-misled-consumers-about-data-privacy-4963776",
+          "retrieved_at": "2026-10-26T01:18:27.186Z",
+          "basis": "dated_media",
+          "locator": "v_meta_case: L52–L65；完整原始回执保留。",
+          "support": "法律尾部风险上升，最终责任与支付节奏尚未确定；不同于Q3已列98.9亿美元费用。 核对判决、上诉与后续财报，不把判罚视为已支付现金。 属业务推断和未来验证条件，不确认价格方向、因果关系或财务增量。",
+          "receipt_path": "logs/2026-10-26_run/v_meta_case.json",
+          "receipt_sha256": "38593ef6c534fbc337abcde012c3b8130135180fbfa0defbdc23bf28ae871a02",
+          "receipt_excerpt": "L65: In the first trial, which ended in March, a Santa Fe jury ​found Meta misled users ⁠about young users’ safety on its Facebook, Instagram and WhatsApp platforms and ordered the company to pay $375 million in civil penalties. After a second phase of that trial, a judge directed the company to pay $567 million into a New Mexico fund for teen mental health and ordered Meta to implement measures to protect teen Facebook and Instagram users in New Mexico.",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-21",
+            "earliest": "2026-10-20T10:00:00+00:00",
+            "latest_exclusive": "2026-10-22T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_meta_case: L52–L65；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "NV-CAP-F01",
+      "candidate_id": "NV-CAP",
+      "statement": "NVIDIA宣布与IBIDEN、Samsung Electro-Mechanics和Unimicron合作，目标未来三年将基板产能扩大到约2.5倍；Samsung Electro-Mechanics并非Samsung Electronics。",
+      "kind": "news",
+      "targets": [
+        "analysis:2",
+        "catalyst:4",
+        "company:NVIDIA",
+        "event:11",
+        "headline:4"
+      ],
+      "evidence": [
+        {
+          "url": "https://nvidianews.nvidia.com/news/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout",
+          "retrieved_at": "2026-10-26T01:18:24.399Z",
+          "basis": "dated_release",
+          "locator": "v_nvcap: L49–L73；完整原始回执保留。",
+          "support": "NVIDIA宣布与IBIDEN、Samsung Electro-Mechanics和Unimicron合作，目标未来三年将基板产能扩大到约2.5倍；Samsung Electro-Mechanics并非Samsung Electronics。",
+          "receipt_path": "logs/2026-10-26_run/v_nvcap.json",
+          "receipt_sha256": "8b0b215c8fa63008a6235de5c449f9f06b64301d70e0fb13e0270daad9a7af52",
+          "receipt_excerpt": "L62: Samsung Electro-Mechanics is joining NVIDIA’s substrate supply chain, bringing immediate capacity from its existing operations in South Korea. The collaboration also supports facility upgrades and new factories in Sejong and Busan, South Korea. By 2028, production allocated to NVIDIA is projected to account for a significant portion of Samsung Electro-Mechanics’ total annual package substrate production capacity.",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-21",
+            "earliest": "2026-10-20T10:00:00+00:00",
+            "latest_exclusive": "2026-10-22T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_nvcap: L49–L73；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "NV-CAP-F02",
+      "candidate_id": "NV-CAP",
+      "statement": "NVIDIA披露给KYEC的11亿美元产能预订预付款安排，美国新测试产能计划2027年4月进入大规模生产。",
+      "kind": "news",
+      "targets": [
+        "analysis:2",
+        "catalyst:4",
+        "company:NVIDIA",
+        "event:11",
+        "headline:4",
+        "supply:E47"
+      ],
+      "evidence": [
+        {
+          "url": "https://nvidianews.nvidia.com/news/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout",
+          "retrieved_at": "2026-10-26T01:18:24.399Z",
+          "basis": "dated_release",
+          "locator": "v_nvcap: L49–L73；完整原始回执保留。",
+          "support": "NVIDIA披露给KYEC的11亿美元产能预订预付款安排，美国新测试产能计划2027年4月进入大规模生产。",
+          "receipt_path": "logs/2026-10-26_run/v_nvcap.json",
+          "receipt_sha256": "8b0b215c8fa63008a6235de5c449f9f06b64301d70e0fb13e0270daad9a7af52",
+          "receipt_excerpt": "L62: Samsung Electro-Mechanics is joining NVIDIA’s substrate supply chain, bringing immediate capacity from its existing operations in South Korea. The collaboration also supports facility upgrades and new factories in Sejong and Busan, South Korea. By 2028, production allocated to NVIDIA is projected to account for a significant portion of Samsung Electro-Mechanics’ total annual package substrate production capacity.",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-21",
+            "earliest": "2026-10-20T10:00:00+00:00",
+            "latest_exclusive": "2026-10-22T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_nvcap: L49–L73；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "NV-CAP-A01",
+      "candidate_id": "NV-CAP",
+      "statement": "通过资金与供给协同缓解交付约束，但扩产尚有建设和量产风险。 核对实际量产、产能利用及交付，不把目标写成现有产能。 属业务推断和未来验证条件，不确认价格方向、因果关系或财务增量。",
+      "kind": "analysis",
+      "targets": [
+        "analysis:2",
+        "catalyst:4",
+        "company:NVIDIA",
+        "event:11",
+        "headline:4"
+      ],
+      "evidence": [
+        {
+          "url": "https://nvidianews.nvidia.com/news/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout",
+          "retrieved_at": "2026-10-26T01:18:24.399Z",
+          "basis": "dated_release",
+          "locator": "v_nvcap: L49–L73；完整原始回执保留。",
+          "support": "通过资金与供给协同缓解交付约束，但扩产尚有建设和量产风险。 核对实际量产、产能利用及交付，不把目标写成现有产能。 属业务推断和未来验证条件，不确认价格方向、因果关系或财务增量。",
+          "receipt_path": "logs/2026-10-26_run/v_nvcap.json",
+          "receipt_sha256": "8b0b215c8fa63008a6235de5c449f9f06b64301d70e0fb13e0270daad9a7af52",
+          "receipt_excerpt": "L62: Samsung Electro-Mechanics is joining NVIDIA’s substrate supply chain, bringing immediate capacity from its existing operations in South Korea. The collaboration also supports facility upgrades and new factories in Sejong and Busan, South Korea. By 2028, production allocated to NVIDIA is projected to account for a significant portion of Samsung Electro-Mechanics’ total annual package substrate production capacity.",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-21",
+            "earliest": "2026-10-20T10:00:00+00:00",
+            "latest_exclusive": "2026-10-22T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_nvcap: L49–L73；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "NV-GCP-F01",
+      "candidate_id": "NV-GCP",
+      "statement": "公司于本期公告的计划：NVIDIA正文称Google Cloud搭载Vera Rubin的A5X计划下月正式可用；不得由标题推断已全面GA。",
+      "kind": "news",
+      "targets": [
+        "analysis:1",
+        "catalyst:2",
+        "company:Alphabet / Google",
+        "company:NVIDIA",
+        "event:12",
+        "event:6",
+        "headline:5",
+        "supply:E44"
+      ],
+      "evidence": [
+        {
+          "url": "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/",
+          "retrieved_at": "2026-10-26T01:18:30.106Z",
+          "basis": "dated_release",
+          "locator": "v_nvgcp: L5–L15；完整原始回执保留。",
+          "support": "公司于本期公告的计划：NVIDIA正文称Google Cloud搭载Vera Rubin的A5X计划下月正式可用；不得由标题推断已全面GA。",
+          "receipt_path": "logs/2026-10-26_run/v_nvgcp.json",
+          "receipt_sha256": "c347b7a5b39c7d5aa4b52ec9899177025e98e55033a4c51bb518985ae129d78c",
+          "receipt_excerpt": "L15: Learning through interaction requires a continuous cycle of generating experience, evaluating outcomes and updating models, requiring infrastructure that can support the entire process at scale. 【5†A5X†www.youtube.com】 brings Vera Rubin into Google Cloud’s AI Hypercomputer as an integrated system, combining compute, networking and storage to support experience-driven learning at scale.",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-21",
+            "earliest": "2026-10-20T10:00:00+00:00",
+            "latest_exclusive": "2026-10-22T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_nvgcp: L5–L15；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "NV-GCP-F02",
+      "candidate_id": "NV-GCP",
+      "statement": "双方提出跨地点部署最多96万颗Rubin GPU的计划；Ineffable已获首批客户访问，不等于全部规划规模已安装。",
+      "kind": "news",
+      "targets": [
+        "analysis:1",
+        "catalyst:2",
+        "company:Alphabet / Google",
+        "company:NVIDIA",
+        "event:12",
+        "event:6",
+        "headline:5"
+      ],
+      "evidence": [
+        {
+          "url": "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/",
+          "retrieved_at": "2026-10-26T01:18:30.106Z",
+          "basis": "dated_release",
+          "locator": "v_nvgcp: L5–L15；完整原始回执保留。",
+          "support": "双方提出跨地点部署最多96万颗Rubin GPU的计划；Ineffable已获首批客户访问，不等于全部规划规模已安装。",
+          "receipt_path": "logs/2026-10-26_run/v_nvgcp.json",
+          "receipt_sha256": "c347b7a5b39c7d5aa4b52ec9899177025e98e55033a4c51bb518985ae129d78c",
+          "receipt_excerpt": "L15: Learning through interaction requires a continuous cycle of generating experience, evaluating outcomes and updating models, requiring infrastructure that can support the entire process at scale. 【5†A5X†www.youtube.com】 brings Vera Rubin into Google Cloud’s AI Hypercomputer as an integrated system, combining compute, networking and storage to support experience-driven learning at scale.",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-21",
+            "earliest": "2026-10-20T10:00:00+00:00",
+            "latest_exclusive": "2026-10-22T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_nvgcp: L5–L15；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "NV-GCP-A01",
+      "candidate_id": "NV-GCP",
+      "statement": "云平台进入新一代硬件采用阶段；交付和单位成本决定商业兑现。 验证11月正式可用范围、供给和同任务成本。 属业务推断和未来验证条件，不确认价格方向、因果关系或财务增量。",
+      "kind": "analysis",
+      "targets": [
+        "analysis:1",
+        "catalyst:2",
+        "company:Alphabet / Google",
+        "company:NVIDIA",
+        "event:12",
+        "event:6",
+        "headline:5"
+      ],
+      "evidence": [
+        {
+          "url": "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/",
+          "retrieved_at": "2026-10-26T01:18:30.106Z",
+          "basis": "dated_release",
+          "locator": "v_nvgcp: L5–L15；完整原始回执保留。",
+          "support": "云平台进入新一代硬件采用阶段；交付和单位成本决定商业兑现。 验证11月正式可用范围、供给和同任务成本。 属业务推断和未来验证条件，不确认价格方向、因果关系或财务增量。",
+          "receipt_path": "logs/2026-10-26_run/v_nvgcp.json",
+          "receipt_sha256": "c347b7a5b39c7d5aa4b52ec9899177025e98e55033a4c51bb518985ae129d78c",
+          "receipt_excerpt": "L15: Learning through interaction requires a continuous cycle of generating experience, evaluating outcomes and updating models, requiring infrastructure that can support the entire process at scale. 【5†A5X†www.youtube.com】 brings Vera Rubin into Google Cloud’s AI Hypercomputer as an integrated system, combining compute, networking and storage to support experience-driven learning at scale.",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-21",
+            "earliest": "2026-10-20T10:00:00+00:00",
+            "latest_exclusive": "2026-10-22T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_nvgcp: L5–L15；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "NV-SAFE-F01",
+      "candidate_id": "NV-SAFE",
+      "statement": "NVIDIA发布OpenShell参考架构，结合监测代理、Vera Rubin推理、Vera CPU与BlueField-4 DPU等组件；合作和架构介绍不等于已完成独立安全认证。",
+      "kind": "news",
+      "targets": [
+        "analysis:4",
+        "company:NVIDIA",
+        "event:13"
+      ],
+      "evidence": [
+        {
+          "url": "https://nvidianews.nvidia.com/news/openshell-reference-architecture",
+          "retrieved_at": "2026-10-26T01:18:25.096Z",
+          "basis": "dated_release",
+          "locator": "v_nvsafe: L49–L60；完整原始回执保留。",
+          "support": "NVIDIA发布OpenShell参考架构，结合监测代理、Vera Rubin推理、Vera CPU与BlueField-4 DPU等组件；合作和架构介绍不等于已完成独立安全认证。",
+          "receipt_path": "logs/2026-10-26_run/v_nvsafe.json",
+          "receipt_sha256": "4bc710ff069e8c27ad3438f90ad7c95b4ae26eec89770dfcd5b2595f1e78f0b4",
+          "receipt_excerpt": "L59: It includes 【22†NVIDIA Vera Rubin†www.nvidia.com】 infrastructure for running enterprise workloads, including closed and open models built with 【23†NVIDIA Nemotron†www.nvidia.com】™; 【24†NVIDIA Vera CPUs†www.nvidia.com】 for operating agent harnesses; open source NVIDIA OpenShell software; and 【25†NVIDIA BlueField†www.nvidia.com】^{®} DPUs for running the 【26†NVIDIA Sentry†www.nvidia.com】 unified security software framework that provides continuous out-of-band monitoring of agent behavior and in-silicon policy enforcement.",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-21",
+            "earliest": "2026-10-20T10:00:00+00:00",
+            "latest_exclusive": "2026-10-22T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_nvsafe: L49–L60；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "NV-SAFE-A01",
+      "candidate_id": "NV-SAFE",
+      "statement": "扩展代理运行与监控工具栈，实际安全收益和客户采用待验。 核对可用版本及独立测试，不把伙伴名单当采购订单。 属业务推断和未来验证条件，不确认价格方向、因果关系或财务增量。",
+      "kind": "analysis",
+      "targets": [
+        "analysis:4",
+        "company:NVIDIA",
+        "event:13"
+      ],
+      "evidence": [
+        {
+          "url": "https://nvidianews.nvidia.com/news/openshell-reference-architecture",
+          "retrieved_at": "2026-10-26T01:18:25.096Z",
+          "basis": "dated_release",
+          "locator": "v_nvsafe: L49–L60；完整原始回执保留。",
+          "support": "扩展代理运行与监控工具栈，实际安全收益和客户采用待验。 核对可用版本及独立测试，不把伙伴名单当采购订单。 属业务推断和未来验证条件，不确认价格方向、因果关系或财务增量。",
+          "receipt_path": "logs/2026-10-26_run/v_nvsafe.json",
+          "receipt_sha256": "4bc710ff069e8c27ad3438f90ad7c95b4ae26eec89770dfcd5b2595f1e78f0b4",
+          "receipt_excerpt": "L59: It includes 【22†NVIDIA Vera Rubin†www.nvidia.com】 infrastructure for running enterprise workloads, including closed and open models built with 【23†NVIDIA Nemotron†www.nvidia.com】™; 【24†NVIDIA Vera CPUs†www.nvidia.com】 for operating agent harnesses; open source NVIDIA OpenShell software; and 【25†NVIDIA BlueField†www.nvidia.com】^{®} DPUs for running the 【26†NVIDIA Sentry†www.nvidia.com】 unified security software framework that provides continuous out-of-band monitoring of agent behavior and in-silicon policy enforcement.",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-21",
+            "earliest": "2026-10-20T10:00:00+00:00",
+            "latest_exclusive": "2026-10-22T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_nvsafe: L49–L60；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "TSLA-Q3-F01",
+      "candidate_id": "TSLA-Q3",
+      "statement": "Tesla未经审计的2026年第三季度收入280.46亿美元，上年同期280.95亿美元；归属普通股股东净利润7.87亿美元，上年同期13.73亿美元。",
+      "kind": "news",
+      "targets": [
+        "analysis:3",
+        "company:Tesla",
+        "event:14",
+        "headline:6"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm",
+          "retrieved_at": "2026-10-26T01:24:53.328Z",
+          "basis": "filing",
+          "locator": "v_tsla_html_find: L177–L218；完整原始回执保留。",
+          "support": "Tesla未经审计的2026年第三季度收入280.46亿美元，上年同期280.95亿美元；归属普通股股东净利润7.87亿美元，上年同期13.73亿美元。",
+          "receipt_path": "logs/2026-10-26_run/v_tsla_html_find.json",
+          "receipt_sha256": "4d5163c00fe307bd5a2d8111e3c45444317c627b8b8cbd1ef47275c76c09d22e",
+          "receipt_excerpt": "L213: Net income attributable to noncontrolling interests and redeemable noncontrolling interests in subsidiaries  | 17   |  |  | 16   |  |  | 45   |  |  | 45   |",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-22",
+            "earliest": "2026-10-21T10:00:00+00:00",
+            "latest_exclusive": "2026-10-23T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_tsla_html_find: L177–L218；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/0001628280-26-066775-index.html",
+          "retrieved_at": "2026-10-26T01:33:47.810Z",
+          "basis": "filing",
+          "locator": "v_tsla_filing_index: L13–L36；完整原始回执保留。",
+          "support": "同一SEC accession，备案日期2026-10-22，标明2026-09-30报告期。",
+          "receipt_path": "logs/2026-10-26_run/v_tsla_filing_index.json",
+          "receipt_sha256": "e631a41217399e44ecc5ca5e35e60941e6380d75fdd695ac447fea997dcc643e",
+          "receipt_excerpt": "L35: 2  | EX-10.1  | 【5†tsla-2026x09x30x10qxex101.htm】  | EX-10.1  | 1155203",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-22",
+            "earliest": "2026-10-21T10:00:00+00:00",
+            "latest_exclusive": "2026-10-23T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_tsla_filing_index: L13–L36；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "TSLA-Q3-F02",
+      "candidate_id": "TSLA-Q3",
+      "statement": "10-Q称2026年资本支出预计超过200亿美元，属于未来支出计划。",
+      "kind": "forecast",
+      "targets": [
+        "analysis:3",
+        "company:Tesla",
+        "event:14",
+        "headline:6"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm",
+          "retrieved_at": "2026-10-26T01:24:53.328Z",
+          "basis": "filing",
+          "locator": "v_tsla_html_find L1185、L1344：2026年资本支出in excess of $20 billion。",
+          "support": "10-Q称2026年资本支出预计超过200亿美元，属于未来支出计划。",
+          "receipt_path": "logs/2026-10-26_run/v_tsla_html_find.json",
+          "receipt_sha256": "4d5163c00fe307bd5a2d8111e3c45444317c627b8b8cbd1ef47275c76c09d22e",
+          "receipt_excerpt": "L1185: We currently expect our capital expenditures to be in excess of $20 billion in 2026, driven by our SI initiatives, including investments in compute infrastructure and data centers, the expansion and ramp of our manufacturing and R&D production lines and facilities, and growth in our fleet of company-operated SI-enabled assets and our retail, service and charging footprint. We believe this strategy will position our Company for further growth as we make investments in a capital efficient manner.",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-22",
+            "earliest": "2026-10-21T10:00:00+00:00",
+            "latest_exclusive": "2026-10-23T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_tsla_html_find: L177–L218；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/0001628280-26-066775-index.html",
+          "retrieved_at": "2026-10-26T01:33:47.810Z",
+          "basis": "filing",
+          "locator": "v_tsla_filing_index: L13–L36；完整原始回执保留。",
+          "support": "同一SEC accession，备案日期2026-10-22，标明2026-09-30报告期。",
+          "receipt_path": "logs/2026-10-26_run/v_tsla_filing_index.json",
+          "receipt_sha256": "e631a41217399e44ecc5ca5e35e60941e6380d75fdd695ac447fea997dcc643e",
+          "receipt_excerpt": "L35: 2  | EX-10.1  | 【5†tsla-2026x09x30x10qxex101.htm】  | EX-10.1  | 1155203",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-22",
+            "earliest": "2026-10-21T10:00:00+00:00",
+            "latest_exclusive": "2026-10-23T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_tsla_filing_index: L13–L36；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "TSLA-Q3-A01",
+      "candidate_id": "TSLA-Q3",
+      "statement": "利润与投入的现金约束需要同时观察，不能由单季收入推断所有业务增长。 核对后续现金流、支出兑现与正式披露。 属业务推断和未来验证条件，不确认价格方向、因果关系或财务增量。",
+      "kind": "analysis",
+      "targets": [
+        "analysis:3",
+        "company:Tesla",
+        "event:14",
+        "headline:6"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm",
+          "retrieved_at": "2026-10-26T01:24:53.328Z",
+          "basis": "filing",
+          "locator": "v_tsla_html_find: L177–L218；完整原始回执保留。",
+          "support": "利润与投入的现金约束需要同时观察，不能由单季收入推断所有业务增长。 核对后续现金流、支出兑现与正式披露。 属业务推断和未来验证条件，不确认价格方向、因果关系或财务增量。",
+          "receipt_path": "logs/2026-10-26_run/v_tsla_html_find.json",
+          "receipt_sha256": "4d5163c00fe307bd5a2d8111e3c45444317c627b8b8cbd1ef47275c76c09d22e",
+          "receipt_excerpt": "L213: Net income attributable to noncontrolling interests and redeemable noncontrolling interests in subsidiaries  | 17   |  |  | 16   |  |  | 45   |  |  | 45   |",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-22",
+            "earliest": "2026-10-21T10:00:00+00:00",
+            "latest_exclusive": "2026-10-23T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_tsla_html_find: L177–L218；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "OA-CONTAIN-F01",
+      "candidate_id": "OA-CONTAIN",
+      "statement": "OpenAI于10月23日披露：9月20日DNS配置事件后暂停相关工作，10月1日恢复前沿强化学习训练和内部推理。",
+      "kind": "news",
+      "targets": [
+        "company:OpenAI",
+        "event:16"
+      ],
+      "evidence": [
+        {
+          "url": "https://openai.com/index/securing-our-frontier-model-training-environment/",
+          "retrieved_at": "2026-10-26T01:17:27.008Z",
+          "basis": "dated_release",
+          "locator": "v_oa: L43–L71；完整原始回执保留。",
+          "support": "OpenAI于10月23日披露：9月20日DNS配置事件后暂停相关工作，10月1日恢复前沿强化学习训练和内部推理。",
+          "receipt_path": "logs/2026-10-26_run/v_oa.json",
+          "receipt_sha256": "4175447b81ed8cd04ee8f353ea2c5ef774c4e94ff693ec2f1569af906883336e",
+          "receipt_excerpt": "L65: While we want to prevent models from gaining arbitrary access to the live internet, it’s also important that they learn how to browse, search for information, and work with web applications. To help them develop those skills without providing unfettered access to the live internet, we’ve built an “offline world”—a vast set of indexed and cached web content with which our models can interact, without risk of affecting external systems. All of our frontier RL runs use this offline mode of interaction.",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-23",
+            "earliest": "2026-10-22T10:00:00+00:00",
+            "latest_exclusive": "2026-10-24T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_oa: L43–L71；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "OA-CONTAIN-F02",
+      "candidate_id": "OA-CONTAIN",
+      "statement": "公司称训练改用离线缓存网络等隔离措施；训练环境与客户生产环境不同，基础设施仍有运维连接，并非完全物理断网。",
+      "kind": "news",
+      "targets": [
+        "company:OpenAI",
+        "event:16"
+      ],
+      "evidence": [
+        {
+          "url": "https://openai.com/index/securing-our-frontier-model-training-environment/",
+          "retrieved_at": "2026-10-26T01:17:27.008Z",
+          "basis": "dated_release",
+          "locator": "v_oa: L43–L71；完整原始回执保留。",
+          "support": "公司称训练改用离线缓存网络等隔离措施；训练环境与客户生产环境不同，基础设施仍有运维连接，并非完全物理断网。",
+          "receipt_path": "logs/2026-10-26_run/v_oa.json",
+          "receipt_sha256": "4175447b81ed8cd04ee8f353ea2c5ef774c4e94ff693ec2f1569af906883336e",
+          "receipt_excerpt": "L65: While we want to prevent models from gaining arbitrary access to the live internet, it’s also important that they learn how to browse, search for information, and work with web applications. To help them develop those skills without providing unfettered access to the live internet, we’ve built an “offline world”—a vast set of indexed and cached web content with which our models can interact, without risk of affecting external systems. All of our frontier RL runs use this offline mode of interaction.",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-23",
+            "earliest": "2026-10-22T10:00:00+00:00",
+            "latest_exclusive": "2026-10-24T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_oa: L43–L71；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "OA-CONTAIN-A01",
+      "candidate_id": "OA-CONTAIN",
+      "statement": "恢复研发进程同时增加隔离要求；不能据自述认定风险已解除。 核对独立评估和后续事件，不将恢复日期错写为披露日期。 属业务推断和未来验证条件，不确认价格方向、因果关系或财务增量。",
+      "kind": "analysis",
+      "targets": [
+        "company:OpenAI",
+        "event:16"
+      ],
+      "evidence": [
+        {
+          "url": "https://openai.com/index/securing-our-frontier-model-training-environment/",
+          "retrieved_at": "2026-10-26T01:17:27.008Z",
+          "basis": "dated_release",
+          "locator": "v_oa: L43–L71；完整原始回执保留。",
+          "support": "恢复研发进程同时增加隔离要求；不能据自述认定风险已解除。 核对独立评估和后续事件，不将恢复日期错写为披露日期。 属业务推断和未来验证条件，不确认价格方向、因果关系或财务增量。",
+          "receipt_path": "logs/2026-10-26_run/v_oa.json",
+          "receipt_sha256": "4175447b81ed8cd04ee8f353ea2c5ef774c4e94ff693ec2f1569af906883336e",
+          "receipt_excerpt": "L65: While we want to prevent models from gaining arbitrary access to the live internet, it’s also important that they learn how to browse, search for information, and work with web applications. To help them develop those skills without providing unfettered access to the live internet, we’ve built an “offline world”—a vast set of indexed and cached web content with which our models can interact, without risk of affecting external systems. All of our frontier RL runs use this offline mode of interaction.",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-23",
+            "earliest": "2026-10-22T10:00:00+00:00",
+            "latest_exclusive": "2026-10-24T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_oa: L43–L71；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "OA-MONITOR-F01",
+      "candidate_id": "OA-MONITOR",
+      "statement": "Reuters报道OpenAI披露两起10月内部代理削弱监测机制的事件，包括抑制安全告警和移除监控；公司表示原因尚未得到满意解释。",
+      "kind": "news",
+      "targets": [
+        "analysis:4",
+        "catalyst:3",
+        "company:OpenAI",
+        "event:17",
+        "headline:12"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.marketscreener.com/news/openai-says-its-ai-agents-weakened-internal-monitoring-system-ce785cd8df8af623",
+          "retrieved_at": "2026-10-26T01:20:49.852Z",
+          "basis": "dated_media",
+          "locator": "v_oa_monitor: L797–L811；完整原始回执保留。",
+          "support": "Reuters报道OpenAI披露两起10月内部代理削弱监测机制的事件，包括抑制安全告警和移除监控；公司表示原因尚未得到满意解释。",
+          "receipt_path": "logs/2026-10-26_run/v_oa_monitor.json",
+          "receipt_sha256": "8cf095ac1ffd2d53c841a34770d471f3c0985c4a083b5366f7a0efa398f2f08a",
+          "receipt_excerpt": "L800: The disclosure also comes amid growing concerns that AI safety efforts are lagging behind the rapid development of increasingly powerful systems. Researchers have warned that advanced AI agents could become harder to monitor and control as they gain greater autonomy.",
+          "claim_first_public_at": "2026-10-20T22:38:00-04:00"
+        }
+      ]
+    },
+    {
+      "id": "OA-MONITOR-A01",
+      "candidate_id": "OA-MONITOR",
+      "statement": "代理可靠性与审计控制仍有缺口，产品可用性不等于监测有效性。 等待修复细节与可复现测试，不能宣称已彻底解决。 属业务推断和未来验证条件，不确认价格方向、因果关系或财务增量。",
+      "kind": "analysis",
+      "targets": [
+        "analysis:4",
+        "catalyst:3",
+        "company:OpenAI",
+        "event:17",
+        "headline:12"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.marketscreener.com/news/openai-says-its-ai-agents-weakened-internal-monitoring-system-ce785cd8df8af623",
+          "retrieved_at": "2026-10-26T01:20:49.852Z",
+          "basis": "dated_media",
+          "locator": "v_oa_monitor: L797–L811；完整原始回执保留。",
+          "support": "代理可靠性与审计控制仍有缺口，产品可用性不等于监测有效性。 等待修复细节与可复现测试，不能宣称已彻底解决。 属业务推断和未来验证条件，不确认价格方向、因果关系或财务增量。",
+          "receipt_path": "logs/2026-10-26_run/v_oa_monitor.json",
+          "receipt_sha256": "8cf095ac1ffd2d53c841a34770d471f3c0985c4a083b5366f7a0efa398f2f08a",
+          "receipt_excerpt": "L800: The disclosure also comes amid growing concerns that AI safety efforts are lagging behind the rapid development of increasingly powerful systems. Researchers have warned that advanced AI agents could become harder to monitor and control as they gain greater autonomy.",
+          "claim_first_public_at": "2026-10-20T22:38:00-04:00"
+        }
+      ]
+    },
+    {
+      "id": "AN-SKILLS-F01",
+      "candidate_id": "AN-SKILLS",
+      "statement": "Anthropic宣布向Linux Foundation旗下AAIF捐赠Agent Skills开放标准，并转移名称、标识、GitHub组织和域名等治理资源。",
+      "kind": "news",
+      "targets": [
+        "company:Anthropic",
+        "event:18"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+          "retrieved_at": "2026-10-26T01:18:26.753Z",
+          "basis": "dated_release",
+          "locator": "v_anskills: L36–L48；完整原始回执保留。",
+          "support": "Anthropic宣布向Linux Foundation旗下AAIF捐赠Agent Skills开放标准，并转移名称、标识、GitHub组织和域名等治理资源。",
+          "receipt_path": "logs/2026-10-26_run/v_anskills.json",
+          "receipt_sha256": "0e159892cac931fb21a8d17664e740f112d9e047e4181224abb0334efe22328f",
+          "receipt_excerpt": "L38: A skill is a folder containing a SKILL.md file that teaches an agent a specific task or domain, along with any scripts or reference material it needs. We developed skills while working on Claude Code. It handled general knowledge work well, but often lacked the procedural knowledge that real business tasks need. Within weeks of our October 2025 launch, developers published thousands of skills on GitHub and wrote loaders for Codex, Cursor, and OpenCode.",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-22",
+            "earliest": "2026-10-21T10:00:00+00:00",
+            "latest_exclusive": "2026-10-23T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_anskills: L36–L48；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "AN-SKILLS-A01",
+      "candidate_id": "AN-SKILLS",
+      "statement": "跨工具互操作的治理趋于开放；不代表Claude模型或全部知识产权转让。 核对版本发布、提案机制及实际兼容性。 属业务推断和未来验证条件，不确认价格方向、因果关系或财务增量。",
+      "kind": "analysis",
+      "targets": [
+        "company:Anthropic",
+        "event:18"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+          "retrieved_at": "2026-10-26T01:18:26.753Z",
+          "basis": "dated_release",
+          "locator": "v_anskills: L36–L48；完整原始回执保留。",
+          "support": "跨工具互操作的治理趋于开放；不代表Claude模型或全部知识产权转让。 核对版本发布、提案机制及实际兼容性。 属业务推断和未来验证条件，不确认价格方向、因果关系或财务增量。",
+          "receipt_path": "logs/2026-10-26_run/v_anskills.json",
+          "receipt_sha256": "0e159892cac931fb21a8d17664e740f112d9e047e4181224abb0334efe22328f",
+          "receipt_excerpt": "L38: A skill is a folder containing a SKILL.md file that teaches an agent a specific task or domain, along with any scripts or reference material it needs. We developed skills while working on Claude Code. It handled general knowledge work well, but often lacked the procedural knowledge that real business tasks need. Within weeks of our October 2025 launch, developers published thousands of skills on GitHub and wrote loaders for Codex, Cursor, and OpenCode.",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-22",
+            "earliest": "2026-10-21T10:00:00+00:00",
+            "latest_exclusive": "2026-10-23T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_anskills: L36–L48；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "AN-GEORGIA-F01",
+      "candidate_id": "AN-GEORGIA",
+      "statement": "FOX5引述佐治亚州官员称，与Anthropic关联的机器人收集了州公开选举网站记录；没有侵入选民登记系统，也未暴露非公开文件。",
+      "kind": "news",
+      "targets": [
+        "company:Anthropic",
+        "event:19"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.fox5atlanta.com/news/ai-bot-tied-anthropic-reaches-public-georgia-election-hub",
+          "retrieved_at": "2026-10-26T01:22:59.095Z",
+          "basis": "dated_media",
+          "locator": "v_anstate: L29–L49；完整原始回执保留。",
+          "support": "FOX5引述佐治亚州官员称，与Anthropic关联的机器人收集了州公开选举网站记录；没有侵入选民登记系统，也未暴露非公开文件。",
+          "receipt_path": "logs/2026-10-26_run/v_anstate.json",
+          "receipt_sha256": "10adbb6ff9f088610bee8ac4238f11b2590bac94fa435331e0e089ab9f15f5ef",
+          "receipt_excerpt": "L49: The Source: The information in this story was gathered from the Georgia Secretary of State's Office, which confirmed the network details, as well as Deputy Secretary of State Jordan Fuchs.",
+          "claim_first_public_at": "2026-10-25T19:34:00-04:00"
+        }
+      ]
+    },
+    {
+      "id": "AN-GEORGIA-F02",
+      "candidate_id": "AN-GEORGIA",
+      "statement": "访问日期、时长及具体项目未获公开确认，不能把公开网页抓取写成选民系统入侵。",
+      "kind": "news",
+      "targets": [
+        "company:Anthropic",
+        "event:19"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.fox5atlanta.com/news/ai-bot-tied-anthropic-reaches-public-georgia-election-hub",
+          "retrieved_at": "2026-10-26T01:22:59.095Z",
+          "basis": "dated_media",
+          "locator": "v_anstate: L29–L49；完整原始回执保留。",
+          "support": "访问日期、时长及具体项目未获公开确认，不能把公开网页抓取写成选民系统入侵。",
+          "receipt_path": "logs/2026-10-26_run/v_anstate.json",
+          "receipt_sha256": "10adbb6ff9f088610bee8ac4238f11b2590bac94fa435331e0e089ab9f15f5ef",
+          "receipt_excerpt": "L49: The Source: The information in this story was gathered from the Georgia Secretary of State's Office, which confirmed the network details, as well as Deputy Secretary of State Jordan Fuchs.",
+          "claim_first_public_at": "2026-10-25T19:34:00-04:00"
+        }
+      ]
+    },
+    {
+      "id": "AN-GEORGIA-A01",
+      "candidate_id": "AN-GEORGIA",
+      "statement": "代理访问治理和声誉需跟踪，事件技术范围必须准确。 取得具体日志与项目说明后再判断，不补写未公布细节。 属业务推断和未来验证条件，不确认价格方向、因果关系或财务增量。",
+      "kind": "analysis",
+      "targets": [
+        "company:Anthropic",
+        "event:19"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.fox5atlanta.com/news/ai-bot-tied-anthropic-reaches-public-georgia-election-hub",
+          "retrieved_at": "2026-10-26T01:22:59.095Z",
+          "basis": "dated_media",
+          "locator": "v_anstate: L29–L49；完整原始回执保留。",
+          "support": "代理访问治理和声誉需跟踪，事件技术范围必须准确。 取得具体日志与项目说明后再判断，不补写未公布细节。 属业务推断和未来验证条件，不确认价格方向、因果关系或财务增量。",
+          "receipt_path": "logs/2026-10-26_run/v_anstate.json",
+          "receipt_sha256": "10adbb6ff9f088610bee8ac4238f11b2590bac94fa435331e0e089ab9f15f5ef",
+          "receipt_excerpt": "L49: The Source: The information in this story was gathered from the Georgia Secretary of State's Office, which confirmed the network details, as well as Deputy Secretary of State Jordan Fuchs.",
+          "claim_first_public_at": "2026-10-25T19:34:00-04:00"
+        }
+      ]
+    },
+    {
+      "id": "MEM-CHINA-F01",
+      "candidate_id": "MEM-CHINA",
+      "statement": "Reuters报道Samsung Electronics确认在与美国磋商下升级中国工厂；SK Hynix确认在与美国磋商下为大连工厂安装设备。",
+      "kind": "news",
+      "targets": [
+        "catalyst:4",
+        "company:SK Hynix",
+        "company:Samsung Electronics",
+        "event:20",
+        "event:21",
+        "headline:10"
+      ],
+      "evidence": [
+        {
+          "url": "https://uk.marketscreener.com/news/samsung-sk-hynix-upgrading-china-plants-to-make-more-advanced-chips-people-say-ce785cd8df8ef224",
+          "retrieved_at": "2026-10-26T01:20:45.277Z",
+          "basis": "dated_media",
+          "locator": "v_chinamemory: L802–L825；完整原始回执保留。",
+          "support": "Reuters报道Samsung Electronics确认在与美国磋商下升级中国工厂；SK Hynix确认在与美国磋商下为大连工厂安装设备。",
+          "receipt_path": "logs/2026-10-26_run/v_chinamemory.json",
+          "receipt_sha256": "7d6508d2acaba516392cebceba7969a37295de7284decc499d143a473963ffda",
+          "receipt_excerpt": "L824: One of the people said the company is authorised to make chips with up to 240 layers at Dalian and may seek permission from Washington to conduct research and development on 300-plus-layer chips there that would help it lay the groundwork for potential production in the US. The company is in discussions with the Trump administration over plans to build a new NAND factory in the United States.",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-21",
+            "earliest": "2026-10-20T10:00:00+00:00",
+            "latest_exclusive": "2026-10-22T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_chinamemory: L802–L825；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "MEM-CHINA-F02",
+      "candidate_id": "MEM-CHINA",
+      "statement": "Reuters未能确定出口许可证的具体范围；三星明确表示没有扩大产能或新建工厂，匿名技术代际和产量计划不作已核事实。",
+      "kind": "news",
+      "targets": [
+        "catalyst:4",
+        "company:SK Hynix",
+        "company:Samsung Electronics",
+        "event:20",
+        "event:21",
+        "headline:10"
+      ],
+      "evidence": [
+        {
+          "url": "https://uk.marketscreener.com/news/samsung-sk-hynix-upgrading-china-plants-to-make-more-advanced-chips-people-say-ce785cd8df8ef224",
+          "retrieved_at": "2026-10-26T01:20:45.277Z",
+          "basis": "dated_media",
+          "locator": "v_chinamemory: L802–L825；完整原始回执保留。",
+          "support": "Reuters未能确定出口许可证的具体范围；三星明确表示没有扩大产能或新建工厂，匿名技术代际和产量计划不作已核事实。",
+          "receipt_path": "logs/2026-10-26_run/v_chinamemory.json",
+          "receipt_sha256": "7d6508d2acaba516392cebceba7969a37295de7284decc499d143a473963ffda",
+          "receipt_excerpt": "L824: One of the people said the company is authorised to make chips with up to 240 layers at Dalian and may seek permission from Washington to conduct research and development on 300-plus-layer chips there that would help it lay the groundwork for potential production in the US. The company is in discussions with the Trump administration over plans to build a new NAND factory in the United States.",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-21",
+            "earliest": "2026-10-20T10:00:00+00:00",
+            "latest_exclusive": "2026-10-22T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_chinamemory: L802–L825；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "MEM-CHINA-A01",
+      "candidate_id": "MEM-CHINA",
+      "statement": "设备与工艺更新影响既有资产竞争力，仍受许可约束。 核对具体许可与实际投产，不把升级等同扩产。 属业务推断和未来验证条件，不确认价格方向、因果关系或财务增量。",
+      "kind": "analysis",
+      "targets": [
+        "catalyst:4",
+        "company:SK Hynix",
+        "company:Samsung Electronics",
+        "event:20",
+        "event:21",
+        "headline:10"
+      ],
+      "evidence": [
+        {
+          "url": "https://uk.marketscreener.com/news/samsung-sk-hynix-upgrading-china-plants-to-make-more-advanced-chips-people-say-ce785cd8df8ef224",
+          "retrieved_at": "2026-10-26T01:20:45.277Z",
+          "basis": "dated_media",
+          "locator": "v_chinamemory: L802–L825；完整原始回执保留。",
+          "support": "设备与工艺更新影响既有资产竞争力，仍受许可约束。 核对具体许可与实际投产，不把升级等同扩产。 属业务推断和未来验证条件，不确认价格方向、因果关系或财务增量。",
+          "receipt_path": "logs/2026-10-26_run/v_chinamemory.json",
+          "receipt_sha256": "7d6508d2acaba516392cebceba7969a37295de7284decc499d143a473963ffda",
+          "receipt_excerpt": "L824: One of the people said the company is authorised to make chips with up to 240 layers at Dalian and may seek permission from Washington to conduct research and development on 300-plus-layer chips there that would help it lay the groundwork for potential production in the US. The company is in discussions with the Trump administration over plans to build a new NAND factory in the United States.",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-21",
+            "earliest": "2026-10-20T10:00:00+00:00",
+            "latest_exclusive": "2026-10-22T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_chinamemory: L802–L825；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "SK-IPO-F01",
+      "candidate_id": "SK-IPO",
+      "statement": "Reuters报道SK Hynix因市场波动及韩国监管关切暂缓Solidigm美国IPO；公司表示将继续审视时点、规模与融资方式，投资需求没有因此消失。",
+      "kind": "news",
+      "targets": [
+        "analysis:2",
+        "catalyst:4",
+        "company:SK Hynix",
+        "event:22",
+        "headline:11"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.gulf-times.com/article/736461/business/sk-hynix-puts-us-ipo-of-chip-unit-solidigm-on-hold",
+          "retrieved_at": "2026-10-26T01:22:59.475Z",
+          "basis": "dated_media",
+          "locator": "v_skipo3: L53–L64；完整原始回执保留。",
+          "support": "Reuters报道SK Hynix因市场波动及韩国监管关切暂缓Solidigm美国IPO；公司表示将继续审视时点、规模与融资方式，投资需求没有因此消失。",
+          "receipt_path": "logs/2026-10-26_run/v_skipo3.json",
+          "receipt_sha256": "cd4bcb1e8c250630296f7e334c4ac2476bed57ad5562be27bab12c3d9db1f484",
+          "receipt_excerpt": "L54: 【12†Image: Executives of SK Hynix attend the company&#039;s opening bell ceremony at the Nasdaq market in New York City (file picture). SK Hynix on Friday put on hold a planned US listing for its Solidigm chip unit due to market volatility - a move which also comes after Korean authorities raised concerns that the deal could undermine shareholder interests.†cdnx.premiumread.com】",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-23",
+            "earliest": "2026-10-22T10:00:00+00:00",
+            "latest_exclusive": "2026-10-24T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_skipo3: L53–L64；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "SK-IPO-A01",
+      "candidate_id": "SK-IPO",
+      "statement": "融资时间与渠道不确定性增加，不等于取消工厂投资。 等待后续正式融资方案，不使用匿名估值作已核价格。 属业务推断和未来验证条件，不确认价格方向、因果关系或财务增量。",
+      "kind": "analysis",
+      "targets": [
+        "analysis:2",
+        "catalyst:4",
+        "company:SK Hynix",
+        "event:22",
+        "headline:11"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.gulf-times.com/article/736461/business/sk-hynix-puts-us-ipo-of-chip-unit-solidigm-on-hold",
+          "retrieved_at": "2026-10-26T01:22:59.475Z",
+          "basis": "dated_media",
+          "locator": "v_skipo3: L53–L64；完整原始回执保留。",
+          "support": "融资时间与渠道不确定性增加，不等于取消工厂投资。 等待后续正式融资方案，不使用匿名估值作已核价格。 属业务推断和未来验证条件，不确认价格方向、因果关系或财务增量。",
+          "receipt_path": "logs/2026-10-26_run/v_skipo3.json",
+          "receipt_sha256": "cd4bcb1e8c250630296f7e334c4ac2476bed57ad5562be27bab12c3d9db1f484",
+          "receipt_excerpt": "L54: 【12†Image: Executives of SK Hynix attend the company&#039;s opening bell ceremony at the Nasdaq market in New York City (file picture). SK Hynix on Friday put on hold a planned US listing for its Solidigm chip unit due to market volatility - a move which also comes after Korean authorities raised concerns that the deal could undermine shareholder interests.†cdnx.premiumread.com】",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-23",
+            "earliest": "2026-10-22T10:00:00+00:00",
+            "latest_exclusive": "2026-10-24T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_skipo3: L53–L64；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ANALYSIS-01",
+      "statement": "分发扩张要与交付阶段分开。OpenAI进入Google Cloud和A5X下月GA仍有上线节点；渠道扩大不能直接换算成新增收入。",
+      "kind": "analysis",
+      "targets": [
+        "analysis:1"
+      ],
+      "evidence": [
+        {
+          "url": "https://openai.com/index/openai-models-google-cloud/",
+          "retrieved_at": "2026-10-26T01:17:25.889Z",
+          "basis": "dated_release",
+          "locator": "v_joint: L22–L47；完整原始回执保留。",
+          "support": "本段仅提炼该入选事件及所列限制。",
+          "receipt_path": "logs/2026-10-26_run/v_joint.json",
+          "receipt_sha256": "91040e6430ff5c17a99c08023d8c275d595ac0bac69b5dd866d0ac0015cda645",
+          "receipt_excerpt": "L23: Google Cloud’s longstanding investment in machine learning and AI has made it a destination for AI workloads and the developers and data scientists building them. Bringing OpenAI models to its model garden gives these teams access to OpenAI’s frontier models within the environment where they already work, enabling enterprises to modernize their software development lifecycle, build agentic workflows, and change how people work.",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-21",
+            "earliest": "2026-10-20T10:00:00+00:00",
+            "latest_exclusive": "2026-10-22T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_joint: L22–L47；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        },
+        {
+          "url": "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/",
+          "retrieved_at": "2026-10-26T01:18:30.106Z",
+          "basis": "dated_release",
+          "locator": "v_nvgcp: L5–L15；完整原始回执保留。",
+          "support": "本段仅提炼该入选事件及所列限制。",
+          "receipt_path": "logs/2026-10-26_run/v_nvgcp.json",
+          "receipt_sha256": "c347b7a5b39c7d5aa4b52ec9899177025e98e55033a4c51bb518985ae129d78c",
+          "receipt_excerpt": "L15: Learning through interaction requires a continuous cycle of generating experience, evaluating outcomes and updating models, requiring infrastructure that can support the entire process at scale. 【5†A5X†www.youtube.com】 brings Vera Rubin into Google Cloud’s AI Hypercomputer as an integrated system, combining compute, networking and storage to support experience-driven learning at scale.",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-21",
+            "earliest": "2026-10-20T10:00:00+00:00",
+            "latest_exclusive": "2026-10-22T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_nvgcp: L5–L15；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ANALYSIS-02",
+      "statement": "供给紧张正在转成资本安排。AWS预订、NVIDIA产能预付款与SK融资暂缓，分别对应需求承诺、供给锁定和资金来源；三者都要经实际现金流验证。",
+      "kind": "analysis",
+      "targets": [
+        "analysis:2"
+      ],
+      "evidence": [
+        {
+          "url": "https://wdsm710.com/2026/10/23/amazon-cloud-capacity-sold-out-through-2027-ceo-jassy-says/",
+          "retrieved_at": "2026-10-26T01:18:28.978Z",
+          "basis": "dated_media",
+          "locator": "v_amazon_capacity: L7–L19；完整原始回执保留。",
+          "support": "本段仅提炼该入选事件及所列限制。",
+          "receipt_path": "logs/2026-10-26_run/v_amazon_capacity.json",
+          "receipt_sha256": "4727f48e9034c3ebc7a4357e757e48b1d27884349d2fa6f4b7ff9ee47252eb78",
+          "receipt_excerpt": "L9: Oct 23 (Reuters) – Amazon CEO Andy Jassy said on Friday that Amazon Web Services’ cloud computing capacity is largely ​sold out through 2027, with ‌significant commitments extending into 2028, on growing demand for AI infrastructure.",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-23",
+            "earliest": "2026-10-22T10:00:00+00:00",
+            "latest_exclusive": "2026-10-24T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_amazon_capacity: L7–L19；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        },
+        {
+          "url": "https://nvidianews.nvidia.com/news/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout",
+          "retrieved_at": "2026-10-26T01:18:24.399Z",
+          "basis": "dated_release",
+          "locator": "v_nvcap: L49–L73；完整原始回执保留。",
+          "support": "本段仅提炼该入选事件及所列限制。",
+          "receipt_path": "logs/2026-10-26_run/v_nvcap.json",
+          "receipt_sha256": "8b0b215c8fa63008a6235de5c449f9f06b64301d70e0fb13e0270daad9a7af52",
+          "receipt_excerpt": "L62: Samsung Electro-Mechanics is joining NVIDIA’s substrate supply chain, bringing immediate capacity from its existing operations in South Korea. The collaboration also supports facility upgrades and new factories in Sejong and Busan, South Korea. By 2028, production allocated to NVIDIA is projected to account for a significant portion of Samsung Electro-Mechanics’ total annual package substrate production capacity.",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-21",
+            "earliest": "2026-10-20T10:00:00+00:00",
+            "latest_exclusive": "2026-10-22T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_nvcap: L49–L73；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        },
+        {
+          "url": "https://www.gulf-times.com/article/736461/business/sk-hynix-puts-us-ipo-of-chip-unit-solidigm-on-hold",
+          "retrieved_at": "2026-10-26T01:22:59.475Z",
+          "basis": "dated_media",
+          "locator": "v_skipo3: L53–L64；完整原始回执保留。",
+          "support": "本段仅提炼该入选事件及所列限制。",
+          "receipt_path": "logs/2026-10-26_run/v_skipo3.json",
+          "receipt_sha256": "cd4bcb1e8c250630296f7e334c4ac2476bed57ad5562be27bab12c3d9db1f484",
+          "receipt_excerpt": "L54: 【12†Image: Executives of SK Hynix attend the company&#039;s opening bell ceremony at the Nasdaq market in New York City (file picture). SK Hynix on Friday put on hold a planned US listing for its Solidigm chip unit due to market volatility - a move which also comes after Korean authorities raised concerns that the deal could undermine shareholder interests.†cdnx.premiumread.com】",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-23",
+            "earliest": "2026-10-22T10:00:00+00:00",
+            "latest_exclusive": "2026-10-24T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_skipo3: L53–L64；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ANALYSIS-03",
+      "statement": "收入增长不保证利润和现金同步改善。Meta法律费用与资本指引、Tesla净利润和支出计划显示不同压力；两家公司口径不同，不作简单横向倍数比较。",
+      "kind": "analysis",
+      "targets": [
+        "analysis:3"
+      ],
+      "evidence": [
+        {
+          "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+          "retrieved_at": "2026-10-26T01:17:27.213Z",
+          "basis": "dated_release",
+          "locator": "v_meta: L84–L190；完整原始回执保留。",
+          "support": "本段仅提炼该入选事件及所列限制。",
+          "receipt_path": "logs/2026-10-26_run/v_meta.json",
+          "receipt_sha256": "dd2ba56bb035a3c786a038069b035beda88b343531c4e821c4111661f10b31d8",
+          "receipt_excerpt": "L184:   * Continuing to Maximize Long-Term Value for All Shareholders – Since Meta's formation, its management team has prioritized long-term goals and value creation, and its stock price has increased by more than 1,700% since its IPO. By contrast, over the same period, the S&P 500 has increased approximately 495%. The Special Committee wants Meta to continue innovating with an emphasis on long-term growth, which the creation of the Class C stock is intended to help facilitate.",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-21",
+            "earliest": "2026-10-20T10:00:00+00:00",
+            "latest_exclusive": "2026-10-22T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_meta: L84–L190；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm",
+          "retrieved_at": "2026-10-26T01:24:53.328Z",
+          "basis": "filing",
+          "locator": "v_tsla_html_find: L177–L218；完整原始回执保留。",
+          "support": "本段仅提炼该入选事件及所列限制。",
+          "receipt_path": "logs/2026-10-26_run/v_tsla_html_find.json",
+          "receipt_sha256": "4d5163c00fe307bd5a2d8111e3c45444317c627b8b8cbd1ef47275c76c09d22e",
+          "receipt_excerpt": "L213: Net income attributable to noncontrolling interests and redeemable noncontrolling interests in subsidiaries  | 17   |  |  | 16   |  |  | 45   |  |  | 45   |",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-22",
+            "earliest": "2026-10-21T10:00:00+00:00",
+            "latest_exclusive": "2026-10-23T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_tsla_html_find: L177–L218；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ANALYSIS-04",
+      "statement": "安全和可用性需要可复核效果。云中断、监测失效与参考架构发布对应不同问题；发布工具或整改声明不能替代实际复测。",
+      "kind": "analysis",
+      "targets": [
+        "analysis:4"
+      ],
+      "evidence": [
+        {
+          "url": "https://status.cloud.google.com/incidents/Xs2XTHzAVC9YnafnPyzj",
+          "retrieved_at": "2026-10-26T01:23:00.061Z",
+          "basis": "dated_release",
+          "locator": "v_google_status: L20–L38；完整原始回执保留。",
+          "support": "本段仅提炼该入选事件及所列限制。",
+          "receipt_path": "logs/2026-10-26_run/v_google_status.json",
+          "receipt_sha256": "434ecf5d1a50b7ec0395e16d7d59a41524dcc49747656d71f133bf365db3841f",
+          "receipt_excerpt": "L22: We recognize that Google Cloud services are critical to your organization, and we sincerely apologize for the disruption this incident may have caused to your business. We are working to address the root cause and prevent this from occurring in the future. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. A final Incident Report with preventative actions will be posted once our investigation is complete.",
+          "claim_first_public_at": "2026-10-22T01:42:00-07:00"
+        },
+        {
+          "url": "https://www.marketscreener.com/news/openai-says-its-ai-agents-weakened-internal-monitoring-system-ce785cd8df8af623",
+          "retrieved_at": "2026-10-26T01:20:49.852Z",
+          "basis": "dated_media",
+          "locator": "v_oa_monitor: L797–L811；完整原始回执保留。",
+          "support": "本段仅提炼该入选事件及所列限制。",
+          "receipt_path": "logs/2026-10-26_run/v_oa_monitor.json",
+          "receipt_sha256": "8cf095ac1ffd2d53c841a34770d471f3c0985c4a083b5366f7a0efa398f2f08a",
+          "receipt_excerpt": "L800: The disclosure also comes amid growing concerns that AI safety efforts are lagging behind the rapid development of increasingly powerful systems. Researchers have warned that advanced AI agents could become harder to monitor and control as they gain greater autonomy.",
+          "claim_first_public_at": "2026-10-20T22:38:00-04:00"
+        },
+        {
+          "url": "https://nvidianews.nvidia.com/news/openshell-reference-architecture",
+          "retrieved_at": "2026-10-26T01:18:25.096Z",
+          "basis": "dated_release",
+          "locator": "v_nvsafe: L49–L60；完整原始回执保留。",
+          "support": "本段仅提炼该入选事件及所列限制。",
+          "receipt_path": "logs/2026-10-26_run/v_nvsafe.json",
+          "receipt_sha256": "4bc710ff069e8c27ad3438f90ad7c95b4ae26eec89770dfcd5b2595f1e78f0b4",
+          "receipt_excerpt": "L59: It includes 【22†NVIDIA Vera Rubin†www.nvidia.com】 infrastructure for running enterprise workloads, including closed and open models built with 【23†NVIDIA Nemotron†www.nvidia.com】™; 【24†NVIDIA Vera CPUs†www.nvidia.com】 for operating agent harnesses; open source NVIDIA OpenShell software; and 【25†NVIDIA BlueField†www.nvidia.com】^{®} DPUs for running the 【26†NVIDIA Sentry†www.nvidia.com】 unified security software framework that provides continuous out-of-band monitoring of agent behavior and in-silicon policy enforcement.",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-21",
+            "earliest": "2026-10-20T10:00:00+00:00",
+            "latest_exclusive": "2026-10-22T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_nvsafe: L49–L60；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CATALYST-01",
+      "statement": "Apple 10月28日活动；正式发布产品、价格及供应范围；验证产品周期，不将传闻计入收入。",
+      "kind": "forecast",
+      "targets": [
+        "catalyst:1"
+      ],
+      "evidence": [
+        {
+          "url": "https://economictimes.indiatimes.com/tech/technology/apple-to-host-pro-and-tell-event-on-october-28-in-la/articleshow/135054883.cms",
+          "retrieved_at": "2026-10-26T01:20:45.756Z",
+          "basis": "dated_media",
+          "locator": "v_apple_invite: L85–L116；完整原始回执保留。",
+          "support": "未来核验节点来自截止前公布的计划或尚未解决的程序。",
+          "receipt_path": "logs/2026-10-26_run/v_apple_invite.json",
+          "receipt_sha256": "1bdfe77b7cc2a340b7de9d3ea46d6432fa508e2f9a3b4022d67dc40a54f3a7d7",
+          "receipt_excerpt": "L106: Apple said on Monday it would host a \"Pro and tell\" event in Los Angeles on October 28, the latest in a series of product launches as the iPhone maker expands its hardware lineup and AI offerings.",
+          "claim_first_public_at": "2026-10-19T23:51:36+05:30"
+        }
+      ]
+    },
+    {
+      "id": "CATALYST-02",
+      "statement": "Google Cloud后续上线；出现OpenAI模型及A5X实际GA与地区清单；验证渠道与新硬件采用，不把规划GPU数量当已交付。",
+      "kind": "forecast",
+      "targets": [
+        "catalyst:2"
+      ],
+      "evidence": [
+        {
+          "url": "https://openai.com/index/openai-models-google-cloud/",
+          "retrieved_at": "2026-10-26T01:17:25.889Z",
+          "basis": "dated_release",
+          "locator": "v_joint: L22–L47；完整原始回执保留。",
+          "support": "未来核验节点来自截止前公布的计划或尚未解决的程序。",
+          "receipt_path": "logs/2026-10-26_run/v_joint.json",
+          "receipt_sha256": "91040e6430ff5c17a99c08023d8c275d595ac0bac69b5dd866d0ac0015cda645",
+          "receipt_excerpt": "L23: Google Cloud’s longstanding investment in machine learning and AI has made it a destination for AI workloads and the developers and data scientists building them. Bringing OpenAI models to its model garden gives these teams access to OpenAI’s frontier models within the environment where they already work, enabling enterprises to modernize their software development lifecycle, build agentic workflows, and change how people work.",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-21",
+            "earliest": "2026-10-20T10:00:00+00:00",
+            "latest_exclusive": "2026-10-22T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_joint: L22–L47；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        },
+        {
+          "url": "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/",
+          "retrieved_at": "2026-10-26T01:18:30.106Z",
+          "basis": "dated_release",
+          "locator": "v_nvgcp: L5–L15；完整原始回执保留。",
+          "support": "未来核验节点来自截止前公布的计划或尚未解决的程序。",
+          "receipt_path": "logs/2026-10-26_run/v_nvgcp.json",
+          "receipt_sha256": "c347b7a5b39c7d5aa4b52ec9899177025e98e55033a4c51bb518985ae129d78c",
+          "receipt_excerpt": "L15: Learning through interaction requires a continuous cycle of generating experience, evaluating outcomes and updating models, requiring infrastructure that can support the entire process at scale. 【5†A5X†www.youtube.com】 brings Vera Rubin into Google Cloud’s AI Hypercomputer as an integrated system, combining compute, networking and storage to support experience-driven learning at scale.",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-21",
+            "earliest": "2026-10-20T10:00:00+00:00",
+            "latest_exclusive": "2026-10-22T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_nvgcp: L5–L15；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CATALYST-03",
+      "statement": "法律与事故后续，日期未定；出现Meta上诉文件、Google最终根因报告或代理监测复测；分别调整责任、可用性与控制有效性判断。",
+      "kind": "forecast",
+      "targets": [
+        "catalyst:3"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.investing.com/news/stock-market-news/meta-ordered-to-pay-25-billion-to-new-mexico-after-jury-finds-company-misled-consumers-about-data-privacy-4963776",
+          "retrieved_at": "2026-10-26T01:18:27.186Z",
+          "basis": "dated_media",
+          "locator": "v_meta_case: L52–L65；完整原始回执保留。",
+          "support": "未来核验节点来自截止前公布的计划或尚未解决的程序。",
+          "receipt_path": "logs/2026-10-26_run/v_meta_case.json",
+          "receipt_sha256": "38593ef6c534fbc337abcde012c3b8130135180fbfa0defbdc23bf28ae871a02",
+          "receipt_excerpt": "L65: In the first trial, which ended in March, a Santa Fe jury ​found Meta misled users ⁠about young users’ safety on its Facebook, Instagram and WhatsApp platforms and ordered the company to pay $375 million in civil penalties. After a second phase of that trial, a judge directed the company to pay $567 million into a New Mexico fund for teen mental health and ordered Meta to implement measures to protect teen Facebook and Instagram users in New Mexico.",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-21",
+            "earliest": "2026-10-20T10:00:00+00:00",
+            "latest_exclusive": "2026-10-22T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_meta_case: L52–L65；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        },
+        {
+          "url": "https://status.cloud.google.com/incidents/Xs2XTHzAVC9YnafnPyzj",
+          "retrieved_at": "2026-10-26T01:23:00.061Z",
+          "basis": "dated_release",
+          "locator": "v_google_status: L20–L38；完整原始回执保留。",
+          "support": "未来核验节点来自截止前公布的计划或尚未解决的程序。",
+          "receipt_path": "logs/2026-10-26_run/v_google_status.json",
+          "receipt_sha256": "434ecf5d1a50b7ec0395e16d7d59a41524dcc49747656d71f133bf365db3841f",
+          "receipt_excerpt": "L22: We recognize that Google Cloud services are critical to your organization, and we sincerely apologize for the disruption this incident may have caused to your business. We are working to address the root cause and prevent this from occurring in the future. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. A final Incident Report with preventative actions will be posted once our investigation is complete.",
+          "claim_first_public_at": "2026-10-22T01:42:00-07:00"
+        },
+        {
+          "url": "https://www.marketscreener.com/news/openai-says-its-ai-agents-weakened-internal-monitoring-system-ce785cd8df8af623",
+          "retrieved_at": "2026-10-26T01:20:49.852Z",
+          "basis": "dated_media",
+          "locator": "v_oa_monitor: L797–L811；完整原始回执保留。",
+          "support": "未来核验节点来自截止前公布的计划或尚未解决的程序。",
+          "receipt_path": "logs/2026-10-26_run/v_oa_monitor.json",
+          "receipt_sha256": "8cf095ac1ffd2d53c841a34770d471f3c0985c4a083b5366f7a0efa398f2f08a",
+          "receipt_excerpt": "L800: The disclosure also comes amid growing concerns that AI safety efforts are lagging behind the rapid development of increasingly powerful systems. Researchers have warned that advanced AI agents could become harder to monitor and control as they gain greater autonomy.",
+          "claim_first_public_at": "2026-10-20T22:38:00-04:00"
+        }
+      ]
+    },
+    {
+      "id": "CATALYST-04",
+      "statement": "融资与扩产兑现，按公司后续披露；出现Solidigm融资方案、KYEC量产和中国厂许可细节；检验资金与供给落地，不预认未来收入。",
+      "kind": "forecast",
+      "targets": [
+        "catalyst:4"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.gulf-times.com/article/736461/business/sk-hynix-puts-us-ipo-of-chip-unit-solidigm-on-hold",
+          "retrieved_at": "2026-10-26T01:22:59.475Z",
+          "basis": "dated_media",
+          "locator": "v_skipo3: L53–L64；完整原始回执保留。",
+          "support": "未来核验节点来自截止前公布的计划或尚未解决的程序。",
+          "receipt_path": "logs/2026-10-26_run/v_skipo3.json",
+          "receipt_sha256": "cd4bcb1e8c250630296f7e334c4ac2476bed57ad5562be27bab12c3d9db1f484",
+          "receipt_excerpt": "L54: 【12†Image: Executives of SK Hynix attend the company&#039;s opening bell ceremony at the Nasdaq market in New York City (file picture). SK Hynix on Friday put on hold a planned US listing for its Solidigm chip unit due to market volatility - a move which also comes after Korean authorities raised concerns that the deal could undermine shareholder interests.†cdnx.premiumread.com】",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-23",
+            "earliest": "2026-10-22T10:00:00+00:00",
+            "latest_exclusive": "2026-10-24T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_skipo3: L53–L64；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        },
+        {
+          "url": "https://nvidianews.nvidia.com/news/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout",
+          "retrieved_at": "2026-10-26T01:18:24.399Z",
+          "basis": "dated_release",
+          "locator": "v_nvcap: L49–L73；完整原始回执保留。",
+          "support": "未来核验节点来自截止前公布的计划或尚未解决的程序。",
+          "receipt_path": "logs/2026-10-26_run/v_nvcap.json",
+          "receipt_sha256": "8b0b215c8fa63008a6235de5c449f9f06b64301d70e0fb13e0270daad9a7af52",
+          "receipt_excerpt": "L62: Samsung Electro-Mechanics is joining NVIDIA’s substrate supply chain, bringing immediate capacity from its existing operations in South Korea. The collaboration also supports facility upgrades and new factories in Sejong and Busan, South Korea. By 2028, production allocated to NVIDIA is projected to account for a significant portion of Samsung Electro-Mechanics’ total annual package substrate production capacity.",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-21",
+            "earliest": "2026-10-20T10:00:00+00:00",
+            "latest_exclusive": "2026-10-22T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_nvcap: L49–L73；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        },
+        {
+          "url": "https://uk.marketscreener.com/news/samsung-sk-hynix-upgrading-china-plants-to-make-more-advanced-chips-people-say-ce785cd8df8ef224",
+          "retrieved_at": "2026-10-26T01:20:45.277Z",
+          "basis": "dated_media",
+          "locator": "v_chinamemory: L802–L825；完整原始回执保留。",
+          "support": "未来核验节点来自截止前公布的计划或尚未解决的程序。",
+          "receipt_path": "logs/2026-10-26_run/v_chinamemory.json",
+          "receipt_sha256": "7d6508d2acaba516392cebceba7969a37295de7284decc499d143a473963ffda",
+          "receipt_excerpt": "L824: One of the people said the company is authorised to make chips with up to 240 layers at Dalian and may seek permission from Washington to conduct research and development on 300-plus-layer chips there that would help it lay the groundwork for potential production in the US. The company is in discussions with the Trump administration over plans to build a new NAND factory in the United States.",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-21",
+            "earliest": "2026-10-20T10:00:00+00:00",
+            "latest_exclusive": "2026-10-22T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "v_chinamemory: L802–L825；完整原始回执保留。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "TSM-NOSELECT-A01",
+      "statement": "TSMC本期有限筛选无合格入选项；上周10月15日Q3财报不重复，未核设备替代线索留资料池。不认证全量无事。",
+      "kind": "analysis",
+      "targets": [
+        "company:TSMC"
+      ],
+      "evidence": [
+        {
+          "url": "https://pr.tsmc.com/english",
+          "retrieved_at": "2026-10-26T01:50:49.932Z",
+          "basis": "dated_section",
+          "locator": "官方新闻列表10月15日Q3发布及当期有限筛选回执。",
+          "support": "只支持上周财报日期与有限筛选范围，不证明没有任何变化。",
+          "receipt_path": "logs/2026-10-26_run/v_tsmc_q3_listing.json",
+          "receipt_sha256": "524f166f2cdcaab76f17f0cc9900d6974361bc0f945f8f327c15100a7dfd25b6",
+          "receipt_excerpt": "L293:   * 【101†TSMC Reports Third Quarter EPS of NT$29.43 (2026/10/15)】",
+          "claim_first_public_interval": {
+            "published_date": "2026-10-15",
+            "earliest": "2026-10-14T10:00:00+00:00",
+            "latest_exclusive": "2026-10-16T12:00:00+00:00",
+            "timezone_basis": "global_utc_minus12_to_plus14",
+            "version_locator": "官方10/15Q3结果列表条目。",
+            "note": "来源日期明确但时区未明；按UTC-12至UTC+14保留完整50小时区间，不伪造精确发布时间。"
+          }
+        }
+      ]
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "id": "TSM-RAREEARTH",
+      "reason": "设备磁体替代线索未获可核公司具体版本；不在事实/图谱中推断供应链调整"
+    },
+    {
+      "id": "TSLA-SPACEX",
+      "reason": "交易讨论未形成已核协议或对价；保留未决状态，不预测必然合并"
+    },
+    {
+      "id": "OA-FUNDRAISE",
+      "reason": "匿名融资估值和IPO时间未核，不作已完成融资"
+    },
+    {
+      "id": "OA-BIOTECH",
+      "reason": "收购线索具体对价与公司原件未核，留资料池"
+    },
+    {
+      "id": "AN-IPO",
+      "reason": "报道中的发行时间仍有条件，不作已上市或确定催化"
+    },
+    {
+      "id": "NV-CHINA-ORDER",
+      "reason": "中国工作站订单线索未获可核数量/履约版本，勿冒充已交付订单"
+    },
+    {
+      "id": "META-TERMS",
+      "reason": "广告商和出版方的请求不等于监管机构已暂停条款，保留未决线索"
+    }
+  ]
+}

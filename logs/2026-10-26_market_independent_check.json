@@ -1,0 +1,78 @@
+{
+  "calculation": "Independent adjacent-price ratios and sample log-return standard deviation; existing calculator used for comparison only.",
+  "results": [
+    {
+      "company": "Apple",
+      "verified_metrics": 5,
+      "sessions": 5,
+      "quote_count": 44,
+      "last_close": "2026-10-23"
+    },
+    {
+      "company": "Microsoft",
+      "verified_metrics": 5,
+      "sessions": 5,
+      "quote_count": 44,
+      "last_close": "2026-10-23"
+    },
+    {
+      "company": "Alphabet / Google",
+      "verified_metrics": 5,
+      "sessions": 5,
+      "quote_count": 44,
+      "last_close": "2026-10-23"
+    },
+    {
+      "company": "Amazon / AWS",
+      "verified_metrics": 5,
+      "sessions": 5,
+      "quote_count": 44,
+      "last_close": "2026-10-23"
+    },
+    {
+      "company": "Meta",
+      "verified_metrics": 5,
+      "sessions": 5,
+      "quote_count": 44,
+      "last_close": "2026-10-23"
+    },
+    {
+      "company": "NVIDIA",
+      "verified_metrics": 5,
+      "sessions": 5,
+      "quote_count": 44,
+      "last_close": "2026-10-23"
+    },
+    {
+      "company": "Tesla",
+      "verified_metrics": 5,
+      "sessions": 5,
+      "quote_count": 44,
+      "last_close": "2026-10-23"
+    },
+    {
+      "company": "Samsung Electronics",
+      "verified_metrics": 5,
+      "sessions": 5,
+      "quote_count": 41,
+      "last_close": "2026-10-23"
+    },
+    {
+      "company": "SK Hynix",
+      "verified_metrics": 5,
+      "sessions": 5,
+      "quote_count": 41,
+      "last_close": "2026-10-23"
+    },
+    {
+      "company": "TSMC",
+      "verified_metrics": 5,
+      "sessions": 4,
+      "quote_count": 41,
+      "last_close": "2026-10-22"
+    }
+  ],
+  "verified_metrics": 50,
+  "total_return_qualification": false,
+  "historical_pit_qualification": false
+}

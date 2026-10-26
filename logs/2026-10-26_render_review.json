@@ -1,0 +1,9 @@
+{
+  "same_source_market_cells": 156,
+  "markdown_binding_passed": true,
+  "pdf_pages": 21,
+  "pdf_visual_review": "All21 final PDF pages visually reviewed via3contact sheets; no clipping/overlap/missing Chinese glyphs. Final contact glob also contained a separate cover preview; that extra image was excluded from the true PDF page count.",
+  "notes": "No mobile layout requested or tested.",
+  "report_sha256": "ec5ae505e5cdafede5a5fd9ab8d7500e970149dbc99c48a927b6931d02529dc7",
+  "graph_visual_review": "Native rendered supply/product SVGs inspected, new E43-E47 and PX86-PX87 retained, weak historical links remain distinguished."
+}

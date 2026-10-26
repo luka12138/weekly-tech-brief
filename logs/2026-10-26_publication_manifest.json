@@ -1,0 +1,124 @@
+{
+  "report_date": "2026-10-26",
+  "files": [
+    {
+      "path": "archives/prior_2026-10-19/2026-10-19_weekly_morning_brief.md",
+      "sha256": "1e4f7fb2fe4da91ec980bf2b2e6b0e899742c6f54cca9824cb6cb96aeeae7f3a",
+      "bytes": 52177
+    },
+    {
+      "path": "archives/prior_2026-10-19/product_relationships_2026.json",
+      "sha256": "95673a1ef436e68a935f048696292903ee6ee242fe994ca7dc1ab94201283107",
+      "bytes": 83587
+    },
+    {
+      "path": "archives/prior_2026-10-19/supply_graph_baseline.json",
+      "sha256": "486714af5a311481e8326e0a83788caf76bdf741d1bd87cf099f8d00c89a5a64",
+      "bytes": 53866
+    },
+    {
+      "path": "assets/2026-10-26_product_relationships.canvas",
+      "sha256": "656da430f2958579a0fc5218bdd2d090259b4293c032113459d0f64e17ea60a4",
+      "bytes": 43139
+    },
+    {
+      "path": "assets/2026-10-26_product_relationships.svg",
+      "sha256": "e267ec8d0d3f458ec776f8adc10ac93a15abaef0a40674cc70742b241b582c61",
+      "bytes": 61159
+    },
+    {
+      "path": "assets/2026-10-26_supply_relationships.canvas",
+      "sha256": "be0293fe14e59a90172420c635a93cf26ee01eb905ab81e4a21be9438cc60c1a",
+      "bytes": 28608
+    },
+    {
+      "path": "assets/2026-10-26_supply_relationships.svg",
+      "sha256": "3855f974ab91950c3c8fabe3ac24b85011449c46deb4e25c9275c687da6b2397",
+      "bytes": 59054
+    },
+    {
+      "path": "logs/2026-10-26_investment_review.json",
+      "sha256": "92f73cb93b1d430517efc4df584b406b754adc50270010d9f9f018bd4c9c5fa1",
+      "bytes": 12315
+    },
+    {
+      "path": "logs/2026-10-26_market_independent_check.json",
+      "sha256": "edbc81a250fec822b953a31ed8b21477f5e452f9f5264866277af858fd043068",
+      "bytes": 1779
+    },
+    {
+      "path": "logs/2026-10-26_price_vintage_receipt.json",
+      "sha256": "9e734797bd11abcd37b2c4eed75f0b80988ec9c3f48fbef4aec734a4abcc804c",
+      "bytes": 182
+    },
+    {
+      "path": "logs/2026-10-26_render_review.json",
+      "sha256": "da7e7fd24beebf061c2a083aa8249f714e9977c569886ccc40d4ed96fa66e80d",
+      "bytes": 636
+    },
+    {
+      "path": "logs/2026-10-26_research_coverage.json",
+      "sha256": "08ab7ef7fee7194dd1296d7f0c1fadedce4aab97065aa325aa9787b2edc86954",
+      "bytes": 91195
+    },
+    {
+      "path": "logs/2026-10-26_semantic_review.json",
+      "sha256": "63b4c24f934e422a6112e857b7dc8409d5a44e5b0b515cb84c1143da62588284",
+      "bytes": 2351
+    },
+    {
+      "path": "logs/2026-10-26_source_audit.json",
+      "sha256": "9890b4614cac98557c32ce7066eb39f73002a5e9385c1eed3a69b4dd0e849986",
+      "bytes": 118781
+    },
+    {
+      "path": "logs/2026-10-26_temporal_evidence.json",
+      "sha256": "b14579d39deb6d36ebc247804507929b8630dfac6d1d53a95ca8f18624f1ed5c",
+      "bytes": 136223
+    },
+    {
+      "path": "logs/2026-10-26_wind_market_observations_manifest.json",
+      "sha256": "3ccf381cfb609af1f5f161dad98e2c5cd59fcc00dfe760c4f104aa7e27854ed5",
+      "bytes": 17718
+    },
+    {
+      "path": "reports/2026-10-26_investment_review.html",
+      "sha256": "47c9cdcdca84e69ee24b6b496f0c1fbc17781929fc31e90c778e68d95b807071",
+      "bytes": 19271
+    },
+    {
+      "path": "reports/2026-10-26_weekly_morning_brief.html",
+      "sha256": "c75f6fc7d231f45d378f0e53d554530a423642d47ecbb72c008cf6f3220925da",
+      "bytes": 57210
+    },
+    {
+      "path": "reports/2026-10-26_weekly_morning_brief.md",
+      "sha256": "ec5ae505e5cdafede5a5fd9ab8d7500e970149dbc99c48a927b6931d02529dc7",
+      "bytes": 48702
+    },
+    {
+      "path": "reports/2026-10-26_weekly_morning_brief.pdf",
+      "sha256": "064d2a8eaf4eb9fefbfc952e03c3e9ecddd7aad1fdbc612a1057ac70c4fee095",
+      "bytes": 462785
+    },
+    {
+      "path": "reports/latest.md",
+      "sha256": "f0f556a794ddc4a9306ee860ccbd2384ed8bcbb41679e474e86378afc3a2d857",
+      "bytes": 53
+    },
+    {
+      "path": "state/product_relationships_2026.json",
+      "sha256": "3dd6bc843d178820cd45ecb1179f704e1bcc08725c9220e7a44a375ce1743279",
+      "bytes": 85821
+    },
+    {
+      "path": "state/supply_graph_baseline.json",
+      "sha256": "478f22d9efd0c810d90621ee5ee3e23162a9f3a01896b20592f53a973e24d7bd",
+      "bytes": 59317
+    }
+  ],
+  "raw_provider_payloads": false,
+  "raw_web_receipts": false,
+  "unrelated_historical_corrections": false,
+  "rule_or_pipeline_maintenance": false
+}

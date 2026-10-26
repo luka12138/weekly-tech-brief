@@ -1,12 +1,11 @@
 {
-  "generation_date": "2026-10-19",
+  "generation_date": "2026-10-26",
   "coverage_period": {
-    "start": "2026-10-12",
-    "end": "2026-10-19",
+    "start": "2026-10-19",
+    "end": "2026-10-26",
     "timezone": "Asia/Shanghai",
     "cutoff_policy": "shanghai_monday_0900_v2",
-    "cutoff_exclusive": "2026-10-19T09:00:00+08:00",
-    "window_start": "2026-10-12T00:00:00+08:00"
+    "cutoff_exclusive": "2026-10-26T09:00:00+08:00"
   },
   "companies": [
     "Apple",
@@ -1035,7 +1034,7 @@
       "evidence_date": "2026-10-16",
       "source_type": "official_announcement",
       "last_seen": "2026-10-16",
-      "changed_this_week": "strengthened",
+      "changed_this_week": "no_new_evidence_this_week",
       "status": "announced_available_manufacturer_listed_specific_deliveries_unverified",
       "confidence": "high",
       "confidence_reason": "官方可购公告列明Microsoft；不确认每个Surface型号/地区交付。",
@@ -1062,7 +1061,7 @@
       "relationship_type": "announced_process_design_choice",
       "evidence_date": "2026-10-12",
       "last_seen": "2026-10-12",
-      "changed_this_week": "new",
+      "changed_this_week": "no_new_evidence_this_week",
       "status": "announced_design_choice_future_deployment_not_order",
       "source_type": "official_company_release",
       "confidence": "high",
@@ -1081,6 +1080,141 @@
         "MS-MAIA-F03"
       ],
       "notes": "只确认公开设计选择与计划阶段，不推断订单金额/投片量。"
+    },
+    {
+      "edge_id": "E43",
+      "supplier": "OpenAI",
+      "customer": "Alphabet / Google",
+      "product_or_service": "模型与Codex经Google Cloud分发；计划未来数周GA",
+      "relationship_type": "announced_distribution_or_supply",
+      "evidence_date": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "changed_this_week": "new",
+      "status": "announced_scope_only_future_delivery_not_certified",
+      "source_type": "official_company_release",
+      "confidence": "high",
+      "confidence_reason": "具名官方来源仅确认所述安排与阶段，不认证实际订单规模/收入。",
+      "markdown_section_ref": "6.2 E43",
+      "sources": [
+        "https://openai.com/index/openai-models-google-cloud/"
+      ],
+      "claim_ids": [
+        "OA-GCP-F01"
+      ],
+      "claim_keywords": [
+        "Google Cloud",
+        "Codex"
+      ],
+      "min_keyword_matches": 2,
+      "notes": "模型与Codex经Google Cloud分发；计划未来数周GA"
+    },
+    {
+      "edge_id": "E44",
+      "supplier": "NVIDIA",
+      "customer": "Alphabet / Google",
+      "product_or_service": "Vera Rubin A5X计划11月GA；部署上限非现有规模",
+      "relationship_type": "announced_distribution_or_supply",
+      "evidence_date": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "changed_this_week": "new",
+      "status": "announced_scope_only_future_delivery_not_certified",
+      "source_type": "official_company_release",
+      "confidence": "high",
+      "confidence_reason": "具名官方来源仅确认所述安排与阶段，不认证实际订单规模/收入。",
+      "markdown_section_ref": "6.2 E44",
+      "sources": [
+        "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/"
+      ],
+      "claim_ids": [
+        "NV-GCP-F01"
+      ],
+      "claim_keywords": [
+        "A5X",
+        "Rubin"
+      ],
+      "min_keyword_matches": 2,
+      "notes": "Vera Rubin A5X计划11月GA；部署上限非现有规模"
+    },
+    {
+      "edge_id": "E45",
+      "supplier": "Perryman",
+      "customer": "Apple",
+      "product_or_service": "iPhone Duo钛材料；三年投入最多1亿美元",
+      "relationship_type": "announced_distribution_or_supply",
+      "evidence_date": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "changed_this_week": "new",
+      "status": "announced_scope_only_future_delivery_not_certified",
+      "source_type": "official_company_release",
+      "confidence": "high",
+      "confidence_reason": "具名官方来源仅确认所述安排与阶段，不认证实际订单规模/收入。",
+      "markdown_section_ref": "6.2 E45",
+      "sources": [
+        "https://www.apple.com/newsroom/2026/10/apple-announces-american-manufacturing-program-partners-for-latest-iphone-lineup/"
+      ],
+      "claim_ids": [
+        "AP-MFG-F01"
+      ],
+      "claim_keywords": [
+        "Perryman",
+        "titanium"
+      ],
+      "min_keyword_matches": 2,
+      "notes": "iPhone Duo钛材料；三年投入最多1亿美元"
+    },
+    {
+      "edge_id": "E46",
+      "supplier": "Qnity",
+      "customer": "Apple",
+      "product_or_service": "iPhone 18 Pro可变光圈相机先进薄膜",
+      "relationship_type": "announced_distribution_or_supply",
+      "evidence_date": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "changed_this_week": "new",
+      "status": "announced_scope_only_future_delivery_not_certified",
+      "source_type": "official_company_release",
+      "confidence": "high",
+      "confidence_reason": "具名官方来源仅确认所述安排与阶段，不认证实际订单规模/收入。",
+      "markdown_section_ref": "6.2 E46",
+      "sources": [
+        "https://www.apple.com/newsroom/2026/10/apple-announces-american-manufacturing-program-partners-for-latest-iphone-lineup/"
+      ],
+      "claim_ids": [
+        "AP-MFG-F02"
+      ],
+      "claim_keywords": [
+        "Qnity",
+        "iPhone"
+      ],
+      "min_keyword_matches": 2,
+      "notes": "iPhone 18 Pro可变光圈相机先进薄膜"
+    },
+    {
+      "edge_id": "E47",
+      "supplier": "KYEC",
+      "customer": "NVIDIA",
+      "product_or_service": "测试产能预订预付款11亿美元；2027年4月量产目标",
+      "relationship_type": "announced_distribution_or_supply",
+      "evidence_date": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "changed_this_week": "new",
+      "status": "announced_scope_only_future_delivery_not_certified",
+      "source_type": "official_company_release",
+      "confidence": "high",
+      "confidence_reason": "具名官方来源仅确认所述安排与阶段，不认证实际订单规模/收入。",
+      "markdown_section_ref": "6.2 E47",
+      "sources": [
+        "https://nvidianews.nvidia.com/news/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout"
+      ],
+      "claim_ids": [
+        "NV-CAP-F02"
+      ],
+      "claim_keywords": [
+        "KYEC",
+        "1.1"
+      ],
+      "min_keyword_matches": 2,
+      "notes": "测试产能预订预付款11亿美元；2027年4月量产目标"
     }
   ],
   "sources": [
@@ -1092,6 +1226,7 @@
     "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/west-virginia-long-duration-energy-storage/",
     "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
     "https://blogs.nvidia.com/blog/d-matrix-nvlink-fusion/",
+    "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/",
     "https://blogs.nvidia.com/blog/local-ai-rtx-spark-microsoft-windows-event/",
     "https://github.blog/changelog/2026-09-01-claude-fable-5-1-generally-available-in-github-copilot/",
     "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2026_2Q_conference_eng.pdf",
@@ -1112,6 +1247,7 @@
     "https://news.skhynix.com/en/q2-2026-business-results/",
     "https://news.skhynix.com/sk-hynix-and-sandisk-begin-global-standardization-ofnext-generation-memory-hbf/",
     "https://nvidianews.nvidia.com/news/ilya-sutskevers-safe-superintelligence-inc-and-nvidia-announce-long-term-strategic-partnership",
+    "https://nvidianews.nvidia.com/news/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout",
     "https://nvidianews.nvidia.com/news/nvidia-expands-ai-infrastructure-capacity-in-partnership-with-australias-data-center-ecosystem",
     "https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute",
     "https://nvidianews.nvidia.com/news/nvidia-rtx-spark-pcs-available-today-a-new-beginning-for-windows-pcs",
@@ -1119,6 +1255,7 @@
     "https://openai.com/index/cerebras-partnership/",
     "https://openai.com/index/gpt-6-astra/",
     "https://openai.com/index/openai-joins-ports-pike-project/",
+    "https://openai.com/index/openai-models-google-cloud/",
     "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/",
     "https://openai.com/index/previewing-ultrafast/",
     "https://platform.claude.com/docs/en/models/fable-5-1/overview",
@@ -1127,6 +1264,7 @@
     "https://www.aboutamazon.com/news/aws/bedrock-openai-models",
     "https://www.anthropic.com/claude-fable-and-mythos-5-1",
     "https://www.apple.com/newsroom/2026/07/apple-maps-to-power-navigation-experience-for-ford-uev-platform/",
+    "https://www.apple.com/newsroom/2026/10/apple-announces-american-manufacturing-program-partners-for-latest-iphone-lineup/",
     "https://www.d-matrix.ai/announcements/d-matrix-rackscale-nvidia/",
     "https://www.fortum.com/en/media/2026/09/inside-information-fortum-and-google-partner-drive-sustainable-growth-finland-sign-nuclear-power-purchase-agreement",
     "https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q4/press-release-webcast",
@@ -1134,17 +1272,17 @@
     "https://www.sec.gov/Archives/edgar/data/1474735/000143774926030550/gnrc20260915_8k.htm"
   ],
   "confidence": "mixed_high",
-  "notes": "本期E41强化可购公告阶段、E42新增N2P设计选择；不确认SKU交付、订单金额或量产。历史弱证据保留。",
+  "notes": "本期只更新入选事项的具名关系；预期交付与已发生严格区分；历史弱边不升级。",
   "comparison_snapshots": {
     "supply": {
-      "path": "archives/prior_2026-10-12/supply_graph_baseline.json",
-      "sha256": "d8b5ae5ca531b625ab219425bdf3737060275f79682f8b0edb48e8b5b65d1f68",
-      "report_date": "2026-10-12"
+      "path": "archives/prior_2026-10-19/supply_graph_baseline.json",
+      "sha256": "486714af5a311481e8326e0a83788caf76bdf741d1bd87cf099f8d00c89a5a64",
+      "report_date": "2026-10-19"
     },
     "product": {
-      "path": "archives/prior_2026-10-12/product_relationships_2026.json",
-      "sha256": "069f5b3c8f2809f9cafb9a895cded66e156576a704b78b43ceb6de463b7961a9",
-      "report_date": "2026-10-12"
+      "path": "archives/prior_2026-10-19/product_relationships_2026.json",
+      "sha256": "95673a1ef436e68a935f048696292903ee6ee242fe994ca7dc1ab94201283107",
+      "report_date": "2026-10-19"
     }
   }
 }

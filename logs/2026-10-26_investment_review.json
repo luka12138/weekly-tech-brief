@@ -1,0 +1,259 @@
+{
+  "schema_version": 2,
+  "kind": "production",
+  "report_date": "2026-10-26",
+  "cutoff": "2026-10-26T09:00:00+08:00",
+  "cutoff_policy": "shanghai_monday_0900_v2",
+  "generated_at": "2026-10-26T01:47:06.566184+00:00",
+  "policy_registered_at": "2026-10-10T02:51:49Z",
+  "policy": {
+    "version": 1,
+    "return_sessions": 5,
+    "volatility_sessions": 20,
+    "annualization": 252,
+    "return_baseline": "zero_excess_return",
+    "volatility_baseline": "trailing_rv20",
+    "entry": "first_regular_open_strictly_after_delivery",
+    "pnl": "disabled_until_costs_and_execution_are_verified"
+  },
+  "coverage": {
+    "path": "logs/2026-10-26_research_coverage.json",
+    "selection_sha256": "5bf78d08d62b3f8b6b5234e4e08521db6b194c0888a3960f85b54ab5cd498a2f"
+  },
+  "sources": {},
+  "observations": {
+    "PRICE_AAPL_O": {
+      "path": "logs/2026-10-26_market_observations/AAPL_O.json",
+      "sha256": "eca992f9a15164f3416e7662c28859f30ce3bbd8830eb00ebcd154bb8f5f598d",
+      "url": "https://www.wind.com.cn/portal/zh/ClientApi/index.html",
+      "retrieved_at": "2026-10-26T01:24:49.245414+00:00",
+      "version": "实际API回执冻结于2026-10-26T01:24:49.245414+00:00",
+      "locator": "AAPL.O收盘与IXIC.GI价格指数；2026-08-24至2026-10-23，44个真实交易日；具体回执和哈希位于文件provenance。",
+      "limitation": "当前提取版本；历史PIT未认证；价格回报未计现金分红，不作含分红总回报。"
+    },
+    "PRICE_MSFT_O": {
+      "path": "logs/2026-10-26_market_observations/MSFT_O.json",
+      "sha256": "3c7d786fbb30d8e29146d115ed34e354a5e3c535927d5a46a582b2c48ff367ae",
+      "url": "https://www.wind.com.cn/portal/zh/ClientApi/index.html",
+      "retrieved_at": "2026-10-26T01:24:49.245414+00:00",
+      "version": "实际API回执冻结于2026-10-26T01:24:49.245414+00:00",
+      "locator": "MSFT.O收盘与IXIC.GI价格指数；2026-08-24至2026-10-23，44个真实交易日；具体回执和哈希位于文件provenance。",
+      "limitation": "当前提取版本；历史PIT未认证；价格回报未计现金分红，不作含分红总回报。"
+    },
+    "PRICE_GOOGL_O": {
+      "path": "logs/2026-10-26_market_observations/GOOGL_O.json",
+      "sha256": "a13e4153a306965d3628418a76301b9252c297d6333ba62403582be22bd6041b",
+      "url": "https://www.wind.com.cn/portal/zh/ClientApi/index.html",
+      "retrieved_at": "2026-10-26T01:24:49.245414+00:00",
+      "version": "实际API回执冻结于2026-10-26T01:24:49.245414+00:00",
+      "locator": "GOOGL.O收盘与IXIC.GI价格指数；2026-08-24至2026-10-23，44个真实交易日；具体回执和哈希位于文件provenance。",
+      "limitation": "当前提取版本；历史PIT未认证；价格回报未计现金分红，不作含分红总回报。"
+    },
+    "PRICE_AMZN_O": {
+      "path": "logs/2026-10-26_market_observations/AMZN_O.json",
+      "sha256": "8848a4347210af46ed61ce8bfcb79e9fb8ca287de0637f3789fa0f78a0582841",
+      "url": "https://www.wind.com.cn/portal/zh/ClientApi/index.html",
+      "retrieved_at": "2026-10-26T01:24:49.245414+00:00",
+      "version": "实际API回执冻结于2026-10-26T01:24:49.245414+00:00",
+      "locator": "AMZN.O收盘与IXIC.GI价格指数；2026-08-24至2026-10-23，44个真实交易日；具体回执和哈希位于文件provenance。",
+      "limitation": "当前提取版本；历史PIT未认证；价格回报未计现金分红，不作含分红总回报。"
+    },
+    "PRICE_META_O": {
+      "path": "logs/2026-10-26_market_observations/META_O.json",
+      "sha256": "426d861ab29aa1babe20c907e09c3123a5064e683e5a702a4d24a991ee84696c",
+      "url": "https://www.wind.com.cn/portal/zh/ClientApi/index.html",
+      "retrieved_at": "2026-10-26T01:24:49.245414+00:00",
+      "version": "实际API回执冻结于2026-10-26T01:24:49.245414+00:00",
+      "locator": "META.O收盘与IXIC.GI价格指数；2026-08-24至2026-10-23，44个真实交易日；具体回执和哈希位于文件provenance。",
+      "limitation": "当前提取版本；历史PIT未认证；价格回报未计现金分红，不作含分红总回报。"
+    },
+    "PRICE_NVDA_O": {
+      "path": "logs/2026-10-26_market_observations/NVDA_O.json",
+      "sha256": "1444fe769f0548569b6e54af19099251d73df2dd1f57061d8f74e3858baa02c8",
+      "url": "https://www.wind.com.cn/portal/zh/ClientApi/index.html",
+      "retrieved_at": "2026-10-26T01:24:49.245414+00:00",
+      "version": "实际API回执冻结于2026-10-26T01:24:49.245414+00:00",
+      "locator": "NVDA.O收盘与IXIC.GI价格指数；2026-08-24至2026-10-23，44个真实交易日；具体回执和哈希位于文件provenance。",
+      "limitation": "当前提取版本；历史PIT未认证；价格回报未计现金分红，不作含分红总回报。"
+    },
+    "PRICE_TSLA_O": {
+      "path": "logs/2026-10-26_market_observations/TSLA_O.json",
+      "sha256": "426322bf1764cd9650198ffc8972fbf9e233ea3e412a586cf6fe08e60540797e",
+      "url": "https://www.wind.com.cn/portal/zh/ClientApi/index.html",
+      "retrieved_at": "2026-10-26T01:24:49.245414+00:00",
+      "version": "实际API回执冻结于2026-10-26T01:24:49.245414+00:00",
+      "locator": "TSLA.O收盘与IXIC.GI价格指数；2026-08-24至2026-10-23，44个真实交易日；具体回执和哈希位于文件provenance。",
+      "limitation": "当前提取版本；历史PIT未认证；价格回报未计现金分红，不作含分红总回报。"
+    },
+    "PRICE_005930_KS": {
+      "path": "logs/2026-10-26_market_observations/005930_KS.json",
+      "sha256": "3f5c7ceaf4b4fd53ba177b946f0e8bea4690733a1e474c6b99bbfb7183db4298",
+      "url": "https://www.wind.com.cn/portal/zh/ClientApi/index.html",
+      "retrieved_at": "2026-10-26T01:24:49.245414+00:00",
+      "version": "实际API回执冻结于2026-10-26T01:24:49.245414+00:00",
+      "locator": "005930.KS收盘与KS11.KS价格指数；2026-08-24至2026-10-23，41个真实交易日；具体回执和哈希位于文件provenance。",
+      "limitation": "当前提取版本；历史PIT未认证；价格回报未计现金分红，不作含分红总回报。"
+    },
+    "PRICE_000660_KS": {
+      "path": "logs/2026-10-26_market_observations/000660_KS.json",
+      "sha256": "0ea8e78250702dc006f1f2a61d88846a918c0c8b6afe2834752e2cabd445abdc",
+      "url": "https://www.wind.com.cn/portal/zh/ClientApi/index.html",
+      "retrieved_at": "2026-10-26T01:24:49.245414+00:00",
+      "version": "实际API回执冻结于2026-10-26T01:24:49.245414+00:00",
+      "locator": "000660.KS收盘与KS11.KS价格指数；2026-08-24至2026-10-23，41个真实交易日；具体回执和哈希位于文件provenance。",
+      "limitation": "当前提取版本；历史PIT未认证；价格回报未计现金分红，不作含分红总回报。"
+    },
+    "PRICE_2330_TW": {
+      "path": "logs/2026-10-26_market_observations/2330_TW.json",
+      "sha256": "9a84601a6acbc377217c5f8bdf58b61f60c8c8cf94051a4c5f65d95ccabd07ac",
+      "url": "https://www.wind.com.cn/portal/zh/ClientApi/index.html",
+      "retrieved_at": "2026-10-26T01:24:49.245414+00:00",
+      "version": "实际API回执冻结于2026-10-26T01:24:49.245414+00:00",
+      "locator": "2330.TW收盘与TWII.TW价格指数；2026-08-24至2026-10-22，41个真实交易日；具体回执和哈希位于文件provenance。",
+      "limitation": "当前提取版本；历史PIT未认证；价格回报未计现金分红，不作含分红总回报。"
+    }
+  },
+  "companies": [
+    {
+      "company": "Apple",
+      "selected_candidate_ids": [
+        "AP-MFG",
+        "AP-EVENT"
+      ],
+      "market_status": "observed",
+      "market_source": "PRICE_AAPL_O",
+      "limitation": "对照纳斯达克综合指数；未复权价格口径、未计现金分红；除权除息可影响波动。当前提取版本，历史PIT未认证。",
+      "associations": [],
+      "hypothesis": null
+    },
+    {
+      "company": "Microsoft",
+      "selected_candidate_ids": [
+        "MS-SOV"
+      ],
+      "market_status": "observed",
+      "market_source": "PRICE_MSFT_O",
+      "limitation": "对照纳斯达克综合指数；未复权价格口径、未计现金分红；除权除息可影响波动。当前提取版本，历史PIT未认证。",
+      "associations": [],
+      "hypothesis": null
+    },
+    {
+      "company": "Alphabet / Google",
+      "selected_candidate_ids": [
+        "OA-GCP",
+        "GOO-OUTAGE",
+        "NV-GCP"
+      ],
+      "market_status": "observed",
+      "market_source": "PRICE_GOOGL_O",
+      "limitation": "对照纳斯达克综合指数；未复权价格口径、未计现金分红；除权除息可影响波动。当前提取版本，历史PIT未认证。",
+      "associations": [],
+      "hypothesis": null
+    },
+    {
+      "company": "Amazon / AWS",
+      "selected_candidate_ids": [
+        "AMZ-CAP"
+      ],
+      "market_status": "observed",
+      "market_source": "PRICE_AMZN_O",
+      "limitation": "对照纳斯达克综合指数；未复权价格口径、未计现金分红；除权除息可影响波动。当前提取版本，历史PIT未认证。",
+      "associations": [],
+      "hypothesis": null
+    },
+    {
+      "company": "Meta",
+      "selected_candidate_ids": [
+        "META-Q3",
+        "META-C",
+        "META-NM"
+      ],
+      "market_status": "observed",
+      "market_source": "PRICE_META_O",
+      "limitation": "对照纳斯达克综合指数；未复权价格口径、未计现金分红；除权除息可影响波动。当前提取版本，历史PIT未认证。",
+      "associations": [],
+      "hypothesis": null
+    },
+    {
+      "company": "NVIDIA",
+      "selected_candidate_ids": [
+        "NV-CAP",
+        "NV-GCP",
+        "NV-SAFE"
+      ],
+      "market_status": "observed",
+      "market_source": "PRICE_NVDA_O",
+      "limitation": "对照纳斯达克综合指数；未复权价格口径、未计现金分红；除权除息可影响波动。当前提取版本，历史PIT未认证。",
+      "associations": [],
+      "hypothesis": null
+    },
+    {
+      "company": "Tesla",
+      "selected_candidate_ids": [
+        "TSLA-Q3"
+      ],
+      "market_status": "observed",
+      "market_source": "PRICE_TSLA_O",
+      "limitation": "对照纳斯达克综合指数；未复权价格口径、未计现金分红；除权除息可影响波动。当前提取版本，历史PIT未认证。",
+      "associations": [],
+      "hypothesis": null
+    },
+    {
+      "company": "OpenAI",
+      "selected_candidate_ids": [
+        "OA-GCP",
+        "OA-CONTAIN",
+        "OA-MONITOR"
+      ],
+      "market_status": "not_mapped",
+      "market_source": null,
+      "limitation": "未建立可核独立证券映射；不以合作方股价代替。",
+      "associations": [],
+      "hypothesis": null
+    },
+    {
+      "company": "Anthropic",
+      "selected_candidate_ids": [
+        "AN-SKILLS",
+        "AN-GEORGIA"
+      ],
+      "market_status": "not_mapped",
+      "market_source": null,
+      "limitation": "未建立可核独立证券映射；不以合作方股价代替。",
+      "associations": [],
+      "hypothesis": null
+    },
+    {
+      "company": "Samsung Electronics",
+      "selected_candidate_ids": [
+        "MEM-CHINA"
+      ],
+      "market_status": "observed",
+      "market_source": "PRICE_005930_KS",
+      "limitation": "对照韩国综合指数KOSPI；未复权价格口径、未计现金分红；除权除息可影响波动。当前提取版本，历史PIT未认证。",
+      "associations": [],
+      "hypothesis": null
+    },
+    {
+      "company": "SK Hynix",
+      "selected_candidate_ids": [
+        "MEM-CHINA",
+        "SK-IPO"
+      ],
+      "market_status": "observed",
+      "market_source": "PRICE_000660_KS",
+      "limitation": "对照韩国综合指数KOSPI；未复权价格口径、未计现金分红；除权除息可影响波动。当前提取版本，历史PIT未认证。",
+      "associations": [],
+      "hypothesis": null
+    },
+    {
+      "company": "TSMC",
+      "selected_candidate_ids": [],
+      "market_status": "observed",
+      "market_source": "PRICE_2330_TW",
+      "limitation": "对照台湾加权指数；未复权价格口径、未计现金分红；除权除息可影响波动。当前提取版本，历史PIT未认证。",
+      "associations": [],
+      "hypothesis": null
+    }
+  ]
+}

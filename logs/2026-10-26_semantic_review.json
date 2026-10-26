@@ -1,0 +1,38 @@
+{
+  "reviewed_at": "2026-10-26T01:55:27.360650+00:00",
+  "current_model_only": true,
+  "independent_agent_review": false,
+  "reviews": {
+    "financial_periods_and_units": {
+      "status": "reviewed",
+      "note": "Meta Q3截至9/30三个月、USD million：64601m=646.01亿美元、12988m=129.88亿美元；9.89b=98.9亿美元费用、135-145b=1350-1450亿美元指引。NM25b=250亿美元与该季度费用分开。Tesla SEC同一accession未审计表：28046m、787m及同比；capex in excess of20b是超过200亿美元的计划。Apple100m为三年上限；KYEC1.1b=11亿美元预订预付款。"
+    },
+    "source_versions": {
+      "status": "reviewed",
+      "note": "实际读取所有入选来源具体正文，回执字节/URL/截取段保存。未知时区日期使用完整50小时区间；Apple活动Reuters更新、Google初步报告、OpenAI代理Reuters更新和FOX5州官员报道使用明确时区；FOX5更新为上海10/26 07:34，早于09:00。Tesla以同accession索引10/22备案日期为边界。OpenAI恢复训练10/1与10/23披露分开。"
+    },
+    "product_graph": {
+      "status": "reviewed",
+      "note": "读取全量42条供应、20条公司关系、76个产品节点和85条产品边索引；完整展开9条相关供应、10条相关/弱公司关系及10条相关/弱产品边。新增E43-47、P21-22、PX86-87，PX58改为具名A5X计划；历史弱边不升级。Samsung Electro-Mechanics与Samsung Electronics不混同；所有未来GA/扩产/量产边均保留阶段。"
+    },
+    "report_vintage": {
+      "status": "reviewed",
+      "note": "窗口上海10/19 09:00至10/26 09:00排他截止；实际任务09:06:59触发、市场09:09:28建批，late_rerun。上期原文与图基线已冻结副本；本次无旧稿覆盖。价格序列、名称恢复、计算与新稿绑定，但不认证09:00原生采集/历史PIT/总回报。实际发布回执待后续成功才记录。"
+    }
+  },
+  "target_count": 59,
+  "claim_count": 59,
+  "market": {
+    "price_series": 10,
+    "benchmarks": [
+      "IXIC.GI",
+      "KS11.KS",
+      "TWII.TW"
+    ],
+    "total_return_qualified": false,
+    "historical_pit_qualified": false,
+    "event_attribution": false,
+    "hypotheses": 0
+  },
+  "scope": "Finite official discovery plus one independent calibration; semantic review does not certify completeness."
+}

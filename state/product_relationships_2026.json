@@ -1,7 +1,7 @@
 {
   "title": "2026 年度十二家公司主营产品上下游关系图",
   "source_baseline": "基于 2026 年可取得的官方年报、投资者关系页面、公司新闻稿和监管披露；媒体报道或历史基线关系单独标注。",
-  "generated_for_report_date": "2026-10-19",
+  "generated_for_report_date": "2026-10-26",
   "companies": [
     {
       "name": "Apple",
@@ -412,6 +412,30 @@
       ],
       "evidence_date": "2026-10-12",
       "notes": "微软披露的制程设计选择，不是代工量/收入确认。"
+    },
+    {
+      "edge_id": "P21",
+      "source": "OpenAI",
+      "target": "Alphabet / Google",
+      "product_or_service": "模型与Codex经Google Cloud分发；计划未来数周GA",
+      "evidence_level": "本年度官方证据",
+      "official_sources": [
+        "https://openai.com/index/openai-models-google-cloud/"
+      ],
+      "evidence_date": "2026-10-21",
+      "notes": "公告计划，不是已完成全部交付；NVIDIA-Google既有生态关系新增具名产品证据。"
+    },
+    {
+      "edge_id": "P22",
+      "source": "NVIDIA",
+      "target": "Alphabet / Google",
+      "product_or_service": "Vera Rubin A5X计划11月GA；部署上限非现有规模",
+      "evidence_level": "本年度官方证据",
+      "official_sources": [
+        "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/"
+      ],
+      "evidence_date": "2026-10-21",
+      "notes": "公告计划，不是已完成全部交付；NVIDIA-Google既有生态关系新增具名产品证据。"
     }
   ],
   "product_nodes": [
@@ -1919,14 +1943,14 @@
       "target_node": "Alphabet_Google::Google_Cloud",
       "source_company": "NVIDIA",
       "target_company": "Alphabet / Google",
-      "product_or_service": "NVIDIA GPU 支撑 Google Cloud AI 基础设施",
+      "product_or_service": "Vera Rubin A5X计划11月GA；部署上限非现有规模",
       "relationship_type": "cross_company_supply",
-      "evidence_level": "官方产品基线",
+      "evidence_level": "本年度官方证据",
       "official_sources": [
-        "https://investor.nvidia.com/financial-info/annual-reports-and-proxies/default.aspx",
-        "https://abc.xyz/investor/"
+        "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/"
       ],
-      "notes": "年度主营产品上下游关系；具体客户/采购规模未由本字段单独确认。"
+      "notes": "11月GA计划与客户早期访问分开；96万GPU为部署上限计划。",
+      "evidence_date": "2026-10-21"
     },
     {
       "edge_id": "PX59",
@@ -2317,6 +2341,36 @@
       ],
       "evidence_date": "2026-10-12",
       "notes": "具体公告阶段，不确认整体部署、订单金额或所有地区交付。"
+    },
+    {
+      "edge_id": "PX86",
+      "source_node": "OpenAI::GPT_模型",
+      "target_node": "Alphabet_Google::Google_Cloud",
+      "source_company": "OpenAI",
+      "target_company": "Alphabet / Google",
+      "product_or_service": "模型与Codex经Google Cloud分发；计划未来数周GA",
+      "relationship_type": "model_distribution",
+      "evidence_level": "本年度官方证据",
+      "official_sources": [
+        "https://openai.com/index/openai-models-google-cloud/"
+      ],
+      "evidence_date": "2026-10-21",
+      "notes": "未来数周GA；不推断Microsoft合作终止或新增收入。"
+    },
+    {
+      "edge_id": "PX87",
+      "source_node": "OpenAI::Codex",
+      "target_node": "Alphabet_Google::Google_Cloud",
+      "source_company": "OpenAI",
+      "target_company": "Alphabet / Google",
+      "product_or_service": "模型与Codex经Google Cloud分发；计划未来数周GA",
+      "relationship_type": "model_distribution",
+      "evidence_level": "本年度官方证据",
+      "official_sources": [
+        "https://openai.com/index/openai-models-google-cloud/"
+      ],
+      "evidence_date": "2026-10-21",
+      "notes": "未来数周GA；不推断Microsoft合作终止或新增收入。"
     }
   ],
   "changed_this_week": true
